@@ -2,14 +2,328 @@
 <html>
 
 <head>
+    <meta type="text/html" charset="utf-8">
     <title>范狂夫＠GitHub</title>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <style type="text/css">
+        body {
+            width: 1440px;
+            margin: 10px auto;
+        }
+
+        main {
+            clear: both;
+        }
+
+        header {
+            position: relative;
+            min-height: 360px;
+            /* border: 1px solid black; */
+        }
+
+        footer {
+            text-align: center;
+        }
+
+        h1 {
+            display: inline-block;
+            padding: 0.5rem;
+            margin-right: 2rem;
+            font-size: 2rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            width: 10rem;
+            text-align: center;
+            padding: 0.25rem;
+            background: radial-gradient(black, #eee);
+            color: white;
+        }
+
+        .cardBox {
+            box-sizing: border-box;
+            justify-content: center;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            min-width: 18rem;
+            min-height: 2rem;
+            border: 1px solid gray;
+            box-shadow: 0.25rem 0.25rem 0.5rem dimgray;
+            border-top: 1rem solid darkred;
+            background: radial-gradient(farthest-corner at 0 0, yellow, red);
+            padding: 0.25rem;
+            margin: 0.5rem;
+            font-size: 125%;
+            text-align: center;
+        }
+
+        #cover {
+            position: relative;
+            margin: 0;
+            padding: 0;
+            border: none;
+        }
+
+        #cover img {
+            display: block;
+        }
+
+        #title {
+            position: absolute;
+            top: 16px;
+            left: 32px;
+            font-size: 48px;
+        }
+
+        #avatar {
+            background: transparent;
+            border-radius: 26px;
+            border: 1px dotted darkblue;
+            display: inline-block;
+            padding: 8px;
+            position: absolute;
+            top: -60px;
+            left: 20px;
+        }
+
+        #avatar img {
+            display: block;
+        }
+
+        #icon {
+            width: 260px;
+            height: 260px;
+            clip-path: circle(130px at 130px 130px);
+        }
+
+        #profile {
+            position: absolute;
+            width: 540px;
+            /* height: 240px; */
+            top: 0;
+            left: 320px;
+        }
+
+        #works {
+            position: relative;
+            width: 560px;
+            top: 0;
+            left: 870px;
+        }
+
+        #nav {
+            position: absolute;
+            width: 860px;
+            top: 320px;
+            left: 0;
+        }
+
+        #works dl {
+            line-height: 1.75rem;
+        }
+
+        #works dt {
+            font-weight: bold;
+            color: blue;
+        }
+
+        .signature {
+            font-size: 125%;
+        }
+
+        .profileDetail {
+            margin-left: 20px;
+        }
+
+        .profileItem {
+            display: flex;
+            line-height: 250%;
+        }
+
+        .profileLabel {
+            width: 100px;
+            margin-right: 20px;
+            font-weight: bolder;
+        }
+
+        .profileValue {
+            flex: 1;
+        }
+
+        table {
+            width: 100%;
+            margin: 1rem 0;
+            border-collapse: collapse;
+            column-gap: 1rem;
+        }
+
+        caption {
+            padding: 1rem;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        tr:nth-child(odd) {
+            background-color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: whitesmoke;
+        }
+
+        tr:hover {
+            background-color: #FFFDD0;/*cream*/
+        }
+
+        td,
+        th {
+            border: 1px solid dimgray;
+            padding: 10px 10px;
+        }
+
+        th {
+            background-color: lightblue;
+            font-weight: bold;
+        }
+
+        td {
+            text-align: center;
+            vertical-align: center;
+        }
+
+        td a {
+            display: block;
+            /* background-color: darkblue; */
+            color: blue;
+            text-decoration: none;
+            padding: 0.25rem;
+        }
+        td a:hover {
+            background-color: darkblue;
+            color: white;
+        }
+
+        td time {
+            font-size: 1.25rem;
+            font-weight: bold;
+            font-family: 'Symbola', 'Fira Code', 'Fira Sans', 'Source Serif Pro', 'Source Sans Pro', serif;
+            font-variant-numeric: oldstyle-nums;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>希帕索斯永垂不朽！</h1>
-    <p>I'm hosted with GitHub Pages.</p>
+    <div id="cover">
+        <img src="cover.png" />
+        <div id="title" lang="zh">希帕索斯永垂不朽！</div>
+    </div>
+    <header>
+        <div id="avatar">
+            <img id="icon" src="favicon.svg" />
+        </div>
+        <div id="profile" lang="zh">
+            <h1>范狂夫</h1>
+            <span class="signature">故人心似中秋月，肯为狂夫照白头。</span>
+            <div class="profileDetail">
+                <div class="profileItem">
+                    <span class="profileLabel">居住地</span>
+                    <span class="profileValue">现居北京</span>
+                </div>
+                <div class="profileItem">
+                    <span class="profileLabel">所在行业</span>
+                    <span class="profileValue">咨询分析</span>
+                </div>
+                <div class="profileItem">
+                    <span class="profileLabel">教育经历</span>
+                    <span class="profileValue">北京理工大学&emsp;·&emsp;应用数学</span>
+                </div>
+                <div class="profileItem">
+                    <span class="profileLabel">个人简介</span>
+                    <span class="profileValue">孤苦伶仃可怜废柴草根文盲矬胖老穷光棍汉
+                        <br/>「精神病仆街写手不入流码农数学渣」</span>
+                </div>
+            </div>
+        </div>
+        <div id="works" lang="zh">
+            <h2>文集</h2>
+            <dl>
+                <dt>（目录、索引、导读）</dt>
+                <dd>顾名思义，在多个站点发表的文章链接之汇总。</dd>
+                <dt>谈笑风生＠知乎</dt>
+                <dd>在知乎的提问、回答和评论</dd>
+                <dt>谈笑风生＠九省通衢の煎蛋</dt>
+                <dd>在煎蛋文章区、问答区、段子区、无聊图的评论备份</dd>
+                <dt>《囧斋随笔》</dt>
+                <dd>随笔、杂谈，既有旧作，也有「与时俱进」内容。</dd>
+                <dt>「惹是生非」</dt>
+                <dd>命名来自九省通衢の活跃色目帐号替我总结的生活规律：吃饱了撑的惹是生非。</dd>
+                <dt>『短篇集』</dt>
+                <dd>旧作</dd>
+                <dt>《范版数学恶补记》</dt>
+                <dd>为了不忘初心牢记使命，丰富设定集内容，而开始恶补的流水帐以及心得体会。</dd>
+                <dt>《范版西幻设定集》</dt>
+                <dd>为了政治和意识形态斗争而创作的西方奇幻背景设定集，未完待续。</dd>
+            </dl>
+        </div>
+        <div class="cardBox" id="nav">
+            <div class="card">《范版西幻设定集》</div>
+            <div class="card">《范版数学恶补记》</div>
+            <div class="card">《囧斋随笔》</div>
+            <div class="card">「惹是生非」</div>
+            <div class="card">谈笑风生＠知乎</div>
+            <div class="card">谈笑风生＠九省通衢の煎蛋</div>
+        </div>
+    </header>
+    <main>
+        <h2>动态</h2>
+        <table id="timeline">
+            <caption>更新于［2018-07-21］</caption>
+            <colgroup>
+                <col style="width: 15%;">
+                <col>
+                <col span="4" style="width: 10%;">
+                <col>
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>提交时间<sup>①</sup></th>
+                    <th>标题</th>
+                    <th>本站链接</th>
+                    <th>知乎链接</th>
+                    <th>简书链接</th>
+                    <th>作业部落链接</th>
+                    <th>备注</th>
+                </tr>
+            </thead>
+            <tbody>
+                <td><time>2018-07-20 06:37</time></td>
+                <td>三自出版运动（剧情提要）</td>
+                <td>（暂无）</td>
+                <td>
+                    <a href="https://zhuanlan.zhihu.com/p/40152525">正常</a>
+                </td>
+                <td>仅自己可见</td>
+                <td>
+                    <a href="https://www.zybuluo.com/fanhan/note/1219958">正常</a>
+                </td>
+                <td></td>
+            </tbody>
+        </table>
+        <div id="remark">
+            <ul>
+                <li>①&emsp;按照在简书提交的时间整理，并非内容真正发表的时间。</li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <span>Copyright© fANhAN iNSiDE, All Rights Reserved.</span>
+    </footer>
 </body>
 
 </html>
