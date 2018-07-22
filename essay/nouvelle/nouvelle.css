@@ -1,0 +1,24 @@
+@import url(../essay.css);
+
+html {
+    background-color: midnightblue;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+main {
+    padding: 1rem;
+    border: 1px solid lightgray;
+    box-shadow: 0.5rem 0.5rem 0.75rem dimgray;
+}
+
+blockquote {
+    background: lightsteelblue;
+    border-left-color: steelblue;
+}
+
+h1 {
+    background: radial-gradient(farthest-corner at 0 0, white, blue);
+}
