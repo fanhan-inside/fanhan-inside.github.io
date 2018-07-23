@@ -1,0 +1,58 @@
+@import url(../fantasy.css);
+
+q:lang(en), q:lang(fr), q:lang(de), q:lang(it), q:lang(nl) {
+    font-family: Symbola;
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: darkblue;
+    padding: 0.25rem;
+}
+
+q::before {
+    padding-right: 0.25rem;
+}
+
+q::after {
+    padding-left: 0.25rem;
+}
+
+html {
+    background-color: white;
+}
+
+body {
+    width: 1440px;
+}
+
+main {
+    width: 1220px;
+    margin: 0 auto;
+}
+
+header {
+    width: 1220px;
+    margin: 0 auto;
+}
+
+footer {
+    width: 1220px;
+    margin: 0 auto;
+    border: none;
+    text-align: center;
+}
+
+footer>div.footer {
+    display: inline-block;
+    padding: 0.5rem 2rem;
+    max-width: 60%;
+    border-top: 3px double darkblue;
+}
+
+section {
+    width: 90%;
+    margin: 1rem auto;
+    padding: 0 1rem;
+    background-color: whitesmoke;
+    border: 1px solid lightgray;
+    box-shadow: 0.25rem 0.25rem 0.5rem dimgray;
+}

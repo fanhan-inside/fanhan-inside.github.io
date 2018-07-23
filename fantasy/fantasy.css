@@ -1,12 +1,12 @@
 html {
-    background-color: darkred;
+    background-color: darkblue;
 }
 
 body {
     width: 1000px;
     margin: 1rem auto;
     padding: 1rem 2rem;
-    background-color: lightgoldenrodyellow;
+    background-color: whitesmoke;
 }
 
 footer {
@@ -43,20 +43,19 @@ code {
 }
 
 blockquote {
-    background: wheat;
-    border-top: 1px dotted orange;
-    border-bottom: 1px dotted orange;
-    border-left: 0.75rem solid orange;
+    background: lightcyan;
+    border-top: 1px dotted steelblue;
+    border-bottom: 1px dotted steelblue;
+    border-left: 0.75rem solid steelblue;
     margin: 0.75rem;
     padding: 0.5rem;
 }
 
 cite {
-    margin: 0 0.25rem;
-    padding: 0.25rem;
+    margin: 1px 0.125rem;
+    padding: 1px 0.125rem;
     border-bottom: 1px dashed dimgray;
     font-style: normal;
-    font-weight: bold;
 }
 
 figure {
@@ -169,26 +168,31 @@ span.timestamp::after {
 }
 
 abbr {
-    margin: 0 0.125rem;
-    padding: 0.25rem;
+    margin: 1px 0.125rem;
+    padding: 1px 0.125rem;
 }
 
-abbr::before {
-    content: '｛';
-    margin: 0 0.125rem;
-}
-
-abbr::after {
-    content: '｝';
-    margin: 0 0.125rem;
-}
 
 abbr.person {
-    color: darkred;
+    border-bottom: 1px solid darkred;
+}
+
+abbr.rolename {
+    border-bottom: 1px solid darkgreen;
 }
 
 abbr.username {
     font-weight: bold;
+}
+
+abbr.username::before {
+    content: '｛';
+    margin: 0 0.125rem;
+}
+
+abbr.username::after {
+    content: '｝';
+    margin: 0 0.125rem;
 }
 
 div.comment {
@@ -223,7 +227,7 @@ blockquote span.author {
 
 h1 {
     padding: 1rem;
-    background: radial-gradient(farthest-corner at 0 0, yellow, red);
+    background: radial-gradient(farthest-corner at 0 0, white, skyblue);
 }
 
 h2 {
