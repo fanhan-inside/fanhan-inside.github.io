@@ -1,0 +1,21 @@
+@import url(../fanism.css);
+
+body{
+    filter: opacity(97%);
+}
+
+main {
+    padding: 1rem;
+    background: ivory;
+}
+
+span.math {
+    text-indent: 0;
+    display: inline-block;
+    font-family: Symbola;
+    font-size: 1.25rem;
+    /* margin: 0.25rem; */
+    padding: 0.25rem;
+    color: blue;
+    background-color: transparent;
+}
