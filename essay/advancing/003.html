@@ -5,6 +5,9 @@
     <meta lang="zh" charset="UTF-8">
     <title>流程图测试：网文「打斗套路」总结</title>
     <link rel="stylesheet" type="text/css" href="advancing.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/monokai.min.css" />
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
 </head>
 
 <body>
@@ -370,8 +373,7 @@
     <p>在这个过程中，要注意按照「角色」划分模块，这也是为了将来「时序图」做准备，可以用「文艺理论」修饰为「视角」，但未必采用「POV」。也就是说，按照「原版」思路，「流程」始终以主角视角「执行」，其中偶尔插入其它视角作为「子程序」。而「作者」也是一种视角，用来体现「旁白」等描写，用「输入输出」指代。</p>
 
     <h3>前期铺垫</h3>
-<pre class="code">
-开始=&gt;start: 开始
+<pre class="code">开始=&gt;start: 开始
 结束=&gt;end: 结束
 ｛对手｝=&gt;subroutine: ｛对手｝
 谁邀战，为什么
@@ -401,8 +403,7 @@ condAngry(no)-&gt;闷声发大财-&gt;主角决定策略-&gt;结束
     </figure>
 
     <h3>营造气氛</h3>
-<pre class="code">
-开始=&gt;start: 开始
+<pre class="code">开始=&gt;start: 开始
 结束=&gt;end: 结束
 天气=&gt;inputoutput: 天气如何
 景物=&gt;inputoutput: 景物如何
@@ -418,8 +419,7 @@ condAngry(no)-&gt;闷声发大财-&gt;主角决定策略-&gt;结束
     </figure>
 
     <h3>主角登场</h3>
-<pre class="code">
-开始=&gt;start: 开始
+<pre class="code">开始=&gt;start: 开始
 结束=&gt;end: 结束
 ｛主角亲友团｝1=&gt;subroutine: ｛主角亲友团｝
 怎么说
@@ -449,8 +449,7 @@ cond蔑视(no)-&gt;结束
     </figure>
 
     <h3>对手登场</h3>
-<pre class="code">
-开始=&gt;start: 开始
+<pre class="code">开始=&gt;start: 开始
 结束=&gt;end: 结束
 
 ｛对手亲友团｝1=&gt;subroutine: ｛对手亲友团｝说什么
@@ -473,8 +472,7 @@ cond沸腾(no)-&gt;气氛(right)-&gt;结束
     </figure>
 
     <h3>裁判出场</h3>
-<pre class="code">
-开始=&gt;start: 开始
+<pre class="code">开始=&gt;start: 开始
 结束=&gt;end: 结束
 
 描写裁判=&gt;inputoutput: ｛裁判｝是谁
@@ -498,8 +496,7 @@ cond挑衅(no)-&gt;结束
     </figure>
 
     <h3>众人对结果的预判</h3>
-<pre class="code">
-开始=&gt;start: 开始
+<pre class="code">开始=&gt;start: 开始
 结束=&gt;end: 结束
 
 ｛亲友团｝=&gt;subroutine: ｛亲友团｝
@@ -521,8 +518,7 @@ cond挑衅(no)-&gt;结束
     </figure>
 
     <h3>对手的情况</h3>
-<pre class="code">
-开始=&gt;start: 开始
+<pre class="code">开始=&gt;start: 开始
 结束=&gt;end: 结束
 
 cond了解=&gt;condition: 对手了解主角么？
@@ -554,8 +550,7 @@ cond了解(no)-&gt;对手不了解主角-&gt;对手实力
     </figure>
 
     <h3>打斗过程</h3>
-<pre class="code">
-开始=&gt;start: 开始
+<pre class="code">开始=&gt;start: 开始
 结束=&gt;end: 结束
 cond对话=&gt;condition: 是否对话？
 对手言论=&gt;operation: ｛对手｝
@@ -590,8 +585,7 @@ cond拉锯战(no)-&gt;结束
     </figure>
 
     <h3>打斗时的场外</h3>
-<pre class="code">
-开始=&gt;start: 开始
+<pre class="code">开始=&gt;start: 开始
 结束=&gt;end: 结束
 
 ｛亲友团｝=&gt;subroutine: ｛亲友团｝看法：
@@ -620,8 +614,7 @@ cond拉锯战(no)-&gt;结束
     </figure>
 
     <h3>打斗之后</h3>
-<pre class="code">
-开始=&gt;start: 开始
+<pre class="code">开始=&gt;start: 开始
 结束=&gt;end: 结束
 ｛亲友团｝=&gt;subroutine: ｛亲友团｝反应：
    1. 吸凉气
@@ -667,16 +660,16 @@ cond拉锯战(no)-&gt;结束
     <p>2，用Mermaid画流程图也可以，但是不如专用流程图插件的表现更规范，比如这些标准节点的形状。并且目前的Mermaid插件似乎有点问题，节点的文本有长度限制或不支持Unicode，经常渲染失败。</p>
     <p>3，FlowChart的缺点，是「分支」结构只有「Yes/No」一种，没有多分支的选项（或者我没找到），于是在「打斗过程」那一节当中，出现了对手实力不同的多种情况，就难以表现，只能大而化之划拉为一个模块留给写手自行处理。</p>
     <p>4，按照原版思路，每个「是否」型节点后面都没有提供相关处理，需要酌情补充。比方说「前期铺垫」一节中「主角发怒了吗」节点后面，我就追加了两段处理：「<b>闷声发大财</b>」和「<b lang="ja">アイムアングリっぽい</b>」。</p>
-    <p>5，注意上面「画蛇添足」并非什么「恶趣味」，因为实验发现流程图节点命名支持汉字，所以照抄「原版」提纲内容即可，不必非得绞尽脑汁译作英语或用拼音。但是对于半角字符带空格的「<b lang="en">I&prime;m Angry!</b>」这种就不能照抄了，正好顺便实验其它Unicode字符，用片假名拼写再加个流行平假名词尾，娱乐至死的逗哔们看上去会比较亲切吧？</p>
+    <p>5，注意上面「画蛇添足」并非什么「恶趣味」，因为实验发现流程图节点命名支持汉字，所以照抄「原版」提纲内容即可，不必非得绞尽脑汁译作英语或用拼音。但是对于半角字符带空格的「<b lang="en">I&rsquo;m Angry!</b>」这种就不能照抄了，正好顺便实验其它Unicode字符，用片假名拼写再加个流行平假名词尾，娱乐至死的逗哔们看上去会比较亲切吧？</p>
 
     <h2>下一步的计划和建议</h2>
     <p>1，因为尽量遵守「原版」思路，发现了以「代码」视角观察的不规范和不符合逻辑之处。但是同时也必须指出，「思维导图」侧重点就是储存脑洞，没必要太严格，如果时时刻刻按照写代码的要求处理流程，内容会死板许多，限制会大得多。</p>
     <p>2，流程图仅仅体现了时间线的顺序，不见得是文字表现的顺序，倒叙插叙等手法，在图中体现不出来。所以写手们也不用抱怨「码字工程」有利于硅基计算而不利于体现碳基智慧的荣耀。同时对于网文这种快餐文学而言，很多写手都知道尽量不要用倒叙插叙的原则，读者同时追十几本几十本书每天看一章，记不住前因后果，一旦感觉莫名其妙就下架了也。</p>
-    <p>3，按理说接下来就该做「序列图」了，但是原版思路不适合这种表现形式，我又不想按照自己的思路修改。这里还是参考「写手咖啡」（<a href="http://www.writerscafe.co.uk">Writer&prime;s Café</a>）的「故事线」功能，那可是按照「专业作家」而不是「软件工程师」的需求提供的。于是不再以这篇「打斗套路」举例。</p>
+    <p>3，按理说接下来就该做「序列图」了，但是原版思路不适合这种表现形式，我又不想按照自己的思路修改。这里还是参考「写手咖啡」（<span class="software"><a target="_blank" href="http://www.writerscafe.co.uk">Writer&rsquo;s Café</a></span>）的「故事线」功能，那可是按照「专业作家」而不是「软件工程师」的需求提供的。于是不再以这篇「打斗套路」举例。</p>
     <br />
 
     <p><span class="timestamp">2018-04-12</span>补充：</p>
-    <p>对于「支持扩展插件」的效果，可以参考在「作业部落」上传的内容：《<a href="https://www.zybuluo.com/fanhan/note/1108897">（流程图测试）网文「打斗套路」总结</a>》</p>
+    <p>对于「支持扩展插件」的效果，可以参考在「作业部落」上传的内容：<cite>《<a target="_blank" href="https://www.zybuluo.com/fanhan/note/1108897">（流程图测试）网文「打斗套路」总结</a>》</cite></p>
 
     <footer>
     <p>发表于<span class="timestamp">2018-03-31</span></p>

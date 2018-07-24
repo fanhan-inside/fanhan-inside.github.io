@@ -1,7 +1,7 @@
 @import url(../fantasy.css);
 
 q:lang(en), q:lang(fr), q:lang(de), q:lang(it), q:lang(nl) {
-    font-family: Symbola;
+    font-family: Symbola, Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 1.25rem;
     color: darkblue;

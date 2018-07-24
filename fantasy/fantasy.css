@@ -27,11 +27,14 @@ pre.code {
     padding: 1rem;
     line-height: 1.25rem;
     border: 1px dotted dimgray;
-    background-color: whitesmoke;
-    color: brown;
+    background-color: black;
+    color: lightgray;
     padding: 0.25rem 0.5rem;
-    font-family: 'Fira Code', Inconsolata, Consolas, 'Source Code Pro';
+    font-family: 'Fira Code', Inconsolata, Consolas, 'Source Code Pro', monospace;
     font-size: 80%;
+    word-wrap: normal;
+    white-space: pre;
+    overflow: auto;
 }
 
 code {
@@ -171,7 +174,6 @@ abbr {
     margin: 1px 0.125rem;
     padding: 1px 0.125rem;
 }
-
 
 abbr.person {
     border-bottom: 1px solid darkred;

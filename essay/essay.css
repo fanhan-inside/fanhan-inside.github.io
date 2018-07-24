@@ -6,14 +6,14 @@ body {
     width: 1000px;
     margin: 1rem auto;
     padding: 1rem 2rem;
-    background-color: lightgoldenrodyellow;
+    background-color: ivory;
 }
 
 footer {
     margin-top: 2rem;
     width: 100%;
     border-top: 3px solid silver;
-    font-size: 150%;
+    font-size: 125%;
 }
 
 p {
@@ -21,32 +21,41 @@ p {
     line-height: 2rem;
 }
 
-pre.code {
+:lang(en), :lang(fr), :lang(de), :lang(it), :lang(nl) {
+    font-family: 'Source Sans Pro', 'Clear Sans', 'Fira Sans', Arial, Helvetica, sans-serif;
+}
+
+pre {
     width: 90%;
     margin: 1rem auto;
-    padding: 1rem;
-    line-height: 1.25rem;
-    border: 1px dotted dimgray;
-    background-color: whitesmoke;
-    color: brown;
     padding: 0.25rem 0.5rem;
-    font-family: 'Fira Code', Inconsolata, Consolas, 'Source Code Pro';
+    word-wrap: normal;
+    white-space: pre;
+    overflow: auto;
+}
+
+pre.code {
+    background-color: black;
+    color: lightgray;
+    line-height: 1.5rem;
+    font-family: Inconsolata, Consolas, 'Source Code Pro', monospace;
     font-size: 80%;
 }
 
 code {
-    border: none;
-    background-color: black;
-    color: lime;
-    padding: 0.25rem 0.5rem;
-    font-family: 'Fira Code', Inconsolata, Consolas, 'Source Code Pro';
+    border: 1px solid lightgray;
+    background-color: whitesmoke;
+    color: darkred;
+    padding: 0.25rem;
+    font-family: Inconsolata, Consolas, 'Source Code Pro', monospace;
+    font-size: 90%;
 }
 
 blockquote {
-    background: wheat;
-    border-top: 1px dotted orange;
-    border-bottom: 1px dotted orange;
-    border-left: 0.75rem solid orange;
+    background: lightgoldenrodyellow;
+    border-top: 1px dotted wheat;
+    border-bottom: 1px dotted wheat;
+    border-left: 0.75rem solid wheat;
     margin: 0.75rem;
     padding: 0.5rem;
 }
@@ -56,7 +65,22 @@ cite {
     padding: 0.25rem;
     border-bottom: 1px dashed dimgray;
     font-style: normal;
+}
+
+q:lang(en), q:lang(fr), q:lang(de), q:lang(it), q:lang(nl) {
+    font-family: Symbola, Arial, Helvetica, sans-serif;
     font-weight: bold;
+    font-size: 1.25rem;
+    color: darkblue;
+    padding: 0.25rem;
+}
+
+q::before {
+    padding-right: 0.25rem;
+}
+
+q::after {
+    padding-left: 0.25rem;
 }
 
 figure {
@@ -150,6 +174,17 @@ div.linkcard a {
     padding: 0.5rem;
 }
 
+span.math {
+    text-indent: 0;
+    display: inline-block;
+    font-family: 'Latin Modern Math', Symbola;
+    font-size: 1.25rem;
+    /* margin: 0.25rem; */
+    padding: 0.25rem;
+    color: blue;
+    background-color: transparent;
+}
+
 span.timestamp {
     font-size: 125%;
     font-family: 'Symbola', 'Fira Code', 'Source Serif Pro', 'Source Sans Pro';
@@ -173,22 +208,26 @@ abbr {
     padding: 0.25rem;
 }
 
-abbr::before {
-    content: '｛';
-    margin: 0 0.125rem;
-}
-
-abbr::after {
-    content: '｝';
-    margin: 0 0.125rem;
-}
-
 abbr.person {
-    color: darkred;
+    border-bottom: 1px solid darkred;
+}
+
+abbr.rolename {
+    border-bottom: 1px solid darkgreen;
 }
 
 abbr.username {
     font-weight: bold;
+}
+
+abbr.username::before {
+    content: '｛';
+    margin: 0 0.125rem;
+}
+
+abbr.username::after {
+    content: '｝';
+    margin: 0 0.125rem;
 }
 
 div.comment {
