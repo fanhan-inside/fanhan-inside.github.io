@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    width="800" height="100" viewBox="0 0 800 100" >
+<defs>
+    <linearGradient id="TitleGradient">
+        <stop offset="0%" stop-color="black">
+        </stop>
+        <stop offset="0%" stop-color="gold">
+            <animate attributeName="offset" dur="6s" repeatCount="indefinite"
+                values="0;.25;.5;.75;1;.75;.5;.25;0;" />
+        </stop>
+        <stop offset="100%" stop-color="black">
+        </stop>
+    </linearGradient>
+</defs>
+    <symbol id="Title" viewBox="0 0 800 100">
+    <text x="400" y="80">希帕索斯永垂不朽！</text>
+</symbol>
+<use xlink:href="#Title" x="0" y="0" width="800" height="100"
+alignment-baseline="ideographic" text-anchor="middle"
+font-family="隶书" font-weight="bolder" font-size="5rem" stroke="url(#TitleGradient)" fill="url(#TitleGradient)" />
+</svg>

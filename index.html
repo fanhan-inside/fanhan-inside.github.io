@@ -12,10 +12,6 @@
             margin: 10px auto;
         }
 
-        main {
-            clear: both;
-        }
-
         iframe {
             width: 100%;
             border: 1px solid lightgray;
@@ -27,10 +23,7 @@
 
         header {
             display: grid;
-            grid-template:
-                "avatar profile corpus" 360px
-                "cards  cards   corpus" 320px
-                / 320px 1fr 500px;
+            grid-template: "avatar profile corpus" 320px "cards cards corpus" 360px / 320px 1fr 500px;
             min-height: 600px;
         }
 
@@ -66,32 +59,65 @@
         }
 
         .card {
-            min-width: 20rem;
-            min-height: 2rem;
+            min-width: 25rem;
+            min-height: 3rem;
             border: 1px solid gray;
             box-shadow: 0.25rem 0.25rem 0.5rem dimgray;
             border-top: 3px double black;
-            padding: 0.25rem;
+            padding: 0.125rem;
             margin: 0.5rem;
-            font-size: 125%;
+            font-size: 150%;
             text-align: center;
+        }
+
+        .card div.outer {
+            display: table;
+            height: 100%;
+            width: 100%;
+        }
+
+        .card div.inner {
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        .card a {
+            display: block;
+            text-decoration: none;
+        }
+
+        .card a:hover {
+            text-decoration-line: overline;
+        }
+
+        .card a:hover::before {
+            content: '\1F517';
+        }
+
+        .card a:hover::after {
+            content: '\1F517';
         }
 
         #随笔 {
             background: radial-gradient(farthest-corner at 0 0, white, red);
         }
+
         #惹是生非 {
             background: radial-gradient(farthest-corner at 0 0, yellow, red);
         }
+
         #设定集 {
             background: radial-gradient(farthest-corner at 0 0, white, lightskyblue);
         }
+
         #恶补记 {
             background: radial-gradient(farthest-corner at 0 0, lightskyblue, white);
         }
+
         #知乎 {
             background: radial-gradient(farthest-corner at 0 0, lime, white);
         }
+
         #煎蛋 {
             background: radial-gradient(farthest-corner at 0 0, white, lime);
         }
@@ -109,9 +135,8 @@
 
         #title {
             position: absolute;
-            top: 16px;
-            left: 32px;
-            font-size: 48px;
+            top: 0;
+            left: 0;
         }
 
         #avatar {
@@ -128,6 +153,7 @@
             top: -60px;
             left: 50px;
         }
+
         #icon {
             display: block;
             margin: auto;
@@ -153,14 +179,13 @@
             margin: 0 1rem;
             padding: 0 1rem;
         }
-
     </style>
 </head>
 
 <body>
     <div id="cover">
         <img src="cover.png" />
-        <div id="title" lang="zh">希帕索斯永垂不朽！</div>
+        <img id="title" lang="zh" src="title.svg" />
     </div>
     <header>
         <div id="avatar">
@@ -171,19 +196,47 @@
         <div id="profile" lang="zh">
             <h1>范狂夫</h1>
             <span class="signature">故人心似中秋月，肯为狂夫照白头。</span>
-            <iframe id="profile-detail" src="profile.html" height="240" scrolling="auto" marginwidth="0" marginheight="0"></iframe>
+            <iframe id="profile-detail" src="profile.html" height="220" scrolling="auto" marginwidth="0" marginheight="0"></iframe>
         </div>
         <div id="works" lang="zh">
             <h2>文集</h2>
             <iframe src="corpus.html" height="600" scrolling="auto" marginwidth="0" marginheight="0"></iframe>
         </div>
         <div class="cardBox" id="nav">
-            <div class="card" id="设定集">《范版西幻设定集》</div>
-            <div class="card" id="恶补记">《范版数学恶补记》</div>
-            <div class="card" id="随笔">《囧斋随笔》</div>
-            <div class="card" id="惹是生非">「惹是生非」</div>
-            <div class="card" id="知乎">谈笑风生＠知乎</div>
-            <div class="card" id="煎蛋">谈笑风生＠九省通衢の煎蛋</div>
+            <div class="card" id="设定集">
+                <div class="outer">
+                    <div class="inner">《范版西幻设定集》</div>
+                </div>
+            </div>
+            <div class="card" id="恶补记">
+                <div class="outer">
+                    <div class="inner">《范版数学恶补记》</div>
+                </div>
+            </div>
+            <div class="card" id="随笔">
+                <div class="outer">
+                    <div class="inner">
+                        <a target="_blank" href="essay/toc.html">《囧斋随笔》</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" id="惹是生非">
+                <div class="outer">
+                    <div class="inner">
+                        <a target="_blank" href="essay/toc.html">「惹是生非」</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" id="知乎">
+                <div class="outer">
+                    <div class="inner">谈笑风生＠知乎</div>
+                </div>
+            </div>
+            <div class="card" id="煎蛋">
+                <div class="outer">
+                    <div class="inner">谈笑风生＠九省通衢の煎蛋</div>
+                </div>
+            </div>
         </div>
     </header>
     <main>
