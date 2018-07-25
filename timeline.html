@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <meta lang="zh" charset="utf-8" />
+    <meta lang="zh" charset="UTF-8" />
     <title>动态</title>
     <style type="text/css">
         table {
@@ -18,11 +18,11 @@
             font-weight: bold;
         }
 
-        #timeline td ul {
+        td ul {
             line-height: 1.8rem;
         }
 
-        #timeline td a {
+        td a {
             display: inline-block;
             background-color: whitesmoke;
             color: blue;
@@ -32,14 +32,20 @@
             padding: 0.25rem;
         }
 
-        #timeline td a::before {
+        td a::before {
             content: '\1F517';
             margin: 0 0.25rem 0 0;
         }
 
-        #timeline td a:hover {
-            background-color: darkred;
-            color: white;
+        a[href^="http://"]::before,
+        a[href^="https://"]::before {
+            content: url(_res/external-link.svg);
+            margin: 0 0.25rem 0 0;
+        }
+
+        td a:hover {
+            background-color: darkblue;
+            color: yellow;
         }
 
         td,
@@ -49,8 +55,8 @@
         }
 
         th {
-            background-color: darkblue;
-            color: white;
+            background-color: wheat;
+            color: black;
             font-weight: bold;
             font-size: 1.25rem;
         }
@@ -91,6 +97,41 @@
         <tbody>
             <tr>
                 <td>
+                    <time>2018.07.26</time>
+                </td>
+                <td>
+                    <ul>
+                        <li>上传《囧斋随笔·与时俱进》内容：
+                            <ul>
+                                <li>
+                                    <a target="_blank" href="essay/advancing/011.html">三自排版运动（三）：CSS与XSLT</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="essay/advancing/012.html">三自排版运动（四）：XSLT与嵌入视频</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="essay/advancing/013.html">三自运动小结</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="essay/advancing/014.html">三自运动小结（续）</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="essay/advancing/015.html">三自运动小结（续之续）</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="essay/advancing/016.html">三自排版运动（五）：古色古香东洋风</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="essay/advancing/017.html">三自排版运动（六）：与时俱进西洋风</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
                     <time>2018.07.25</time>
                 </td>
                 <td>
@@ -117,7 +158,8 @@
                                 </li>
                             </ul>
                         </li>
-                        <li>制作<a target="_blank" href="essay/toc.html">《囧斋随笔》目录</a>上传，维护主页</li>
+                        <li>制作
+                            <a target="_blank" href="essay/toc.html">《囧斋随笔》目录</a>上传，维护主页</li>
                     </ul>
                 </td>
                 <td></td>
