@@ -25,6 +25,23 @@ p {
     font-family: 'Source Sans Pro', 'Clear Sans', 'Fira Sans', Arial, Helvetica, sans-serif;
 }
 
+:lang(el), :lang(grc) {
+    font-family:  'Source Sans Pro', 'Clear Sans', 'Fira Sans', Arial, Helvetica, sans-serif;
+}
+
+del {
+    margin: 0 0.25rem;
+    text-decoration: red double line-through;
+}
+
+ins {
+    margin: 0 0.25rem;
+    padding: 0.125rem 0.25rem;
+    font-style: normal;
+    text-decoration: none;
+    background-image: radial-gradient(farthest-corner at 0 0, yellow, red);
+}
+
 pre {
     width: 90%;
     margin: 1rem auto;
@@ -75,6 +92,14 @@ q:lang(en), q:lang(fr), q:lang(de), q:lang(it), q:lang(nl) {
     padding: 0.25rem;
 }
 
+q:lang(el), q:lang(grc) {
+    font-family: Symbola, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: darkblue;
+    padding: 0.25rem;
+}
+
 q::before {
     padding-right: 0.25rem;
 }
@@ -108,6 +133,7 @@ a {
     margin: 0 0.25rem;
     padding: 0.25rem;
     text-decoration: none;
+    color: steelblue;
 }
 
 a::before {
@@ -115,20 +141,13 @@ a::before {
     margin: 0 0.25rem 0 0;
 }
 
-a:link {
-    color: blue;
-}
-
-a:visited {
-    color: darkmagenta;
+a[href^="http://"]::before,
+a[href^="https://"]::before {
+    content: url(../_res/external-link.svg);
+    margin: 0 0.25rem 0 0;
 }
 
 a:hover {
-    background-color: darkblue;
-    color: white;
-}
-
-a:active {
     background-color: darkblue;
     color: yellow;
 }
