@@ -112,7 +112,7 @@ figure {
     margin: 0.5rem;
     padding: 0.5rem;
     border-radius: 0.5rem;
-    border: 1px dotted dimgray;
+    border: 1px dotted lightgray;
 }
 
 figcaption {
@@ -120,7 +120,7 @@ figcaption {
     max-width: 80%;
     text-align: center;
     margin: 0 auto;
-    padding: 0.5rem;
+    padding: 0.25rem 0 0.5rem 0;
 }
 
 img {
@@ -274,7 +274,8 @@ div.comment-content {
     clear: both;
 }
 
-blockquote span.author {
+blockquote span.author,
+div.forumpost span.author {
     padding: 0.5rem 0.25rem;
     border-bottom: 1px dashed dimgray;
 }
@@ -340,4 +341,15 @@ span.holy {
     font-size: 1.25rem;
     background: radial-gradient(yellow, red);
     border-radius: 0.5rem;
+}
+
+samp {
+    margin: 0 0.25rem;
+}
+
+div.forumpost {
+    margin: 0.75rem;
+    padding: 0.5rem;
+    border: 1px solid lightgray;
+    box-shadow: 0.25rem 0.25rem 0.5rem dimgray;
 }
