@@ -1,3 +1,7 @@
+:lang(en), :lang(fr), :lang(de), :lang(it), :lang(nl), :lang(es), :lang(la), :lang(grc), :lang(ru) {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 html {
     background-color: darkblue;
 }
@@ -21,6 +25,34 @@ p {
     line-height: 2rem;
 }
 
+mark {
+    margin: 1px;
+    padding: 1px;
+}
+
+em {
+    font-style: normal;
+    color: blue;
+}
+
+strong {
+    font-style: normal;
+    color: red;
+}
+
+del {
+    margin: 0 0.25rem;
+    text-decoration: red double line-through;
+}
+
+ins {
+    margin: 0 0.25rem;
+    padding: 0.125rem 0.25rem;
+    font-style: normal;
+    text-decoration: none;
+    background-image: radial-gradient(farthest-corner at 0 0, yellow, red);
+}
+
 pre.code {
     width: 90%;
     margin: 1rem auto;
@@ -38,11 +70,12 @@ pre.code {
 }
 
 code {
-    border: none;
-    background-color: black;
-    color: lime;
-    padding: 0.25rem 0.5rem;
-    font-family: 'Fira Code', Inconsolata, Consolas, 'Source Code Pro';
+    border: 1px solid lightgray;
+    background-color: whitesmoke;
+    color: darkred;
+    padding: 0.25rem;
+    font-family: Inconsolata, Consolas, 'Source Code Pro', monospace;
+    font-size: 90%;
 }
 
 blockquote {
@@ -55,8 +88,8 @@ blockquote {
 }
 
 cite {
-    margin: 1px 0.125rem;
-    padding: 1px 0.125rem;
+    margin: 1px;
+    padding: 1px;
     border-bottom: 1px dashed dimgray;
     font-style: normal;
 }
@@ -86,6 +119,7 @@ a {
     margin: 0 0.25rem;
     padding: 0.25rem;
     text-decoration: none;
+    color: steelblue;
 }
 
 a::before {
@@ -93,20 +127,13 @@ a::before {
     margin: 0 0.25rem 0 0;
 }
 
-a:link {
-    color: blue;
-}
-
-a:visited {
-    color: darkmagenta;
+a[href^="http://"]::before,
+a[href^="https://"]::before {
+    content: url(../RESOURCE/external-link.svg);
+    margin: 0 0.25rem 0 0;
 }
 
 a:hover {
-    background-color: darkblue;
-    color: white;
-}
-
-a:active {
     background-color: darkblue;
     color: yellow;
 }
@@ -152,7 +179,7 @@ div.linkcard a {
     padding: 0.5rem;
 }
 
-span.timestamp {
+time, span.timestamp {
     font-size: 125%;
     font-family: 'Symbola', 'Fira Code', 'Source Serif Pro', 'Source Sans Pro';
     font-variant-numeric: oldstyle-nums;
@@ -160,19 +187,23 @@ span.timestamp {
     padding: 0.25rem;
 }
 
-span.timestamp::before {
+time::before, span.timestamp::before {
     content: '［';
     margin: 0 0.125rem;
 }
 
-span.timestamp::after {
+time::after, span.timestamp::after {
     content: '］';
     margin: 0 0.125rem;
 }
 
 abbr {
-    margin: 1px 0.125rem;
-    padding: 1px 0.125rem;
+    margin: 1px;
+    padding: 1px;
+}
+
+abbr.place {
+    border-bottom: 1px solid darkblue;
 }
 
 abbr.person {
@@ -288,4 +319,22 @@ span.holy {
     font-size: 1.25rem;
     background: radial-gradient(yellow, red);
     border-radius: 0.5rem;
+}
+
+div.linkcard {
+    display: table;
+    width: 60%;
+    min-height: 3rem;
+    margin: 0.5rem auto;
+    padding: 0.5rem;
+    background-color: wheat;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+div.linkcard a {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0.5rem;
+    font-size: 150%;
 }
