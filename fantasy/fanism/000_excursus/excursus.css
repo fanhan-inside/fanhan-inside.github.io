@@ -19,3 +19,7 @@ span.math {
     color: blue;
     background-color: transparent;
 }
+
+ul {
+    line-height: 2rem;
+}

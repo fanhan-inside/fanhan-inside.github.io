@@ -7,9 +7,13 @@
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <style type="text/css">
+		html {
+			background-color: ivory;
+		}
         body {
+			background-color: white;
             width: 1440px;
-            margin: 10px auto;
+            margin: 16px auto;
         }
 
         iframe {
@@ -45,6 +49,7 @@
             font-size: 1.5rem;
             width: 10rem;
             text-align: center;
+			margin-left: 0.25rem;
             padding: 0.25rem;
             background: radial-gradient(black, #eee);
             color: white;
@@ -201,7 +206,9 @@
         </div>
         <div id="works" lang="zh">
             <h2>文集</h2>
+			<div style="padding-right: 0.25rem">
             <iframe src="corpus.html" height="600" scrolling="auto" marginwidth="0" marginheight="0"></iframe>
+			</div>
         </div>
         <div class="cardBox" id="nav">
             <div class="card" id="设定集">
@@ -242,10 +249,13 @@
     </header>
     <main>
         <h2>动态</h2>
+		<div style="padding: 0 0.25rem">
         <iframe src="timeline.html" height="600" scrolling="auto" marginwidth="0" marginheight="0"></iframe>
-
+		</div>
         <h2>文章列表</h2>
+		<div style="padding: 0 0.25rem">
         <iframe src="articles.html" height="600" scrolling="auto" marginwidth="0" marginheight="0"></iframe>
+		</div>
     </main>
     <footer>
         <span>Copyright© fANhAN iNSiDE, All Rights Reserved.</span>
