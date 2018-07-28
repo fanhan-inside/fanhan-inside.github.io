@@ -1,0 +1,21 @@
+@import url(RESOURCE/lang.css);
+@import url(RESOURCE/emphasis.css);
+@import url(RESOURCE/math.css);
+
+div.linkcard {
+    display: table;
+    width: 80%;
+    min-height: 3rem;
+    margin: 0.5rem auto;
+    padding: 0.5rem;
+    background-color: wheat;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+div.linkcard a {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0.5rem;
+    font-size: 125%;
+}

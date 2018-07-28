@@ -9,17 +9,6 @@ main {
     background: ivory;
 }
 
-span.math {
-    text-indent: 0;
-    display: inline-block;
-    font-family: Symbola;
-    font-size: 1.25rem;
-    /* margin: 0.25rem; */
-    padding: 0.25rem;
-    color: blue;
-    background-color: transparent;
-}
-
 ul {
     line-height: 2rem;
 }

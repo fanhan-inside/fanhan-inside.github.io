@@ -1,17 +1,5 @@
 @import url(../fantasy.css);
 
-q:lang(en), q:lang(fr), q:lang(de), q:lang(it), q:lang(nl), q:lang(es), q:lang(la), q:lang(grc), q:lang(ru) {
-    font-family: Symbola, Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    font-size: 1.25rem;
-    color: darkblue;
-    padding: 0.25rem;
-}
-
-q::before {
-    padding-right: 0.25rem;
-}
-
 q::after {
     padding-left: 0.25rem;
 }
@@ -60,7 +48,7 @@ section {
     width: 90%;
     margin: 1rem auto;
     padding: 0 1rem;
-    background-color: ivory;
+    background-color: lightgoldenrodyellow;
     border: 1px solid lightgray;
     box-shadow: 0.25rem 0.25rem 0.5rem dimgray;
 }
