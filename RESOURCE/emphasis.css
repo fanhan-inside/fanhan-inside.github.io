@@ -1,0 +1,92 @@
+mark {
+    margin: 1px;
+    padding: 1px;
+}
+
+b {
+    font-weight: bold;
+}
+
+i {
+    font-style: oblique;
+}
+
+em {
+    font-style: normal;
+    color: blue;
+}
+
+strong {
+    font-weight: bold;
+    font-style: normal;
+    color: red;
+}
+
+del {
+    margin: 0 2px;
+    padding: 0 2px;
+    text-decoration: red double line-through;
+}
+
+ins {
+    margin: 0 2px;
+    padding: 2px 2px;
+    font-style: normal;
+    text-decoration: none;
+    background-image: radial-gradient(farthest-corner at 0 0, yellow, red);
+}
+
+cite {
+    margin: 1px;
+    padding: 1px;
+    font-style: normal;
+    text-emphasis: none;
+    text-decoration: none;
+    border-bottom: 1px solid blue;
+}
+
+abbr {
+    margin: 1px;
+    padding: 1px;
+    text-emphasis: none;
+    text-decoration: none;
+    border-bottom: 1px solid black;
+}
+
+abbr.company {
+    border-bottom: 1px solid dimgray;
+}
+
+abbr.software {
+    border-bottom: 1px dotted dimgray;
+}
+
+abbr.term {
+    border-bottom: 1px solid darkcyan;
+}
+
+abbr.person {
+    border-bottom: 1px solid red;
+}
+
+abbr.place {
+    border-bottom: 1px solid darkblue;
+}
+
+abbr.rolename {
+    border-bottom: 1px solid green;
+}
+
+abbr.username {
+    font-weight: bold;
+}
+
+abbr.username::before {
+    content: '｛';
+    margin-right: 1px;
+}
+
+abbr.username::after {
+    content: '｝';
+    margin-left: 1px;
+}
