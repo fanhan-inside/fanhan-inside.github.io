@@ -48,15 +48,6 @@ code {
     font-size: 90%;
 }
 
-blockquote {
-    background: lightcyan;
-    border-top: 1px dotted steelblue;
-    border-bottom: 1px dotted steelblue;
-    border-left: 0.75rem solid steelblue;
-    margin: 0.75rem;
-    padding: 0.5rem;
-}
-
 figure {
     margin: 0.5rem;
     padding: 0.5rem;
@@ -123,49 +114,6 @@ figure a:hover {
 figure a:active {
     background-color: initial;
     color: initial;
-}
-
-time, span.timestamp {
-    font-size: 125%;
-    font-family: 'Symbola', 'Fira Code', 'Source Serif Pro', 'Source Sans Pro';
-    font-variant-numeric: oldstyle-nums;
-    margin: 0 0.125rem;
-    padding: 0.25rem;
-}
-
-time::before, span.timestamp::before {
-    content: '［';
-    margin: 0 0.125rem;
-}
-
-time::after, span.timestamp::after {
-    content: '］';
-    margin: 0 0.125rem;
-}
-
-div.comment {
-    margin: 1rem;
-    padding: 1rem;
-    border: 1px solid dimgray;
-    border-radius: 1rem;
-    box-shadow: 0.25rem 0.25rem 0.5rem dimgray;
-}
-
-div.comment-header {
-    border-bottom: 1px dashed dimgray;
-    min-height: 2rem;
-}
-
-div.comment-header span.timestamp {
-    float: right;
-}
-
-div.comment-header span.author {
-    margin-top: 1rem;
-}
-
-div.comment-content {
-    clear: both;
 }
 
 blockquote span.author {
