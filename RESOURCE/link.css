@@ -1,0 +1,21 @@
+a {
+    margin: 0 0.25rem;
+    padding: 0.25rem;
+    text-decoration: none;
+    color: steelblue;
+}
+
+a::before {
+    content: "\1F517";
+    margin: 0 0.25rem 0 0;
+}
+
+a[href^="http://"]::before, a[href^="https://"]::before {
+    content: url(external-link.svg);
+    margin: 0 0.25rem 0 0;
+}
+
+a:hover {
+    background-color: darkblue;
+    color: yellow;
+}

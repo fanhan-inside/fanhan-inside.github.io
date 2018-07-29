@@ -1,0 +1,44 @@
+figure {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px dotted dimgray;
+}
+
+figcaption {
+    min-width: 20%;
+    max-width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0.5rem;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+figure a::before {
+    content: none;
+}
+
+figure a:link {
+    background-color: initial;
+    color: initial;
+}
+
+figure a:visited {
+    background-color: initial;
+    color: initial;
+}
+
+figure a:hover {
+    background-color: initial;
+    color: initial;
+}
+
+figure a:active {
+    background-color: initial;
+    color: initial;
+}

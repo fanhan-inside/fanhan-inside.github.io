@@ -2,11 +2,11 @@
 
 body{
     filter: opacity(97%);
+    background-color: whitesmoke;
 }
 
 main {
-    padding: 1rem;
-    background: ivory;
+    background-color: ivory;
 }
 
 ul {
