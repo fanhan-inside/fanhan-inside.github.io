@@ -1,0 +1,19 @@
+time {
+    font-size: 125%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-variant-numeric: oldstyle-nums;
+    margin: 0 1px;
+    padding: 0 1px;
+}
+
+time::before {
+    content: '［';
+    margin: 0 1px;
+    padding: 0 1px;
+}
+
+time::after {
+    content: '］';
+    margin: 0 1px;
+    padding: 0 1px;
+}

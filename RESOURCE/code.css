@@ -1,0 +1,37 @@
+samp {
+    margin: 0 0.25rem;
+}
+
+code {
+    border: 1px solid lightgray;
+    background-color: whitesmoke;
+    color: darkred;
+    padding: 0.25rem;
+    font-family: Inconsolata, Consolas, 'Source Code Pro', monospace;
+    font-size: 90%;
+}
+
+pre {
+    width: 90%;
+    margin: 1rem auto;
+    padding: 0.25rem 0.5rem;
+    word-wrap: normal;
+    white-space: pre;
+    overflow: auto;
+}
+
+pre.code {
+    width: 90%;
+    margin: 1rem auto;
+    padding: 1rem;
+    line-height: 1.25rem;
+    border: 1px dotted dimgray;
+    background-color: black;
+    color: lightgray;
+    padding: 0.25rem 0.5rem;
+    font-family: 'Fira Code', Inconsolata, Consolas, 'Source Code Pro', monospace;
+    font-size: 80%;
+    word-wrap: normal;
+    white-space: pre;
+    overflow: auto;
+}

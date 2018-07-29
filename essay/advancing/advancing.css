@@ -1,27 +1,8 @@
 @import url(../essay.css);
 
-article {
-    margin: 1rem 1rem 2rem 1rem;
-    padding: 1rem;
-    border: 1px solid lightgray;
-    box-shadow: 0.5rem 0.5rem 0.75rem dimgray;
-    background-color: BlanchedAlmond;
+body {
+    width: 1280px;
 }
-
-section {
-    margin: 1rem;
-    padding: 1rem;
-    border-radius: 1rem;
-    background-color: Moccasin;
-}
-
-div.subarticle {
-    margin: 0.75rem;
-    padding: 0.5rem;
-    border: 1px solid lightgray;
-    box-shadow: 0.25rem 0.25rem 0.5rem dimgray;
-}
-
 h1 {
     background: radial-gradient(farthest-corner at 0 0, white, red);
 }

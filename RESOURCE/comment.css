@@ -1,0 +1,25 @@
+div.comment, div.bulletin, div.message {
+    background-color: transparent;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid lightgray;
+    box-shadow: 0.25rem 0.25rem 0.5rem dimgray;
+}
+
+span.message-header {
+    padding-bottom: 1px;
+    border-bottom: 1px dashed gray;
+}
+
+div.post-header {
+    border-bottom: 1px dashed dimgray;
+    min-height: 2rem;
+}
+
+div.post-header time {
+    float: right;
+}
+
+div.post-content {
+    clear: both;
+}

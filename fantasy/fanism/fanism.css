@@ -1,9 +1,5 @@
 @import url(../fantasy.css);
 
-q::after {
-    padding-left: 0.25rem;
-}
-
 html {
     background-color: white;
 }
@@ -14,7 +10,8 @@ body {
 
 main {
     width: 1220px;
-    margin: 0 auto;
+    margin: 1rem auto;
+    padding: 1rem;
 }
 
 header {
@@ -34,21 +31,4 @@ footer>div.footer {
     padding: 0.5rem 2rem;
     max-width: 60%;
     border-top: 3px double darkblue;
-}
-
-article {
-    margin: 1rem 1rem 2rem 1rem;
-    padding: 1rem;
-    border: 1px solid lightgray;
-    box-shadow: 0.5rem 0.5rem 0.75rem dimgray;
-    background-color: antiquewhite;
-}
-
-section {
-    width: 90%;
-    margin: 1rem auto;
-    padding: 0 1rem;
-    background-color: lightgoldenrodyellow;
-    border: 1px solid lightgray;
-    box-shadow: 0.25rem 0.25rem 0.5rem dimgray;
 }

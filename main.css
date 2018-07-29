@@ -1,6 +1,36 @@
 @import url(RESOURCE/lang.css);
 @import url(RESOURCE/emphasis.css);
 @import url(RESOURCE/math.css);
+@import url(RESOURCE/comment.css);
+@import url(RESOURCE/time.css);
+@import url(RESOURCE/heading.css);
+@import url(RESOURCE/code.css);
+@import url(RESOURCE/link.css);
+@import url(RESOURCE/figure.css);
+@import url(RESOURCE/block.css);
+
+html {
+    background-color: dimgray;
+}
+
+body {
+    width: 1440px;
+    margin: 1rem auto;
+    padding: 1rem 2rem;
+    background-color: ivory;
+}
+
+footer {
+    margin-top: 2rem;
+    width: 100%;
+    border-top: 3px solid silver;
+    font-size: 1.25rem;
+}
+
+p {
+    text-indent: 2rem;
+    line-height: 2rem;
+}
 
 div.linkcard {
     display: table;
@@ -18,4 +48,14 @@ div.linkcard a {
     vertical-align: middle;
     padding: 0.5rem;
     font-size: 125%;
+}
+
+blockquote {
+    background: cornsilk;
+    border-top: 1px dotted;
+    border-bottom: 1px dotted;
+    border-left: 0.75rem solid;
+    border-color: lightsalmon;
+    margin: 0.75rem;
+    padding: 0.5rem;
 }

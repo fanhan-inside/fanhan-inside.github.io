@@ -79,6 +79,7 @@ abbr.rolename {
 
 abbr.username {
     font-weight: bold;
+    border: none;
 }
 
 abbr.username::before {
@@ -89,4 +90,26 @@ abbr.username::before {
 abbr.username::after {
     content: '｝';
     margin-left: 1px;
+}
+
+span.tip {
+    color: dimgray;
+}
+
+span.tip::before {
+    content: '〔';
+}
+
+span.tip::after {
+    content: '〕';
+}
+
+span.holy {
+    margin: 0 0.5rem;
+    padding: 0.5rem;
+    text-indent: none;
+    font-weight: bold;
+    font-size: 1.25rem;
+    background: radial-gradient(yellow, red);
+    border-radius: 0.5rem;
 }
