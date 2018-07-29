@@ -1,7 +1,7 @@
 span.math {
     display: inline-block;
     text-indent: 0;
-    font-family: "Latin Modern Math", Arial, Helvetica, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1.25rem;
     margin: 1px;
     padding: 1px;
@@ -10,12 +10,19 @@ span.math {
 }
 
 span.math var {
-    font-family: 'Times New Roman', Times, serif;
-    margin: 1px;
     padding: 1px;
 }
 
 span.math sup, span.math sub {
-    margin: 1px;
     padding: 1px;
+}
+
+span.math sub {
+    font-feature-settings: "subs" 1;
+    font-variant-position: sub;
+}
+
+span.math sup {
+    font-feature-settings: "sups" 1;
+    font-variant-position: super;
 }

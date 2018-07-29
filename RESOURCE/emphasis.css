@@ -79,6 +79,7 @@ abbr.rolename {
 
 abbr.username {
     font-weight: bold;
+    border: none;
 }
 
 abbr.username::before {

@@ -11,8 +11,10 @@ article {
 section {
     margin: 1rem;
     padding: 1rem;
-    border-radius: 1rem;
-    background-color: Moccasin;
+    border: 1px solid lightgray;
+    border-radius: 0.5rem;
+    background-color: beige;
+    box-shadow: 0.25rem 0.25rem 0.5rem dimgray;
 }
 
 div.subarticle {
