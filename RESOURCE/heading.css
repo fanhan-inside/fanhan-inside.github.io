@@ -1,0 +1,34 @@
+h1 {
+    padding: 1rem;
+    background: radial-gradient(farthest-corner at 0 0, yellow, red);
+}
+
+h2 {
+    display: inline-block;
+    padding: 0.5rem;
+    border-bottom: 3px double dimgray;
+}
+
+h3 {
+    display: inline-block;
+    padding: 0.25rem;
+    border-bottom: 2px solid dimgray;
+}
+
+h4 {
+    display: inline-block;
+    padding: 0.25rem;
+    border-bottom: 2px dashed dimgray;
+}
+
+h5 {
+    display: inline-block;
+    padding: 0.25rem;
+    border-bottom: 1px solid dimgray;
+}
+
+h6 {
+    display: inline-block;
+    padding: 0.25rem;
+    border-bottom: 1px dashed dimgray;
+}
