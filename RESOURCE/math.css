@@ -26,3 +26,15 @@ span.math sup {
     font-feature-settings: "sups" 1;
     font-variant-position: super;
 }
+
+span.frac {
+    font-family: "Symbola";
+    font-size: 125%;
+    font-variant-numeric: diagonal-fractions;
+}
+
+span.onum {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 125%;
+    font-variant-numeric: oldstyle-nums;
+}

@@ -45,6 +45,15 @@ cite {
     border-bottom: 1px solid blue;
 }
 
+dfn {
+    margin: 1px;
+    padding: 1px;
+    font-style: normal;
+    text-emphasis: none;
+    text-decoration: none;
+    border-bottom: 1px solid darkcyan;
+}
+
 abbr {
     margin: 1px;
     padding: 1px;
@@ -105,11 +114,21 @@ span.tip::after {
 }
 
 span.holy {
-    margin: 0 0.5rem;
-    padding: 0.5rem;
+    margin: 0 0.25rem;
+    padding: 0.25rem;
     text-indent: none;
     font-weight: bold;
-    font-size: 1.25rem;
+    font-size: 1rem;
     background: radial-gradient(yellow, red);
+    border-radius: 0.5rem;
+}
+
+span.evil {
+    margin: 0 0.25rem;
+    padding: 0.25rem;
+    text-indent: none;
+    font-weight: bold;
+    font-size: 1rem;
+    background: radial-gradient(lime, dimgray);
     border-radius: 0.5rem;
 }
