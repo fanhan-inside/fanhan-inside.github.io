@@ -8,6 +8,7 @@
 @import url(RESOURCE/link.css);
 @import url(RESOURCE/figure.css);
 @import url(RESOURCE/block.css);
+@import url(RESOURCE/span.css);
 
 html {
     background-color: dimgray;
