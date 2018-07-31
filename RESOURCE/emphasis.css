@@ -22,6 +22,12 @@ strong {
     color: red;
 }
 
+s {
+    margin: 0 2px;
+    padding: 0 2px;
+    text-decoration: red wavy line-through;
+}
+
 del {
     margin: 0 2px;
     padding: 0 2px;
@@ -45,13 +51,23 @@ cite {
     border-bottom: 1px solid blue;
 }
 
-dfn {
+
+dfn { /* 视同<abbr class="term"> */
     margin: 1px;
     padding: 1px;
     font-style: normal;
     text-emphasis: none;
     text-decoration: none;
     border-bottom: 1px solid darkcyan;
+}
+
+u { /* 视同<abbr> */
+    margin: 1px;
+    padding: 1px;
+    font-style: normal;
+    text-emphasis: none;
+    text-decoration: none;
+    border-bottom: 1px solid black;
 }
 
 abbr {
