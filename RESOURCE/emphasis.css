@@ -135,8 +135,8 @@ span.holy {
     text-indent: none;
     font-weight: bold;
     font-size: 1rem;
-    background: radial-gradient(yellow, red);
-    border-radius: 0.5rem;
+    background: linear-gradient(yellow, red);
+    border-radius: 0.25rem;
 }
 
 span.evil {
@@ -145,6 +145,6 @@ span.evil {
     text-indent: none;
     font-weight: bold;
     font-size: 1rem;
-    background: radial-gradient(lime, dimgray);
-    border-radius: 0.5rem;
+    background: linear-gradient(lime, dimgray);
+    border-radius: 0.25rem;
 }
