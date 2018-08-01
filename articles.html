@@ -3,7 +3,95 @@
 <head>
     <meta lang="zh" charset="UTF-8" />
     <title>文章列表</title>
+    <link rel="stylesheet" type="text/css" href="main.css" />
     <style type="text/css">
+        html {
+            background-color: transparent;
+        }
+
+        body {
+            background-color: transparent;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .cardBox {
+            box-sizing: border-box;
+            justify-content: center;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            min-width: 26rem;
+            min-height: 3rem;
+            border: 1px solid gray;
+            box-shadow: 0.25rem 0.25rem 0.5rem dimgray;
+            border-top: 3px double black;
+            padding: 0.125rem;
+            margin: 0.5rem;
+            font-size: 125%;
+            text-align: center;
+        }
+
+        .card div.outer {
+            display: table;
+            height: 100%;
+            width: 100%;
+        }
+
+        .card div.inner {
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        .card a {
+            display: block;
+            color: blue;
+            text-decoration: none;
+        }
+
+        .card a::before, .card a::after {
+            content: none;
+            margin: 0;
+        }
+
+        .card a:hover {
+            background-color: transparent;
+            color: blue;
+            text-decoration-line: overline;
+        }
+
+        .card a:hover::before, .card a:hover::after {
+            content: '\1F517';
+        }
+
+        #随笔 {
+            background: radial-gradient(farthest-corner at 0 0, white, red);
+        }
+
+        #惹是生非 {
+            background: radial-gradient(farthest-corner at 0 0, yellow, red);
+        }
+
+        #设定集 {
+            background: radial-gradient(farthest-corner at 0 0, white, lightskyblue);
+        }
+
+        #恶补记 {
+            background: radial-gradient(farthest-corner at 0 0, lightskyblue, white);
+        }
+
+        #知乎 {
+            background: radial-gradient(farthest-corner at 0 0, lime, white);
+        }
+
+        #煎蛋 {
+            background: radial-gradient(farthest-corner at 0 0, white, lime);
+        }
+
         ul {
             margin: 1rem;
             padding: 1rem;
@@ -13,41 +101,10 @@
         table {
             width: 98%;
             margin: 1rem auto;
-            border-collapse: collapse;
         }
 
-        caption {
-            padding: 1rem;
-            font-size: 1.5rem;
-            font-weight: bold;
-        }
-
-        td,
-        th {
-            border: 1px solid dimgray;
-            padding: 0.5rem;
-        }
-
-        th {
-            background-color: lightblue;
-            color: black;
-            font-weight: bold;
-            font-size: 1.25rem;
-        }
-
-        td {
-            text-align: center;
-            vertical-align: center;
-        }
-
-        time {
-            font-weight: bold;
-            font-family: 'Symbola', 'Fira Code', 'Fira Sans', 'Source Serif Pro', 'Source Sans Pro';
-            font-variant-numeric: oldstyle-nums;
-        }
-
-        td time {
-            font-size: 1.25rem;
+        td time::before, td time::after {
+            content: none;
         }
 
         td:nth-child(2) {
@@ -63,20 +120,11 @@
         }
 
         tr:hover {
-            background-color: #FFFDD0;
-            /*cream*/
+            background-color: lightgoldenrodyellow;
         }
 
         td a {
             display: block;
-            color: blue;
-            text-decoration: none;
-            padding: 0.25rem;
-        }
-
-        td a:hover {
-            background-color: darkblue;
-            color: yellow;
         }
 
         td.随笔 {
@@ -105,10 +153,56 @@
     </style>
 </head>
 <body>
+    <header>
+        <div class="cardBox" id="nav">
+                <div class="card" id="设定集">
+                    <div class="outer">
+                        <div class="inner">
+                            <a target="_blank" href="fantasy/fanism/toc.html">《范版西幻设定集》</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" id="随笔">
+                    <div class="outer">
+                        <div class="inner">
+                            <a target="_blank" href="essay/toc.html">《囧斋随笔》</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" id="知乎">
+                    <div class="outer">
+                        <div class="inner">
+                            <a target="_blank" href="at_zhihu/toc.html">谈笑风生＠知乎</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" id="恶补记">
+                    <div class="outer">
+                        <div class="inner">
+                            <a target="_blank" href="mathematics/fanism/toc.html">《范版数学恶补记》</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" id="惹是生非">
+                    <div class="outer">
+                        <div class="inner">
+                            <a target="_blank" href="essay/toc.html">「惹是生非」</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" id="煎蛋">
+                    <div class="outer">
+                        <div class="inner">
+                            <a target="_blank" href="at_jandan/toc.html">谈笑风生＠九省通衢の煎蛋</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </header>
     <table id="article-list">
-        <caption>更新于［<time>2018-07-27</time>］</caption>
+        <caption>更新于<time>2018-07-27</time></caption>
         <colgroup>
-            <col style="width: 15%;">
+            <col style="width: 15em;">
             <col style="text-align: left;">
             <col span="4" style="width: 10%;">
             <col>

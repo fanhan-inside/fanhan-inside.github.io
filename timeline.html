@@ -4,18 +4,21 @@
 <head>
     <meta lang="zh" charset="UTF-8" />
     <title>动态</title>
+    <link rel="stylesheet" type="text/css" href="main.css" />
     <style type="text/css">
+        html {
+            background-color: transparent;
+        }
+        body {
+            background-color: transparent;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
         table {
             width: 98%;
             margin: 1rem auto;
-            border-collapse: collapse;
-            column-gap: 1rem;
-        }
-
-        caption {
-            padding: 1rem;
-            font-size: 1.5rem;
-            font-weight: bold;
         }
 
         td ul {
@@ -32,45 +35,8 @@
             padding: 0.25rem;
         }
 
-        td a::before {
-            content: '\1F517';
-            margin: 0 0.25rem 0 0;
-        }
-
-        a[href^="http://"]::before,
-        a[href^="https://"]::before {
-            content: url(RESOURCE/external-link.svg);
-            margin: 0 0.25rem 0 0;
-        }
-
-        td a:hover {
-            background-color: darkblue;
-            color: yellow;
-        }
-
-        td,
-        th {
-            border: 1px solid dimgray;
-            padding: 10px 10px;
-        }
-
-        th {
-            background-color: wheat;
-            color: black;
-            font-weight: bold;
-            font-size: 1.25rem;
-        }
-
-        td {
-            text-align: center;
-            vertical-align: center;
-        }
-
-        td time {
-            font-size: 1.25rem;
-            font-weight: bold;
-            font-family: 'Symbola', 'Fira Code', 'Fira Sans', 'Source Serif Pro', 'Source Sans Pro', serif;
-            font-variant-numeric: oldstyle-nums;
+        td time::before, td time::after {
+            content: none;
         }
 
         td:nth-child(2) {
@@ -87,9 +53,9 @@
     <table id="timeline">
         <caption>斗争新动向</caption>
         <colgroup>
-            <col style="width: 10%">
+            <col style="width: 10em">
             <col>
-            <col style="width: 10%">
+            <col>
         </colgroup>
         <thead>
             <tr>

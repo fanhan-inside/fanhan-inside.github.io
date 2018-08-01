@@ -11,26 +11,19 @@
         }
 
         body {
-            background-color: antiquewhite;
+            /* background-color: antiquewhite; */
         }
 
         footer {
             margin-top: 2rem;
             width: 100%;
             border-top: 3px solid silver;
-            font-size: 150%;
-        }
-
-        h1 {
-            padding: 1rem;
-            background: radial-gradient(farthest-corner at 0 0, yellow, red);
+            text-align: left;
         }
 
         table {
             width: 98%;
             margin: 0.5rem auto;
-            border-collapse: collapse;
-            column-gap: 0.5rem;
         }
 
         tr:nth-child(odd) {
@@ -45,24 +38,6 @@
             background-color: lightgoldenrodyellow;
         }
 
-        td,
-        th {
-            border: 1px solid dimgray;
-            padding: 10px 10px;
-        }
-
-        th {
-            background-color: wheat;
-            color: black;
-            font-weight: bold;
-            font-size: 1.25rem;
-        }
-
-        td {
-            text-align: center;
-            vertical-align: center;
-        }
-
         td:nth-child(3) {
             text-align: left;
         }
@@ -71,15 +46,7 @@
             display: block;
         }
 
-        td time {
-            font-size: 150%;
-        }
-
-        td time::before {
-            content: none;
-        }
-
-        td time::after {
+        td time::before, td time::after {
             content: none;
         }
     </style>
@@ -219,7 +186,9 @@
     </main>
 
     <footer>
-        <p>范狂夫<time>2018.7.28</time>囧斋</p>
+        <p>更新于<time>2018.7.28</time></p>
+        <p>范狂夫</p>
+        <p>囧斋</p>
     </footer>
 </body>
 

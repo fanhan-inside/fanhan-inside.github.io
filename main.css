@@ -9,6 +9,7 @@
 @import url(RESOURCE/figure.css);
 @import url(RESOURCE/block.css);
 @import url(RESOURCE/span.css);
+@import url(RESOURCE/table.css);
 
 html {
     background-color: dimgray;
