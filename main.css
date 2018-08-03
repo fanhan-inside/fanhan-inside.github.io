@@ -22,7 +22,7 @@ body {
     background-color: ivory;
 }
 
-footer {
+footer, div.footer {
     margin-top: 2rem;
     width: 100%;
     border-top: 3px solid silver;
