@@ -11,26 +11,19 @@
         }
 
         body {
-            background-color: antiquewhite;
+            /* background-color: antiquewhite; */
         }
 
         footer {
             margin-top: 2rem;
             width: 100%;
             border-top: 3px solid silver;
-            font-size: 150%;
-        }
-
-        h1 {
-            padding: 1rem;
-            background: radial-gradient(farthest-corner at 0 0, yellow, red);
+            text-align: left;
         }
 
         table {
             width: 98%;
             margin: 0.5rem auto;
-            border-collapse: collapse;
-            column-gap: 0.5rem;
         }
 
         tr:nth-child(odd) {
@@ -45,24 +38,6 @@
             background-color: lightgoldenrodyellow;
         }
 
-        td,
-        th {
-            border: 1px solid dimgray;
-            padding: 10px 10px;
-        }
-
-        th {
-            background-color: wheat;
-            color: black;
-            font-weight: bold;
-            font-size: 1.25rem;
-        }
-
-        td {
-            text-align: center;
-            vertical-align: center;
-        }
-
         td:nth-child(3) {
             text-align: left;
         }
@@ -71,15 +46,7 @@
             display: block;
         }
 
-        td time {
-            font-size: 150%;
-        }
-
-        td time::before {
-            content: none;
-        }
-
-        td time::after {
+        td time::before, td time::after {
             content: none;
         }
     </style>
@@ -183,43 +150,45 @@
                 <tr><td>35</td><td><time datetime="2017-11-12">2017.11.12, Solis</time></td><td>作品相关：注释（卅三）</td><td><a target="_blank" href="000_excursus/000-035.html">正常</a></td><td></td></tr>
                 <tr><td>36</td><td><time datetime="2017-11-13">2017.11.13, Lunae</time></td><td>作品相关：注释（卅四）</td><td><a target="_blank" href="000_excursus/000-036.html">正常</a></td><td></td></tr>
                 <tr><td>37</td><td><time datetime="2017-11-14">2017.11.14, Martis</time></td><td>作品相关：注释（卅五）</td><td><a target="_blank" href="000_excursus/000-037.html">正常</a></td><td></td></tr>
-                <tr><td>38</td><td><time datetime="2017-11-14">2017.11.14</time></td><td>作品相关：注释（卅六）</td><td></td><td></td></tr>
-                <tr><td>39</td><td><time datetime="2017-11-15">2017.11.15</time></td><td>作品相关：注释（卅七）</td><td></td><td></td></tr>
-                <tr><td>40</td><td><time datetime="2017-11-15">2017.11.15</time></td><td>作品相关：注释（卅八）</td><td></td><td></td></tr>
-                <tr><td>41</td><td><time datetime="2017-11-15">2017.11.15</time></td><td>作品相关：注释（卅九）</td><td></td><td></td></tr>
-                <tr><td>42</td><td><time datetime="2017-11-16">2017.11.16</time></td><td>作品相关：注释（四十）</td><td></td><td></td></tr>
-                <tr><td>43</td><td><time datetime="2017-11-17">2017.11.17</time></td><td>作品相关：注释（卌一）</td><td></td><td></td></tr>
-                <tr><td>44</td><td><time datetime="2017-11-17">2017.11.17</time></td><td>作品相关：注释（卌二）</td><td></td><td></td></tr>
-                <tr><td>45</td><td><time datetime="2017-11-18">2017.11.18</time></td><td>作品相关：注释（卌三）</td><td></td><td></td></tr>
-                <tr><td>46</td><td><time datetime="2017-11-18">2017.11.18</time></td><td>作品相关：注释（卌四）</td><td></td><td></td></tr>
-                <tr><td>47</td><td><time datetime="2017-11-19">2017.11.19</time></td><td>作品相关：注释（卌五）</td><td></td><td></td></tr>
-                <tr><td>48</td><td><time datetime="2017-11-19">2017.11.19</time></td><td>作品相关：注释（卌六）</td><td></td><td></td></tr>
-                <tr><td>49</td><td><time datetime="2017-11-20">2017.11.20</time></td><td>作品相关：注释（卌七）</td><td></td><td></td></tr>
-                <tr><td>50</td><td><time datetime="2017-11-21">2017.11.21</time></td><td>作品相关：注释（卌八）</td><td></td><td></td></tr>
-                <tr><td>51</td><td><time datetime="2017-11-21">2017.11.21</time></td><td>作品相关：注释（卌九）</td><td></td><td></td></tr>
-                <tr><td>52</td><td><time datetime="2017-11-22">2017.11.22</time></td><td>作品相关：注释（五十）</td><td></td><td></td></tr>
-                <tr><td>53</td><td><time datetime="2017-11-22">2017.11.22</time></td><td>作品相关：注释（５１）</td><td></td><td></td></tr>
-                <tr><td>54</td><td><time datetime="2017-11-23">2017.11.23</time></td><td>作品相关：注释（５２）</td><td></td><td></td></tr>
-                <tr><td>55</td><td><time datetime="2017-11-24">2017.11.24</time></td><td>作品相关：注释（５３）</td><td></td><td></td></tr>
-                <tr><td>56</td><td><time datetime="2017-11-24">2017.11.24</time></td><td>作品相关：注释（５４）</td><td></td><td></td></tr>
-                <tr><td>57</td><td><time datetime="2017-11-24">2017.11.24</time></td><td>作品相关：注释（５５）</td><td></td><td></td></tr>
-                <tr><td>58</td><td><time datetime="2017-11-25">2017.11.25</time></td><td>作品相关：注释（５６）</td><td></td><td></td></tr>
-                <tr><td>59</td><td><time datetime="2017-11-25">2017.11.25</time></td><td>作品相关：注释（５７）</td><td></td><td></td></tr>
-                <tr><td>60</td><td><time datetime="2017-11-26">2017.11.26</time></td><td>作品相关：注释（５８）</td><td></td><td></td></tr>
-                <tr><td>61</td><td><time datetime="2017-11-27">2017.11.27</time></td><td>作品相关：注释（５９）</td><td></td><td></td></tr>
-                <tr><td>62</td><td><time datetime="2017-11-27">2017.11.27</time></td><td>作品相关：注释（６０）</td><td></td><td></td></tr>
-                <tr><td>63</td><td><time datetime="2017-11-27">2017.11.27</time></td><td>作品相关：注释（６１）</td><td></td><td></td></tr>
-                <tr><td>64</td><td><time datetime="2017-11-27">2017.11.27</time></td><td>作品相关：注释（６２）</td><td></td><td></td></tr>
-                <tr><td>65</td><td><time datetime="2017-11-28">2017.11.28</time></td><td>作品相关：注释（６３）</td><td></td><td></td></tr>
-                <tr><td>66</td><td><time datetime="2017-11-28">2017.11.28</time></td><td>作品相关：注释（６４）</td><td></td><td></td></tr>
-                <tr><td>67</td><td><time datetime="2017-11-28">2017.11.28</time></td><td>作品相关：注释（６５）</td><td></td><td></td></tr>
-                <tr><td>68</td><td><time datetime="2017-11-28">2017.11.28</time></td><td>作品相关：了却一桩心事</td><td></td><td></td></tr>
+                <tr><td>38</td><td><time datetime="2017-11-14">2017.11.14, Martis</time></td><td>作品相关：注释（卅六）</td><td><a target="_blank" href="000_excursus/000-038.html">正常</a></td><td></td></tr>
+                <tr><td>39</td><td><time datetime="2017-11-15">2017.11.15, Mercurii</time></td><td>作品相关：注释（卅七）</td><td><a target="_blank" href="000_excursus/000-039.html">正常</a></td><td></td></tr>
+                <tr><td>40</td><td><time datetime="2017-11-15">2017.11.15, Mercurii</time></td><td>作品相关：注释（卅八）</td><td><a target="_blank" href="000_excursus/000-040.html">正常</a></td><td></td></tr>
+                <tr><td>41</td><td><time datetime="2017-11-15">2017.11.15, Mercurii</time></td><td>作品相关：注释（卅九）</td><td><a target="_blank" href="000_excursus/000-041.html">正常</a></td><td></td></tr>
+                <tr><td>42</td><td><time datetime="2017-11-16">2017.11.16, Iovis</time></td><td>作品相关：注释（四十）</td><td><a target="_blank" href="000_excursus/000-042.html">正常</a></td><td></td></tr>
+                <tr><td>43</td><td><time datetime="2017-11-17">2017.11.17, Venelis</time></td><td>作品相关：注释（卌一）</td><td><a target="_blank" href="000_excursus/000-043.html">正常</a></td><td></td></tr>
+                <tr><td>44</td><td><time datetime="2017-11-17">2017.11.17, Venelis</time></td><td>作品相关：注释（卌二）</td><td><a target="_blank" href="000_excursus/000-044.html">正常</a></td><td></td></tr>
+                <tr><td>45</td><td><time datetime="2017-11-18">2017.11.18, Saturni</time></td><td>作品相关：注释（卌三）</td><td><a target="_blank" href="000_excursus/000-045.html">正常</a></td><td></td></tr>
+                <tr><td>46</td><td><time datetime="2017-11-18">2017.11.18, Saturni</time></td><td>作品相关：注释（卌四）</td><td><a target="_blank" href="000_excursus/000-046.html">正常</a></td><td></td></tr>
+                <tr><td>47</td><td><time datetime="2017-11-19">2017.11.19, Solis</time></td><td>作品相关：注释（卌五）</td><td><a target="_blank" href="000_excursus/000-047.html">正常</a></td><td></td></tr>
+                <tr><td>48</td><td><time datetime="2017-11-19">2017.11.19, Solis</time></td><td>作品相关：注释（卌六）</td><td><a target="_blank" href="000_excursus/000-048.html">正常</a></td><td></td></tr>
+                <tr><td>49</td><td><time datetime="2017-11-20">2017.11.20, Lunae</time></td><td>作品相关：注释（卌七）</td><td><a target="_blank" href="000_excursus/000-049.html">正常</a></td><td></td></tr>
+                <tr><td>50</td><td><time datetime="2017-11-21">2017.11.21, Martis</time></td><td>作品相关：注释（卌八）</td><td><a target="_blank" href="000_excursus/000-050.html">正常</a></td><td></td></tr>
+                <tr><td>51</td><td><time datetime="2017-11-21">2017.11.21, Martis</time></td><td>作品相关：注释（卌九）</td><td><a target="_blank" href="000_excursus/000-051.html">正常</a></td><td></td></tr>
+                <tr><td>52</td><td><time datetime="2017-11-22">2017.11.22, Mercurii</time></td><td>作品相关：注释（五十）</td><td><a target="_blank" href="000_excursus/000-052.html">正常</a></td><td></td></tr>
+                <tr><td>53</td><td><time datetime="2017-11-22">2017.11.22, Mercurii</time></td><td>作品相关：注释（５１）</td><td><a target="_blank" href="000_excursus/000-053.html">正常</a></td><td></td></tr>
+                <tr><td>54</td><td><time datetime="2017-11-23">2017.11.23, Iovis</time></td><td>作品相关：注释（５２）</td><td><a target="_blank" href="000_excursus/000-054.html">正常</a></td><td></td></tr>
+                <tr><td>55</td><td><time datetime="2017-11-24">2017.11.24, Venelis</time></td><td>作品相关：注释（５３）</td><td><a target="_blank" href="000_excursus/000-055.html">正常</a></td><td></td></tr>
+                <tr><td>56</td><td><time datetime="2017-11-24">2017.11.24, Venelis</time></td><td>作品相关：注释（５４）</td><td><a target="_blank" href="000_excursus/000-056.html">正常</a></td><td></td></tr>
+                <tr><td>57</td><td><time datetime="2017-11-24">2017.11.24, Venelis</time></td><td>作品相关：注释（５５）</td><td><a target="_blank" href="000_excursus/000-057.html">正常</a></td><td></td></tr>
+                <tr><td>58</td><td><time datetime="2017-11-25">2017.11.25, Saturni</time></td><td>作品相关：注释（５６）</td><td><a target="_blank" href="000_excursus/000-058.html">正常</a></td><td></td></tr>
+                <tr><td>59</td><td><time datetime="2017-11-25">2017.11.25, Saturni</time></td><td>作品相关：注释（５７）</td><td><a target="_blank" href="000_excursus/000-059.html">正常</a></td><td></td></tr>
+                <tr><td>60</td><td><time datetime="2017-11-26">2017.11.26, Solis</time></td><td>作品相关：注释（５８）</td><td><a target="_blank" href="000_excursus/000-060.html">正常</a></td><td></td></tr>
+                <tr><td>61</td><td><time datetime="2017-11-27">2017.11.27, Lunae</time></td><td>作品相关：注释（５９）</td><td><a target="_blank" href="000_excursus/000-061.html">正常</a></td><td></td></tr>
+                <tr><td>62</td><td><time datetime="2017-11-27">2017.11.27, Lunae</time></td><td>作品相关：注释（６０）</td><td><a target="_blank" href="000_excursus/000-062.html">正常</a></td><td></td></tr>
+                <tr><td>63</td><td><time datetime="2017-11-27">2017.11.27, Lunae</time></td><td>作品相关：注释（６１）</td><td><a target="_blank" href="000_excursus/000-063.html">正常</a></td><td></td></tr>
+                <tr><td>64</td><td><time datetime="2017-11-27">2017.11.27, Lunae</time></td><td>作品相关：注释（６２）</td><td><a target="_blank" href="000_excursus/000-064.html">正常</a></td><td></td></tr>
+                <tr><td>65</td><td><time datetime="2017-11-28">2017.11.28, Martis</time></td><td>作品相关：注释（６３）</td><td><a target="_blank" href="000_excursus/000-065.html">正常</a></td><td></td></tr>
+                <tr><td>66</td><td><time datetime="2017-11-28">2017.11.28, Martis</time></td><td>作品相关：注释（６４）</td><td><a target="_blank" href="000_excursus/000-066.html">正常</a></td><td></td></tr>
+                <tr><td>67</td><td><time datetime="2017-11-28">2017.11.28, Martis</time></td><td>作品相关：注释（６５）</td><td><a target="_blank" href="000_excursus/000-067.html">正常</a></td><td></td></tr>
+                <tr><td>68</td><td><time datetime="2017-11-28">2017.11.28, Martis</time></td><td>作品相关：了却一桩心事</td><td><a target="_blank" href="000_excursus/000-068.html">正常</a></td><td></td></tr>
             </tbody>
         </table>
     </main>
 
     <footer>
-        <p>范狂夫<time>2018.7.28</time>囧斋</p>
+        <p>更新于<time>2018.8.2, Iovis</time></p>
+        <p>范狂夫</p>
+        <p>囧斋</p>
     </footer>
 </body>
 

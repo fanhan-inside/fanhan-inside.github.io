@@ -6,6 +6,7 @@ code {
     border: 1px solid lightgray;
     background-color: whitesmoke;
     color: darkred;
+    margin: 0 0.25rem;
     padding: 0.25rem;
     font-family: Inconsolata, Consolas, 'Source Code Pro', monospace;
     font-size: 90%;

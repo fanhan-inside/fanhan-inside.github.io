@@ -1,0 +1,9 @@
+@import url(../main.css);
+html {
+    background-color: darkblue;
+}
+
+h1 {
+    padding: 1rem;
+    background: radial-gradient(farthest-corner at 0 0, white, lightblue);
+}

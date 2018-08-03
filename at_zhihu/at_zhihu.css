@@ -1,0 +1,5 @@
+@import url(../main.css);
+
+h1 {
+    background: radial-gradient(farthest-corner at 0 0, lime, white);
+}

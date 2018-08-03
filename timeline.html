@@ -4,18 +4,21 @@
 <head>
     <meta lang="zh" charset="UTF-8" />
     <title>动态</title>
+    <link rel="stylesheet" type="text/css" href="main.css" />
     <style type="text/css">
+        html {
+            background-color: transparent;
+        }
+        body {
+            background-color: transparent;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
         table {
             width: 98%;
             margin: 1rem auto;
-            border-collapse: collapse;
-            column-gap: 1rem;
-        }
-
-        caption {
-            padding: 1rem;
-            font-size: 1.5rem;
-            font-weight: bold;
         }
 
         td ul {
@@ -32,45 +35,8 @@
             padding: 0.25rem;
         }
 
-        td a::before {
-            content: '\1F517';
-            margin: 0 0.25rem 0 0;
-        }
-
-        a[href^="http://"]::before,
-        a[href^="https://"]::before {
-            content: url(RESOURCE/external-link.svg);
-            margin: 0 0.25rem 0 0;
-        }
-
-        td a:hover {
-            background-color: darkblue;
-            color: yellow;
-        }
-
-        td,
-        th {
-            border: 1px solid dimgray;
-            padding: 10px 10px;
-        }
-
-        th {
-            background-color: wheat;
-            color: black;
-            font-weight: bold;
-            font-size: 1.25rem;
-        }
-
-        td {
-            text-align: center;
-            vertical-align: center;
-        }
-
-        td time {
-            font-size: 1.25rem;
-            font-weight: bold;
-            font-family: 'Symbola', 'Fira Code', 'Fira Sans', 'Source Serif Pro', 'Source Sans Pro', serif;
-            font-variant-numeric: oldstyle-nums;
+        td time::before, td time::after {
+            content: none;
         }
 
         td:nth-child(2) {
@@ -87,9 +53,9 @@
     <table id="timeline">
         <caption>斗争新动向</caption>
         <colgroup>
-            <col style="width: 10%">
+            <col style="width: 10em">
             <col>
-            <col style="width: 10%">
+            <col>
         </colgroup>
         <thead>
             <tr>
@@ -99,6 +65,75 @@
             </tr>
         </thead>
         <tbody>
+            <tr>
+                <td>
+                    <time>2018.08.03<br />Venelis</time>
+                </td>
+                <td>
+                    <ul>
+                        <li>上传《范版西幻设定集》内容（完毕）：
+                            <ul>
+                                <li><a target="_blank" href="fantasy/fanism/000_excursus/000-053.html">《范版西幻设定集》作品相关：注释（５１）</a></li>
+                                <li><a target="_blank" href="fantasy/fanism/000_excursus/000-054.html">《范版西幻设定集》作品相关：注释（５２）</a></li>
+                                <li><a target="_blank" href="fantasy/fanism/000_excursus/000-055.html">《范版西幻设定集》作品相关：注释（５３）</a></li>
+                                <li><a target="_blank" href="fantasy/fanism/000_excursus/000-056.html">《范版西幻设定集》作品相关：注释（５４）</a></li>
+                                <li><a target="_blank" href="fantasy/fanism/000_excursus/000-057.html">《范版西幻设定集》作品相关：注释（５５）</a></li>
+                                <li><a target="_blank" href="fantasy/fanism/000_excursus/000-058.html">《范版西幻设定集》作品相关：注释（５６）</a></li>
+                                <li><a target="_blank" href="fantasy/fanism/000_excursus/000-059.html">《范版西幻设定集》作品相关：注释（５７）</a></li>
+                                <li><a target="_blank" href="fantasy/fanism/000_excursus/000-060.html">《范版西幻设定集》作品相关：注释（５８）</a></li>
+                                <li><a target="_blank" href="fantasy/fanism/000_excursus/000-061.html">《范版西幻设定集》作品相关：注释（５９）</a></li>
+                                <li><a target="_blank" href="fantasy/fanism/000_excursus/000-062.html">《范版西幻设定集》作品相关：注释（６０）</a></li>
+                                <li><a target="_blank" href="fantasy/fanism/000_excursus/000-063.html">《范版西幻设定集》作品相关：注释（６１）</a></li>
+                                <li><a target="_blank" href="fantasy/fanism/000_excursus/000-064.html">《范版西幻设定集》作品相关：注释（６２）</a></li>
+                                <li><a target="_blank" href="fantasy/fanism/000_excursus/000-065.html">《范版西幻设定集》作品相关：注释（６３）</a></li>
+                                <li><a target="_blank" href="fantasy/fanism/000_excursus/000-066.html">《范版西幻设定集》作品相关：注释（６４）</a></li>
+                                <li><a target="_blank" href="fantasy/fanism/000_excursus/000-067.html">《范版西幻设定集》作品相关：注释（６５）</a></li>
+                                <li><a target="_blank" href="fantasy/fanism/000_excursus/000-068.html">《范版西幻设定集》作品相关：了却一桩心事</a></li>
+                            </ul>
+                        </li>
+                        <li>上传《谈笑风生＠九省通衢の煎蛋》内容（完毕）：
+                            <ul>
+                                <li>文章区评论3篇</li>
+                                <li>问答区评论3篇</li>
+                                <li>段子区评论44篇</li>
+                                <li>无聊图评论27篇</li>
+                            </ul>
+                        </li>
+                        <li>制作<a target="_blank" href="at_jandan/toc.html">《谈笑风生＠九省通衢の煎蛋》目录</a>上传</li>
+                    </ul>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>
+                    <time>2018.08.02<br />Iovis</time>
+                </td>
+                <td>
+                    <ul>
+                        <li>上传《范版西幻设定集》内容：
+                            <ul>
+                                <li><a target="_blank" href="fantasy/fanism/000_excursus/000-038.html">《范版西幻设定集》作品相关：注释（卅六）</a></li>
+                                <li><a target="_blank" href="fantasy/fanism/000_excursus/000-039.html">《范版西幻设定集》作品相关：注释（卅七）</a></li>
+                                <li><a target="_blank" href="fantasy/fanism/000_excursus/000-040.html">《范版西幻设定集》作品相关：注释（卅八）</a></li>
+                                <li><a target="_blank" href="fantasy/fanism/000_excursus/000-041.html">《范版西幻设定集》作品相关：注释（卅九）</a></li>
+                                <li><a target="_blank" href="fantasy/fanism/000_excursus/000-042.html">《范版西幻设定集》作品相关：注释（四十）</a></li>
+                                <li><a target="_blank" href="fantasy/fanism/000_excursus/000-043.html">《范版西幻设定集》作品相关：注释（卌一）</a></li>
+                                <li><a target="_blank" href="fantasy/fanism/000_excursus/000-044.html">《范版西幻设定集》作品相关：注释（卌二）</a></li>
+                                <li><a target="_blank" href="fantasy/fanism/000_excursus/000-045.html">《范版西幻设定集》作品相关：注释（卌三）</a></li>
+                                <li><a target="_blank" href="fantasy/fanism/000_excursus/000-046.html">《范版西幻设定集》作品相关：注释（卌四）</a></li>
+                                <li><a target="_blank" href="fantasy/fanism/000_excursus/000-047.html">《范版西幻设定集》作品相关：注释（卌五）</a></li>
+                                <li><a target="_blank" href="fantasy/fanism/000_excursus/000-048.html">《范版西幻设定集》作品相关：注释（卌六）</a></li>
+                                <li><a target="_blank" href="fantasy/fanism/000_excursus/000-049.html">《范版西幻设定集》作品相关：注释（卌七）</a></li>
+                                <li><a target="_blank" href="fantasy/fanism/000_excursus/000-050.html">《范版西幻设定集》作品相关：注释（卌八）</a></li>
+                                <li><a target="_blank" href="fantasy/fanism/000_excursus/000-051.html">《范版西幻设定集》作品相关：注释（卌九）</a></li>
+                                <li><a target="_blank" href="fantasy/fanism/000_excursus/000-052.html">《范版西幻设定集》作品相关：注释（五十）</a></li>
+                            </ul>
+                        </li>
+                        <li>制作目录，修改版式，维护主页。</li>
+                    </ul>
+                </td>
+                <td></td>
+            </tr>
             <tr>
                 <td>
                     <time>2018.08.01<br />Mercurii</time>

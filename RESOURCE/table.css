@@ -1,0 +1,30 @@
+table {
+    border-collapse: collapse;
+}
+
+caption {
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+th, td {
+    border: 1px solid dimgray;
+    padding: 0.5rem;
+}
+
+th {
+    background-color: bisque;
+    color: black;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+td {
+    text-align: center;
+    vertical-align: center;
+}
+
+td time {
+    font-size: 125%;
+}

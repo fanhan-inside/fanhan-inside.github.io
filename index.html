@@ -3,18 +3,20 @@
 
 <head>
     <meta type="text/html" charset="UTF-8">
-    <title>范狂夫＠GitHub</title>
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <title>希帕索斯永垂不朽</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="stylesheet" type="text/css" href="main.css" />
     <style type="text/css">
         html {
-            background-color: ivory;
+            background-color: transparent;
         }
 
         body {
-            background-color: white;
+            background-color: transparent;
             width: 1440px;
-            margin: 16px auto;
+            margin: 10px auto;
+            padding: 0;
         }
 
         iframe {
@@ -28,8 +30,7 @@
 
         header {
             display: grid;
-            grid-template: "avatar profile corpus" 320px "cards cards corpus" 360px / 320px 1fr 500px;
-            min-height: 600px;
+            grid-template: "avatar profile anonym" 320px / 320px 1fr 500px;
         }
 
         footer {
@@ -40,6 +41,7 @@
         }
 
         h1 {
+            background: transparent;
             display: inline-block;
             padding: 0.5rem;
             margin-right: 2rem;
@@ -54,79 +56,7 @@
             padding: 0.25rem;
             background: radial-gradient(black, #eee);
             color: white;
-        }
-
-        .cardBox {
-            box-sizing: border-box;
-            justify-content: center;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-        }
-
-        .card {
-            min-width: 25rem;
-            min-height: 3rem;
-            border: 1px solid gray;
-            box-shadow: 0.25rem 0.25rem 0.5rem dimgray;
-            border-top: 3px double black;
-            padding: 0.125rem;
-            margin: 0.5rem;
-            font-size: 150%;
-            text-align: center;
-        }
-
-        .card div.outer {
-            display: table;
-            height: 100%;
-            width: 100%;
-        }
-
-        .card div.inner {
-            display: table-cell;
-            vertical-align: middle;
-        }
-
-        .card a {
-            display: block;
-            color: blue;
-            text-decoration: none;
-        }
-
-        .card a:hover {
-            text-decoration-line: overline;
-        }
-
-        .card a:hover::before {
-            content: '\1F517';
-        }
-
-        .card a:hover::after {
-            content: '\1F517';
-        }
-
-        #随笔 {
-            background: radial-gradient(farthest-corner at 0 0, white, red);
-        }
-
-        #惹是生非 {
-            background: radial-gradient(farthest-corner at 0 0, yellow, red);
-        }
-
-        #设定集 {
-            background: radial-gradient(farthest-corner at 0 0, white, lightskyblue);
-        }
-
-        #恶补记 {
-            background: radial-gradient(farthest-corner at 0 0, lightskyblue, white);
-        }
-
-        #知乎 {
-            background: radial-gradient(farthest-corner at 0 0, lime, white);
-        }
-
-        #煎蛋 {
-            background: radial-gradient(farthest-corner at 0 0, white, lime);
+            border: none;
         }
 
         #cover {
@@ -169,14 +99,6 @@
             clip-path: circle(128px at 130px 130px);
         }
 
-        #works {
-            grid-area: corpus;
-        }
-
-        #nav {
-            grid-area: cards;
-        }
-
         .signature {
             font-size: 125%;
         }
@@ -186,6 +108,46 @@
             margin: 0 1rem;
             padding: 0 1rem;
         }
+
+        #anonym {
+            grid-area: anonym;
+        }
+
+        #anonym table {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        #anonym td {
+            border: none;
+            text-align: center;
+            vertical-align: middle;
+            padding: 0.25rem;
+        }
+
+        #anonym td:nth-child(1) {
+            font-weight: bold;
+            font-size: 125%;
+        }
+
+        #works table {
+            width: 98%;
+            margin: 1rem auto;
+        }
+        #works td {
+            border: 1px solid lightgray;
+            text-align: left;
+            vertical-align: middle;
+            padding: 1rem;
+        }
+        #works td table td {
+            border: none;
+        }
+        #works td a {
+            display: block;
+            color: blue;
+            font-weight: bold;
+        }
     </style>
 </head>
 
@@ -194,6 +156,7 @@
         <img src="cover.png" />
         <img id="title" lang="zh" src="RESOURCE/title.svg" />
     </div>
+
     <header>
         <div id="avatar">
             <div id="icon-wrapper">
@@ -201,65 +164,80 @@
             </div>
         </div>
         <div id="profile" lang="zh">
-            <h1>范狂夫</h1>
+            <h1><ruby>范狂夫<rt lang="nl">van Confucia</rt></ruby></h1>
             <span class="signature">故人心似中秋月，肯为狂夫照白头。</span>
             <iframe id="profile-detail" src="profile.html" height="220" scrolling="auto" marginwidth="0" marginheight="0"></iframe>
         </div>
-        <div id="works" lang="zh">
-            <h2>文集</h2>
-            <div style="padding-right: 0.25rem">
-                <iframe src="corpus.html" height="600" scrolling="auto" marginwidth="0" marginheight="0"></iframe>
-            </div>
-        </div>
-        <div class="cardBox" id="nav">
-            <div class="card" id="设定集">
-                <div class="outer">
-                    <div class="inner">
-                        <a target="_blank" href="fantasy/fanism/toc.html">《范版西幻设定集》</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card" id="恶补记">
-                <div class="outer">
-                    <div class="inner">《范版数学恶补记》</div>
-                </div>
-            </div>
-            <div class="card" id="随笔">
-                <div class="outer">
-                    <div class="inner">
-                        <a target="_blank" href="essay/toc.html">《囧斋随笔》</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card" id="惹是生非">
-                <div class="outer">
-                    <div class="inner">
-                        <a target="_blank" href="essay/toc.html">「惹是生非」</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card" id="知乎">
-                <div class="outer">
-                    <div class="inner">谈笑风生＠知乎</div>
-                </div>
-            </div>
-            <div class="card" id="煎蛋">
-                <div class="outer">
-                    <div class="inner">谈笑风生＠九省通衢の煎蛋</div>
-                </div>
-            </div>
-        </div>
+        <div id="anonym" lang="zh">
+            <h2>曾用名</h2>
+            <table>
+                <tr><td>范客翁</td> <td>行路八千常是客，丈夫五十未称翁。</td></tr>
+                <tr><td>范骨苔</td> <td>不令金樽映翠杓，坐待白骨生苍苔。</td></tr>
+                <tr><td>范闷诗</td> <td>清尊与闷都倾尽，倦马和诗总勒回。</td></tr>
+                <tr><td>范觞杀</td> <td>招得榴花共一觞，艾人笑杀老夫狂。</td></tr>
+                <tr><td>范仲拙</td><td></td></tr>
+                <tr><td>范书藤</td><td></td></tr>
+                <tr><td>范翗翷</td><td></td></tr>
+                <tr><td>范铝杯</td><td></td></tr>
+                <tr><td>………</td><td></td></tr>
+            </table>
+    </div>
     </header>
+
     <main>
+        <h2>文集</h2>
+        <div id="works">
+            <table>
+                <tr>
+                    <td><a target="_blank" href="toc.html">（目录、索引、导读）</a></td>
+                    <td>顾名思义，在多个站点发表的文章链接之汇总。</td>
+                </tr>
+                <tr>
+                    <td><a target="_blank" href="fantasy/fanism/toc.html">《范版西幻设定集》</a></td>
+                    <td>为了政治和意识形态斗争而创作的西方奇幻背景设定集，未完待续。</td>
+                </tr>
+                <tr>
+                    <td><a target="_blank" href="mathematics/fanism/toc.html">《范版数学恶补记》</a></td>
+                    <td>为了不忘初心牢记使命，丰富设定集内容，而开始恶补的流水帐以及心得体会。</td>
+                </tr>
+                <tr>
+                    <td><a target="_blank" href="essay/toc.html">《囧斋随笔》</a></td>
+                    <td>
+                        <span>随笔、杂谈，既有旧作，也有「与时俱进」内容。</span>
+                        <table>
+                            <tr>
+                                <td><a target="_blank" href="essay/toc.html">「惹是生非」</a></td>
+                                <td>命名来自九省通衢の活跃色目帐号替我总结的生活规律：吃饱了撑的惹是生非。</td>
+                            </tr>
+                            <tr>
+                                <td><a target="_blank" href="essay/toc.html#nouvelle">『短篇集』</a></td>
+                                <td>旧作</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td><a target="_blank" href="at_zhihu/toc.html">谈笑风生＠知乎</a></td>
+                    <td>在知乎的提问、回答和评论</td>
+                </tr>
+                <tr>
+                    <td><a target="_blank" href="at_jandan/toc.html">谈笑风生＠九省通衢の煎蛋</a></td>
+                    <td>在煎蛋文章区、问答区、段子区、无聊图的评论备份</td>
+                </tr>
+            </table>
+        </div>
+
         <h2>动态</h2>
         <div style="padding: 0 0.25rem">
             <iframe src="timeline.html" height="600" scrolling="auto" marginwidth="0" marginheight="0"></iframe>
         </div>
-        <h2>文章列表</h2>
+
+        <h2>更新列表</h2>
         <div style="padding: 0 0.25rem">
             <iframe src="articles.html" height="600" scrolling="auto" marginwidth="0" marginheight="0"></iframe>
         </div>
     </main>
+
     <footer>
         <span>Copyright© fANhAN iNSiDE, All Rights Reserved.</span>
     </footer>
