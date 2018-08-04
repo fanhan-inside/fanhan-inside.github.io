@@ -8,4 +8,17 @@ span.symbola {
     color: blue;
     font-family: "Symbola";
     font-size: 150%;
+    vertical-align: middle;
+}
+
+span.important {
+    display: inline-block;
+    margin: 0 0.25rem;
+    padding: 0.5rem;
+    text-indent: 0;
+    font-size: 3rem;
+    border: 1px solid gray;
+    background-color: white;
+    color: blue;
+    vertical-align: middle;
 }

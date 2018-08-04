@@ -10,6 +10,7 @@
 @import url(RESOURCE/block.css);
 @import url(RESOURCE/span.css);
 @import url(RESOURCE/table.css);
+@import url(RESOURCE/list.css);
 
 html {
     background-color: dimgray;
