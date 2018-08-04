@@ -10,7 +10,7 @@ body {
     background-color: ivory;
 }
 
-main {
+main, div.main {
     width: 1280px;
     margin: 1rem auto;
     padding: 1rem;
