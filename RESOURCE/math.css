@@ -38,3 +38,8 @@ span.onum {
     font-size: 125%;
     font-variant-numeric: oldstyle-nums;
 }
+
+span.math img {
+    display: inline-block;
+    vertical-align: middle;
+}
