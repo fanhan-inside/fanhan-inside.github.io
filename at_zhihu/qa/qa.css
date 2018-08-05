@@ -1,0 +1,12 @@
+@import url(../at_zhihu.css);
+
+main {
+    width: 1280px;
+    margin: 1rem auto;
+    padding: 1rem;
+    border: 1px dotted lightgray;
+}
+
+blockquote p {
+    line-height: 1rem;
+}

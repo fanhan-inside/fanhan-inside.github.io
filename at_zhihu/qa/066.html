@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<meta lang="zh" charset="UTF-8">
+<title>知乎问答№066</title><link rel="stylesheet" type="text/css" href="qa.css"></head>
+<body><header><h1>如何评价Octave主要开发者John W. Eaton因揭不开锅而公开求职事件？</h1></header>
+<blockquote><p>这事在中文社区好像都没人关注：</p>
+<p><a target="_blank" href="https://lists.gnu.org/archive/html/help-octave/2017-02/msg00062.html">Looking for Work after 25 Years of Octave</a></p>
+</blockquote>
+<h2>回复</h2>
+<p>注意到「SageMath」也使用「GPLv3」，理念则是「利用现有的任何开放源码库」，但是其中并没有包括「GNU Octave」。</p>
+<p>那么从「管理」（或曰「开源社区各项目之间的协作」）角度讲可以考虑把Octave「合并」进SageMath，从「个人」角度讲Octave开发者可以「加入」SageMath团队。</p>
+<p>当然，即便在那口头叫嚣人权的作为人类希望的美帝灯塔国，也存在着长期复杂深刻艰巨残酷的政治和意识形态斗争，这事能不能成，还得与世界革命形势紧密联系起来考虑。</p>
+<p>补充，顺便启动了「SageMath」（8.0版），绘制了「希帕索斯十字」，证实一下这「开源数学软件」的功能「足够」：</p>
+<figure><a target="_blank" href="image/066-001.png"><img src="image/066-001.png" alt="「圣者希帕索斯十字」（Sage Hippasus Cross）" /></a><figcaption>「圣者希帕索斯十字」（Sage Hippasus Cross）</figcaption></figure>
+<p>顺便，头像使用的图片，是在「Mathematica」当中绘制的，为了截图方便直接设置了一堆图形属性。相关代码如下：</p>
+<pre><code class="Mathematica">
+PolarPlot[Cos[2 theta], {theta, 0, 2 Pi}, PlotStyle -&gt; {{Thickness[0.05], RGBColor[1, 1, 1]}}, Background -&gt; RGBColor[0, 0, 1], PlotRange -&gt; {{-1.1, 1.1}, {-1.1, 1.1}}, Frame -&gt; False, Axes -&gt; False]
+
+PolarPlot[Sin[2 theta], {theta, 0, 2 Pi}, PlotStyle -&gt; {{Thickness[0.05], RGBColor[1, 1, 1]}}, Background -&gt; RGBColor[0, 0, 1], PlotRange -&gt; {{-0.9, 0.9}, {-0.9, 0.9}}, Frame -&gt; False, Axes -&gt; False]
+
+</code></pre>
+<p>显示效果就不贴了，可以召唤「Mathematica」专家｛@酱紫君｝传道授业解惑。</p>
+<hr />
+<p>发表于［2018-01-25］</p>
+<p>范狂夫</p>
+<p>囧斋</p>
+</body>
+</html>
