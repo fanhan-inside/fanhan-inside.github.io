@@ -148,3 +148,8 @@ span.evil {
     background: linear-gradient(lime, dimgray);
     border-radius: 0.25rem;
 }
+
+span.lowbee {
+    font-weight: bold;
+    color: darkgreen;
+}
