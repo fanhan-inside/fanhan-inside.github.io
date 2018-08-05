@@ -1,4 +1,4 @@
-article {
+article, div.article {
     margin: 1rem 1rem 2rem 1rem;
     padding: 1rem;
     border: 1px solid lightgray;
@@ -6,11 +6,21 @@ article {
     background-color: antiquewhite;
 }
 
-section {
+section, div.section {
     margin: 1rem;
     padding: 1rem;
     border: 1px solid lightgray;
     border-radius: 0.5rem;
     background-color: beige;
     box-shadow: 0.25rem 0.25rem 0.5rem dimgray;
+}
+
+blockquote {
+    background: cornsilk;
+    border-top: 1px dotted;
+    border-bottom: 1px dotted;
+    border-left: 0.75rem solid;
+    border-color: lightsalmon;
+    margin: 0.75rem;
+    padding: 0.5rem;
 }

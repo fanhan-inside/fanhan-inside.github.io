@@ -19,3 +19,22 @@ a:hover {
     background-color: darkblue;
     color: yellow;
 }
+
+div.linkcard {
+    display: table;
+    width: 80%;
+    min-height: 3rem;
+    margin: 1rem auto;
+    padding: 0.5rem;
+    background-color: lightgray;
+    border: 1px solid dimgray;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+div.linkcard a {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0.5rem;
+    font-size: 125%;
+}

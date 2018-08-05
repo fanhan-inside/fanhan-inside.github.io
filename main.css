@@ -34,31 +34,3 @@ p {
     text-indent: 2rem;
     line-height: 2rem;
 }
-
-div.linkcard {
-    display: table;
-    width: 80%;
-    min-height: 3rem;
-    margin: 0.5rem auto;
-    padding: 0.5rem;
-    background-color: wheat;
-    border-radius: 0.5rem;
-    text-align: center;
-}
-
-div.linkcard a {
-    display: table-cell;
-    vertical-align: middle;
-    padding: 0.5rem;
-    font-size: 125%;
-}
-
-blockquote {
-    background: cornsilk;
-    border-top: 1px dotted;
-    border-bottom: 1px dotted;
-    border-left: 0.75rem solid;
-    border-color: lightsalmon;
-    margin: 0.75rem;
-    padding: 0.5rem;
-}
