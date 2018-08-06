@@ -8,6 +8,11 @@ h1 {
     background: radial-gradient(farthest-corner at 0 0, lime, white);
 }
 
+header section {
+    background-color: transparent;
+    box-shadow: none;
+}
+
 header.question {
     position: relative;
 }
@@ -25,5 +30,5 @@ header.question h1::before {
 }
 
 header.question article {
-    background-color: lightcyan;
+    background-color: azure;
 }

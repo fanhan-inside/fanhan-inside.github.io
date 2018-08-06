@@ -147,6 +147,7 @@ span.evil {
     font-size: 1rem;
     background: linear-gradient(lime, dimgray);
     border-radius: 0.25rem;
+    color: purple;
 }
 
 span.lowbee {
