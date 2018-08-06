@@ -1,5 +1,29 @@
 @import url(../main.css);
 
+header {
+    border-bottom: 3px double silver;
+}
+
 h1 {
     background: radial-gradient(farthest-corner at 0 0, lime, white);
+}
+
+header.question {
+    position: relative;
+}
+
+header.question h1 {
+    background: radial-gradient(farthest-corner at 0 0, lightskyblue, white);
+}
+
+header.question h1::before {
+    content: url(../favlogo.svg);
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 99999;
+}
+
+header.question article {
+    background-color: lightcyan;
 }
