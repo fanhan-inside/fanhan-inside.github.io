@@ -6,6 +6,11 @@ article, div.article {
     background-color: antiquewhite;
 }
 
+article.poem {
+    width: 50%;
+    margin: 1rem auto;
+}
+
 section, div.section {
     margin: 1rem;
     padding: 1rem;
