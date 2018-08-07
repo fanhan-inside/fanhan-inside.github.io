@@ -11,6 +11,9 @@ figcaption {
     text-align: center;
     margin: 0 auto;
     padding: 0.5rem;
+    border-bottom: 1px dashed gray;
+    color: dimgray;
+    font-weight: bold;
 }
 
 img {
