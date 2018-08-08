@@ -9,12 +9,12 @@
 <p>就比方说吧，《真·流水帐》或曰「日记」目前在Word当中是165页A4幅面，十八万字，里面有不少图片，还带着三级标题。</p>
 <p>前一阵转换为Markdown版的时候，就不能在纯文本环境下复制粘贴了，否则格式需要重新调整很久。于是，直接贴在Typora当中，大部分格式都自动转换了，运用了剪贴板的HTML格式数据。</p>
 <p>目前写日记同时更新Word版和Typora版，后者截图是这样的（han主题）：</p>
-<figure><a target="_blank" href="image/149-001.png"><img src="image/149-001.png" alt="Typora 0.9.48(bata)" /></a><figcaption>Typora 0.9.48(bata)</figcaption></figure>
+<figure><img src="image/149-001.png" alt="Typora 0.9.48(bata)" /><figcaption>Typora 0.9.48(bata)</figcaption></figure>
 <p>而其它几种字处理软件当中的情况，之前在《范版数学恶补记》流水帐中贴过了，这里再贴一遍：</p>
-<figure><a target="_blank" href="image/149-002.png"><img src="image/149-002.png" alt="Microsoft Word 2010" /></a><figcaption>Microsoft Word 2010</figcaption></figure>
-<figure><a target="_blank" href="image/149-003.png"><img src="image/149-003.png" alt="LibreOffice Writer 5.4" /></a><figcaption>LibreOffice Writer 5.4</figcaption></figure>
-<figure><a target="_blank" href="image/149-004.png"><img src="image/149-004.png" alt="WPS 2016抢鲜版" /></a><figcaption>WPS 2016抢鲜版</figcaption></figure>
-<figure><a target="_blank" href="image/149-005.png"><img src="image/149-005.png" alt="Ashampoo TextMaker 2018" /></a><figcaption>Ashampoo TextMaker 2018</figcaption></figure>
+<figure><img src="image/149-002.png" alt="Microsoft Word 2010" /><figcaption>Microsoft Word 2010</figcaption></figure>
+<figure><img src="image/149-003.png" alt="LibreOffice Writer 5.4" /><figcaption>LibreOffice Writer 5.4</figcaption></figure>
+<figure><img src="image/149-004.png" alt="WPS 2016抢鲜版" /><figcaption>WPS 2016抢鲜版</figcaption></figure>
+<figure><img src="image/149-005.png" alt="Ashampoo TextMaker 2018" /><figcaption>Ashampoo TextMaker 2018</figcaption></figure>
 <h2>日记摘抄</h2>
 <p>这《范版数学恶补记》「流水帐」也很久没有更新了，第四十篇还是2月22日。但这并不是说我一直闲着，在真·流水帐里面还在随时关注业内动向吖。就说符合本问题的Markdown相关内容吧，把这一段日记里面相关内容摘出来，列在这里。</p>
 <h3>3月6日（火），多云</h3>
@@ -43,7 +43,7 @@
 <p>为什么这么想？因为在Word版日记里面的这个样式，尤其是几级标题的风格，是当初从一堆内置样式当中挑出来比较简约清爽的。如果要在Markdown版日记里面使用，需要自己修改CSS。而我虽然对CSS很熟悉，但对「字体及配色方案」之类「专业」技能还是比较薄弱的，多一事不如少一事。</p>
 <p>顺便，看到「CommonMark」之后，之前惦记着用「扩展ASCII字符」当标签以避免与正文混淆的脑洞又浮现出来了。比如用「§」取代标题的「#」，用类似边框线的「‡」取代引用的「&gt;」，用正经的圆点「•」取代无序列表的「+-*」，用欧元「€」或英镑「£」取代数学公式的「$」，用「©®¤¶」之类实现其它什么功能。</p>
 <p>就看应景的上面这段，在VS Code的源代码窗口当中显示是这样的：</p>
-<figure><a target="_blank" href="image/149-006.png"><img src="image/149-006.png" alt="VSCode解析源码失误" /></a><figcaption>VSCode解析源码失误</figcaption></figure>
+<figure><img src="image/149-006.png" alt="VSCode解析源码失误" /><figcaption>VSCode解析源码失误</figcaption></figure>
 <p>在当前这堆Markdown插件环境下，只要是出现了美元符号「$」肯定会当成「公式」着色，加了反斜杠也一样，虽然解析和预览都是正常的。作为不入流码农，我当然知道这个「无伤大雅」的八阿哥处理起来未必那么容易，但是「多一事不如少一事」，所以才惦记着换成「不会与正文混淆的」符号吖。</p>
 <p>想到这里补充一点，因为「LeTiX」或「LaTeX」的缘故，最初倾向用长得像「L」的英镑符号「£」标记公式。然后就想起了还有德国马克符号「Ð」但是与字母「D」太像了所以应当尽量避免使用。再然后就想起了「马克」就是「Mark」吖，那么这「CommonMark」看上去适合英语国家，而我设计的方案需要「西欧键盘」可以直接敲出符号来，难道叫「EuroMark」不成？于是不经意间又可以使用不涉及政治和意识形态的纯粹技术讨论，引领政治和意识形态斗争新动向了也。</p>
 <p>顺便，刚才备份评论的时候发现，typora和VS Code对于行末「反斜杠硬回车换行」的处理不一样，typora很明显不区分「硬回车」与「空行」，在这个细节上没有遵守Markdown「共识」。</p>
