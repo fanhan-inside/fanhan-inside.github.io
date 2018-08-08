@@ -49,21 +49,21 @@
     <p>前面已经在「与时俱进西洋风」环境下试验了书名号和专名号，而「古色古香东洋风」的特色有所不同，于是样式也需要应景修改。以前（在知乎评论备份的「凡例」当中）用句读困难的「意大利的里亚斯特」这短语举例说明「专名号」的必要性。其中「专名号」在横排环境下通常是「下划线」，竖排就变成了「左划线」，这时候会发现，连续的专名号会连成一片。</p>
 
     <figure>
-        <a target="_blank" href="image/016-001.png"><img src="image/016-001.png" alt="下划线连成一片" /></a>
+        <img src="image/016-001.png" alt="下划线连成一片" />
         <figcaption>下划线连成一片</figcaption>
     </figure>
 
     <p>解决这个「显示」问题之前，先考虑另外一个相关的「编辑」源代码问题。在VS Code以及其它提供格式化代码功能的编辑器当中，仅凭HTML标签的对应关系进行缩进，没有考虑到「语义」内容，比方说一个「段落」（<code>&lt;p&gt;</code>）内部是否也需要展开为次一级结构呢？</p>
 
     <figure>
-        <a target="_blank" href="image/016-002.png"><img src="image/016-002.png" alt="格式化代码" /></a>
+        <img src="image/016-002.png" alt="格式化代码" />
         <figcaption>格式化代码</figcaption>
     </figure>
 
     <p>依赖VS Code内置的「格式化代码」功能，页面源码是上面那样的，而对应的显示效果是下面这样：</p>
 
     <figure>
-        <a target="_blank" href="image/016-003.png"><img src="image/016-003.png" alt="出现的空格" /></a>
+        <img src="image/016-003.png" alt="出现的空格" />
         <figcaption>出现的空格</figcaption>
     </figure>
 
@@ -79,14 +79,14 @@
 </code></pre>
 
     <figure>
-        <a target="_blank" href="image/016-004.png"><img src="image/016-004.png" alt="有间隙且无空格" /></a>
+        <img src="image/016-004.png" alt="有间隙且无空格" />
         <figcaption>有间隙且无空格</figcaption>
     </figure>
 
     <p>这就可以了。接下来的问题还是与换行有关，对于「脚注」标记，应该附加在所注的文字后面不分离吖。而「显示」文本所默认的自动换行能用空格判断西洋文字单词界限，对没有空格的东洋文字就做不到了。</p>
 
     <figure>
-        <a target="_blank" href="image/016-005.png"><img src="image/016-005.png" alt="脚注换行问题" /></a>
+        <img src="image/016-005.png" alt="脚注换行问题" />
         <figcaption>脚注换行问题</figcaption>
     </figure>
 
@@ -102,7 +102,7 @@
     <p>这就正常了。顺便还有个问题，竖排版的「下划线」到底应该在左边还有右边？昨晚新闻联播当中出现的画面，可是放在右边了哟：</p>
 
     <figure>
-        <a target="_blank" href="image/016-006.png"><img src="image/016-006.png" alt="中央钦定右划线" /></a>
+        <img src="image/016-006.png" alt="中央钦定右划线" />
         <figcaption>中央钦定右划线</figcaption>
     </figure>
 
@@ -129,7 +129,7 @@ span.inner {
     <p>这样横排时「下划线」的位置也正确了：</p>
 
     <figure>
-        <a target="_blank" href="image/016-007.png"><img src="image/016-007.png" alt="横排专名号处理" /></a>
+        <img src="image/016-007.png" alt="横排专名号处理" />
         <figcaption>横排专名号处理</figcaption>
     </figure>
 
@@ -150,12 +150,12 @@ span.inner {
     <p>其它工作过程暂略，包括但不限于前几篇解释过的其它样式，以及使用CSS变量配色，总之按照明暗两套主题，最终成果是这样的：</p>
 
     <figure>
-        <a target="_blank" href="image/016-008.png"><img src="image/016-008.png" alt="亮色主题" /></a>
+        <img src="image/016-008.png" alt="亮色主题" />
         <figcaption>亮色主题</figcaption>
     </figure>
 
     <figure>
-        <a target="_blank" href="image/016-009.png"><img src="image/016-009.png" alt="暗色主题" /></a>
+        <img src="image/016-009.png" alt="暗色主题" />
         <figcaption>暗色主题</figcaption>
     </figure>
 
