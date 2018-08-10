@@ -148,7 +148,7 @@
 
     <figure>
         <img src="image/012-002.png" alt="转换结果页面" />
-        <figcaption>转换结果页面</figcaption>
+        <figcaption><span class="figcaption">转换结果页面</span></figcaption>
     </figure>
 
     <p>使用的CSS很简单，都是前几篇提到过的。而本篇的重点XSLT，是使用了递归下降的模板（<code>xsl-template</code>），对每个节点的处理都是「陈力就列不能者止」。对数据的处理也只有「<code>xsl:value-of</code>」这最简单最基本的「拿来主义」。</p>
@@ -225,7 +225,7 @@
 
     <figure>
         <img src="image/012-003.png" alt="转换结果页面" />
-        <figcaption>转换结果页面</figcaption>
+        <figcaption><span class="figcaption">转换结果页面</span></figcaption>
     </figure>
 
     <p>其中用到了「局部变量」，还使用「<code>xsl-if</code>」进行判断。其中「土豆」不提供「分享」外链，目前在线使用html5格式视频，所以直接给链接。其实对于多个站点还可以用「<code>xsl-choose</code>」「<code>xsl-when</code>」「<code>xsl-otherwise</code>」操作，就像各种真の编程语言当中「<samp>if-elseif-else</samp>」「<samp>switch-case</samp>」块那样。</p>
