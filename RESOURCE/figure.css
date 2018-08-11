@@ -2,7 +2,6 @@ figure {
     margin: 0.5rem;
     padding: 0.5rem;
     border-radius: 0.5rem;
-    /* border: 1px dotted dimgray; */
 }
 
 figcaption {
@@ -14,6 +13,12 @@ figcaption span {
     margin: auto;
     padding: 0 1rem 0.25rem 1rem;
     border-bottom: 2px dashed dimgray;
+}
+
+div.image-group {
+    box-sizing: border-box;
+    justify-content: center;
+    display: flex;
 }
 
 img {
