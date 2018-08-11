@@ -89,7 +89,7 @@
     <figure>
         <img src="image/009-002.png" alt="默认效果" />
         <img src="image/009-003.png" alt="默认效果" />
-        <figcaption>默认效果</figcaption>
+        <figcaption><span class="figcaption">默认效果</span></figcaption>
     </figure>
 
     <p>效果不需要解释，不使用手机上网的网友早就对浏览器页面司空见惯了。这里就解释一下内容。</p>
@@ -122,7 +122,7 @@
 
     <figure>
         <img src="image/009-004.png" alt="指定嵌套引号" />
-        <figcaption>指定嵌套引号</figcaption>
+        <figcaption><span class="figcaption">指定嵌套引号</span></figcaption>
     </figure>
 
     <p>哎呀，浏览器好高的智商吖。不仅Chrome以及IE，就连FireFox都能做到，看来只是「默认」效果没实现罢了。没有再继续刨根问底到底引号能嵌套多少层，Unicode之下各种符号极大充沛，各位可以自行试验。</p>
@@ -146,7 +146,7 @@ cite::after { content: &quot;》&quot;; }
 
     <figure>
         <img src="image/009-005.png" alt="块引用和书名号" />
-        <figcaption>块引用和书名号</figcaption>
+        <figcaption><span class="figcaption">块引用和书名号</span></figcaption>
     </figure>
 
     <p>其中运用了「<code>::before</code>」「<code>::after</code>」这俩选择器，顾名思义就是在前后追加「内容（<code>content</code>）」，同样也是可以几乎任意指定符号。</p>
@@ -162,7 +162,7 @@ time::after { content: &quot;‡］&quot;; }
 
     <figure>
         <img src="image/009-006.png" alt="自定义「专名号」" />
-        <figcaption>自定义「专名号」</figcaption>
+        <figcaption><span class="figcaption">自定义「专名号」</span></figcaption>
     </figure>
 
     <p>到这里，本篇任务算是搞定了吧。至于「设计」其它样式如字体了颜色了，那些都是「美术工作者」的责任，而「老迈年高不入流码农」方面可以把它们的工作成果轻松塞入样式表加以应用。此处略。</p>
