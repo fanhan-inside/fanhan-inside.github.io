@@ -12,42 +12,50 @@
 
 <body>
     <header>
-        <img src="image/012-001.png" alt="题图" />
+        <!-- <img src="image/012-001.png" alt="题图" /> -->
         <h1>三自排版运动（四）：XSLT与嵌入视频</h1>
     </header>
 
-    <h2>缘起</h2>
+    <main>
+        <section>
+            <h2><span>缘起</span></h2>
 
-    <p>之前提到了，我在简书主要以Markdown格式上传，但还有五篇「不得不」使用富文本编辑器的文章，因为其中包括了「视频」。</p>
-    <p>所以，先睁眼看世界，看看境外赛博朋克英特纳雄耐尔主义者当中的Markdown用户是怎样对待这个问题的。</p>
-    <p>众所周知，Markdown有很多变种和扩展，其中追加了「流程图」「甘特图」等适合码农的功能的那种，称为「markdown-it」，也就是GitHub上面使用的那种。于是，GitHub用户开了一个项目，唤作「<a target="_blank" href="https://github.com/CenterForOpenScience/markdown-it-video">markdown-it-video</a>」，进一步扩展。</p>
-    <p>当然这需要服务器端支持，但是可以先观察其语法，在本地通过XML/XSLT模拟嘛。由于各个视频网站的架构不同格式不同，当然引用视频的方式也不同。目前「markdown-it-video」支持五个站点，语法则是统一的。</p>
+            <p>之前提到了，我在简书主要以Markdown格式上传，但还有五篇「不得不」使用富文本编辑器的文章，因为其中包括了「视频」。</p>
+            <p>所以，先睁眼看世界，看看境外赛博朋克英特纳雄耐尔主义者当中的Markdown用户是怎样对待这个问题的。</p>
+            <p>众所周知，Markdown有很多变种和扩展，其中追加了「流程图」「甘特图」等适合码农的功能的那种，称为「markdown-it」，也就是GitHub上面使用的那种。于是，GitHub用户开了一个项目，唤作「<a
+                    target="_blank" href="https://github.com/CenterForOpenScience/markdown-it-video">markdown-it-video</a>」，进一步扩展。</p>
+            <p>当然这需要服务器端支持，但是可以先观察其语法，在本地通过XML/XSLT模拟嘛。由于各个视频网站的架构不同格式不同，当然引用视频的方式也不同。目前「markdown-it-video」支持五个站点，语法则是统一的。</p>
 
-<pre><code class="markdown">@[youtube](dQw4w9WgXcQ)
+            <pre><code class="markdown">@[youtube](dQw4w9WgXcQ)
 @[vimeo](19706846)
 @[vine](etVpwB7uHlw)
 @[prezi](1kkxdtlp4241)
 @[osf](kuvg9)
 </code></pre>
 
-    <p>也就是说，提供的信息只有「站点」和「视频标识」，插件在内部根据「站点」不同生成不同的针对性的代码也就是「链接」的形式。其它站点当然就不管了。</p>
-    <p>那么，不仅我中华兲朝上国自有国情在此，就是在其它二百多个联合国成员注册的视频站点，都有自己的「特色」，不可能面面俱到。</p>
-    <p>于是，本篇的目标已经限定了，最低纲领是把迄今为止码字中用到的外部视频链接进行处理，最高纲领是挑几个不同的视频站点进行针对性处理，技术上能实现就结束。</p>
+            <p>也就是说，提供的信息只有「站点」和「视频标识」，插件在内部根据「站点」不同生成不同的针对性的代码也就是「链接」的形式。其它站点当然就不管了。</p>
+            <p>那么，不仅我中华兲朝上国自有国情在此，就是在其它二百多个联合国成员注册的视频站点，都有自己的「特色」，不可能面面俱到。</p>
+            <p>于是，本篇的目标已经限定了，最低纲领是把迄今为止码字中用到的外部视频链接进行处理，最高纲领是挑几个不同的视频站点进行针对性处理，技术上能实现就结束。</p>
+        </section>
+        <section>
+            <h2><span>工欲善其事必先利其器</span></h2>
 
-    <h2>工欲善其事必先利其器</h2>
-
-    <p>虽然说过了，运行环境只需要「浏览器」，但是编写XSLT并进行调试的过程，若是单纯凭借「文本编辑器」就有些费劲了，浏览器提供的错误信息并不足够充沛。</p>
-    <p>对于XML应用来说，「可视化集成开发环境」也有，虽然工作效率较高，但通常成本也很高。这里就列举两个曾经用过但被贫穷限制了购买力而不是想象力的我喜忧掺半感慨万分的软件（套装）。</p>
-    <p>一个是「<abbr class="software"><a target="_blank" href="https://www.oxygenxml.com">Oxygen Xml Editor</a></abbr>」，已经覆盖了常见的XML应用范围。</p>
-    <p>还有一个是豪华版旗舰套装「<abbr class="software"><a target="_blan" href="https://www.altova.com/MissionKit">Altova MissionKit</a></abbr>」，其中一个产品「<abbr class="software">XmlSpy</abbr>」就大致对应了各种「Xml Editor」，而其它产品各有高附加值。</p>
-    <p>顺便请忠君爱国童年才俊们注意，这个「Altova」与美帝灯塔国没关系，是总部设在维也纳的德意志民族神圣罗马帝国企业，在线商店里面除了北美地区之外的定价单位都是欧元。</p>
-    <p>正所谓「临川羡鱼不如退而结网」者也，对于眼下面对的需求，还得通过「三自」方式搞定。在已经有了「VS Code」等免费且功能足够的文本编辑器的情况下，可以利用之前提到过的第三方软件，通常是开源至少免费的。</p>
-    <p>于是，按照W3C以及与其关系密切的机构和个人的推荐，搜到了「<abbr class="software"><a target="_blank" href="http://www.saxonica.com">Saxon</a></abbr>」，提供了C/C++/Php、Java、dotNet和JavaScript™环境，其中「Home Edition」是开源的，下载链接在SourceForge上。</p>
-    <p>对于Windows用户来说，建议下载dotNet版，因为安装包已经包括了命令行工具，直接用就可以，不需要自己编译或依赖JRE。而JavaScript版也可以顺便下来用于在线处理。</p>
-    <p>而Apache也有相应的开源成果「<abbr class="software">Xalan</abbr>」，不过同样需要自行编译或者以「<code>java -jar</code>」方式启动。这点「麻烦」对于码农来说这不算啥，但对于我如今这种极力避免编程的状态，并不是在项目中使用「库」而是执行「转换」操作，还得单独下载Java，何必呢。</p>
-    <h2>最低纲领</h2>
-    <p>不废话，先把五篇文章内所有用过的视频罗列成XML格式：</p>
-    <pre><code class="xml">«testVideo.xml»
+            <p>虽然说过了，运行环境只需要「浏览器」，但是编写XSLT并进行调试的过程，若是单纯凭借「文本编辑器」就有些费劲了，浏览器提供的错误信息并不足够充沛。</p>
+            <p>对于XML应用来说，「可视化集成开发环境」也有，虽然工作效率较高，但通常成本也很高。这里就列举两个曾经用过但被贫穷限制了购买力而不是想象力的我喜忧掺半感慨万分的软件（套装）。</p>
+            <p>一个是「<abbr class="software"><a target="_blank" href="https://www.oxygenxml.com">Oxygen Xml Editor</a></abbr>」，已经覆盖了常见的XML应用范围。</p>
+            <p>还有一个是豪华版旗舰套装「<abbr class="software"><a target="_blan" href="https://www.altova.com/MissionKit">Altova MissionKit</a></abbr>」，其中一个产品「<abbr
+                    class="software">XmlSpy</abbr>」就大致对应了各种「Xml Editor」，而其它产品各有高附加值。</p>
+            <p>顺便请忠君爱国童年才俊们注意，这个「Altova」与美帝灯塔国没关系，是总部设在维也纳的德意志民族神圣罗马帝国企业，在线商店里面除了北美地区之外的定价单位都是欧元。</p>
+            <p>正所谓「临川羡鱼不如退而结网」者也，对于眼下面对的需求，还得通过「三自」方式搞定。在已经有了「VS Code」等免费且功能足够的文本编辑器的情况下，可以利用之前提到过的第三方软件，通常是开源至少免费的。</p>
+            <p>于是，按照W3C以及与其关系密切的机构和个人的推荐，搜到了「<abbr class="software"><a target="_blank" href="http://www.saxonica.com">Saxon</a></abbr>」，提供了C/C++/Php、Java、dotNet和JavaScript™环境，其中「Home
+                Edition」是开源的，下载链接在SourceForge上。</p>
+            <p>对于Windows用户来说，建议下载dotNet版，因为安装包已经包括了命令行工具，直接用就可以，不需要自己编译或依赖JRE。而JavaScript版也可以顺便下来用于在线处理。</p>
+            <p>而Apache也有相应的开源成果「<abbr class="software">Xalan</abbr>」，不过同样需要自行编译或者以「<code>java -jar</code>」方式启动。这点「麻烦」对于码农来说这不算啥，但对于我如今这种极力避免编程的状态，并不是在项目中使用「库」而是执行「转换」操作，还得单独下载Java，何必呢。</p>
+        </section>
+        <section>
+            <h2><span>最低纲领</span></h2>
+            <p>不废话，先把五篇文章内所有用过的视频罗列成XML格式：</p>
+            <pre><code class="xml">«testVideo.xml»
 
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
 &lt;?xml-stylesheet type=&quot;text/xsl&quot; href=&quot;./testVideo.xsl&quot;?&gt;
@@ -94,9 +102,9 @@
 &lt;/stuff&gt;
 </code></pre>
 
-    <p>然后针对这个格式，写出XSLT操作：</p>
+            <p>然后针对这个格式，写出XSLT操作：</p>
 
-<pre><code class="xsl">«testVideo.xsl»
+            <pre><code class="xsl">«testVideo.xsl»
 
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
 &lt;xsl:transform xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; version=&quot;1.0&quot;&gt;
@@ -140,28 +148,29 @@
 &lt;/xsl:transform&gt;
 </code></pre>
 
-    <p>执行转换操作很简单，装上「Saxon」之后使用命令行就行：</p>
-<pre class="code">Transform.exe -t -s:testVideo.xml -xsl:testVideo.xsl -o:temp.html</pre>
+            <p>执行转换操作很简单，装上「Saxon」之后使用命令行就行：</p>
+            <pre class="code">Transform.exe -t -s:testVideo.xml -xsl:testVideo.xsl -o:temp.html</pre>
 
-    <p>如果出错，命令窗口里面会有错误信息显示，精确到哪行哪列，照着改就是了。这就比每次启动浏览器看其中含糊的提示要方便，在「开发」阶段应该如此。</p>
-    <p>转换成功之后，打开temp.html文件在浏览器内观察到结果显示正常。双击testVideo.xml文件，启动IE会自动转换，显示正常，但是由于视频太多「显示驱动程序崩溃并自动恢复」了。于是拖进FireFox里面，效果如下：</p>
+            <p>如果出错，命令窗口里面会有错误信息显示，精确到哪行哪列，照着改就是了。这就比每次启动浏览器看其中含糊的提示要方便，在「开发」阶段应该如此。</p>
+            <p>转换成功之后，打开temp.html文件在浏览器内观察到结果显示正常。双击testVideo.xml文件，启动IE会自动转换，显示正常，但是由于视频太多「显示驱动程序崩溃并自动恢复」了。于是拖进FireFox里面，效果如下：</p>
 
-    <figure>
-        <img src="image/012-002.png" alt="转换结果页面" />
-        <figcaption><span class="figcaption">转换结果页面</span></figcaption>
-    </figure>
+            <figure>
+                <img src="image/012-002.png" alt="转换结果页面" />
+                <figcaption><span class="figcaption">转换结果页面</span></figcaption>
+            </figure>
 
-    <p>使用的CSS很简单，都是前几篇提到过的。而本篇的重点XSLT，是使用了递归下降的模板（<code>xsl-template</code>），对每个节点的处理都是「陈力就列不能者止」。对数据的处理也只有「<code>xsl:value-of</code>」这最简单最基本的「拿来主义」。</p>
-    <p>这里要特意提醒一点，FireFox不支持「<code>xsl:text</code>」的「<code>disable-output-escaping</code>」设置，输出字面常量就是会转义，页面上会把「<code>&lt;&gt;&quot;&#39;&amp;</code>」这些原原本本显示出来，解决方案就是上面代码所体现的，直接写html并在其中引用字面变量「<code>{@title}</code>」「<code>{@vid}</code>」什么的。</p>
+            <p>使用的CSS很简单，都是前几篇提到过的。而本篇的重点XSLT，是使用了递归下降的模板（<code>xsl-template</code>），对每个节点的处理都是「陈力就列不能者止」。对数据的处理也只有「<code>xsl:value-of</code>」这最简单最基本的「拿来主义」。</p>
+            <p>这里要特意提醒一点，FireFox不支持「<code>xsl:text</code>」的「<code>disable-output-escaping</code>」设置，输出字面常量就是会转义，页面上会把「<code>&lt;&gt;&quot;&#39;&amp;</code>」这些原原本本显示出来，解决方案就是上面代码所体现的，直接写html并在其中引用字面变量「<code>{@title}</code>」「<code>{@vid}</code>」什么的。</p>
+        </section>
+        <section>
+            <h2><span>最高纲领</span></h2>
 
-    <h2>最高纲领</h2>
+            <p>因为码字的时候这些视频素材都是在同一个站点「优酷」找到的，所以上面的处理当中没有考虑到「具体情况具体分析」「我大某站自有站情在此」相关事宜，因此那个「<code>site</code>」属性值并没有被用到。</p>
+            <p>所以，顺便多找了个几个视频站点，从活跃色目帐号经常主动推送到我眼皮底下于是知名度比较高的那些开始，选择不代表本人的任何倾向，不需要做任何解释。</p>
+            <p>而素材也不找「<mark>政治敏感</mark>」容易被「<mark>亦当删去</mark>」的那些，搜索使用关键字「BWV565」，也就是各种风格改编版《<cite>巴赫D小调托卡塔与赋格</cite>》，还是之前没用过的。</p>
+            <p>存储数据的XML文件如下：</p>
 
-    <p>因为码字的时候这些视频素材都是在同一个站点「优酷」找到的，所以上面的处理当中没有考虑到「具体情况具体分析」「我大某站自有站情在此」相关事宜，因此那个「<code>site</code>」属性值并没有被用到。</p>
-    <p>所以，顺便多找了个几个视频站点，从活跃色目帐号经常主动推送到我眼皮底下于是知名度比较高的那些开始，选择不代表本人的任何倾向，不需要做任何解释。</p>
-    <p>而素材也不找「<mark>政治敏感</mark>」容易被「<mark>亦当删去</mark>」的那些，搜索使用关键字「BWV565」，也就是各种风格改编版《<cite>巴赫D小调托卡塔与赋格</cite>》，还是之前没用过的。</p>
-    <p>存储数据的XML文件如下：</p>
-
-<pre><code class="xml">«videoTest.xml»
+            <pre><code class="xml">«videoTest.xml»
 
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
 &lt;?xml-stylesheet type=&quot;text/xsl&quot; href=&quot;./videoTest.xsl&quot;?&gt;
@@ -175,10 +184,10 @@
 &lt;/document&gt;
 </code></pre>
 
-    <p>格式更简单，就是罗列三个站点的四个视频，只有属性值没有节点值，就当数据库快照那么理解好了。</p>
-    <p>针对性转换的XSL如下：</p>
+            <p>格式更简单，就是罗列三个站点的四个视频，只有属性值没有节点值，就当数据库快照那么理解好了。</p>
+            <p>针对性转换的XSL如下：</p>
 
-<pre><code class="xsl">«videoTest.xsl»
+            <pre><code class="xsl">«videoTest.xsl»
 
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
 &lt;xsl:transform xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; version=&quot;1.0&quot;&gt;
@@ -221,24 +230,26 @@
 &lt;/xsl:transform&gt;
 </code></pre>
 
-    <p>转换方式同上，在FireFox当中显示效果如下：</p>
+            <p>转换方式同上，在FireFox当中显示效果如下：</p>
 
-    <figure>
-        <img src="image/012-003.png" alt="转换结果页面" />
-        <figcaption><span class="figcaption">转换结果页面</span></figcaption>
-    </figure>
+            <figure>
+                <img src="image/012-003.png" alt="转换结果页面" />
+                <figcaption><span class="figcaption">转换结果页面</span></figcaption>
+            </figure>
 
-    <p>其中用到了「局部变量」，还使用「<code>xsl-if</code>」进行判断。其中「土豆」不提供「分享」外链，目前在线使用html5格式视频，所以直接给链接。其实对于多个站点还可以用「<code>xsl-choose</code>」「<code>xsl-when</code>」「<code>xsl-otherwise</code>」操作，就像各种真の编程语言当中「<samp>if-elseif-else</samp>」「<samp>switch-case</samp>」块那样。</p>
+            <p>其中用到了「局部变量」，还使用「<code>xsl-if</code>」进行判断。其中「土豆」不提供「分享」外链，目前在线使用html5格式视频，所以直接给链接。其实对于多个站点还可以用「<code>xsl-choose</code>」「<code>xsl-when</code>」「<code>xsl-otherwise</code>」操作，就像各种真の编程语言当中「<samp>if-elseif-else</samp>」「<samp>switch-case</samp>」块那样。</p>
+        </section>
+        <section>
+            <h2><span>后记</span></h2>
 
-    <h2>后记</h2>
-
-    <p>本篇「字」数不多，但是其中尽可能简短的「代码」也是我亲手运用十个手指头辛辛苦苦敲出来（并亲自将八阿哥斩尽杀绝）的吖，算广义「码字」吧。</p>
-    <p>到现在为止，已经上传的文章当中与Markdown格式相关的遗留问题都已经解决，至少是有了解决方案在本地可以实现的那种。</p>
-    <p>刚发现还没扯到政治和意识形态之上，浑身不舒服，于是最后先挑个头吧，将来单独「惹是生非」展开了说。</p>
-    <p>先参考经济学上的「恩格尔系数」，说食物支出占收入比例越大就越贫穷，考虑「温饱」问题只管饱不管温，那是由于部分少数民族还有裹块兽皮围个草裙的传统风俗习惯，不需要纺织业产能。那么，套用到赛博朋克虚拟经济之上，作为生产工具的「软硬件采购支出」在总成本当中所占比例越高，相应生产者就越「低端」，这个概念各位业内有意见么？</p>
-    <p>哪怕从个人角度出发，从零开始配置工作环境的一次性支出预算想必不少，这成本要摊平到整个寿命周期当中。并且，各种专业软件经常时常需要升级，还有一些许可是定时「租借」的，这些都属于维护成本。也就是说，「软硬件采购支出」对于工作品质的影响，好比食物对于生活品质的影响一样，占比越大，体现出品质越「低劣」。</p>
-    <p>因此，由于核心技术把持在以美帝灯塔国为首的发达国家之中，硬件成本减不掉，为了降低成本扩大利润，赛博朋克企业纷纷不约而同采取了压缩软件采购预算的手段。其中有合法的，就是用开源和免费软件替代品；当然也有不合法的，那就是盗版。选择前者对使用者素质要求较高，后者则对其脸皮要求较高。</p>
-
+            <p>本篇「字」数不多，但是其中尽可能简短的「代码」也是我亲手运用十个手指头辛辛苦苦敲出来（并亲自将八阿哥斩尽杀绝）的吖，算广义「码字」吧。</p>
+            <p>到现在为止，已经上传的文章当中与Markdown格式相关的遗留问题都已经解决，至少是有了解决方案在本地可以实现的那种。</p>
+            <p>刚发现还没扯到政治和意识形态之上，浑身不舒服，于是最后先挑个头吧，将来单独「惹是生非」展开了说。</p>
+            <p>先参考经济学上的「恩格尔系数」，说食物支出占收入比例越大就越贫穷，考虑「温饱」问题只管饱不管温，那是由于部分少数民族还有裹块兽皮围个草裙的传统风俗习惯，不需要纺织业产能。那么，套用到赛博朋克虚拟经济之上，作为生产工具的「软硬件采购支出」在总成本当中所占比例越高，相应生产者就越「低端」，这个概念各位业内有意见么？</p>
+            <p>哪怕从个人角度出发，从零开始配置工作环境的一次性支出预算想必不少，这成本要摊平到整个寿命周期当中。并且，各种专业软件经常时常需要升级，还有一些许可是定时「租借」的，这些都属于维护成本。也就是说，「软硬件采购支出」对于工作品质的影响，好比食物对于生活品质的影响一样，占比越大，体现出品质越「低劣」。</p>
+            <p>因此，由于核心技术把持在以美帝灯塔国为首的发达国家之中，硬件成本减不掉，为了降低成本扩大利润，赛博朋克企业纷纷不约而同采取了压缩软件采购预算的手段。其中有合法的，就是用开源和免费软件替代品；当然也有不合法的，那就是盗版。选择前者对使用者素质要求较高，后者则对其脸皮要求较高。</p>
+        </section>
+    </main>
     <footer>
         <p>发表于<time>2018-06-22</time></p>
         <p>范狂夫</p>

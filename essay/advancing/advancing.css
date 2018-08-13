@@ -1,8 +1,13 @@
 @import url(../essay.css);
 
-body {
-    width: 1280px;
-}
 h1 {
     background: radial-gradient(farthest-corner at 0 0, white, red);
+}
+
+section {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    margin: 0.5rem 0;
+    padding: 0.5rem 0;
 }

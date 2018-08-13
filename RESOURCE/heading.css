@@ -1,33 +1,49 @@
 h1 {
+    font-size: 2rem;
     padding: 1rem;
     background: radial-gradient(farthest-corner at 0 0, yellow, red);
 }
 
 h2 {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+h2>span {
+    display: inline-block;
+    padding: 0.5rem 2rem;
+    background: radial-gradient(black, white);
+    color: white;
+    border: none;
+}
+
+h3, h4 {
+    font-size: 1.25rem;
+}
+
+h3>span {
     display: inline-block;
     padding: 0.5rem;
     border-bottom: 3px double dimgray;
 }
 
-h3 {
+h4>span {
     display: inline-block;
-    padding: 0.25rem;
+    padding: 0.5rem;
     border-bottom: 2px solid dimgray;
 }
 
-h4 {
-    display: inline-block;
-    padding: 0.25rem;
-    border-bottom: 2px dashed dimgray;
+h5, h6 {
+    font-size: 1rem;
 }
 
-h5 {
+h5>span {
     display: inline-block;
     padding: 0.25rem;
     border-bottom: 1px solid dimgray;
 }
 
-h6 {
+h6>span {
     display: inline-block;
     padding: 0.25rem;
     border-bottom: 1px dashed dimgray;

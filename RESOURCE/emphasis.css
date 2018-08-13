@@ -134,7 +134,7 @@ span.holy {
     padding: 0.25rem;
     text-indent: none;
     font-weight: bold;
-    font-size: 1rem;
+    /* font-size: 1rem; */
     background: linear-gradient(yellow, red);
     border-radius: 0.25rem;
 }
@@ -144,7 +144,7 @@ span.evil {
     padding: 0.25rem;
     text-indent: none;
     font-weight: bold;
-    font-size: 1rem;
+    /* font-size: 1rem; */
     background: linear-gradient(lime, dimgray);
     border-radius: 0.25rem;
     color: purple;

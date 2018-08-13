@@ -1,4 +1,11 @@
 @import url(../main.css);
-html {
-    background-color: darkred;
+
+body {
+    width: 1440px;
+}
+
+main {
+    width: 1280px;
+    margin: 1rem auto;
+    padding: 1rem;
 }
