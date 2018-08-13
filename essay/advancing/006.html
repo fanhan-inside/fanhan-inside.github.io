@@ -8,6 +8,16 @@
 </head>
 
 <body>
+    <nav>
+        <ul class="nav">
+            <li><a href="005.html">上一篇</a></li>
+            <li><a href="../toc.html">目录</a></li>
+            <li><a href="007.html">下一篇</a></li>
+        </ul>
+        <ul class="aside">
+            <li><a href="../../index.html">主页</a></li>
+        </ul>
+    </nav>
     <header>
         <h1>三自修图运动</h1>
     </header>
@@ -15,7 +25,7 @@
     <main>
         <p>释题略。</p>
         <section>
-            <h2><span>缘起</span></h2>
+            <h2><span class="heading">缘起</span></h2>
 
             <p>参考前天在知乎自问自答《<a target="_blank" href="https://www.zhihu.com/question/280049896/answer/411160972">范狂夫：如何设计两幅国旗/军旗/党旗同时惹毛几乎所有人？</a>》，注意展开问题描述，或者看在简书的备份《<a
                     target="_blank" href="https://www.jianshu.com/p/0ea0ed72d6c4">【提问＆回答＠知乎】（№224）如何设计两幅国旗/军旗/党旗同时惹毛几乎所有人？</a>》。</p>
@@ -70,17 +80,17 @@
             <p>于是，刚好切题，既然要「设计」两幅党旗同时惹毛几乎所有人，那就要把这些浑身都是G点一碰就High的团团伙伙所认证的「不友善」内容都缩影到一起嘛。</p>
         </section>
         <section>
-            <h2><span>过程</span></h2>
+            <h2><span class="heading">过程</span></h2>
 
             <p>前一篇随笔《<a target="_blank" href="https://www.jianshu.com/p/c44e0e780485">三自贴图运动</a>》已经出现的内容不再重复。</p>
 
-            <h3><span>准备工作</span></h3>
+            <h3><span class="heading">准备工作</span></h3>
             <p>本文不需要Typora，到［2018-06-08］现在，Visual Studio Code已经更新为「1.24.0」正式版，而Visual Studio Code Insiders则是「1.25.0-insider」预览版。</p>
             <p>素材则是来自维基百科的«Raelian_symbol.svg»和«Raelian_symbol_alternate.svg»文件，雷尔利安运动的符号及其变种。</p>
 
-            <h3><span>「希伯来社会联盟」（HSU，Hebräisch-Soziale Union in Ili）党旗</span></h3>
+            <h3><span class="heading">「希伯来社会联盟」（HSU，Hebräisch-Soziale Union in Ili）党旗</span></h3>
 
-            <h4><span>打开«Raelian_symbol.svg»文件，观察其内容</span></h4>
+            <h4><span class="heading">打开«Raelian_symbol.svg»文件，观察其内容</span></h4>
 
             <figure>
                 <a target="_blank" href="image/006-002.png">
@@ -91,7 +101,7 @@
 
             <p>看上去很简单，就是定义了宽度「<code>width=&quot;192&quot;</code>」高度「<code>height=&quot;213&quot;</code>」以及十倍精度的「视口」坐标系，并绘制一条「路径」。</p>
 
-            <h4><span>先改背景色和前景色</span></h4>
+            <h4><span class="heading">先改背景色和前景色</span></h4>
 
             <p>将「<code>&lt;svg&gt;</code>」的相关属性改为「<code>style=&quot;background-color: red&quot; fill=&quot;black&quot;</code>」并预览：</p>
 
@@ -105,7 +115,7 @@
             <p>发现符号太「大」了，如果要「缩小」一点，与其修改「路径」，还不如放大「画布」。</p>
             <p>另外，作为旗帜，整体的长宽比例也不对，更应该修改「画布」喽。</p>
 
-            <h4><span>修改画布尺寸以及坐标</span></h4>
+            <h4><span class="heading">修改画布尺寸以及坐标</span></h4>
 
             <p>由于「路径」的坐标是依赖「视口」的，所以在懒得（其实是很难于源代码状态下）修改路径数据的情况下，应该调整「背景」，上下左右各增加一截，同时保持「视口」坐标不变。</p>
             <p>比方说比例定位「3:2」吧。那么若是以「480×320」为画布尺寸，而视口的坐标原点不变的话，左右两边需要各增加「144」单位，上下两边需要各增加「53.5」单位，乘以十之后就是视口坐标系。</p>
@@ -117,7 +127,7 @@
                 <figcaption><span class="figcaption">调整画布尺寸和比例</span></figcaption>
             </figure>
 
-            <h4><span>绘制白色圆盘</span></h4>
+            <h4><span class="heading">绘制白色圆盘</span></h4>
 
             <p>这个就需要SVG的元素「<code>&lt;circle&gt;</code>」了。在「<code>&lt;svg&gt;</code>」标签之后「<code>&lt;path&gt;</code>」标签之前增加「<code>&lt;circle cx=&quot;960&quot; cy=&quot;1065&quot; r=&quot;1200&quot; fill=&quot;white&quot;/&gt;</code>」一行即可。</p>
 
@@ -128,7 +138,7 @@
                 <figcaption><span class="figcaption">绘制白色圆盘</span></figcaption>
             </figure>
 
-            <h4><span>导出PNG文件</span></h4>
+            <h4><span class="heading">导出PNG文件</span></h4>
 
             <p>步骤略，结果如下：</p>
 
@@ -139,7 +149,7 @@
                 <figcaption><span class="figcaption">「希伯来社会联盟」党旗</span></figcaption>
             </figure>
 
-            <h4><span>画蛇添足</span></h4>
+            <h4><span class="heading">画蛇添足</span></h4>
             <p>但是呢，如果还需要同时惹毛另外一拨人，比方说「ISIS」，可以考虑把背景换成黑色，这「闪米特国」的效果是这样的：</p>
 
             <figure>
@@ -149,9 +159,9 @@
                 <figcaption><span class="figcaption">「闪米特国」国旗</span></figcaption>
             </figure>
 
-            <h3><span>「希伯来民主联盟」（HDU，Hebräisch-Demokratische Union）党旗</span></h3>
+            <h3><span class="heading">「希伯来民主联盟」（HDU，Hebräisch-Demokratische Union）党旗</span></h3>
 
-            <h4><span>调整画布尺寸和视口坐标</span></h4>
+            <h4><span class="heading">调整画布尺寸和视口坐标</span></h4>
             <p>修改及导出的步骤略，结果如下：</p>
 
             <figure>
@@ -161,7 +171,7 @@
                 <figcaption><span class="figcaption">「希伯来民主联盟」党旗</span></figcaption>
             </figure>
 
-            <h4><span>狗尾续貂</span></h4>
+            <h4><span class="heading">狗尾续貂</span></h4>
 
             <p>看上去比较单调，不适合包括但不限于九省通衢的与时俱进的童年才俊用大拇指操作手机时习惯接受的的新时代中国特色社会主义大好形势下繁荣的中文互联网上经常出现的动图及短视频，所以考虑追加动画效果。</p>
             <p>需要把闭合标签「<code>&lt;path … /&gt;</code>」拆成「<code>&lt;path&gt; … &lt;/path&gt;</code>」的形式，并在中间插入「<code>&lt;animateTransform&gt;</code>」元素。</p>
@@ -209,7 +219,7 @@
             <p>下载reaConverter试用版，转换SVG动画到「PNG」（没有「APNG」选项）没有保留动画效果；转换GIF到PNG，则是把每帧单独保存为一个PNG文件。因为不能满足需求，所以卸载，并且填了原因。</p>
         </section>
         <section>
-            <h2><span>后记</span></h2>
+            <h2><span class="heading">后记</span></h2>
 
             <p>既然「缘起」写太多了，那么后记就少写点。</p>
             <p>对于「修图」这个字眼，通常大众语境中使用「PS」一词，指代Adobe公司的著名产品「PhotoShop」。而这个由两个名词组成的复合名词在当代英语当中，已经当作「动词」用了，如九省通衢の煎蛋经常出现的「设计工作者」对甲方作风简单粗暴之绘声绘色的描述，包括但不限于「photoshop
@@ -222,7 +232,7 @@
         </section>
     </main>
 
-    <h2><span>评论（简书）</span></h2>
+    <h2><span class="heading">评论（简书）</span></h2>
     <div class="comment">
         <div class="post-header"><abbr class="username">岁的期望</abbr><time>2018.06.08 11:24</time></div>
         <p>笑到不行...不知道希帕索斯算毕达哥斯拉余孽吗</p>

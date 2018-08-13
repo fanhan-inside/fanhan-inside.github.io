@@ -3,6 +3,11 @@ div.comment, div.bulletin, div.message {
     margin: 1rem;
     padding: 1rem;
     border: 1px solid lightgray;
+    box-sizing: border-box;
+}
+
+div.bulletin {
+    border-color: gray;
     box-shadow: 0.25rem 0.25rem 0.5rem dimgray;
 }
 

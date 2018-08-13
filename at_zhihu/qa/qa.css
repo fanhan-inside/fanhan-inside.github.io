@@ -3,7 +3,7 @@ main {
     width: 1280px;
     margin: 1rem auto;
     padding: 1rem;
-    border: 1px dotted lightgray;
+    /* border: 1px dotted lightgray; */
 }
 
 header section p, blockquote p {

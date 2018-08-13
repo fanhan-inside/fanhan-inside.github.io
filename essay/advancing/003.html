@@ -20,6 +20,16 @@
 </head>
 
 <body>
+    <nav>
+        <ul class="nav">
+            <li><a href="002.html">上一篇</a></li>
+            <li><a href="../toc.html">目录</a></li>
+            <li><a href="004.html">下一篇</a></li>
+        </ul>
+        <ul class="aside">
+            <li><a href="../../index.html">主页</a></li>
+        </ul>
+    </nav>
     <header>
         <h1>流程图测试：网文「打斗套路」总结</h1>
     </header>
@@ -28,7 +38,7 @@
         <p>下面以此为例，测试在流程图插件协助下，运用Markdown格式进行「码字工程」实践。</p>
         <p>尽量遵守原作者的「思路」，对细节仅限于「技术上」的调整，不加入自己的判断。</p>
 
-        <h2><span>透过现象看本质，把「思维导图」转换成「树状列表」</span></h2>
+        <h2><span class="heading">透过现象看本质，把「思维导图」转换成「树状列表」</span></h2>
         <p>以下内容全部来自「原版」，连错别字和标点符号都原封不动抄下来。</p>
         <blockquote class="treeview">
             <ol>
@@ -269,10 +279,10 @@
 
         <p>然后从「不入流码农」的角度审视一遍，除了存在「同义反复」（如10.1的「吸凉气」「咽口水」都是一个意思）之外，还混淆了顺序、分支、循环三种结构。这就是实质为「树状列表」的「思维导图」的弱点，再怎么高大上的名词也回避不了数据结构的本质缺陷。</p>
 
-        <h2><span>自底向上划分模块，调整细节，形成若干流程图</span></h2>
+        <h2><span class="heading">自底向上划分模块，调整细节，形成若干流程图</span></h2>
         <p>在这个过程中，要注意按照「角色」划分模块，这也是为了将来「时序图」做准备，可以用「文艺理论」修饰为「视角」，但未必采用「POV」。也就是说，按照「原版」思路，「流程」始终以主角视角「执行」，其中偶尔插入其它视角作为「子程序」。而「作者」也是一种视角，用来体现「旁白」等描写，用「输入输出」指代。</p>
 
-        <h3><span>前期铺垫</span></h3>
+        <h3><span class="heading">前期铺垫</span></h3>
         <pre class="code">开始=&gt;start: 开始
 结束=&gt;end: 结束
 ｛对手｝=&gt;subroutine: ｛对手｝
@@ -302,7 +312,7 @@ condAngry(no)-&gt;闷声发大财-&gt;主角决定策略-&gt;结束
             <figcaption><span class="figcaption">前期铺垫</span></figcaption>
         </figure>
 
-        <h3><span>营造气氛</span></h3>
+        <h3><span class="heading">营造气氛</span></h3>
         <pre class="code">开始=&gt;start: 开始
 结束=&gt;end: 结束
 天气=&gt;inputoutput: 天气如何
@@ -318,7 +328,7 @@ condAngry(no)-&gt;闷声发大财-&gt;主角决定策略-&gt;结束
             <figcaption><span class="figcaption">营造气氛</span></figcaption>
         </figure>
 
-        <h3><span>主角登场</span></h3>
+        <h3><span class="heading">主角登场</span></h3>
         <pre class="code">开始=&gt;start: 开始
 结束=&gt;end: 结束
 ｛主角亲友团｝1=&gt;subroutine: ｛主角亲友团｝
@@ -348,7 +358,7 @@ cond蔑视(no)-&gt;结束
             <figcaption><span class="figcaption">主角登场</span></figcaption>
         </figure>
 
-        <h3><span>对手登场</span></h3>
+        <h3><span class="heading">对手登场</span></h3>
         <pre class="code">开始=&gt;start: 开始
 结束=&gt;end: 结束
 
@@ -371,7 +381,7 @@ cond沸腾(no)-&gt;气氛(right)-&gt;结束
             <figcaption><span class="figcaption">对手登场</span></figcaption>
         </figure>
 
-        <h3><span>裁判出场</span></h3>
+        <h3><span class="heading">裁判出场</span></h3>
         <pre class="code">开始=&gt;start: 开始
 结束=&gt;end: 结束
 
@@ -395,7 +405,7 @@ cond挑衅(no)-&gt;结束
             <figcaption><span class="figcaption">裁判出场</span></figcaption>
         </figure>
 
-        <h3><span>众人对结果的预判</span></h3>
+        <h3><span class="heading">众人对结果的预判</span></h3>
         <pre class="code">开始=&gt;start: 开始
 结束=&gt;end: 结束
 
@@ -417,7 +427,7 @@ cond挑衅(no)-&gt;结束
             <figcaption><span class="figcaption">众人对结果的预判</span></figcaption>
         </figure>
 
-        <h3><span>对手的情况</span></h3>
+        <h3><span class="heading">对手的情况</span></h3>
         <pre class="code">开始=&gt;start: 开始
 结束=&gt;end: 结束
 
@@ -449,7 +459,7 @@ cond了解(no)-&gt;对手不了解主角-&gt;对手实力
             <figcaption><span class="figcaption">对手的情况</span></figcaption>
         </figure>
 
-        <h3><span>打斗过程</span></h3>
+        <h3><span class="heading">打斗过程</span></h3>
         <pre class="code">开始=&gt;start: 开始
 结束=&gt;end: 结束
 cond对话=&gt;condition: 是否对话？
@@ -484,7 +494,7 @@ cond拉锯战(no)-&gt;结束
             <figcaption><span class="figcaption">打斗过程</span></figcaption>
         </figure>
 
-        <h3><span>打斗时的场外</span></h3>
+        <h3><span class="heading">打斗时的场外</span></h3>
         <pre class="code">开始=&gt;start: 开始
 结束=&gt;end: 结束
 
@@ -513,7 +523,7 @@ cond拉锯战(no)-&gt;结束
             <figcaption><span class="figcaption">打斗时的场外</span></figcaption>
         </figure>
 
-        <h3><span>打斗之后</span></h3>
+        <h3><span class="heading">打斗之后</span></h3>
         <pre class="code">开始=&gt;start: 开始
 结束=&gt;end: 结束
 ｛亲友团｝=&gt;subroutine: ｛亲友团｝反应：
@@ -554,7 +564,7 @@ cond拉锯战(no)-&gt;结束
             <figcaption><span class="figcaption">打斗之后</span></figcaption>
         </figure>
 
-        <h2><span>整理告一段落之后的总结与感想</span></h2>
+        <h2><span class="heading">整理告一段落之后的总结与感想</span></h2>
 
         <p>1，流程图使用「flowchart.js」实现，目前是Typora的内置功能，而VS Code当中没找到相关插件。</p>
         <p>2，用Mermaid画流程图也可以，但是不如专用流程图插件的表现更规范，比如这些标准节点的形状。并且目前的Mermaid插件似乎有点问题，节点的文本有长度限制或不支持Unicode，经常渲染失败。</p>
@@ -562,7 +572,7 @@ cond拉锯战(no)-&gt;结束
         <p>4，按照原版思路，每个「是否」型节点后面都没有提供相关处理，需要酌情补充。比方说「前期铺垫」一节中「主角发怒了吗」节点后面，我就追加了两段处理：「<b>闷声发大财</b>」和「<b lang="ja">アイムアングリっぽい</b>」。</p>
         <p>5，注意上面「画蛇添足」并非什么「恶趣味」，因为实验发现流程图节点命名支持汉字，所以照抄「原版」提纲内容即可，不必非得绞尽脑汁译作英语或用拼音。但是对于半角字符带空格的「<b lang="en">I&rsquo;m Angry!</b>」这种就不能照抄了，正好顺便实验其它Unicode字符，用片假名拼写再加个流行平假名词尾，娱乐至死的逗哔们看上去会比较亲切吧？</p>
 
-        <h2><span>下一步的计划和建议</span></h2>
+        <h2><span class="heading">下一步的计划和建议</span></h2>
         <p>1，因为尽量遵守「原版」思路，发现了以「代码」视角观察的不规范和不符合逻辑之处。但是同时也必须指出，「思维导图」侧重点就是储存脑洞，没必要太严格，如果时时刻刻按照写代码的要求处理流程，内容会死板许多，限制会大得多。</p>
         <p>2，流程图仅仅体现了时间线的顺序，不见得是文字表现的顺序，倒叙插叙等手法，在图中体现不出来。所以写手们也不用抱怨「码字工程」有利于硅基计算而不利于体现碳基智慧的荣耀。同时对于网文这种快餐文学而言，很多写手都知道尽量不要用倒叙插叙的原则，读者同时追十几本几十本书每天看一章，记不住前因后果，一旦感觉莫名其妙就下架了也。</p>
         <p>3，按理说接下来就该做「序列图」了，但是原版思路不适合这种表现形式，我又不想按照自己的思路修改。这里还是参考「写手咖啡」（<abbr class="software"><a target="_blank" href="http://www.writerscafe.co.uk"><span

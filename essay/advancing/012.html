@@ -11,6 +11,16 @@
 </head>
 
 <body>
+    <nav>
+        <ul class="nav">
+            <li><a href="011.html">上一篇</a></li>
+            <li><a href="../toc.html">目录</a></li>
+            <li><a href="013.html">下一篇</a></li>
+        </ul>
+        <ul class="aside">
+            <li><a href="../../index.html">主页</a></li>
+        </ul>
+    </nav>
     <header>
         <!-- <img src="image/012-001.png" alt="题图" /> -->
         <h1>三自排版运动（四）：XSLT与嵌入视频</h1>
@@ -18,7 +28,7 @@
 
     <main>
         <section>
-            <h2><span>缘起</span></h2>
+            <h2><span class="heading">缘起</span></h2>
 
             <p>之前提到了，我在简书主要以Markdown格式上传，但还有五篇「不得不」使用富文本编辑器的文章，因为其中包括了「视频」。</p>
             <p>所以，先睁眼看世界，看看境外赛博朋克英特纳雄耐尔主义者当中的Markdown用户是怎样对待这个问题的。</p>
@@ -38,7 +48,7 @@
             <p>于是，本篇的目标已经限定了，最低纲领是把迄今为止码字中用到的外部视频链接进行处理，最高纲领是挑几个不同的视频站点进行针对性处理，技术上能实现就结束。</p>
         </section>
         <section>
-            <h2><span>工欲善其事必先利其器</span></h2>
+            <h2><span class="heading">工欲善其事必先利其器</span></h2>
 
             <p>虽然说过了，运行环境只需要「浏览器」，但是编写XSLT并进行调试的过程，若是单纯凭借「文本编辑器」就有些费劲了，浏览器提供的错误信息并不足够充沛。</p>
             <p>对于XML应用来说，「可视化集成开发环境」也有，虽然工作效率较高，但通常成本也很高。这里就列举两个曾经用过但被贫穷限制了购买力而不是想象力的我喜忧掺半感慨万分的软件（套装）。</p>
@@ -48,12 +58,13 @@
             <p>顺便请忠君爱国童年才俊们注意，这个「Altova」与美帝灯塔国没关系，是总部设在维也纳的德意志民族神圣罗马帝国企业，在线商店里面除了北美地区之外的定价单位都是欧元。</p>
             <p>正所谓「临川羡鱼不如退而结网」者也，对于眼下面对的需求，还得通过「三自」方式搞定。在已经有了「VS Code」等免费且功能足够的文本编辑器的情况下，可以利用之前提到过的第三方软件，通常是开源至少免费的。</p>
             <p>于是，按照W3C以及与其关系密切的机构和个人的推荐，搜到了「<abbr class="software"><a target="_blank" href="http://www.saxonica.com">Saxon</a></abbr>」，提供了C/C++/Php、Java、dotNet和JavaScript™环境，其中「Home
-                Edition」是开源的，下载链接在SourceForge上。</p>
+                Edition」是开源的，下载链接在SourceForge上。
+            </p>
             <p>对于Windows用户来说，建议下载dotNet版，因为安装包已经包括了命令行工具，直接用就可以，不需要自己编译或依赖JRE。而JavaScript版也可以顺便下来用于在线处理。</p>
             <p>而Apache也有相应的开源成果「<abbr class="software">Xalan</abbr>」，不过同样需要自行编译或者以「<code>java -jar</code>」方式启动。这点「麻烦」对于码农来说这不算啥，但对于我如今这种极力避免编程的状态，并不是在项目中使用「库」而是执行「转换」操作，还得单独下载Java，何必呢。</p>
         </section>
         <section>
-            <h2><span>最低纲领</span></h2>
+            <h2><span class="heading">最低纲领</span></h2>
             <p>不废话，先把五篇文章内所有用过的视频罗列成XML格式：</p>
             <pre><code class="xml">«testVideo.xml»
 
@@ -163,7 +174,7 @@
             <p>这里要特意提醒一点，FireFox不支持「<code>xsl:text</code>」的「<code>disable-output-escaping</code>」设置，输出字面常量就是会转义，页面上会把「<code>&lt;&gt;&quot;&#39;&amp;</code>」这些原原本本显示出来，解决方案就是上面代码所体现的，直接写html并在其中引用字面变量「<code>{@title}</code>」「<code>{@vid}</code>」什么的。</p>
         </section>
         <section>
-            <h2><span>最高纲领</span></h2>
+            <h2><span class="heading">最高纲领</span></h2>
 
             <p>因为码字的时候这些视频素材都是在同一个站点「优酷」找到的，所以上面的处理当中没有考虑到「具体情况具体分析」「我大某站自有站情在此」相关事宜，因此那个「<code>site</code>」属性值并没有被用到。</p>
             <p>所以，顺便多找了个几个视频站点，从活跃色目帐号经常主动推送到我眼皮底下于是知名度比较高的那些开始，选择不代表本人的任何倾向，不需要做任何解释。</p>
@@ -240,7 +251,7 @@
             <p>其中用到了「局部变量」，还使用「<code>xsl-if</code>」进行判断。其中「土豆」不提供「分享」外链，目前在线使用html5格式视频，所以直接给链接。其实对于多个站点还可以用「<code>xsl-choose</code>」「<code>xsl-when</code>」「<code>xsl-otherwise</code>」操作，就像各种真の编程语言当中「<samp>if-elseif-else</samp>」「<samp>switch-case</samp>」块那样。</p>
         </section>
         <section>
-            <h2><span>后记</span></h2>
+            <h2><span class="heading">后记</span></h2>
 
             <p>本篇「字」数不多，但是其中尽可能简短的「代码」也是我亲手运用十个手指头辛辛苦苦敲出来（并亲自将八阿哥斩尽杀绝）的吖，算广义「码字」吧。</p>
             <p>到现在为止，已经上传的文章当中与Markdown格式相关的遗留问题都已经解决，至少是有了解决方案在本地可以实现的那种。</p>

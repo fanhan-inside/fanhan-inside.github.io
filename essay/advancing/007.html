@@ -11,6 +11,16 @@
 </head>
 
 <body>
+    <nav>
+        <ul class="nav">
+            <li><a href="006.html">上一篇</a></li>
+            <li><a href="../toc.html">目录</a></li>
+            <li><a href="008.html">下一篇</a></li>
+        </ul>
+        <ul class="aside">
+            <li><a href="../../index.html">主页</a></li>
+        </ul>
+    </nav>
     <header>
         <h1>三自绘图运动</h1>
     </header>
@@ -22,7 +32,7 @@
 
         <p>释题略。题图见上。</p>
         <section>
-            <h2><span>缘起</span></h2>
+            <h2><span class="heading">缘起</span></h2>
 
             <p>因为知乎文章有「题图」功能，截止到［2018-02-22］为止在知乎发表的文章，最后一篇是《<cite>〈范版数学恶补记〉流水帐（四十）</cite>》，都自制了题图上传。</p>
             <p>当时在各种千奇百怪软件和钦定红客种下的木马均极大充沛的旧台式机上，为了省事起见，使用了「<abbr class="software">Micosoft™©® Visio™©®</abbr>」拼凑图形和文本，然后截图。</p>
@@ -39,7 +49,7 @@
             <p>目标很简单，就是使用开源至少是免费的工具，在当前环境下，炮制出不逊色于甚至远胜于之前版本题图品质的图片。这不是软件之间的优劣比较，而是老迈年高的「精神病仆街写手不入流码农数学渣」突破过去的自己。</p>
         </section>
         <section>
-            <h2><span>过程</span></h2>
+            <h2><span class="heading">过程</span></h2>
 
             <p>前两篇「三自运动」随笔当中提到的内容略。</p>
             <p>图片选择SVG格式，不仅仅是因为其「矢量」特性，还关乎以不入流码农身份客串图农的工作便利。</p>
@@ -51,7 +61,7 @@
             <p>所以，虽然试用了号称可替代「<abbr class="software">Adobe Illustrator</abbr>」的包括但不限于「<abbr class="software"><a target="_blank"
                         href="https://inkscape.org/en/">Inkscape</a></abbr>」在内的基于SVG的免费甚至开源之矢量绘图工具，但是看到生成的文件当中标签注释极大充沛，确实眼晕。对于我当前面对的简单需求来说，还不如手写极简主义纯文本更方便。</p>
 
-            <h3><span>准备工作</span></h3>
+            <h3><span class="heading">准备工作</span></h3>
 
             <p>题图布局简单，其中的文本比较容易，不解释。而作为标志的「希帕索斯十字」就不好办了。数学上很简单，就是两个极坐标方程「<span class="math"><var>ρ</var> = cos2<var>θ</var></span>」「<span
                     class="math"><var>ρ</var> = sin2<var>θ</var></span>」，但是绘图比较麻烦。</p>
@@ -67,10 +77,11 @@
 
             <p>看错误信息当中出现「ascii」字眼，很明显是因为Windows特有的「代码页」的缘故。而SageMath使用的一些组件，仍然依赖「Phthon 2.7」，于是无法处理。</p>
             <p>网上搜到的信息显示，「境外用户」纷纷表示情绪稳定，说SageMath的Windows安装包装上就能用，比虚拟机映像版更方便。不过呢，估计SageMath团队测试用环境，以及主要用户的使用环境，应该都是「英文Windows」吧，也是「Python
-                2.7」的开发及测试环境。</p>
+                2.7」的开发及测试环境。
+            </p>
             <p>总之，既然用不了，还得想其它办法画十字。经过一番艰苦卓绝的搜索工作之后，在繁荣的互联网上找到了可免费使用的站点「<a target="_blank" href="http://fooplot.com">FooPlot|线上数学函数绘图器</a>」，还提供SVG格式下载。</p>
 
-            <h3><span>希帕索斯十字</span></h3>
+            <h3><span class="heading">希帕索斯十字</span></h3>
 
             <p>首先，在FooPlot上分别绘制两个极坐标方程，并「导出成」SVG格式「下载」，参数设定如下图：</p>
 
@@ -103,7 +114,7 @@
             <p>代码中路径参数均已省略。但是要提醒，在「<code>&lt;path&gt;</code>」元素的「<code>d</code>」属性值的最后，要手动加上一个「<code>Z</code>」命令，确保路径闭合。毕竟在线绘图的区间是<span
                     class="math">(0, 2π)</span>，最终图片放大后会在「<span class="math"><var>θ</var> = 0</span>」处显示出一个小小的缝隙。</p>
 
-            <h3><span>组合图形和文本</span></h3>
+            <h3><span class="heading">组合图形和文本</span></h3>
 
             <p>既然素材有了，那么接下来就需要「一张白纸好作画」了也。除了「上传头像」之类场合可以直接使用素材，其它时候都需要加工嘛。</p>
             <p>磨刀不误砍柴工，最终题图之前，还得重新熟悉安排各元素的布局，以及试验准备附加的各种效果。所以，先纪念伟大的数学先驱者｛希帕索斯｝同志。</p>
@@ -162,7 +173,7 @@
             <p>所以在样式中指定了「<code>text-anchor: middle;</code>」以便指定文本「中点」，这样操作简单，只要把「预定文本区域」的水平中点算出来就可以了也。</p>
             <p>而垂直对齐就要具体情况具体分析，简便起见，作为图片注释的两个极坐标方程的文本的「基线」设定为「<code>alignment-baseline: hanging;</code>」，也就是「悬挂」在图片下方。</p>
 
-            <h3><span>磨刀之后砍柴</span></h3>
+            <h3><span class="heading">磨刀之后砍柴</span></h3>
 
             <p>接下来正式开工，准备做题图了。先是决定图片尺寸，以及计算各个元素的位置，略。</p>
             <p>文本安插方式略，但是为了增加「作者」名，选择了「竖排」方式。对应到样式当中，是「<code>writing-mode: tb;</code>」这条。因为文本是汉字，还指定了「<code>alignment-baseline: ideographic;</code>」以按照「方块字」对齐。为了实现各种具体效果，试验了许多并不熟悉的属性值，是为「面向巧合编程」者也。</p>
@@ -221,7 +232,7 @@
                     class="software">Microsoft™©® Windows™©®</abbr>」和「<abbr class="software">Apple™©® macOS™©®</abbr>」，推荐。</p>
         </section>
         <section>
-            <h2><span>后记</span></h2>
+            <h2><span class="heading">后记</span></h2>
 
             <p>其实也没啥好写的了。把遇到的问题罗列一下吧。</p>
             <p>首先是竖排文本，对齐方式仍然是个迷，尤其是各个浏览器对标准的支持程度以及实现的程度都不一样。而基于「Electron」框架的「VS Code」所使用的「预览」是基于「Chromium」的，属于「谷歌那一套」。</p>

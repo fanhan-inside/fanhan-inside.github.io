@@ -11,6 +11,7 @@
 @import url(RESOURCE/span.css);
 @import url(RESOURCE/table.css);
 @import url(RESOURCE/list.css);
+@import url(RESOURCE/nav.css);
 
 html {
     background-color: dimgray;
@@ -33,4 +34,14 @@ footer, div.footer {
 p {
     text-indent: 2rem;
     line-height: 2rem;
+}
+
+hr.inside {
+    border: none;
+    height: 3px;
+    background-image: linear-gradient(left, transparent, dimgray, transparent);
+    background-image: -webkit-linear-gradient(left, transparent, dimgray, transparent);
+    background-image: -moz-linear-gradient(left, transparent, dimgray, transparent);
+    background-image: -ms-linear-gradient(left, transparent, dimgray, transparent);
+    background-image: -o-linear-gradient(left, transparent, dimgray, transparent);
 }

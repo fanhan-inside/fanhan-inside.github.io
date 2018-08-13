@@ -11,13 +11,23 @@
 </head>
 
 <body>
+    <nav>
+        <ul class="nav">
+            <li><a href="008.html">上一篇</a></li>
+            <li><a href="../toc.html">目录</a></li>
+            <li><a href="010.html">下一篇</a></li>
+        </ul>
+        <ul class="aside">
+            <li><a href="../../index.html">主页</a></li>
+        </ul>
+    </nav>
     <header>
         <!-- <img src="image/009-001.png" alt="题图" /> -->
         <h1>三自排版运动（一）：引号与书名号</h1>
     </header>
     <main>
         <section>
-            <h2><span>缘起</span></h2>
+            <h2><span class="heading">缘起</span></h2>
 
             <p>最近几篇随笔都没用Typora，因为这些都是「准备工作」，最终目的还是为了码字服务。在《<cite>〈恶补记〉流水帐</cite>》当中提到了准备自制「主题」，把《真·流水账》或曰「日记」的格式调整到与「<abbr
                     class="software">Microsoft™©® Word™©® 2010</abbr>」当中挑个内置的简洁主题接近一致。</p>
@@ -27,7 +37,7 @@
             <p>于是，就从前一阵已经形成的码字习惯当中反复强调的「细节」当中比较有碍观瞻的「引号」「书名号」乃至个人自定义的「专名号」开始吧，还要考虑由于旁征博引而不得不需要在汉语环境下处理多语种的问题。</p>
         </section>
         <section>
-            <h2><span>手写HTML并观察默认效果</span></h2>
+            <h2><span class="heading">手写HTML并观察默认效果</span></h2>
 
             <p>不啰嗦，熟练运用十个手指头敲击键盘输入纯文本产生的html文件内容如下：</p>
 
@@ -109,7 +119,7 @@
             <p>而「<code>&lt;abbr&gt;</code>」标签，本来在html规范当中是指示「缩写词」的，这里为了测试「专名号」而挪用。否则就得用「<code>&lt;span&gt;</code>」并指定「<code>class</code>」了，运用CSS的显示效果是一样的，又缺了鼠标悬停提示功能，何必呢。</p>
         </section>
         <section>
-            <h2><span>自制CSS并运用</span></h2>
+            <h2><span class="heading">自制CSS并运用</span></h2>
 
             <p>一条一条试验。</p>
             <p>先说引号。观察默认效果得知，无论引号嵌套多少层，只有最外层是双引号，里面一律单引号用到底。而繁荣的互联网（不局限于兲朝境内和中文页面）上，对「<code>&lt;q&gt;</code>」标签的属性解释，一律仅限于指定「两」层，也就是「四」个字符串。</p>
@@ -172,7 +182,7 @@ time::after { content: &quot;‡］&quot;; }
             <p>到这里，本篇任务算是搞定了吧。至于「设计」其它样式如字体了颜色了，那些都是「美术工作者」的责任，而「老迈年高不入流码农」方面可以把它们的工作成果轻松塞入样式表加以应用。此处略。</p>
         </section>
         <section>
-            <h2><span>后记</span></h2>
+            <h2><span class="heading">后记</span></h2>
 
             <p>本篇只是「三自排版运动」的第一部分，还是「一叶障目不见泰山」「捡了芝麻丢了西瓜」「本末倒置」专攻「形而下者谓之器」以确定「细节」的「雕虫小技」，不值一提不值一提。</p>
             <p>很惭愧，就干了这么一点微小的工作，谢谢大家。</p>

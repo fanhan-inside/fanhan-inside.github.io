@@ -6,28 +6,41 @@
     <title>知乎问答№031</title>
     <link rel="stylesheet" type="text/css" href="qa.css">
     <style type="text/css">
-    #accounts {
-        width: 80%;
-        margin: auto;
-        border-collapse: collapse;
-    }
-    #accounts th, td {
-        padding: 0.5rem 1rem;
-        border: 1px solid lightgray;
-    }
-    #accounts td {
-        text-align: left;
-        vertical-align: middle;
-    }
+        #accounts {
+            width: 80%;
+            margin: auto;
+            border-collapse: collapse;
+        }
+
+        #accounts th,
+        td {
+            padding: 0.5rem 1rem;
+            border: 1px solid lightgray;
+        }
+
+        #accounts td {
+            text-align: left;
+            vertical-align: middle;
+        }
     </style>
 </head>
 
 <body>
+    <nav>
+        <ul class="nav">
+            <li><a href="030.html">上一篇</a></li>
+            <li><a href="../toc.html">目录</a></li>
+            <li><a href="032.html">下一篇</a></li>
+        </ul>
+        <ul class="aside">
+            <li><a href="../../index.html">主页</a></li>
+        </ul>
+    </nav>
     <header>
         <h1>你的知乎、微信、QQ……的签名是什么？有什么意义或者原因？</h1>
     </header>
     <main>
-        <h2><span>回复</span></h2>
+        <h2><span class="heading">回复</span></h2>
         <p>在知乎的签名本来是「<em>故人心似中秋月，肯为狂夫照白头</em>」，用来和帐号呼应顺便言志，可以参考这个回答：</p>
         <div class="linkcard">
             <a target="_blank" href="005.html">范狂夫：说说你们认为最好的写月或中秋的诗词？</a>
@@ -65,34 +78,118 @@
                 </tr>
             </thead>
             <tbody>
-                <tr><td><abbr class="username">TheKock</abbr></td><td><q lang="en">if ya smell ... what The Kock is shooting</q></td></tr>
-                <tr><td><abbr class="username">Rhodan</abbr></td><td><q lang="en">Rock&rsquo;n Roll</q></td></tr>
-                <tr><td><abbr class="username">uhuru</abbr></td><td><q lang="fr">O Liberté, que de crimes on commet en ton nom!</q></td></tr>
-                <tr><td><abbr class="username">Qoppa</abbr></td><td><q lang="grc">κωμῳδο-δῖδάσκᾰλος</q></td></tr>
-                <tr><td><abbr class="username">ΘΑΝΑΤΟΣ</abbr></td><td><q lang="grc">πολλων θανάτων ἄξιος καἱ ούχ ὲνός</q></td></tr>
-                <tr><td><abbr class="username">Rigel</abbr></td><td><q lang="la">nil novi sub sole</q></td></tr>
-                <tr><td><abbr class="username">Racilius</abbr></td><td><q lang="la">repetitio est mater studiorum</q></td></tr>
-                <tr><td><abbr class="username">Rabirius</abbr></td><td><q lang="la">quousque tandem ?</q></td></tr>
-                <tr><td><abbr class="username">Afranius</abbr></td><td><q lang="la">absolvi animam meam</q></td></tr>
-                <tr><td><abbr class="username">Baebius</abbr></td><td><q lang="la">bonis nocit quisquis pepercerit malis</q></td></tr>
-                <tr><td><abbr class="username">Caecilius</abbr></td><td><q lang="la">cogito, ergo sum</q></td></tr>
-                <tr><td><abbr class="username">Decius</abbr></td><td><q lang="la">de nihilo nihil flit</q></td></tr>
-                <tr><td><abbr class="username">Egnatius</abbr></td><td><q lang="la">ex oriente lux</q></td></tr>
-                <tr><td><abbr class="username">Fabius</abbr></td><td><q lang="la">facta , non ficta !</q></td></tr>
-                <tr><td><abbr class="username">Gabinius</abbr></td><td><q lang="la">gutta cavat lapidem</q></td></tr>
-                <tr><td><abbr class="username">Helvius</abbr></td><td><q lang="la">honos habet onus</q></td></tr>
-                <tr><td><abbr class="username">Icadius</abbr></td><td><q lang="la">industriae nil impossibile</q></td></tr>
-                <tr><td><abbr class="username">Junius</abbr></td><td><q lang="la">jus talionis</q></td></tr>
-                <tr><td><abbr class="username">Kaeso</abbr></td><td><q lang="la">custos morum</q></td></tr>
-                <tr><td><abbr class="username">Laberius</abbr></td><td><q lang="la">lupus pilum mutat, non mentem</q></td></tr>
-                <tr><td><abbr class="username">Marcellus</abbr></td><td><q lang="la">mens agitat molem</q><br /><q lang="la">mens qua nihil est celerius</q></td></tr>
-                <tr><td><abbr class="username">Nigidius</abbr></td><td><q lang="la">non nova sed nove</q></td></tr>
-                <tr><td><abbr class="username">Onesicritus</abbr></td><td><q lang="la">opera et studio</q><br /><q lang="la">omnia mea mecum porto</q></td></tr>
-                <tr><td><abbr class="username">Pacidejanus</abbr></td><td><q lang="la">possunt quia posse videntur</q></td></tr>
-                <tr><td><abbr class="username">Sacrani</abbr></td><td><q lang="la">simplex munditiis</q></td></tr>
-                <tr><td><abbr class="username">Tacitus</abbr></td><td><q lang="la">tempus edax rerum</q></td></tr>
-                <tr><td><abbr class="username">绯红侍僧</abbr></td><td>「<em>信念能使人行走在火焰的洪流中并毫发无伤</em>」</td></tr>
-                <tr><td><abbr class="username">曜黑侍僧</abbr></td><td>「<em>真实能让人挺立在死亡的凝视下并全身而退</em>」</td></tr>
+                <tr>
+                    <td><abbr class="username">TheKock</abbr></td>
+                    <td><q lang="en">if ya smell ... what The Kock is shooting</q></td>
+                </tr>
+                <tr>
+                    <td><abbr class="username">Rhodan</abbr></td>
+                    <td><q lang="en">Rock&rsquo;n Roll</q></td>
+                </tr>
+                <tr>
+                    <td><abbr class="username">uhuru</abbr></td>
+                    <td><q lang="fr">O Liberté, que de crimes on commet en ton nom!</q></td>
+                </tr>
+                <tr>
+                    <td><abbr class="username">Qoppa</abbr></td>
+                    <td><q lang="grc">κωμῳδο-δῖδάσκᾰλος</q></td>
+                </tr>
+                <tr>
+                    <td><abbr class="username">ΘΑΝΑΤΟΣ</abbr></td>
+                    <td><q lang="grc">πολλων θανάτων ἄξιος καἱ ούχ ὲνός</q></td>
+                </tr>
+                <tr>
+                    <td><abbr class="username">Rigel</abbr></td>
+                    <td><q lang="la">nil novi sub sole</q></td>
+                </tr>
+                <tr>
+                    <td><abbr class="username">Racilius</abbr></td>
+                    <td><q lang="la">repetitio est mater studiorum</q></td>
+                </tr>
+                <tr>
+                    <td><abbr class="username">Rabirius</abbr></td>
+                    <td><q lang="la">quousque tandem ?</q></td>
+                </tr>
+                <tr>
+                    <td><abbr class="username">Afranius</abbr></td>
+                    <td><q lang="la">absolvi animam meam</q></td>
+                </tr>
+                <tr>
+                    <td><abbr class="username">Baebius</abbr></td>
+                    <td><q lang="la">bonis nocit quisquis pepercerit malis</q></td>
+                </tr>
+                <tr>
+                    <td><abbr class="username">Caecilius</abbr></td>
+                    <td><q lang="la">cogito, ergo sum</q></td>
+                </tr>
+                <tr>
+                    <td><abbr class="username">Decius</abbr></td>
+                    <td><q lang="la">de nihilo nihil flit</q></td>
+                </tr>
+                <tr>
+                    <td><abbr class="username">Egnatius</abbr></td>
+                    <td><q lang="la">ex oriente lux</q></td>
+                </tr>
+                <tr>
+                    <td><abbr class="username">Fabius</abbr></td>
+                    <td><q lang="la">facta , non ficta !</q></td>
+                </tr>
+                <tr>
+                    <td><abbr class="username">Gabinius</abbr></td>
+                    <td><q lang="la">gutta cavat lapidem</q></td>
+                </tr>
+                <tr>
+                    <td><abbr class="username">Helvius</abbr></td>
+                    <td><q lang="la">honos habet onus</q></td>
+                </tr>
+                <tr>
+                    <td><abbr class="username">Icadius</abbr></td>
+                    <td><q lang="la">industriae nil impossibile</q></td>
+                </tr>
+                <tr>
+                    <td><abbr class="username">Junius</abbr></td>
+                    <td><q lang="la">jus talionis</q></td>
+                </tr>
+                <tr>
+                    <td><abbr class="username">Kaeso</abbr></td>
+                    <td><q lang="la">custos morum</q></td>
+                </tr>
+                <tr>
+                    <td><abbr class="username">Laberius</abbr></td>
+                    <td><q lang="la">lupus pilum mutat, non mentem</q></td>
+                </tr>
+                <tr>
+                    <td><abbr class="username">Marcellus</abbr></td>
+                    <td><q lang="la">mens agitat molem</q><br /><q lang="la">mens qua nihil est celerius</q></td>
+                </tr>
+                <tr>
+                    <td><abbr class="username">Nigidius</abbr></td>
+                    <td><q lang="la">non nova sed nove</q></td>
+                </tr>
+                <tr>
+                    <td><abbr class="username">Onesicritus</abbr></td>
+                    <td><q lang="la">opera et studio</q><br /><q lang="la">omnia mea mecum porto</q></td>
+                </tr>
+                <tr>
+                    <td><abbr class="username">Pacidejanus</abbr></td>
+                    <td><q lang="la">possunt quia posse videntur</q></td>
+                </tr>
+                <tr>
+                    <td><abbr class="username">Sacrani</abbr></td>
+                    <td><q lang="la">simplex munditiis</q></td>
+                </tr>
+                <tr>
+                    <td><abbr class="username">Tacitus</abbr></td>
+                    <td><q lang="la">tempus edax rerum</q></td>
+                </tr>
+                <tr>
+                    <td><abbr class="username">绯红侍僧</abbr></td>
+                    <td>「<em>信念能使人行走在火焰的洪流中并毫发无伤</em>」</td>
+                </tr>
+                <tr>
+                    <td><abbr class="username">曜黑侍僧</abbr></td>
+                    <td>「<em>真实能让人挺立在死亡的凝视下并全身而退</em>」</td>
+                </tr>
             </tbody>
         </table>
         <p>这些账号都「其兴也勃焉其亡也忽焉」，总之如今都用不了了也。</p>

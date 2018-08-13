@@ -5,3 +5,11 @@ main {
     margin: 1rem auto;
     padding: 1rem;
 }
+
+section {
+    border: none;
+    background: transparent;
+    box-shadow: none;
+    margin: 0 0 3rem 0;
+    padding: 0;
+}

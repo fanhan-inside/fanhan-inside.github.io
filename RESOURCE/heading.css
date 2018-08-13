@@ -9,11 +9,10 @@ h2 {
     letter-spacing: 1px;
 }
 
-h2>span {
+span.heading, span.bookmark {
     display: inline-block;
-    padding: 0.5rem 2rem;
-    background: radial-gradient(black, white);
-    color: white;
+    margin-left: 0;
+    padding: 0.5rem;
     border: none;
 }
 
@@ -21,30 +20,44 @@ h3, h4 {
     font-size: 1.25rem;
 }
 
-h3>span {
-    display: inline-block;
-    padding: 0.5rem;
-    border-bottom: 3px double dimgray;
-}
-
-h4>span {
-    display: inline-block;
-    padding: 0.5rem;
-    border-bottom: 2px solid dimgray;
-}
-
 h5, h6 {
     font-size: 1rem;
 }
 
-h5>span {
-    display: inline-block;
-    padding: 0.25rem;
+h2>span.heading {
+    padding: 0.5rem 2rem;
+    background: radial-gradient(black, white);
+    color: white;
+}
+
+h3>span.heading {
+    border-bottom: 3px double dimgray;
+}
+
+h4>span.heading {
+    border-bottom: 2px solid dimgray;
+}
+
+h5>span.heading {
     border-bottom: 1px solid dimgray;
 }
 
-h6>span {
-    display: inline-block;
-    padding: 0.25rem;
+h6>span.heading {
     border-bottom: 1px dashed dimgray;
+}
+
+h2>span.bookmark {
+    background: linear-gradient(left, transparent, lightgray);
+    background: -webkit-linear-gradient(left, transparent, lightgray);
+    background: -moz-linear-gradient(left, transparent, lightgray);
+    background: -ms-linear-gradient(left, transparent, lightgray);
+    background: -o-linear-gradient(left, transparent, lightgray);
+}
+
+h3>span.bookmark {
+    background: linear-gradient(left, transparent, lightblue);
+    background: -webkit-linear-gradient(left, transparent, lightblue);
+    background: -moz-linear-gradient(left, transparent, lightblue);
+    background: -ms-linear-gradient(left, transparent, lightblue);
+    background: -o-linear-gradient(left, transparent, lightblue);
 }
