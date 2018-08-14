@@ -48,7 +48,19 @@
             margin: 0.5rem;
             padding: 0.25rem;
         }
-
+        tr.question>td:nth-child(3) {
+            position: relative;
+            background: linear-gradient(left, transparent, lightblue);
+            background: -webkit-linear-gradient(left, transparent, lightcyan);
+            background: -moz-linear-gradient(left, transparent, lightcyan);
+            background: -ms-linear-gradient(left, transparent, lightcyan);
+            background: -o-linear-gradient(left, transparent, lightcyan);
+        }
+        tr.question>td:nth-child(3)::before{
+            content: url(../RESOURCE/logo_small.svg);
+            display: inline-block;
+            vertical-align: middle;
+        }
 
         #qa_count, #remark_count {
             margin: 0 0.25rem;
@@ -145,7 +157,7 @@
                 <tr><td>11</td><td><time>2017.10.9</time></td><td>盲人摸象是历史唯物主义吗？</td><td><a target="_blank" href="qa/011.html">正常</a></td><td>阐述自己的主观唯心主义世界观</td></tr>
                 <tr><td>12</td><td><time>2017.10.11</time></td><td>如何看待物理学博士郭晓明言论「日语语法注定日本要么臣服美国，要么臣服中国，否则世界永无宁日。」？</td><td><a target="_blank" href="qa/012.html">正常</a></td><td></td></tr>
                 <tr><td>13</td><td><time>2017.10.12</time></td><td>你构想过什么样的架空世界观？</td><td><a target="_blank" href="qa/013.html">正常</a></td><td>被秒删</td></tr>
-                <tr><td>14</td><td><time>2017.10.12</time></td><td>两种「希帕索斯十字」哪个更美观？</td><td><a target="_blank" href="qa/014.html">正常</a></td><td>提出「希帕索斯十字」设计方案</td></tr>
+                <tr class="question"><td>14</td><td><time>2017.10.12</time></td><td>两种「希帕索斯十字」哪个更美观？</td><td><a target="_blank" href="qa/014.html">正常</a></td><td>提出「希帕索斯十字」设计方案</td></tr>
                 <tr><td>15</td><td><time>2017.10.12</time></td><td>穿过一片麦田，去捡一个最大的麦穗，且不能回头、更换，在何处决定捡到大麦穗的可能性最大？</td><td><a target="_blank" href="qa/015.html">正常</a></td><td></td></tr>
                 <tr><td>16</td><td><time>2017.10.14</time></td><td>科学到底科学吗？</td><td><a target="_blank" href="qa/016.html">正常</a></td><td></td></tr>
                 <tr><td>17</td><td><time>2017.10.15</time></td><td>中国真的在文化、数学上都曾经领先世界几百年吗？</td><td><a target="_blank" href="qa/017.html">正常</a></td><td>阐述「神学」和「哲学」的区别</td></tr>
@@ -170,28 +182,28 @@
                 <tr><td>36</td><td><time>2017.12.16</time></td><td>你最喜欢的一句数学界的名言是什么？</td><td><a target="_blank" href="qa/036.html">正常</a></td><td>自由</td></tr>
                 <tr><td>37</td><td><time>2017.12.18</time></td><td>一个天才，但是所有人都认为他是傻逼，而且他死后也没人挖掘出他的天才，那么他究竟是天才还是傻逼？</td><td><a target="_blank" href="qa/037.html">正常</a></td><td>钦定文豪是怎样炼成的</td></tr>
                 <tr><td>38</td><td><time>2017.12.24</time></td><td>为什么我们把婴儿定义成人，或者说，我们为什么认为自己是「人」？</td><td><a target="_blank" href="qa/038.html">正常</a></td><td>什么是人</td></tr>
-                <tr><td>39</td><td><time>2017.12.25</time></td><td>怎样如同通过实数定义有理数一样从「&alefsym;<sub>n+1</sub>」集合定义「&alefsym;<sub>n</sub>」集合？</td><td><a target="_blank" href="qa/039.html">正常</a></td><td>对本位面「封印」的猜测</td></tr>
+                <tr class="question"><td>39</td><td><time>2017.12.25</time></td><td>怎样如同通过实数定义有理数一样从「&alefsym;<sub>n+1</sub>」集合定义「&alefsym;<sub>n</sub>」集合？</td><td><a target="_blank" href="qa/039.html">正常</a></td><td>对本位面「封印」的猜测</td></tr>
                 <tr><td>40</td><td><time>2017.12.25</time></td><td>为了一个猜想写600页证明，这证明是咋想出来的...或者训练？</td><td><a target="_blank" href="qa/040.html">正常</a></td><td>学术脸谱</td></tr>
                 <tr><td>41</td><td><time>2017.12.25</time></td><td>物自体，既不可知又存在，讨论一个不可知的东西对象还有什么意义，跟玄学有何区别？</td><td><a target="_blank" href="qa/041.html">正常</a></td><td>玄学打哑谜，伪装学术讨论进行政治斗争</td></tr>
-                <tr><td>42</td><td><time>2017.12.30</time></td><td>当代数学工作者承认根号二是无理数么？</td><td><a target="_blank" href="qa/042.html">正常</a></td><td></td></tr>
+                <tr class="question"><td>42</td><td><time>2017.12.30</time></td><td>当代数学工作者承认根号二是无理数么？</td><td><a target="_blank" href="qa/042.html">正常</a></td><td></td></tr>
                 <tr><td>43</td><td><time>2017.12.29</time></td><td>这篇文章分形微积分在鬼扯吗？</td><td><a target="_blank" href="qa/043.html">正常</a></td><td></td></tr>
-                <tr><td>44</td><td><time>2017.12.30</time></td><td>可以从「巴纳赫－塔斯基定理」（分球悖论）推广成「五饼二鱼十二篮悖论」么？</td><td><a target="_blank" href="qa/044.html">正常</a></td><td>送给诡辩唯物主义者的「二难推理」</td></tr>
-                <tr><td>45</td><td><time>2017.12.31</time></td><td>在本站使用「方引号」是「不正确用法」么？</td><td><a target="_blank" href="qa/045.html">正常</a></td><td></td></tr>
+                <tr class="question"><td>44</td><td><time>2017.12.30</time></td><td>可以从「巴纳赫－塔斯基定理」（分球悖论）推广成「五饼二鱼十二篮悖论」么？</td><td><a target="_blank" href="qa/044.html">正常</a></td><td>送给诡辩唯物主义者的「二难推理」</td></tr>
+                <tr class="question"><td>45</td><td><time>2017.12.31</time></td><td>在本站使用「方引号」是「不正确用法」么？</td><td><a target="_blank" href="qa/045.html">正常</a></td><td></td></tr>
                 <tr><td>46</td><td><time>2018.1.1</time></td><td>物理学和信息学的信息概念有不同吗？怎么理解？</td><td><a target="_blank" href="qa/046.html">正常</a></td><td>唯物与唯心</td></tr>
                 <tr><td>47</td><td><time>2018.1.1</time></td><td>你最喜欢的一句物理界的名言是什么？</td><td><a target="_blank" href="qa/047.html">正常</a></td><td>「物理」和「红色物理」是两码事</td></tr>
-                <tr><td>48</td><td><time>2018.1.1</time></td><td>俗语「没有两片雪花是相同的」之数学基础是什么？</td><td><a target="_blank" href="qa/048.html">正常</a></td><td>到了动真格的时候学霸就没影了</td></tr>
+                <tr class="question"><td>48</td><td><time>2018.1.1</time></td><td>俗语「没有两片雪花是相同的」之数学基础是什么？</td><td><a target="_blank" href="qa/048.html">正常</a></td><td>到了动真格的时候学霸就没影了</td></tr>
                 <tr><td>49</td><td><time>2018.1.2</time></td><td>最近在看图灵传，其中讲到“狄拉克基于抽象数学预言了正电子的存在”，谁知道细节，请赐教！?</td><td><a target="_blank" href="qa/049.html">正常</a></td><td>毕希斗争史</td></tr>
                 <tr><td>50</td><td><time>2018.1.4</time></td><td>如何评论网络作家｛荆柯守｝？</td><td><a target="_blank" href="qa/050.html">正常</a></td><td>当代「批判现实主义」码字巨侠</td></tr>
-                <tr><td>51</td><td><time>2018.1.4</time></td><td>线性代数的「克罗内克记号」、实分析的「选民范数」，与计算机科学的「你死我活逻辑」之间有什么联系？</td><td><a target="_blank" href="qa/051.html">正常</a></td><td></td></tr>
+                <tr class="question"><td>51</td><td><time>2018.1.4</time></td><td>线性代数的「克罗内克记号」、实分析的「选民范数」，与计算机科学的「你死我活逻辑」之间有什么联系？</td><td><a target="_blank" href="qa/051.html">正常</a></td><td></td></tr>
                 <tr><td>52</td><td><time>2018.1.5</time></td><td>有哪些历史类网文或写得好的作者？</td><td><a target="_blank" href="qa/052.html">正常</a></td><td>当代「现实主义」码字巨侠</td></tr>
                 <tr><td>53</td><td><time>2018.1.8</time></td><td>大学数学如何培养数学思维？</td><td><a target="_blank" href="qa/053.html">正常</a></td><td>「下纲下线」与「上纲上线」</td></tr>
                 <tr><td>54</td><td><time>2018.1.9</time></td><td>商君书的愚民思想是否过时了？</td><td><a target="_blank" href="qa/054.html">正常</a></td><td>三个代表</td></tr>
-                <tr><td>55</td><td><time>2018.1.11</time></td><td>在「计算机图形学」当中，有没有运用「复分析」相关成果的「二维图形」处理引擎？</td><td><a target="_blank" href="qa/055.html">正常</a></td><td>学以致用</td></tr>
+                <tr class="question"><td>55</td><td><time>2018.1.11</time></td><td>在「计算机图形学」当中，有没有运用「复分析」相关成果的「二维图形」处理引擎？</td><td><a target="_blank" href="qa/055.html">正常</a></td><td>学以致用</td></tr>
                 <tr><td>56</td><td><time>2018.1.14</time></td><td>如何看待德国科学家与出版业巨头爱思唯尔 (Elsevier) 的对抗？</td><td><a target="_blank" href="qa/056.html">正常</a></td><td></td></tr>
-                <tr><td>57</td><td><time>2017.1.17</time></td><td>如何设计一幅国旗/军旗惹毛几乎所有人？</td><td><a target="_blank" href="qa/057.html">正常</a></td><td>帝国钦定布尔什维克党</td></tr>
-                <tr><td>58</td><td><time>2018.1.18</time></td><td>如何看待「民间科学家」以「夫鸡鸣狗盗之徒出其门，此士之所以不至也」的借口替自己辩护？</td><td><a target="_blank" href="qa/058.html">正常</a></td><td>鸡鸣狗盗の科协</td></tr>
+                <tr class="question"><td>57</td><td><time>2017.1.17</time></td><td>如何设计一幅国旗/军旗惹毛几乎所有人？</td><td><a target="_blank" href="qa/057.html">正常</a></td><td>帝国钦定布尔什维克党</td></tr>
+                <tr class="question"><td>58</td><td><time>2018.1.18</time></td><td>如何看待「民间科学家」以「夫鸡鸣狗盗之徒出其门，此士之所以不至也」的借口替自己辩护？</td><td><a target="_blank" href="qa/058.html">正常</a></td><td>鸡鸣狗盗の科协</td></tr>
                 <tr><td>59</td><td><time>2018.1.18</time></td><td>为什么哲学总是强调「阅读经典原著」，而科学却没有类似要求？</td><td><a target="_blank" href="qa/059.html">正常</a></td><td>谁说没有</td></tr>
-                <tr><td>60</td><td><time>2018.1.19</time></td><td>如何评价境外反华人士以「生于不义必将死于耻辱」评价开国大典之上大救星与司徒美堂谈笑风生？</td><td><a target="_blank" href="qa/060.html">正常</a></td><td>何新の眼力价</td></tr>
+                <tr class="question"><td>60</td><td><time>2018.1.19</time></td><td>如何评价境外反华人士以「生于不义必将死于耻辱」评价开国大典之上大救星与司徒美堂谈笑风生？</td><td><a target="_blank" href="qa/060.html">正常</a></td><td>何新の眼力价</td></tr>
                 <tr><td>61</td><td><time>2018.1.19</time></td><td>如何评价“如何评价知乎全是如何评价这种问题？”这个问题？</td><td><a target="_blank" href="qa/061.html">正常</a></td><td></td></tr>
                 <tr><td>62</td><td><time>2018.1.22</time></td><td>如何评价马前卒 2018 年 1 月的演讲《保卫我们的现代生活》？</td><td><a target="_blank" href="qa/062.html">正常</a></td><td>帝国钦定布尔什维克党</td></tr>
                 <tr><td>63</td><td><time>2018.1.22</time></td><td>马前卒是资本家吗？他鼓吹的抚养社会化最终不也会作用到他自己吗？</td><td><a target="_blank" href="qa/063.html">正常</a></td><td>帝国钦定布尔什维克党</td></tr>
@@ -214,12 +226,12 @@
                 <tr><td>80</td><td><time>2018.2.25</time></td><td>经济“脱实向虚”有明确定义吗？用什么指标来验证？</td><td><a target="_blank" href="qa/080.html">正常</a></td><td>兲朝财阀</td></tr>
                 <tr><td>81</td><td><time>2018.2.25</time></td><td>托洛茨基为何会在同斯大林的权力斗争中失败？</td><td><a target="_blank" href="qa/081.html">正常</a></td><td>兵不厌诈</td></tr>
                 <tr><td>82</td><td><time>2018.2.26</time></td><td>专业成绩并不突出的应用数学专业学生应该怎样提升自己？</td><td><a target="_blank" href="qa/082.html">正常</a></td><td>不忘初心牢记使命</td></tr>
-                <tr><td>83</td><td><time>2018.4.25</time></td><td>如何用一张图让应聘前端岗位的面试者骂娘？</td><td><a target="_blank" href="qa/083.html">正常</a></td><td></td></tr>
+                <tr class="question"><td>83</td><td><time>2018.4.25</time></td><td>如何用一张图让应聘前端岗位的面试者骂娘？</td><td><a target="_blank" href="qa/083.html">正常</a></td><td></td></tr>
                 <tr><td>84</td><td><time>2018.2.27</time></td><td>人是怎么废掉的？</td><td><a target="_blank" href="qa/084.html">正常</a></td><td>国家不幸玩家幸</td></tr>
                 <tr><td>85</td><td><time>2018.2.28</time></td><td>科学家大部分都是唯心论还是唯物论者？为什么？</td><td><a target="_blank" href="qa/085.html">正常</a></td><td>真の唯物</td></tr>
                 <tr><td>86</td><td><time>2018.2.28</time></td><td>怎么让一个自视甚高的人认清到现实？</td><td><a target="_blank" href="qa/086.html">正常</a></td><td>隔壁老王人生赢家</td></tr>
                 <tr><td>87</td><td><time>2018.3.1</time></td><td>如何评价《剑风传奇》（烙印勇士）这部漫画？</td><td><a target="_blank" href="qa/087.html">正常</a></td><td>老子英雄儿好汉</td></tr>
-                <tr><td>88</td><td><time>2018.3.2</time></td><td>除了耶教、红教之外，绿教有没有「六亲不认」型教义？</td><td><a target="_blank" href="qa/088.html">正常</a></td><td>以夷制夷，以汉制汉</td></tr>
+                <tr class="question"><td>88</td><td><time>2018.3.2</time></td><td>除了耶教、红教之外，绿教有没有「六亲不认」型教义？</td><td><a target="_blank" href="qa/088.html">正常</a></td><td>以夷制夷，以汉制汉</td></tr>
                 <tr><td>89</td><td><time>2018.3.4</time></td><td>关于说AI已经有能力接替人类在法律领域的某些工作，你怎么看？</td><td><a target="_blank" href="qa/089.html">正常</a></td><td>独神论邪教</td></tr>
                 <tr><td>90</td><td><time>2018.3.5</time></td><td>你都见过什么样的历史盲？</td><td><a target="_blank" href="qa/090.html">正常</a></td><td>蒙古大夫の藏传佛药</td></tr>
                 <tr><td>91</td><td><time>2018.3.6</time></td><td>3Q大战的具体起因，经过，结果如何？</td><td><a target="_blank" href="qa/091.html">正常</a></td><td>南霸天</td></tr>
@@ -324,7 +336,7 @@
                 <tr><td>190</td><td><time>2018.5.9</time></td><td>微软 Microsoft Build 2018 上公布了哪些不负众望的产品、技术或合作？</td><td><a target="_blank" href="qa/190.html">正常</a></td><td></td></tr>
                 <tr><td>191</td><td><time>2018.5.9</time></td><td>如何看待美国退出伊朗核协议？</td><td><a target="_blank" href="qa/191.html">正常</a></td><td>知乎话语体系</td></tr>
                 <tr><td>192</td><td><time>2018.5.9</time></td><td>怎么看“腾讯没有梦想”？</td><td><a target="_blank" href="qa/192.html">正常</a></td><td>资本家坏了政治家的大目标</td></tr>
-                <tr><td>193</td><td><time>2018.5.10</time></td><td>如何看待「中国网络社会组织联合会」成立？</td><td><a target="_blank" href="qa/193.html">正常</a></td><td>冤有头债有主</td></tr>
+                <tr class="question"><td>193</td><td><time>2018.5.10</time></td><td>如何看待「中国网络社会组织联合会」成立？</td><td><a target="_blank" href="qa/193.html">正常</a></td><td>冤有头债有主</td></tr>
                 <tr><td>194</td><td><time>2017.10.17</time></td><td>切·格瓦拉真值得一些人如此崇拜吗？</td><td><a target="_blank" href="qa/194.html">正常</a></td><td>求全责备</td></tr>
                 <tr><td>195</td><td><time>2018.3.18</time></td><td>为什么会有唯心主义？（详见问题说明）？</td><td><a target="_blank" href="qa/195.html">正常</a></td><td>查缺补漏</td></tr>
                 <tr><td>196</td><td><time>2018.5.12</time></td><td>为什么街头烤鸭、烤肠、麻辣烫、关东煮、烧烤这些东西不断被人说不健康甚至致癌，可销量却丝毫不受影响？</td><td><a target="_blank" href="qa/196.html">正常</a></td><td>饥荒后遗症</td></tr>
@@ -355,7 +367,7 @@
                 <tr><td>221</td><td><time>2018.6.4</time></td><td>如何证明人是有灵魂的？人死后，灵魂会去往哪里</td><td><a target="_blank" href="qa/221.html">正常</a></td><td>「凡间乃灵魂工厂」设定</td></tr>
                 <tr><td>222</td><td><time>2018.6.5</time></td><td>为什么武则天最后还是把皇位还给了李家？</td><td><a target="_blank" href="qa/222.html">正常</a></td><td>神不歆非类，民不祀非族</td></tr>
                 <tr><td>223</td><td><time>2018.6.6</time></td><td>如何看待deno项目github源码issue栏目出现“求不要更新了，老子学不动了”？</td><td><a target="_blank" href="qa/223.html">正常</a></td><td>没有困难，制造困难也要上</td></tr>
-                <tr><td>224</td><td><time>2018.6.6</time></td><td>如何设计两幅国旗/军旗/党旗同时惹毛几乎所有人？</td><td><a target="_blank" href="qa/224.html">正常</a></td><td>红得发黑</td></tr>
+                <tr class="question"><td>224</td><td><time>2018.6.6</time></td><td>如何设计两幅国旗/军旗/党旗同时惹毛几乎所有人？</td><td><a target="_blank" href="qa/224.html">正常</a></td><td>红得发黑</td></tr>
                 <tr><td>225</td><td><time>2018.6.7</time></td><td>日皇千年一系，会不会有狸猫换太子的可能？</td><td><a target="_blank" href="qa/225.html">正常</a></td><td>炮舰外交</td></tr>
                 <tr><td>226</td><td><time>2018.6.9</time></td><td>如何评价微软收购 GitHub？对用户、对微软分别意味着什么？</td><td><a target="_blank" href="qa/226.html">正常</a></td><td></td></tr>
                 <tr><td>227</td><td><time>2018.6.11</time></td><td>青岛上合峰会几天？</td><td><a target="_blank" href="qa/227.html">正常</a></td><td>英联邦钦定被瓦解</td></tr>
@@ -365,10 +377,10 @@
                 <tr><td>231</td><td><time>2018.6.16</time></td><td>2018世界杯小组赛，葡萄牙vs西班牙谁能赢？</td><td><a target="_blank" href="qa/231.html">正常</a></td><td>龙套俩牙</td></tr>
                 <tr><td>232</td><td><time>2018.6.19</time></td><td>如何看待今日头条起诉腾讯，要求赔偿 9000 万并道歉？</td><td><a target="_blank" href="qa/232.html">正常</a></td><td>太子少保马化腾</td></tr>
                 <tr><td>233</td><td><time>2018.6.19</time></td><td>如何看待201804艾云尼登陆广东？</td><td><a target="_blank" href="qa/233.html">正常</a></td><td>就知道兲朝要脸</td></tr>
-                <tr><td>234</td><td><time>2018.6.19</time></td><td>「巴西柔术」和「陈鹤皋无限制格斗」到底哪个更厉害？</td><td><a target="_blank" href="qa/234.html">正常</a></td><td></td></tr>
+                <tr class="question"><td>234</td><td><time>2018.6.19</time></td><td>「巴西柔术」和「陈鹤皋无限制格斗」到底哪个更厉害？</td><td><a target="_blank" href="qa/234.html">正常</a></td><td></td></tr>
                 <tr><td>235</td><td><time>2018.7.3</time></td><td>如何看待詹姆斯与湖人达成的4年1.54亿美元的口头协议？</td><td><a target="_blank" href="qa/235.html">正常</a></td><td>明星变野狗</td></tr>
-                <tr><td>236</td><td><time>2018.7.3</time></td><td>如何评价2018年世界杯淘汰赛巴西2：0胜墨西哥？</td><td><a target="_blank" href="qa/236.html">正常</a></td><td>见风使舵</td></tr>
-                <tr><td>237</td><td><time>2018.7.3</time></td><td>如何看待华尔街见闻实时快讯报道人民日报报道2018世界杯淘汰赛比利时逆转日本以3：2晋级？</td><td><a target="_blank" href="qa/237.html">正常</a></td><td>队服</td></tr>
+                <tr class="question"><td>236</td><td><time>2018.7.3</time></td><td>如何评价2018年世界杯淘汰赛巴西2：0胜墨西哥？</td><td><a target="_blank" href="qa/236.html">正常</a></td><td>见风使舵</td></tr>
+                <tr class="question"><td>237</td><td><time>2018.7.3</time></td><td>如何看待华尔街见闻实时快讯报道人民日报报道2018世界杯淘汰赛比利时逆转日本以3：2晋级？</td><td><a target="_blank" href="qa/237.html">正常</a></td><td>队服</td></tr>
                 <tr><td>238</td><td><time>2018.7.4</time></td><td>曹雪芹家为什么被雍正抄家？</td><td><a target="_blank" href="qa/238.html">正常</a></td><td>老油条的下场</td></tr>
                 <tr><td>239</td><td><time>2018.7.7</time></td><td>为什么碰瓷的人不去碰豪车？</td><td><a target="_blank" href="qa/239.html">正常</a></td><td>地主家也没有余粮了</td></tr>
                 <tr><td>240</td><td><time>2018.7.8</time></td><td>应该给乞丐钱吗？为什么？</td><td><a target="_blank" href="qa/240.html">正常</a></td><td>警惕「净衣派」诈骗团伙</td></tr>

@@ -2,6 +2,7 @@
 
 header {
     position: relative;
+    border-bottom: 3px solid silver;
 }
 
 h1 {
@@ -13,8 +14,12 @@ header section {
     box-shadow: none;
 }
 
+header blockquote.description {
+    border: none;
+}
+
 header.question {
-    position: relative;
+    border: none;
 }
 
 header.question h1 {
@@ -22,13 +27,16 @@ header.question h1 {
 }
 
 header.question h1::before {
-    content: url(../favlogo.svg);
+    content: url(../RESOURCE/logo.svg);
     position: absolute;
     right: 0;
     top: 0;
     z-index: 99999;
 }
 
-header.question article {
+header.question blockquote.description {
     background-color: azure;
+    border: 1px solid lightblue;
+    box-sizing: border-box;
+    box-shadow: 0.25rem 0.25rem 0.5rem midnightblue;
 }

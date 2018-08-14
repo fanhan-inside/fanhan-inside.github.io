@@ -28,6 +28,7 @@ section, div.section {
 }
 
 blockquote, div.blockquote {
+    box-sizing: border-box;
     background-color: whitesmoke;
     /* border-top: 1px dotted;
     border-bottom: 1px dotted; */
@@ -35,6 +36,12 @@ blockquote, div.blockquote {
     border-color: lightgray;
     margin: 1rem;
     padding: 1rem;
+}
+
+/* 用于问题描述 */
+blockquote.description {
+    background: transparent;
+    border: none;
 }
 
 blockquote.inside {
