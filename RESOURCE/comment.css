@@ -2,7 +2,7 @@ div.comment, div.bulletin, div.message {
     background-color: transparent;
     margin: 1rem;
     padding: 1rem;
-    border: 1px solid lightgray;
+    border: 1px solid dimgray;
     box-sizing: border-box;
 }
 
@@ -17,7 +17,7 @@ span.message-header {
 }
 
 div.post-header {
-    border-bottom: 1px dashed dimgray;
+    border-bottom: 1px dashed gray;
     min-height: 2rem;
 }
 

@@ -49,12 +49,18 @@ blockquote.inside {
     border: 1px solid lightgray;
 }
 
+blockquote.outside {
+    background: whitesmoke;
+    border: 1px solid lightgray;
+    border-radius: 0.5rem;
+}
+
 blockquote.article {
     background: antiquewhite;
-    border: none;
+    border: 1px solid lightgray;
 }
 
 blockquote.section {
     background-color: beige;
-    border: none;
+    border: 1px solid lightgray;
 }
