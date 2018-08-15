@@ -12,6 +12,59 @@ article.poem {
     margin: 1rem auto;
 }
 
+article.bulletin, article.comment {
+    background-color: white;
+    box-sizing: border-box;
+    width: 90%;
+    margin: 1rem auto;
+    padding: 1rem;
+    border: 1px solid dimgray;
+}
+
+article.bulletin {
+    box-shadow: 0.25rem 0.25rem 0.5rem dimgray;
+}
+
+article.comment {
+    box-shadow: none;
+}
+
+article.bulletin p,
+article.comment p {
+    text-indent: 0;
+    line-height: 1.5rem;
+}
+
+article.bulletin header,
+article.comment header {
+    box-sizing: border-box;
+    width: 100%;
+    border-bottom: 1px solid lightgray;
+    min-height: 2rem;
+}
+
+article.bulletin header time,
+article.comment header time {
+    float: right;
+}
+
+article.bulletin footer {
+    box-sizing: border-box;
+    width: 100%;
+    border-top: 1px dashed lightgray;
+    min-height: 2rem;
+    text-align: left;
+    margin: 0;
+    padding: 0.25rem 1rem;
+    color: dimgray;
+}
+
+article.bulletin footer p {
+    margin: 0;
+    padding: 0;
+    font-size: small;
+}
+
 .lyrics p {
     line-height: 1.25rem;
     margin: 0.5rem;
@@ -39,6 +92,7 @@ blockquote, div.blockquote {
 }
 
 /* 用于问题描述 */
+
 blockquote.description {
     background: transparent;
     border: none;
