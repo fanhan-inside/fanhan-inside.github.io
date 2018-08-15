@@ -7,12 +7,18 @@ article, div.article {
     box-shadow: 0.5rem 0.5rem 0.75rem dimgray;
 }
 
+article header {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 2rem;
+}
+
 article.poem {
     width: 50%;
     margin: 1rem auto;
 }
 
-article.bulletin, article.comment {
+article.bulletin, article.comment, article.message {
     background-color: white;
     box-sizing: border-box;
     width: 90%;
@@ -27,24 +33,38 @@ article.bulletin {
 
 article.comment {
     box-shadow: none;
+    border: 1px solid gray;
+}
+
+article.message {
+    box-shadow: none;
+    margin: -1px auto;
+    border: 1px solid lightgray;
 }
 
 article.bulletin p,
-article.comment p {
+article.comment p,
+article.message p {
     text-indent: 0;
     line-height: 1.5rem;
 }
 
 article.bulletin header,
 article.comment header {
-    box-sizing: border-box;
-    width: 100%;
     border-bottom: 1px solid lightgray;
-    min-height: 2rem;
+}
+
+article.message header {
+    border: none;
+}
+
+article.message header span.heading {
+    border-bottom: 1px dashed gray;
 }
 
 article.bulletin header time,
-article.comment header time {
+article.comment header time,
+article.message header time {
     float: right;
 }
 

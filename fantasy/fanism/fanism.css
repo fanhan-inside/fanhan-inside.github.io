@@ -32,9 +32,3 @@ footer>div.signature {
     max-width: 60%;
     border-top: 3px double darkblue;
 }
-
-footer p {
-    margin: 0;
-    padding: 0;
-    text-indent: 0;
-}

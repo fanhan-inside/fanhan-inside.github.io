@@ -104,17 +104,19 @@ abbr.rolename {
 
 abbr.username {
     font-weight: bold;
+    margin: none;
+    padding: none;
     border: none;
 }
 
 abbr.username::before {
     content: '｛';
-    margin-right: 1px;
+    margin: 0 1px;
 }
 
 abbr.username::after {
     content: '｝';
-    margin-left: 1px;
+    margin: 0 1px;
 }
 
 span.tip {

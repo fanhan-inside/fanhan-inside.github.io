@@ -1,7 +1,6 @@
 @import url(RESOURCE/lang.css);
 @import url(RESOURCE/emphasis.css);
 @import url(RESOURCE/math.css);
-@import url(RESOURCE/comment.css);
 @import url(RESOURCE/time.css);
 @import url(RESOURCE/heading.css);
 @import url(RESOURCE/code.css);
@@ -26,7 +25,7 @@ body {
 
 footer, div.footer {
     margin-top: 2rem;
-    width: 100%;
+    padding: 1rem;
     border-top: 3px solid silver;
     font-size: 1.25rem;
 }
@@ -34,6 +33,12 @@ footer, div.footer {
 p {
     text-indent: 2rem;
     line-height: 2rem;
+}
+
+footer p {
+    margin: 0;
+    padding: 0;
+    text-indent: 0;
 }
 
 hr.inside {
