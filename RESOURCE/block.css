@@ -1,4 +1,4 @@
-article, div.article {
+article {
     margin: 1rem 1rem 2rem 1rem;
     padding: 1rem;
     background-color: antiquewhite;
@@ -13,9 +13,14 @@ article header {
     min-height: 2rem;
 }
 
-article.poem {
+.poem, .lyrics {
     width: 50%;
     margin: 1rem auto;
+}
+
+.poem, .lyrics p {
+    line-height: 1.25rem;
+    margin: 0.5rem;
 }
 
 article.bulletin, article.comment, article.message {
@@ -85,12 +90,7 @@ article.bulletin footer p {
     font-size: small;
 }
 
-.lyrics p {
-    line-height: 1.25rem;
-    margin: 0.5rem;
-}
-
-section, div.section {
+section {
     margin: 1rem;
     padding: 1rem;
     background-color: beige;
@@ -100,7 +100,7 @@ section, div.section {
     box-shadow: 0.25rem 0.25rem 0.5rem dimgray;
 }
 
-blockquote, div.blockquote {
+blockquote {
     box-sizing: border-box;
     background-color: whitesmoke;
     /* border-top: 1px dotted;
@@ -111,8 +111,12 @@ blockquote, div.blockquote {
     padding: 1rem;
 }
 
-/* 用于问题描述 */
+blockquote.emphasis {
+    background-color: beige;
+    border: 1px solid lightgray;
+}
 
+/* 用于问题描述 */
 blockquote.description {
     background: transparent;
     border: none;
@@ -131,10 +135,5 @@ blockquote.outside {
 
 blockquote.article {
     background: antiquewhite;
-    border: 1px solid lightgray;
-}
-
-blockquote.section {
-    background-color: beige;
     border: 1px solid lightgray;
 }
