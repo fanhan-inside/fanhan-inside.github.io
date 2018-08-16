@@ -1,22 +1,12 @@
 @import url(../main.css);
-html {
-    background-color: dimgray;
-}
-
-body {
-    width: 1440px;
-    margin: auto;
-    padding: 1rem;
-    background-color: ivory;
-}
-
-main, div.main {
-    width: 1280px;
-    margin: 1rem auto;
-    padding: 1rem;
-    background-color: transparent;
-}
-
 h1 {
     background: radial-gradient(farthest-corner at 0 0, white, seagreen);
+}
+
+h2 {
+    margin: 1rem -2rem;
+    padding: 1rem;
+    background: var(--html-background-color);
+    color: lime;
+    text-align: center;
 }

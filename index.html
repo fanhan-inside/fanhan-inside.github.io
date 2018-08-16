@@ -40,24 +40,12 @@
             border-top: 3px double dimgray;
         }
 
-        h1 {
+        h1.home {
             background: transparent;
             display: inline-block;
             padding: 0.5rem;
             margin-right: 2rem;
             font-size: 2rem;
-        }
-
-        h2 {
-            display: block;
-            border: none;
-        }
-        h2 > span {
-            display: inline-block;
-            padding: 0.5rem 2rem;
-            background: radial-gradient(black, white);
-            color: white;
-            border: none;
         }
 
         #cover {
@@ -149,6 +137,9 @@
             color: blue;
             font-weight: bold;
         }
+        #works td a:hover {
+            color: yellow;
+        }
     </style>
 </head>
 
@@ -165,7 +156,7 @@
             </div>
         </div>
         <div id="profile" lang="zh">
-            <h1><ruby>范狂夫<rt lang="nl">van Confucia</rt></ruby></h1>
+            <h1 class="home"><ruby>范狂夫<rt lang="nl">van Confucia</rt></ruby></h1>
             <span class="signature">故人心似中秋月，肯为狂夫照白头。</span>
             <iframe id="profile-detail" src="profile.html" height="220" scrolling="auto" marginwidth="0" marginheight="0"></iframe>
         </div>

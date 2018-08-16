@@ -1,9 +1,4 @@
 @import url(../main.css);
-main {
-    width: 1280px;
-    margin: 1rem auto;
-    padding: 1rem;
-}
 
 header {
     position: relative;
@@ -12,6 +7,14 @@ header {
 
 h1 {
     background: radial-gradient(farthest-corner at 0 0, lime, white);
+}
+
+body>h2>span.bookmark {
+    margin-left: -2rem;
+    padding: 1rem 2rem;
+    background: var(--html-background-color);
+    color: white;
+    text-align: left;
 }
 
 header section p, blockquote p {

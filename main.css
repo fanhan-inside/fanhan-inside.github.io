@@ -1,3 +1,4 @@
+@import url(RESOURCE/constant.css);
 @import url(RESOURCE/lang.css);
 @import url(RESOURCE/emphasis.css);
 @import url(RESOURCE/math.css);
@@ -13,14 +14,22 @@
 @import url(RESOURCE/nav.css);
 
 html {
-    background-color: dimgray;
+    background-color: var(--html-background-color);
 }
 
 body {
+    box-sizing: content-box;
     width: 1440px;
     margin: 1rem auto;
     padding: 1rem 2rem;
     background-color: ivory;
+}
+
+main {
+    width: 1280px;
+    margin: 1rem auto;
+    padding: 1rem;
+    background-color: transparent;
 }
 
 footer, div.footer {
