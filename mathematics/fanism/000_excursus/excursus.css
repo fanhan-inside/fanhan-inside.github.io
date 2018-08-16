@@ -6,9 +6,9 @@ html {
 
 body{
     filter: opacity(97%);
-    background-color: whitesmoke;
+    background-color: ivory;
 }
 
 main, div.main {
-    background-color: ivory;
+    background-color: transparent;
 }

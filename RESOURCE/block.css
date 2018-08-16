@@ -18,7 +18,7 @@ article header {
     margin: 1rem auto;
 }
 
-.poem, .lyrics p {
+.poem p, .lyrics p {
     line-height: 1.25rem;
     margin: 0.5rem;
 }
@@ -91,13 +91,12 @@ article.bulletin footer p {
 }
 
 section {
-    margin: 1rem;
-    padding: 1rem;
-    background-color: beige;
-    border: 1px solid lightgray;
-    border-radius: 0.5rem;
+    background: transparent;
     box-sizing: border-box;
-    box-shadow: 0.25rem 0.25rem 0.5rem dimgray;
+    box-shadow: none;
+    border: none;
+    margin: 1rem auto;
+    padding: 1rem auto;
 }
 
 blockquote {
@@ -123,12 +122,12 @@ blockquote.description {
 }
 
 blockquote.inside {
-    background: whitesmoke;
+    background: honeydew;
     border: 1px solid lightgray;
 }
 
 blockquote.outside {
-    background: whitesmoke;
+    background: mintcream;
     border: 1px solid lightgray;
     border-radius: 0.5rem;
 }

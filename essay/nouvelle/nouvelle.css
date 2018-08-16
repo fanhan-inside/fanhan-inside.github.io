@@ -1,19 +1,10 @@
 @import url(../essay.css);
-
-html {
-    background-color: midnightblue;
+header {
+    border-bottom: 3px double lightgray;
 }
 
-body {
-    background-color: aliceblue;
-}
-
-main {
-    width: 1280px;
-    margin: 1rem auto;
-    padding: 1rem;
-    border: 1px solid lightgray;
-    box-shadow: 0.5rem 0.5rem 0.75rem dimgray;
+footer {
+    border-top: 3px double lightgray;
 }
 
 h1 {

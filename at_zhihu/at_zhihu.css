@@ -1,4 +1,9 @@
 @import url(../main.css);
+main {
+    width: 1280px;
+    margin: 1rem auto;
+    padding: 1rem;
+}
 
 header {
     position: relative;
@@ -9,9 +14,9 @@ h1 {
     background: radial-gradient(farthest-corner at 0 0, lime, white);
 }
 
-header section {
-    background-color: transparent;
-    box-shadow: none;
+header section p, blockquote p {
+    margin: 0.25rem 0;
+    padding: 0;
 }
 
 header blockquote.description {

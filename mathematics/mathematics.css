@@ -5,5 +5,5 @@ html {
 
 h1 {
     padding: 1rem;
-    background: radial-gradient(farthest-corner at 0 0, white, lightblue);
+    background: radial-gradient(farthest-corner at 0 0, transparent, lightblue);
 }
