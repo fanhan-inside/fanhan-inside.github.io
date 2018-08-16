@@ -157,12 +157,11 @@
                 <p>范含以前确实写过编译器，还写过几个解释器，以及一大堆字符串分析实用程序。</p>
                 <p>只不过，这些东西都不是手写的，或者说，除了为了应用而不得不写的一堆例行公事之外，范含并没有做一点实质上的工作。</p>
                 <p>不光范含，几乎所有程序员，除了专门写开发工具的那些人之外，几乎都没有自己手写过类似的东西。</p>
-                <p>原因就是由于两个著名的实用工具：<abbr class="software">lex</abbr>和<abbr class="software">yacc</abbr>。</p>
+                <p>原因就是由于两个著名的实用工具：lex和yacc。</p>
                 <p>Lex（Lexical Analyzer Generator，词法分析生成器）是个产生处理词法分析的代码的工具，而Yacc（Yet Another Compiler Compiler，另一个编译器的编译器）是个生成编译程序的工具。</p>
                 <p>其最终输出是用C写的源代码，用C编译器编译后就生成了自己想要的编译器。</p>
                 <p>这两个工具如此优秀，以至于老一辈资产阶级编译器开发者到如今也不得不感慨“人心不古”。</p>
-                <p>范含用的差不多都是自由的版本：“<abbr class="software">flex</abbr>”和“<abbr class="software">bison</abbr>”，都是GNU项目的一部分。只有很早的时候用过一个名叫“<abbr
-                        class="software">tply</abbr>”的软件包。顾名思义，这个“tply”就是用于“<abbr class="software">Turbo Pascal</abbr>”的“Lex”和“Yacc”，用Pascal语言做后端，所以非常好用。当年的DOS环境下，没有一种开发环境能比Turbo
+                <p>范含用的差不多都是自由的版本：“flex”和“bison”，都是GNU项目的一部分。只有很早的时候用过一个名叫“tply”的软件包。顾名思义，这个“tply”就是用于“Turbo Pascal”的“Lex”和“Yacc”，用Pascal语言做后端，所以非常好用。当年的DOS环境下，没有一种开发环境能比Turbo
                     Pascal编译速度更快，生成代码效率更高的了，包括各种C编译器在内。</p>
             </blockquote>
 
@@ -211,9 +210,7 @@
 
             <pre><code class="scheme">(plus (times a (power x 2)) (times b x) c)</code></pre>
 
-            <p>也就是说，对于一些数学软件，运用「Content MathML」作为数据交换格式则更合适。比方说目前已经集成在「<abbr class="software">SageMath</abbr>」当中的符号计算软件「<abbr
-                    class="software">Maxima</abbr>」就是Lisp写的，在「市场经济」大潮中输给了从「南不列颠及北爱尔兰联合王国」<strong>骨肉相连移民</strong>到「美帝灯塔国」的从小比人聪明还比人努力的神童大少爷<abbr
-                    class="person">Stephen Wolfram</abbr>出品的「<abbr class="software">Mathematica</abbr>」。</p>
+            <p>也就是说，对于一些数学软件，运用「Content MathML」作为数据交换格式则更合适。比方说目前已经集成在「SageMath」当中的符号计算软件「Maxima」就是Lisp写的，在「市场经济」大潮中输给了从「南不列颠及北爱尔兰联合王国」<strong>骨肉相连移民</strong>到「美帝灯塔国」的从小比人聪明还比人努力的神童大少爷<abbr class="who">Stephen Wolfram</abbr>出品的「Mathematica」。</p>
             <p>所以，我觉得应用数学专业辅修计算机课程的时候应该率先讲授Lisp/Scheme语言，有什么不对么？</p>
         </section>
         <section>
@@ -223,7 +220,7 @@
             <p>所以，昨天下午日记当中写下的脑洞，其实已经存在十余年了。这还是因为「精神病仆街写手不入流码农数学渣」的职业习惯之一「思路广欢乐多」。</p>
             <p>按照童年码农的说法，由于咱「老迈年高命不好」，职业生涯在微软天命昭昭的笼罩之下，钦定过时的「知识结构」局限于微软技术栈，必将成为在风起云涌的兲朝崛起过程中被「听都没听说过的新鲜名词」革命大浪淘掉的反革命砂。</p>
             <p>就在当代童年码农还是少先队员成天手舞足蹈且咏歌着「接班」的时候，咱就知道了Linux和Mac OS X，还买过并非Intel架构的iBook G4，进行过浮光掠影浅尝辄止的沐猴而冠叶公好龙。因为当年兲朝尚未崛起，境外媒体不会动辄惊呼兲朝不可战胜，境外软件开发商不会重视兲朝市场，所以那时候的我如同其它同龄码农和普通用户一样，最先关注的是「乱码」问题。</p>
-            <p>不展开了，就说之前在知乎首页推荐中看到的，「<abbr class="software">Microsoft™©® NotePad</abbr>」和「<abbr class="software">侯今吾™©® NotePad++</abbr>」之真理标准大讨论。真理似乎存在于保存以「UTF-8」编码的文件的时候，前面是否加上BOM文件头。</p>
+            <p>不展开了，就说之前在知乎首页推荐中看到的，「Microsoft™©® NotePad」和「侯今吾™©® NotePad++」之真理标准大讨论。真理似乎存在于保存以「UTF-8」编码的文件的时候，前面是否加上BOM文件头。</p>
             <p>结论很简单，说过了Unicode官方标准使用BOM文件头，微软好歹高举紧跟有觉悟，而现实使用中需要具体情况具体分析。</p>
             <p>哪怕在学校里「抱着一本谭浩强成天『<code>i+++++i</code>』的做填空题」的见不多识不广的贱种屁民学生都知道，打开文件有文本模式和二进制模式。这两种模式在Windows下有明显区别，而在「Unix-Like」操作系统则没有，全是字节流。</p>
             <p>这么多年来Unix乃至衍生的操作系统，如同其它冷战期间在国防预算扶持的各种项目中产生的技术一样，都是立足美帝灯塔国本土市场坚持使用ASCII内码并不需要任何特殊说明，有余力才兼顾其它多元文化。而有余力的情况下还需要「向后兼容」，尤其是那些连续运行几十年的大型机巨型机的后续产品。</p>

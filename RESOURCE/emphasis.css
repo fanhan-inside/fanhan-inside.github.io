@@ -22,27 +22,6 @@ strong {
     color: red;
 }
 
-span.dot {
-    text-emphasis: dot;
-    text-emphasis-position: under right;
-    -webkit-text-emphasis: dot;
-    -webkit-text-emphasis-position: under right;
-}
-
-span.circle {
-    text-emphasis: circle;
-    text-emphasis-position: under right;
-    -webkit-text-emphasis: circle;
-    -webkit-text-emphasis-position: under right;
-}
-
-span.triangle {
-    text-emphasis: triangle;
-    text-emphasis-position: under right;
-    -webkit-text-emphasis: triangle;
-    -webkit-text-emphasis-position: under right;    
-}
-
 s {
     margin: 0 2px;
     padding: 0 2px;
@@ -72,8 +51,7 @@ cite {
     border-bottom: 1px solid blue;
 }
 
-
-dfn { /* 视同<abbr class="term"> */
+dfn {
     margin: 1px;
     padding: 1px;
     font-style: normal;
@@ -82,33 +60,13 @@ dfn { /* 视同<abbr class="term"> */
     border-bottom: 1px solid darkcyan;
 }
 
-u { /* 视同<abbr> */
+u, abbr {
     margin: 1px;
     padding: 1px;
     font-style: normal;
     text-emphasis: none;
     text-decoration: none;
     border-bottom: 1px solid black;
-}
-
-abbr {
-    margin: 1px;
-    padding: 1px;
-    text-emphasis: none;
-    text-decoration: none;
-    border-bottom: 1px solid black;
-}
-
-abbr.company {
-    border-bottom: 1px solid dimgray;
-}
-
-abbr.software {
-    border-bottom: 1px dotted dimgray;
-}
-
-abbr.term {
-    border-bottom: 1px solid darkcyan;
 }
 
 abbr.person {
@@ -119,70 +77,23 @@ abbr.place {
     border-bottom: 1px solid darkblue;
 }
 
-abbr.rolename {
+abbr.pseudo {
     border-bottom: 1px solid green;
 }
 
-abbr.username {
+abbr.unm {
     font-weight: bold;
     margin: none;
     padding: none;
     border: none;
 }
 
-abbr.username::before {
+abbr.unm::before {
     content: '｛';
     margin: 0 1px;
 }
 
-abbr.username::after {
+abbr.unm::after {
     content: '｝';
     margin: 0 1px;
-}
-
-span.tip {
-    color: dimgray;
-}
-
-span.tip::before {
-    content: '〔';
-}
-
-span.tip::after {
-    content: '〕';
-}
-
-span.holy {
-    margin: 0 0.25rem;
-    padding: 0.25rem;
-    text-indent: none;
-    font-weight: bold;
-    /* font-size: 1rem; */
-    background: linear-gradient(yellow, red);
-    border-radius: 0.25rem;
-}
-
-span.evil {
-    margin: 0 0.25rem;
-    padding: 0.25rem;
-    text-indent: none;
-    font-weight: bold;
-    /* font-size: 1rem; */
-    background: linear-gradient(lime, dimgray);
-    border-radius: 0.25rem;
-    color: purple;
-}
-
-span.lowbee {
-    font-weight: bold;
-    color: darkgreen;
-}
-
-span.ero {
-    margin: 0 0.25rem;
-    padding: 0.25rem;
-    text-indent: none;
-    border-radius: 0.25rem;
-    background-color: pink;
-    color: brown;
 }
