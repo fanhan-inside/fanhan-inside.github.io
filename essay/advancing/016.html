@@ -69,21 +69,21 @@
 
             <figure>
                 <img src="image/016-001.png" alt="下划线连成一片" />
-                <figcaption><span class="figcaption">下划线连成一片</span></figcaption>
+                <figcaption><span>下划线连成一片</span></figcaption>
             </figure>
 
             <p>解决这个「显示」问题之前，先考虑另外一个相关的「编辑」源代码问题。在VS Code以及其它提供格式化代码功能的编辑器当中，仅凭HTML标签的对应关系进行缩进，没有考虑到「语义」内容，比方说一个「段落」（<code>&lt;p&gt;</code>）内部是否也需要展开为次一级结构呢？</p>
 
             <figure>
                 <img src="image/016-002.png" alt="格式化代码" />
-                <figcaption><span class="figcaption">格式化代码</span></figcaption>
+                <figcaption><span>格式化代码</span></figcaption>
             </figure>
 
             <p>依赖VS Code内置的「格式化代码」功能，页面源码是上面那样的，而对应的显示效果是下面这样：</p>
 
             <figure>
                 <img src="image/016-003.png" alt="出现的空格" />
-                <figcaption><span class="figcaption">出现的空格</span></figcaption>
+                <figcaption><span>出现的空格</span></figcaption>
             </figure>
 
             <p>因为连续的空白，包括回车换行和制表符在内，会被视为单独的一个空格。这个设定对于「西洋文字」来说很合理，但是在「东洋」就不行了，这个空格是凭空多出来的。虽然连带下划线都「正确」的间断，但是正文却不正确了。</p>
@@ -99,14 +99,14 @@
 
             <figure>
                 <img src="image/016-004.png" alt="有间隙且无空格" />
-                <figcaption><span class="figcaption">有间隙且无空格</span></figcaption>
+                <figcaption><span>有间隙且无空格</span></figcaption>
             </figure>
 
             <p>这就可以了。接下来的问题还是与换行有关，对于「脚注」标记，应该附加在所注的文字后面不分离吖。而「显示」文本所默认的自动换行能用空格判断西洋文字单词界限，对没有空格的东洋文字就做不到了。</p>
 
             <figure>
                 <img src="image/016-005.png" alt="脚注换行问题" />
-                <figcaption><span class="figcaption">脚注换行问题</span></figcaption>
+                <figcaption><span>脚注换行问题</span></figcaption>
             </figure>
 
             <p>解决方案，是把语义上的「单词」包含在一个「<code>&lt;span&gt;</code>」当中，并指定不可换行的样式：</p>
@@ -122,7 +122,7 @@
 
             <figure>
                 <img src="image/016-006.png" alt="中央钦定右划线" />
-                <figcaption><span class="figcaption">中央钦定右划线</span></figcaption>
+                <figcaption><span>中央钦定右划线</span></figcaption>
             </figure>
 
             <p>注意党国喉舌形容这位「出版界」精英的旁白「最勇敢坚决的革命战士」同时用红色实线标记。</p>
@@ -149,7 +149,7 @@ span.inner {
 
             <figure>
                 <img src="image/016-007.png" alt="横排专名号处理" />
-                <figcaption><span class="figcaption">横排专名号处理</span></figcaption>
+                <figcaption><span>横排专名号处理</span></figcaption>
             </figure>
 
             <p>但是要注意，这种方式若是转为竖排，样式中就要调整边框和留白的位置，不如「<code>&lt;abbr&gt;</code>」那样可以不加修改由浏览器自动处理。</p>
@@ -171,12 +171,12 @@ span.inner {
 
             <figure>
                 <img src="image/016-008.png" alt="亮色主题" />
-                <figcaption><span class="figcaption">亮色主题</span></figcaption>
+                <figcaption><span>亮色主题</span></figcaption>
             </figure>
 
             <figure>
                 <img src="image/016-009.png" alt="暗色主题" />
-                <figcaption><span class="figcaption">暗色主题</span></figcaption>
+                <figcaption><span>暗色主题</span></figcaption>
             </figure>
 
             <p>关于标题和脚注需要稍微解释。在HTML5当中，提供了「<code>&lt;header&gt;</code>」「<code>&lt;footer&gt;</code>」标签，专门用于天头地脚相关设定。</p>

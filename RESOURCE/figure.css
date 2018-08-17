@@ -11,8 +11,10 @@ figcaption {
 
 figcaption span {
     margin: auto;
-    padding: 0 1rem 0.25rem 1rem;
-    border-bottom: 2px dashed dimgray;
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid dimgray;
+    color: dimgray;
+    border-radius: 1rem;
 }
 
 div.image-group {
