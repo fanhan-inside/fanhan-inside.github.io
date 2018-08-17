@@ -1,12 +1,9 @@
 @import url(../main.css);
-h1 {
-    background: radial-gradient(farthest-corner at 0 0, white, seagreen);
+:root {
+    --html-background-color: black;
+    --text-reverse-color: lime;
 }
 
-h2 {
-    margin: 1rem -2rem;
-    padding: 1rem;
-    background: var(--html-background-color);
-    color: lime;
-    text-align: center;
+h1 {
+    background: none;
 }
