@@ -4,31 +4,13 @@ html {
     background-color: white;
 }
 
-body {
-    width: 1440px;
-}
-
-main, div.main {
-    width: 1220px;
-    margin: 1rem auto;
-    padding: 1rem;
-}
-
 header {
     width: 1220px;
     margin: 0 auto;
 }
 
-footer, div.footer {
+footer {
     width: 1220px;
-    margin: 0 auto;
     border: none;
     text-align: center;
-}
-
-footer>div.signature {
-    display: inline-block;
-    padding: 0.5rem 2rem;
-    max-width: 60%;
-    border-top: 3px double darkblue;
 }

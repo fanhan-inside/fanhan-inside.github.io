@@ -1,16 +1,5 @@
 @import url(../main.css);
 
-body {
-    width: 1440px;
-}
-
-main {
-    box-sizing: border-box;
-    width: 1280px;
-    margin: 1rem auto;
-    padding: 1rem;
-}
-
 h1 {
     background: radial-gradient(farthest-corner at 0 0, white, red);
 }

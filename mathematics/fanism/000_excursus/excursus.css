@@ -1,14 +1,9 @@
 @import url(../fanism.css);
-
 html {
     background: url("image/000-000_background.png") repeat;
 }
 
-body{
+body {
     filter: opacity(97%);
     background-color: ivory;
-}
-
-main, div.main {
-    background-color: transparent;
 }

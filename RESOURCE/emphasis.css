@@ -69,11 +69,11 @@ u, abbr {
     border-bottom: 1px solid black;
 }
 
-abbr.person {
+abbr.who {
     border-bottom: 1px solid red;
 }
 
-abbr.place {
+abbr.where {
     border-bottom: 1px solid darkblue;
 }
 
@@ -81,19 +81,19 @@ abbr.pseudo {
     border-bottom: 1px solid green;
 }
 
-abbr.unm {
+abbr.uid {
     font-weight: bold;
     margin: none;
     padding: none;
     border: none;
 }
 
-abbr.unm::before {
+abbr.uid::before {
     content: '｛';
     margin: 0 1px;
 }
 
-abbr.unm::after {
+abbr.uid::after {
     content: '｝';
     margin: 0 1px;
 }
