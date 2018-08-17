@@ -1,6 +1,0 @@
-@import url(../main.css);
-
-h1 {
-    padding: 1rem;
-    background: radial-gradient(farthest-corner at 0 0, transparent, lightblue);
-}

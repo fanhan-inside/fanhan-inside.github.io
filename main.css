@@ -38,18 +38,11 @@ main, div.main {
     background-color: transparent;
 }
 
-header {
-    box-sizing: content-box;
-}
-
-footer {
+header, footer {
     box-sizing: content-box;
     margin: 0 auto;
     padding: 1rem;
-    border-top: 3px solid silver;
-    font-size: 1.25rem;
 }
-
 div.signature {
     display: inline-block;
     padding: 0.5rem 2rem;

@@ -1,9 +1,8 @@
-@import url(../fanism.css);
+@import url(../../../main.css);
 html {
     background: url("image/000-000_background.png") repeat;
 }
 
 body {
     filter: opacity(97%);
-    background-color: ivory;
 }

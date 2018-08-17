@@ -1,4 +1,4 @@
-@import url(../fantasy.css);
+@import url(../../main.css);
 
 html {
     background-color: white;
@@ -6,7 +6,6 @@ html {
 
 header {
     width: 1220px;
-    margin: 0 auto;
 }
 
 footer {

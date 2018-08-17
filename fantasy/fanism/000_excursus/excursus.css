@@ -1,10 +1,4 @@
-@import url(../fanism.css);
-
-body{
+@import url(../../../main.css);
+body {
     filter: opacity(97%);
-    background-color: ivory;
-}
-
-header {
-    width: 1440px;
 }

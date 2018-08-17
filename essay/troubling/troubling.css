@@ -2,6 +2,7 @@
 html {
     background-color: darkred;
 }
+
 h1 {
     background: radial-gradient(farthest-corner at 0 0, yellow, red);
 }
