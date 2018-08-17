@@ -23,6 +23,15 @@ span.important {
     vertical-align: middle;
 }
 
+span.bookmark {
+    box-sizing: border-box;
+    display: inline-block;
+    text-align: center;
+    background: var(--html-background-color);
+    color: var(--text-reverse-color);
+    padding: 0.5rem 1rem;
+}
+
 span.dot {
     text-emphasis: dot;
     text-emphasis-position: under right;

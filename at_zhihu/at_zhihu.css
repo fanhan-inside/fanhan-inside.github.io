@@ -9,8 +9,8 @@ h1 {
     background: radial-gradient(farthest-corner at 0 0, lime, white);
 }
 
-header blockquote.description {
-    border: none;
+header p {
+    margin: 0.5rem 1rem;
 }
 
 header.question {
@@ -32,6 +32,5 @@ header.question h1::before {
 header.question blockquote.description {
     background-color: azure;
     border: 1px solid lightblue;
-    box-sizing: border-box;
-    box-shadow: 0.25rem 0.25rem 0.5rem midnightblue;
+    box-shadow: 0.25rem 0.25rem 0.5rem dimgray;
 }

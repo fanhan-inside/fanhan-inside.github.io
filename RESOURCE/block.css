@@ -11,6 +11,12 @@ article header {
     box-sizing: border-box;
     width: 100%;
     min-height: 2rem;
+    padding: 0;
+}
+
+article header span.heading {
+    min-width: 0;
+    text-align: left;
 }
 
 .poem, .lyrics {
@@ -41,35 +47,16 @@ article.comment {
     border: 1px solid gray;
 }
 
-article.message {
-    box-shadow: none;
-    margin: -1px auto;
-    border: 1px solid lightgray;
-}
-
-article.bulletin p,
-article.comment p,
-article.message p {
+article.bulletin p, article.comment p, article.message p {
     text-indent: 0;
     line-height: 1.5rem;
 }
 
-article.bulletin header,
-article.comment header {
+article.bulletin header, article.comment header {
     border-bottom: 1px solid lightgray;
 }
 
-article.message header {
-    border: none;
-}
-
-article.message header span.heading {
-    border-bottom: 1px dashed gray;
-}
-
-article.bulletin header time,
-article.comment header time,
-article.message header time {
+article.bulletin header time, article.comment header time, article.message header time {
     float: right;
 }
 
@@ -90,6 +77,21 @@ article.bulletin footer p {
     font-size: small;
 }
 
+article.message {
+    box-shadow: none;
+    margin: -1px auto;
+    border: 1px solid lightgray;
+}
+
+article.message header {
+    border: none;
+}
+
+article.message header span.heading {
+    border-bottom: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+}
+
 section {
     background: transparent;
     box-sizing: border-box;
@@ -102,8 +104,6 @@ section {
 blockquote {
     box-sizing: border-box;
     background-color: whitesmoke;
-    /* border-top: 1px dotted;
-    border-bottom: 1px dotted; */
     border-left: 0.75rem solid;
     border-color: lightgray;
     margin: 1rem;
@@ -113,12 +113,6 @@ blockquote {
 blockquote.emphasis {
     background-color: beige;
     border: 1px solid lightgray;
-}
-
-/* 用于问题描述 */
-blockquote.description {
-    background: transparent;
-    border: none;
 }
 
 blockquote.inside {
@@ -135,4 +129,11 @@ blockquote.outside {
 blockquote.article {
     background: antiquewhite;
     border: 1px solid lightgray;
+}
+
+blockquote.description {
+    background: transparent;
+    border: none;
+    margin: 1rem;
+    padding: 0;
 }

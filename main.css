@@ -3,16 +3,15 @@
 @import url(RESOURCE/emphasis.css);
 @import url(RESOURCE/math.css);
 @import url(RESOURCE/time.css);
+@import url(RESOURCE/span.css);
 @import url(RESOURCE/heading.css);
 @import url(RESOURCE/code.css);
 @import url(RESOURCE/link.css);
 @import url(RESOURCE/figure.css);
 @import url(RESOURCE/block.css);
-@import url(RESOURCE/span.css);
 @import url(RESOURCE/table.css);
 @import url(RESOURCE/list.css);
 @import url(RESOURCE/nav.css);
-
 html {
     background-color: var(--html-background-color);
 }
@@ -43,6 +42,7 @@ header, footer {
     margin: 0 auto;
     padding: 1rem;
 }
+
 div.signature {
     display: inline-block;
     padding: 0.5rem 2rem;

@@ -1,70 +1,66 @@
 h1 {
     font-size: 2rem;
-    margin: 1rem;
+    margin: 0;
     padding: 1rem;
     background: radial-gradient(farthest-corner at 0 0, transparent, lightblue);
 }
 
 h2 {
+    font-size: 1.75rem;
+    margin-left: -2rem;
+}
+
+h3 {
     font-size: 1.5rem;
-    letter-spacing: 1px;
-    margin: 1rem 0;
-    padding: 1rem 0;
+    margin-left: -2rem;
 }
 
-span.heading, span.bookmark {
-    display: inline-block;
-    margin-left: 0;
-    padding: 0.5rem;
-    border: none;
-}
-
-h3, h4 {
+h4 {
     font-size: 1.25rem;
-    padding: 1rem 0;
+    margin-left: -1rem;
 }
 
 h5, h6 {
     font-size: 1rem;
+    margin-left: 0;
+}
+
+span.heading {
+    min-width: 10rem;
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 0.5rem;
+    border: none;
+    text-align: center;
 }
 
 h2>span.heading {
-    box-sizing: border-box;
     margin: 0;
     padding: 0.5rem 2rem;
     background: radial-gradient(black, white);
     color: white;
+    border-radius: 1.5rem;
 }
 
 h3>span.heading {
-    border-bottom: 3px double dimgray;
+    border: 3px double dimgray;
 }
 
 h4>span.heading {
     border-bottom: 2px solid dimgray;
+    border-right: 2px solid dimgray;
 }
 
 h5>span.heading {
     border-bottom: 1px solid dimgray;
+    border-right: 1px solid dimgray;
 }
 
 h6>span.heading {
     border-bottom: 1px dashed dimgray;
+    border-right: 1px dashed dimgray;
 }
 
 h2>span.bookmark {
-    background: lightgray;
-}
-
-body>h2>span.bookmark,
-body>header>h2>span.bookmark {
-    margin-left: -2rem;
-    padding: 1rem 2rem;
-    background: var(--html-background-color);
-    color: var(--text-reverse-color);
-    text-align: left;
-}
-
-h3>span.bookmark {
-    background: lightblue;
+    min-width: 10rem;
 }
