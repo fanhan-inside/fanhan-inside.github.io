@@ -1,5 +1,5 @@
 :lang(en), :lang(fr), :lang(de), :lang(it), :lang(nl), :lang(es), :lang(la), :lang(grc), :lang(ru), :lang(da) {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font-family-sans);
     margin: 0 1px;
     padding: 0 1px;
 }
@@ -17,6 +17,7 @@ q:lang(ja) {
     margin: 0 1px;
     padding: 0 1px;
 }
+
 q::before, q::after {
     padding: 0 1px;
 }

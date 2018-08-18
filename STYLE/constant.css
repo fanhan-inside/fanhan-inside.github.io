@@ -3,4 +3,9 @@
     --body-background-color: ivory;
     --text-color: black;
     --text-reverse-color: white;
+    --font-family-serif: Georgia, 'Symbola', 'Times New Roman', Times, 'Source Serif Pro', 'Noto Serif', 'IBM Plex Serif', serif;
+    --font-family-sans: Arial, Helvetica, 'Source Sans Pro', 'Noto Sans', 'Fira Sans', 'Clear Sans', 'IBM Plex Sans', sans-serif;
+    --font-family-code: 'Consolas', 'Inconsolata', 'Source Code Pro', 'Fira Code', monospace;
+    --font-family-mono: 'Noto Mono', 'Fira Mono', 'IBM Plex Mono', 'Courier New', Courier, monospace;
+    --font-family-math: 'Cambria', Georgia, 'Symbola', 'Calibri';
 }

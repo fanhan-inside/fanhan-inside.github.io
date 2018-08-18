@@ -47,6 +47,7 @@ cite {
     padding: 1px;
     font-style: normal;
     text-emphasis: none;
+    -webkit-text-emphasis: none;
     text-decoration: none;
     border-bottom: 1px solid blue;
 }
@@ -56,6 +57,7 @@ dfn {
     padding: 1px;
     font-style: normal;
     text-emphasis: none;
+    -webkit-text-emphasis: none;
     text-decoration: none;
     border-bottom: 1px solid darkcyan;
 }
@@ -65,6 +67,7 @@ u, abbr {
     padding: 1px;
     font-style: normal;
     text-emphasis: none;
+    -webkit-text-emphasis: none;
     text-decoration: none;
     border-bottom: 1px solid black;
 }

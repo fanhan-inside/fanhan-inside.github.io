@@ -1,5 +1,5 @@
 var {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: var(--font-family-math);
     font-style: oblique;
     padding: 1px;
 }
@@ -7,14 +7,14 @@ var {
 span.math {
     display: inline-block;
     text-indent: 0;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: var(--font-family-math);
     font-size: 1.25rem;
     margin: 1px;
     padding: 1px;
     color: blue;
     background-color: transparent;
 }
-
+/*
 span.math sup, span.math sub {
     padding: 1px;
 }
@@ -27,16 +27,16 @@ span.math sub {
 span.math sup {
     font-feature-settings: "sups" 1;
     font-variant-position: super;
-}
+} */
 
 span.frac {
-    font-family: "Symbola";
+    font-family: 'Calibri', Georgia, 'Cambria', 'Symbola';
     font-size: 125%;
     font-variant-numeric: diagonal-fractions;
 }
 
 span.onum {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, 'Cambria', 'Symbola', 'Calibri';
     font-size: 125%;
     font-variant-numeric: oldstyle-nums;
 }
