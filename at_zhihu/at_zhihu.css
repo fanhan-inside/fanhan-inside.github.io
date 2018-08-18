@@ -22,7 +22,7 @@ header.question h1 {
 }
 
 header.question h1::before {
-    content: url(../RESOURCE/logo.svg);
+    content: url(../IMG/logo.svg);
     position: absolute;
     right: 0;
     top: 0;
