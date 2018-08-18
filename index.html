@@ -34,7 +34,7 @@
 
         header {
             display: grid;
-            grid-template: "avatar profile anonym" 320px / 320px 1fr 500px;
+            grid-template: "profile anonym works" 480px / 480px 360px 1fr;
         }
 
         footer {
@@ -48,8 +48,6 @@
             background: transparent;
             display: inline-block;
             padding: 0.5rem;
-            margin-right: 2rem;
-            font-size: 2rem;
         }
 
         #cover {
@@ -69,27 +67,15 @@
             left: 0;
         }
 
-        #avatar {
-            grid-area: avatar;
-        }
-
-        #icon-wrapper {
-            background: white;
-            border: 3px solid white;
-            border-radius: 130px;
-            width: 260px;
-            height: 260px;
-            position: relative;
-            top: -60px;
-            left: 50px;
-        }
-
         #icon {
             display: block;
             margin: auto;
             width: 260px;
             height: 260px;
             clip-path: circle(128px at 130px 130px);
+            position: absolute;
+            top: 170px;
+            left: 20px;
         }
 
         .signature {
@@ -98,22 +84,42 @@
 
         #profile {
             grid-area: profile;
-            margin: 0 1rem;
-            padding: 0 1rem;
+            margin: 0;
+            padding: 0;
+            background: url("RESOURCE/profile_background.png") bottom left no-repeat;
+        }
+
+        #profile-detail {
+            border: none;
+            margin: 1rem;
+        }
+
+        #profile-detail td {
+            border: none;
+            text-align: left;
+            vertical-align: top;
+            padding: 0.5rem;
+        }
+
+        #profile-detail td:nth-child(1) {
+            font-weight: bold;
         }
 
         #anonym {
             grid-area: anonym;
+            background: url("RESOURCE/anonym_background.png") bottom right no-repeat;
         }
 
         #anonym table {
-            width: 90%;
-            margin: 0 auto;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            border: none;
         }
 
         #anonym td {
             border: none;
-            text-align: center;
+            text-align: right;
             vertical-align: middle;
             padding: 0.25rem;
         }
@@ -123,26 +129,37 @@
             font-size: 125%;
         }
 
-        #works table {
-            width: 98%;
-            margin: 1rem auto;
+        #works {
+            grid-area: works;
+            margin-left: 1rem;
         }
+
+        #works table {
+            border: none;
+            margin: 0;
+            padding: 0;
+        }
+
         #works td {
-            border: 1px solid lightgray;
+            border: none;
             text-align: left;
             vertical-align: middle;
-            padding: 1rem;
+            padding: 0.25rem;
         }
-        #works td table td {
-            border: none;
-        }
+
         #works td a {
-            display: block;
+            display: inline-block;
+            margin-left: -1rem;
             color: blue;
             font-weight: bold;
         }
+
         #works td a:hover {
             color: yellow;
+        }
+
+        caption {
+            padding: 0.5rem;
         }
     </style>
 </head>
@@ -151,78 +168,123 @@
     <div id="cover">
         <img src="RESOURCE/cover.png" />
         <img id="title" lang="zh" src="RESOURCE/title.svg" />
+        <img id="icon" src="RESOURCE/icon.svg" />
     </div>
 
     <header>
-        <div id="avatar">
-            <div id="icon-wrapper">
-                <img id="icon" src="RESOURCE/icon.svg" />
-            </div>
-        </div>
         <div id="profile" lang="zh">
             <h1 class="home"><ruby>范狂夫<rt lang="nl">van Confucia</rt></ruby></h1>
             <span class="signature">故人心似中秋月，肯为狂夫照白头。</span>
-            <iframe id="profile-detail" src="profile.html" height="220" scrolling="auto" marginwidth="0" marginheight="0"></iframe>
-        </div>
-        <div id="anonym" lang="zh">
-            <h2><span class="heading"><span>曾用名</span></span></h2>
-            <table>
-                <tr><td>范客翁</td> <td>行路八千常是客，丈夫五十未称翁。</td></tr>
-                <tr><td>范骨苔</td> <td>不令金樽映翠杓，坐待白骨生苍苔。</td></tr>
-                <tr><td>范闷诗</td> <td>清尊与闷都倾尽，倦马和诗总勒回。</td></tr>
-                <tr><td>范觞杀</td> <td>招得榴花共一觞，艾人笑杀老夫狂。</td></tr>
-                <tr><td>范仲拙</td><td></td></tr>
-                <tr><td>范书藤</td><td></td></tr>
-                <tr><td>范翗翷</td><td></td></tr>
-                <tr><td>范铝杯</td><td></td></tr>
-                <tr><td>………</td><td></td></tr>
+            <table id="profile-detail">
+                <colgroup>
+                    <col width="100px">
+                    <col>
+                </colgroup>
+                <tr>
+                    <td>居住地</td>
+                    <td>现居北京</td>
+                </tr>
+                <tr>
+                    <td>所在行业</td>
+                    <td>咨询分析</td>
+                </tr>
+                <tr>
+                    <td>教育经历</td>
+                    <td>北京理工大学・应用数学</td>
+                </tr>
+                <tr>
+                    <td>个人简介</td>
+                    <td>孤苦伶仃可怜废柴草根文盲矬胖老穷光棍汉<br/>「精神病仆街写手不入流码农数学渣」</td>
+                </tr>
             </table>
-    </div>
-    </header>
-
-    <main>
-        <h2><span class="heading"><span>文集</span></span></h2>
+        </div>
+        <div id="anonym">
+            <table>
+                <caption>曾用名</caption>
+                <tr>
+                    <td>范客翁</td>
+                    <td>行路八千常是客，丈夫五十未称翁。</td>
+                </tr>
+                <tr>
+                    <td>范骨苔</td>
+                    <td>不令金樽映翠杓，坐待白骨生苍苔。</td>
+                </tr>
+                <tr>
+                    <td>范闷诗</td>
+                    <td>清尊与闷都倾尽，倦马和诗总勒回。</td>
+                </tr>
+                <tr>
+                    <td>范觞杀</td>
+                    <td>招得榴花共一觞，艾人笑杀老夫狂。</td>
+                </tr>
+                <tr>
+                    <td>范仲拙</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>范书藤</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>范翗翷</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>范铝杯</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>………</td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
         <div id="works">
             <table>
+                <caption>文集</caption>
                 <tr>
-                    <td><a target="_blank" href="toc.html">（目录、索引、导读）</a></td>
-                    <td>顾名思义，在多个站点发表的文章链接之汇总。</td>
-                </tr>
-                <tr>
-                    <td><a target="_blank" href="fantasy/fanism/toc.html">《范版西幻设定集》</a></td>
-                    <td>为了政治和意识形态斗争而创作的西方奇幻背景设定集，未完待续。</td>
-                </tr>
-                <tr>
-                    <td><a target="_blank" href="mathematics/fanism/toc.html">《范版数学恶补记》</a></td>
-                    <td>为了不忘初心牢记使命，丰富设定集内容，而开始恶补的流水帐以及心得体会。</td>
-                </tr>
-                <tr>
-                    <td><a target="_blank" href="essay/toc.html">《囧斋随笔》</a></td>
                     <td>
-                        <span>随笔、杂谈，既有旧作，也有「与时俱进」内容。</span>
-                        <table>
-                            <tr>
-                                <td><a target="_blank" href="essay/toc.html">「惹是生非」</a></td>
-                                <td>命名来自九省通衢の活跃色目帐号替我总结的生活规律：吃饱了撑的惹是生非。</td>
-                            </tr>
-                            <tr>
-                                <td><a target="_blank" href="essay/toc.html#nouvelle">『短篇集』</a></td>
-                                <td>旧作</td>
-                            </tr>
-                        </table>
+                        <a target="_blank" href="toc.html">（目录、索引、导读）</a><br />
+                        <span>顾名思义，在多个站点发表的文章链接之汇总。</span>
                     </td>
                 </tr>
                 <tr>
-                    <td><a target="_blank" href="at_zhihu/toc.html">谈笑风生＠知乎</a></td>
-                    <td>在知乎的提问、回答和评论</td>
+                    <td>
+                        <a target="_blank" href="fantasy/fanism/toc.html">《范版西幻设定集》</a><br />
+                        <span>为了政治和意识形态斗争而创作的西方奇幻背景设定集，未完待续。</span>
+                    </td>
                 </tr>
                 <tr>
-                    <td><a target="_blank" href="at_jandan/toc.html">谈笑风生＠九省通衢の煎蛋</a></td>
-                    <td>在煎蛋文章区、问答区、段子区、无聊图的评论备份</td>
+                    <td>
+                        <a target="_blank" href="mathematics/fanism/toc.html">《范版数学恶补记》</a><br />
+                        <span>不忘初心牢记使命，为了丰富设定集内容而开始恶补的流水帐以及心得体会。</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a target="_blank" href="essay/toc.html">《囧斋随笔》（含「惹是生非」『短篇集』）</a><br />
+                        <span>随笔、杂谈，既有旧作，也有「与时俱进」内容。</span><br />
+                        <span>其中〈惹是生非〉命名来自九省通衢の活跃色目帐号替我总结的生活规律：</span>
+                        <p><strong><span class="triangle">吃饱了撑的惹是生非</span></strong></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a target="_blank" href="at_zhihu/toc.html">谈笑风生＠知乎</a><br />
+                        <span>在知乎的提问、回答和评论</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a target="_blank" href="at_jandan/toc.html">谈笑风生＠九省通衢の煎蛋</a><br />
+                        <span>在煎蛋文章区、问答区、段子区、无聊图的评论备份</span>
+                    </td>
                 </tr>
             </table>
         </div>
+    </header>
 
+    <main>
         <h2><span class="heading"><span>动态</span></span></h2>
         <div style="padding: 0 0.25rem">
             <iframe src="timeline.html" height="600" scrolling="auto" marginwidth="0" marginheight="0"></iframe>
