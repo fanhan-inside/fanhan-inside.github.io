@@ -1,5 +1,5 @@
 article {
-    margin: 1rem 1rem 2rem 1rem;
+    margin: 1rem auto 2rem auto;
     padding: 1rem;
     background-color: antiquewhite;
     border: 1px solid lightgray;
@@ -17,16 +17,6 @@ article header {
 article header span.heading {
     min-width: 0;
     text-align: left;
-}
-
-.poem, .lyrics {
-    width: 50%;
-    margin: 1rem auto;
-}
-
-.poem p, .lyrics p {
-    line-height: 1.25rem;
-    margin: 0.5rem;
 }
 
 article.bulletin, article.comment, article.message {
@@ -136,4 +126,11 @@ blockquote.description {
     border: none;
     margin: 1rem;
     padding: 0;
+}
+
+.poem p, .lyrics p {
+    line-height: 1.5rem;
+    margin: 0;
+    padding: 0;
+    text-indent: 1rem;
 }

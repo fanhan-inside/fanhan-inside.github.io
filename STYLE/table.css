@@ -1,5 +1,7 @@
 table {
     border-collapse: collapse;
+    border: none;
+    margin: 1rem auto;
 }
 
 caption {
@@ -9,8 +11,10 @@ caption {
 }
 
 th, td {
-    border: 1px solid dimgray;
+    border: 1px solid lightgray;
     padding: 0.5rem;
+    text-align: center;
+    vertical-align: middle;
 }
 
 th {
@@ -21,8 +25,7 @@ th {
 }
 
 td {
-    text-align: center;
-    vertical-align: center;
+    background: transparent;
 }
 
 td time {
