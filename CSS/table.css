@@ -31,3 +31,27 @@ td {
 td time {
     font-size: 125%;
 }
+
+td time::before, td time::after {
+    content: none;
+}
+
+table.toc {
+    width: 98%;
+}
+
+table.toc td a {
+    display: block;
+}
+
+table.toc tr:nth-child(odd) {
+    background-color: white;
+}
+
+table.toc tr:nth-child(even) {
+    background-color: whitesmoke;
+}
+
+table.toc tr:hover {
+    background-color: lightgoldenrodyellow;
+}

@@ -6,55 +6,9 @@
     <title>目录、索引、导读</title>
     <link rel="stylesheet" type="text/css" href="main.css" />
     <style>
-        table {
-            width: 98%;
-            margin: 1rem auto;
-        }
-
-        td time::before, td time::after{
-            content: none;
-        }
-
         td:nth-child(2) {
             text-align: left;
         }
-
-        tr:nth-child(odd) {
-            background-color: white;
-        }
-
-        tr:nth-child(even) {
-            background-color: whitesmoke;
-        }
-
-        tr:hover {
-            background-color: lightgoldenrodyellow;
-        }
-
-        td a {
-            display: block;
-        }
-
-        td a:hover {
-            background-color: darkblue;
-            color: yellow;
-        }
-
-        ul {
-            margin-left: 5rem;
-            line-height: 2.5rem;
-            font-size: 125%;
-        }
-
-        ul li a {
-            display: inline-block;
-            background-color: whitesmoke;
-            color: blue;
-            border: 1px dotted dimgray;
-            margin: 0.5rem;
-            padding: 0.25rem 0.5rem;
-        }
-
     </style>
 </head>
 
@@ -63,19 +17,19 @@
         <h1>目录、索引、导读</h1>
     </header>
 
-    <h2><span class="heading">本站</span></h2>
+    <h2><span class="bookmark">本站</span></h2>
 
     <ul>
-        <li><a target="_blank" href="fantasy/fanism/toc.html">《范版西幻设定集》</a></li>
-        <li><a target="_blank" href="mathematics/fanism/toc.html">《范版数学恶补记》</a></li>
-        <li><a target="_blank" href="essay/toc.html">《囧斋随笔》（含「惹是生非」）『短篇集』</a></li>
-        <li><a target="_blank" href="at_zhihu/toc.html">谈笑风生＠知乎</a></li>
-        <li><a target="_blank" href="at_jandan/toc.html">谈笑风生＠九省通衢の煎蛋</a></li>
+        <li><a class="alone" target="_blank" href="fantasy/fanism/toc.html">《范版西幻设定集》</a></li>
+        <li><a class="alone" target="_blank" href="mathematics/fanism/toc.html">《范版数学恶补记》</a></li>
+        <li><a class="alone" target="_blank" href="essay/toc.html">《囧斋随笔》（含「惹是生非」）『短篇集』</a></li>
+        <li><a class="alone" target="_blank" href="at_zhihu/toc.html">谈笑风生＠知乎</a></li>
+        <li><a class="alone" target="_blank" href="at_jandan/toc.html">谈笑风生＠九省通衢の煎蛋</a></li>
     </ul>
 
-    <h2><span class="heading">已经做好的各站链接汇总</span></h2>
+    <h2><span class="bookmark">已经做好的各站链接汇总</span></h2>
 
-    <table>
+    <table class="toc">
         <colgroup>
             <col style="width: 20%;">
             <col style="text-align: left;">

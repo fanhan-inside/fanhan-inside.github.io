@@ -5,6 +5,21 @@ a {
     color: steelblue;
 }
 
+a::before {
+    content: "\1F517";
+    margin: 0 0.25rem 0 0;
+}
+
+a[href^="http://"]::before, a[href^="https://"]::before {
+    content: url(../IMG/external-link.svg);
+    margin: 0 0.25rem 0 0;
+}
+
+a:hover {
+    background-color: darkblue;
+    color: yellow;
+}
+
 a.card {
     display: block;
     max-width: 700px;
@@ -20,17 +35,17 @@ a.card {
     white-space: nowrap; 
 }
 
-a::before {
-    content: "\1F517";
-    margin: 0 0.25rem 0 0;
+a.alone {
+    display: inline-block;
+    text-indent: 0;
+    background-color: whitesmoke;
+    color: blue;
+    border: 1px dotted dimgray;
+    margin: 0.5rem;
+    padding: 0.25rem 0.5rem;
 }
 
-a[href^="http://"]::before, a[href^="https://"]::before {
-    content: url(external-link.svg);
-    margin: 0 0.25rem 0 0;
-}
-
-a:hover {
+a.alone:hover {
     background-color: darkblue;
     color: yellow;
 }
