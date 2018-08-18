@@ -1,9 +1,15 @@
 @import url(../main.css);
 :root {
-    --html-background-color: black;
-    --text-reverse-color: lime;
+    --html-background-color: var(--color-name-chinese-垩灰);
+    --body-background-color: var(--color-name-chinese-芡食白);
+    --text-reverse-color: var(--color-name-japanes-鳥の子);
 }
 
 h1 {
     background: none;
+}
+
+h1>span.heading {
+    background-color: var(--color-name-chinese-槲寄生绿);
+    color: var(--color-name-chinese-鼬黄);
 }

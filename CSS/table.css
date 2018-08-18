@@ -10,6 +10,14 @@ caption {
     font-weight: bold;
 }
 
+thead {
+    border-bottom: 3px double gray;
+}
+
+tfoot {
+    border-top: 3px double gray;
+}
+
 th, td {
     border: 1px solid lightgray;
     padding: 0.5rem;
@@ -18,7 +26,7 @@ th, td {
 }
 
 th {
-    background-color: bisque;
+    background-color: papayawhip;
     color: black;
     font-weight: bold;
     font-size: 1.25rem;
@@ -37,7 +45,8 @@ td time::before, td time::after {
 }
 
 table.toc {
-    width: 98%;
+    width: 99%;
+    margin: 2rem auto;
 }
 
 table.toc td a {
@@ -45,7 +54,7 @@ table.toc td a {
 }
 
 table.toc tr:nth-child(odd) {
-    background-color: white;
+    background-color: ghostwhite;
 }
 
 table.toc tr:nth-child(even) {
