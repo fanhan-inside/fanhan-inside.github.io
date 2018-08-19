@@ -11,9 +11,9 @@
 
     /* 试着用Unicode字符定义CSS变量 */
     /* 素材选用「中国传统颜色」和「日本の伝統色」，网站界面类似，不知道究竟谁复制谁并成功 */
-    --color-name-japanes-水がき: #B9887D;
-    --color-name-japanes-鳥の子: #DAC9A6;
-    /* 注意「芡」「垩」「槲」「鼬」字，在「中国传统颜色」网站上表现另类，应该是对应书法字体之字型不够充沛的缘故 */
+    --color-name-japanese-水がき: #B9887D;
+    --color-name-japanese-鳥の子: #DAC9A6;
+    /* 注意「芡」「垩」「槲」「鼬」四字，在「中国传统颜色」网站上表现另类，应该是对应书法字体之字型不够充沛的缘故 */
     --color-name-chinese-芡食白: #e2e1e4;
     --color-name-chinese-垩灰: #737c7b;
     --color-name-chinese-槲寄生绿: #2b312c;
