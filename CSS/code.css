@@ -1,9 +1,8 @@
 samp {
     font-family: var(--font-family-mono);
     font-size: 100%;
-    margin: 0 0.25rem;
-    padding: 0.25rem;
-    color: darkgreen;
+    margin: 0 1px;
+    padding: 1px;
 }
 
 kbd {
