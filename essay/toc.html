@@ -9,15 +9,26 @@
             background-color: var(--html-background-color);
         }
 
-        td:nth-child(2) {
+        #troubling td:nth-child(3),
+        #troubling td:nth-child(8) {
             text-align: left;
         }
 
-        #elderly td:nth-child(2) {
-            text-align: center;
+        #advancing td:nth-child(3),
+        #advancing td:nth-child(8) {
+            text-align: left;
         }
 
         #elderly td:nth-child(3) {
+            text-align: left;
+        }
+
+        #nouvelle td:nth-child(2) {
+            text-align: left;
+        }
+
+        #excursus td:nth-child(3),
+        #excursus td:nth-child(8) {
             text-align: left;
         }
     </style>
@@ -34,78 +45,106 @@
     <h2><span class="bookmark">惹是生非</span></h2>
     <table class="toc" id="troubling">
         <colgroup>
-            <col width="50px">
+            <col width="50">
+            <col width="120">
             <col>
-            <col span="4" width="10%">
-            <col width="10%">
+            <col span="4" width="120">
+            <col>
         </colgroup>
         <thead>
             <tr>
                 <th>№</th>
+                <th>发表时间</th>
                 <th>标题</th>
-                <th>本站链接</th>
-                <th>简书链接</th>
-                <th>知乎链接</th>
-                <th>作业部落链接</th>
+                <th>本站</th>
+                <th>知乎</th>
+                <th>简书</th>
+                <th>作业部落</th>
                 <th>备注</th>
             </tr>
         </thead>
         <tbody>
-            <tr><td>1</td><td>惹是生非（№001）：爱国税与卖国税</td><td><a target="_blank" href="troubling/001.html">正常</a></td><td><a target="_blank" href="https://zhuanlan.zhihu.com/p/40065021">正常</a></td><td><a target="_blank" href="https://www.jianshu.com/p/d53df7186e38">正常</a></td><td><a target="_blank" href="https://www.zybuluo.com/fanhan/note/1218465">正常</a></td><td></td></tr>
-            <tr><td>2</td><td>惹是生非（№002）：假做真时真亦假，忠装反处反装忠</td><td><a target="_blank" href="troubling/002.html">正常</a></td><td><a target="_blank" href="https://zhuanlan.zhihu.com/p/39718652">正常</a></td><td><a target="_blank" href="https://www.jianshu.com/p/32d8a0d752c7">正常</a></td><td><a target="_blank" href="https://www.zybuluo.com/fanhan/note/1212910">正常</a></td><td></td></tr>
-            <tr><td>3</td><td>惹是生非（№003）：开源、节流，通胀、通缩</td><td><a target="_blank" href="troubling/003.html">正常</a></td><td>政治敏感</td><td><a target="_blank" href="https://www.jianshu.com/p/6d2c0cf6f86e">正常</a></td><td><a target="_blank" href="https://www.zybuluo.com/fanhan/note/1190512">正常</a></td><td></td></tr>
-            <tr><td>4</td><td>惹是生非（№004）：党国栋梁</td><td><a target="_blank" href="troubling/004.html">正常</a></td><td>政治敏感</td><td><a target="_blank" href="https://www.jianshu.com/p/6d85508fa2a6">正常</a></td><td><a target="_blank" href="https://www.zybuluo.com/fanhan/note/1184265">正常</a></td><td></td></tr>
-            <tr><td>5</td><td>惹是生非（№005）：理论联系实际</td><td><a target="_blank" href="troubling/005.html">正常</a></td><td>政治敏感</td><td>仅自己可见</td><td><a target="_blank" href="https://www.zybuluo.com/fanhan/note/1183375">正常</a></td><td></td></tr>
-            <tr><td>6</td><td>惹是生非（№006）：六部全爹</td><td><a target="_blank" href="troubling/006.html">正常</a></td><td>政治敏感</td><td>仅自己可见</td><td><a target="_blank" href="https://www.zybuluo.com/fanhan/note/1173006">正常</a></td><td></td></tr>
+            <tr><td>1</td><td><time>2018.5.26</time></td><td>惹是生非（№001）：爱国税与卖国税</td><td><a target="_blank" href="troubling/001.html">正常</a></td><td><a target="_blank" href="https://zhuanlan.zhihu.com/p/40065021">正常</a></td><td><a target="_blank" href="https://www.jianshu.com/p/d53df7186e38">正常</a></td><td><a target="_blank" href="https://www.zybuluo.com/fanhan/note/1218465">正常</a></td><td></td></tr>
+            <tr><td>2</td><td><time>2018.6.15</time></td><td>惹是生非（№002）：假做真时真亦假，忠装反处反装忠</td><td><a target="_blank" href="troubling/002.html">正常</a></td><td><a target="_blank" href="https://zhuanlan.zhihu.com/p/39718652">正常</a></td><td><a target="_blank" href="https://www.jianshu.com/p/32d8a0d752c7">正常</a></td><td><a target="_blank" href="https://www.zybuluo.com/fanhan/note/1212910">正常</a></td><td></td></tr>
+            <tr><td>3</td><td><time>2018.6.16</time></td><td>惹是生非（№003）：开源、节流，通胀、通缩</td><td><a target="_blank" href="troubling/003.html">正常</a></td><td>政治敏感</td><td><a target="_blank" href="https://www.jianshu.com/p/6d2c0cf6f86e">正常</a></td><td><a target="_blank" href="https://www.zybuluo.com/fanhan/note/1190512">正常</a></td><td></td></tr>
+            <tr><td>4</td><td><time>2018.6.23</time></td><td>惹是生非（№004）：党国栋梁</td><td><a target="_blank" href="troubling/004.html">正常</a></td><td>政治敏感</td><td><a target="_blank" href="https://www.jianshu.com/p/6d85508fa2a6">正常</a></td><td><a target="_blank" href="https://www.zybuluo.com/fanhan/note/1184265">正常</a></td><td></td></tr>
+            <tr><td>5</td><td><time>2018.7.14</time></td><td>惹是生非（№005）：理论联系实际</td><td><a target="_blank" href="troubling/005.html">正常</a></td><td>政治敏感</td><td>仅自己可见</td><td><a target="_blank" href="https://www.zybuluo.com/fanhan/note/1183375">正常</a></td><td></td></tr>
+            <tr><td>6</td><td><time>2018.7.18</time></td><td>惹是生非（№006）：六部全爹</td><td><a target="_blank" href="troubling/006.html">正常</a></td><td>政治敏感</td><td>仅自己可见</td><td><a target="_blank" href="https://www.zybuluo.com/fanhan/note/1173006">正常</a></td><td></td></tr>
         </tbody>
+        <tfoot>
+            <tr>
+                <th>Σ</th>
+                <th>合计</th>
+                <th>6</th>
+                <th></th>
+                <th>4</th>
+                <th>2</th>
+                <th></th>
+                <th></th>
+            </tr>
+        </tfoot>
     </table>
 
     <h2><span class="bookmark">与时俱进</span></h2>
     <table class="toc" id="advancing">
         <colgroup>
             <col width="50px">
+            <col width="120px">
             <col>
-            <col span="4" width="10%">
-            <col width="10%">
+            <col span="4" width="120">
+            <col>
         </colgroup>
         <thead>
             <tr>
                 <th>№</th>
                 <th>标题</th>
-                <th>本站链接</th>
-                <th>简书链接</th>
-                <th>知乎链接</th>
-                <th>作业部落链接</th>
+                <th>发表时间</th>
+                <th>本站</th>
+                <th>知乎</th>
+                <th>简书</th>
+                <th>作业部落</th>
                 <th>备注</th>
             </tr>
         </thead>
         <tbody>
-            <tr><td>1</td><td>【科幻】魔法低材生研究奥术收编那些女巫终于登上神座（大纲）</td><td><a target="_blank" href="advancing/001.html">正常</a></td><td><a target="_blank" href="https://zhuanlan.zhihu.com/p/32895282">正常</a></td><td><a target="_blank" href="https://www.jianshu.com/p/b51e552a8954">正常</a></td><td><a target="_blank" href="https://www.zybuluo.com/fanhan/note/1017130">正常</a></td><td>2017/3/15</td></tr>
-            <tr><td>2</td><td>流程图测试：某「企业文化」卓越的公司「抓壮丁」示意图</td><td><a target="_blank" href="advancing/002.html">正常</a></td><td><a target="_blank" href="https://www.zhihu.com/question/39484996/answer/351530261">正常</a></td><td><a target="_blank" href="https://www.jianshu.com/p/75ee478e8eed">正常</a></td><td><a target="_blank" href="https://www.zybuluo.com/fanhan/note/1108895">正常</a></td><td></td></tr>
-            <tr><td>3</td><td>流程图测试：网文「打斗套路」总结</td><td><a target="_blank" href="advancing/003.html">正常</a></td><td><a target="_blank" href="https://www.zhihu.com/question/270168583/answer/355465181">正常</a></td><td><a target="_blank" href="https://www.jianshu.com/p/26db33a7b266">正常</a></td><td><a target="_blank" href="https://www.zybuluo.com/fanhan/note/1108897">正常</a></td><td></td></tr>
-            <tr><td>4</td><td>【科幻】从汉字演变相关内容到脑洞设定</td><td><a target="_blank" href="advancing/004.html">正常</a></td><td><a target="_blank" href="https://zhuanlan.zhihu.com/p/37224505">正常</a></td><td><a target="_blank" href="https://www.jianshu.com/p/b3d46c3fda65">正常</a></td><td><a target="_blank" href="https://www.zybuluo.com/fanhan/note/1173004">正常</a></td><td>2016年4月</td></tr>
-            <tr><td>5</td><td>三自贴图运动</td><td><a target="_blank" href="advancing/005.html">正常</a></td><td>不友善内容</td><td>仅自己可见</td><td><a target="_blank" href="https://www.zybuluo.com/fanhan/note/1173005">正常</a></td><td></td></tr>
-            <tr><td>6</td><td>三自修图运动</td><td><a target="_blank" href="advancing/006.html">正常</a></td><td>政治敏感</td><td><a target="_blank" href="https://www.jianshu.com/p/1ebaf4f1f206">正常</a></td><td><a target="_blank" href="https://www.zybuluo.com/fanhan/note/1175591">正常</a></td><td></td></tr>
-            <tr><td>7</td><td>三自绘图运动</td><td><a target="_blank" href="advancing/007.html">正常</a></td><td><a target="_blank" href="https://zhuanlan.zhihu.com/p/37928491">正常</a></td><td><a target="_blank" href="https://www.jianshu.com/p/3ad2c2c9eb1f">正常</a></td><td><a target="_blank" href="https://www.zybuluo.com/fanhan/note/1178008">正常</a></td><td></td></tr>
-            <tr><td>8</td><td>三自造字运动</td><td><a target="_blank" href="advancing/008.html">正常</a></td><td><a target="_blank" href="https://zhuanlan.zhihu.com/p/38018715">正常</a></td><td><a target="_blank" href="https://www.jianshu.com/p/bef13992a112">正常</a></td><td><a target="_blank" href="https://www.zybuluo.com/fanhan/note/1180607">正常</a></td><td></td></tr>
-            <tr><td>9</td><td>三自排版运动（一）：引号与书名号</td><td><a target="_blank" href="advancing/009.html">正常</a></td><td>政治敏感</td><td><a target="_blank" href="https://www.jianshu.com/p/e2a5c468856c">正常</a></td><td><a target="_blank" href="https://www.zybuluo.com/fanhan/note/1181803">正常</a></td><td></td></tr>
-            <tr><td>10</td><td>三自排版运动（二）：他山之石可以攻玉</td><td><a target="_blank" href="advancing/010.html">正常</a></td><td>政治敏感</td><td><a target="_blank" href="https://www.jianshu.com/p/4f6df041add7">正常</a></td><td><a target="_blank" href="https://www.zybuluo.com/fanhan/note/1183000">正常</a></td><td></td></tr>
-            <tr><td>11</td><td>三自排版运动（三）：CSS与XSLT</td><td><a target="_blank" href="advancing/011.html">正常</a></td><td>政治敏感</td><td><a target="_blank" href="https://www.jianshu.com/p/2ecb987e6d96">正常</a></td><td><a target="_blank" href="https://www.zybuluo.com/fanhan/note/1186671">正常</a></td><td></td></tr>
-            <tr><td>12</td><td>三自排版运动（四）：XSLT与嵌入视频</td><td><a target="_blank" href="advancing/012.html">正常</a></td><td>政治敏感</td><td><a target="_blank" href="https://www.jianshu.com/p/065b10918b6c">正常</a></td><td><a target="_blank" href="https://www.zybuluo.com/fanhan/note/1190247">正常</a></td><td></td></tr>
-            <tr><td>13</td><td>三自运动小结</td><td><a target="_blank" href="advancing/013.html">正常</a></td><td><a target="_blank" href="https://zhuanlan.zhihu.com/p/38427953">正常</a></td><td><a target="_blank" href="https://www.jianshu.com/p/b86d8a8eb0fd">正常</a></td><td><a target="_blank" href="https://www.zybuluo.com/fanhan/note/1191250">正常</a></td><td></td></tr>
-            <tr><td>14</td><td>三自运动小结（续）</td><td><a target="_blank" href="advancing/014.html">正常</a></td><td>政治敏感</td><td><a target="_blank" href="https://www.jianshu.com/p/caffa3bade2f">正常</a></td><td><a target="_blank" href="https://www.zybuluo.com/fanhan/note/1193350">正常</a></td><td></td></tr>
-            <tr><td>15</td><td>三自运动小结（续之续）</td><td><a target="_blank" href="advancing/015.html">正常</a></td><td><a target="_blank" href="https://zhuanlan.zhihu.com/p/38540662">正常</a></td><td><a target="_blank" href="https://www.jianshu.com/p/22fef2ac546d">正常</a></td><td><a target="_blank" href="https://www.zybuluo.com/fanhan/note/1194404">正常</a></td><td></td></tr>
-            <tr><td>16</td><td>三自排版运动（五）：古色古香东洋风</td><td><a target="_blank" href="advancing/016.html">正常</a></td><td><a target="_blank" href="https://zhuanlan.zhihu.com/p/38583622">正常</a></td><td><a target="_blank" href="https://www.jianshu.com/p/cb29242a5433">正常</a></td><td><a target="_blank" href="https://www.zybuluo.com/fanhan/note/1195523">正常</a></td><td></td></tr>
-            <tr><td>17</td><td>三自排版运动（六）：与时俱进西洋风</td><td><a target="_blank" href="advancing/017.html">正常</a></td><td><a target="_blank" href="https://zhuanlan.zhihu.com/p/38699378">正常</a></td><td><a target="_blank" href="https://www.jianshu.com/p/e3730d81f695">正常</a></td><td><a target="_blank" href="https://www.zybuluo.com/fanhan/note/1197805">正常</a></td><td></td></tr>
-            <tr><td>18</td><td>三自运动插曲：嗟叹之不足故咏歌之</td><td><a target="_blank" href="advancing/018.html">正常</a></td><td><a target="_blank" href="https://zhuanlan.zhihu.com/p/38790108">正常</a></td><td><a target="_blank" href="https://www.jianshu.com/p/895858697299">正常</a></td><td><a target="_blank" href="https://www.zybuluo.com/fanhan/note/1198977">正常</a></td><td></td></tr>
-            <tr><td>19</td><td>三自排版运动（七）：经传注疏解补（上）</td><td><a target="_blank" href="advancing/019.html">正常</a></td><td><a target="_blank" href="https://zhuanlan.zhihu.com/p/38951510">正常</a></td><td><a target="_blank" href="https://www.jianshu.com/p/4e2e643f2141">正常</a></td><td><a target="_blank" href="https://www.zybuluo.com/fanhan/note/1201517">正常</a></td><td></td></tr>
-            <tr><td>20</td><td>三自排版运动（八）：经传注疏解补（下）</td><td><a target="_blank" href="advancing/020.html">正常</a></td><td>政治敏感</td><td><a target="_blank" href="https://www.jianshu.com/p/6ce6980e93cb">正常</a></td><td><a target="_blank" href="https://www.zybuluo.com/fanhan/note/1202798">正常</a></td><td></td></tr>
-            <tr><td>21</td><td>三自排版运动（九）：多元文化（上）</td><td><a target="_blank" href="advancing/021.html">正常</a></td><td>政治敏感</td><td><a target="_blank" href="https://www.jianshu.com/p/9f9506a87d64">正常</a></td><td><a target="_blank" href="https://www.zybuluo.com/fanhan/note/1204085">正常</a></td><td></td></tr>
-            <tr><td>22</td><td>三自排版运动（十）：多元文化（下）</td><td><a target="_blank" href="advancing/022.html">正常</a></td><td><a target="_blank" href="https://zhuanlan.zhihu.com/p/39252563">正常</a></td><td><a target="_blank" href="https://www.jianshu.com/p/54cd9f686400">正常</a></td><td><a target="_blank" href="https://www.zybuluo.com/fanhan/note/1206068">正常</a></td><td></td></tr>
-            <tr><td>23</td><td>三自运动总结：只胡乱做将去</td><td><a target="_blank" href="advancing/023.html">正常</a></td><td>政治敏感</td><td><a target="_blank" href="https://www.jianshu.com/p/4ce0b785a07f">正常</a></td><td><a target="_blank" href="https://www.zybuluo.com/fanhan/note/1206074">正常</a></td><td></td></tr>
-            <tr><td>24</td><td>从阳明扯到胡宏</td><td><a target="_blank" href="advancing/024.html">正常</a></td><td></td><td><a target="_blank" href="https://www.jianshu.com/p/740dff2965a9">正常</a></td><td><a target="_blank" href="https://www.zybuluo.com/fanhan/note/1207942">正常</a></td><td>2010/12/31</td></tr>
-            <tr><td>25</td><td>三自出版运动（又了却一桩心事）</td><td><a target="_blank" href="advancing/025.html">正常</a></td><td>政治敏感</td><td>仅自己可见</td><td><a target="_blank" href="https://www.zybuluo.com/fanhan/note/1219958">正常</a></td><td></td></tr>
+            <tr><td>1</td><td><time>2017.3.15</time></td><td>【科幻】魔法低材生研究奥术收编那些女巫终于登上神座（大纲）</td><td><a target="_blank" href="advancing/001.html">正常</a></td><td><a target="_blank" href="https://zhuanlan.zhihu.com/p/32895282">正常</a></td><td><a target="_blank" href="https://www.jianshu.com/p/b51e552a8954">正常</a></td><td><a target="_blank" href="https://www.zybuluo.com/fanhan/note/1017130">正常</a></td><td></td></tr>
+            <tr><td>2</td><td><time>2018.3.27</time></td><td>流程图测试：某「企业文化」卓越的公司「抓壮丁」示意图</td><td><a target="_blank" href="advancing/002.html">正常</a></td><td><a target="_blank" href="https://www.zhihu.com/question/39484996/answer/351530261">正常</a></td><td><a target="_blank" href="https://www.jianshu.com/p/75ee478e8eed">正常</a></td><td><a target="_blank" href="https://www.zybuluo.com/fanhan/note/1108895">正常</a></td><td></td></tr>
+            <tr><td>3</td><td><time>2018.3.31</time></td><td>流程图测试：网文「打斗套路」总结</td><td><a target="_blank" href="advancing/003.html">正常</a></td><td><a target="_blank" href="https://www.zhihu.com/question/270168583/answer/355465181">正常</a></td><td><a target="_blank" href="https://www.jianshu.com/p/26db33a7b266">正常</a></td><td><a target="_blank" href="https://www.zybuluo.com/fanhan/note/1108897">正常</a></td><td></td></tr>
+            <tr><td>4</td><td><time>2016年4月</time></td><td>【科幻】从汉字演变相关内容到脑洞设定</td><td><a target="_blank" href="advancing/004.html">正常</a></td><td><a target="_blank" href="https://zhuanlan.zhihu.com/p/37224505">正常</a></td><td><a target="_blank" href="https://www.jianshu.com/p/b3d46c3fda65">正常</a></td><td><a target="_blank" href="https://www.zybuluo.com/fanhan/note/1173004">正常</a></td><td></td></tr>
+            <tr><td>5</td><td><time>2018.5.31</time></td><td>三自贴图运动</td><td><a target="_blank" href="advancing/005.html">正常</a></td><td>不友善内容</td><td>仅自己可见</td><td><a target="_blank" href="https://www.zybuluo.com/fanhan/note/1173005">正常</a></td><td></td></tr>
+            <tr><td>6</td><td><time>2018.6.8</time></td><td>三自修图运动</td><td><a target="_blank" href="advancing/006.html">正常</a></td><td>政治敏感</td><td>仅自己可见</td><td><a target="_blank" href="https://www.zybuluo.com/fanhan/note/1175591">正常</a></td><td></td></tr>
+            <tr><td>7</td><td><time>2018.6.11</time></td><td>三自绘图运动</td><td><a target="_blank" href="advancing/007.html">正常</a></td><td><a target="_blank" href="https://zhuanlan.zhihu.com/p/37928491">正常</a></td><td><a target="_blank" href="https://www.jianshu.com/p/3ad2c2c9eb1f">正常</a></td><td><a target="_blank" href="https://www.zybuluo.com/fanhan/note/1178008">正常</a></td><td></td></tr>
+            <tr><td>8</td><td><time>2018.6.13</time></td><td>三自造字运动</td><td><a target="_blank" href="advancing/008.html">正常</a></td><td><a target="_blank" href="https://zhuanlan.zhihu.com/p/38018715">正常</a></td><td><a target="_blank" href="https://www.jianshu.com/p/bef13992a112">正常</a></td><td><a target="_blank" href="https://www.zybuluo.com/fanhan/note/1180607">正常</a></td><td></td></tr>
+            <tr><td>9</td><td><time>2018.6.14</time></td><td>三自排版运动（一）：引号与书名号</td><td><a target="_blank" href="advancing/009.html">正常</a></td><td>政治敏感</td><td><a target="_blank" href="https://www.jianshu.com/p/e2a5c468856c">正常</a></td><td><a target="_blank" href="https://www.zybuluo.com/fanhan/note/1181803">正常</a></td><td></td></tr>
+            <tr><td>10</td><td><time>2018.6.15</time></td><td>三自排版运动（二）：他山之石可以攻玉</td><td><a target="_blank" href="advancing/010.html">正常</a></td><td>政治敏感</td><td><a target="_blank" href="https://www.jianshu.com/p/4f6df041add7">正常</a></td><td><a target="_blank" href="https://www.zybuluo.com/fanhan/note/1183000">正常</a></td><td></td></tr>
+            <tr><td>11</td><td><time>2018.6.20</time></td><td>三自排版运动（三）：CSS与XSLT</td><td><a target="_blank" href="advancing/011.html">正常</a></td><td>政治敏感</td><td><a target="_blank" href="https://www.jianshu.com/p/2ecb987e6d96">正常</a></td><td><a target="_blank" href="https://www.zybuluo.com/fanhan/note/1186671">正常</a></td><td></td></tr>
+            <tr><td>12</td><td><time>2018.6.22</time></td><td>三自排版运动（四）：XSLT与嵌入视频</td><td><a target="_blank" href="advancing/012.html">正常</a></td><td>政治敏感</td><td><a target="_blank" href="https://www.jianshu.com/p/065b10918b6c">正常</a></td><td><a target="_blank" href="https://www.zybuluo.com/fanhan/note/1190247">正常</a></td><td></td></tr>
+            <tr><td>13</td><td><time>2018.6.24</time></td><td>三自运动小结</td><td><a target="_blank" href="advancing/013.html">正常</a></td><td><a target="_blank" href="https://zhuanlan.zhihu.com/p/38427953">正常</a></td><td><a target="_blank" href="https://www.jianshu.com/p/b86d8a8eb0fd">正常</a></td><td><a target="_blank" href="https://www.zybuluo.com/fanhan/note/1191250">正常</a></td><td></td></tr>
+            <tr><td>14</td><td><time>2018.6.26</time></td><td>三自运动小结（续）</td><td><a target="_blank" href="advancing/014.html">正常</a></td><td>政治敏感</td><td><a target="_blank" href="https://www.jianshu.com/p/caffa3bade2f">正常</a></td><td><a target="_blank" href="https://www.zybuluo.com/fanhan/note/1193350">正常</a></td><td></td></tr>
+            <tr><td>15</td><td><time>2018.6.27</time></td><td>三自运动小结（续之续）</td><td><a target="_blank" href="advancing/015.html">正常</a></td><td><a target="_blank" href="https://zhuanlan.zhihu.com/p/38540662">正常</a></td><td><a target="_blank" href="https://www.jianshu.com/p/22fef2ac546d">正常</a></td><td><a target="_blank" href="https://www.zybuluo.com/fanhan/note/1194404">正常</a></td><td></td></tr>
+            <tr><td>16</td><td><time>2018.6.28</time></td><td>三自排版运动（五）：古色古香东洋风</td><td><a target="_blank" href="advancing/016.html">正常</a></td><td><a target="_blank" href="https://zhuanlan.zhihu.com/p/38583622">正常</a></td><td><a target="_blank" href="https://www.jianshu.com/p/cb29242a5433">正常</a></td><td><a target="_blank" href="https://www.zybuluo.com/fanhan/note/1195523">正常</a></td><td></td></tr>
+            <tr><td>17</td><td><time>2018.6.30</time></td><td>三自排版运动（六）：与时俱进西洋风</td><td><a target="_blank" href="advancing/017.html">正常</a></td><td><a target="_blank" href="https://zhuanlan.zhihu.com/p/38699378">正常</a></td><td><a target="_blank" href="https://www.jianshu.com/p/e3730d81f695">正常</a></td><td><a target="_blank" href="https://www.zybuluo.com/fanhan/note/1197805">正常</a></td><td></td></tr>
+            <tr><td>18</td><td><time>2018.7.2</time></td><td>三自运动插曲：嗟叹之不足故咏歌之</td><td><a target="_blank" href="advancing/018.html">正常</a></td><td><a target="_blank" href="https://zhuanlan.zhihu.com/p/38790108">正常</a></td><td><a target="_blank" href="https://www.jianshu.com/p/895858697299">正常</a></td><td><a target="_blank" href="https://www.zybuluo.com/fanhan/note/1198977">正常</a></td><td></td></tr>
+            <tr><td>19</td><td><time>2018.7.4</time></td><td>三自排版运动（七）：经传注疏解补（上）</td><td><a target="_blank" href="advancing/019.html">正常</a></td><td><a target="_blank" href="https://zhuanlan.zhihu.com/p/38951510">正常</a></td><td><a target="_blank" href="https://www.jianshu.com/p/4e2e643f2141">正常</a></td><td><a target="_blank" href="https://www.zybuluo.com/fanhan/note/1201517">正常</a></td><td></td></tr>
+            <tr><td>20</td><td><time>2018.7.5</time></td><td>三自排版运动（八）：经传注疏解补（下）</td><td><a target="_blank" href="advancing/020.html">正常</a></td><td>政治敏感</td><td><a target="_blank" href="https://www.jianshu.com/p/6ce6980e93cb">正常</a></td><td><a target="_blank" href="https://www.zybuluo.com/fanhan/note/1202798">正常</a></td><td></td></tr>
+            <tr><td>21</td><td><time>2018.7.6</time></td><td>三自排版运动（九）：多元文化（上）</td><td><a target="_blank" href="advancing/021.html">正常</a></td><td>政治敏感</td><td><a target="_blank" href="https://www.jianshu.com/p/9f9506a87d64">正常</a></td><td><a target="_blank" href="https://www.zybuluo.com/fanhan/note/1204085">正常</a></td><td></td></tr>
+            <tr><td>22</td><td><time>2018.7.8</time></td><td>三自排版运动（十）：多元文化（下）</td><td><a target="_blank" href="advancing/022.html">正常</a></td><td><a target="_blank" href="https://zhuanlan.zhihu.com/p/39252563">正常</a></td><td><a target="_blank" href="https://www.jianshu.com/p/54cd9f686400">正常</a></td><td><a target="_blank" href="https://www.zybuluo.com/fanhan/note/1206068">正常</a></td><td></td></tr>
+            <tr><td>23</td><td><time>2018.7.8</time></td><td>三自运动总结：只胡乱做将去</td><td><a target="_blank" href="advancing/023.html">正常</a></td><td>政治敏感</td><td><a target="_blank" href="https://www.jianshu.com/p/4ce0b785a07f">正常</a></td><td><a target="_blank" href="https://www.zybuluo.com/fanhan/note/1206074">正常</a></td><td></td></tr>
+            <tr><td>24</td><td><time>2011年初</time></td><td>从阳明扯到胡宏</td><td><a target="_blank" href="advancing/024.html">正常</a></td><td></td><td><a target="_blank" href="https://www.jianshu.com/p/740dff2965a9">正常</a></td><td><a target="_blank" href="https://www.zybuluo.com/fanhan/note/1207942">正常</a></td><td>在网上比较完整的讨论儒学的记录</td></tr>
+            <tr><td>25</td><td><time>2018.7.20</time></td><td>三自出版运动（又了却一桩心事）</td><td><a target="_blank" href="advancing/025.html">正常</a></td><td>政治敏感</td><td>仅自己可见</td><td><a target="_blank" href="https://www.zybuluo.com/fanhan/note/1219958">正常</a></td><td></td></tr>
         </tbody>
+        <tfoot>
+            <tr>
+                <th>Σ</th>
+                <th>合计</th>
+                <th>25</th>
+                <th></th>
+                <th>11</th>
+                <th>3</th>
+                <th></th>
+                <th>1</th>
+            </tr>
+        </tfoot>
     </table>
 
     <h2><span class="bookmark">旧文</span></h2>
@@ -122,73 +161,110 @@
                 <th>发表时间</th>
                 <th>标题</th>
                 <th>分类</th>
-                <th>本站链接</th>
-                <th>简书链接</th>
-                <th>知乎链接</th>
-                <th>作业部落链接</th>
+                <th>本站</th>
+                <th>知乎</th>
+                <th>简书</th>
+                <th>作业部落</th>
             </tr>
         </thead>
         <tbody>
-            <tr><td>1</td><td>2007-11-11</td><td>关于输入法（一）</td><td rowspan="7">电子生涯</td><td rowspan="7"><a target="_blank" href="elderly/001-001.html">正常</a></td><td><a target="_blank" href="https://zhuanlan.zhihu.com/p/31538587">正常</a></td><td><a target="_blank" href="https://www.jianshu.com/p/0f5a2acee5a8">正常</a></td><td>无</td></tr>
-            <tr><td>2</td><td>2007-11-17</td><td>关于输入法（二）</td><td><a target="_blank" href="https://zhuanlan.zhihu.com/p/31538651">正常</a></td><td><a target="_blank" href="https://www.jianshu.com/p/4f46a4cbcec5">正常</a></td><td>无</td></tr>
-            <tr><td>3</td><td>2007-11-18</td><td>关于输入法（三）</td><td><a target="_blank" href="https://zhuanlan.zhihu.com/p/31538704">正常</a></td><td><a target="_blank" href="https://www.jianshu.com/p/5fccbd6a9f42">正常</a></td><td>无</td></tr>
-            <tr><td>4</td><td>2007-11-24</td><td>关于输入法（四）</td><td><a target="_blank" href="https://zhuanlan.zhihu.com/p/31538736">正常</a></td><td><a target="_blank" href="https://www.jianshu.com/p/1bb7a618512e">正常</a></td><td>无</td></tr>
-            <tr><td>5</td><td>2007-11-25</td><td>关于输入法（五）</td><td><a target="_blank" href="https://zhuanlan.zhihu.com/p/31538779">正常</a></td><td><a target="_blank" href="https://www.jianshu.com/p/5e668f43f975">正常</a></td><td>无</td></tr>
-            <tr><td>6</td><td>2007-12-01</td><td>关于输入法（六）</td><td><a target="_blank" href="https://zhuanlan.zhihu.com/p/31538864">正常</a></td><td><a target="_blank" href="https://www.jianshu.com/p/088daaad6a3a">正常</a></td><td>无</td></tr>
-            <tr><td>7</td><td>2008-04-15</td><td>关于输入法（七）</td><td><a target="_blank" href="https://zhuanlan.zhihu.com/p/31538898">正常</a></td><td><a target="_blank" href="https://www.jianshu.com/p/a5ff541efdd0">正常</a></td><td>无</td></tr>
-            <tr><td>8</td><td>2009-06-20</td><td>船山本意词钞抄·船山评七言律抄</td><td rowspan="2">历史尘埃</td><td><a target="_blank" href="elderly/003-001.html">正常</a></td><td><a target="_blank" href="https://zhuanlan.zhihu.com/p/31539136">正常</a></td><td><a target="_blank" href="https://www.jianshu.com/p/1983e1fa90ca">正常</a></td><td>无</td></tr>
-            <tr><td>9</td><td>2009年12月</td><td>萌清八股科举简介（未完）</td><td><a target="_blank" href="elderly/003-002.html">正常</a></td><td><a target="_blank" href="https://zhuanlan.zhihu.com/p/32867061">正常</a></td><td><a target="_blank" href="https://www.jianshu.com/p/2194e7b50af7">正常</a></td><td>无</td></tr>
-            <tr><td>10</td><td>2009-03-23</td><td>每被老元偷格律——写在CBA08-09常规赛后</td><td>熊崽落水</td><td><a target="_blank" href="elderly/002-001.html">正常</a></td><td><a target="_blank" href="https://zhuanlan.zhihu.com/p/31538941">正常</a></td><td><a target="_blank" href="https://www.jianshu.com/p/b0200872acd3">正常</a></td><td>无</td></tr>
+            <tr><td>1</td><td><time>2007-11-11</time></td><td>关于输入法（一）</td><td rowspan="7">电子生涯</td><td rowspan="7"><a target="_blank" href="elderly/001-001.html">正常</a></td><td><a target="_blank" href="https://zhuanlan.zhihu.com/p/31538587">正常</a></td><td><a target="_blank" href="https://www.jianshu.com/p/0f5a2acee5a8">正常</a></td><td>无</td></tr>
+            <tr><td>2</td><td><time>2007-11-17</time></td><td>关于输入法（二）</td><td><a target="_blank" href="https://zhuanlan.zhihu.com/p/31538651">正常</a></td><td><a target="_blank" href="https://www.jianshu.com/p/4f46a4cbcec5">正常</a></td><td>无</td></tr>
+            <tr><td>3</td><td><time>2007-11-18</time></td><td>关于输入法（三）</td><td><a target="_blank" href="https://zhuanlan.zhihu.com/p/31538704">正常</a></td><td><a target="_blank" href="https://www.jianshu.com/p/5fccbd6a9f42">正常</a></td><td>无</td></tr>
+            <tr><td>4</td><td><time>2007-11-24</time></td><td>关于输入法（四）</td><td><a target="_blank" href="https://zhuanlan.zhihu.com/p/31538736">正常</a></td><td><a target="_blank" href="https://www.jianshu.com/p/1bb7a618512e">正常</a></td><td>无</td></tr>
+            <tr><td>5</td><td><time>2007-11-25</time></td><td>关于输入法（五）</td><td><a target="_blank" href="https://zhuanlan.zhihu.com/p/31538779">正常</a></td><td><a target="_blank" href="https://www.jianshu.com/p/5e668f43f975">正常</a></td><td>无</td></tr>
+            <tr><td>6</td><td><time>2007-12-01</time></td><td>关于输入法（六）</td><td><a target="_blank" href="https://zhuanlan.zhihu.com/p/31538864">正常</a></td><td><a target="_blank" href="https://www.jianshu.com/p/088daaad6a3a">正常</a></td><td>无</td></tr>
+            <tr><td>7</td><td><time>2008-04-15</time></td><td>关于输入法（七）</td><td><a target="_blank" href="https://zhuanlan.zhihu.com/p/31538898">正常</a></td><td><a target="_blank" href="https://www.jianshu.com/p/a5ff541efdd0">正常</a></td><td>无</td></tr>
+            <tr><td>8</td><td><time>2009-06-20</time></td><td>船山本意词钞抄·船山评七言律抄</td><td rowspan="2">历史尘埃</td><td><a target="_blank" href="elderly/003-001.html">正常</a></td><td><a target="_blank" href="https://zhuanlan.zhihu.com/p/31539136">正常</a></td><td><a target="_blank" href="https://www.jianshu.com/p/1983e1fa90ca">正常</a></td><td>无</td></tr>
+            <tr><td>9</td><td><time>2009年12月</time></td><td>萌清八股科举简介（未完）</td><td><a target="_blank" href="elderly/003-002.html">正常</a></td><td><a target="_blank" href="https://zhuanlan.zhihu.com/p/32867061">正常</a></td><td><a target="_blank" href="https://www.jianshu.com/p/2194e7b50af7">正常</a></td><td>无</td></tr>
+            <tr><td>10</td><td><time>2009-03-23</time></td><td>每被老元偷格律——写在CBA08-09常规赛后</td><td>熊崽落水</td><td><a target="_blank" href="elderly/002-001.html">正常</a></td><td><a target="_blank" href="https://zhuanlan.zhihu.com/p/31538941">正常</a></td><td><a target="_blank" href="https://www.jianshu.com/p/b0200872acd3">正常</a></td><td>无</td></tr>
         </tbody>
+        <tfoot>
+            <tr>
+                <th>Σ</th>
+                <th>合计</th>
+                <th>10</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </tfoot>
     </table>
 
     <h2><span class="bookmark">『短篇集』</span></h2>
     <table class="toc" id="nouvelle">
         <colgroup>
-            <col width="50px">
+            <col width="50">
             <col>
-            <col span="4" width="10%">
-            <col width="10%">
+            <col span="4" width="120">
+            <col>
         </colgroup>
         <thead>
             <tr>
                 <th>№</th>
                 <th>标题</th>
-                <th>本站链接</th>
-                <th>简书链接</th>
-                <th>知乎链接</th>
-                <th>作业部落链接</th>
+                <th>本站</th>
+                <th>知乎</th>
+                <th>简书</th>
+                <th>作业部落</th>
                 <th>备注</th>
             </tr>
         </thead>
         <tbody>
-            <tr><td>1</td><td>【科幻】《星际参考》2547年3月20日（总第146440期）</td><td><a target="_blank" href="nouvelle/001_StarReference.html">正常</a></td><td><a target="_blank" href="https://zhuanlan.zhihu.com/p/37186552">正常</a></td><td><a target="_blank" href="https://www.jianshu.com/p/d38e20e91489">正常</a></td><td><a target="_blank" href="https://www.zybuluo.com/fanhan/note/1173008">正常</a></td><td></td></tr>
+            <tr><td>1</td><td>【科幻】《星际参考》2547年3月20日（总第146440期）</td><td><a target="_blank" href="nouvelle/001_StarReference.html">正常</a></td><td><a target="_blank" href="https://zhuanlan.zhihu.com/p/37186552">正常</a></td><td><a target="_blank" href="https://www.jianshu.com/p/d38e20e91489">正常</a></td><td><a target="_blank" href="https://www.zybuluo.com/fanhan/note/1173008">正常</a></td><td>预定《科幻世界》1999年10月号〈封面故事〉</td></tr>
             <tr><td>2</td><td>【科幻】接触（《科幻世界》2000年3月封面故事）</td><td><a target="_blank" href="nouvelle/002_Contact.html">正常</a></td><td><a target="_blank" href="https://zhuanlan.zhihu.com/p/37186245">正常</a></td><td><a target="_blank" href="https://www.jianshu.com/p/34ddef3867ab">正常</a></td><td><a target="_blank" href="https://www.zybuluo.com/fanhan/note/1173007">正常</a></td><td></td></tr>
         </tbody>
+        <tfoot>
+            <tr>
+                <th>Σ</th>
+                <th>2</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th>1</th>
+            </tr>
+        </tfoot>
     </table>
 
     <h2><span class="bookmark">作品相关</span></h2>
     <table class="toc" id="excursus">
         <colgroup>
-            <col width="50px">
+            <col width="50">
+            <col width="120">
             <col>
-            <col span="4" width="10%">
-            <col width="10%">
+            <col span="4" width="120">
+            <col>
         </colgroup>
         <thead>
             <tr>
                 <th>№</th>
+                <th>发表时间</th>
                 <th>标题</th>
-                <th>本站链接</th>
-                <th>简书链接</th>
-                <th>知乎链接</th>
-                <th>作业部落链接</th>
+                <th>本站</th>
+                <th>知乎</th>
+                <th>简书</th>
+                <th>作业部落</th>
                 <th>备注</th>
             </tr>
         </thead>
         <tbody>
-            <tr><td>1</td><td class="随笔">《囧斋随笔》作品相关：说明（零）</td><td><a target="_blank" href="000_excursus/000-000.html">正常</a></td><td>政治敏感</td><td><a target="_blank" href="https://www.jianshu.com/p/7826ff9e3800">正常</a></td><td><a target="_blank" href="https://www.zybuluo.com/fanhan/note/1225401">正常</a></td><td></td></tr>
+            <tr><td>1</td><td><time>2017.11.29</time></td><td class="随笔">《囧斋随笔》作品相关：说明（零）</td><td><a target="_blank" href="000_excursus/000-000.html">正常</a></td><td>政治敏感</td><td><a target="_blank" href="https://www.jianshu.com/p/7826ff9e3800">正常</a></td><td><a target="_blank" href="https://www.zybuluo.com/fanhan/note/1225401">正常</a></td><td></td></tr>
         </tbody>
+        <tfoot>
+            <tr>
+                <th>Σ</th>
+                <th>合计</th>
+                <th>1</th>
+                <th></th>
+                <th>1</th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </tfoot>
     </table>
 </body>
 </html>
