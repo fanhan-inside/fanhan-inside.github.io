@@ -9,11 +9,11 @@
     <link rel="stylesheet" type="text/css" href="main.css" />
     <style type="text/css">
         html {
-            background-color: transparent;
+            background-color: var(--html-background-color);
         }
 
         body {
-            background-color: transparent;
+            background-color: var(--body-background-color);
             width: 1440px;
             margin: 10px auto;
             padding: 0;
@@ -21,11 +21,13 @@
 
         main {
             width: 100%;
+            padding: 0;
         }
 
         iframe {
-            width: 100%;
-            border: 1px solid lightgray;
+            width: 99%;
+            margin: 1rem auto;
+            border: none;
         }
 
         #profile-detail {
@@ -48,6 +50,20 @@
             background: transparent;
             display: inline-block;
             padding: 0.5rem;
+        }
+
+        h2 {
+            margin-left: 0;
+        }
+
+        h2>span:not(.bookmark) {
+            display: inline-block;
+            margin-left: 3rem;
+        }
+
+        span.onum {
+            margin: 0 0.25rem;
+            padding: 0 0.25rem;
         }
 
         #cover {
@@ -165,7 +181,12 @@
             padding: 0.5rem;
         }
 
-        #articles>span:not(.heading) {
+        #articles {
+            padding: 0 3rem;
+            text-align: right;
+        }
+
+        #articles>span {
             font-size: 1.25rem;
             padding: 0.5rem;
         }
@@ -193,7 +214,6 @@
         #煎蛋 {
             background: radial-gradient(farthest-corner at 0 0, white, lime);
         }
-
     </style>
 </head>
 
@@ -322,25 +342,22 @@
         </div>
     </header>
 
-    <main>
-        <h2><span class="heading">动态</span></h2>
-        <div style="padding: 0 0.25rem">
-            <iframe src="timeline.html" height="600" scrolling="auto" marginwidth="0" marginheight="0"></iframe>
-        </div>
+    <h2><span class="bookmark">动态</span></h2>
+    <iframe src="timeline.html" height="600" scrolling="auto" marginwidth="0" marginheight="0"></iframe>
 
-        <h2 id="articles">
-            <span class="heading">更新列表</span>
-            <span id="设定集">《范版西幻设定集》</span>
-            <span id="恶补记">《范版数学恶补记》</span>
-            <span id="随笔">《囧斋随笔》</span>
-            <span id="惹是生非">〈惹是生非〉</span>
-            <span id="知乎">谈笑风生＠知乎</span>
-            <span id="煎蛋">谈笑风生＠九省通衢の煎蛋</span>
-        </h2>
-        <div style="padding: 0 0.25rem">
-            <iframe src="articles.html" height="600" scrolling="auto" marginwidth="0" marginheight="0"></iframe>
-        </div>
-    </main>
+    <h2>
+        <span class="bookmark">文章列表</span>
+        <span>更新于<time>2018-08-21, Martis</time>共<span class="onum">546</span>篇</span>
+    </h2>
+    <div id="articles">
+        <span id="设定集">《范版西幻设定集》</span>
+        <span id="恶补记">《范版数学恶补记》</span>
+        <span id="随笔">《囧斋随笔》</span>
+        <span id="惹是生非">〈惹是生非〉</span>
+        <span id="知乎">谈笑风生＠知乎</span>
+        <span id="煎蛋">谈笑风生＠九省通衢の煎蛋</span>
+    </div>
+    <iframe src="articles.html" height="600" scrolling="auto" marginwidth="0" marginheight="0"></iframe>
 
     <footer>
         <span>Copyright© fANhAN iNSiDE, All Rights Reserved.</span>
