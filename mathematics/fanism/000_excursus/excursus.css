@@ -1,8 +1,9 @@
 @import url(../../../main.css);
 html {
     background: url("image/000-000_background.png") repeat;
+    background-color: var(--html-background-color);
 }
 
 body {
-    filter: opacity(97%);
+    filter: opacity(95%);
 }

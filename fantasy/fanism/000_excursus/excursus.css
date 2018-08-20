@@ -2,3 +2,25 @@
 body {
     filter: opacity(97%);
 }
+
+h1 {
+    height: 521px;
+    background: url("image/000-000-000_heading.png") 50% no-repeat;
+    text-align: center;
+}
+
+h1>div {
+    margin-top: 160px;
+}
+
+h1>div>span {
+    display: block;
+}
+
+#title {
+    font-size: 2rem;
+}
+
+#subtitle {
+    font-size: 3rem;
+}

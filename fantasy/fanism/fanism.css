@@ -1,9 +1,4 @@
 @import url(../../main.css);
-
-html {
-    background-color: white;
-}
-
 header {
     width: 1220px;
 }
@@ -12,4 +7,26 @@ footer {
     width: 1220px;
     border: none;
     text-align: center;
+}
+
+h1 {
+    height: 581px;
+    background: url("image/heading_normal.png") 50% no-repeat;
+    text-align: center;
+}
+
+h1>div {
+    margin-top: 180px;
+}
+
+h1>div>span {
+    display: block;
+}
+
+#title {
+    font-size: 2rem;
+}
+
+#subtitle {
+    font-size: 3rem;
 }
