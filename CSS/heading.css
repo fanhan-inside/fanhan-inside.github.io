@@ -5,6 +5,11 @@ h1 {
     background: radial-gradient(farthest-corner at 0 0, transparent, lightblue);
 }
 
+h1>img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
 h2 {
     font-size: 1.75rem;
     margin-left: -2rem;

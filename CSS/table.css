@@ -19,14 +19,14 @@ tfoot {
 }
 
 th, td {
-    border: 1px solid lightgray;
+    border: 1px solid dimgray;
     padding: 0.5rem;
     text-align: center;
     vertical-align: middle;
 }
 
 th {
-    background-color: papayawhip;
+    background-color: whitesmoke;
     color: black;
     font-weight: bold;
     font-size: 1.25rem;
@@ -53,13 +53,13 @@ table.toc td a {
     display: block;
 }
 
-table.toc tr:nth-child(odd) {
+/* table.toc tr:nth-child(odd) {
     background-color: ghostwhite;
 }
 
 table.toc tr:nth-child(even) {
-    background-color: whitesmoke;
-}
+    background-color: transparent;
+} */
 
 table.toc tr:hover {
     background-color: lightgoldenrodyellow;
