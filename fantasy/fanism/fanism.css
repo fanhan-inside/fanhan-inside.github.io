@@ -19,10 +19,6 @@ h1>div {
     margin-top: 180px;
 }
 
-h1>div>span {
-    display: block;
-}
-
 #title {
     font-size: 2rem;
 }

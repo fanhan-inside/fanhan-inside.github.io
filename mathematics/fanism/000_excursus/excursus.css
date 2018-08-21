@@ -7,3 +7,11 @@ html {
 body {
     filter: opacity(95%);
 }
+
+h1 {
+    height: 64px;
+}
+
+h1>img {
+    float: right;
+}
