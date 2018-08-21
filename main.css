@@ -50,6 +50,11 @@ div.signature {
     border-top: 3px double darkblue;
 }
 
+div.signature img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
 div.signature p {
     margin: 0;
     padding: 0;
