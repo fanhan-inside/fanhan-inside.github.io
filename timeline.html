@@ -31,7 +31,7 @@
             vertical-align: middle;
         }
         
-        div.row > span a {
+        div.row > span a:not(.card) {
             display: inline-block;
             background-color: whitesmoke;
             color: blue;
@@ -40,7 +40,10 @@
             margin: 0.5rem;
             padding: 0.25rem;
         }
-
+        div.row > span a:hover {
+            background-color: darkblue;
+            color: yellow;
+        }
         div.row:first-of-type {
             background-color: lightcyan;
         }
@@ -62,6 +65,17 @@
 </head>
 
 <body>
+    <div class="row">
+        <span class="day"><time>2018.08.23<br />Iovis</time></span>
+        <span>
+            <ul>
+                <li>改版；修改首页动态和文章列表格式。</li>
+                <li>修改卡片链接样式，比如：
+                    <a class="card" target="_blank" href="at_jandan/toc.html">谈笑风生＠九省通衢の煎蛋</a>
+                </li>
+            </ul>
+        </span>
+    </div>
     <div class="row">
         <span class="day"><time>2018.08.22<br />Mercurii</time></span>
         <span>

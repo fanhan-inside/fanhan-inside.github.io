@@ -19,15 +19,14 @@ a.card {
     display: block;
     max-width: 700px;
     margin: 1rem auto;
-    padding: 1rem;
-    border: 1px solid lightgray;
-    border-radius: 0.5rem;
+    padding: 20px;
     text-align: center;
     font-size: 125%;
-    background-color: whitesmoke;
-    text-overflow: ellipsis;  
-    overflow: hidden;  
-    white-space: nowrap; 
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    background: url("link_corner_tl.svg") top left no-repeat, url("link_corner_tr.svg") top right no-repeat, url("link_corner_bl.svg") bottom left no-repeat, url("link_corner_br.svg") bottom right no-repeat, url("link_border_t.svg") top left repeat-x, url("link_border_b.svg") bottom left repeat-x, url("link_border_l.svg") top left repeat-y, url("link_border_r.svg") bottom right repeat-y;
+    background-color: white;
 }
 
 a.alone {
