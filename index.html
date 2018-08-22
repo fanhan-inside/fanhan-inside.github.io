@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <meta type="text/html" charset="UTF-8">
+    <meta type="text/html" charset="UTF-8" />
     <title>希帕索斯永垂不朽</title>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
     <link rel="icon" type="image/svg+xml" href="IMG/icon.svg" />
@@ -64,37 +64,6 @@
         span.onum {
             margin: 0 0.25rem;
             padding: 0 0.25rem;
-        }
-
-        #cover {
-            position: relative;
-            margin: 0;
-            padding: 0;
-            border: none;
-        }
-
-        #cover img {
-            display: block;
-        }
-
-        #title {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-        }
-
-        #avatar {
-            display: block;
-            margin: auto;
-            position: absolute;
-            top: 240px;
-            left: 40px;
-        }
-
-        #icon {
-            position: absolute;
-            top: 10px;
-            left: 1360px;
         }
 
         .signature {
@@ -218,17 +187,15 @@
 </head>
 
 <body>
-    <div id="cover">
-        <img src="IMG/cover.png" />
-        <img id="title" lang="zh" src="IMG/希帕索斯永垂不朽.svg" />
-        <img id="avatar" src="IMG/avatar.png" />
-        <div id="icon">
-            <img src="IMG/范狂夫.svg" />
-            <img src="IMG/icon_dynamic.svg" />
-            <img src="IMG/囧斋.svg" />
-        </div>
-    </div>
-
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        width="1440" height="442" version="1.1" viewbox="0 0 1440 442" style="display:block;border:none;margin:0;padding:0;">
+        <image width="1440" height="442" x="0" y="0" xlink:href="IMG/cover.png"/>
+        <image width="314" height="130" x="40" y="240" xlink:href="IMG/avatar.png"/>
+        <image width="800" height="100" x="10" y="10" xlink:href="IMG/希帕索斯永垂不朽.svg"/>
+        <image width="64" height="160" x="1340" y="0" xlink:href="IMG/范狂夫.svg"/>
+        <image width="65" height="65" x="1340" y="160" xlink:href="IMG/icon_dynamic.svg"/>
+        <image width="64" height="100" x="1340" y="230" xlink:href="IMG/囧斋.svg"/>
+    </svg>
     <header>
         <div id="profile" lang="zh">
             <h1 class="home"><ruby>范狂夫<rt lang="nl">van Confucia</rt></ruby></h1>
