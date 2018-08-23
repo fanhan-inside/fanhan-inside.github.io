@@ -1,0 +1,62 @@
+@font-face {
+  font-family: "Symbola";
+  src: local("Symbola"), url("./ancient/SymbolaHinted.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Avdira";
+  src: local("Avdira"), url("./ancient/Avdira.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Alexander";
+  src: local("Alexander"), url("./ancient/Alexander.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Anaktoria";
+  src: local("Anaktoria"), url("./ancient/Anaktoria.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Asea";
+  src: local("Asea"), url("./ancient/Asea.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Asea";
+  src: local("AseaB"), url("./ancient/AseaB.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Asea";
+  src: local("AseaI"), url("./ancient/AseaI.woff2") format("woff2");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Asea";
+  src: local("AseaK"), url("./ancient/AseaK.woff2") format("woff2");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Aroania";
+  src: local("Aroania"), url("./ancient/Aroania.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
