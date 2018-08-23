@@ -1,6 +1,6 @@
 article {
     margin: 1rem auto 2rem auto;
-    padding: 1rem;
+    padding: 20px;
     background-color: antiquewhite;
     border: 1px solid lightgray;
     box-sizing: border-box;
@@ -68,9 +68,13 @@ article.bulletin footer p {
 }
 
 article.message {
+    border: none;
     box-shadow: none;
-    margin: -1px auto;
-    border: 1px solid lightgray;
+    margin: 0.5rem;
+    background: url("message_corner_tl.svg") top left no-repeat, url("message_corner_br.svg") bottom right no-repeat,
+    url(message_border_t.svg) top left repeat-x,url(message_border_b.svg) bottom left repeat-x,
+    url(message_border_l.svg) top left repeat-y,url(message_border_r.svg) top right repeat-y;
+    background-color: white;
 }
 
 article.message header {
