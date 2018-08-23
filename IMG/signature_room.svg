@@ -1,14 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
-    width="42" height="28" viewBox="0 0 48 32">
-    <symbol id="a" viewBox="32 -15 384 256">
-        <g transform="matrix(1 0 0 -1 0 204)">
-            <path d="M71 -33h-20v244h20v-8h114v8h20v-244h-20v18h-114v-18z
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="42" height="28" version="1.1" viewBox="0 0 48 32">
+    <symbol id="囧斋" viewBox="32 -15 384 256">
+        <path d="M71 -33h-20v244h20v-8h114v8h20v-244h-20v18h-114v-18z
 M71 -5h20v104h20v-14h34v14h20v-104h20v198h-114v-83q22 25 23 63h24q1 -33 -47 -74v-104z
 M111 75v-80h34v80h-34z
-M130 177l2 2q11 -11 34 -35q9 -9 13 -12q-7 -21 -14 -31q-25 44 -35 76z"/>
-            <path d="M238 193h82q-7 10 -14 23l1 1q14 -5 29 -10q0 -5 -4 -12v-2h68v-10h-28q-10 -27 -38 -44q40 -17 77 -17q-7 -10 -4 -26q-3 0 -9 1q-10 2 -14 2v-8h-56q0 -22 -18 -30h60v10h20v-78q1 -17 -25 -25q0 4 -9 2l-13 -2l-1 4q31 8 28 17v62h-20v-66h-20v66h-20v-66h-20v66h-20 v-80h-20v98h20v-8h34q3 12 2 30h-44v10h116q-38 8 -61 27q-25 -15 -69 -31h-14q39 15 74 38q-24 22 -36 48h-34v10z
-M322 146q21 19 26 37h-68q16 -24 42 -37z"/>
-        </g>
+M130 177l2 2q11 -11 34 -35q9 -9 13 -12q-7 -21 -14 -31q-25 44 -35 76zM238 193h82q-7 10 -14 23l1 1q14 -5 29 -10q0 -5 -4 -12v-2h68v-10h-28q-10 -27 -38 -44q40 -17 77 -17q-7 -10 -4 -26q-3 0 -9 1q-10 2 -14 2v-8h-56q0 -22 -18 -30h60v10h20v-78q1 -17 -25 -25q0 4 -9 2l-13 -2l-1 4q31 8 28 17v62h-20v-66h-20v66h-20v-66h-20v66h-20 v-80h-20v98h20v-8h34q3 12 2 30h-44v10h116q-38 8 -61 27q-25 -15 -69 -31h-14q39 15 74 38q-24 22 -36 48h-34v10z
+M322 146q21 19 26 37h-68q16 -24 42 -37z" transform="matrix(1 0 0 -1 0 204)"/>
     </symbol>
-    <use width="48" height="32" x="0" y="0" xlink:href="#a" />
+    <use width="48" height="32" x="0" y="0" xlink:href="#囧斋"/>
 </svg>
