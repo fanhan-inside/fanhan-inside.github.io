@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Symbola";
-  src: local("Symbola"), url("./ancient/SymbolaHinted.woff2") format("woff2");
+  src: local("Symbola"), url("./ancient/Symbola.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
@@ -35,21 +35,21 @@
 
 @font-face {
   font-family: "Asea";
-  src: local("AseaB"), url("./ancient/AseaB.woff2") format("woff2");
+  src: local("Asea"), url("./ancient/AseaB.woff2") format("woff2");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Asea";
-  src: local("AseaI"), url("./ancient/AseaI.woff2") format("woff2");
+  src: local("Asea"), url("./ancient/AseaI.woff2") format("woff2");
   font-weight: normal;
   font-style: italic;
 }
 
 @font-face {
   font-family: "Asea";
-  src: local("AseaK"), url("./ancient/AseaK.woff2") format("woff2");
+  src: local("Asea"), url("./ancient/AseaK.woff2") format("woff2");
   font-weight: bold;
   font-style: italic;
 }
