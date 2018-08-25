@@ -1,4 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="256" height="64" version="1.1" viewBox="0 0 256 64">
+    <defs>
+        <linearGradient id="logo" x1="0" x2="1" y1="1" y2="0">
+            <stop offset="0%" stop-color="red"/>
+            <stop offset="50%" stop-color="darkred"/>
+            <stop offset="100%" stop-color="red"/>
+        </linearGradient>
+    </defs>
     <symbol id="与时俱进" viewBox="0 0 8192 2048">
         <path d="M743 1106l886 130l2 -53l-899 -136l-74 -355q681 139 895 130q87 -5 135.5 -35.5t69 -84t11.5 -147.5q-16 -147 -55 -277t-69 -197t-68.5 -134t-95.5 -143t-74 -89t-32.5 -3.5t-14.5 24.5q0 9 28.5 38.5t81.5 108t99.5 171.5t81.5 216.5t41.5 187t-16 91t-102.5 30.5 q-121 4 -349.5 -30t-690.5 -143l224 1046l56 -6z
 M257 109l1098 179q31 5 43.5 -8.5t3.5 -30t-16 -21t-68 -13.5l-1047 -167q-16 15 -16 19l2 42v0z
@@ -14,5 +21,5 @@ M7271 840l396 37l-24 247l-323 -28z
 M6572 197 l1443 -211h19l-58 -249l-920 136l-626 97l135 353l146 388q49 132 44 164.5t-33.5 48.5t-56.5 17q-24 0 -55 -8.5t-117 -58.5t-120 -90.5t-48.5 -16.5t6.5 54q27 36 136.5 104t204.5 66q56 -2 85.5 -22t42 -39t13 -61.5t-15.5 -86.5l-155 -417z
 M6527 1482l208 -291l35 -43 q7 -12 5.5 -26t-25.5 -14q-18 -1 -31 18l-233 325q-4 4 -6.5 11t-1.5 21t17.5 16t31.5 -17z" transform="matrix(1 0 0 -1 0 1638)"/>
     </symbol>
-    <use width="256" height="64" x="0" y="0" xlink:href="#与时俱进"/>
+    <use width="256" height="64" x="0" y="0" xlink:href="#与时俱进" fill="url(#logo)"/>
 </svg>

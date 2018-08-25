@@ -10,7 +10,9 @@
         }
         h1 {
             background: none;
-            text-align: right;
+            font-family: 'KingsCross';
+            font-size: 5rem;
+            color: blue;
         }
         #troubling td:nth-child(3),
         #troubling td:nth-child(8) {
@@ -34,17 +36,29 @@
         #excursus td:nth-child(8) {
             text-align: left;
         }
+        #logo {
+            float: right;
+        }
+        #logo img {
+            display: inline-block;
+            vertical-align: middle;
+        }
     </style>
 </head>
 <body>
+    <div id="logo">
+        <img src="../IMG/essay_heading.svg" alt="囧斋随笔" />
+        <img src="../IMG/essay_logo.png" />
+    </div>
     <nav>
         <ul class="nav">
             <li><a href="../index.html">主页</a></li>
             <li><a href="../catalog/toc.html">目录</a></li>
         </ul>
     </nav>
-
-    <h1><img src="../IMG/essay_heading.svg" alt="囧斋随笔"><img src="../IMG/essay_logo.png" /></h1>
+    <header>
+        <h1><span style="font-family:KingsCross;font-size:4rem;">Essays in Kargsburg</span></h1>
+    </header>
 
     <h2><img src="../IMG/troubling_heading.svg" alt="惹是生非" /></h2>
     <table class="toc" id="troubling">

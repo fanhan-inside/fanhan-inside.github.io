@@ -1,5 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="540" height="680" viewBox="0 0 540 680">
     <defs>
+        <linearGradient id="toTroubling" x1="0" x2="1" y1="1" y2="0">
+            <stop offset="0%" stop-color="yellow"/>
+            <stop offset="50%" stop-color="red"/>
+            <stop offset="100%" stop-color="yellow"/>
+        </linearGradient>
+        <linearGradient id="toAdvancing" x1="0" x2="1" y1="1" y2="0">
+            <stop offset="0%" stop-color="red"/>
+            <stop offset="50%" stop-color="darkred"/>
+            <stop offset="100%" stop-color="red"/>
+        </linearGradient>
         <linearGradient id="toTitle">
             <stop offset="0%" stop-color="black"/>
             <stop offset="0%" stop-color="gold">
@@ -744,18 +754,19 @@ t2l5LDuLy1wdZ+aY1herdtd3IUE+tQ7zrLGcH8VM5G097txMlzcl2+pmymkI1lAwWHi5n5lf
 Sg8p2GJid2Y3NblD48e/tr9Ith5IktHn1QbjGP8k1Gr/P0b7+zq0krLTAAAAAElFTkSuQmCC"/>
     <g fill="blue">
         <use width="256" height="154" x="142" y="130" xlink:href="#囧斋随笔"/>
+        <text x="270" y="260" text-anchor="middle" font-size="24" font-family="Georgia,Times,serif">Essays in Kargsburg</text>
     </g>
     <g fill="black">
-        <circle cx="200" cy="296" r="5" />
-        <use width="128" height="32" x="220" y="280" xlink:href="#惹是生非"/>
-        <circle cx="200" cy="346" r="5" />
-        <use width="128" height="32" x="220" y="330" xlink:href="#与时俱进"/>
-        <circle cx="200" cy="396" r="5" />
-        <use width="128" height="32" x="220" y="380" xlink:href="#作品相关"/>
+        <circle cx="200" cy="316" r="5" />
+        <use width="128" height="32" x="220" y="300" xlink:href="#惹是生非" fill="url(#toTroubling)"/>
+        <circle cx="200" cy="366" r="5" />
+        <use width="128" height="32" x="220" y="350" xlink:href="#与时俱进" fill="url(#toAdvancing)"/>
+        <circle cx="200" cy="416" r="5" />
+        <use width="128" height="32" x="220" y="400" xlink:href="#作品相关" fill="dimgray"/>
     </g>
-    <use width="144" height="48" x="200" y="455" xlink:href="#范狂夫"/>
-    <use width="32" height="32" x="350" y="460" xlink:href="#Icon"/>
-    <use width="48" height="32" x="390" y="460" xlink:href="#囧斋"/>
+    <use width="144" height="48" x="200" y="475" xlink:href="#范狂夫"/>
+    <use width="32" height="32" x="350" y="480" xlink:href="#Icon"/>
+    <use width="48" height="32" x="390" y="480" xlink:href="#囧斋"/>
     <text x="270" y="560" fill="url(#toTitle)" font-family="sans-serif" font-size="28" font-weight="bold" text-anchor="middle">
         三自运动出版社
     </text>
