@@ -1,4 +1,5 @@
 @import 'CSS/constant.css';
+@import 'CSS/font.css';
 @import 'CSS/lang.css';
 @import 'CSS/emphasis.css';
 @import 'CSS/math.css';
@@ -12,6 +13,7 @@
 @import 'CSS/table.css';
 @import 'CSS/list.css';
 @import 'CSS/nav.css';
+@import 'CSS/signature.css';
 html {
     background-color: var(--html-background-color);
 }
@@ -41,24 +43,6 @@ header, footer {
     box-sizing: content-box;
     margin: 0 auto;
     padding: 1rem;
-}
-
-div.signature {
-    display: inline-block;
-    padding: 0.5rem 2rem;
-    max-width: 60%;
-    border-top: 3px double darkblue;
-}
-
-div.signature img {
-    display: inline-block;
-    vertical-align: middle;
-}
-
-div.signature p {
-    margin: 0;
-    padding: 0;
-    text-indent: 0;
 }
 
 hr.inside {

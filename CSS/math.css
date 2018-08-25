@@ -14,6 +14,7 @@ span.math {
     color: blue;
     background-color: transparent;
 }
+
 /*
 span.math sup, span.math sub {
     padding: 1px;
@@ -27,7 +28,8 @@ span.math sub {
 span.math sup {
     font-feature-settings: "sups" 1;
     font-variant-position: super;
-} */
+}
+*/
 
 span.frac {
     font-family: 'Calibri', Georgia, 'Cambria', 'Symbola';

@@ -1,0 +1,94 @@
+div.signature {
+    display: inline-block;
+    padding: 0.5rem 2rem;
+    border-top: 3px double darkblue;
+}
+
+div.signature img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+span.sign-time, span.sign-name, span.sign-room {
+    display: inline;
+    text-indent: 0;
+}
+
+span.sign-time {
+    font-family: 'Unciala';
+    font-size: 2rem;
+    display: inline;
+    margin: 0.5rem 0;
+    padding: 0 0.5rem;
+}
+
+span.sign-time::before, span.sign-name::before {
+    content: url('../IMG/signature_name.svg');
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0 0.5rem;
+}
+
+span.sign-time::after, span.sign-room::before {
+    content: url('../IMG/signature_room.svg');
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0 0.5rem;
+}
+
+hr.qed, hr.sign-name, hr.sign-room {
+    border: none;
+}
+
+hr.qed::before {
+    content: '就是这样，或曰：';
+    color: var(--text-color);
+}
+
+hr.qed::after {
+    content: 'Q.E.D.';
+    font-family: 'Malvern';
+    font-size: 32px;
+    color: blue;
+    display: inline-block;
+}
+
+span.qed::before {
+    content: 'Q.E.D.';
+    font-family: 'Malvern';
+    font-size: 32px;
+    color: blue;
+    display: inline-block;
+    text-indent: 0;
+    margin: 0 0.5rem;
+}
+
+hr.sign-name::before {
+    content: 'Rigel van Confucia';
+    font-family: 'Elegance';
+    font-size: 48px;
+    color: darkblue;
+}
+
+hr.sign-name::after {
+    content: url('../IMG/heraldry.svg');
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+hr.sign-room::before {
+    content: 'Kargsburg';
+    font-family: 'Yonkers';
+    font-size: 32px;
+    color: black;
+}
+
+hr.sign-room::after {
+    content: url('../IMG/seal_room.svg');
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+}
