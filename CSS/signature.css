@@ -1,7 +1,7 @@
 div.signature {
-    display: inline-block;
     padding: 0.5rem 2rem;
-    border-top: 3px double darkblue;
+    text-align: center;
+    background: url('../IMG/signature_corner_tl.png') top left no-repeat;
 }
 
 div.signature img {
