@@ -1,6 +1,7 @@
 @import url(../essay.css);
-html {
-    background-color: darkred;
+:root {
+    --html-background-color: darkred;
+    --text-reverse-color: white;
 }
 
 h1 {

@@ -15,6 +15,14 @@ h2 {
     margin-left: -2rem;
 }
 
+h2.girdle {
+    margin: 1rem -5rem;
+    padding: 1rem;
+    text-align: center;
+    background-color: var(--html-background-color);
+    color: var(--text-reverse-color);
+}
+
 h3 {
     font-size: 1.5rem;
     margin-left: -2rem;
