@@ -70,7 +70,7 @@ article.bulletin footer p {
 article.message {
     border: none;
     box-shadow: none;
-    margin: 0.5rem;
+    margin: 0.5rem auto;
     background: url("message_corner_tl.svg") top left no-repeat, url("message_corner_br.svg") bottom right no-repeat,
     url(message_border_t.svg) top left repeat-x,url(message_border_b.svg) bottom left repeat-x,
     url(message_border_l.svg) top left repeat-y,url(message_border_r.svg) top right repeat-y;

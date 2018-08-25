@@ -63,11 +63,9 @@
 
             <h3><span class="heading">准备工作</span></h3>
 
-            <p>题图布局简单，其中的文本比较容易，不解释。而作为标志的「希帕索斯十字」就不好办了。数学上很简单，就是两个极坐标方程「<span class="math"><var>ρ</var> = cos2<var>θ</var></span>」「<span
-                    class="math"><var>ρ</var> = sin2<var>θ</var></span>」，但是绘图比较麻烦。</p>
+            <p>题图布局简单，其中的文本比较容易，不解释。而作为标志的「希帕索斯十字」就不好办了。数学上很简单，就是两个极坐标方程「<span class="math"><var>ρ</var> = cos2<var>θ</var></span>」「<span class="math"><var>ρ</var> = sin2<var>θ</var></span>」，但是绘图比较麻烦。</p>
             <p>同样是为了省事，当初是在Mathematica上面画的，并以图片方式插入Visio当中。其实其它任何一定品质的数学软件都可以绘图，但是是否提供充沛设置以调整图像显示效果使得普通用户可以直接保存，那就不一定了。</p>
-            <p>比方说，用SageMath也可以绘图，详见知乎的<a target="_blank" href="https://www.zhihu.com/question/55639364/answer/303221902">这个回答</a>或<a
-                    target="_blank" href="https://www.jianshu.com/p/bceeb3ecf68f">简书备份</a>，但是颜色，以及附加的坐标轴、网格和标签就不那么容易处理了。用来对比，最后列出了Mathematica中用于绘图的代码，画出来直接截图即可。</p>
+            <p>比方说，用SageMath也可以绘图，详见知乎的<a target="_blank" href="https://www.zhihu.com/question/55639364/answer/303221902">这个回答</a>或<a target="_blank" href="https://www.jianshu.com/p/bceeb3ecf68f">简书备份</a>，但是颜色，以及附加的坐标轴、网格和标签就不那么容易处理了。用来对比，最后列出了Mathematica中用于绘图的代码，画出来直接截图即可。</p>
             <p>还有一个问题。在旧台式机上，因为连不上GitHub所以不能获得SageMath的Windows安装包，使用的是虚拟机映像的8.0版，绘图正常。而换了新机之后，下载了8.2版Windows安装包，装上之后反而不正常了。</p>
 
             <figure>
@@ -76,8 +74,8 @@
             </figure>
 
             <p>看错误信息当中出现「ascii」字眼，很明显是因为Windows特有的「代码页」的缘故。而SageMath使用的一些组件，仍然依赖「Phthon 2.7」，于是无法处理。</p>
-            <p>网上搜到的信息显示，「境外用户」纷纷表示情绪稳定，说SageMath的Windows安装包装上就能用，比虚拟机映像版更方便。不过呢，估计SageMath团队测试用环境，以及主要用户的使用环境，应该都是「英文Windows」吧，也是「Python
-                2.7」的开发及测试环境。</p>
+            <p>网上搜到的信息显示，「境外用户」纷纷表示情绪稳定，说SageMath的Windows安装包装上就能用，比虚拟机映像版更方便。不过呢，估计SageMath团队测试用环境，以及主要用户的使用环境，应该都是「英文Windows」吧，也是「Python 2.7」的开发及测试环境。
+            </p>
             <p>总之，既然用不了，还得想其它办法画十字。经过一番艰苦卓绝的搜索工作之后，在繁荣的互联网上找到了可免费使用的站点「<a target="_blank" href="http://fooplot.com">FooPlot|线上数学函数绘图器</a>」，还提供SVG格式下载。</p>
 
             <h3><span class="heading">希帕索斯十字</span></h3>
@@ -110,8 +108,7 @@
 &lt;/svg&gt;
 </code></pre>
 
-            <p>代码中路径参数均已省略。但是要提醒，在「<code>&lt;path&gt;</code>」元素的「<code>d</code>」属性值的最后，要手动加上一个「<code>Z</code>」命令，确保路径闭合。毕竟在线绘图的区间是<span
-                    class="math">(0, 2π)</span>，最终图片放大后会在「<span class="math"><var>θ</var> = 0</span>」处显示出一个小小的缝隙。</p>
+            <p>代码中路径参数均已省略。但是要提醒，在「<code>&lt;path&gt;</code>」元素的「<code>d</code>」属性值的最后，要手动加上一个「<code>Z</code>」命令，确保路径闭合。毕竟在线绘图的区间是<span class="math">(0, 2π)</span>，最终图片放大后会在「<span class="math"><var>θ</var> = 0</span>」处显示出一个小小的缝隙。</p>
 
             <h3><span class="heading">组合图形和文本</span></h3>
 
@@ -246,9 +243,9 @@
         </section>
     </main>
     <footer>
-        <div class="signature"><p>发表于<time>2018-06-11</time></p>
-        <p>范狂夫</p>
-        <p>囧斋</p></div>
+        <div class="signature">
+            <p><img src="../../IMG/signature_name.svg" />发表于<time>2018-06-11</time><img src="../../IMG/signature_room.svg" /></p>
+        </div>
     </footer>
 </body>
 
