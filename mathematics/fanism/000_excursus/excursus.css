@@ -1,17 +1,18 @@
 @import url(../../../main.css);
 html {
-    background: url("image/000-000_background.png") repeat;
+    background: url("../IMG/mathematics_logo.png") repeat;
     background-color: var(--html-background-color);
 }
 
 body {
-    filter: opacity(95%);
+    filter: opacity(97%);
 }
 
 h1 {
     height: 64px;
 }
 
-h1>img {
+h1::after {
+    content: url("../IMG/mathematics_heading.svg");
     float: right;
 }

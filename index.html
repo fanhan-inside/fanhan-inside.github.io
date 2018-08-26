@@ -36,7 +36,8 @@
 
         header {
             display: grid;
-            grid-template: "profile anonym works" 480px / 480px 360px 1fr;
+            grid-template: "profile anonym works" 500px
+            "profile sign-name sign-name" 150px / 480px 360px 1fr;
         }
 
         footer {
@@ -74,8 +75,7 @@
             grid-area: profile;
             margin: 0;
             padding: 0;
-            background: url("IMG/profile.png") bottom left no-repeat,
-                url("IMG/logo_dynamic.svg") bottom right no-repeat;
+            background: url("IMG/profile.png") bottom left no-repeat, url("IMG/heraldry_large.svg") bottom right no-repeat;
         }
 
         #profile-detail {
@@ -147,6 +147,14 @@
             color: yellow;
         }
 
+        #sign-room {
+            grid-area: sign-room;
+        }
+
+        #sign-name {
+            grid-area: sign-name;
+        }
+
         caption {
             padding: 0.5rem;
         }
@@ -200,7 +208,7 @@
                 </colgroup>
                 <tr>
                     <td>居住地</td>
-                    <td>现居北京</td>
+                    <td>现居北京<hr id="sign-room" class="sign-room" /></td>
                 </tr>
                 <tr>
                     <td>所在行业</td>
@@ -300,6 +308,7 @@
                 </tr>
             </table>
         </div>
+        <hr id="sign-name" class="sign-name" />
     </header>
 
     <h2><span class="bookmark">动态</span></h2>

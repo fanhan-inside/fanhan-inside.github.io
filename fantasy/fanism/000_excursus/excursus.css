@@ -1,26 +1,18 @@
 @import url(../../../main.css);
+html {
+    background: url("../image/fantasy_logo.png") repeat;
+    background-color: var(--html-background-color);
+}
+
 body {
     filter: opacity(97%);
 }
 
 h1 {
-    height: 521px;
-    background: url("image/000-000-000_heading.png") 50% no-repeat;
+    box-sizing: border-box;
+    height: 470px;
+    padding: 250px 0 0 0;
+    background: url("../image/heading_excursus.svg") 50% no-repeat;
     text-align: center;
-}
-
-h1>div {
-    margin-top: 150px;
-}
-
-h1>div>span {
-    display: block;
-}
-
-#title {
-    font-size: 2rem;
-}
-
-#subtitle {
-    font-size: 3rem;
+    font-size: 4rem;
 }

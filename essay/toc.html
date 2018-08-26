@@ -8,12 +8,20 @@
         html {
             background-color: var(--html-background-color);
         }
+
+        body {
+            background: url("IMG/essay_logo.png") top right no-repeat;
+            background-color: var(--body-background-color);
+        }
+
         h1 {
             background: none;
+            text-align: center;
             font-family: 'KingsCross';
             font-size: 5rem;
             color: blue;
         }
+
         #troubling td:nth-child(3),
         #troubling td:nth-child(8) {
             text-align: left;
@@ -36,20 +44,9 @@
         #excursus td:nth-child(8) {
             text-align: left;
         }
-        #logo {
-            float: right;
-        }
-        #logo img {
-            display: inline-block;
-            vertical-align: middle;
-        }
     </style>
 </head>
 <body>
-    <div id="logo">
-        <img src="../IMG/essay_heading.svg" alt="囧斋随笔" />
-        <img src="../IMG/essay_logo.png" />
-    </div>
     <nav>
         <ul class="nav">
             <li><a href="../index.html">主页</a></li>
@@ -57,7 +54,8 @@
         </ul>
     </nav>
     <header>
-        <h1><span style="font-family:KingsCross;font-size:4rem;">Essays in Kargsburg</span></h1>
+        <img src="../IMG/essay_heading.svg" alt="囧斋随笔" />
+        <h1>Essays in Kargsburg</h1>
     </header>
 
     <h2><img src="../IMG/troubling_heading.svg" alt="惹是生非" /></h2>

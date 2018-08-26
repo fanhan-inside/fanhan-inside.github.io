@@ -1,22 +1,20 @@
 @import url(../../main.css);
 header {
-    width: 1220px;
+    width: 1280px;
 }
 
 footer {
-    width: 1220px;
+    width: 1280px;
     border: none;
     text-align: center;
 }
 
 h1 {
-    height: 581px;
-    background: url("image/heading_normal.png") 50% no-repeat;
+    box-sizing: border-box;
+    height: 542px;
+    padding: 222px 0 0 0;
+    background: url("image/heading_normal.svg") 50% no-repeat;
     text-align: center;
-}
-
-h1>div {
-    margin-top: 180px;
 }
 
 #title {

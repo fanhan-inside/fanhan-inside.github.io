@@ -23,7 +23,7 @@ span.sign-time {
 }
 
 span.sign-time::before, span.sign-name::before {
-    content: url('../IMG/signature_name.svg');
+    content: url('../IMG/sign_name.svg');
     display: inline-block;
     vertical-align: middle;
     margin: 0;
@@ -31,7 +31,7 @@ span.sign-time::before, span.sign-name::before {
 }
 
 span.sign-time::after, span.sign-room::before {
-    content: url('../IMG/signature_room.svg');
+    content: url('../IMG/sign_room.svg');
     display: inline-block;
     vertical-align: middle;
     margin: 0;
@@ -73,7 +73,7 @@ hr.sign-name::before {
 }
 
 hr.sign-name::after {
-    content: url('../IMG/heraldry.svg');
+    content: url('../IMG/heraldry_small.svg');
     display: inline-block;
     vertical-align: middle;
     margin-left: 10px;
