@@ -15,6 +15,16 @@ h2 {
     margin-left: -2rem;
 }
 
+h2.heading {
+    margin: 3rem 0;
+}
+
+h2.heading>span {
+    box-sizing: border-box;
+    padding: 16px 24px;
+    background: url("h2_corner_tl.svg") top left no-repeat, url("h2_corner_br.svg") bottom right no-repeat, url("h2_corner_bl.svg") bottom left no-repeat, url("h2_corner_tr.svg") top right no-repeat;
+}
+
 h2.girdle {
     margin: 1rem -2rem;
     padding: 1rem;

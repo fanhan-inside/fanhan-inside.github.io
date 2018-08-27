@@ -29,7 +29,7 @@
 
     <main>
         <section>
-            <h2><span class="heading">缘起</span></h2>
+            <h2 class="heading"><span>缘起</span></h2>
 
             <p>之前提到了，我在简书主要以Markdown格式上传，但还有五篇「不得不」使用富文本编辑器的文章，因为其中包括了「视频」。</p>
             <p>所以，先睁眼看世界，看看境外赛博朋克英特纳雄耐尔主义者当中的Markdown用户是怎样对待这个问题的。</p>
@@ -48,7 +48,7 @@
             <p>于是，本篇的目标已经限定了，最低纲领是把迄今为止码字中用到的外部视频链接进行处理，最高纲领是挑几个不同的视频站点进行针对性处理，技术上能实现就结束。</p>
         </section>
         <section>
-            <h2><span class="heading">工欲善其事必先利其器</span></h2>
+            <h2 class="heading"><span>工欲善其事必先利其器</span></h2>
 
             <p>虽然说过了，运行环境只需要「浏览器」，但是编写XSLT并进行调试的过程，若是单纯凭借「文本编辑器」就有些费劲了，浏览器提供的错误信息并不足够充沛。</p>
             <p>对于XML应用来说，「可视化集成开发环境」也有，虽然工作效率较高，但通常成本也很高。这里就列举两个曾经用过但被贫穷限制了购买力而不是想象力的我喜忧掺半感慨万分的软件（套装）。</p>
@@ -62,7 +62,7 @@
             <p>而Apache也有相应的开源成果「Xalan」，不过同样需要自行编译或者以「<code>java -jar</code>」方式启动。这点「麻烦」对于码农来说这不算啥，但对于我如今这种极力避免编程的状态，并不是在项目中使用「库」而是执行「转换」操作，还得单独下载Java，何必呢。</p>
         </section>
         <section>
-            <h2><span class="heading">最低纲领</span></h2>
+            <h2 class="heading"><span>最低纲领</span></h2>
             <p>不废话，先把五篇文章内所有用过的视频罗列成XML格式：</p>
             <pre><code class="xml">«testVideo.xml»
 
@@ -172,7 +172,7 @@
             <p>这里要特意提醒一点，FireFox不支持「<code>xsl:text</code>」的「<code>disable-output-escaping</code>」设置，输出字面常量就是会转义，页面上会把「<code>&lt;&gt;&quot;&#39;&amp;</code>」这些原原本本显示出来，解决方案就是上面代码所体现的，直接写html并在其中引用字面变量「<code>{@title}</code>」「<code>{@vid}</code>」什么的。</p>
         </section>
         <section>
-            <h2><span class="heading">最高纲领</span></h2>
+            <h2 class="heading"><span>最高纲领</span></h2>
 
             <p>因为码字的时候这些视频素材都是在同一个站点「优酷」找到的，所以上面的处理当中没有考虑到「具体情况具体分析」「我大某站自有站情在此」相关事宜，因此那个「<code>site</code>」属性值并没有被用到。</p>
             <p>所以，顺便多找了个几个视频站点，从活跃色目帐号经常主动推送到我眼皮底下于是知名度比较高的那些开始，选择不代表本人的任何倾向，不需要做任何解释。</p>
@@ -249,7 +249,7 @@
             <p>其中用到了「局部变量」，还使用「<code>xsl-if</code>」进行判断。其中「土豆」不提供「分享」外链，目前在线使用html5格式视频，所以直接给链接。其实对于多个站点还可以用「<code>xsl-choose</code>」「<code>xsl-when</code>」「<code>xsl-otherwise</code>」操作，就像各种真の编程语言当中「<samp>if-elseif-else</samp>」「<samp>switch-case</samp>」块那样。</p>
         </section>
         <section>
-            <h2><span class="heading">后记</span></h2>
+            <h2 class="heading"><span>后记</span></h2>
 
             <p>本篇「字」数不多，但是其中尽可能简短的「代码」也是我亲手运用十个手指头辛辛苦苦敲出来（并亲自将八阿哥斩尽杀绝）的吖，算广义「码字」吧。</p>
             <p>到现在为止，已经上传的文章当中与Markdown格式相关的遗留问题都已经解决，至少是有了解决方案在本地可以实现的那种。</p>
