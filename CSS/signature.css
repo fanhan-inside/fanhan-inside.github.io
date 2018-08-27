@@ -81,7 +81,7 @@ hr.sign-name::after {
 
 hr.sign-room::before {
     content: 'Kargsburg';
-    font-family: 'Yonkers';
+    font-family: 'KaiserGothic';
     font-size: 32px;
     color: black;
 }
