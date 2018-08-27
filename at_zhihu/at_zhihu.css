@@ -2,7 +2,10 @@
 
 header {
     position: relative;
-    border-bottom: 3px solid silver;
+}
+
+header::after {
+    content: url(IMG/splitter.svg);
 }
 
 h1 {
