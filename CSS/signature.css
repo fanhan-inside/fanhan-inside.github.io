@@ -1,7 +1,10 @@
 div.signature {
     padding: 0.5rem 2rem;
     text-align: center;
-    background: url('../IMG/signature_corner_tl.png') top left no-repeat;
+}
+
+div.signature::before {
+    content: url("signature_before.svg");
 }
 
 div.signature img {

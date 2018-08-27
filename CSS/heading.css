@@ -10,9 +10,18 @@ h1>img {
     vertical-align: middle;
 }
 
+.heading>span {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    box-sizing: border-box;
+    min-width: 10rem;
+    padding: 0.5rem;
+    border: none;
+}
+
 h2 {
     font-size: 1.75rem;
-    margin-left: -2rem;
 }
 
 h2.heading {
@@ -20,8 +29,9 @@ h2.heading {
 }
 
 h2.heading>span {
-    box-sizing: border-box;
-    padding: 16px 24px;
+    padding: 16px 20px;
+    min-width: 100px;
+    min-height: 70px;
     background: url("h2_corner_tl.svg") top left no-repeat, url("h2_corner_br.svg") bottom right no-repeat, url("h2_corner_bl.svg") bottom left no-repeat, url("h2_corner_tr.svg") top right no-repeat;
 }
 
@@ -37,50 +47,29 @@ h3 {
     font-size: 1.5rem;
 }
 
+h3.heading>span {
+    border: 3px double gray;
+}
+
 h4 {
     font-size: 1.25rem;
+}
+
+h4.heading>span {
+    border-bottom: 2px solid gray;
+    border-right: 2px solid gray;
 }
 
 h5, h6 {
     font-size: 1rem;
 }
 
-span.heading {
-    min-width: 10rem;
-    box-sizing: border-box;
-    display: inline-block;
-    padding: 0.5rem;
-    border: none;
-    text-align: center;
-}
-
-h2>span.heading {
-    margin: 0;
-    padding: 0.5rem 2rem;
-    background: radial-gradient(black, white);
-    color: white;
-    border-radius: 1.5rem;
-}
-
-h3>span.heading {
-    border: 3px double gray;
-}
-
-h4>span.heading {
-    border-bottom: 2px solid gray;
-    border-right: 2px solid gray;
-}
-
-h5>span.heading {
+h5.heading>span {
     border-bottom: 1px solid gray;
     border-right: 1px solid gray;
 }
 
-h6>span.heading {
+h6.heading>span {
     border-bottom: 1px dashed gray;
     border-right: 1px dashed gray;
-}
-
-h2>span.bookmark {
-    min-width: 10rem;
 }

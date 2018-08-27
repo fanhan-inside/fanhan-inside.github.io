@@ -36,8 +36,7 @@
 
         header {
             display: grid;
-            grid-template: "profile anonym works" 500px
-            "profile sign-name sign-name" 150px / 480px 360px 1fr;
+            grid-template: "profile anonym works" 500px "profile sign-name sign-name" 150px / 480px 360px 1fr;
         }
 
         footer {
@@ -51,15 +50,6 @@
             background: transparent;
             display: inline-block;
             padding: 0.5rem;
-        }
-
-        h2 {
-            margin-left: 0;
-        }
-
-        h2>span:not(.bookmark) {
-            display: inline-block;
-            margin-left: 3rem;
         }
 
         span.onum {
@@ -159,13 +149,21 @@
             padding: 0.5rem;
         }
 
+        #last-updated {
+            font-size: 1.5rem;
+            margin: 0.5rem;
+            padding: 0.5rem;
+            text-align: center;
+        }
+
         #articles {
-            padding: 0 3rem;
-            text-align: right;
+            padding: 1rem 3rem;
+            text-align: center;
         }
 
         #articles>span {
             font-size: 1.25rem;
+            margin: 0.5rem;
             padding: 0.5rem;
         }
 
@@ -208,7 +206,9 @@
                 </colgroup>
                 <tr>
                     <td>居住地</td>
-                    <td>现居北京<hr id="sign-room" class="sign-room" /></td>
+                    <td>现居北京
+                        <hr id="sign-room" class="sign-room" />
+                    </td>
                 </tr>
                 <tr>
                     <td>所在行业</td>
@@ -220,7 +220,8 @@
                 </tr>
                 <tr>
                     <td>个人简介</td>
-                    <td>孤苦伶仃可怜废柴草根文盲矬胖老穷光棍汉<br/>「精神病仆街写手不入流码农数学渣」</td>
+                    <td>孤苦伶仃可怜废柴草根文盲矬胖老穷光棍汉<br/>「精神病仆街写手不入流码农数学渣」
+                    </td>
                 </tr>
             </table>
         </div>
@@ -311,13 +312,13 @@
         <hr id="sign-name" class="sign-name" />
     </header>
 
-    <h2><span class="bookmark">动态</span></h2>
+    <h2 class="girdle"><span>动态</span></h2>
     <iframe src="timeline.html" height="600" scrolling="auto" marginwidth="0" marginheight="0"></iframe>
 
-    <h2>
-        <span class="bookmark">文章列表</span>
-        <span>更新于<time>2018-08-27, Lunae</time>共<span class="onum">550</span>篇</span>
+    <h2 class="girdle">
+        <span>文章列表</span>
     </h2>
+    <div id="last-updated">更新于<time>2018-08-27, Lunae</time>共<span class="onum">550</span>篇</div>
     <div id="articles">
         <span id="设定集">《范版西幻设定集》</span>
         <span id="恶补记">《范版数学恶补记》</span>

@@ -80,13 +80,13 @@
 
             <p>前一篇随笔《<a target="_blank" href="005.html">三自贴图运动</a>》已经出现的内容不再重复。</p>
 
-            <h3><span class="heading">准备工作</span></h3>
+            <h3 class="heading"><span>准备工作</span></h3>
             <p>本文不需要Typora，到<time>2018-06-08</time>现在，Visual Studio Code已经更新为「1.24.0」正式版，而Visual Studio Code Insiders则是「1.25.0-insider」预览版。</p>
             <p>素材则是来自维基百科的<samp>«Raelian_symbol.svg»</samp>和<samp>«Raelian_symbol_alternate.svg»</samp>文件，雷尔利安运动的符号及其变种。</p>
 
-            <h3><span class="heading">「希伯来社会联盟」（HSU，Hebräisch-Soziale Union in Ili）党旗</span></h3>
+            <h3 class="heading"><span>「希伯来社会联盟」（HSU，Hebräisch-Soziale Union in Ili）党旗</span></h3>
 
-            <h4><span class="heading">打开<samp>«Raelian_symbol.svg»</samp>文件，观察其内容</span></h4>
+            <h4 class="heading"><span>打开<samp>«Raelian_symbol.svg»</samp>文件，观察其内容</span></h4>
 
             <figure>
                 <img src="image/006-002.png" alt="雷尔利安符号" />
@@ -95,7 +95,7 @@
 
             <p>看上去很简单，就是定义了宽度「<code>width=&quot;192&quot;</code>」高度「<code>height=&quot;213&quot;</code>」以及十倍精度的「视口」坐标系，并绘制一条「路径」。</p>
 
-            <h4><span class="heading">先改背景色和前景色</span></h4>
+            <h4 class="heading"><span>先改背景色和前景色</span></h4>
 
             <p>将「<code>&lt;svg&gt;</code>」的相关属性改为「<code>style=&quot;background-color: red&quot; fill=&quot;black&quot;</code>」并预览：</p>
 
@@ -107,7 +107,7 @@
             <p>发现符号太「大」了，如果要「缩小」一点，与其修改「路径」，还不如放大「画布」。</p>
             <p>另外，作为旗帜，整体的长宽比例也不对，更应该修改「画布」喽。</p>
 
-            <h4><span class="heading">修改画布尺寸以及坐标</span></h4>
+            <h4 class="heading"><span>修改画布尺寸以及坐标</span></h4>
 
             <p>由于「路径」的坐标是依赖「视口」的，所以在懒得（其实是很难于源代码状态下）修改路径数据的情况下，应该调整「背景」，上下左右各增加一截，同时保持「视口」坐标不变。</p>
             <p>比方说比例定位「3:2」吧。那么若是以「480×320」为画布尺寸，而视口的坐标原点不变的话，左右两边需要各增加「144」单位，上下两边需要各增加「53.5」单位，乘以十之后就是视口坐标系。</p>
@@ -117,7 +117,7 @@
                 <figcaption><span>调整画布尺寸和比例</span></figcaption>
             </figure>
 
-            <h4><span class="heading">绘制白色圆盘</span></h4>
+            <h4 class="heading"><span>绘制白色圆盘</span></h4>
 
             <p>这个就需要SVG的元素「<code>&lt;circle&gt;</code>」了。在「<code>&lt;svg&gt;</code>」标签之后「<code>&lt;path&gt;</code>」标签之前增加「<code>&lt;circle cx=&quot;960&quot; cy=&quot;1065&quot; r=&quot;1200&quot; fill=&quot;white&quot;/&gt;</code>」一行即可。</p>
 
@@ -126,7 +126,7 @@
                 <figcaption><span>绘制白色圆盘</span></figcaption>
             </figure>
 
-            <h4><span class="heading">导出PNG文件</span></h4>
+            <h4 class="heading"><span>导出PNG文件</span></h4>
 
             <p>步骤略，结果如下：</p>
 
@@ -135,7 +135,7 @@
                 <figcaption><span>「希伯来社会联盟」党旗</span></figcaption>
             </figure>
 
-            <h4><span class="heading">画蛇添足</span></h4>
+            <h4 class="heading"><span>画蛇添足</span></h4>
             <p>但是呢，如果还需要同时惹毛另外一拨人，比方说「ISIS」，可以考虑把背景换成黑色，这「闪米特国」的效果是这样的：</p>
 
             <figure>
@@ -143,9 +143,9 @@
                 <figcaption><span>「闪米特国」国旗</span></figcaption>
             </figure>
 
-            <h3><span class="heading">「希伯来民主联盟」（HDU，Hebräisch-Demokratische Union）党旗</span></h3>
+            <h3 class="heading"><span>「希伯来民主联盟」（HDU，Hebräisch-Demokratische Union）党旗</span></h3>
 
-            <h4><span class="heading">调整画布尺寸和视口坐标</span></h4>
+            <h4 class="heading"><span>调整画布尺寸和视口坐标</span></h4>
             <p>修改及导出的步骤略，结果如下：</p>
 
             <figure>
@@ -153,7 +153,7 @@
                 <figcaption><span>「希伯来民主联盟」党旗</span></figcaption>
             </figure>
 
-            <h4><span class="heading">狗尾续貂</span></h4>
+            <h4 class="heading"><span>狗尾续貂</span></h4>
 
             <p>看上去比较单调，不适合包括但不限于九省通衢的与时俱进的童年才俊用大拇指操作手机时习惯接受的的新时代中国特色社会主义大好形势下繁荣的中文互联网上经常出现的动图及短视频，所以考虑追加动画效果。</p>
             <p>需要把闭合标签「<code>&lt;path … /&gt;</code>」拆成「<code>&lt;path&gt; … &lt;/path&gt;</code>」的形式，并在中间插入「<code>&lt;animateTransform&gt;</code>」元素。</p>

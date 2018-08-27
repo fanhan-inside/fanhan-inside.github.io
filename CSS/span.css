@@ -23,13 +23,13 @@ span.important {
     vertical-align: middle;
 }
 
-span.bookmark {
+span.heading {
+    min-width: 10rem;
     box-sizing: border-box;
     display: inline-block;
+    padding: 0.5rem;
+    border: none;
     text-align: center;
-    background: var(--html-background-color);
-    color: var(--text-reverse-color);
-    padding: 0.5rem 1rem;
 }
 
 span.tip {

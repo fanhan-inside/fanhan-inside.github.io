@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" viewBox="0 0 1280 32">
+    <defs>
+        <linearGradient id="铜铁" x1="0" x2="1" y1="1" y2="0">
+            <stop offset="0%" stop-color="#549688"/>
+            <stop offset="100%" stop-color="#005243"/>
+        </linearGradient>
+        <pattern id="青铜纹样" width="64" height="32" x="0" y="0" patternUnits="userSpaceOnUse">
+            <g fill="url(#铜铁)" transform="scale(.2)">
+                <path d="M 23 110 l 20 -80 h 100 l 20 80 h 130 l 25 -100 h -20 l -20 80 h -100 l -20 -80 h -130 l -25 100 z
+M 43 110 l 15 -60 h 70 l 15 60 h -20 l -10 -40 h -40 l -10 40 z
+M 177 10 l 15 60 h 70 l 15 -60 h -20 l -10 40 h -40 l -10 -40 z
+M 83 110 h 20 l -5 -20 h -10 z
+M 217 10 h 20 l -5 20 h -10 z"/>
+            </g>
+        </pattern>
+    </defs>
+    <rect width="100%" height="32" x="0" y="0" fill="url(#青铜纹样)"/>
+</svg>

@@ -17,7 +17,7 @@ a[href^="http://"]::before, a[href^="https://"]::before {
 
 a.card {
     display: block;
-    max-width: 700px;
+    max-width: 720px;
     margin: 1rem auto;
     padding: 20px;
     text-align: center;
@@ -25,16 +25,7 @@ a.card {
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
-    background:
-        url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDE2MCAxNjAiPjxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik0wIDBoODB2ODBIMHoiLz48cGF0aCBmaWxsPSIjZmZmIiBzdHJva2U9IiMwMGYiIHN0cm9rZS13aWR0aD0iMTUiIGQ9Ik01IDIwMFY3NWg3MFY1aDEyNXY0MGgtODV2NzBINDV2ODV6Ii8+PC9zdmc+") top left no-repeat,
-        url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDE2MCAxNjAiPjxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik04MCAwaDgwdjgwSDgweiIvPjxwYXRoIGZpbGw9IiNmZmYiIHN0cm9rZT0iIzAwZiIgc3Ryb2tlLXdpZHRoPSIxNSIgZD0iTS00MCA1SDg1djcwaDcwdjEyNWgtNDB2LTg1SDQ1VjQ1aC04NXoiLz48L3N2Zz4=") top right no-repeat,
-        url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDE2MCAxNjAiPjxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik0wIDgwaDgwdjgwSDB6Ii8+PHBhdGggZmlsbD0iI2ZmZiIgc3Ryb2tlPSIjMDBmIiBzdHJva2Utd2lkdGg9IjE1IiBkPSJNNS00MFY4NWg3MHY3MGgxMjV2LTQwaC04NVY0NUg0NXYtODV6Ii8+PC9zdmc+") bottom left no-repeat,
-        url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDE2MCAxNjAiPjxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik04MCA4MGg4MHY4MEg4MHoiLz48cGF0aCBmaWxsPSIjZmZmIiBzdHJva2U9IiMwMGYiIHN0cm9rZS13aWR0aD0iMTUiIGQ9Ik0tNDAgMTU1SDg1Vjg1aDcwVi00MGgtNDB2ODVINDV2NzBoLTg1eiIvPjwvc3ZnPg==") bottom right no-repeat,
-        url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDE2MCAxNjAiPjxwYXRoIGZpbGw9IiNmZmYiIHN0cm9rZT0iIzAwZiIgc3Ryb2tlLXdpZHRoPSIxNSIgZD0iTS0yMCA1aDIwMHY0MEgtMjB6Ii8+PC9zdmc+") top left repeat-x,
-        url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDE2MCAxNjAiPjxwYXRoIGZpbGw9IiNmZmYiIHN0cm9rZT0iIzAwZiIgc3Ryb2tlLXdpZHRoPSIxNSIgZD0iTS0yMCAxMTVoMjAwdjQwSC0yMHoiLz48L3N2Zz4=") bottom left repeat-x,
-        url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDE2MCAxNjAiPjxwYXRoIGZpbGw9IiNmZmYiIHN0cm9rZT0iIzAwZiIgc3Ryb2tlLXdpZHRoPSIxNSIgZD0iTTUtMjBoNDB2MjAwSDV6Ii8+PC9zdmc+") top left repeat-y,
-        url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDE2MCAxNjAiPjxwYXRoIGZpbGw9IiNmZmYiIHN0cm9rZT0iIzAwZiIgc3Ryb2tlLXdpZHRoPSIxNSIgZD0iTTExNS0yMGg0MHYyMDBoLTQweiIvPjwvc3ZnPg==") bottom right repeat-y;
-    background-color: white;
+    background: url("link_background.svg") no-repeat;
 }
 
 a.alone {
@@ -48,6 +39,6 @@ a.alone {
 }
 
 a:hover {
-    background-color: darkblue;
+    background-color: steelblue;
     color: yellow;
 }
