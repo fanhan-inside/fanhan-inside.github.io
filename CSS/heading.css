@@ -35,17 +35,14 @@ h2.girdle {
 
 h3 {
     font-size: 1.5rem;
-    margin-left: -2rem;
 }
 
 h4 {
     font-size: 1.25rem;
-    margin-left: -1rem;
 }
 
 h5, h6 {
     font-size: 1rem;
-    margin-left: 0;
 }
 
 span.heading {
@@ -66,22 +63,22 @@ h2>span.heading {
 }
 
 h3>span.heading {
-    border: 3px double dimgray;
+    border: 3px double gray;
 }
 
 h4>span.heading {
-    border-bottom: 2px solid dimgray;
-    border-right: 2px solid dimgray;
+    border-bottom: 2px solid gray;
+    border-right: 2px solid gray;
 }
 
 h5>span.heading {
-    border-bottom: 1px solid dimgray;
-    border-right: 1px solid dimgray;
+    border-bottom: 1px solid gray;
+    border-right: 1px solid gray;
 }
 
 h6>span.heading {
-    border-bottom: 1px dashed dimgray;
-    border-right: 1px dashed dimgray;
+    border-bottom: 1px dashed gray;
+    border-right: 1px dashed gray;
 }
 
 h2>span.bookmark {
