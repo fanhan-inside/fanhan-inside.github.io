@@ -1,10 +1,14 @@
 @import url(../main.css);
 
+html {
+    background-image: url(IMG/at_zhihu_background.svg);
+}
+
 header {
     position: relative;
 }
 
-header::after {
+body>header::after {
     content: url(IMG/header_after.svg);
 }
 
@@ -20,6 +24,10 @@ header.question {
     border: none;
 }
 
+header.question::after {
+    content: url(IMG/header_question_after.svg);
+}
+
 header.question h1 {
     background: radial-gradient(farthest-corner at 0 0, lightskyblue, white);
 }
@@ -31,6 +39,7 @@ header.question h1::before {
     top: 0;
     z-index: 99999;
 }
+
 
 header.question blockquote.description {
     background-color: azure;

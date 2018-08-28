@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="120" height="120" version="1.1" viewBox="0 0 120 120">
+<!--突尼斯哈默梅特住宅大门钉饰图案-->
+    <path fill="darkred" stroke="yellow" d="M 20 20 h 20 l 20 40 l -40 -20 v -20 z M 0 60 l 20 -20 l 40 20 l -40 20 l -20 -20 z
+M 60 0 l -20 20 l20 40 l 20 -40 l -20 -20 z M 100 20 v 20 l -40 20 l 20 -40 h 20 z
+M 120 60 l -20 20 l -40 -20 l 40 -20 l 20 20 z M 100 80 v 20 h -20 l -20 -40 l 40 20 z
+M 20 80 v 20 h 20l 20 -40 l -40 20 z M 60 120 l 20 -20 l -20 -40 l -20 40 l 20 20 z"/>
+</svg>

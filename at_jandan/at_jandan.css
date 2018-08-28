@@ -5,6 +5,10 @@
     --text-reverse-color: var(--color-name-japanese-鳥の子);
 }
 
+html {
+    background-image: url(IMG/at_jandan_background.svg);
+}
+
 h1 {
     background: none;
 }
