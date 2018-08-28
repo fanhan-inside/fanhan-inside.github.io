@@ -5,7 +5,7 @@ header {
 }
 
 header::after {
-    content: url(IMG/splitter.svg);
+    content: url(IMG/header_after.svg);
 }
 
 h1 {

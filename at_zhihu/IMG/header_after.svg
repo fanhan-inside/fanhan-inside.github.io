@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 1200 40">
+    <pattern id="纹样" width="30" height="40" x="0" y="0" patternUnits="userSpaceOnUse">
+        <g fill-rule="evenodd" fill="lightgreen" stroke="darkgreen" stroke-width="1" transform="scale(.5)">
+            <path d="M 0 10 v 20 l 20 20 v 10 h -10 l -5 -5 l -5 5 l 10 10 h 20 v -20 l-20 -20 v -10 h 10 l 5 5l 5 -5 l -10 -10 h -20 z
+M 60 10 h -20 l -25 25 l 5 5 l 20 -20 h 10 v 10 l -5 5 l 5 5 l 10 -10 v -20 z
+M 30 30 l 5 -5 l 25 25 l -5 5 l -25 -25 z
+M 0 50 l 10 -10l 5 5 l -15 15
+M 60 50 l -10 10 h -10 v -10 l 5 -5 l -5 -5 l-10 10v 20 h 20l 10 -10"/>
+        </g>
+    </pattern>
+    <rect width="100%" height="40" x="0" y="0" fill="url(#纹样)"/>
+</svg>
