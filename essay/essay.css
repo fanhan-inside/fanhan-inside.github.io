@@ -1,5 +1,10 @@
 @import url(../main.css);
 
+html {
+    background-image: url(IMG/essay_background.svg);
+    background-color: var(--html-background-color);
+}
+
 h1 {
     background: radial-gradient(farthest-corner at 0 0, white, red);
 }

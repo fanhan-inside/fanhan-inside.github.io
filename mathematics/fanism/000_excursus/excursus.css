@@ -1,6 +1,6 @@
 @import url(../../../main.css);
 html {
-    background: url("../IMG/mathematics_logo.png") repeat;
+    background-image: url(../IMG/mathematics_background.svg);
     background-color: var(--html-background-color);
 }
 

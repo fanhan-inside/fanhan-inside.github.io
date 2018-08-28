@@ -1,6 +1,6 @@
 @import url(../../../main.css);
 html {
-    background: url("../image/fantasy_logo.png") repeat;
+    background-image: url(../image/excursus_background.svg);
     background-color: var(--html-background-color);
 }
 
