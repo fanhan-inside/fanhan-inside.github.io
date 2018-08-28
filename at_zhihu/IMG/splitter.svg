@@ -1,19 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 1150 25">
+<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 1200 30">
     <defs>
-        <linearGradient id="铜铁" x1="0" x2="1" y1="1" y2="0">
-            <stop offset="0%" stop-color="#549688"/>
-            <stop offset="100%" stop-color="#005243"/>
-        </linearGradient>
-        <pattern id="青铜纹样" width="75" height="25" x="0" y="0" patternUnits="userSpaceOnUse">
-            <g fill="url(#铜铁)" fill-rule="evenodd" transform="scale(.25)">
-                <path d="M 0 50 Q 0 100 50 100 T 100 50 T 150 0 T 200 50 T 250 100 T 300 50 T 250 0 T 200 50 T 150 100 T 100 50 T 50 0T 0 50 z
-M 0 0 C 0 50 100 50 100 0 C 100 50 200 50 200 0 C 200 50 300 50 300 0 z
-M 0 100 C 0 50 100 50 100 100 C 100 50 200 50 200 100 C 200 50 300 50 300 100 z
-M 20 20 v 60 h 60 v -60z
-M 120 20 v 60 h 60 v -60z
-M 220 20 v 60 h 60 v -60z"/>
+        <pattern id="纹样" width="30" height="30" x="0" y="0" patternUnits="userSpaceOnUse">
+            <g fill-rule="evenodd" transform="scale(.5)">
+        <path fill="green" d="M 0 30 l 24 -6 l 6 -24 l 6 24 l 24 6 l -24 6 l -6 24 l -6 -24 z
+            M 0 24 l 18 -6 l 6 -18 l 6 30 l 6 -30 l 6 18 l 18 6 l -30 6 l 30 6 l-18 6 l -6 18 l -6 -30 l -6 30 l -6 -18 l -18 -6 l 30 -6 z"/>
             </g>
         </pattern>
     </defs>
-    <rect width="100%" height="25" x="0" y="0" fill="url(#青铜纹样)"/>
+    <rect width="100%" height="30" x="0" y="0" fill="url(#纹样)"/>
 </svg>
