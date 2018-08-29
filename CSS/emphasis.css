@@ -121,3 +121,21 @@ abbr.uid::after {
     content: '｝';
     margin: 0 1px;
 }
+
+abbr.myself {
+    font-weight: bold;
+    margin: none;
+    padding: none;
+    border: none;
+    color: blue;
+}
+
+abbr.myself::before {
+    content: '〔';
+    margin: 0 1px;
+}
+
+abbr.myself::after {
+    content: '〕';
+    margin: 0 1px;
+}
