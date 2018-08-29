@@ -1,167 +1,167 @@
 @font-face {
     font-family: "Capitol";
-    src: local("Capitol"), url("./morderne/Capitol.woff2") format("woff2");
+    src: local("Capitol"), url(./morderne/Capitol.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Chesty";
-    src: local("Chesty"), url("./morderne/Chesty.woff2") format("woff2");
+    src: local("Chesty"), url(./morderne/Chesty.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Cubist";
-    src: local("Cubist"), url("./morderne/Cubist.woff2") format("woff2");
+    src: local("Cubist"), url(./morderne/Cubist.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Dolmen";
-    src: local("Dolmen"), url("./morderne/Dolmen.woff2") format("woff2");
+    src: local("Dolmen"), url(./morderne/Dolmen.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "DolmenDecorated";
-    src: local("Dolmen Decorated"), local("DolmenDecorated"), url("./morderne/DolmenDecorated.woff2") format("woff2");
+    src: local("Dolmen Decorated"), local("DolmenDecorated"), url(./morderne/DolmenDecorated.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Greta";
-    src: local("Greta"), url("./morderne/Greta.woff2") format("woff2");
+    src: local("Greta"), url(./morderne/Greta.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Groove";
-    src: local("Groove"), url("./morderne/Groove.woff2") format("woff2");
+    src: local("Groove"), url(./morderne/Groove.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Leonard";
-    src: local("Leonard"), url("./morderne/Leonard.woff2") format("woff2");
+    src: local("Leonard"), url(./morderne/Leonard.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "LesterBold";
-    src: local("Lester Bold"), local("LesterBold"), url("./morderne/LesterBold.woff2") format("woff2");
+    src: local("Lester Bold"), local("LesterBold"), url(./morderne/LesterBold.woff2) format("woff2");
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: "MinkGothic";
-    src: local("Mink Gothic"), local("MinkGothic"), url("./morderne/MinkGothic.woff2") format("woff2");
+    src: local("Mink Gothic"), local("MinkGothic"), url(./morderne/MinkGothic.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "MitziDeco";
-    src: local("Mitzi Deco"), local("MitziDeco"), url("./morderne/MitziDeco.woff2") format("woff2");
+    src: local("Mitzi Deco"), local("MitziDeco"), url(./morderne/MitziDeco.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "NeoPrisma";
-    src: local("Neo Prisma"), local("NeoPrisma"), url("./morderne/NeoPrisma.woff2") format("woff2");
+    src: local("Neo Prisma"), local("NeoPrisma"), url(./morderne/NeoPrisma.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Oberlin";
-    src: local("Oberlin"), url("./morderne/Oberlin.woff2") format("woff2");
+    src: local("Oberlin"), url(./morderne/Oberlin.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "OrielModern";
-    src: local("Oriel Modern"), local("OrielModern"), url("./morderne/OrielModern.woff2") format("woff2");
+    src: local("Oriel Modern"), local("OrielModern"), url(./morderne/OrielModern.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "ParadiseNormal";
-    src: local("Paradise Normal"), local("ParadiseNormal"), url("./morderne/ParadiseNormal.woff2") format("woff2");
+    src: local("Paradise Normal"), local("ParadiseNormal"), url(./morderne/ParadiseNormal.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Pistachio";
-    src: local("Pistachio"), url("./morderne/Pistachio.woff2") format("woff2");
+    src: local("Pistachio"), url(./morderne/Pistachio.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Precise";
-    src: local("Precise"), url("./morderne/Precise.woff2") format("woff2");
+    src: local("Precise"), url(./morderne/Precise.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "RoundBlackNormal";
-    src: local("Round Black Normal"), local("RoundBlackNormal"), url("./morderne/RoundBlackNormal.woff2") format("woff2");
+    src: local("Round Black Normal"), local("RoundBlackNormal"), url(./morderne/RoundBlackNormal.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Stupendous";
-    src: local("Stupendous"), url("./morderne/Stupendous.woff2") format("woff2");
+    src: local("Stupendous"), url(./morderne/Stupendous.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "StygianBlack";
-    src: local("Stygian Black"), local("StygianBlack"), url("./morderne/StygianBlack.woff2") format("woff2");
+    src: local("Stygian Black"), local("StygianBlack"), url(./morderne/StygianBlack.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "StygianBlackItalicNormal";
-    src: local("Stygian Black Italic Normal"), local("StygianBlackItalicNormal"), url("./morderne/StygianBlackItalicNormal.woff2") format("woff2");
+    src: local("Stygian Black Italic Normal"), local("StygianBlackItalicNormal"), url(./morderne/StygianBlackItalicNormal.woff2) format("woff2");
     font-weight: normal;
     font-style: italic;
 }
 
 @font-face {
     font-family: "TickTock";
-    src: local("Tick Tock"), local("TickTock"), url("./morderne/TickTock.woff2") format("woff2");
+    src: local("Tick Tock"), local("TickTock"), url(./morderne/TickTock.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Tulipa";
-    src: local("Tulipa"), url("./morderne/Tulipa.woff2") format("woff2");
+    src: local("Tulipa"), url(./morderne/Tulipa.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "TwinkleToes";
-    src: local("Twinkle Toes"), local("TwinkleToes"), url("./morderne/TwinkleToes.woff2") format("woff2");
+    src: local("Twinkle Toes"), local("TwinkleToes"), url(./morderne/TwinkleToes.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }

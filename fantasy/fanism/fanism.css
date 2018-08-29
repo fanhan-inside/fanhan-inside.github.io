@@ -13,7 +13,7 @@ h1 {
     box-sizing: border-box;
     height: 542px;
     padding: 222px 0 0 0;
-    background: url("image/heading_normal.svg") 50% no-repeat;
+    background: url(image/heading_normal.svg) 50% no-repeat;
     text-align: center;
 }
 

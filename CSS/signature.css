@@ -4,7 +4,7 @@ div.signature {
 }
 
 div.signature::before {
-    content: url("signature_before.svg");
+    content: url(signature_before.svg);
 }
 
 div.signature img {

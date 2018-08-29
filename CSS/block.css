@@ -68,16 +68,9 @@ article.bulletin footer p {
 }
 
 article.message {
-    border: none;
+    border: 1px solid dimgray;
     box-shadow: none;
     margin: 0.5rem auto;
-    background:
-        url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDE2MCAxNjAiPjxzdHlsZT5wYXRoe2ZpbGw6I2ZmZjtzdHJva2U6IzY5Njk2OTtzdHJva2Utd2lkdGg6MTU7c3Ryb2tlLWxpbmVqb2luOnJvdW5kfTwvc3R5bGU+PHBhdGggZD0iTTUgNXYxMTBMMTE1IDV6Ii8+PHBhdGggZD0iTTAgMTYwTDE2MCAwdi0yMGgtNDVWNUw1IDExNWgtMjV2NDVIMHoiLz48L3N2Zz4=") top left no-repeat,
-        url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDE2MCAxNjAiPjxzdHlsZT5wYXRoe2ZpbGw6I2ZmZjtzdHJva2U6IzY5Njk2OTtzdHJva2Utd2lkdGg6MTU7c3Ryb2tlLWxpbmVqb2luOnJvdW5kfTwvc3R5bGU+PHBhdGggZD0iTTE1NSA0NXYxMTBINDV6Ii8+PHBhdGggZD0iTTAgMTYwTDE2MCAwaDQwbC00NSA0NUw0NSAxNTV2NDVMMCAxNjB6Ii8+PC9zdmc+") bottom right no-repeat,
-        url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDE2MCAxNjAiPjxwYXRoIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzY5Njk2OSIgc3Ryb2tlLXdpZHRoPSIxNSIgZD0iTTAgNWgxNjAiLz48L3N2Zz4=") top left repeat-x,
-        url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDE2MCAxNjAiPjxwYXRoIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzY5Njk2OSIgc3Ryb2tlLXdpZHRoPSIxNSIgZD0iTTAgMTU1aDE2MCIvPjwvc3ZnPg==") bottom left repeat-x,
-        url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDE2MCAxNjAiPjxwYXRoIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzY5Njk2OSIgc3Ryb2tlLXdpZHRoPSIxNSIgZD0iTTUgMHYxNjAiLz48L3N2Zz4=") top left repeat-y,
-        url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDE2MCAxNjAiPjxwYXRoIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzY5Njk2OSIgc3Ryb2tlLXdpZHRoPSIxNSIgZD0iTTE1NSAwdjE2MCIvPjwvc3ZnPg==") top right repeat-y;
     background-color: white;
 }
 

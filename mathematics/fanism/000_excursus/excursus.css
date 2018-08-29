@@ -13,6 +13,6 @@ h1 {
 }
 
 h1::after {
-    content: url("../IMG/mathematics_heading.svg");
+    content: url(../IMG/mathematics_heading.svg);
     float: right;
 }

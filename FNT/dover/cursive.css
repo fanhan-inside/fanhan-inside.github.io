@@ -1,167 +1,167 @@
 @font-face {
     font-family: "AmapolaNormal";
-    src: local("Amapola Normal"), local("AmapolaNormal"), url("./cursive/AmapolaNormal.woff2") format("woff2");
+    src: local("Amapola Normal"), local("AmapolaNormal"), url(./cursive/AmapolaNormal.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "ArtistsScript";
-    src: local("Artists Script"), local("ArtistsScript"), url("./cursive/ArtistsScript.woff2") format("woff2");
+    src: local("Artists Script"), local("ArtistsScript"), url(./cursive/ArtistsScript.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "CancellarescaScriptNormal";
-    src: local("Cancellaresca Script Normal"), local("CancellarescaScriptNormal"), url("./cursive/CancellarescaScriptNormal.woff2") format("woff2");
+    src: local("Cancellaresca Script Normal"), local("CancellarescaScriptNormal"), url(./cursive/CancellarescaScriptNormal.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "CarpenterScript";
-    src: local("Carpenter Script"), local("CarpenterScript"), url("./cursive/CarpenterScript.woff2") format("woff2");
+    src: local("Carpenter Script"), local("CarpenterScript"), url(./cursive/CarpenterScript.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "CertificateScript";
-    src: local("Certificate Script"), local("CertificateScript"), url("./cursive/CertificateScript.woff2") format("woff2");
+    src: local("Certificate Script"), local("CertificateScript"), url(./cursive/CertificateScript.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "CommercialScript";
-    src: local("Commercial Script"), local("CommercialScript"), url("./cursive/CommercialScript.woff2") format("woff2");
+    src: local("Commercial Script"), local("CommercialScript"), url(./cursive/CommercialScript.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Elegance";
-    src: local("Elegance"), url("./cursive/Elegance.woff2") format("woff2");
+    src: local("Elegance"), url(./cursive/Elegance.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "EngrossingScript";
-    src: local("Engrossing Script"), local("EngrossingScript"), url("./cursive/EngrossingScript.woff2") format("woff2");
+    src: local("Engrossing Script"), local("EngrossingScript"), url(./cursive/EngrossingScript.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Figaro";
-    src: local("Figaro"), url("./cursive/Figaro.woff2") format("woff2");
+    src: local("Figaro"), url(./cursive/Figaro.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Flare";
-    src: local("Flare"), url("./cursive/Flare.woff2") format("woff2");
+    src: local("Flare"), url(./cursive/Flare.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "GloriaScript";
-    src: local("Gloria Script"), local("GloriaScript"), url("./cursive/GloriaScript.woff2") format("woff2");
+    src: local("Gloria Script"), local("GloriaScript"), url(./cursive/GloriaScript.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Hanover";
-    src: local("Hanover"), url("./cursive/Hanover.woff2") format("woff2");
+    src: local("Hanover"), url(./cursive/Hanover.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Holly";
-    src: local("Holly"), url("./cursive/Holly.woff2") format("woff2");
+    src: local("Holly"), url(./cursive/Holly.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "KunstlerBold";
-    src: local("Kunstler Bold"), local("KunstlerBold"), url("./cursive/KunstlerBold.woff2") format("woff2");
+    src: local("Kunstler Bold"), local("KunstlerBold"), url(./cursive/KunstlerBold.woff2) format("woff2");
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Liberty";
-    src: local("Liberty"), url("./cursive/Liberty.woff2") format("woff2");
+    src: local("Liberty"), url(./cursive/Liberty.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "ManuscriptNormal";
-    src: local("Manuscript Normal"), local("ManuscriptNormal"), url("./cursive/ManuscriptNormal.woff2") format("woff2");
+    src: local("Manuscript Normal"), local("ManuscriptNormal"), url(./cursive/ManuscriptNormal.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "OrionScriptNormal";
-    src: local("Orion Script Normal"), local("OrionScriptNormal"), url("./cursive/OrionScriptNormal.woff2") format("woff2");
+    src: local("Orion Script Normal"), local("OrionScriptNormal"), url(./cursive/OrionScriptNormal.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "PantagraphScript";
-    src: local("Pantagraph Script"), local("PantagraphScript"), url("./cursive/PantagraphScript.woff2") format("woff2");
+    src: local("Pantagraph Script"), local("PantagraphScript"), url(./cursive/PantagraphScript.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "ParkAvenue";
-    src: local("Park Avenue"), local("ParkAvenue"), url("./cursive/ParkAvenue.woff2") format("woff2");
+    src: local("Park Avenue"), local("ParkAvenue"), url(./cursive/ParkAvenue.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "RomanyScript";
-    src: local("Romany Script"), local("RomanyScript"), url("./cursive/RomanyScript.woff2") format("woff2");
+    src: local("Romany Script"), local("RomanyScript"), url(./cursive/RomanyScript.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "TraftonScript"; /* NO SPACE in font name */
-    src: local("TraftonScript"), url("./cursive/TraftonScript.woff2") format("woff2");
+    src: local("TraftonScript"), url(./cursive/TraftonScript.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "TypoUpright";
-    src: local("Typo Upright"), local("TypoUpright"), url("./cursive/TypoUpright.woff2") format("woff2");
+    src: local("Typo Upright"), local("TypoUpright"), url(./cursive/TypoUpright.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "UniversityScript";
-    src: local("University Script"), local("UniversityScript"), url("./cursive/UniversityScript.woff2") format("woff2");
+    src: local("University Script"), local("UniversityScript"), url(./cursive/UniversityScript.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "VirginiaAntique";
-    src: local("Virginia Antique"), local("VirginiaAntique"), url("./cursive/VirginiaAntique.woff2") format("woff2");
+    src: local("Virginia Antique"), local("VirginiaAntique"), url(./cursive/VirginiaAntique.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }

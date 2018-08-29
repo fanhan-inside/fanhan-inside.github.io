@@ -32,7 +32,7 @@ h2.heading>span {
     padding: 16px 20px;
     min-width: 100px;
     min-height: 70px;
-    background: url("h2_corner_tl.svg") top left no-repeat, url("h2_corner_br.svg") bottom right no-repeat, url("h2_corner_bl.svg") bottom left no-repeat, url("h2_corner_tr.svg") top right no-repeat;
+    background: url(h2_corner_tl.svg) top left no-repeat, url(h2_corner_br.svg) bottom right no-repeat, url(h2_corner_bl.svg) bottom left no-repeat, url(h2_corner_tr.svg) top right no-repeat;
 }
 
 h2.girdle {

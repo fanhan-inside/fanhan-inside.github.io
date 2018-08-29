@@ -1,167 +1,167 @@
 @font-face {
     font-family: "Accord";
-    src: local("Accord"), url("./calligraphic/Accord.woff2") format("woff2");
+    src: local("Accord"), url(./calligraphic/Accord.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Barkham";
-    src: local("Barkham"), url("./calligraphic/Barkham.woff2") format("woff2");
+    src: local("Barkham"), url(./calligraphic/Barkham.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Brinkman";
-    src: local("Brinkman"), url("./calligraphic/Brinkman.woff2") format("woff2");
+    src: local("Brinkman"), url(./calligraphic/Brinkman.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Candlemas";
-    src: local("Candlemas"), url("./calligraphic/Candlemas.woff2") format("woff2");
+    src: local("Candlemas"), url(./calligraphic/Candlemas.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Cardigan";
-    src: local("Cardigan"), url("./calligraphic/Cardigan.woff2") format("woff2");
+    src: local("Cardigan"), url(./calligraphic/Cardigan.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Carnet";
-    src: local("Carnet"), url("./calligraphic/Carnet.woff2") format("woff2");
+    src: local("Carnet"), url(./calligraphic/Carnet.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "CertificatextNormal";
-    src: local("Certificatext Normal"), local("CertificatextNormal"), url("./calligraphic/CertificatextNormal.woff2") format("woff2");
+    src: local("Certificatext Normal"), local("CertificatextNormal"), url(./calligraphic/CertificatextNormal.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "CourtHand";
-    src: local("Court Hand"), local("CourtHand"), url("./calligraphic/CourtHand.woff2") format("woff2");
+    src: local("Court Hand"), local("CourtHand"), url(./calligraphic/CourtHand.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Davis";
-    src: local("Davis"), url("./calligraphic/Davis.woff2") format("woff2");
+    src: local("Davis"), url(./calligraphic/Davis.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "DavisFancy";
-    src: local("Davis Fancy"), local("DavisFancy"), url("./calligraphic/DavisFancy.woff2") format("woff2");
+    src: local("Davis Fancy"), local("DavisFancy"), url(./calligraphic/DavisFancy.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "ErosText";
-    src: local("Eros Text"), local("ErosText"), url("./calligraphic/ErosText.woff2") format("woff2");
+    src: local("Eros Text"), local("ErosText"), url(./calligraphic/ErosText.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "EspaniaNormal";
-    src: local("Espania Normal"), local("EspaniaNormal"), url("./calligraphic/EspaniaNormal.woff2") format("woff2");
+    src: local("Espania Normal"), local("EspaniaNormal"), url(./calligraphic/EspaniaNormal.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Graduate";
-    src: local("Graduate"), url("./calligraphic/Graduate.woff2") format("woff2");
+    src: local("Graduate"), url(./calligraphic/Graduate.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Horloge";
-    src: local("Horloge"), url("./calligraphic/Horloge.woff2") format("woff2");
+    src: local("Horloge"), url(./calligraphic/Horloge.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "LibraryTextNormal";
-    src: local("Library Text Normal"), local("LibraryTextNormal"), url("./calligraphic/LibraryTextNormal.woff2") format("woff2");
+    src: local("Library Text Normal"), local("LibraryTextNormal"), url(./calligraphic/LibraryTextNormal.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "MatrixNormal";
-    src: local("Matrix Normal"), local("MatrixNormal"), url("./calligraphic/MatrixNormal.woff2") format("woff2");
+    src: local("Matrix Normal"), local("MatrixNormal"), url(./calligraphic/MatrixNormal.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "MottoNormal";
-    src: local("Motto Normal"), local("MottoNormal"), url("./calligraphic/MottoNormal.woff2") format("woff2");
+    src: local("Motto Normal"), local("MottoNormal"), url(./calligraphic/MottoNormal.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Postillion";
-    src: local("Postillion"), url("./calligraphic/Postillion.woff2") format("woff2");
+    src: local("Postillion"), url(./calligraphic/Postillion.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "ScepterNormal";
-    src: local("Scepter Normal"), local("ScepterNormal"), url("./calligraphic/ScepterNormal.woff2") format("woff2");
+    src: local("Scepter Normal"), local("ScepterNormal"), url(./calligraphic/ScepterNormal.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "SilverwoodSwash";
-    src: local("Silverwood Swash"), local("SilverwoodSwash"), url("./calligraphic/SilverwoodSwash.woff2") format("woff2");
+    src: local("Silverwood Swash"), local("SilverwoodSwash"), url(./calligraphic/SilverwoodSwash.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "SpeedscriptNormal";
-    src: local("Speedscript Normal"), local("SpeedscriptNormal"), url("./calligraphic/SpeedscriptNormal.woff2") format("woff2");
+    src: local("Speedscript Normal"), local("SpeedscriptNormal"), url(./calligraphic/SpeedscriptNormal.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Unciala";
-    src: local("Unciala"), url("./calligraphic/Unciala.woff2") format("woff2");
+    src: local("Unciala"), url(./calligraphic/Unciala.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "ZingoNormal";
-    src: local("Zingo Normal"), local("ZingoNormal"), url("./calligraphic/ZingoNormal.woff2") format("woff2");
+    src: local("Zingo Normal"), local("ZingoNormal"), url(./calligraphic/ZingoNormal.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Zion";
-    src: local("Zion"), url("./calligraphic/Zion.woff2") format("woff2");
+    src: local("Zion"), url(./calligraphic/Zion.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }

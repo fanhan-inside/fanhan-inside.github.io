@@ -12,7 +12,7 @@ h1 {
     box-sizing: border-box;
     height: 470px;
     padding: 250px 0 0 0;
-    background: url("../image/heading_excursus.svg") 50% no-repeat;
+    background: url(../image/heading_excursus.svg) 50% no-repeat;
     text-align: center;
     font-size: 4rem;
 }

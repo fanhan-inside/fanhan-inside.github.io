@@ -1,167 +1,167 @@
 @font-face {
     font-family: "AdvertisersOutline";
-    src: local("Advertisers Outline"), local("AdvertisersOutline"), url("./outline/AdvertisersOutline.woff2") format("woff2");
+    src: local("Advertisers Outline"), local("AdvertisersOutline"), url(./outline/AdvertisersOutline.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "BenFranklinOpen";
-    src: local("Ben Franklin Open"), local("BenFranklinOpen"), url("./outline/BenFranklinOpen.woff2") format("woff2");
+    src: local("Ben Franklin Open"), local("BenFranklinOpen"), url(./outline/BenFranklinOpen.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "BoldSansOutline";
-    src: local("Bold Sans Outline"), local("BoldSansOutline"), url("./outline/BoldSansOutline.woff2") format("woff2");
+    src: local("Bold Sans Outline"), local("BoldSansOutline"), url(./outline/BoldSansOutline.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "CaravelleCondensedNormal";
-    src: local("Caravelle Condensed Normal"), local("CaravelleCondensedNormal"), url("./outline/CaravelleCondensedNormal.woff2") format("woff2");
+    src: local("Caravelle Condensed Normal"), local("CaravelleCondensedNormal"), url(./outline/CaravelleCondensedNormal.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "CarolusOutline";
-    src: local("Carolus Outline"), local("CarolusOutline"), url("./outline/CarolusOutline.woff2") format("woff2");
+    src: local("Carolus Outline"), local("CarolusOutline"), url(./outline/CarolusOutline.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "CircustimeOutline";
-    src: local("Circustime Outline"), local("CircustimeOutline"), url("./outline/CircustimeOutline.woff2") format("woff2");
+    src: local("Circustime Outline"), local("CircustimeOutline"), url(./outline/CircustimeOutline.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "ClarendonOutline";
-    src: local("Clarendon Outline"), local("ClarendonOutline"), url("./outline/ClarendonOutline.woff2") format("woff2");
+    src: local("Clarendon Outline"), local("ClarendonOutline"), url(./outline/ClarendonOutline.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "ColumnaOutline";
-    src: local("Columna Outline"), local("ColumnaOutline"), url("./outline/ColumnaOutline.woff2") format("woff2");
+    src: local("Columna Outline"), local("ColumnaOutline"), url(./outline/ColumnaOutline.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "CoolOutline";
-    src: local("Cool Outline"), local("CoolOutline"), url("./outline/CoolOutline.woff2") format("woff2");
+    src: local("Cool Outline"), local("CoolOutline"), url(./outline/CoolOutline.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "CooperBlackOutline";
-    src: local("Cooper Black Outline"), local("CooperBlackOutline"), url("./outline/CooperBlackOutline.woff2") format("woff2");
+    src: local("Cooper Black Outline"), local("CooperBlackOutline"), url(./outline/CooperBlackOutline.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "DomCasualOutline";
-    src: local("Dom Casual Outline"), local("DomCasualOutline"), url("./outline/DomCasualOutline.woff2") format("woff2");
+    src: local("Dom Casual Outline"), local("DomCasualOutline"), url(./outline/DomCasualOutline.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "EsquireOutline";
-    src: local("Esquire Outline"), local("EsquireOutline"), url("./outline/EsquireOutline.woff2") format("woff2");
+    src: local("Esquire Outline"), local("EsquireOutline"), url(./outline/EsquireOutline.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "EuropaOutlineNormal";
-    src: local("Europa Outline Normal"), local("EuropaOutlineNormal"), url("./outline/EuropaOutlineNormal.woff2") format("woff2");
+    src: local("Europa Outline Normal"), local("EuropaOutlineNormal"), url(./outline/EuropaOutlineNormal.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "FranklinGothicOutline";
-    src: local("Franklin Gothic Outline"), local("FranklinGothicOutline"), url("./outline/FranklinGothicOutline.woff2") format("woff2");
+    src: local("Franklin Gothic Outline"), local("FranklinGothicOutline"), url(./outline/FranklinGothicOutline.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "FuturamaOutlineNormal";
-    src: local("Futurama Outline Normal"), local("FuturamaOutlineNormal"), url("./outline/FuturamaOutlineNormal.woff2") format("woff2");
+    src: local("Futurama Outline Normal"), local("FuturamaOutlineNormal"), url(./outline/FuturamaOutlineNormal.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "GrafitoOutline";
-    src: local("Grafito Outline"), local("GrafitoOutline"), url("./outline/GrafitoOutline.woff2") format("woff2");
+    src: local("Grafito Outline"), local("GrafitoOutline"), url(./outline/GrafitoOutline.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "HoboOutlineNormal";
-    src: local("Hobo Outline Normal"), local("HoboOutlineNormal"), url("./outline/HoboOutlineNormal.woff2") format("woff2");
+    src: local("Hobo Outline Normal"), local("HoboOutlineNormal"), url(./outline/HoboOutlineNormal.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "OthelloOutline";
-    src: local("Othello Outline"), local("OthelloOutline"), url("./outline/OthelloOutline.woff2") format("woff2");
+    src: local("Othello Outline"), local("OthelloOutline"), url(./outline/OthelloOutline.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "RomanaOutlineNormal";
-    src: local("Romana Outline Normal"), local("RomanaOutlineNormal"), url("./outline/RomanaOutlineNormal.woff2") format("woff2");
+    src: local("Romana Outline Normal"), local("RomanaOutlineNormal"), url(./outline/RomanaOutlineNormal.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "RothsteinOutlineNormal";
-    src: local("Rothstein Outline Normal"), local("RothsteinOutlineNormal"), url("./outline/RothsteinOutlineNormal.woff2") format("woff2");
+    src: local("Rothstein Outline Normal"), local("RothsteinOutlineNormal"), url(./outline/RothsteinOutlineNormal.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "SpartanCondOutline";
-    src: local("Spartan Cond Outline"), local("SpartanCondOutline"), url("./outline/SpartanCondOutline.woff2") format("woff2");
+    src: local("Spartan Cond Outline"), local("SpartanCondOutline"), url(./outline/SpartanCondOutline.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "SportsJerseyNormal";
-    src: local("Sports Jersey Normal"), local("SportsJerseyNormal"), url("./outline/SportsJerseyNormal.woff2") format("woff2");
+    src: local("Sports Jersey Normal"), local("SportsJerseyNormal"), url(./outline/SportsJerseyNormal.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "WhitinOutline";
-    src: local("Whitin Outline"), local("WhitinOutline"), url("./outline/WhitinOutline.woff2") format("woff2");
+    src: local("Whitin Outline"), local("WhitinOutline"), url(./outline/WhitinOutline.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "WindsorOutline";
-    src: local("Windsor Outline"), local("WindsorOutline"), url("./outline/WindsorOutline.woff2") format("woff2");
+    src: local("Windsor Outline"), local("WindsorOutline"), url(./outline/WindsorOutline.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }

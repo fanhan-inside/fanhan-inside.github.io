@@ -1,167 +1,167 @@
 @font-face {
     font-family: "AngloText";
-    src: local("Anglo Text"), local("AngloText"), url("./medieval/AngloText.woff2") format("woff2");
+    src: local("Anglo Text"), local("AngloText"), url(./medieval/AngloText.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "CamdenText";
-    src: local("Camden Text"), local("CamdenText"), url("./medieval/CamdenText.woff2") format("woff2");
+    src: local("Camden Text"), local("CamdenText"), url(./medieval/CamdenText.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "ChappelText";
-    src: local("Chappel Text"), local("ChappelText"), url("./medieval/ChappelText.woff2") format("woff2");
+    src: local("Chappel Text"), local("ChappelText"), url(./medieval/ChappelText.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Cimbrian";
-    src: local("Cimbrian"), url("./medieval/Cimbrian.woff2") format("woff2");
+    src: local("Cimbrian"), url(./medieval/Cimbrian.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "ColchesterBlack";
-    src: local("Colchester Black"), local("ColchesterBlack"), url("./medieval/ColchesterBlack.woff2") format("woff2");
+    src: local("Colchester Black"), local("ColchesterBlack"), url(./medieval/ColchesterBlack.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "DurerGothic";
-    src: local("Durer Gothic"), local("DurerGothic"), url("./medieval/DurerGothic.woff2") format("woff2");
+    src: local("Durer Gothic"), local("DurerGothic"), url(./medieval/DurerGothic.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Durwent";
-    src: local("Durwent"), url("./medieval/Durwent.woff2") format("woff2");
+    src: local("Durwent"), url(./medieval/Durwent.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Fenwick";
-    src: local("Fenwick"), url("./medieval/Fenwick.woff2") format("woff2");
+    src: local("Fenwick"), url(./medieval/Fenwick.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "GenzschInitialsNormal";
-    src: local("Genzsch Initials Normal"), local("GenzschInitialsNormal"), url("./medieval/GenzschInitialsNormal.woff2") format("woff2");
+    src: local("Genzsch Initials Normal"), local("GenzschInitialsNormal"), url(./medieval/GenzschInitialsNormal.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "GloucesterInitials";
-    src: local("Gloucester Initials"), local("GloucesterInitials"), url("./fonts/GloucesterInitials.woff2") format("woff2");
+    src: local("Gloucester Initials"), local("GloucesterInitials"), url(./fonts/GloucesterInitials.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "GutenbergGothic";
-    src: local("Gutenberg Gothic"), local("GutenbergGothic"), url("./medieval/GutenbergGothic.woff2") format("woff2");
+    src: local("Gutenberg Gothic"), local("GutenbergGothic"), url(./medieval/GutenbergGothic.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "HansaGothic";
-    src: local("Hansa Gothic"), local("HansaGothic"), url("./medieval/HansaGothic.woff2") format("woff2");
+    src: local("Hansa Gothic"), local("HansaGothic"), url(./medieval/HansaGothic.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Harrowgate";
-    src: local("Harrowgate"), url("./medieval/Harrowgate.woff2") format("woff2");
+    src: local("Harrowgate"), url(./medieval/Harrowgate.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "KaiserGothic";
-    src: local("Kaiser Gothic"), local("KaiserGothic"), url("./medieval/KaiserGothic.woff2") format("woff2");
+    src: local("Kaiser Gothic"), local("KaiserGothic"), url(./medieval/KaiserGothic.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "KingsCross";
-    src: local("King's Cross"), local("KingsCross"), url("./medieval/KingsCross.woff2") format("woff2");
+    src: local("King's Cross"), local("KingsCross"), url(./medieval/KingsCross.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Konigsburg";
-    src: local("Konigsburg"), url("./medieval/Konigsburg.woff2") format("woff2");
+    src: local("Konigsburg"), url(./medieval/Konigsburg.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Malvern";
-    src: local("Malvern"), url("./medieval/Malvern.woff2") format("woff2");
+    src: local("Malvern"), url(./medieval/Malvern.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "MediciText";
-    src: local("Medici Text"), local("MediciText"), url("./medieval/MediciText.woff2") format("woff2");
+    src: local("Medici Text"), local("MediciText"), url(./medieval/MediciText.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Middlesex";
-    src: local("Middlesex"), url("./medieval/Middlesex.woff2") format("woff2");
+    src: local("Middlesex"), url(./medieval/Middlesex.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "ProgressiveTextNormal";
-    src: local("Progressive Text Normal"), local("ProgressiveTextNormal"), url("./medieval/ProgressiveTextNormal.woff2") format("woff2");
+    src: local("Progressive Text Normal"), local("ProgressiveTextNormal"), url(./medieval/ProgressiveTextNormal.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "TudorText";
-    src: local("Tudor Text"), local("TudorText"), url("./medieval/TudorText.woff2") format("woff2");
+    src: local("Tudor Text"), local("TudorText"), url(./medieval/TudorText.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Warwick";
-    src: local("Warwick"), url("./medieval/Warwick.woff2") format("woff2");
+    src: local("Warwick"), url(./medieval/Warwick.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "WestminsterGothic";
-    src: local("Westminster Gothic"), local("WestminsterGothic"), url("./medieval/WestminsterGothic.woff2") format("woff2");
+    src: local("Westminster Gothic"), local("WestminsterGothic"), url(./medieval/WestminsterGothic.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Yonkers";
-    src: local("Yonkers"), url("./medieval/Yonkers.woff2") format("woff2");
+    src: local("Yonkers"), url(./medieval/Yonkers.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
