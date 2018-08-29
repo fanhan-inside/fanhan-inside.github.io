@@ -74,11 +74,11 @@ article.message {
     background-color: white;
 }
 
-article.message header {
+article.message header.message {
     border: none;
 }
 
-article.message header span.heading {
+article.message header.message span.heading {
     border-bottom: 1px solid lightgray;
     border-right: 1px solid lightgray;
 }
