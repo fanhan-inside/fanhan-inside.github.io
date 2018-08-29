@@ -5,9 +5,6 @@
     <meta lang="zh" charset="UTF-8">
     <title>三自排版运动（一）：引号与书名号</title>
     <link rel="stylesheet" type="text/css" href="advancing.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/vs2015.min.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
 </head>
 
 <body>
@@ -23,7 +20,6 @@
         </ul>
     </nav>
     <header>
-        <!-- <img src="image/009-001.png" alt="题图" /> -->
         <h1>三自排版运动（一）：引号与书名号</h1>
     </header>
     <main>
@@ -41,7 +37,7 @@
 
             <p>不啰嗦，熟练运用十个手指头敲击键盘输入纯文本产生的html文件内容如下：</p>
 
-            <pre><code class="language-html">&lt;!doctype html&gt;
+            <pre class="code">&lt;!doctype html&gt;
 &lt;html lang=&quot;zh&quot;&gt;
 &lt;head&gt;
     &lt;meta charset=&quot;utf-8&quot;&gt;
@@ -95,7 +91,7 @@
     &lt;/footer&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-</code></pre>
+</pre>
 
             <p>在Chrome当中显示效果是这样的：</p>
 
@@ -127,10 +123,10 @@
             <p>互联网企业内部员工「不识大体不顾大局不懂政治不讲规矩不守纪律」，不按照W3C推荐规范开发，「人缘好情商高」的浏览器也只能「膝盖生根头顶绿得发黑贱到骨子里去了」，忍了嘛。</p>
             <p>于是，写了这么一段样式：</p>
 
-            <pre><code class="css">q:lang(zh), q:lang(ja) {
+            <pre class="code">q:lang(zh), q:lang(ja) {
     quotes: &quot;「&quot; &quot;」&quot; &quot;『&quot; &quot;』&quot; &quot;〔&quot; &quot;〕&quot; &quot;【&quot; &quot;】&quot;;
 }
-</code></pre>
+</pre>
 
             <p>用「八」个字符串指定了「两」个语种的「四」层引号内容，应用到页面上，居然有了效果：</p>
 
@@ -142,21 +138,21 @@
             <p>哎呀，浏览器好高的智商吖。不仅Chrome以及IE，就连FireFox都能做到，看来只是「默认」效果没实现罢了。没有再继续刨根问底到底引号能嵌套多少层，Unicode之下各种符号极大充沛，各位可以自行试验。</p>
             <p>接下来，在「书名号」之前，先把「<code>&lt;blockquote&gt;</code>」块引用的样式写好，就用最简单的也是最常见的那种：</p>
 
-            <pre><code class="css">blockquote {
+            <pre class="code">blockquote {
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 50px;
     padding-left: 15px;
     border-left: 3px solid dimgray;
 }
-</code></pre>
+</pre>
 
             <p>然后开始修改「<code>&lt;cite&gt;</code>」的样式，除了把「歪体」掰中正之外，还得手动在前后加上「书名号」：</p>
 
-            <pre><code class="css">cite { font-style: normal; }
+            <pre class="code">cite { font-style: normal; }
 cite::before { content: &quot;《&quot;; }
 cite::after { content: &quot;》&quot;; }
-</code></pre>
+</pre>
 
             <figure>
                 <img src="image/009-005.png" alt="块引用和书名号" />
@@ -166,11 +162,11 @@ cite::after { content: &quot;》&quot;; }
             <p>其中运用了「<code>::before</code>」「<code>::after</code>」这俩选择器，顾名思义就是在前后追加「内容（<code>content</code>）」，同样也是可以几乎任意指定符号。</p>
             <p>再然后就是举一反三，把个人码字习惯中用于人名和日期时间的「专名号」也进行自定义，顺便还能「夹私货」：</p>
 
-            <pre><code class="css">abbr::before { content: &quot;｛©&quot;; }
+            <pre class="code">abbr::before { content: &quot;｛©&quot;; }
 abbr::after { content: &quot;™®｝&quot;; }
 time::before { content: &quot;［†&quot;; }
 time::after { content: &quot;‡］&quot;; }
-</code></pre>
+</pre>
 
             <p>于是运用的效果是这样的：</p>
 
@@ -190,7 +186,9 @@ time::after { content: &quot;‡］&quot;; }
     </main>
     <footer>
         <div class="signature">
-            <p><span class="sign-time">2018-06-14</span></p><hr class="sign-name" /><hr class="sign-room" />
+            <p><span class="sign-time">2018-06-14</span></p>
+            <hr class="sign-name" />
+            <hr class="sign-room" />
         </div>
     </footer>
 </body>

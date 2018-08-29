@@ -5,9 +5,6 @@
     <meta lang="zh" charset="UTF-8">
     <title>三自排版运动（十）：多元文化（下）</title>
     <link rel="stylesheet" type="text/css" href="advancing.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/vs2015.min.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
 </head>
 
 <body>
@@ -23,7 +20,6 @@
         </ul>
     </nav>
     <header>
-        <!-- <img src="image/022-000.png" alt="题图" /> -->
         <h1>三自排版运动（十）：多元文化（下）</h1>
     </header>
     <main>
@@ -41,7 +37,7 @@
             <h2 class="heading"><span>宏观形式</span></h2>
             <p>先说「形式」，这次为了「卡片版式」主要实验了「flex」布局：</p>
 
-            <pre><code class="css">.CardBox {
+            <pre class="code">.CardBox {
     box-sizing: border-box;
     justify-content: center;
     display: flex;
@@ -57,7 +53,7 @@
     padding: 0.5rem;
     margin: 0.5rem;
 }
-</code></pre>
+</pre>
 
             <p>简单说，每「行」当中「卡片」的高度是固定的，多不退少补，换行另说。所以第一部分当中特意在「另起一行」之后找了个最短的内容，每语种只有一句， 每句只有一行。</p>
             <p>而第二部分当中「全部」内容都这么短小精悍，并且没有附加内部结构。我把这篇附录的所有内容都输入了，设定的最小高度也没有超过。于是「每张卡片一句话」，看上去比较整齐。</p>
@@ -102,19 +98,19 @@
             <p>第四类《拉丁语成语辞典》更复杂。实体书上分为六个「部分」收录，就是卡片上左上角的「主题」；而每条成语之后还有「归类」，也就是随后的「标签」；具体到个别成语，还提供了「作者」或「出处」，也得照样显示。</p>
             <p>于是在设计上，卡片开头提供了「信息栏」，按照通常惯例提供「主题」「标签」「作者」以及今后可能增加的其它属性。还要考虑到「标签」还不止一个。</p>
 
-            <pre><code class="html">&lt;div class=&quot;InfoBar&quot;&gt;
+            <pre class="code">&lt;div class=&quot;InfoBar&quot;&gt;
     &lt;span class=&quot;Topic&quot;&gt;哲人（Sapientes）&lt;/span&gt;
     &lt;span class=&quot;Tag&quot;&gt;文学&lt;/span&gt;
     &lt;span class=&quot;Tag&quot;&gt;幽默和悖论&lt;/span&gt;
     &lt;span class=&quot;Author&quot;&gt;尤文纳尔（&lt;q lang=&quot;la&quot;&gt;Decimus Iunius Iuvenalis&lt;/q&gt;，&lt;q lang=&quot;en&quot;&gt;Juvenal&lt;/q&gt;)&lt;/span&gt;
 &lt;/div&gt;
-</code></pre>
+</pre>
 
-            <pre><code class="html">&lt;div class=&quot;InfoBar&quot;&gt;
+            <pre class="code">&lt;div class=&quot;InfoBar&quot;&gt;
     &lt;span class=&quot;Topic&quot;&gt;圣经（&lt;q lang=&quot;la&quot;&gt;Scriptura&lt;/q&gt;）&lt;/span&gt;
     &lt;span class=&quot;Cite&quot;&gt;《训道篇》（&lt;q lang=&quot;he&quot;&gt;&lt;bdo dir=&quot;rtl&quot;&gt;קֹהֶלֶת&lt;/bdo&gt;&lt;/q&gt;，&lt;q lang=&quot;grc&quot;&gt;Ἐκκλησιαστής&lt;/q&gt;，&lt;q lang=&quot;la&quot;&gt;Ecclesiastes&lt;/q&gt;）&lt;/span&gt;
 &lt;/div&gt;
-</code></pre>
+</pre>
 
             <p>所以，具体到页面代码就是罗列这些属性，用XML存储这些数据更合适，通过XSLT可以转换成任何需要的页面形式，无论是现在这种「卡片」内部的「<code>&lt;div&gt;</code>」「<code>&lt;span&gt;</code>」，还是从「整部书籍」视角出现的「<code>&lt;h1&gt;</code>」等标题。</p>
             <p>遵守原书内容，有些信息并没有整理。比如第一条其实在内部已经给出了「作者」奥维德以及「出处」《女杰书简》，但是放在正文内部并没有作为大纲出现。应该是实体书并非「语录体」的缘故，并且还有技术上的原因，和第二条援引「成语」表达讽刺并形成「新兴成语」的形式所对照。</p>
@@ -168,7 +164,9 @@
     </main>
     <footer>
         <div class="signature">
-            <p><span class="sign-time">2018-07-08</span></p><hr class="sign-name" /><hr class="sign-room" />
+            <p><span class="sign-time">2018-07-08</span></p>
+            <hr class="sign-name" />
+            <hr class="sign-room" />
         </div>
     </footer>
 </body>

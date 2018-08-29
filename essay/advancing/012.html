@@ -5,9 +5,6 @@
     <meta lang="zh" charset="UTF-8">
     <title>三自排版运动（四）：XSLT与嵌入视频</title>
     <link rel="stylesheet" type="text/css" href="advancing.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/vs2015.min.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
 </head>
 
 <body>
@@ -23,7 +20,6 @@
         </ul>
     </nav>
     <header>
-        <!-- <img src="image/012-001.png" alt="题图" /> -->
         <h1>三自排版运动（四）：XSLT与嵌入视频</h1>
     </header>
 
@@ -36,12 +32,12 @@
             <p>众所周知，Markdown有很多变种和扩展，其中追加了「流程图」「甘特图」等适合码农的功能的那种，称为「markdown-it」，也就是GitHub上面使用的那种。于是，GitHub用户开了一个项目，唤作「<a target="_blank" href="https://github.com/CenterForOpenScience/markdown-it-video">markdown-it-video</a>」，进一步扩展。</p>
             <p>当然这需要服务器端支持，但是可以先观察其语法，在本地通过XML/XSLT模拟嘛。由于各个视频网站的架构不同格式不同，当然引用视频的方式也不同。目前「markdown-it-video」支持五个站点，语法则是统一的。</p>
 
-            <pre><code class="markdown">@[youtube](dQw4w9WgXcQ)
+            <pre class="code">@[youtube](dQw4w9WgXcQ)
 @[vimeo](19706846)
 @[vine](etVpwB7uHlw)
 @[prezi](1kkxdtlp4241)
 @[osf](kuvg9)
-</code></pre>
+</pre>
 
             <p>也就是说，提供的信息只有「站点」和「视频标识」，插件在内部根据「站点」不同生成不同的针对性的代码也就是「链接」的形式。其它站点当然就不管了。</p>
             <p>那么，不仅我中华兲朝上国自有国情在此，就是在其它二百多个联合国成员注册的视频站点，都有自己的「特色」，不可能面面俱到。</p>
@@ -64,7 +60,7 @@
         <section>
             <h2 class="heading"><span>最低纲领</span></h2>
             <p>不废话，先把五篇文章内所有用过的视频罗列成XML格式：</p>
-            <pre><code class="xml">«testVideo.xml»
+            <pre class="code">«testVideo.xml»
 
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
 &lt;?xml-stylesheet type=&quot;text/xsl&quot; href=&quot;./testVideo.xsl&quot;?&gt;
@@ -109,11 +105,11 @@
         &lt;video artist=&quot;喜納昌吉&quot; title=&quot;花&quot; site=&quot;youku&quot; vid=&quot;XMTIwNTI2OTI4&quot;&gt;曾被台湾音乐界翻唱，从一首「反战歌曲」改编成了「情歌」。&lt;/video&gt;
     &lt;/page&gt;
 &lt;/stuff&gt;
-</code></pre>
+</pre>
 
             <p>然后针对这个格式，写出XSLT操作：</p>
 
-            <pre><code class="xsl">«testVideo.xsl»
+            <pre class="code">«testVideo.xsl»
 
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
 &lt;xsl:transform xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; version=&quot;1.0&quot;&gt;
@@ -155,7 +151,7 @@
     &lt;/div&gt;&lt;br /&gt;
 &lt;/xsl:template&gt;
 &lt;/xsl:transform&gt;
-</code></pre>
+</pre>
 
             <p>执行转换操作很简单，装上「Saxon」之后使用命令行就行：</p>
             <pre class="code">Transform.exe -t -s:testVideo.xml -xsl:testVideo.xsl -o:temp.html</pre>
@@ -179,7 +175,7 @@
             <p>而素材也不找「<span class="dot">政治敏感</span>」容易被「<span class="dot">亦当删去</span>」的那些，搜索使用关键字「BWV565」，也就是各种风格改编版《巴赫D小调托卡塔与赋格》，还是之前没用过的。</p>
             <p>存储数据的XML文件如下：</p>
 
-            <pre><code class="xml">«videoTest.xml»
+            <pre class="code">«videoTest.xml»
 
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
 &lt;?xml-stylesheet type=&quot;text/xsl&quot; href=&quot;./videoTest.xsl&quot;?&gt;
@@ -191,12 +187,12 @@
         &lt;video title=&quot;（铜管五重奏）巴赫《D小调托卡塔与赋格》BWV565&quot; site=&quot;iqiyi&quot; vid=&quot;a785806017761ac9f128023d64b66690&quot; /&gt;
     &lt;/stuff&gt;
 &lt;/document&gt;
-</code></pre>
+</pre>
 
             <p>格式更简单，就是罗列三个站点的四个视频，只有属性值没有节点值，就当数据库快照那么理解好了。</p>
             <p>针对性转换的XSL如下：</p>
 
-            <pre><code class="xsl">«videoTest.xsl»
+            <pre class="code">«videoTest.xsl»
 
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
 &lt;xsl:transform xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; version=&quot;1.0&quot;&gt;
@@ -237,7 +233,7 @@
     &lt;/div&gt;
 &lt;/xsl:template&gt;
 &lt;/xsl:transform&gt;
-</code></pre>
+</pre>
 
             <p>转换方式同上，在FireFox当中显示效果如下：</p>
 
@@ -261,7 +257,9 @@
     </main>
     <footer>
         <div class="signature">
-            <p><span class="sign-time">2018-06-22</span></p><hr class="sign-name" /><hr class="sign-room" />
+            <p><span class="sign-time">2018-06-22</span></p>
+            <hr class="sign-name" />
+            <hr class="sign-room" />
         </div>
     </footer>
 </body>

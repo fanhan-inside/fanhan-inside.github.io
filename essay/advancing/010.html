@@ -5,9 +5,6 @@
     <meta lang="zh" charset="UTF-8">
     <title>三自排版运动（二）：他山之石可以攻玉</title>
     <link rel="stylesheet" type="text/css" href="advancing.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/vs2015.min.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
 </head>
 
 <body>
@@ -23,7 +20,6 @@
         </ul>
     </nav>
     <header>
-        <!-- <img src="image/010-001.png" alt="题图" /> -->
         <h1>三自排版运动（二）：他山之石可以攻玉</h1>
     </header>
 
@@ -43,7 +39,7 @@
             <p>前一篇提到了「夹私货」字眼，似乎与时俱进的信息技术精英童年才俊对此不以为然，那么就顺手加点能刺激它们神经的私货。</p>
             <p>不啰嗦了，直接在煎蛋CSS文件内部追加的，相关源码如下：</p>
 
-            <pre><code class="css">/* begin fANhAN iNSiDE */
+            <pre class="code">/* begin fANhAN iNSiDE */
 .commentlist .row .author&gt;strong::before {
     font-size: 2rem;
     content: &quot;☪&quot;;
@@ -76,7 +72,7 @@
     border: 1px solid green;
 }
 /* end fANhAN iNSiDE*/
-</code></pre>
+</pre>
 
             <p>而煎蛋的页面可以用浏览器「另存为」html文件，用文本编辑器删掉其中脚本外链和其它垃圾，但是要保留「框架」布局。</p>
             <p>煎蛋的用户分三种，「蓝色帐号」据称是站务工作者，「橘色帐号」据称与站方有商业往来，普通帐号都是黑色，所以针对这三种情况分别在帐号之前「夹私货」。</p>
@@ -126,7 +122,8 @@
     <footer>
         <div class="signature">
             <p><span class="sign-name" />发表于<time>2018-06-14</time>更新于<time>2018-06-15</time><span class="sign-room" /></p>
-            <hr class="sign-name" /><hr class="sign-room" />
+            <hr class="sign-name" />
+            <hr class="sign-room" />
         </div>
     </footer>
 </body>

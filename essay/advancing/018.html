@@ -5,9 +5,6 @@
     <meta lang="zh" charset="UTF-8">
     <title>三自运动插曲：嗟叹之不足故咏歌之</title>
     <link rel="stylesheet" type="text/css" href="advancing.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/vs2015.min.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
     <style type="text/css">
         #sotsugyo {
             width: 80%;
@@ -29,7 +26,6 @@
         </ul>
     </nav>
     <header>
-        <!-- <img src="image/018-000.png" alt="题图" /> -->
         <h1>三自运动插曲：嗟叹之不足故咏歌之</h1>
     </header>
     <main>
@@ -185,7 +181,7 @@
             <p>这与最近关注的MathML技术相关。目前随笔中用到的MathML，其实只是一部分，唤作「Presentation MathML」，和LaTeX之类排版语言没区别。而另外一部分唤作「Content MathML」，则关注符号的语义。</p>
             <p>用维基百科上面的例子说明。表达式「<span class="math">ax² + bx + c</span>」写成「Content MathML」是这样的：</p>
 
-            <pre><code class="xml">&lt;math&gt;
+            <pre class="code">&lt;math&gt;
     &lt;apply&gt;
         &lt;plus/&gt;
         &lt;apply&gt;
@@ -205,11 +201,11 @@
         &lt;ci&gt;c&lt;/ci&gt;
     &lt;/apply&gt;
 &lt;/math&gt;
-</code></pre>
+</pre>
 
             <p>这个写法对应Scheme语句：</p>
 
-            <pre><code class="scheme">(plus (times a (power x 2)) (times b x) c)</code></pre>
+            <pre class="code">(plus (times a (power x 2)) (times b x) c)</pre>
 
             <p>也就是说，对于一些数学软件，运用「Content MathML」作为数据交换格式则更合适。比方说目前已经集成在「SageMath」当中的符号计算软件「Maxima」就是Lisp写的，在「市场经济」大潮中输给了从「南不列颠及北爱尔兰联合王国」<strong>骨肉相连移民</strong>到「美帝灯塔国」的从小比人聪明还比人努力的神童大少爷<abbr class="who">Stephen Wolfram</abbr>出品的「Mathematica」。</p>
             <p>所以，我觉得应用数学专业辅修计算机课程的时候应该率先讲授Lisp/Scheme语言，有什么不对么？</p>
@@ -261,7 +257,9 @@
     </main>
     <footer>
         <div class="signature">
-            <p><span class="sign-time">2018-07-02</span></p><hr class="sign-name" /><hr class="sign-room" />
+            <p><span class="sign-time">2018-07-02</span></p>
+            <hr class="sign-name" />
+            <hr class="sign-room" />
         </div>
     </footer>
 </body>

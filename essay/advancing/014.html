@@ -5,9 +5,6 @@
     <meta lang="zh" charset="UTF-8">
     <title>三自运动小结（续）</title>
     <link rel="stylesheet" type="text/css" href="advancing.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/vs2015.min.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
 </head>
 
 <body>
@@ -23,7 +20,6 @@
         </ul>
     </nav>
     <header>
-        <!-- <img src="image/014-001.png" alt="题图" /> -->
         <h1>三自运动小结（续）：再休息一会儿</h1>
     </header>
 
@@ -42,7 +38,7 @@
             <p>这里抛砖引玉，提供一个伟大光荣正确的样式，供各位参考。</p>
             <p>使用</p>
 
-            <pre><code class="css">del {
+            <pre class="code">del {
     margin: 0 0.25em;
     text-decoration: red double line-through;
 }
@@ -53,11 +49,11 @@ ins {
     text-decoration: none;
     background-image: radial-gradient(farthest-corner at 0 0, yellow, red);
 }
-</code></pre>
+</pre>
 
             <p>这种样式，对</p>
 
-            <pre><code class="html">&lt;p&gt;「&lt;del&gt;政治敏感亦当删去&lt;/del&gt;&lt;ins&gt;主旋律正能量&lt;/ins&gt;」&lt;/p&gt;</code></pre>
+            <pre class="code">&lt;p&gt;「&lt;del&gt;政治敏感亦当删去&lt;/del&gt;&lt;ins&gt;主旋律正能量&lt;/ins&gt;」&lt;/p&gt;</pre>
 
             <p>进行渲染的结果，是这样的：</p>
 
@@ -71,12 +67,12 @@ ins {
             <p>再说「注音」功能，除了「诈骗（划掉）金融」这种修辞方式之外，还经常出现「写作金融读作诈骗」或「金（zha）融（pian）」这种表达方式。这种功能在html当中实现也很简单，使用「<code>&lt;ruby&gt;</code>」标签实现，还提供了向后兼容的手段。</p>
             <p>对于不支持「头顶注音」的浏览器，提供了后附文本的兼容方式，所以源码写起来会繁琐一些。</p>
 
-            <pre><code class="html">&lt;p&gt;使用&lt;code&gt;&amp;lt;ruby&amp;gt;&lt;/code&gt;标签，内容可以是任意的：&lt;/p&gt;
+            <pre class="code">&lt;p&gt;使用&lt;code&gt;&amp;lt;ruby&amp;gt;&lt;/code&gt;标签，内容可以是任意的：&lt;/p&gt;
 &lt;p&gt;「&lt;span&gt;学术&lt;ruby&gt;圈&lt;rp&gt;（&lt;/rp&gt;&lt;rt&gt;juàn&lt;/rt&gt;&lt;rp&gt;）&lt;/rp&gt;&lt;/ruby&gt;&lt;/span&gt;」&lt;/p&gt;
 &lt;p&gt;「&lt;span&gt;&lt;ruby&gt;宣&lt;rp&gt;（&lt;/rp&gt;&lt;rt&gt;xǐ&lt;/rt&gt;&lt;rp&gt;）&lt;/rp&gt;传&lt;rp&gt;（&lt;/rp&gt;&lt;rt&gt;nǎo&lt;/rt&gt;&lt;rp&gt;）&lt;/rp&gt;&lt;/ruby&gt;&lt;/span&gt;」&lt;/p&gt;
 &lt;p&gt;「&lt;span&gt;&lt;ruby&gt;经&lt;rp&gt;（&lt;/rp&gt;&lt;rt&gt;huò&lt;/rt&gt;&lt;rp&gt;）&lt;/rp&gt;邦&lt;rp&gt;（&lt;/rp&gt;&lt;rt&gt;guó&lt;/rt&gt;&lt;rp&gt;）&lt;/rp&gt;济&lt;rp&gt;（&lt;/rp&gt;&lt;rt&gt;yāng&lt;/rt&gt;&lt;rp&gt;）&lt;/rp&gt;世&lt;rp&gt;（&lt;/rp&gt;&lt;rt&gt;mín&lt;/rt&gt;&lt;rp&gt;）&lt;/rp&gt;&lt;/ruby&gt;&lt;/span&gt;」&lt;/p&gt;
 &lt;p&gt;「&lt;span&gt;&lt;ruby&gt;I&#39;m Angry.&lt;rp&gt;[&lt;/rp&gt;&lt;rt&gt;アイムアングリっぽい！&lt;/rt&gt;&lt;rp&gt;]&lt;/rp&gt;&lt;/ruby&gt;&lt;/span&gt;」&lt;/p&gt;
-</code></pre>
+</pre>
 
             <p>由于当代桌面主流浏览器都已经与时俱进，上面这段的渲染效果是这样的：</p>
 
@@ -89,7 +85,7 @@ ins {
             <p>上面对于「主旋律正能量」的措辞，运用了Markdown语法「<code>*</code>」「<code>**</code>」分别实现斜体和粗体效果，对应html的「<code>&lt;i&gt;</code>」「<code>&lt;b&gt;</code>」标签。这两个标签仅仅是指明表现形式，并没有语义效果，于是若是在样式当中偏偏不指定斜体和粗体，反而看上去名不正言不顺。</p>
             <p>就是因为这个理由，html提供了语义级别的标签「<code>&lt;em&gt;</code>」「<code>&lt;strong&gt;</code>」，分别代表了需要「强调」和需要「特别强调」的内容，样式的默认实现是斜体和粗体而已。</p>
             <p>所以，结合前几篇的例子，设定了更加醒目的样式效果：</p>
-            <pre><code class="css">mark {
+            <pre class="code">mark {
     background-color: yellow;
     color: black;
     padding: 0 0.25em;
@@ -114,7 +110,7 @@ strong {
     -webkit-text-emphasis: red triangle;
     -webkit-text-emphasis-position: under left;
 }
-</code></pre>
+</pre>
 
             <p>其中出现了「<code>-webkit-</code>」前缀，这是Chrome/Safari/Opera等浏览器在W3C推荐标准出台之前的率先实现，而FireFox较新版则不需要。所以写了两遍，保证支持主流浏览器前瞻功能。业内都知道，针对FireFox的是「<code>-moz-</code>」前缀，而「<code>-o-</code>」前缀用于旧版Opera浏览器，现在已经不需要了。</p>
             <p>总之，效果如下：</p>
@@ -129,7 +125,7 @@ strong {
             <p>还有一个需求，我自己码字的时候遇到过，想必使用类似题材的码字工作者也会遇到。那就是「从右往左」的非主流文字如何与汉字混合排版。在浏览器当中很简单，html提供了内置实现，就是「<code>&lt;bdo&gt;</code>」标签。</p>
             <p>为了醒目起见，顺便指定汉语与非主流文字的引号样式，引用样式不变：</p>
 
-            <pre><code class="css">q:lang(zh) {
+            <pre class="code">q:lang(zh) {
     quotes: &quot;「&quot; &quot;」&quot; &quot;『&quot; &quot;』&quot; &quot;〔&quot; &quot;〕&quot; &quot;〘&quot; &quot;〙&quot;;
 }
 q:lang(ar) {
@@ -146,11 +142,11 @@ cite::after {
     content: &quot;》&quot;;
     margin-left: 0.25em;
 }
-</code></pre>
+</pre>
 
             <p>在源码中要指定每个区块的「语种」，浏览器才可以到什么山上唱什么歌见什么人说什么话碰上什么文字用什么标点：</p>
 
-            <pre><code class="html">&lt;blockquote lang=&quot;ar&quot;&gt;
+            <pre class="code">&lt;blockquote lang=&quot;ar&quot;&gt;
     &lt;p&gt;&lt;bdo dir=&quot;rtl&quot;&gt;&lt;q lang=&quot;ar&quot;&gt;كافر‎&lt;/q&gt;&lt;/bdo&gt;&lt;/p&gt;
     &lt;p&gt;&lt;q lang=&quot;ar&quot;&gt;&lt;bdo dir=&quot;rtl&quot;&gt;الله أكبر‎&lt;/bdo&gt;&lt;/q&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -158,7 +154,7 @@ cite::after {
     &lt;p&gt;&lt;q&gt;什么？！&lt;q lang=&quot;ar&quot;&gt;&lt;bdo dir=&quot;rtl&quot;&gt;كافر‎&lt;/bdo&gt;&lt;/q&gt;？！&lt;/q&gt;另外一个孩子跳起来，撸起袖子，整理了一下胳膊上的绿色袖箍，把&lt;q&gt;真主忠仆&lt;/q&gt;字眼转到前面，拎起狼牙棒，咬紧牙关，瞄准面前那个鼻青脸肿的成年人的天灵盖，狠狠地砸了下去，&lt;q&gt;&lt;q lang=&quot;ar&quot;&gt;&lt;bdo dir=&quot;rtl&quot;&gt;الله أكبر‎&lt;/bdo&gt;&lt;/q&gt;！！！&lt;/q&gt;&lt;/p&gt;
     &lt;p&gt;——&lt;abbr&gt;范狂夫&lt;/abbr&gt;&lt;cite&gt;&lt;cite&gt;范版西幻设定集&lt;/cite&gt;之四：谁说知识就是力量（未完待续）&lt;/cite&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-</code></pre>
+</pre>
 
             <p>里面出现的非主流文字分别是「卡菲勒」和「阿拉胡阿克巴」，我从繁荣的中文互联网上搜索并复制粘贴下来的，若是有拼写错误请无视。</p>
             <p>效果是这样的：</p>
@@ -216,7 +212,9 @@ cite::after {
     </main>
     <footer>
         <div class="signature">
-            <p><span class="sign-time">2018-06-26</span></p><hr class="sign-name" /><hr class="sign-room" />
+            <p><span class="sign-time">2018-06-26</span></p>
+            <hr class="sign-name" />
+            <hr class="sign-room" />
         </div>
     </footer>
 </body>

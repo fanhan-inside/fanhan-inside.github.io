@@ -5,9 +5,6 @@
     <meta lang="zh" charset="UTF-8">
     <title>三自排版运动（五）：古色古香东洋风</title>
     <link rel="stylesheet" type="text/css" href="advancing.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/vs2015.min.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
 </head>
 
 <body>
@@ -23,7 +20,6 @@
         </ul>
     </nav>
     <header>
-        <!-- <img src="image/016-000.png" alt="题图" /> -->
         <h1>三自排版运动（五）：古色古香东洋风</h1>
     </header>
     <main>
@@ -62,7 +58,7 @@
 
             <p>当代主流浏览器所支持的HTML/CSS特性之功能已经足够强大，各种设置极大充沛，通常仅需要一两行代码就能实现天翻地覆慨而慷的效果。比方说「竖排」的效果，只需要一行样式，声明整个页面都是从上至下从右至左书写：</p>
 
-            <pre><code class="css">body { writing-mode: vertical-rl; }</code></pre>
+            <pre class="code">body { writing-mode: vertical-rl; }</pre>
 
             <p>效果不贴了，随便谁随便拿哪个页面实验一下就行。</p>
             <p>前面已经在「与时俱进西洋风」环境下试验了书名号和专名号，而「古色古香东洋风」的特色有所不同，于是样式也需要应景修改。以前（在知乎评论备份的「凡例」当中）用句读困难的「意大利的里亚斯特」这短语举例说明「专名号」的必要性。其中「专名号」在横排环境下通常是「下划线」，竖排就变成了「左划线」，这时候会发现，连续的专名号会连成一片。</p>
@@ -90,12 +86,12 @@
 
             <p>解决方案，是文本内部不换行，尽量不要用默认设置格式化代码。与此同时，要设定专名号「<code>&lt;abbr&gt;</code>」的样式增加那么一丁点间距：</p>
 
-            <pre><code class="css">abbr {
+            <pre class="code">abbr {
     margin: 1px;
     padding: 1px;
     text-decoration: blue solid underline;
 }
-</code></pre>
+</pre>
 
             <figure>
                 <img src="image/016-004.png" alt="有间隙且无空格" />
@@ -111,12 +107,12 @@
 
             <p>解决方案，是把语义上的「单词」包含在一个「<code>&lt;span&gt;</code>」当中，并指定不可换行的样式：</p>
 
-            <pre><code class="html">&lt;span class=&quot;footnote&quot;&gt;&lt;abbr&gt;姒&lt;/abbr&gt;&lt;sup&gt;①&lt;/sup&gt;&lt;/span&gt;</code></pre>
+            <pre class="code">&lt;span class=&quot;footnote&quot;&gt;&lt;abbr&gt;姒&lt;/abbr&gt;&lt;sup&gt;①&lt;/sup&gt;&lt;/span&gt;</pre>
 
-            <pre><code class="css">span.footnote {
+            <pre class="code">span.footnote {
     white-space: nowrap;
 }
-</code></pre>
+</pre>
 
             <p>这就正常了。顺便还有个问题，竖排版的「下划线」到底应该在左边还有右边？昨晚新闻联播当中出现的画面，可是放在右边了哟：</p>
 
@@ -134,16 +130,16 @@
             <p>不过呢，若是横排，专名号的「下划线」就距离文字太近了，这种按照西洋文字「基线」设计的默认实现，不太符合「东洋」审美习惯。</p>
             <p>因此，还需要自力更生艰苦奋斗自己动手丰衣足食，而博览群站之后发现，通常使用的解决方案，是内外两层「<code>&lt;span&gt;</code>」，如维基百科页面。不过维基上把样式写在内部，这里特意提出来。</p>
 
-            <pre><code class="html">&lt;p&gt;……中考&lt;span class=&quot;outer&quot;&gt;&lt;span class=&quot;inner&quot;&gt;商&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;outer&quot;&gt;&lt;span class=&quot;inner&quot;&gt;姬&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;outer&quot;&gt;&lt;span class=&quot;inner&quot;&gt;孔&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;outer&quot;&gt;&lt;span class=&quot;inner&quot;&gt;孟&lt;/span&gt;&lt;/span&gt;之大訓……&lt;/p&gt;</code></pre>
+            <pre class="code">&lt;p&gt;……中考&lt;span class=&quot;outer&quot;&gt;&lt;span class=&quot;inner&quot;&gt;商&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;outer&quot;&gt;&lt;span class=&quot;inner&quot;&gt;姬&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;outer&quot;&gt;&lt;span class=&quot;inner&quot;&gt;孔&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;outer&quot;&gt;&lt;span class=&quot;inner&quot;&gt;孟&lt;/span&gt;&lt;/span&gt;之大訓……&lt;/p&gt;</pre>
 
-            <pre><code class="css">span.outer {
+            <pre class="code">span.outer {
     border-bottom: 1px solid blue;
     margin: 0 1px;
 }
 
 span.inner {
     margin: 0 -1px;
-}</code></pre>
+}</pre>
 
             <p>这样横排时「下划线」的位置也正确了：</p>
 
@@ -155,12 +151,12 @@ span.inner {
             <p>但是要注意，这种方式若是转为竖排，样式中就要调整边框和留白的位置，不如「<code>&lt;abbr&gt;</code>」那样可以不加修改由浏览器自动处理。</p>
             <p>竖排版的书名号是「下划波浪线」，内置样式就可以做到：</p>
 
-            <pre><code class="css">cite {
+            <pre class="code">cite {
     margin: 1px;
     padding: 1px;
     font-style: normal;
     text-decoration: blue wavy underline;
-}</code></pre>
+}</pre>
 
             <p>效果不贴了。</p>
         </section>
@@ -182,32 +178,32 @@ span.inner {
             <p>关于标题和脚注需要稍微解释。在HTML5当中，提供了「<code>&lt;header&gt;</code>」「<code>&lt;footer&gt;</code>」标签，专门用于天头地脚相关设定。</p>
             <p>比如对于「副标题」「子标题」之类排版需求提供的「<code>&lt;hgroup&gt;</code>」标签，已经被弃用了，现在推荐在「<code>&lt;header&gt;</code>」内部组合。</p>
 
-            <pre><code class="html">&lt;header&gt;
+            <pre class="code">&lt;header&gt;
     &lt;h1&gt;胡宏集&lt;/h1&gt;
     &lt;h2&gt;與秦會之書&lt;/h2&gt;
 &lt;/header&gt;
-</code></pre>
+</pre>
 
             <p>而脚注的样式，没有遵守作为「底版」的「中华书局の劳动成果」，有两方面原因。一个是括弧加汉字使用了至少三个字符，在「上标」位置上不利于同时针对横排竖排而设定对应和样式；还有一个就是这些注释很容易「窜入正文」，无论是肉眼观察还是扫描识别。</p>
             <p>所以，使用了明显区别的「圆圈数字」，虽然通常输入法就支持十个，但是Unicode标准当中一直排到99，作为一页的脚注甚至一篇文章的尾注，想必都足够了。</p>
             <p>为了将来可能的「自动编号」功能起见，脚注不建议用段落（<code>&lt;p&gt;</code>）也不建议用无序列表（<code>&lt;ul&gt;</code>），最好还是有序列表（<code>&lt;ol&gt;</code>）。</p>
 
-            <pre><code class="html">&lt;footer&gt;
+            <pre class="code">&lt;footer&gt;
     &lt;ol class=&quot;footer&quot;&gt;
         &lt;li&gt;①&amp;emsp;「姒」，原作「似」，據&lt;cite&gt;陸鈔本&lt;/cite&gt;改。&lt;/li&gt;
         &lt;li&gt;②&amp;emsp;「宇」，&lt;cite&gt;清鈔本&lt;/cite&gt;作「額」，&lt;cite&gt;陸鈔本&lt;/cite&gt;空缺。&lt;/li&gt;
         &lt;li&gt;③&amp;emsp;「市」，&lt;cite&gt;陸鈔本&lt;/cite&gt;作「郭」。&lt;/li&gt;
     &lt;/ol&gt;
 &lt;/footer&gt;
-</code></pre>
+</pre>
 
             <p>而有序列表的数字编号方式有很多种设定，分别针对不同文化和语种的习惯，但偏偏没有「圆圈数字」以及「㈠㈡㈢㈣㈤㈥㈦㈧㈨㈩」这种Unicode提供的「符号」，所以最好不要显示，一切交给「内容」。</p>
 
-            <pre><code class="css">ol.footer {
+            <pre class="code">ol.footer {
     list-style-type: none;
     line-height: 1.75em;
 }
-</code></pre>
+</pre>
         </section>
         <section>
             <h2 class="heading"><span>后记</span></h2>
@@ -248,7 +244,9 @@ span.inner {
     </main>
     <footer>
         <div class="signature">
-            <p><span class="sign-time">2018-06-28</span></p><hr class="sign-name" /><hr class="sign-room" />
+            <p><span class="sign-time">2018-06-28</span></p>
+            <hr class="sign-name" />
+            <hr class="sign-room" />
         </div>
     </footer>
 </body>

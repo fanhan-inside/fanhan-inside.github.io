@@ -5,9 +5,6 @@
     <meta lang="zh" charset="UTF-8">
     <title>三自绘图运动</title>
     <link rel="stylesheet" type="text/css" href="advancing.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/vs2015.min.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
 </head>
 
 <body>
@@ -89,7 +86,7 @@
 
             <p>对SVG的处理过程略，都是前两篇提到的内容。</p>
 
-            <pre><code class="xml">«ρ=cos(2θ).svg»
+            <pre class="code">«ρ=cos(2θ).svg»
 
 &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot;
     width=&quot;650&quot; height=&quot;650&quot; viewBox=&quot;0 0 650 650&quot;
@@ -106,7 +103,7 @@
     &lt;path d=&quot;M …… Z&quot;
         fill=&quot;none&quot; stroke=&quot;blue&quot; stroke-width=&quot;30&quot;/&gt;
 &lt;/svg&gt;
-</code></pre>
+</pre>
 
             <p>代码中路径参数均已省略。但是要提醒，在「<code>&lt;path&gt;</code>」元素的「<code>d</code>」属性值的最后，要手动加上一个「<code>Z</code>」命令，确保路径闭合。毕竟在线绘图的区间是<span class="math">(0, 2π)</span>，最终图片放大后会在「<span class="math"><var>θ</var> = 0</span>」处显示出一个小小的缝隙。</p>
 
@@ -120,7 +117,7 @@
                 <figcaption><span>希帕索斯永垂不朽</span></figcaption>
             </figure>
 
-            <pre><code class="xml">«HippasusCross.svg»
+            <pre class="code">«HippasusCross.svg»
 
 &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;
     width=&quot;640&quot; height=&quot;480&quot; viewBox=&quot;0 0 320 240&quot;&gt;
@@ -153,7 +150,7 @@
 ……
 
 &lt;/svg&gt;
-</code></pre>
+</pre>
 
             <p>上述代码中同样省略了所有实际内容元素，只剩下样式以及渐变效果的部分。全贴出来太长了，又没有地方可供上传附件并提供下载链接。实际工作情况「边改边预览」的截图（展开了内容元素）是这样的：</p>
 
@@ -176,21 +173,21 @@
 
             <p>而对于标识的颜色，使用了线性渐变效果。不解释，代码如下：</p>
 
-            <pre><code class="xml">&lt;linearGradient id=&quot;LogoGradient&quot; x1=&quot;1&quot; x2=&quot;0&quot; y1=&quot;1&quot; y2=&quot;0&quot;&gt;
+            <pre class="code">&lt;linearGradient id=&quot;LogoGradient&quot; x1=&quot;1&quot; x2=&quot;0&quot; y1=&quot;1&quot; y2=&quot;0&quot;&gt;
     &lt;stop offset=&quot;0%&quot; stop-color=&quot;cyan&quot;/&gt;
     &lt;stop offset=&quot;25%&quot; stop-color=&quot;blue&quot;/&gt;
     &lt;stop offset=&quot;50%&quot; stop-color=&quot;aqua&quot;/&gt;
     &lt;stop offset=&quot;75%&quot; stop-color=&quot;blue&quot;/&gt;
     &lt;stop offset=&quot;100%&quot; stop-color=&quot;cyan&quot;/&gt;
 &lt;/linearGradient&gt;
-</code></pre>
+</pre>
 
             <p>其它内容之前都解说过了，这里略。接下来是画蛇添足或狗尾续貂，追加动态效果。</p>
             <p>首先在头像上使用旋转，运用前一篇提到的「<code>&lt;animateTransform&gt;</code>」元素，略。</p>
             <p>其次在标题上使用颜色渐变动画效果，但是由于「<code>&lt;animateColor&gt;</code>」元素已经被废弃，所以直接使用更通用的「<code>&lt;animate&gt;</code>」元素。</p>
             <p>注意动画是追加在线性渐变渲染方式之上，而不是内容元素之上：</p>
 
-            <pre><code class="xml">&lt;linearGradient id=&quot;ArticleGradient&quot;&gt;
+            <pre class="code">&lt;linearGradient id=&quot;ArticleGradient&quot;&gt;
     &lt;stop offset=&quot;0%&quot; stop-color=&quot;black&quot;&gt;
     &lt;/stop&gt;
     &lt;stop offset=&quot;0%&quot; stop-color=&quot;gold&quot;&gt;
@@ -200,13 +197,13 @@
     &lt;stop offset=&quot;100%&quot; stop-color=&quot;black&quot;&gt;
     &lt;/stop&gt;
 &lt;/linearGradient&gt;
-</code></pre>
+</pre>
 
             <p>就是说，选择渐变当中的某个「定位点」，动态调整其（比例）位置，实现渲染的变化。而常见的操作，除了调整位置之外，还可以调整颜色。</p>
             <p>比方说以背景色循环变化实现「昼夜更替」的错觉，其实已经上网乱搜照葫芦画瓢做出来了，但是感觉太花哨看着乱，就删掉了也。</p>
             <p>再然后就是那个小头像绕着转的「轨道」了，使用「<code>&lt;animateMotion&gt;</code>」元素。</p>
 
-            <pre><code class="xml">&lt;symbol id=&quot;Logo&quot; viewBox=&quot;0 0 650 650&quot;&gt;
+            <pre class="code">&lt;symbol id=&quot;Logo&quot; viewBox=&quot;0 0 650 650&quot;&gt;
     &lt;path id=&quot;Orbit&quot; d=&quot;M …… Z&quot; /&gt;
     &lt;use xlink:href=&quot;#Icon&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;65&quot; height=&quot;65&quot;&gt;
         &lt;animateMotion dur=&quot;8s&quot; repeatCount=&quot;indefinite&quot; rotate=&quot;auto-reverse&quot;&gt;
@@ -214,7 +211,7 @@
         &lt;/animateMotion&gt;
     &lt;/use&gt;
 &lt;/symbol&gt;
-</code></pre>
+</pre>
 
             <p>这就是「重用」模块的好处，在「Logo」定义中使用了之前定义的「Icon」并指定自身为「（外部引用）路径」追加动态移动效果。</p>
             <p>差不多先这些吧。成果仍然无法直接转换，还是以屏幕录像方式生成的GIF「动态题图」：（注：在GitHub上传时已换成原SVG文件）</p>
@@ -244,7 +241,9 @@
     </main>
     <footer>
         <div class="signature">
-            <p><span class="sign-time">2018-06-11</span></p><hr class="sign-name" /><hr class="sign-room" />
+            <p><span class="sign-time">2018-06-11</span></p>
+            <hr class="sign-name" />
+            <hr class="sign-room" />
         </div>
     </footer>
 </body>

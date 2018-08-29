@@ -5,9 +5,6 @@
     <meta lang="zh" charset="UTF-8">
     <title>三自排版运动（三）：CSS与XSLT</title>
     <link rel="stylesheet" type="text/css" href="advancing.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/vs2015.min.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
 </head>
 
 <body>
@@ -23,7 +20,6 @@
         </ul>
     </nav>
     <header>
-        <!-- <img src="image/011-001.png" alt="题图" /> -->
         <h1>三自排版运动（三）：CSS与XSLT</h1>
     </header>
 
@@ -40,7 +36,7 @@
 
             <p>随便找个什么「图形图像处理」工具，使用「ColorPicker」之类道具，从「Microsoft™©® Word™©® 2010」版日记的编辑界面当中窃取配色。炮制的CSS文件如下：</p>
 
-            <pre><code class="css">@import &#39;han.css&#39;;
+            <pre class="code">@import &#39;han.css&#39;;
 h1 {
     padding: 0.5rem 1rem;
     background-color: #DBE5F1;
@@ -55,7 +51,7 @@ h3 { border-style: double none none double; }
 h4 { border-style: dashed none none dashed; }
 h5 { border-style: dotted none none dotted; }
 h6 { border-style: none none dotted none; }
-</code></pre>
+</pre>
 
             <p>另存为「<samp>fanhan-inside.css</samp>」，注意要用不带BOM的UTF-8编码或者干脆就是「系统默认」，反正没出现ASCII以外的字符。并且文件名必须是小写字母，中间只能用单独的横线相连，这涉及到Typora「识别」主题文件的方式。</p>
             <p>然后把这个文件放在Typora主题目录之内，不知道在哪里的可以通过Typora设置界面上的按钮打开。当然，提前要到Typora主页上下载那个专门为了汉字排版而设计的「<samp>han.css</samp>」文件，这也是我画蛇添足或狗尾续貂所用的原型。</p>
@@ -78,7 +74,7 @@ h6 { border-style: none none dotted none; }
             <p>所以，折衷方案就是XSLT，作为伪装成「数据」的「程序设计语言」，还是「图灵完备」的，可以以XML为输入输出实现任何「计算机」程序。并且，就我目前所面对的需求而言，运行环境只需要浏览器就够了。即便是不超过34岁的童年才俊，想要与时俱进还得单独下载各种第三方库，而不是对任何普通用户来说都「免费」且「唾手可得」的浏览器。</p>
             <p>先测试浏览器，就用最简单的例子，一个字符一个字符的从书上抄下来的：</p>
 
-            <pre><code class="xml">«hello.xml»
+            <pre class="code">«hello.xml»
 
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
 &lt;?xml-stylesheet type=&quot;text/xsl&quot; href=&quot;hello.xsl&quot;?&gt;
@@ -102,7 +98,7 @@ h6 { border-style: none none dotted none; }
         &lt;/html&gt;
     &lt;/xsl:template&gt;
 &lt;/xsl:stylesheet&gt;
-</code></pre>
+</pre>
 
             <p>保存好，双击，启动IE，显示正常；拖进FireFox，也显示正常：</p>
 
@@ -130,7 +126,7 @@ h6 { border-style: none none dotted none; }
             <p>为了保持兼容性和照顾多方面用户需求，境外赛博朋克英特纳雄耐尔主义者做了很多工作，最起码MathJax的速度不如KaTeX的主要原因，就是支持了多种输入方式，包括「TeX」「MathML」「AsciiMath」。由于在我的当前目标中MathML是输出，那么只需要试验「TeX」和「AsciiMath」即可。</p>
             <p>先使用「<samp>LaTeXMathML.js</samp>」，页面文件如下：</p>
 
-            <pre><code class="html">&lt;!DOCTYPE html&gt;
+            <pre class="code">&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
     &lt;script src=&quot;LaTeXMathML.js&quot;&gt;&lt;/script&gt;
@@ -165,7 +161,7 @@ h6 { border-style: none none dotted none; }
     &lt;p&gt;由于使用MathML，Unicode字符相关处理看来不用操心了也。&lt;/p&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-</code></pre>
+</pre>
 
             <p>同样，Chrome显示不出来，而IE需要启动ActiveX插件「MPlayer」，所以，工作环境以FireFox为准。测试效果如下：</p>
 
@@ -180,7 +176,7 @@ h6 { border-style: none none dotted none; }
             <p>而AsciiMath的语法和LaTeX不一样，细节请参考其主页「<a target="_blank" href="http://asciimath.org">http://asciimath.org</a>」，支持的功能也不一样。比方说上面「范数」中间占位符用的不是「圆点」（<code>\cdot</code>）而是「子弹」（<code>\bullet</code>），在AsciiMath中就不支持；而设定具体颜色反而可以获得支持。</p>
             <p>测试文件内容如下：</p>
 
-            <pre><code class="html">&lt;!DOCTYPE html&gt;
+            <pre class="code">&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
     &lt;script src=&quot;ASCIIMathML.js&quot;&gt;&lt;/script&gt;
@@ -203,7 +199,7 @@ h6 { border-style: none none dotted none; }
     &lt;p&gt;由于使用MathML，Unicode字符相关处理看来不用操心了也。&lt;/p&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-</code></pre>
+</pre>
 
             <p>显示效果如下：</p>
 
@@ -230,7 +226,9 @@ h6 { border-style: none none dotted none; }
     </main>
     <footer>
         <div class="signature">
-            <p><span class="sign-time">2018-06-20</span></p><hr class="sign-name" /><hr class="sign-room" />
+            <p><span class="sign-time">2018-06-20</span></p>
+            <hr class="sign-name" />
+            <hr class="sign-room" />
         </div>
     </footer>
 </body>

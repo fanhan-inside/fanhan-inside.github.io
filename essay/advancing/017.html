@@ -5,9 +5,6 @@
     <meta lang="zh" charset="UTF-8">
     <title>三自排版运动（六）：与时俱进西洋风</title>
     <link rel="stylesheet" type="text/css" href="advancing.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/vs2015.min.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
 </head>
 
 <body>
@@ -23,7 +20,6 @@
         </ul>
     </nav>
     <header>
-        <!-- <img src="image/017-000.png" alt="题图" /> -->
         <h1>三自排版运动（六）：与时俱进西洋风</h1>
     </header>
     <main>
@@ -100,7 +96,7 @@
 
             <p>其中分栏内容，使用「CSS3」当中的新特性「Grid」布局，两栏就够：</p>
 
-            <pre><code class="css">div.paragraph {
+            <pre class="code">div.paragraph {
     display: grid;
     width: 100%;
     grid-template-columns: 1fr 1fr;
@@ -119,12 +115,12 @@ div.translation {
     grid-column: 2;
     border-left: 1px dotted black;
 }
-</code></pre>
+</pre>
 
             <p>解释一下，没用HTML5提供的「<code>&lt;section&gt;</code>」标签，是因为没有语义特征，通常每个「section」都是包含标题（h1～h6）的。而左右两栏的右左边框，会形成中间的「分割线」效果，这都是常见的障眼法伎俩。</p>
             <p>而「公式」块当中包括居中的「数学」内容和靠右的「编号」，需要浮动布局：</p>
 
-            <pre><code class="css">div.fomula {
+            <pre class="code">div.fomula {
     margin: 1px 0;
     padding: 0.5rem 0;
     color: blue;
@@ -139,7 +135,7 @@ div.math {
     margin: 0 10%;
     text-align: center;
 }
-</code></pre>
+</pre>
 
             <p>别的就没啥好说的了，都是业界常识，或之前三自运动当中说过的内容。</p>
         </section>
@@ -170,9 +166,9 @@ div.math {
             <p>首先，原文标题使用「小型大写字母」风格，比全大写的样式看上去柔和一些，但又不失严肃。</p>
             <p>但是这种特性需要「字体」支持，连「小型大写」都有两种，小号和超小号。</p>
 
-            <pre><code class="css">font-variant-caps: small-caps;
+            <pre class="code">font-variant-caps: small-caps;
 font-variant-caps: petite-caps;
-</code></pre>
+</pre>
 
             <p>在目前浏览器使用的默认字体当中没发现区别，我没改「<code>font-family</code>」就是为了测试在默认情况下适合所有普通用户的表现形式，更何况各种便携电纸书当中字体并不充沛。</p>
             <p>其次，公式「编号」使用了不常见的括弧形式「⦅⦆」，这是为了与正文当中那些「<span class="math">exp(1)</span>」之类字眼中出现的同样形式的内容相区别。虽然说读者根据上下文情况不难分辨，但是能尽量避免无效劳动总没有坏处。</p>
@@ -181,7 +177,7 @@ font-variant-caps: petite-caps;
             <p>再三提醒不要把咱这种「言必信行必果硁硁然」的小人，与那帮「人缘好情商高」「识大体顾大局懂政治讲规矩守纪律」的党国栋梁与时俱进童年才俊，相提并论。它们指使充沛的活跃色目帐号到处造谣污蔑栽赃陷害「缩卵怂货窝囊废精神崩溃」恰恰体现了其恼羞成怒气急败坏并且惊慌失措的窘境。</p>
             <p>解决方案当然有，只不过「当前」做不到而已。看代码：</p>
 
-            <pre><code class="css">ol.theorem {
+            <pre class="code">ol.theorem {
     list-style: lower-latin;
     line-height: 1.75rem;
 }
@@ -193,7 +189,7 @@ ol li::marker::after{
     content: &quot;⦆&quot;;
 }
 */
-</code></pre>
+</pre>
 
             <p>其中注释掉的部分，使用了「<code>::marker</code>」伪元素，再结合前面讲过的「<code>::before</code>」「<code>::after</code>」伪元素（旧版CSS中是单冒号的「伪类」），就可以实现。</p>
             <p>只不过，当前情况下「<code>::marker</code>」还没有被实现，可以参考官方声明：«<a target="_blank" href="https://drafts.csswg.org/css-lists-3/#marker-pseudo">This spec is not yet ready for implementation. It exists in this repository to record the ideas and promote discussion.
@@ -223,7 +219,9 @@ ol li::marker::after{
     </main>
     <footer>
         <div class="signature">
-            <p><span class="sign-time">2018-06-30</span></p><hr class="sign-name" /><hr class="sign-room" />
+            <p><span class="sign-time">2018-06-30</span></p>
+            <hr class="sign-name" />
+            <hr class="sign-room" />
         </div>
     </footer>
 </body>

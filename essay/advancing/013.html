@@ -5,9 +5,6 @@
     <meta lang="zh" charset="UTF-8">
     <title>三自运动小结</title>
     <link rel="stylesheet" type="text/css" href="advancing.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/vs2015.min.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
 </head>
 
 <body>
@@ -23,7 +20,6 @@
         </ul>
     </nav>
     <header>
-        <!-- <img src="image/013-001.png" alt="题图" /> -->
         <h1>三自运动小结：休息，休息一会儿</h1>
     </header>
     <main>
@@ -59,9 +55,9 @@
             <p>也就是说，具体用什么符号可以再商量，甚至还可以根据个人背景和工作环境不同而各不相同，对于仅仅进行文本替换实现的开源的脚本来说，只要提供相应功能，就能「自定义」到用户顺手的程度。</p>
             <p>实际上在运用过程中，需要设定样式的「基本」功能也很常见，比如在「markdown-it」广泛应用场景当中最常见的「<code>&lt;code&gt;</code>」和比较常见的「<code>&lt;kbd&gt;</code>」标签。前者从原教旨主义Markdown开始获得广泛支持，各种扩展的「语法着色」其实针对的是「<code>&lt;pre&gt;</code>」标签的代码块。后者则没有被Markdown支持，各种扩展都一样。</p>
 
-            <pre><code class="html">&lt;p&gt;代码：「&lt;code&gt;code span&lt;/code&gt;」&lt;/p&gt;
+            <pre class="code">&lt;p&gt;代码：「&lt;code&gt;code span&lt;/code&gt;」&lt;/p&gt;
 &lt;p&gt;键盘：&lt;kbd&gt;⊞ Win&lt;/kbd&gt;&lt;kbd&gt;⌘ Cmd&lt;/kbd&gt;&lt;kbd&gt;⌥ Option&lt;/kbd&gt;&lt;kbd&gt;⇧ Shift&lt;/kbd&gt;&lt;/p&gt;
-</code></pre>
+</pre>
 
             <p>上面的内容，在设定样式之后，显示效果是这样的：</p>
 
@@ -121,7 +117,9 @@
     </main>
     <footer>
         <div class="signature">
-            <p><span class="sign-time">2018-06-24</span></p><hr class="sign-name" /><hr class="sign-room" />
+            <p><span class="sign-time">2018-06-24</span></p>
+            <hr class="sign-name" />
+            <hr class="sign-room" />
         </div>
     </footer>
 </body>
