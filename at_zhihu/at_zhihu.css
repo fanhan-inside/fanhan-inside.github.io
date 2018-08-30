@@ -3,12 +3,20 @@ html {
     background-image: url(IMG/at_zhihu_background.svg);
 }
 
-header.at_zhihu::before, header.at_zhihu::after {
-    content: url(IMG/header_border.svg);
+header.at_zhihu::before {
+    content: url(IMG/header_before.svg);
 }
 
-header.question::before, header.question::after {
-    content: url(IMG/header_border_question.svg);
+header.at_zhihu::after {
+    content: url(IMG/header_after.svg);
+}
+
+header.question::before {
+    content: url(IMG/header_question_before.svg);
+}
+
+header.question::after {
+    content: url(IMG/header_question_after.svg);
 }
 
 h1 {

@@ -1,7 +1,3 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 60 60">
-    <path fill="midnightblue" fill-rule="evenodd"
-    d="M 0 24 l 60 6 l -60 6 z
-M 24 0 l 6 60 l 6 -60 z M 60 24 l -60 6 l 60 6 z M 24 60 l 6 -60 l 6 60 z
-M 0 30 l 18 -12 l 12 -18 l 12 18 l 18 12l -18 12 l -12 18 l -12 -18 z
-M 18 18 h 24 v 24 h -24 z"/>
+    <path fill="midnightblue" fill-rule="evenodd" d="M 0 0 l 60 30 l -30 30 z M 60 0 l -60 30 l 30 30 z M 0 60 l 30 -60 l 30 30 z M 60 60 l -60 -30 l 30 -30 z"/>
 </svg>
