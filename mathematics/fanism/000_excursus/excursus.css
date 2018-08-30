@@ -4,10 +4,6 @@ html {
     background-color: var(--html-background-color);
 }
 
-body {
-    filter: opacity(97%);
-}
-
 h1 {
     height: 64px;
 }
