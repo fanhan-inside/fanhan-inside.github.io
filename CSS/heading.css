@@ -15,8 +15,7 @@ h1>img {
     text-align: center;
     vertical-align: middle;
     box-sizing: border-box;
-    min-width: 10rem;
-    padding: 0.5rem;
+    padding: 0.5rem 1rem;
     border: none;
 }
 
@@ -26,21 +25,9 @@ h2 {
 
 h2.heading {
     margin: 2rem 0;
-}
-
-h2.heading>span {
-    padding: 16px 20px;
-    min-width: 100px;
-    min-height: 70px;
-    background: url(h2_corner_tl.svg) top left no-repeat, url(h2_corner_br.svg) bottom right no-repeat, url(h2_corner_bl.svg) bottom left no-repeat, url(h2_corner_tr.svg) top right no-repeat;
-}
-
-h2.heading>span.two-characters {
-    width: 100px;
-    height: 70px;
-    background-image: url(h2_background.svg);
-    background-size: contain;
-    border: none;
+    padding: 0.5rem 1rem;
+    border-top: 3px double royalblue;
+    border-left: 3px double royalblue;
 }
 
 h2.girdle {
@@ -56,7 +43,8 @@ h3 {
 }
 
 h3.heading>span {
-    border: 3px double gray;
+    border-top: 2px solid gray;
+    border-left: 2px solid gray;
 }
 
 h4 {
@@ -64,8 +52,8 @@ h4 {
 }
 
 h4.heading>span {
-    border-bottom: 2px solid gray;
-    border-right: 2px solid gray;
+    border-top: 2px dashed gray;
+    border-left: 2px dashed gray;
 }
 
 h5, h6 {
