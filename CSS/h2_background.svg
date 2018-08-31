@@ -1,9 +1,48 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="100" height="70" viewBox="0 0 1000 700">
+<svg xmlns="http://www.w3.org/2000/svg" id="h2-background" preserveAspectRatio="none" viewBox="0 0 1000 700">
+    <script type="text/javascript">
+        <![CDATA[
+    var svg = document.getElementById('h2-background');
+    console.log("excuted.");
+    function resizeSVG() {
+        var size = svg.getBoundingClientRect();
+        var width = size.width * 10;
+        var height = size.height * 10;
+        svg.setAttribute('viewBox', `0 0 ${width} ${height}`);
+        console.log(svg.width, svg.height, svg.viewBox);
+        var t = document.getElementById("t");
+        var b = document.getElementById("b");
+        var l = document.getElementById("l");
+        var r = document.getElementById("r");
+        var tl = document.getElementById("tl");
+        var tr = document.getElementById("tr");
+        var bl = document.getElementById("bl");
+        var br = document.getElementById("br");
+        tr.setAttribute('transform', `translate(${width - 1000 + 520}, 0)`);
+        bl.setAttribute('transform', `translate(0, ${height - 700 + 380})`);
+        br.setAttribute('transform', `translate(${width - 1000 + 520}, ${height - 700 + 380})`);
+        t.setAttribute('width', width - 1000);
+        b.setAttribute('width', width - 1000);
+        l.setAttribute('height', height - 700);
+        r.setAttribute('height', height - 700);
+        b.setAttribute('y', height -20);
+        r.setAttribute('x', width - 20);
+    };
+
+    resizeSVG();
+
+    window.addEventListener('load', function(event) {
+        resizeSVG();
+    }, false);
+    ]]>
+    </script>
     <g fill="blue" fill-rule="evenodd">
-        <path d="M 0 320 v -160 h 120 v -140 h -100 v 100 h 140 v -120 h 320 v 20 h -300 v 120 h -180 v -140 h 140 v 180 h -120 v 140 z
-        M 40 40 h 60 v 60 h -60 v -60 m 20 20 v 20 h 20 v -20 z"/>
-        <path d="M 40 220 h 60 v 60 h -60 v -60 m 20 20 v 20 h 20 v -20 z M 0 320 h 140 v -180 h -120 v -140 h -20 v 160 h 120 v140 h -100 v -100 h 140 v 120 h 320 v -20 h -300 v -120 h -200 z" transform="translate(0 380)"/>
-        <path d="M 380 40 h 60 v 60 h -60 v -60 m 20 20 v 20 h 20 v -20 z M 480 0 v 140 h -180 v -120 h -300 v -20 h 320 v 120 h 140 v -100 h -100 v 140 h 120 v 160 h -20 v -140 h -120 v -180 z" transform="translate(520 0)"/>
-        <path d="M 480 0 v 160 h -120 v 140 h 100 v -100 h -140 v 120 h -320 v -20 h 300 v -120 h 180 v 140 h -140 v -180 h 120 v -140 z M 380 220 h 60 v 60 h -60 v -60 m 20 20 v 20 h 20 v -20 z" transform="translate(520 380)"/>
+        <path id="tl" d="M 0 320 v -160 h 120 v -140 h -100 v 100 h 140 v -120 h 320 v 20 h -300 v 120 h -180 v -140 h 140 v 180 h -120 v 140 z M 40 40 h 60 v 60 h -60 v -60 m 20 20 v 20 h 20 v -20 z"/>
+        <path id="bl" d="M 40 220 h 60 v 60 h -60 v -60 m 20 20 v 20 h 20 v -20 z M 0 320 h 140 v -180 h -120 v -140 h -20 v 160 h 120 v140 h -100 v -100 h 140 v 120 h 320 v -20 h -300 v -120 h -200 z" transform="translate(0 380)"/>
+        <path id="tr" d="M 380 40 h 60 v 60 h -60 v -60 m 20 20 v 20 h 20 v -20 z M 480 0 v 140 h -180 v -120 h -300 v -20 h 320 v 120 h 140 v -100 h -100 v 140 h 120 v 160 h -20 v -140 h -120 v -180 z" transform="translate(520 0)"/>
+        <path id="br" d="M 480 0 v 160 h -120 v 140 h 100 v -100 h -140 v 120 h -320 v -20 h 300 v -120 h 180 v 140 h -140 v -180 h 120 v -140 z M 380 220 h 60 v 60 h -60 v -60 m 20 20 v 20 h 20 v -20 z" transform="translate(520 380)"/>
+        <rect id="t" width="20" height="20" x="490" y="0" />
+        <rect id="b" width="20" height="20" x="490" y="680" />
+        <rect id="l" width="20" height="20" x="0" y="340" />
+        <rect id="r" width="20" height="20" x="980" y="340" />
     </g>
 </svg>
