@@ -13,6 +13,7 @@
 @import 'CSS/table.css';
 @import 'CSS/list.css';
 @import 'CSS/nav.css';
+@import 'CSS/hr.css';
 @import 'CSS/signature.css';
 html {
     background-color: var(--html-background-color);
@@ -43,14 +44,4 @@ header, footer {
     box-sizing: content-box;
     margin: 0 auto;
     padding: 1rem;
-}
-
-hr.inside {
-    border: none;
-    height: 3px;
-    background-image: linear-gradient(left, transparent, dimgray, transparent);
-    background-image: -webkit-linear-gradient(left, transparent, dimgray, transparent);
-    background-image: -moz-linear-gradient(left, transparent, dimgray, transparent);
-    background-image: -ms-linear-gradient(left, transparent, dimgray, transparent);
-    background-image: -o-linear-gradient(left, transparent, dimgray, transparent);
 }
