@@ -37,7 +37,7 @@
             <p>5月29日凌晨四点，继续之前的计划，把在知乎与简书都不可见的文章于「作业部落」上传，完成了《〈谈笑风生＠知乎〉导读》，并在简书发表。</p>
             <p>然后「惊喜」的发现，换了新机之后GitHub能连上了，于是下了几个Typora主题。而其它若干网站还是不行，可见伟光正官方于「防火长城」中对「<span class="dot">政治敏感</span>」的定义，与钦定黑客远程入侵人民群众家用计算机种下木马进行实时拦截的规则，还是有些微妙的差别。这个差别正好可以在「导读」中对比知乎和简书的「执法力度」的列表中体现出来。</p>
             <p>顺便，选择Markdown格式码字的理由之一，就是能插入表格，于是罗列数据轻松许多，也用不着本地编纂之后截图上传，这是在线富文本编辑器做不到的，知乎和简书都一样。</p>
-            <p>对我来说，富文本编辑器唯一的使用场合，就是需要插入视频的时候。迄今为止在简书上传的三百七十一篇文章中，只有《<cite>〈设定集〉注释》（廿六）（三十）（卅六）（卅七）（卌九）</cite>这五篇使用富文本编辑器，其它篇目都用Markdown编辑器。</p>
+            <p>对我来说，富文本编辑器唯一的使用场合，就是需要插入视频的时候。迄今为止在简书上传的三百七十一篇文章中，只有《〈设定集〉注释》（廿六）（三十）（卅六）（卅七）（卌九）这五篇使用富文本编辑器，其它篇目都用Markdown编辑器。</p>
             <p>不过呢，虽然Markdown扩展极大充沛，本地码字轻松惬意，但是也得需要站方支持才行。比方说数学公式、流程图等高级功能，简书就不支持，于是只能用图片，顺便提供「作业部落」链接以示「真实效果」。</p>
             <p>并且，之前也提到了，自动生成的公式和流程图，以及一些网络来源的图片，由于透明背景的缘故，在暗色主题之下前景文字看不清。本地编辑有这个问题，而简书「夜间模式」情况下也有这个问题。</p>
             <p>在3月27日上传的《<a target="_blank" href="https://www.jianshu.com/p/75ee478e8eed">流程图测试：某「企业文化」卓越的公司「抓壮丁」示意图</a>》结尾提到了：</p>
@@ -101,7 +101,7 @@
                 <figcaption><span>用Typora输入内容</span></figcaption>
             </figure>
 
-            <p>这是Typora的源代码模式（通过「<code>Ctrl+/</code>」切换）：</p>
+            <p>这是Typora的源代码模式（通过「<kbd>Ctrl</kbd>+<kbd>/</kbd>」切换）：</p>
 
             <figure>
                 <img src="image/005-003.png" alt="Typora源代码模式" />
@@ -149,7 +149,7 @@
                 <figcaption><span>VSCode打开无样式网页文件</span></figcaption>
             </figure>
 
-            <p>用右键菜单命令或按「<code>Alt+Shift+F</code>」格式化代码：</p>
+            <p>用右键菜单命令或按「<kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>F</kbd>」格式化代码：</p>
 
             <figure>
                 <img src="image/005-009.png" alt="VSCode格式化代码" />
@@ -160,7 +160,7 @@
 
             <h4 class="heading"><span>将SVG内容提出另存</span></h4>
 
-            <p>将「<code>&lt;svg</code>」与「<code>&lt;/svg&gt;</code>」之间的内容复制，新建文件，粘贴过去，按「<code>Ctrl+K M</code>」键选择SVG语言模式：</p>
+            <p>将「<code>&lt;svg</code>」与「<code>&lt;/svg&gt;</code>」之间的内容复制，新建文件，粘贴过去，按「<kbd>Ctrl</kbd>+<kbd>K</kbd> <kbd>M</kbd>」键选择SVG语言模式：</p>
 
             <figure>
                 <img src="image/005-010.png" alt="新建SVG文件" />
@@ -177,7 +177,7 @@
             <h4 class="heading"><span>修改SVG文件使得预览正常</span></h4>
 
             <p>现在状态的SVG文件不完整，（在Windows下）双击使用IE打开，会只显示「✡☪☭」三个字符（不是四个），而用Chrome或Firefox打开，则提醒缺少样式于是显示作为xml格式的文件内容。这里不贴图。</p>
-            <p>首先保证显示正常，只需要在开头的「<code>&lt;svg</code>」后面加上一条属性「<code>xmlns=&quot;http://www.w3.org/2000/svg&quot;</code>」即可，然后按「<code>Alt+Shift+S O</code>」在侧边栏打开预览：</p>
+            <p>首先保证显示正常，只需要在开头的「<code>&lt;svg</code>」后面加上一条属性「<code>xmlns=&quot;http://www.w3.org/2000/svg&quot;</code>」即可，然后按「<kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>S</kbd> <kbd>O</kbd>」在侧边栏打开预览：</p>
 
             <figure>
                 <img src="image/005-012.png" alt="预览SVG文件" />
@@ -186,7 +186,7 @@
 
             <p>稍有经验的用户都能注意到这种显示效果意味着「背景色」是透明的，这就是暗色背景下字迹模糊不清的原因。</p>
             <p>为什么在Typora乃至附加了样式的网页当中随主题切换颜色，那是因为SVG中频繁出现「<code>currentColor</code>」属性值，表示使用环境当前设置中的颜色。</p>
-            <p>注意，这种方式只能用于「内置」（inline/embedded）的SVG，而「外链」（在「<code>img</code>」标签当中引用）的SVG文件就不行。</p>
+            <p>注意，这种方式只能用于「内置」（inline/embedded）的SVG，而「外链」（在「<code>&lt;img&gt;</code>」标签当中引用）的SVG文件就不行。</p>
 
             <h4 class="heading"><span>修改SVG文件确保预览效果</span></h4>
 
@@ -206,14 +206,14 @@
                 <figcaption><span>放大SVG尺寸</span></figcaption>
             </figure>
 
-            <p>接下来，发现<strong>简书不支持上传SVG格式图片</strong>，于是可以使用快捷键「<code>Alt+Shift+S V</code>」打开导出PNG面板：</p>
+            <p>接下来，发现<strong>简书不支持上传SVG格式图片</strong>，于是可以使用快捷键「<kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>S</kbd> <kbd>V</kbd>」打开导出PNG面板：</p>
 
             <figure>
                 <img src="image/005-015.png" alt="导出PNG格式" />
                 <figcaption><span>导出PNG格式</span></figcaption>
             </figure>
 
-            <p>点击「<code>Export PNG</code>」按钮，文件保存成功，就在SVG文件同一个目录之下。</p>
+            <p>点击「<samp class="gui">Export PNG</samp>」按钮，文件保存成功，就在SVG文件同一个目录之下。</p>
 
             <figure>
                 <img src="image/005-016.png" alt="保存PNG文件成功" />
@@ -310,13 +310,11 @@
             <p>而满嘴「你听都没听过的新鲜名词」的与时俱进的童年才俊，过时的速度要比我等老家伙快得多。若要引经据典解释，那就是包括但不限于Java的「垃圾分类收集机制」的算法：越年轻的对象，其生命周期就越短。不服来辩！</p>
         </section>
     </main>
-    <footer>
-        <div class="signature">
-            <p><span class="sign-time">2018-05-31</span></p>
-            <hr class="sign-name" />
-            <hr class="sign-room" />
-        </div>
-    </footer>
+    <div class="signature">
+        <p><span class="sign-time">2018-05-31</span></p>
+        <hr class="sign-name" />
+        <hr class="sign-room" />
+    </div>
 </body>
 
 </html>

@@ -5,6 +5,10 @@ samp {
     padding: 1px;
 }
 
+samp.gui {
+    color: darkred;
+}
+
 kbd {
     background-color: whitesmoke;
     color: black;
