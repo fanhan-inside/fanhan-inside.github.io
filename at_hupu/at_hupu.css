@@ -1,0 +1,35 @@
+@import url(../main.css);
+html {
+    background-color: dimgray;
+}
+
+header.at_hupu img.thumbnail{
+    display: block;
+    width: 200px;
+    height: 200px;
+    float: right;
+}
+
+header.at_hupu h1 {
+    background: none;
+}
+
+h2.reply-at-hupu {
+    font-size: 1.5rem;
+    color: black;
+}
+
+section.reply-at-hupu::before {
+    content: url(../IMG/icon_blue.svg);
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 1rem;
+}
+
+section.reply-at-hupu::after {
+    content: "故人心似中秋月，肯为狂夫照白头。";
+    font-size: 1rem;
+    color: dimgray;
+    margin-left: 1rem;
+    border-top: 1px solid gray;
+}
