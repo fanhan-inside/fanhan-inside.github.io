@@ -19,7 +19,7 @@ article header span.heading {
     text-align: left;
 }
 
-article.bulletin, article.comment, article.message {
+article.bulletin, article.reply, article.comment, article.message {
     background-color: white;
     box-sizing: border-box;
     width: 90%;
@@ -37,16 +37,21 @@ article.comment {
     border: 1px solid gray;
 }
 
-article.bulletin p, article.comment p, article.message p {
+article.reply {
+    box-shadow: none;
+    border: 1px solid gray;
+}
+
+article.bulletin p, article.reply p, article.comment p, article.message p {
     text-indent: 0;
     line-height: 1.5rem;
 }
 
-article.bulletin header, article.comment header {
+article.bulletin header, article.reply header, article.comment header {
     border-bottom: 1px solid lightgray;
 }
 
-article.bulletin header time, article.comment header time, article.message header time {
+article.bulletin header time, article.reply header time, article.comment header time, article.message header time {
     float: right;
 }
 
