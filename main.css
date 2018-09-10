@@ -15,6 +15,7 @@
 @import 'CSS/nav.css';
 @import 'CSS/hr.css';
 @import 'CSS/signature.css';
+@import 'CSS/av.css';
 html {
     background-color: var(--html-background-color);
 }
