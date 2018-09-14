@@ -42,3 +42,27 @@ a:hover {
     background-color: steelblue;
     color: yellow;
 }
+
+figure a:link {
+    background-color: initial;
+    color: initial;
+}
+
+figure a:visited {
+    background-color: initial;
+    color: initial;
+}
+
+figure a:hover {
+    background-color: initial;
+    color: initial;
+}
+
+figure a:active {
+    background-color: initial;
+    color: initial;
+}
+
+figure a::before, figure a[href^="http://"]::before, figure a[href^="https://"]::before {
+    content: none;
+}

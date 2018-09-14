@@ -28,27 +28,3 @@ img {
     max-width: 100%;
     margin: 0 auto;
 }
-
-figure a::before {
-    content: none;
-}
-
-figure a:link {
-    background-color: initial;
-    color: initial;
-}
-
-figure a:visited {
-    background-color: initial;
-    color: initial;
-}
-
-figure a:hover {
-    background-color: initial;
-    color: initial;
-}
-
-figure a:active {
-    background-color: initial;
-    color: initial;
-}
