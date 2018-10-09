@@ -58,7 +58,7 @@ span.evil {
     padding: 0.25rem;
     text-indent: none;
     font-weight: bold;
-    background: linear-gradient(lime, dimgray);
+    background: linear-gradient(lime, gray);
     border-radius: 0.25rem;
     color: purple;
 }
