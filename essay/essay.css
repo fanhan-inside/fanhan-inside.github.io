@@ -1,7 +1,6 @@
 @import url(../main.css);
-
 html {
-    background-image: url(IMG/essay_background.svg);
+    background: url(IMG/essay_toc_background_1.svg) top left repeat-y, url(IMG/essay_toc_background_2.svg) top right repeat-y;
     background-color: var(--html-background-color);
 }
 
