@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 720 80">
+<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none slice" viewBox="0 0 720 80">
     <path fill="white" stroke="steelblue" stroke-width="2" d="M 1 11 h 10 v -10 h 698 v 10 h 10 v 58 h -10 v 10 h -698 v -10 h -10 z
 M 5 15 v 50 h 10 v 10 h 690 v -10 h 10 v -50 h -10 v -10 h -690 v 10 z"/>
 </svg>
