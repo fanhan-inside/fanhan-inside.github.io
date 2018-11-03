@@ -56,7 +56,7 @@
         <section>
             <h2 class="heading">过程</h2>
 
-            <p>当代主流浏览器所支持的HTML/CSS特性之功能已经足够强大，各种设置极大充沛，通常仅需要一两行代码就能实现天翻地覆慨而慷的效果。比方说「竖排」的效果，只需要一行样式，声明整个页面都是从上至下从右至左书写：</p>
+            <p>当代主流浏览器所支持的<samp>HTML/CSS</samp>特性之功能已经足够强大，各种设置极大充沛，通常仅需要一两行代码就能实现天翻地覆慨而慷的效果。比方说「竖排」的效果，只需要一行样式，声明整个页面都是从上至下从右至左书写：</p>
 
             <pre class="code">body { writing-mode: vertical-rl; }</pre>
 
@@ -68,14 +68,14 @@
                 <figcaption><span>下划线连成一片</span></figcaption>
             </figure>
 
-            <p>解决这个「显示」问题之前，先考虑另外一个相关的「编辑」源代码问题。在VS Code以及其它提供格式化代码功能的编辑器当中，仅凭HTML标签的对应关系进行缩进，没有考虑到「语义」内容，比方说一个「段落」（<code>&lt;p&gt;</code>）内部是否也需要展开为次一级结构呢？</p>
+            <p>解决这个「显示」问题之前，先考虑另外一个相关的「编辑」源代码问题。在<samp>VS Code</samp>以及其它提供格式化代码功能的编辑器当中，仅凭<samp>HTML</samp>标签的对应关系进行缩进，没有考虑到「语义」内容，比方说一个「段落」（<code>&lt;p&gt;</code>）内部是否也需要展开为次一级结构呢？</p>
 
             <figure>
                 <img src="image/016-002.png" alt="格式化代码" />
                 <figcaption><span>格式化代码</span></figcaption>
             </figure>
 
-            <p>依赖VS Code内置的「格式化代码」功能，页面源码是上面那样的，而对应的显示效果是下面这样：</p>
+            <p>依赖<samp>VS Code</samp>内置的「格式化代码」功能，页面源码是上面那样的，而对应的显示效果是下面这样：</p>
 
             <figure>
                 <img src="image/016-003.png" alt="出现的空格" />
@@ -163,7 +163,7 @@ span.inner {
         <section>
             <h2 class="heading">结果</h2>
 
-            <p>其它工作过程暂略，包括但不限于前几篇解释过的其它样式，以及使用CSS变量配色，总之按照明暗两套主题，最终成果是这样的：</p>
+            <p>其它工作过程暂略，包括但不限于前几篇解释过的其它样式，以及使用<samp>CSS</samp>变量配色，总之按照明暗两套主题，最终成果是这样的：</p>
 
             <figure>
                 <a target="_blank" href="image/016-008.png"><img src="image/016-008.png" alt="亮色主题" /></a>
@@ -175,7 +175,7 @@ span.inner {
                 <figcaption><span>暗色主题</span></figcaption>
             </figure>
 
-            <p>关于标题和脚注需要稍微解释。在HTML5当中，提供了「<code>&lt;header&gt;</code>」「<code>&lt;footer&gt;</code>」标签，专门用于天头地脚相关设定。</p>
+            <p>关于标题和脚注需要稍微解释。在<samp>HTML5</samp>当中，提供了「<code>&lt;header&gt;</code>」「<code>&lt;footer&gt;</code>」标签，专门用于天头地脚相关设定。</p>
             <p>比如对于「副标题」「子标题」之类排版需求提供的「<code>&lt;hgroup&gt;</code>」标签，已经被弃用了，现在推荐在「<code>&lt;header&gt;</code>」内部组合。</p>
 
             <pre class="code">&lt;header&gt;
@@ -185,7 +185,7 @@ span.inner {
 </pre>
 
             <p>而脚注的样式，没有遵守作为「底版」的「中华书局の劳动成果」，有两方面原因。一个是括弧加汉字使用了至少三个字符，在「上标」位置上不利于同时针对横排竖排而设定对应和样式；还有一个就是这些注释很容易「窜入正文」，无论是肉眼观察还是扫描识别。</p>
-            <p>所以，使用了明显区别的「圆圈数字」，虽然通常输入法就支持十个，但是Unicode标准当中一直排到99，作为一页的脚注甚至一篇文章的尾注，想必都足够了。</p>
+            <p>所以，使用了明显区别的「圆圈数字」，虽然通常输入法就支持十个，但是<samp>Unicode</samp>标准当中一直排到99，作为一页的脚注甚至一篇文章的尾注，想必都足够了。</p>
             <p>为了将来可能的「自动编号」功能起见，脚注不建议用段落（<code>&lt;p&gt;</code>）也不建议用无序列表（<code>&lt;ul&gt;</code>），最好还是有序列表（<code>&lt;ol&gt;</code>）。</p>
 
             <pre class="code">&lt;footer&gt;
@@ -197,7 +197,7 @@ span.inner {
 &lt;/footer&gt;
 </pre>
 
-            <p>而有序列表的数字编号方式有很多种设定，分别针对不同文化和语种的习惯，但偏偏没有「圆圈数字」以及「㈠㈡㈢㈣㈤㈥㈦㈧㈨㈩」这种Unicode提供的「符号」，所以最好不要显示，一切交给「内容」。</p>
+            <p>而有序列表的数字编号方式有很多种设定，分别针对不同文化和语种的习惯，但偏偏没有「圆圈数字」以及「㈠㈡㈢㈣㈤㈥㈦㈧㈨㈩」这种<samp>Unicode</samp>提供的「符号」，所以最好不要显示，一切交给「内容」。</p>
 
             <pre class="code">ol.footer {
     list-style-type: none;
@@ -208,8 +208,8 @@ span.inner {
         <section>
             <h2 class="heading">后记</h2>
 
-            <p>差不多就这些吧。看到正文里面那些「繁琐」的写法，比如内外两层嵌套<code>&lt;span&gt;</code>，看着眼晕不适合「编辑」，于是很自然的就有了用XSLT自动生成的冲动，尤其是脚注还涉及自动编号，更是可以在源码中尽量简化。</p>
-            <p>自我感觉页面做到这种程度就足够「正规」，接下来该「出版」了，也就是自制电子书。前面提到的Kindle格式（哪怕是最新的「.azw3」）的缺陷，在W3C官方站点上已经有了权威的说明：«<a target="_blank" href="https://www.w3.org/AudioVideo/ebook/">Comparison of e-book formats</a>»</p>
+            <p>差不多就这些吧。看到正文里面那些「繁琐」的写法，比如内外两层嵌套<code>&lt;span&gt;</code>，看着眼晕不适合「编辑」，于是很自然的就有了用<samp>XSLT</samp>自动生成的冲动，尤其是脚注还涉及自动编号，更是可以在源码中尽量简化。</p>
+            <p>自我感觉页面做到这种程度就足够「正规」，接下来该「出版」了，也就是自制电子书。前面提到的<samp>Kindle</samp>格式（哪怕是最新的「<samp>.azw3</samp>」）的缺陷，在<samp>W3C</samp>官方站点上已经有了权威的说明：«<a target="_blank" href="https://www.w3.org/AudioVideo/ebook/">Comparison of e-book formats</a>»</p>
 
             <blockquote>
                 <p>3.4 Non supported W3C technologies (available in Epub)</p>
@@ -238,8 +238,8 @@ span.inner {
                 </ul>
             </blockquote>
 
-            <p>除此之外，KF8对SVG的支持，仅限「<code>&lt;img&gt;</code>」标签引用，而不能内嵌在XHTML内部，于是之前遇到的三自运动系列最开始处理的由于透明背景导致无法根据主题配色而自动切换的问题，同样还会遇到。</p>
-            <p>顺便，最近实验的结果都是普通的HTML，而ePub用的是XHTML，也就是XML序列化的HTML，要求更严格。这对我来说再好不过了，一直都惦记着能用XSLT呢，利用各种XML技术，能干的事情比纯HTML页面要多得多。</p>
+            <p>除此之外，<samp>KF8</samp>对<samp>SVG</samp>的支持，仅限「<code>&lt;img&gt;</code>」标签引用，而不能内嵌在<samp>XHTML</samp>内部，于是之前遇到的三自运动系列最开始处理的由于透明背景导致无法根据主题配色而自动切换的问题，同样还会遇到。</p>
+            <p>顺便，最近实验的结果都是普通的<samp>HTML</samp>，而<samp>ePub</samp>用的是<samp>XHTML</samp>，也就是<samp>XML</samp>序列化的<samp>HTML</samp>，要求更严格。这对我来说再好不过了，一直都惦记着能用<samp>XSLT</samp>呢，利用各种<samp>XML</samp>技术，能干的事情比纯<samp>HTML</samp>页面要多得多。</p>
         </section>
     </main>
     <div class="signature">
