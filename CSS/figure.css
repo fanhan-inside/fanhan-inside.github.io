@@ -9,7 +9,7 @@ figcaption {
     padding: 0.5rem 0 1rem 0;
 }
 
-figcaption span {
+figcaption>span {
     margin: auto;
     padding: 0.5rem 1rem;
     border-bottom: 1px solid dimgray;
