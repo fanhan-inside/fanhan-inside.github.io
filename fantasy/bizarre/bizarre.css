@@ -3,3 +3,12 @@ html {
     background: url(./image/bizarre_logo.svg) top left repeat-y, url(./image/bizarre_logo.svg) top right repeat-y;
     background-color: var(--html-background-color);
 }
+
+h1 {
+    height: 64px;
+}
+
+h1::after {
+    content: url(image/bizarre_heading.svg);
+    float: right;
+}
