@@ -1,0 +1,1305 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>分栏双语对照</title>
+    <style>
+        p {
+            white-space: normal;
+        }
+
+        p.start {
+            text-indent: 2rem;
+            line-height: 1.75rem;
+        }
+
+        span.math {
+            /* background-color: lightgray; */
+            color: blue;
+            border: none;
+            margin: 0 0.125rem;
+            padding: 0.125rem;
+            white-space: nowrap;
+            font-family: "Latin Modern Math";
+            font-style: normal;
+            font-size: 1rem;
+        }
+
+        div.paragraph {
+            /* background-color: wheat; */
+            /* margin: 1px 0; */
+            display: grid;
+            width: 100%;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 1px;
+            grid-auto-rows: minmax(1rem, auto);
+            clear: both;
+        }
+
+        div.paragraph>div {
+            padding: 0 0.5rem;
+        }
+
+        div.remark {
+            margin: 0.5rem 0;
+            padding: 0.5rem;
+            border: 1px dashed dimgray;
+            clear: both;
+        }
+
+        div.original {
+            /* background-color: lightgreen; */
+            grid-column: 1;
+            border-right: 1px dotted black;
+        }
+
+        div.translation {
+            /* background-color: lightblue; */
+            grid-column: 2;
+            border-left: 1px dotted black;
+        }
+
+        div.fomula {
+            margin: 1px 0;
+            padding: 0.5rem 0;
+            /* background-color: lightgoldenrodyellow; */
+            color: blue;
+            clear: both;
+        }
+
+        div.serial {
+            /* border: 1px solid black; */
+            width: 5%;
+            /* font: 1rem sans-serif; */
+            float: right;
+        }
+
+        div.math {
+            /* border: 1px solid black; */
+            width: 80%;
+            margin: 0 10%;
+            text-align: center;
+        }
+
+        h1.original,
+        h2.original,
+        h3.original {
+            font-variant-caps: small-caps;
+        }
+
+        h4.original {
+            font-variant-caps: petite-caps;
+        }
+
+        ol.theorem {
+            list-style: lower-latin;
+            line-height: 1.75rem;
+        }
+
+        /*
+        ol li::marker::before{
+            content: "⦅";
+        }
+        ol li::marker::after{
+            content: "⦆";
+        }
+        */
+    </style>
+</head>
+
+<body>
+    <div class="paragraph">
+        <div class="original">
+            <h1 class="original">Real and Complex Analysis</h1>
+            <span class="original">Third Edition</span><br />
+            <span class="original" style="margin-top: 1rem; font-size: 1.25rem; font-weight: bolder; text-align: right;">Walter Rudin</span>
+        </div>
+        <div class="translation">
+            <h1 class="translation">实分析与复分析</h1>
+            <span class="translation">（原书第三版）</span><br />
+            <span class="translation" style="margin-top: 1rem; font-size: 1.25rem; font-weight: bolder; text-align: right;">（美）沃特·卢丁&emsp;著</span>
+        </div>
+    </div>
+    <hr />
+    <div class="paragraph">
+        <div class="original">
+            <h2 class="original">Prologue</h2>
+            <h3 class="original">The Exponential Function</h3>
+        </div>
+        <div class="translation">
+            <h2 class="translation">引言</h2>
+            <h3 class="translation">指数函数</h3>
+        </div>
+    </div>
+    <div class="paragraph">
+        <div class="original">
+            <p class="start">This is the most important function in mathematics. It is defined, for every complex number
+                <span class="math">z</span>, by the formula</p>
+        </div>
+        <div class="translation">
+            <p class="start">在数学中这是一个最重要的函数。它是用公式来定义的，对每个复数<span class="math">z</span>，规定</p>
+        </div>
+    </div>
+    <div class="fomula">
+        <div class="serial">
+            <div>⦅1⦆</div>
+        </div>
+        <div class="math">
+            <math display="block">
+                <mrow>
+                    <mtext>exp</mtext>
+                    <mo stretchy="false">(</mo>
+                    <mi>z</mi>
+                    <mo stretchy="false">)</mo>
+                    <mo>=</mo>
+                    <munderover>
+                        <mo>∑</mo>
+                        <mrow>
+                            <mi>n</mi>
+                            <mo>=</mo>
+                            <mn>0</mn>
+                        </mrow>
+                        <mn>∞</mn>
+                    </munderover>
+                    <mfrac>
+                        <msup>
+                            <mi>z</mi>
+                            <mi>n</mi>
+                        </msup>
+                        <mrow>
+                            <mi>n</mi>
+                            <mo>!</mo>
+                        </mrow>
+                    </mfrac>
+                </mrow>
+            </math>
+        </div>
+    </div>
+    <div class="paragraph">
+        <div class="original">
+            <p>The series ⦅1⦆ converges absolutely, for every
+                <span class="math">z</span>
+                and converges uniformly on every bounded subset of thc complex plane. Thus
+                <span class="math">exp</span>
+                is a continuous function. The absolute convergence of ⦅1⦆ shows that the computation</p>
+        </div>
+        <div class="translation">
+            <p>级教⦅1⦆对每个<span class="math">z</span>绝对收敛，对复平面的每个有界子集一致收敛。因此，<span class="math">exp</span>是连续函数。⦅1⦆的绝对收敛指出了算式</p>
+        </div>
+    </div>
+    <div class="fomula">
+        <!-- <div class="serial">⟦void⟧</div> -->
+        <div class="math">
+            <math display="block" xmlns="http://www.w3.org/1998/Math/MathML">
+                <mrow>
+                    <munderover>
+                        <mo>∑</mo>
+                        <mrow>
+                            <mi>k</mi>
+                            <mo>=</mo>
+                            <mn>0</mn>
+                        </mrow>
+                        <mn>∞</mn>
+                    </munderover>
+                    <mfrac>
+                        <msup>
+                            <mi>a</mi>
+                            <mi>k</mi>
+                        </msup>
+                        <mrow>
+                            <mi>k</mi>
+                            <mo>!</mo>
+                        </mrow>
+                    </mfrac>
+                    <munderover>
+                        <mo>∑</mo>
+                        <mrow>
+                            <mi>m</mi>
+                            <mo>=</mo>
+                            <mn>0</mn>
+                        </mrow>
+                        <mn>∞</mn>
+                    </munderover>
+                    <mfrac>
+                        <msup>
+                            <mi>b</mi>
+                            <mi>m</mi>
+                        </msup>
+                        <mrow>
+                            <mi>m</mi>
+                            <mo>!</mo>
+                        </mrow>
+                    </mfrac>
+                    <mo>=</mo>
+                    <munderover>
+                        <mo>∑</mo>
+                        <mrow>
+                            <mi>n</mi>
+                            <mo>=</mo>
+                            <mn>0</mn>
+                        </mrow>
+                        <mn>∞</mn>
+                    </munderover>
+                    <mfrac>
+                        <mn>1</mn>
+                        <mrow>
+                            <mi>n</mi>
+                            <mo>!</mo>
+                        </mrow>
+                    </mfrac>
+                    <munderover>
+                        <mo>∑</mo>
+                        <mrow>
+                            <mi>k</mi>
+                            <mo>=</mo>
+                            <mn>0</mn>
+                        </mrow>
+                        <mi>n</mi>
+                    </munderover>
+                    <mfrac>
+                        <mrow>
+                            <mi>n</mi>
+                            <mo>!</mo>
+                        </mrow>
+                        <mrow>
+                            <mi>k</mi>
+                            <mo>!</mo>
+                            <mo stretchy="false">(</mo>
+                            <mi>n</mi>
+                            <mo>-</mo>
+                            <mi>k</mi>
+                            <mo stretchy="false">)</mo>
+                            <mo>!</mo>
+                        </mrow>
+                    </mfrac>
+                    <msup>
+                        <mi>a</mi>
+                        <mi>k</mi>
+                    </msup>
+                    <msup>
+                        <mi>b</mi>
+                        <mrow>
+                            <mi>n</mi>
+                            <mo>-</mo>
+                            <mi>k</mi>
+                        </mrow>
+                    </msup>
+                    <mo>=</mo>
+                    <munderover>
+                        <mo>∑</mo>
+                        <mrow>
+                            <mi>n</mi>
+                            <mo>=</mo>
+                            <mn>0</mn>
+                        </mrow>
+                        <mn>∞</mn>
+                    </munderover>
+                    <mfrac>
+                        <mrow>
+                            <mo stretchy="false">(</mo>
+                            <mi>a</mi>
+                            <mo>+</mo>
+                            <mi>b</mi>
+                            <msup>
+                                <mo stretchy="false">)</mo>
+                                <mi>n</mi>
+                            </msup>
+                        </mrow>
+                        <mrow>
+                            <mi>n</mi>
+                            <mo>!</mo>
+                        </mrow>
+                    </mfrac>
+                </mrow>
+            </math>
+        </div>
+    </div>
+    <div class="paragraph">
+        <div class="original">
+            <p>is correct. It gives the important addition formula</p>
+        </div>
+        <div class="translation">
+            <p>是正确的。它给出了重要的加法公式</p>
+        </div>
+    </div>
+    <div class="fomula">
+        <div class="serial">
+            <div>⦅2⦆</div>
+        </div>
+        <div class="math">
+            <math display="block">
+                <mrow>
+                    <mtext>exp</mtext>
+                    <mo stretchy="false">(</mo>
+                    <mi>a</mi>
+                    <mo stretchy="false">)</mo>
+                    <mtext>exp</mtext>
+                    <mo stretchy="false">(</mo>
+                    <mi>b</mi>
+                    <mo stretchy="false">)</mo>
+                    <mo>=</mo>
+                    <mtext>exp</mtext>
+                    <mo stretchy="false">(</mo>
+                    <mi>a</mi>
+                    <mo>+</mo>
+                    <mi>b</mi>
+                    <mo stretchy="false">)</mo>
+                </mrow>
+            </math>
+        </div>
+    </div>
+    <div class="paragraph">
+        <div class="original">
+            <p>valid for all complex numbers <span class="math">a</span> and <span class="math">b</span>.</p>
+        </div>
+        <div class="translation">
+            <p>此公式对所有复数<span class="math">a</span>和<span class="math">b</span>是正确的。</p>
+        </div>
+    </div>
+    <div class="paragraph">
+        <div class="original">
+            <p class="start">We define the number
+                <span class="math">e</span> to be
+                <span class="math">exp(1)</span>, and shall usually replace
+                <span class="math">exp(z)</span> by the customary shorter expression
+                <span class="math">e<sup>x</sup></span>. Note that
+                <span class="math">e<sup>0</sup> = exp(0) = 1</span>, by ⦅1⦆.</p>
+        </div>
+        <div class="translation">
+            <p class="start">我们规定数<span class="math">e</span>是<span class="math">exp(1)</span>。习惯上常用较短的表达式<span class="math">e<sup>x</sup></span>代替<span class="math">exp(z)</span>。注意，由⦅1⦆可得<span class="math">e<sup>0</sup> = exp(0) = 1</span>。
+            </p>
+        </div>
+    </div>
+    <div class="paragraph">
+        <div class="original">
+            <h4 class="original">Theorem</h4>
+            <ol class="theorem">
+                <li>For every complex <span class="math">z</span> we have <span class="math">e<sup>x</sup> ≠ 0</span>.</li>
+                <li><span class="math">exp</span> is its own derivative: <span class="math">exp&prime;(z) = exp(z)</span>.</li>
+                <li>The restriction of <span class="math">exp</span> to the real axis is a monotonically increasing positive function, and <span class="math">e<sup>x</sup>→∞</span> as <span class="math">x→∞</span>, <span class="math">e<sup>x</sup>→0</span> as <span class="math">x→-∞</span>.</li>
+                <li>There exists a positive number <span class="math">π</span> such that <span class="math">e<sup>πi/2</sup> = i</span> and such that <span class="math">e<sup>z</sup> = 1</span> if and only if <span class="math">z/(2πi)</span> is an integer.</li>
+                <li><span class="math">exp</span> is a periodic function, with period <span class="math">2πi</span>.</li>
+                <li>The mapping <span class="math">t→e<sup>it</sup></span> maps the real axis onto the unit circle.</li>
+                <li>If <span class="math">w</span> is a complex number and <span class="math">w ≠ 0</span>, then <span class="math">w = e<sup>z</sup></span> for some <span class="math">z</span>.</li>
+            </ol>
+        </div>
+        <div class="translation">
+            <h4 class="translation">定理</h4>
+            <ol class="theorem">
+                <li>对每一个复数<span class="math">z</span>，<span class="math">e<sup>x</sup> ≠ 0</span>。</li>
+                <li><span class="math">exp</span>的导数是它自己：<span class="math">exp&prime;(z) = exp(z)</span>。</li>
+                <li><span class="math">exp</span>限制在实轴上是单调增加的正函数，且当<span class="math">x→∞</span>时<span class="math">e<sup>x</sup>→∞</span>；当<span class="math">x→-∞</span>时<span class="math">e<sup>x</sup>→0</span>。</li>
+                <li>存在一个正数<span class="math">π</span>使得<span class="math">e<sup>πi/2</sup> = i</span>，并使得<span class="math">e<sup>z</sup> = 1</span>当且仅当<span class="math">z/(2πi)</span>是整数，</li>
+                <li><span class="math">exp</span>是周期函数，其周期是<span class="math">2πi</span>。</li>
+                <li>映射<span class="math">t→e<sup>it</sup></span>将实轴映到单位圆上。</li>
+                <li>若<span class="math">w</span>是复教且<span class="math">w ≠ 0</span>，则存在某个<span class="math">z</span>使<span class="math">w = e<sup>z</sup></span>。</li>
+            </ol>
+        </div>
+    </div>
+    <div class="paragraph">
+        <div class="original">
+            <h4 class="original">Proof</h4>
+        </div>
+        <div class="translation">
+            <h4 class="original">证明</h4>
+        </div>
+    </div>
+    <div class="paragraph">
+        <div class="original">
+            <p class="start">By ⦅2⦆, <span class="math">e<sup>z</sup> &sdot; e<sup>-z</sup> = e<sup>z-z</sup> = e<sup>0</sup> = 1</span>. This implies ⦅a⦆. Next,</p>
+        </div>
+        <div class="translation">
+            <p class="start">由⦅2⦆，<span class="math">e<sup>z</sup> &sdot; e<sup>-z</sup> = e<sup>z-z</sup> = e<sup>0</sup> = 1</span>。由此得到⦅a⦆。其次，</p>
+        </div>
+    </div>
+    <div class="fomula">
+        <!-- <div class="serial">⟦void⟧</div> -->
+        <div class="math">
+            <math display="block">
+                <mrow>
+                    <msup>
+                        <mtext>exp</mtext>
+                        <mo>′</mo>
+                    </msup>
+                    <mo stretchy="false">(</mo>
+                    <mi>z</mi>
+                    <mo stretchy="false">)</mo>
+                    <mo>=</mo>
+                    <munder>
+                        <mo lspace="0em" rspace="0em">lim</mo>
+                        <mrow>
+                            <mi>h</mi>
+                            <mo stretchy="false">→</mo>
+                            <mn>0</mn>
+                        </mrow>
+                    </munder>
+                    <mfrac>
+                        <mrow>
+                            <mtext>exp</mtext>
+                            <mo stretchy="false">(</mo>
+                            <mi>z</mi>
+                            <mo>+</mo>
+                            <mi>h</mi>
+                            <mo stretchy="false">)</mo>
+                            <mo>-</mo>
+                            <mtext>exp</mtext>
+                            <mo stretchy="false">(</mo>
+                            <mi>z</mi>
+                            <mo stretchy="false">)</mo>
+                        </mrow>
+                        <mi>h</mi>
+                    </mfrac>
+                    <mo>=</mo>
+                    <mtext>exp</mtext>
+                    <mo stretchy="false">(</mo>
+                    <mi>z</mi>
+                    <mo stretchy="false">)</mo>
+                    <munder>
+                        <mo lspace="0em" rspace="0em">lim</mo>
+                        <mrow>
+                            <mi>h</mi>
+                            <mo stretchy="false">→</mo>
+                            <mn>0</mn>
+                        </mrow>
+                    </munder>
+                    <mfrac>
+                        <mrow>
+                            <mtext>exp</mtext>
+                            <mo stretchy="false">(</mo>
+                            <mi>h</mi>
+                            <mo stretchy="false">)</mo>
+                            <mo>-</mo>
+                            <mn>1</mn>
+                        </mrow>
+                        <mi>h</mi>
+                    </mfrac>
+                    <mo>=</mo>
+                    <mtext>exp</mtext>
+                    <mo stretchy="false">(</mo>
+                    <mi>z</mi>
+                    <mo stretchy="false">)</mo>
+                </mrow>
+            </math>
+        </div>
+    </div>
+    <div class="paragraph">
+        <div class="original">
+            <p>The first of the above equalities is a matter of definition, the second follows from ⦅2⦆, and the third from ⦅1⦆, and ⦅b⦆ is proved.</p>
+        </div>
+        <div class="translation">
+            <p>在上述等式中．第一个是定义，第二个从⦅2⦆得到，而第三个从⦅1⦆得到，因此证明了⦅b⦆。</p>
+        </div>
+    </div>
+    <div class="paragraph">
+        <div class="original">
+            <p class="start">That <span class="math">exp</span> is monotonically increasing on the positive real axis, and that <span class="math">e<sup>x</sup>→∞</span> as <span class="math">x→∞</span>, is clear from ⦅1⦆. The other assertions of ⦅c⦆ are consequences of <span class="math">e<sup>x</sup> &sdot; e<sup>-x</sup> = 1</span>。</p>
+        </div>
+        <div class="translation">
+            <p class="start">由于⦅1⦆。显然<span class="math">exp</span>在正实轴上是单调增加的．而且当<span class="math">x→∞</span>时<span class="math">e<sup>x</sup>→∞</span>。⦅c⦆的另一个断言是<span class="math">e<sup>x</sup> &sdot; e<sup>-x</sup> = 1</span>的推论。</p>
+        </div>
+    </div>
+    <div class="paragraph">
+        <div class="original">
+            <p class="start">For any real number <span class="math">t</span>, ⦅1⦆ Shows that <span class="math">e<sup>-it</sup></span> is the complex conjugate Of <span class="math">e<sup>it</sup></span>。Thus</p>
+        </div>
+        <div class="translation">
+            <p class="start">对于任何实数<span class="math">t</span>，⦅1⦆表示<span class="math">e<sup>-it</sup></span>是<span class="math">e<sup>it</sup></span>的共轭复数。因此</p>
+        </div>
+    </div>
+    <div class="fomula">
+        <!-- <div class="serial">⟦void⟧</div> -->
+        <div class="math">
+            <math display="block">
+                <mrow>
+                    <mo stretchy="false">|</mo>
+                    <msup>
+                        <mi>e</mi>
+                        <mrow>
+                            <mi>i</mi>
+                            <mi>t</mi>
+                        </mrow>
+                    </msup>
+                    <msup>
+                        <mo stretchy="false">|</mo>
+                        <mn>2</mn>
+                    </msup>
+                    <mo>=</mo>
+                    <msup>
+                        <mi>e</mi>
+                        <mrow>
+                            <mi>i</mi>
+                            <mi>t</mi>
+                        </mrow>
+                    </msup>
+                    <mo>⋅</mo>
+                    <mover>
+                        <msup>
+                            <mi>e</mi>
+                            <mrow>
+                                <mi>i</mi>
+                                <mi>t</mi>
+                            </mrow>
+                        </msup>
+                        <mo>¯</mo>
+                    </mover>
+                    <mo>=</mo>
+                    <msup>
+                        <mi>e</mi>
+                        <mrow>
+                            <mi>i</mi>
+                            <mi>t</mi>
+                        </mrow>
+                    </msup>
+                    <mo>⋅</mo>
+                    <msup>
+                        <mi>e</mi>
+                        <mrow>
+                            <mo>-</mo>
+                            <mi>i</mi>
+                            <mi>t</mi>
+                        </mrow>
+                    </msup>
+                    <mo>=</mo>
+                    <msup>
+                        <mi>e</mi>
+                        <mrow>
+                            <mi>i</mi>
+                            <mi>t</mi>
+                            <mo>-</mo>
+                            <mi>i</mi>
+                            <mi>t</mi>
+                        </mrow>
+                    </msup>
+                    <mo>=</mo>
+                    <msup>
+                        <mi>e</mi>
+                        <mn>0</mn>
+                    </msup>
+                    <mo>=</mo>
+                    <mn>1</mn>
+                </mrow>
+            </math>
+        </div>
+    </div>
+    <div class="paragraph">
+        <div class="original">
+            <p>or</p>
+        </div>
+        <div class="translation">
+            <p>或</p>
+        </div>
+    </div>
+    <div class="fomula">
+        <div class="serial">
+            <div>⦅3⦆</div>
+        </div>
+        <div class="math">
+            <math display="block">
+                <mrow>
+                    <mo stretchy="false">|</mo>
+                    <msup>
+                        <mi>e</mi>
+                        <mrow>
+                            <mi>i</mi>
+                            <mi>t</mi>
+                        </mrow>
+                    </msup>
+                    <mo stretchy="false">|</mo>
+                    <mo>=</mo>
+                    <mn>1</mn>
+                    <mspace width="2em" />
+                    <mo stretchy="false">(</mo>
+                    <mi>t</mi>
+                    <mo>∊</mo>
+                    <mstyle mathvariant="double-struck">
+                        <mi>R</mi>
+                    </mstyle>
+                    <mo stretchy="false">)</mo>
+                    <mo>.</mo>
+                </mrow>
+            </math>
+        </div>
+    </div>
+    <div class="paragraph">
+        <div class="original">
+            <p>In other words, if <span class="math">t</span> is real, <span class="math">e<sup>it</sup></span> lies on the unit circle. We define <span class="math">cos t</span>, <span class="math">sin t </span> to be the real and imaginary parts of <span class="math">e<sup>it</sup></span>:</p>
+        </div>
+        <div class="translation">
+            <p>换句话说，若<span class="math">t</span>为实数．则<span class="math">e<sup>it</sup></span>位于单位圆上。我们定义<span class="math">cos t</span>，<span class="math">sin t</span>为<span class="math">e<sup>it</sup></span>的实部和虚部：</p>
+        </div>
+    </div>
+    <div class="fomula">
+        <div class="serial">
+            <div>⦅4⦆</div>
+        </div>
+        <div class="math">
+            <math display="block">
+                <mrow>
+                    <mtext>cos</mtext>
+                    <mspace width="thickmathspace" />
+                    <mi>t</mi>
+                    <mo>=</mo>
+                    <mo lspace="0em" rspace="thinmathspace">Re</mo>
+                    <mo stretchy="false">[</mo>
+                    <msup>
+                        <mi>e</mi>
+                        <mrow>
+                            <mi>i</mi>
+                            <mi>t</mi>
+                        </mrow>
+                    </msup>
+                    <mo stretchy="false">]</mo>
+                    <mo>,</mo>
+                    <mspace width="1em" />
+                    <mtext>sin</mtext>
+                    <mspace width="thickmathspace" />
+                    <mi>t</mi>
+                    <mo>=</mo>
+                    <mo lspace="0em" rspace="thinmathspace">Im</mo>
+                    <mo stretchy="false">[</mo>
+                    <msup>
+                        <mi>e</mi>
+                        <mrow>
+                            <mi>i</mi>
+                            <mi>t</mi>
+                        </mrow>
+                    </msup>
+                    <mo stretchy="false">]</mo>
+                    <mspace width="2em" />
+                    <mo stretchy="false">(</mo>
+                    <mi>t</mi>
+                    <mo>∊</mo>
+                    <mstyle mathvariant="double-struck">
+                        <mi>R</mi>
+                    </mstyle>
+                    <mo stretchy="false">)</mo>
+                    <mo>.</mo>
+                </mrow>
+            </math>
+        </div>
+    </div>
+    <div class="paragraph">
+        <div class="original">
+            <p>If we differentiate both sides of Euler&prime;s identity</p>
+        </div>
+        <div class="translation">
+            <p>若对等价于⦅4⦆的欧拉恒等式</p>
+        </div>
+    </div>
+    <div class="fomula">
+        <div class="serial">
+            <div>⦅5⦆</div>
+        </div>
+        <div class="math">
+            <math display="block">
+                <mrow>
+                    <msup>
+                        <mi>e</mi>
+                        <mrow>
+                            <mi>i</mi>
+                            <mi>t</mi>
+                        </mrow>
+                    </msup>
+                    <mo>=</mo>
+                    <mtext>cos</mtext>
+                    <mspace width="thickmathspace" />
+                    <mi>t</mi>
+                    <mo>+</mo>
+                    <mi>i</mi>
+                    <mspace width="thickmathspace" />
+                    <mtext>sin</mtext>
+                    <mspace width="thickmathspace" />
+                    <mi>t</mi>
+                </mrow>
+            </math>
+        </div>
+    </div>
+    <div class="paragraph">
+        <div class="original">
+            <p>which is equivaIent to ⦅4⦆, and if we apply ⦅b⦆, we obtain</p>
+        </div>
+        <div class="translation">
+            <p>两边微分，并且应用⦅b⦆，则得</p>
+        </div>
+    </div>
+    <div class="fomula">
+        <!-- <div class="serial">⟦void⟧</div> -->
+        <div class="math">
+            <math display="block">
+                <mrow>
+                    <msup>
+                        <mtext>cos</mtext>
+                        <mo>′</mo>
+                    </msup>
+                    <mi>t</mi>
+                    <mo>+</mo>
+                    <mi>i</mi>
+                    <mspace width="thickmathspace" />
+                    <msup>
+                        <mtext>sin</mtext>
+                        <mo>′</mo>
+                    </msup>
+                    <mi>t</mi>
+                    <mo>=</mo>
+                    <mi>i</mi>
+                    <mspace width="thickmathspace" />
+                    <msup>
+                        <mi>e</mi>
+                        <mrow>
+                            <mi>i</mi>
+                            <mi>t</mi>
+                        </mrow>
+                    </msup>
+                    <mo>=</mo>
+                    <mo>-</mo>
+                    <mtext>sin</mtext>
+                    <mspace width="thickmathspace" />
+                    <mi>t</mi>
+                    <mo>+</mo>
+                    <mi>i</mi>
+                    <mspace width="thickmathspace" />
+                    <mtext>cos</mtext>
+                    <mspace width="thickmathspace" />
+                    <mi>t</mi>
+                </mrow>
+            </math>
+        </div>
+    </div>
+    <div class="paragraph">
+        <div class="original">
+            <p>so that</p>
+        </div>
+        <div class="translation">
+            <p>于是</p>
+        </div>
+    </div>
+    <div class="fomula">
+        <div class="serial">
+            <div>⦅6⦆</div>
+        </div>
+        <div class="math">
+            <math display="block">
+                <mrow>
+                    <msup>
+                        <mtext>cos</mtext>
+                        <mo>′</mo>
+                    </msup>
+                    <mo>=</mo>
+                    <mo>-</mo>
+                    <mtext>sin</mtext>
+                    <mo>,</mo>
+                    <mspace width="1em" />
+                    <msup>
+                        <mtext>sin</mtext>
+                        <mo>′</mo>
+                    </msup>
+                    <mo>=</mo>
+                    <mtext>cos</mtext>
+                    <mo>.</mo>
+                </mrow>
+            </math>
+        </div>
+    </div>
+    <div class="paragraph">
+        <div class="original">
+            <p>The power series ⦅1⦆ yields the representation</p>
+        </div>
+        <div class="translation">
+            <p>幂级数⦅1⦆给出表示式</p>
+        </div>
+    </div>
+    <div class="fomula">
+        <div class="serial">
+            <div>⦅7⦆</div>
+        </div>
+        <div class="math">
+            <math display="block">
+                <mrow>
+                    <mtext>cos</mtext>
+                    <mspace width="thickmathspace" />
+                    <mi>t</mi>
+                    <mo>=</mo>
+                    <mn>1</mn>
+                    <mo>-</mo>
+                    <mfrac>
+                        <msup>
+                            <mi>t</mi>
+                            <mn>2</mn>
+                        </msup>
+                        <mrow>
+                            <mn>2</mn>
+                            <mo>!</mo>
+                        </mrow>
+                    </mfrac>
+                    <mo>+</mo>
+                    <mfrac>
+                        <msup>
+                            <mi>t</mi>
+                            <mn>4</mn>
+                        </msup>
+                        <mrow>
+                            <mn>4</mn>
+                            <mo>!</mo>
+                        </mrow>
+                    </mfrac>
+                    <mo>-</mo>
+                    <mfrac>
+                        <msup>
+                            <mi>t</mi>
+                            <mn>6</mn>
+                        </msup>
+                        <mrow>
+                            <mn>6</mn>
+                            <mo>!</mo>
+                        </mrow>
+                    </mfrac>
+                    <mo>+</mo>
+                    <mo>…</mo>
+                </mrow>
+            </math>
+        </div>
+    </div>
+    <div class="paragraph">
+        <div class="original">
+            <p>Take <span class="math">t = 2</span>. The terms of the series ⦅7⦆ then decrease in absolute value (except for the first one) and their signs alternate. Hence <span class="math">cos 2</span> is less than the sum of the first three terms of ⦅7⦆, with <span class="math">t = 2</span>; thus <span class="math">cos 2 &lt; -⅓</span>. Since <span class="math">cos 0 = 1</span> and <span class="math">cos</span> is a continuous real function on the real axis, we conclude that there is a smallest positive number <span class="math">t<sub>0</sub></span> for which <span class="math">cos t<sub>0</sub> = 0</span>. We define</p>
+        </div>
+        <div class="translation">
+            <p>取<span class="math">t = 2</span>，则级数⦅7⦆的各项按绝对值减少（除首项外），而且它们的符号是交错的．因此<span class="math">cos 2</span>小于级数⦅7⦆的前三项之和；于是<span class="math">cos 2 &lt; -⅓</span>。由于<span class="math">cos 0 = 1</span>且<span class="math">cos</span>是实轴上的实连续函数．故可断定存在一个最小的正数<span class="math">t<sub>0</sub></span>使得<span class="math">cos t<sub>0</sub> = 0</span>。我们定义</p>
+        </div>
+    </div>
+    <div class="fomula">
+        <div class="serial">
+            <div>⦅8⦆</div>
+        </div>
+        <div class="math">
+            <math display="block">
+                <mrow>
+                    <mi>π</mi>
+                    <mo>=</mo>
+                    <mn>2</mn>
+                    <msub>
+                        <mi>t</mi>
+                        <mn>0</mn>
+                    </msub>
+                </mrow>
+            </math>
+        </div>
+    </div>
+    <div class="paragraph">
+        <div class="original">
+            <p>It follows from ⦅3⦆ and ⦅5⦆ that <span class="math">sin t<sub>0</sub> = ± 1</span>. Since</p>
+        </div>
+        <div class="translation">
+            <p>从⦅3⦆及⦅5⦆得到<span class="math">sin t<sub>0</sub> = ± 1</span>。由于在开区间<span class="math">(0, t<sub>0</sub>)</span>上，有</p>
+        </div>
+    </div>
+    <div class="fomula">
+        <!-- <div class="serial">⟦void⟧</div> -->
+        <div class="math">
+            <math display="block">
+                <mrow>
+                    <msup>
+                        <mtext>sin</mtext>
+                        <mo>′</mo>
+                    </msup>
+                    <mo stretchy="false">(</mo>
+                    <mi>t</mi>
+                    <mo stretchy="false">)</mo>
+                    <mo>=</mo>
+                    <mtext>cos</mtext>
+                    <mspace width="thickmathspace" />
+                    <mi>t</mi>
+                    <mo>&gt;</mo>
+                    <mn>0</mn>
+                </mrow>
+            </math>
+        </div>
+    </div>
+    <div class="paragraph">
+        <div class="original">
+            <p>on the segment <span class="math">(0, t<sub>0</sub>)</span> and since <span class="math">sin 0 = 0</span>, we have <span class="math">sin t<sub>0</sub> &gt; 0</span>, hence <span class="math">sin t<sub>0</sub> = 1</span>, and therefore</p>
+        </div>
+        <div class="translation">
+            <p>又<span class="math">sin 0 = 0</span>，故有<span class="math">sin t<sub>0</sub> &gt; 0</span>，因此<span class="math">sin t<sub>0</sub> = 1</span>，而且</p>
+        </div>
+    </div>
+    <div class="fomula">
+        <div class="serial">
+            <div>⦅9⦆</div>
+        </div>
+        <div class="math">
+            <math display="block">
+                <mrow>
+                    <msup>
+                        <mi>e</mi>
+                        <mfrac>
+                            <mrow>
+                                <mi>π</mi>
+                                <mi>i</mi>
+                            </mrow>
+                            <mn>2</mn>
+                        </mfrac>
+                    </msup>
+                    <mo>=</mo>
+                    <mi>i</mi>
+                    <mo>.</mo>
+                </mrow>
+            </math>
+        </div>
+    </div>
+    <div class="paragraph">
+        <div class="original">
+            <p>It follows that <span class="math">e<sup>πi</sup> = i<sup>2</sup> = -1</span>, <span class="math">e<sup>2πi</sup> = (-1)<sup>2</sup> = 1</span>, and then <span class="math">e<sup>2πin</sup> = 1</span> for every integer <span class="math">n</span>. Also, ⦅e⦆ follows immediately:</p>
+        </div>
+        <div class="translation">
+            <p>由此可见，<span class="math">e<sup>πi</sup> = i<sup>2</sup> = -1</span>，<span class="math">e<sup>2πi</sup> = (-1)<sup>2</sup> = 1</span>，并且对每个正整数<span class="math">n</span>，<span class="math">e<sup>2πin</sup> = 1</span>。同样立即得到⦅e⦆:</p>
+        </div>
+    </div>
+    <div class="fomula">
+        <div class="serial">
+            <div>⦅10⦆</div>
+        </div>
+        <div class="math">
+            <math display="block">
+                <mrow>
+                    <msup>
+                        <mi>e</mi>
+                        <mrow>
+                            <mi>z</mi>
+                            <mo>+</mo>
+                            <mn>2</mn>
+                            <mi>π</mi>
+                            <mi>i</mi>
+                        </mrow>
+                    </msup>
+                    <mo>=</mo>
+                    <msup>
+                        <mi>e</mi>
+                        <mi>z</mi>
+                    </msup>
+                    <msup>
+                        <mi>e</mi>
+                        <mrow>
+                            <mn>2</mn>
+                            <mi>π</mi>
+                            <mi>i</mi>
+                        </mrow>
+                    </msup>
+                    <mo>=</mo>
+                    <msup>
+                        <mi>e</mi>
+                        <mi>z</mi>
+                    </msup>
+                    <mo>.</mo>
+                </mrow>
+            </math>
+        </div>
+    </div>
+    <div class="paragraph">
+        <div class="original">
+            <p>If <span class="math">z = x + iy</span>, <span class="math">x</span> and <span class="math">y</span> real, then <span class="math">e<sup>z</sup> = e<sup>x</sup>e<sup>iy</sup></span>; hence <span class="math">|e<sup>z</sup>| = e<sup>x</sup></span>. If <span class="math">e<sup>z</sup> = 1</span>, we therefore must have <span class="math">e<sup>x</sup> = 1</span>, so that <span class="math">x = 0</span>; to prove that <span class="math">y/(2π)</span> must be an integer, it is enough to show that <span class="math">e<sup>iy</sup> ≠ 1</span> if <span class="math">0 &lt; y &lt; 2π</span>, by ⦅10⦆.</p>
+        </div>
+        <div class="translation">
+            <p>若<span class="math">z = x + iy</span>，<span class="math">x</span>和<span class="math">y</span>为实教，则<span class="math">e<sup>z</sup> = e<sup>x</sup>e<sup>iy</sup></span>；因此<span class="math">|e<sup>z</sup>| = e<sup>x</sup></span>。若<span class="math">e<sup>z</sup> = 1</span>，则必须有<span class="math">e<sup>x</sup> = 1</span>，从而<span class="math">x = 0</span>；根据⦅10⦆，为了证明<span class="math">y/(2π)</span>一定是整数，只要证明当<span class="math">0 &lt; y &lt; 2π</span>时，<span class="math">e<sup>iy</sup> ≠ 1</span>就足够了。</p>
+        </div>
+    </div>
+    <div class="paragraph">
+        <div class="original">
+            <p class="start">Suppose <span class="math">0 &lt; y &lt; 2π</span>, and</p>
+        </div>
+        <div class="translation">
+            <p class="start">设<span class="math">0 &lt; y &lt; 2π</span>，且</p>
+        </div>
+    </div>
+    <div class="fomula">
+        <div class="serial">
+            <div>⦅11⦆</div>
+        </div>
+        <div class="math">
+            <math display="block">
+                <mrow>
+                    <msup>
+                        <mi>e</mi>
+                        <mfrac>
+                            <mrow>
+                                <mi>i</mi>
+                                <mi>y</mi>
+                            </mrow>
+                            <mn>4</mn>
+                        </mfrac>
+                    </msup>
+                    <mo>=</mo>
+                    <mi>u</mi>
+                    <mo>+</mo>
+                    <mi>i</mi>
+                    <mi>v</mi>
+                    <mspace width="1em" />
+                    <mo stretchy="false">(</mo>
+                    <mi>u</mi>
+                    <mo>,</mo>
+                    <mi>v</mi>
+                    <mo>∊</mo>
+                    <mstyle mathvariant="double-struck">
+                        <mi>R</mi>
+                    </mstyle>
+                    <mo stretchy="false">)</mo>
+                    <mo>.</mo>
+                </mrow>
+            </math>
+        </div>
+    </div>
+    <div class="paragraph">
+        <div class="original">
+            <p>Since <span class="math">0 &lt; y/4 &lt; π/2</span>, we have <span class="math">u &gt; 0</span> and <span class="math">v &gt; 0</span>. Also</p>
+        </div>
+        <div class="translation">
+            <p>由于<span class="math">0 &lt; y/4 &lt; π/2</span>，故有<span class="math">u &gt; 0</span>，<span class="math">v &gt; 0</span>。同样</p>
+        </div>
+    </div>
+    <div class="fomula">
+        <div class="serial">
+            <div>⦅12⦆</div>
+        </div>
+        <div class="math">
+            <math display="block">
+                <mrow>
+                    <msup>
+                        <mi>e</mi>
+                        <mrow>
+                            <mi>i</mi>
+                            <mi>y</mi>
+                        </mrow>
+                    </msup>
+                    <mo>=</mo>
+                    <mo stretchy="false">(</mo>
+                    <mi>u</mi>
+                    <mo>+</mo>
+                    <mi>i</mi>
+                    <mi>v</mi>
+                    <msup>
+                        <mo stretchy="false">)</mo>
+                        <mn>4</mn>
+                    </msup>
+                    <mo>=</mo>
+                    <msup>
+                        <mi>u</mi>
+                        <mn>4</mn>
+                    </msup>
+                    <mo>-</mo>
+                    <mn>6</mn>
+                    <msup>
+                        <mi>u</mi>
+                        <mn>2</mn>
+                    </msup>
+                    <msup>
+                        <mi>v</mi>
+                        <mn>2</mn>
+                    </msup>
+                    <mo>+</mo>
+                    <msup>
+                        <mi>v</mi>
+                        <mn>4</mn>
+                    </msup>
+                    <mo>+</mo>
+                    <mn>4</mn>
+                    <mi>i</mi>
+                    <mi>u</mi>
+                    <mi>v</mi>
+                    <mo stretchy="false">(</mo>
+                    <msup>
+                        <mi>u</mi>
+                        <mn>2</mn>
+                    </msup>
+                    <mo>-</mo>
+                    <msup>
+                        <mi>v</mi>
+                        <mn>2</mn>
+                    </msup>
+                    <mo stretchy="false">)</mo>
+                    <mo>.</mo>
+                </mrow>
+            </math>
+        </div>
+    </div>
+    <div class="paragraph">
+        <div class="original">
+            <p>The right side of ⦅12⦆ is real only if <span class="math">u<sup>2</sup> = v<sup>2</sup></span>; since <span class="math">u<sup>2</sup> + v<sup>2</sup> = 1</span>, this happens only when <span class="math">u<sup>2</sup> = v<sup>2</sup> = ½</span>, and then ⦅12⦆ shows that</p>
+        </div>
+        <div class="translation">
+            <p>仅当<span class="math">u<sup>2</sup> = v<sup>2</sup></span>时，⦅12⦆的右边才是实数；由于<span class="math">u<sup>2</sup> + v<sup>2</sup> = 1</span>仅当<span class="math">u<sup>2</sup> = v<sup>2</sup> = ½</span>时才成立，因此⦅12⦆表明</p>
+        </div>
+    </div>
+    <div class="fomula">
+        <!-- <div class="serial">⟦void⟧</div> -->
+        <div class="math">
+            <math display="block">
+                <mrow>
+                    <msup>
+                        <mi>e</mi>
+                        <mrow>
+                            <mi>i</mi>
+                            <mi>y</mi>
+                        </mrow>
+                    </msup>
+                    <mo>=</mo>
+                    <mo>-</mo>
+                    <mn>1</mn>
+                    <mo>≠</mo>
+                    <mn>1</mn>
+                    <mo>.</mo>
+                </mrow>
+            </math>
+        </div>
+    </div>
+    <div class="paragraph">
+        <div class="original">
+            <p>This completes the proof of ⦅d⦆.</p>
+        </div>
+        <div class="translation">
+            <p>这就证明了⦅d⦆。</p>
+        </div>
+    </div>
+    <div class="paragraph">
+        <div class="original">
+            <p class="start">We already know that <span class="math">t → e<sup>it</sup></span> maps the real axis into the unit circle. To prove ⦅f⦆, fix <span class="math">w</span> so that <span class="math">|w| = 1</span>; we shall show that <span class="math">w = e<sup>it</sup></span> for some real <span class="math">t</span>. Write <span class="math">w = u + iv</span>, <span class="math">u</span> and <span class="math">v</span> real, and suppose first that <span class="math">u ≧ 0</span> and <span class="math">v ≧ 0</span>. Since <span class="math">u ≦ 1</span>, the definition of <span class="math">π</span> shows that there exists a <span class="math">t</span>, <span class="math">0 ≦ t ≦ π/2</span>, such that <span class="math">cos t = u</span>; then <span class="math">sin<sup>2</sup> t = 1 - u<sup>2</sup> = v<sup>2</sup></span>, and since <span class="math">sin t ≧ 0</span> if <span class="math">0 ≦ t ≦ π/2</span>, we have <span class="math">sin t = v</span>. Thus <span class="math">w = e<sup>it</sup></span>.</p>
+        </div>
+        <div class="translation">
+            <p class="start">我们已经知道，<span class="math">t → e<sup>it</sup></span>将实轴映入单位圆内。为了证明⦅f⦆，现固定<span class="math">w</span>使得<span class="math">|w| = 1</span>。我们将要证明，存在某个实数<span class="math">t</span>使<span class="math">w = e<sup>it</sup></span>。记<span class="math">w = u + iv</span>，<span class="math">u</span>和<span class="math">v</span>为实数．而且首先假定<span class="math">u ≧ 0</span>及<span class="math">v ≧ 0</span>。由于<span class="math">u ≦ 1</span>，则<span class="math">π</span>的定义表明存在一个<span class="math">t</span>，<span class="math">0 ≦ t ≦ π/2</span>，使得<span class="math">cos t = u</span>；因而<span class="math">sin<sup>2</sup> t = 1 - u<sup>2</sup> = v<sup>2</sup></span>，又由于当<span class="math">0 ≦ t ≦ π/2</span>时有<span class="math">sin t ≧ 0</span>，故<span class="math">sin t = v</span>。因此<span class="math">w = e<sup>it</sup></span>。
+            </p>
+        </div>
+    </div>
+    <div class="paragraph">
+        <div class="original">
+            <p class="start">If <span class="math">u &lt; 0</span> and <span class="math">v ≧ 0</span>, the preceding conditions are satisfied by <span class="math">-iw</span>. Hence <span class="math">-iw = e<sup>it</sup></span> for some real <span class="math">t</span>, and <span class="math">w = e<sup>i(t+π/2)</sup></span>. Finally, if <span class="math">v &lt; 0</span>. the preceding two cases show that <span class="math">-w = e<sup>it</sup></span> for some real <span class="math">t</span>, hence <span class="math">w = e<sup>i(t+π)</sup></span> This completes the proof of ⦅f⦆.</p>
+        </div>
+        <div class="translation">
+            <p class="start">若<span class="math">u &lt; 0</span>而<span class="math">v ≧ 0</span>，则<span class="math">-iw</span>满足上述条件。因此，存在某个实数<span class="math">t</span>使<span class="math">-iw = e<sup>it</sup></span>，而且<span class="math">w = e<sup>i(t+π/2)</sup></span>。最后，若<span class="math">v &lt; 0</span>，则上述两种情况证明了，存在某些实数<span class="math">t</span>使<span class="math">-w = e<sup>it</sup></span>，因此<span class="math">w = e<sup>i(t+π)</sup></span>。这就证明了⦅f⦆。</p>
+        </div>
+    </div>
+    <div class="paragraph">
+        <div class="original">
+            <p class="start">If <span class="math">w ≠ 0</span>, put <span class="math">α = w / |w|</span>. Then <span class="math">w = |w|α</span>. By ⦅c⦆, there is a real <span class="math">x</span> such that <span class="math">|w| = e<sup>x</sup></span>. Since <span class="math">|α| = 1</span>, ⦅f⦆ shows that <span class="math">α = e<sup>iy</sup></span> for some real <span class="math">y</span>. Hence <span class="math">w = e<sup>x + iy</sup></span>. This proves ⦅g⦆ and completes the theorem.&emsp;&#x25AE;</p>
+        </div>
+        <div class="translation">
+            <p class="start">若<span class="math">w ≠ 0</span>令<span class="math">α = w / |w|</span>，因而<span class="math">w = |w|α</span>。根据⦅c⦆，有一个实数<span class="math">x</span>使得<span class="math">|w| = e<sup>x</sup></span>。由于<span class="math">|α| = 1</span>，则⦅f⦆证明了，对于某些实数<span class="math">y</span>有<span class="math">α = e<sup>iy</sup></span>。因此<span class="math">w = e<sup>x + iy</sup></span>。这就证明了⦅g⦆，并且完成了定理的证明。&emsp;&#x25AE;</p>
+        </div>
+    </div>
+
+    <div class="paragraph">
+        <div class="original">
+            <p class="start">We shall encounter the integral of <span class="math">(1 + x<sup>2</sup>)<sup>-1</sup></span> over the real line. To evaluate, put <span class="math">φ(t) = sin t / cos t </span> in <span class="math">(-π/2, π/2)</span>. By ⦅6⦆, <span class="math">φ&prime; = 1 + φ<sup>2</sup></span>. Hence <span class="math">φ</span> is a monotonically increasing mapping of <span class="math">(-π/2, π/2)</span> onto <span class="math">(-∞, ∞)</span>, and we obtain</p>
+        </div>
+        <div class="translation">
+            <p class="start">我们将遇到<span class="math">(1 + x<sup>2</sup>)<sup>-1</sup></span>在实线上的积分。为了求它的值，在<span class="math">(-π/2, π/2)</span>内，令<span class="math">φ(t) = sin t / cos t </span>，根据⦅6⦆有<span class="math">φ&prime; = 1 + φ<sup>2</sup></span>。因此，<span class="math">φ</span>是一个<span class="math">(-π/2, π/2)</span>到<span class="math">(-∞, ∞)</span>上的单调增加的映射，而且得到</p>
+        </div>
+    </div>
+    <div class="fomula">
+        <!-- <div class="serial">⟦void⟧</div> -->
+        <div class="math">
+            <math display="block">
+                <mrow>
+                    <msubsup>
+                        <mo>∫</mo>
+                        <mrow>
+                            <mo>-</mo>
+                            <mn>∞</mn>
+                        </mrow>
+                        <mn>∞</mn>
+                    </msubsup>
+                    <mfrac>
+                        <mrow>
+                            <mtext>d</mtext>
+                            <mi>x</mi>
+                        </mrow>
+                        <mrow>
+                            <mn>1</mn>
+                            <mo>+</mo>
+                            <msup>
+                                <mi>x</mi>
+                                <mn>2</mn>
+                            </msup>
+                        </mrow>
+                    </mfrac>
+                    <mo>=</mo>
+                    <msubsup>
+                        <mo>∫</mo>
+                        <mrow>
+                            <mo>-</mo>
+                            <mi>π</mi>
+                            <mo>/</mo>
+                            <mn>2</mn>
+                        </mrow>
+                        <mrow>
+                            <mi>π</mi>
+                            <mo>/</mo>
+                            <mn>2</mn>
+                        </mrow>
+                    </msubsup>
+                    <mfrac>
+                        <mrow>
+                            <msup>
+                                <mi>ϕ</mi>
+                                <mo>′</mo>
+                            </msup>
+                            <mo stretchy="false">(</mo>
+                            <mi>t</mi>
+                            <mo stretchy="false">)</mo>
+                            <mtext>d</mtext>
+                            <mi>t</mi>
+                        </mrow>
+                        <mrow>
+                            <mn>1</mn>
+                            <mo>+</mo>
+                            <msup>
+                                <mi>ϕ</mi>
+                                <mn>2</mn>
+                            </msup>
+                            <mo stretchy="false">(</mo>
+                            <mi>t</mi>
+                            <mo stretchy="false">)</mo>
+                        </mrow>
+                    </mfrac>
+                    <mo>=</mo>
+                    <msubsup>
+                        <mo>∫</mo>
+                        <mrow>
+                            <mo>-</mo>
+                            <mi>π</mi>
+                            <mo>/</mo>
+                            <mn>2</mn>
+                        </mrow>
+                        <mrow>
+                            <mi>π</mi>
+                            <mo>/</mo>
+                            <mn>2</mn>
+                        </mrow>
+                    </msubsup>
+                    <mtext>d</mtext>
+                    <mi>t</mi>
+                    <mo>=</mo>
+                    <mi>π</mi>
+                    <mo>.</mo>
+                </mrow>
+            </math>
+        </div>
+    </div>
+
+    <hr />
+    <div class="paragraph">
+        <div class="original">
+            <h4 class="original">Comment</h4>
+            <p>(none)</p>
+        </div>
+        <div class="translation">
+            <h4 class="translation">原注</h4>
+            <p>（无）</p>
+        </div>
+    </div>
+
+    <div class="remark">
+        <h4>译注</h4>
+        <p>（无）</p>
+    </div>
+</body>
+
+</html>
