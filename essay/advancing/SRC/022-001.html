@@ -1,0 +1,1154 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta lang="zh" charset="UTF-8">
+    <title>「多元文化对照」版式</title>
+    <style>
+        span.embedText {
+            font-size: 80%;
+        }
+
+        #Aphorism article.card > h2 {
+            text-align: center;
+            border-bottom: dimgray dashed 2px;
+        }
+
+        #Aphorism article.card > section {
+            margin: 0 0.25rem;
+            padding: 0.5rem;
+        }
+
+        #Aphorism article.card > section > h3 {
+            width: 5rem;
+            float: left;
+            border-bottom: dimgray double 3px;
+        }
+
+        #Aphorism article.card > section > ul {
+            margin-left: 5rem;
+            /* border-left: 1px dimgray solid; */
+        }
+
+        #Aphorism article.card > section > p {
+            clear: both;
+            margin-left: 2rem;
+        }
+
+        li {
+            font-size: 1.25rem;
+        }
+
+        q {
+            color: darkred;
+            quotes: none; /*'«' '»';*/
+            margin: 0 0.25rem;
+        }
+
+        abbr {
+            margin: 0 0.25rem;
+            padding: 0.25rem;
+            text-decoration: red solid underline;
+        }
+
+        abbr:hover {
+            cursor: help;
+        }
+
+        cite {
+            margin: 0 0.25rem;
+            /* padding: 0.25rem; */
+            font-style: normal;
+            /* text-decoration: blue wavy underline; */
+        }
+
+        cite::before {
+            content: "«";
+            margin-right: 0.25rem;
+        }
+
+        cite::after {
+            content: "»";
+            margin-left: 0.25rem;
+        }
+
+        .card {
+            width: 25rem;
+            min-height: 5rem;
+            border: 1px solid gray;
+            box-shadow: 0.25rem 0.25rem 0.5rem dimgray;
+            border-top: 1rem solid black;
+            padding: 0.5rem;
+            margin: 0.5rem;
+        }
+
+        #Contrast .card {
+            border-top-color: green;
+        }
+
+        #Proverb .card {
+            border-top-color: burlywood;
+        }
+
+        #Aphorism .card {
+            width: 35rem;
+            border-top-color: darkcyan;
+        }
+
+        #Idiom .card{
+            width: 35rem;
+            border-top-color: darkgoldenrod;
+        }
+
+        #Epigram .card {
+            width: 35rem;
+            border-top-color: lightsalmon;
+        }
+
+        div.CardBox {
+            box-sizing: border-box;
+            justify-content: center;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        div.InfoBar {
+            margin: 0.5rem;
+            padding: 0.5rem;
+            border-bottom: dimgray double 3px;
+        }
+
+        span.Author, span.Cite {
+            display: block;
+            margin: 0.25rem 0 0 0;
+            padding: 0.25rem 0 0.25rem 0.25rem;
+        }
+
+        span.Topic {
+            margin: 0 0.25rem;
+            padding: 0 0.25rem;
+            border: 1px dimgray solid;
+        }
+
+        span.Tag {
+            margin: 0 0.25rem;
+            padding: 0 0.25rem;
+            background-color: pink;
+            border: 1px dimgray solid;
+        }
+
+        #Proverb article > section > p {
+            text-indent: 2rem;
+        }
+
+        #Proverb dl {
+            border-top: dimgray double 3px;
+            padding: 0.5rem;
+        }
+
+        #Proverb ul {
+            list-style-type: none;
+            text-indent: 0;
+            margin-left: 0;
+            padding-left: 0;
+        }
+
+        #Proverb section:lang(la),
+        #Proverb section:lang(en),
+        #Proverb section:lang(de) {
+            border-bottom: 1px black dotted;
+        }
+
+        #Proverb ul::before,
+        #Idiom ul::before,
+        #Epigram ul::before {
+            /* width: 1rem; */
+            text-align: center;
+            font-family: "Source Code Pro";
+            font-style: normal;
+            font-size: 100%;
+            float: left;
+            margin: 0 0.5rem 0.25rem 0;
+            padding: 0.25rem 0.5rem;
+            background-color: darkblue;
+            color: white;
+        }
+
+        q:lang(ru), cite:lang(ru), li:lang(ru), span:lang(ru),
+        q:lang(grc), cite:lang(grc), li:lang(grc), span:lang(grc) {
+            font-family: "Arial Unicode MS";
+        }
+
+        #Proverb section:lang(la) li {
+            font-weight: bold;
+            font-family: "Times New Roman", serif;
+        }
+
+        #Proverb section:lang(en) li {
+            font-family: "Calisto MT", serif;
+        }
+
+        #Proverb section:lang(de) li {
+            font-family: "Old English Text MT", serif;
+        }
+
+        #Idiom ul, #Epigram ul {
+            list-style-type: disc;
+            text-indent: 0;
+            margin-left: 1rem;
+            padding-left: 0;
+        }
+        #Idiom li, #Epigram li {
+            margin-left: 5rem;
+        }
+
+        #Idiom p, #Epigram p {
+            clear: both;
+            margin-left: 5rem;
+        }
+
+        #Proverb ul:lang(de)::before{
+            content: "DE";
+        }
+        #Proverb ul:lang(la)::before,
+        #Idiom ul:lang(la)::before,
+        #Epigram ul:lang(la)::before{
+            content: "LA";
+        }
+        #Idiom ul:lang(grc)::before,
+        #Epigram ul:lang(grc)::before{
+            content: "GR";
+        }
+        #Proverb ul:lang(en)::before,
+        #Idiom ul:lang(en)::before,
+        #Epigram ul:lang(en)::before{
+            content: "EN";
+        }
+        #Proverb ul:lang(zh)::before,
+        #Idiom ul:lang(zh)::before,
+        #Epigram ul:lang(zh)::before{
+            content: "ZH";
+        }
+        #Idiom ul:lang(ru)::before,
+        #Epigram ul:lang(ru)::before{
+            content: "RU";
+        }
+        #Idiom ul:lang(ar)::before,
+        #Epigram ul:lang(ar)::before{
+            content: "AR";
+        }
+        #Idiom ul:lang(he)::before,
+        #Epigram ul:lang(he)::before{
+            content: "HE";
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>《拉英德汉法律格言辞典》
+        <br />
+        <span class="embedText">（包括罗马法和教会法的格言）</span>
+    </h1>
+    <div id="Proverb" class="CardBox">
+        <article class="card">
+            <section lang="la">
+                <ul>
+                    <li>abortus;</li>
+                </ul>
+            </section>
+            <section lang="en">
+                <ul>
+                    <li>abortion;</li>
+                </ul>
+            </section>
+            <section lang="de">
+                <ul>
+                    <li>die Abtreibung;</li>
+                    <li>die Tötung eines Ungeborenen;</li>
+                </ul>
+            </section>
+            <section lang="zh">
+                <ul>
+                    <li>堕胎；</li>
+                </ul>
+                <p>在早期罗马法中，堕胎不被视为犯罪，只被看作是不道德的行为，对于准许妇女堕胎的家父，检察官可以给与道义上的制裁。在一定的时期中，占主导地位的观点认为，堕胎与法律无关，因为胎儿（<q lang="la">nasciturus</q>）尚未成为权利主体。在帝国时代，<abbr lang="la">Antonius Pius</abbr>和<abbr lang="la">Severus</abbr>皇帝对堕胎作出了刑事处罚的规定，对于使用堕胎药堕胎的人实行<q lang="la">relegatio in insulam</q>（「遣送孤儿」）和<q lang="la">publicatio bonorum</q>（「没收财产」）。在<abbr lang="la" title="优士丁尼">Iustinianus</abbr>时代，法律受宗教观念的影响，堕胎被规定为侵害胎儿的犯罪而受刑事处罚。（见黄凤《罗马法词典》）</p>
+                <p>参见<q lang="la">Nasciturus pro iam natus habetur.</q>亦参见<cite>CIC 1398</cite>：<q lang="la">Qui abortum procurat, effectu secuto, in excommunicationem latae sententiae incurrit.</q>凡设法堕胎而既遂者，应受自科绝罚。</p>
+            </section>
+        </article>
+        <article class="card">
+            <section lang="la">
+                <ul>
+                    <li>Absolvo.</li>
+                </ul>
+            </section>
+            <section lang="en">
+                <ul>
+                    <li>I absolve you (of guilt).</li>
+                    <li>I announce that you are without guilt.</li>
+                </ul>
+            </section>
+            <section lang="de">
+                <ul>
+                    <li>Ich erkläre (Sie) für unschuldig.</li>
+                    <li>Ich spreche dich frei (von deinen Süden).</li>
+                </ul>
+            </section>
+            <section lang="zh">
+                <ul>
+                    <li>我宣布你无罪。</li>
+                </ul>
+                <p>古罗马法官以<q lang="la">absolvo</q>（「我解开」）和<q lang="la">condemno</q>（「我判断有罪」）宣布犯人的无罪或有罪，以<q lang="la">non liquet</q>表示「不明白」。在投票时他们只写<q lang="la">A</q>、<q lang="la">C</q>或<q lang="la">NL</q>。公教的司铎在<q lang="la">sacramentum reconciliationis</q>（「和好圣事」「告解」）用<q lang="la">absolvo</q>来赦免人的罪。</p>
+            </section>
+        </article>
+        <article class="card">
+            <section lang="la">
+                <ul>
+                    <li>Accipere quam facere iniuriam praestat.</li>
+                </ul>
+                <p>(Cicero)</p>
+            </section>
+            <section lang="en">
+                <ul>
+                    <li>It is better to face injustice than to do injustice to others.</li>
+                </ul>
+            </section>
+            <section lang="de">
+                <ul>
+                    <li>Unrecht erleiden ist besser als Unrecht tun.</li>
+                </ul>
+            </section>
+            <section lang="zh">
+                <ul>
+                    <li>宁愿自己受损害，也不要损害别人。</li>
+                </ul>
+                <p>柏拉图、西塞罗和《新约》<cite>1 Cor 6:7</cite><sup>①</sup>都有这种说法。</p>
+                <p>参见<q lang="la">Decipi quam fallere est tutius.</q></p>
+                <dl>
+                    <dt>①&emsp;«1 Cor 6:7»</dt>
+                    <dd>
+                        <p>「你们彼此告状，这已经是你们的大错了。为什么不情愿受欺呢？为什么不情愿吃亏呢？」</p>
+                    </dd>
+                </dl>
+            </section>
+        </article>
+        <article class="card">
+            <section lang="la">
+                <ul>
+                    <li>Episcopus, qui sine pontificio mandato aliquem consecrat in Episcopum, itemque qui ab eo consecrationem
+                        recipit, in excommunicationem latae sententiae Sedi Apostolicae reservatam incurrunt.</li>
+                </ul>
+                <p>(<cite>CIC 1983</cite>, <cite>CAN 1382</cite>)</p>
+            </section>
+            <section lang="en">
+                <ul>
+                    <li>A bishop who consecrates comeone a bishop and the person who receives such a consecration from a bishop
+                        without a pontifical mandate incur an automatic (<span lang="la">latae sententiae</span>) excommunication reserved to the Apostolic See.</li>
+                </ul>
+            </section>
+            <section lang="de">
+                <ul>
+                    <li>Ein Bischof, der jemanden ohne päpstlishen Auftrag zum Bischof weiht, und ebenso, wer von ihm die Weihe
+                        empfängt, zieht sich die dem Apostolischen Stuhl vorbehaltene Exkommunikation als Tatstrafe zu.</li>
+                </ul>
+            </section>
+            <section lang="zh">
+                <ul>
+                    <li>主教无教宗任命祝圣别人为主教，及被其祝圣为主教者，均处于保留于宗座的自科绝罚。</li>
+                </ul>
+            </section>
+        </article>
+        <article class="card">
+            <section lang="la">
+                <ul>
+                    <li>in absentia;</li>
+                </ul>
+            </section>
+            <section lang="en">
+                <ul>
+                    <li>in (his) absence;</li>
+                </ul>
+            </section>
+            <section lang="de">
+                <ul>
+                    <li>in Abwesenheit;</li>
+                </ul>
+            </section>
+            <section lang="zh">
+                <ul>
+                    <li>在（他的）缺席之下；</li>
+                </ul>
+            </section>
+        </article>
+    </div>
+
+    <h1>汉语法律格言与拉丁格言对比
+        <br />
+        <span class="embedText">《拉英德汉法律格言辞典》附录</span></h1>
+    <div id="Contrast" class="CardBox">
+        <section class="card">
+            <p>「不患寡而患不均」（《论语·季氏》）；与<q lang="la">Aequum et bonum est lex legum</q>相反；罗马法又想保护「财产」（<q lang="la">bonum</q>）以及「公平」的原则（<q lang="la">aequitas</q>）。亦见<q lang="la">Lex est ars aequiet boni</q>。</p>
+        </section>
+        <section class="card">
+            <p>「不教而诛」（《荀子·富国》：不教而诛，则刑繁而邪不胜；教而不诛，则奸民不惩）；参见「法律的有效性」；参见<q lang="la">Lex moneat priusquam feriat. Legem brevem esseoportet</q>。</p>
+        </section>
+        <section class="card">
+            <p>「不在其位，不谋其事」（《论语·泰伯》）；参见<q lang="la">Nemo simul actor et iudex</q>。</p>
+        </section>
+        <section class="card">
+            <p>「杀一儆百」（《汉书·尹翁归传》：以一警百）；参见「惩罚」；参见<q lang="la">Punitur ne peccatur</q>。</p>
+        </section>
+        <section class="card">
+            <p>「大快人心」（指看到坏人受到惩罚感到高兴）；参见「惩罚」；参见<q lang="la">Numquid voluntatis meae est mors impii?</q>。</p>
+        </section>
+        <section class="card">
+            <p>「大义灭亲」（《左传·隐公四年》）；参见「仁者人也，亲亲为大」；参见<q lang="la">Iustitia non novit patrem nec matrem, solum veritatem spectat.</q>。</p>
+        </section>
+        <section class="card">
+            <p>「道之以政，齐之以刑，民免而无耻。道之以德 ，齐之以礼，有耻且格」（《论语·颜渊》）；参见<q lang="la">Lex est tutissima cassis. Lex praescribit, evangelium inscribit.</q>。</p>
+        </section>
+        <section class="card">
+            <p>「罚不当罪」（《荀子·正论》：夫德不称位，能不称官，赏不当功，罚不当罪，不祥莫大焉）；参见「惩罚」；参见<q lang="la">Noxiae poena par esto.</q>。</p>
+        </section>
+        <section class="card">
+            <p>「法家之律犹儒家之经，五经载道以行万世，十二律垂法以正人心」（唐律疏议序柳赞）；参见<q lang="la">Poena constituitur in emend ationem hominum.</q>。</p>
+        </section>
+        <section class="card">
+            <p>「法外施仁」（即宽待罪犯）；参见「严格」；参见<q lang="la">In dubio mitius. Nulla umquam de morte hominis cunctatio longa est. Iudex non debet lege clementior esse.</q>。</p>
+        </section>
+        <section class="card">
+            <p>「格杀不论」（《清史稿·宣统皇帝本纪》）；参见<q lang="la">Nulla umquam de morte hominis cunctatio longa est.</q>。</p>
+        </section>
+        <section class="card">
+            <p>「公而忘私」（《汉书·贾谊传》）；参见「公法」「公益」；参见<q lang="la">Privatum incomodem publico bono pensatur.</q>。</p>
+        </section>
+        <section class="card">
+            <p>「公私两济」；参见「公法」「私法」。</p>
+        </section>
+        <section class="card">
+            <p>「故圣人作则，必以天地为本」（《礼记·礼运》）；参见<q lang="la">Lex spectat naturae ordinem.</q>。</p>
+        </section>
+        <section class="card">
+            <p>「官官相护」（明代成语）；参见 「欺骗」；参见<q lang="la">Iudex damnatur ubi nocens absolvitur.</q>。</p>
+        </section>
+        <section class="card">
+            <p>「己所不欲，勿施于人」（《论语·颜渊》）；参见<q lang="la">Omnia ergo quaecumque vultis ut faciant vobis homines, et vos facite illis. Quod tibi fieri non vis, alteri ne feceris.</q>。</p>
+        </section>
+        <section class="card">
+            <p>「己欲立而立人」（论语·雍也）；参见<q lang="la">Omnia ergo quaecumque vultis ut faciant vobis homines, et vos facite illis. Haec est enim lex, et prophetae. (<cite>Mt 7:12</cite>)</q>；亦见<q lang="la">Sicutere tuo ut alienum non laedas.</q>。</p>
+        </section>
+        <section class="card">
+            <p>「既往不咎」（《论语·八佾》：成事不说，遂事不谏，既往不咎）；参见<q lang="la">Impunitas semper ad deteriorainvitat. Lex de futuro, iudex de praeterito.</q>。</p>
+        </section>
+        <section class="card">
+            <p>「假做真时真亦假」（《红楼梦》）；参见<q lang="la">Cum vitia prosunt, peccat qui recte facit. Non facias malum, ut inde fiat bonum.</q>。</p>
+        </section>
+        <section class="card">
+            <p>「兼听则明，偏信则暗」（汉·王符《潜夫论·明暗》）；参见<q lang="la">Audiatur et altera pars.</q>。</p>
+        </section>
+        <section class="card">
+            <p>「君子喻于义，小人喻于利」（《论语·里仁》）；参见<q lang="la">bonum; bonum commune; Iusest ars aequi et boni.</q>。</p>
+        </section>
+        <section class="card">
+            <p>「老吾老以及人之老，幼吾幼以及人之幼……治天下可运于掌」（《孟子·梁惠王上》）；参见「平等」；<q lang="la">iustitia omnibus; Omnia ergo quaecumque vultis ut faciant vobis homines, et vos facite illis. Quod tibi fieri non vis, alteri ne feceris.</q>。</p>
+        </section>
+        <section class="card">
+            <p>「民不畏死，奈何以死惧之？」（《道德经》）；参见<q lang="la">Punitur ne peccetur. Dies irae;</q>。</p>
+        </section>
+        <section class="card">
+            <p>「民可使由之，不可使知之」（《论语》）；参见<q lang="la">Legem brevem esse oportet. Leges ab omnibus intellegi debent. Ignorantia iuris nocet.</q>。</p>
+        </section>
+        <section class="card">
+            <p>「难逃法网」；参见「惩罚」；参见<q lang="la">Interest rei publicae, e maleficia remaneant impunita.</q>。</p>
+        </section>
+        <section class="card">
+            <p>「仁者人也，亲亲为大」（《中庸》第32章）；参见「公益」「正义」；参见<q lang="la">Iustitia non novit patrem nec matrem, solum veritatem spectat.</q>。</p>
+        </section>
+        <section class="card">
+            <p>「上有政策，下有对策」（民间说法）；参见<q lang="la">Leges ab omnibus intellegi debent. Lex uno ore omnibus loquitur. Lex non debet esse ludibrium.</q>。</p>
+        </section>
+        <section class="card">
+            <p>「绳之以法」「依法从事」；参见「法律的有效性」；参见<q lang="la">Executio est finis et fructus legis.</q>。</p>
+        </section>
+        <section class="card">
+            <p>「损人利己」；参见<q lang="la">Iure naturae aequum est neminem cum alterius detrimento et iniuria fieri locupletiorem.</q>。</p>
+        </section>
+        <section class="card">
+            <p>「天理」（一种道德原则）；参见<q lang="la">lex naturae; lex divina</q>。</p>
+        </section>
+        <section class="card">
+            <p>「天网恢恢，疏而不失」（《道德经》）；参见<q lang="la">dies irae; iudicium Dei;</q>。</p>
+        </section>
+        <section class="card">
+            <p>「天下为公」（《礼记·礼运》：大道之行，天下为公，选贤与能，讲信修睦）；参见「公法」「公益」；参见<q lang="la">Iustitia omnibus; bonum commune;</q>。</p>
+        </section>
+        <section class="card">
+            <p>「天下之民归心」（《论语·尧曰》：兴灭国，继绝世，举逸民，天下之民归心）＝「都会心悦诚服了」；参见<q lang="la">Obedientia est legis essentia.</q>。</p>
+        </section>
+        <section class="card">
+            <p>「王子犯法，与庶民同罪」。参见<q lang="la">Lex non a rege est violanda. Lex facit regem.</q>。</p>
+        </section>
+        <section class="card">
+            <p>「无法无天」「目无法纪」「心无天理」；参见「腐败」；<q lang="la">Lex est ab aeterno. Leges humanae nascuntur.</q>。</p>
+        </section>
+        <section class="card">
+            <p>「逍遥法外」（《庄子·逍遥游》）；参见「自由」；参见<q lang="la">Libertas in legibus.</q>。</p>
+        </section>
+        <section class="card">
+            <p>「萧规曹随」（扬雄《解嘲》）；参见<q lang="la">Stare decisis.</q>。</p>
+        </section>
+        <section class="card">
+            <p>「信赏必罚」（《韩非子·外储说右上》）；意即「必赏必罚」；参见「法律的有效性」；<q lang="la">Executio est fructus legis.</q>。</p>
+        </section>
+        <section class="card">
+            <p>「言必信，行必果」（《论语·子路》）；参见<q lang="la">Executio est fructus et finis legis. Ita lex scripta est. Obiter dictum;</q>。</p>
+        </section>
+        <section class="card">
+            <p>「夜不闭户」；指治安良好；参见<q lang="la">Ibi valet populus, ubi valent leges.</q>。</p>
+        </section>
+        <section class="card">
+            <p>「一匡天下」（《论语·宪问》）；统一天下；参见<q lang="la">Lex facit regem.</q>。</p>
+        </section>
+        <section class="card">
+            <p>「依法从事」「绳之以法」；参见<q lang="la">Executio est fructus et finis legis.</q>。</p>
+        </section>
+        <section class="card">
+            <p>「有治人，无治法」（《荀子·君道》）；参见<q lang="la">Melius agitur cum lege quam cum homine.</q>。</p>
+        </section>
+        <section class="card">
+            <p>「约法三章」（《史记·高祖本纪》：杀人者死，伤人及盗抵罪）；参见<q lang="la">Legem brevem esse oportet. Pessima tempore plurimae leges.</q>。</p>
+        </section>
+        <section class="card">
+            <p>「载舟覆舟」（《孔子家语》：夫君子舟也，人者水也；水可载舟，亦可覆舟）；参见<q lang="la">Lex non a rege est violanda.</q>；亦见<q lang="la">Voces populi.</q>。</p>
+        </section>
+        <section class="card">
+            <p>「朝令夕改」；参见<q lang="la">Leges figendi et refigendi consuetudo est periculosissima.</q>。</p>
+        </section>
+        <section class="card">
+            <p>「只许州官放火，不许百姓点灯」（陆游《老学庵笔记》）；参见<q lang="la">Duo cum faciunt idem, non est idem. Quod licet Iovi, non licet bovi.</q>.</p>
+        </section>
+    </div>
+
+    <h1>《常用谚语九种语言对照》
+        <br/>
+        <span class="embedText">（汉、日、俄、英、德、法、西班牙、意大利、拉丁）</span>
+    </h1>
+
+    <div id="Aphorism" class="CardBox">
+
+        <article class="card">
+            <h2>1</h2>
+
+            <section lang="zh">
+                <h3>汉</h3>
+                <ul>
+                    <li>爱能战胜一切。</li>
+                </ul>
+            </section>
+
+            <section lang="ja">
+                <h3>和</h3>
+                <ul>
+                    <li>仁者は敵なし。</li>
+                </ul>
+            </section>
+
+            <section lang="ru">
+                <h3>Русский</h3>
+                <ul>
+                    <li>Любовь преодолеет все.</li>
+                    <li>Любовь горы сдвигает.</li>
+                </ul>
+            </section>
+
+            <section lang="en">
+                <h3>English</h3>
+                <ul>
+                    <li>Love overcomes all.</li>
+                </ul>
+            </section>
+
+            <section lang="de">
+                <h3>Deutsch</h3>
+                <ul>
+                    <li>Alles besiegt die Liebe.</li>
+                </ul>
+            </section>
+
+            <section lang="fr">
+                <h3>Français</h3>
+                <ul>
+                    <li>Amour vainc tout (ou: triomphe de tout).</li>
+                </ul>
+            </section>
+
+            <section lang="es">
+                <h3>Español</h3>
+                <ul>
+                    <li>El amor todo lo vence.</li>
+                </ul>
+            </section>
+
+            <section lang="it">
+                <h3>Italiano</h3>
+                <ul>
+                    <li>Tutto vince amor.</li>
+                </ul>
+            </section>
+
+            <section lang="la">
+                <h3>Latina</h3>
+                <ul>
+                    <li>Omnia vincit amor.</li>
+                </ul>
+            </section>
+        </article>
+
+        <article class="card">
+            <h2>93</h2>
+
+            <section lang="zh">
+                <h3>汉</h3>
+                <ul>
+                    <li>得寸进尺。</li>
+                    <li>刚给鼻子就上脸。</li>
+                </ul>
+                <p>参见：「人心不足，得陇望蜀」（<a href="http://example.org/Aphorism.html#452">№ 452</a>）。</p>
+            </section>
+
+            <section lang="ja">
+                <h3>和</h3>
+                <ul>
+                    <li>手を引けば肩に上る。</li>
+                    <li>負ぶうと云えば抱かれると云う。</li>
+                    <li>負ぶえば抱かりょう。</li>
+                    <li>千石を取れば万石を羨む。</li>
+                </ul>
+            </section>
+
+            <section lang="ru">
+                <h3>Русский</h3>
+                <ul>
+                    <li>Дай ему палец, он и локоть откусит.</li>
+                    <li>Дашь ему палец, он всю руку ухватит.</li>
+                </ul>
+            </section>
+
+            <section lang="en">
+                <h3>English</h3>
+                <ul>
+                    <li>Give an inch, he&prime;ll take an ell.</li>
+                    <li>Give a clown your finger, and he&prime;ll take your whole hand (or: he&prime;ll grasp your fist).</li>
+                    <li>Give him an inch and he&prime;ll take a mile.</li>
+                    <li>Give you an inch and you&prime;ll take a span.</li>
+                </ul>
+            </section>
+
+            <section lang="de">
+                <h3>Deutsch</h3>
+                <ul>
+                    <li>Gibst du dem Narren einen Finger, so will er gleich die ganze Hand.</li>
+                    <li>Gib ihm eine Handbreit, so nimmt er die ganze Elle.</li>
+                    <li>Wem man eine Handbreit gibt, der nimmt eine Elle.</li>
+                    <li>Läßt man dem Schalk eine Handbreit, so nimmt er eine Elle lang.</li>
+                    <li>Schenkt man jemand eine Kuh, will er auch noch das Futter dazu.</li>
+                </ul>
+            </section>
+
+            <section lang="fr">
+                <h3>Français</h3>
+                <ul>
+                    <li>Si on lui donne un pouce, il en prendra long comme le bras.</li>
+                    <li>Si vous lui donnez un pied, il vous en prendra quatre (ou: il vous prendra la jambe).</li>
+                </ul>
+            </section>
+
+            <section lang="es">
+                <h3>Español</h3>
+                <ul>
+                    <li>Al villano dale el pie, y tomará la mano.</li>
+                </ul>
+            </section>
+
+            <section lang="it">
+                <h3>Italiano</h3>
+                <ul>
+                    <li>Al villano, se gli porgi il dito, ei prende la mano.</li>
+                </ul>
+            </section>
+
+            <section lang="la">
+                <h3>Latina</h3>
+                <ul>
+                    <li>Si digitum porrexeris, manum invadet.</li>
+                </ul>
+            </section>
+        </article>
+
+        <article class="card">
+            <h2>452</h2>
+
+            <section lang="zh">
+                <h3>汉</h3>
+                <ul>
+                    <li>人心不足，有了五谷想六谷。</li>
+                    <li>人心不足，得陇望蜀。</li>
+                    <li>人心不足蛇吞象，贪心不足吃月亮。</li>
+                    <li>人心难满，欲壑难填。</li>
+                </ul>
+                <p>参见：「得寸进尺」（<a href="http://example.org/Aphorism.html#93">№ 93</a>）。</p>
+            </section>
+
+            <section lang="ja">
+                <h3>和</h3>
+                <ul>
+                    <li>欲に頂なし。</li>
+                    <li>事足りれば足るにまかせて事足らず。</li>
+                    <li>欲に限りはない。</li>
+                    <li>隴を得て蜀を望む。</li>
+                </ul>
+            </section>
+
+            <section lang="ru">
+                <h3>Русский</h3>
+                <ul>
+                    <li>Человек никогда не бывает доволен.</li>
+                    <li>Есть много, а хочется больше.</li>
+                    <li>Чем больше есть, тем больше хочется.</li>
+                </ul>
+            </section>
+
+            <section lang="en">
+                <h3>English</h3>
+                <ul>
+                    <li>None is satisfied with his fortune.</li>
+                    <li>No man is content (with his lot).</li>
+                </ul>
+            </section>
+
+            <section lang="de">
+                <h3>Deutsch</h3>
+                <ul>
+                    <li>Niemand ist mit seinem Schicksal zufrieden.</li>
+                </ul>
+            </section>
+
+            <section lang="fr">
+                <h3>Français</h3>
+                <ul>
+                    <li>De sa fortune nul n&prime;est content.</li>
+                    <li>Quand on est bien, on ne s&prime;y peut tenir.</li>
+                    <li>L&prime;avarice est comme le feu: plus on y met de bois, plus il brûle.</li>
+                </ul>
+            </section>
+
+            <section lang="es">
+                <h3>Español</h3>
+                <ul>
+                    <li>Nadie está contento con su suerte.</li>
+                </ul>
+            </section>
+
+            <section lang="it">
+                <h3>Italiano</h3>
+                <ul>
+                    <li>E non è un per cento di sua sorte contento.</li>
+                </ul>
+            </section>
+
+            <section lang="la">
+                <h3>Latina</h3>
+                <ul>
+                    <li>Nemo sua sorte contentus.</li>
+                    <li>Ita plerique sumus omnes, nostri nosmet paenitet.</li>
+                </ul>
+            </section>
+        </article>
+
+    </div>
+
+    <h1>《拉丁语成语辞典》</h1>
+
+    <div id="Idiom" class="CardBox">
+        <article class="card">
+            <div class="InfoBar">
+                <span class="Topic">荟萃（Varia）</span>
+                <span class="Tag">爱情</span>
+                <span class="Tag">战争和军事</span>
+            </div>
+            <section lang="la">
+                <ul>
+                    <li>Bella gerant alii, Protesilaus amet.</li>
+                </ul>
+                <p>(Ovid, <cite>Heroides</cite>. 13, 84)</p>
+            </section>
+            <section lang="en">
+                <ul>
+                    <li>May others fight, Protesilaos will love.</li>
+                </ul>
+            </section>
+            <section lang="zh">
+                <ul>
+                    <li>让别人作战，普罗忒西拉奥斯将要爱（他的妻子拉俄达弥亚）。</li>
+                </ul>
+                <p>指<q lang="grc">Πρωτεσίλᾱος</q>在特洛伊的战争中阵亡，但众神允许他暂时从冥府回到人间去，与妻子<q lang="grc">Λαοδάμεια</q>结合三个小时。所以奥维德写：「让别人作战，你要享受爱情」。</p>
+            </section>
+        </article>
+        <article class="card">
+            <div class="InfoBar">
+                <span class="Topic">荟萃（Varia）</span>
+                <span class="Tag">爱情</span>
+                <span class="Tag">战争和军事</span>
+            </div>
+            <section lang="la">
+                <ul>
+                    <li>Bella gerant alii, tu felix Austria nube. Nam quae Mars aliis, dat tibi regna Venus.</li>
+                </ul>
+            </section>
+            <section lang="en">
+                <ul>
+                    <li>Let others fight, you blessed Austria marry; for what empires Mars has granted others you will get from Venus.</li>
+                </ul>
+            </section>
+            <section lang="zh">
+                <ul>
+                    <li>让别人打仗，你，幸福的奥地利国，要结婚。因为玛尔斯给予别人的权势，你可以通过维纳斯获得。</li>
+                </ul>
+                <p>在欧洲历史上，奥地利多次以「联姻」方式化敌为友。</p>
+            </section>
+        </article>
+        <article class="card">
+            <div class="InfoBar">
+                <span class="Topic">逻辑学（Logica）</span>
+                <span class="Tag">神</span>
+            </div>
+            <section lang="la">
+                <ul>
+                    <li>etsi deus non daretur;</li>
+                </ul>
+            </section>
+            <section lang="en">
+                <ul>
+                    <li>as if God would not exist;</li>
+                </ul>
+            </section>
+            <section lang="zh">
+                <ul>
+                    <li>似乎神不存在；</li>
+                    <li>好像没有神；</li>
+                </ul>
+                <p>指经院哲学的推论方法：在讨论自然律及伦理道德原则时的一种辩论立场，纯粹靠自然理性。</p>
+            </section>
+        </article>
+        <article class="card">
+            <div class="InfoBar">
+                <span class="Topic">法律（Lex）</span>
+                <span class="Tag">听</span>
+                <span class="Tag">正义</span>
+            </div>
+            <section lang="la">
+                <ul>
+                    <li>Neque enim inaudita causa quemquam damnari aequitatis ratio patitur.</li>
+                </ul>
+            </section>
+            <section lang="en">
+                <ul>
+                    <li>The principle of justice and equity does not admit that somebody is sentenced without having had a hearing.</li>
+                </ul>
+            </section>
+            <section lang="zh">
+                <ul>
+                    <li>公义的原则要求一个人在审判之前必须要有机会在法庭上表白自己。</li>
+                </ul>
+                <p>参见古希腊的成语：<q lang="grc">Μηδὲ δίκῃν δικάσης, πρίν ἀμφοῖν μῦθον ἀκούσῃς.</q>（「在没有听双方之前，你不会作公平的审判」）。</p>
+            </section>
+        </article>
+        <article class="card">
+            <div class="InfoBar">
+                <span class="Topic">宗教（Religio）</span>
+                <span class="Tag">写作</span>
+            </div>
+            <section lang="la">
+                <ul>
+                    <li>Codex Iuris Canonici (CIC);</li>
+                </ul>
+            </section>
+            <section lang="en">
+                <ul>
+                    <li>Code of Canon Law;</li>
+                </ul>
+            </section>
+            <section lang="zh">
+                <ul>
+                    <li>《天主教法典》；</li>
+                    <li>公教会的法典；</li>
+                </ul>
+            </section>
+        </article>
+        <article class="card">
+            <div class="InfoBar">
+                <span class="Topic">哲人（Sapientes）</span>
+                <span class="Tag">神</span>
+                <span class="Author">泰勒斯（<q lang="grc">Θαλῆς</q>），630-560 BC</span>
+            </div>
+            <section lang="grc">
+                <ul>
+                    <li>Θαλῆς ᾠήθη πάντα πλήρη θεῶν εἶναι.</li>
+                </ul>
+            </section>
+            <section lang="en">
+                <ul>
+                    <li>Thales believed that everything was full of gods.</li>
+                </ul>
+            </section>
+            <section lang="zh">
+                <ul>
+                    <li>泰勒斯相信一切充满神灵。</li>
+                </ul>
+            </section>
+        </article>
+        <article class="card">
+            <div class="InfoBar">
+                <span class="Topic">哲人（Sapientes）</span>
+                <span class="Tag">神</span>
+                <span class="Author">毕达哥拉斯（<q lang="grc">Πυθαγόρας</q>）， 550-497 BC</span>
+            </div>
+            <section lang="grc">
+                <ul>
+                    <li>Ἕπου θεῷ.</li>
+                </ul>
+            </section>
+            <section lang="en">
+                <ul>
+                    <li>Follow god.</li>
+                </ul>
+            </section>
+            <section lang="zh">
+                <ul>
+                    <li>跟随神。</li>
+                </ul>
+            </section>
+        </article>
+        <article class="card">
+            <div class="InfoBar">
+                <span class="Topic">哲人（Sapientes）</span>
+                <span class="Tag">感叹语</span>
+                <span class="Author">阿基米德（<q lang="grc">Αρχιμήδης</q>），287-212 BC</span>
+            </div>
+            <section lang="grc">
+                <ul>
+                    <li>Εὕρεκα, εὕρεκα.</li>
+                </ul>
+                <p>(Vitruvius, <cite>De architectura</cite> 9, Praef. 10)</p>
+            </section>
+            <section lang="en">
+                <ul>
+                    <li>I found it! I discovered it!</li>
+                </ul>
+            </section>
+            <section lang="zh">
+                <ul>
+                    <li>我找到了！我发现了它！</li>
+                </ul>
+            </section>
+        </article>
+        <article class="card">
+            <div class="InfoBar">
+                <span class="Topic">哲人（Sapientes）</span>
+                <span class="Tag">历史</span>
+                <span class="Tag">情绪</span>
+                <span class="Author">塔西陀（<q lang="la">Publius Cornelius Tacitus</q>），56-117</span>
+            </div>
+            <section lang="la">
+                <ul>
+                    <li>Sine ira et studio.</li>
+                </ul>
+                <p>(<cite lang="la">Annales</cite> 1,1)</p>
+            </section>
+            <section lang="en">
+                <ul>
+                    <li>Without anger or partiality.</li>
+                </ul>
+            </section>
+            <section lang="zh">
+                <ul>
+                    <li>没有怨恨，也没有偏见。</li>
+                </ul>
+                <p>历史学家应该中立地、冷静的叙述事情。参见<abbr lang="la">Cicero</abbr>, <q lang="la">Nam quis nescit.</q>。</p>
+            </section>
+        </article>
+        <article class="card">
+            <div class="InfoBar">
+                <span class="Topic">哲人（Sapientes）</span>
+                <span class="Tag">和平</span>
+                <span class="Tag">谴责之话</span>
+                <span class="Author">塔西陀（<q lang="la">Publius Cornelius Tacitus</q>），56-117</span>
+            </div>
+            <section lang="la">
+                <ul>
+                    <li>Solitudinem faciunt pacem appellant.</li>
+                </ul>
+                <p>(<cite lang="la">Agricola</cite> 30)</p>
+            </section>
+            <section lang="en">
+                <ul>
+                    <li>They make a wilderness and coll it peace.</li>
+                </ul>
+            </section>
+            <section lang="zh">
+                <ul>
+                    <li>他们造成混乱，并称之为和平。</li>
+                </ul>
+                <p>塔西陀谴责罗马人的不列颠政策。</p>
+            </section>
+        </article>
+        <article class="card">
+            <div class="InfoBar">
+                <span class="Topic">哲人（Sapientes）</span>
+                <span class="Tag">文学</span>
+                <span class="Tag">幽默和悖论</span>
+                <span class="Author">尤文纳尔（<q lang="la">Decimus Iunius Iuvenalis</q>，<q lang="en">Juvenal</q>)</span>
+            </div>
+            <section lang="la">
+                <ul>
+                    <li>Difficile est satiram non scribere.</li>
+                </ul>
+                <p>(<cite>Saturae</cite> 1, 30)</p>
+            </section>
+            <section lang="en">
+                <ul>
+                    <li>It is difficult not to write a satire.</li>
+                </ul>
+            </section>
+            <section lang="zh">
+                <ul>
+                    <li>（在这样的情况下）不写一首讽刺诗是很难的。</li>
+                </ul>
+            </section>
+        </article>
+        <article class="card">
+            <div class="InfoBar">
+                <span class="Topic">圣经（<q lang="la">Scriptura</q>）</span>
+                <span class="Cite">《训道篇》（<q lang="he"><bdo dir="rtl">קֹהֶלֶת</bdo></q>，<q lang="grc">Ἐκκλησιαστής</q>，<q lang="la">Ecclesiastes</q>）</span>
+            </div>
+            <section lang="he">
+                <ul>
+                    <li><bdo dir="rtl">אֵין כָּל חָדָשׁ תַּחַת הַשָּׁמֶשׁ‎</bdo></li>
+                </ul>
+            </section>
+            <section lang="la">
+                <ul>
+                    <li>Nihil sub sole novum.</li>
+                </ul>
+            </section>
+            <section lang="en">
+                <ul>
+                    <li>There is no new thing under the sun.</li>
+                </ul>
+            </section>
+            <section lang="zh">
+                <ul>
+                    <li>太阳底下没有新鲜事。</li>
+                </ul>
+            </section>
+        </article>
+    </div>
+
+    <h1>《古希腊罗马及教父时期名著名言辞典》</h1>
+    <div id="Epigram" class="CardBox">
+        <article class="card">
+            <div class="InfoBar">
+                欧几里得（<span lang="grc">Εὐκλείδης</span>，<span lang="la">Eukleides</span>，<span lang="en">Euclid</span>），约320-280BC
+            </div>
+            <section lang="grc">
+                <ul>
+                    <li>ὅπερ ἔδει δεῖξαι</li>
+                </ul>
+            </section>
+            <section lang="la">
+                <ul>
+                    <li>quod erat demonstrandum</li>
+                </ul>
+            </section>
+            <section lang="he">
+                <ul>
+                    <li><bdo dir="rtl">מה שהיה צריך להוכיח‎</bdo></li>
+                </ul>
+            </section>
+            <section lang="ar">
+                <ul>
+                    <li><bdo dir="rtl">وهو المطلوب إثباته‎</bdo></li>
+                </ul>
+            </section>
+            <section lang="en">
+                <ul>
+                    <li>what was to be shown</li>
+                </ul>
+            </section>
+            <section lang="ru">
+                <ul>
+                    <li>что и требовалось доказать</li>
+                </ul>
+            </section>
+            <section lang="zh">
+                <ul>
+                    <li>应该证明的东西就是这些。</li>
+                </ul>
+            </section>
+        </article>
+        <article class="card">
+            <div class="InfoBar">
+                托勒密（<span lang="grc">Κλαύδιος Πτολεμαῖος</span>，<span lang="la">Claudius Ptolemaeus</span>，<span lang="en">Claudius Ptolemy</span>），约100-170
+            </div>
+            <section lang="grc">
+                <ul>
+                    <li>ἄγνωστος γῆ</li>
+                </ul>
+            </section>
+            <section lang="la">
+                <ul>
+                    <li>terra incognita</li>
+                </ul>
+            </section>
+            <section lang="en">
+                <ul>
+                    <li>unknown area</li>
+                </ul>
+            </section>
+            <section lang="zh">
+                <ul>
+                    <li>未知之地</li>
+                </ul>
+                <p>在《地理学指南》（<cite lang="grc">Γεωγραφικὴ Ὑφήγησις</cite>）的世界地图上，于最边缘的地区所写。</p>
+            </section>
+        </article>
+        <article class="card">
+            <div class="InfoBar">
+                波伊修斯（<span lang="la">Anicius Manlius Severinus Boëthius</span>），476-524
+            </div>
+            <section lang="la">
+                <ul>
+                    <li>Neque enim fuerit ulla rationalis natura, quin eidem libertas adsit arbitrii.</li>
+                </ul>
+                <p>(<cite lang="la">De consolatione philosophiae</cite> 5, 1)</p>
+            </section>
+            <section lang="en">
+                <ul>
+                    <li>There could never exist a rational being if ti ould not also possess free will.</li>
+                </ul>
+                <p>(<cite lang="en">The Consolation of Philosophy</cite>)</p>
+            </section>
+            <section lang="zh">
+                <ul>
+                    <li>如果没有自由意志，就不可能存在任何一个理性的实体。</li>
+                </ul>
+                <p>——《哲学的慰藉》</p>
+            </section>
+        </article>
+    </div>
+
+    <h1>《赫拉克利特著作残篇》</h1>
+</body>
+
+</html>
