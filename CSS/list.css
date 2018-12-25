@@ -1,8 +1,12 @@
-ol, ul {
+ol, ul, dl {
     line-height: 2rem;
     margin: 1rem;
 }
 
 ol {
     list-style-type: decimal;
+}
+
+dt {
+    font-weight: bold;
 }
