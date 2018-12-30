@@ -41,6 +41,8 @@ span.onum {
     font-family: Georgia, 'Cambria', 'Symbola', 'Calibri';
     font-size: 125%;
     font-variant-numeric: oldstyle-nums;
+    margin: 0 1px;
+    padding: 0 1px;
 }
 
 span.math img {
