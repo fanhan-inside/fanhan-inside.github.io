@@ -28,3 +28,8 @@ img {
     max-width: 100%;
     margin: 0 auto;
 }
+
+img.math {
+    display: inline-block;
+    vertical-align: middle;
+}
