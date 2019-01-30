@@ -8,7 +8,21 @@ header.at_hupu {
 }
 
 header.at_hupu h1 {
-    background: none;
+    background: radial-gradient(farthest-corner at 0 0, transparent, goldenrod);
+}
+
+header.at_hupu h1::before {
+    content: "虎扑扯淡";
+}
+
+header.at_hupu h2.original-title {
+    color: darkgray;
+    text-align: right;
+}
+
+header.at_hupu h2.original-title::after {
+    content: "（原标题）";
+    color: darkgoldenrod;
 }
 
 article.reply header.article::before {
