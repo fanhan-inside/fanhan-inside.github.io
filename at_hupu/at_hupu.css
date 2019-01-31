@@ -24,7 +24,7 @@ header.at_hupu h2.original-title {
 }
 
 header.at_hupu h2.original-title::before {
-    content: "（原标题）";
+    content: "原标题：";
     color: darkgoldenrod;
 }
 
