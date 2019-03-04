@@ -52,7 +52,7 @@
         <p>这里顺便介绍（不是推销）一本《闭嘴，学习！多磕头少说话专用微分方程教程》（<span lang="en">Shut Up And Study !!! «<cite>Differential Equations FOR DUMMIES</cite>» by <abbr class="who">Steven Holzner</abbr>, PhD</span>）<span class="tip">注：dummy ['dʌmɪ] n. 傀儡，哑巴，假人</span>。内容还是中规中矩的，英文措辞也不算太过艰险，想必童年才俊均可以轻松理解。</p>
         <p>其中主要使用了业内通用的<abbr class="who">莱布尼茨</abbr>记号，偶尔出现<abbr class="who">拉格朗日</abbr>记号，但是没看见<abbr class="who">牛顿</abbr>记号。各位童年才俊在校内掺和「学生会」政治和意识形态斗争的时候人缘好情商高的寻找友邦外援，可以参考这个表态。</p>
 
-        <p><time>2019-02-27</time>补充，在“SageMath”的帮助文档里面就有充沛的实例内容，这里仅举一例以示实践。二阶线性初值问题「<span class="math">y&prime;&prime;+y&prime;-2y=2x, &emsp; y(0)=0, y&prime;(0)=0</span>」的符号运算结果以及绘图（请注意「初心」两侧比例不同）：</p>
+        <p><time>2019-02-27</time>补充，在“SageMath”的帮助文档里面就有充沛的实例内容，这里仅举一例以示实践。二阶线性初值问题「<span class="math">y&prime;&prime;+y&prime;-2y=2x, &emsp; y(0)=0, y&prime;(0)=0</span>」的符号运算结果（调用“Maxima”）以及绘图（请注意「初心」两侧比例不同）：</p>
         <figure>
             <img src="image/054-001.png">
             <figcaption><span>请注意赛博朋克数学工作者所用记号乃莱布尼茨风格</span></figcaption>
@@ -61,6 +61,12 @@
             <img src="image/054-002.png">
             <img src="image/054-003.png">
         </div>
+
+        <p><time>2019-03-04</time>补充，使用原版“Maxima”解方程并绘图：</p>
+        <figure>
+            <img src="image/054-004.png">
+        </figure>
+        <p>注意绘图命令当中的「<code>rhs</code>」，这是<samp>lisp</samp>函数返回方程中等号右侧的表达式。与其它「友善」的程序比起来，使用原版<samp>Maxima</samp>还是需要一些<samp>lisp</samp>基础的。</p>
     </main>
     <div class="signature">
         <hr class="qed" /><span class="sign-time">2019.2.20, Mercurii</span>
