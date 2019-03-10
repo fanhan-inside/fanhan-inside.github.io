@@ -50,19 +50,19 @@
         <p>那么我们生活的这个宇宙，还是特么稳定的么？为啥充沛在时间和空间当中各种「微扰」并不能带来「世界末日」然后一票<abbr class="where">耶路撒冷</abbr>路径依赖工作者就得意忘形肆无忌惮的炒作<abbr class="pseudo">弥赛亚</abbr>眼瞅着就降临了顺之者昌逆之者亡呢？</p>
         <p>所以，各种动力系统稳定性研究都已经深入到一定程度之上的现在，哪怕在理论上「微波背景辐射」也不过是个添头，好比大年三十晚上的兔子，有它过年，没它也过年。</p>
         <p>一个没有「微波背景辐射」的架空世界，就是和本位面「几乎处处一致」，啥「创世纪の唯物主义证据」的影响是精确的零，无论惦记着中饱私囊的物理神童龙裔及其奴才如何在包括但不限于<u>知乎</u>等宣传阵地当中声嘶力竭的炒作宏大叙事望远镜和史无前例对撞机，都特么没区别。</p>
-        <p><time>2019-03-10</time>补充：使用wxMaxima绘制参数方程形式的平面曲线</p>
+        <p><time>2019-03-10</time>补充：使用<samp>wxMaxima</samp>绘制参数方程形式的平面曲线</p>
         <p>在<abbr class="who">陈维桓</abbr>《微分几何》（第二版）的附录〈3.2.1〉中给出的<samp>Mathematica</samp>代码是这样的：</p>
         <figure>
             <img src="image/055-002.png" alt="Mathematica">
             <figcaption><span>Mathematica</span></figcaption>
         </figure>
-        <p>而我在<samp>wxMaxima</samp>的实践是这样的：</p>
+        <p>而我在<samp>wxMaxima</samp>当中的实践是这样的：</p>
         <figure>
             <img src="image/055-003.png" alt="wxMaxima">
             <figcaption><span>wxMaxima</span></figcaption>
         </figure>
         <p>其中对应<samp>Mathematica</samp>「<code>//Evaluate</code>」代码的部分，就是<samp>Maxima</samp>「<code>%i3</code>」展开为「<code>%o3</code>」的形式。看上去很笨，我自己也不满意，但是一时找不到更优雅的方式。</p>
-        <p>究其原因，在于参数（<q lang="en">Parameter</q>）方程的定义是个「列表」，需要以参数（<q lang="en">Argument</q>）形式传递给绘图函数。从图中过程也可以看出，对应<span class="math">x(t)</span>和<span class="math">y(t)</span>的两项参数（<q lang="en">Parameter</q>）是直接作为调用参数（<q lang="en">Argument</q>）的一部分，需要去掉「方括号」（对应<samp>Mathematica</samp>的「大括号」）。</p>
+        <p>究其原因，在于参数（<q lang="en">Parameter</q>）方程的定义是个「列表」，需要以参数（<q lang="en">Argument</q>）形式传递给绘图函数。从图中过程也可以看出，对应<span class="math">x(t)</span>和<span class="math">y(t)</span>的两项参数（<q lang="en">Parameter</q>）表达式是直接作为调用参数（<q lang="en">Argument</q>）的一部分，需要去掉「方括号」（对应<samp>Mathematica</samp>的「大括号」）。</p>
         <p>按理说<samp>LISP</samp>最擅长处理的就是「<samp>LIST</samp>」吖，但是试了好几种方法都不能简单的展开。只能说，相关绘图函数的接口设计，是面向程序员而不是数学工作者的，使用「<code>parametric</code>」参数（<q lang="en">Argument</q>）调用「<code>plot2d</code>」就直接放两项，而「<code>plot3d</code>」就是三项，没有对于「参数（<q lang="en">Parameter</q>）方程（组）」作出进一步的抽象。</p>
         <p>也就是说，实际上<samp>Maxima</samp>使用的是「借鉴了<samp>LISP</samp>形式的<samp>Maxima</samp>语言」，而<samp>Mathematica</samp>用的是自定义的「<samp>Wolfram</samp>语言」，结合使用场景才能评论便利与否。</p>
         <p>这里仅举一例，其它相关内容，以及使用<samp>SageMath/GNU Octave</samp>的实践过程，会单独写一篇《三自课件运动》放在《囧斋随笔·与时俱进》之下。还是优先级不高并且内容不完整，除了提高自身素质之外的必要劳动之外，不会把时间精力消耗在技术细节之上，仍然按照「形而上者谓之道」原则进行坚决的政治和意识形态斗争，干好「本职工作」。</p>
