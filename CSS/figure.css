@@ -31,4 +31,5 @@ img {
 img.math {
     display: inline-block;
     vertical-align: middle;
+    margin: 2px;
 }
