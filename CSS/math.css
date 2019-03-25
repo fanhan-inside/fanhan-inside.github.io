@@ -1,7 +1,7 @@
 var {
     font-family: var(--font-family-math);
     font-style: oblique;
-    padding: 1px;
+    padding: 2px;
 }
 
 span.math {
