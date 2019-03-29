@@ -4,7 +4,7 @@ html {
 }
 
 header.at_douban h1 {
-    background: radial-gradient(farthest-corner at 0 0, transparent, lightseagreen);
+    background: radial-gradient(farthest-corner at 0 0, transparent, lightgreen);
 }
 
 header.at_douban h1.diary::before {
