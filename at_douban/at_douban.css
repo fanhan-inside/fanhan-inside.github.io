@@ -1,0 +1,12 @@
+@import url(../main.css);
+html {
+    background-image: url(IMG/at_douban_background.svg);
+}
+
+header.at_douban h1 {
+    background: radial-gradient(farthest-corner at 0 0, transparent, lightseagreen);
+}
+
+header.at_douban h1.diary::before {
+    content: "豆瓣日记";
+}

@@ -36,7 +36,7 @@
 
         header {
             display: grid;
-            grid-template: "profile anonym works"580px "profile sign-name sign-name"150px / 480px 360px 1fr;
+            grid-template: "profile anonym works"610px "profile sign-name sign-name"150px / 480px 360px 1fr;
         }
 
         footer {
@@ -163,8 +163,8 @@
 
         #articles>span {
             font-size: 1rem;
-            margin: 0.25rem;
-            padding: 0.5rem;
+            margin: 2px;
+            padding: 4px;
             border: 1px solid lightgray;
         }
 
@@ -189,15 +189,19 @@
         }
 
         #知乎 {
-            background: radial-gradient(farthest-corner at 0 0, lime, ghostwhite);
+            background: radial-gradient(farthest-corner at 0 0, lightgreen, ghostwhite);
         }
 
         #煎蛋 {
-            background: radial-gradient(farthest-corner at 0 0, white, lime);
+            background: radial-gradient(farthest-corner at 0 0, white, lightgreen);
         }
 
         #虎扑 {
             background: radial-gradient(farthest-corner at 0 0, yellow, lime);
+        }
+
+        #豆瓣 {
+            background: radial-gradient(farthest-corner at 0 0, yellow, lightseagreen);
         }
     </style>
 </head>
@@ -215,7 +219,9 @@
                 </colgroup>
                 <tr>
                     <td>居住地</td>
-                    <td>现居北京<span class="tip">或曰“国际一流和谐宜居之都”</span><hr id="sign-room" class="sign-room" /></td>
+                    <td>现居北京<span class="tip">或曰“国际一流和谐宜居之都”</span>
+                        <hr id="sign-room" class="sign-room" />
+                    </td>
                 </tr>
                 <tr>
                     <td>所在行业</td>
@@ -260,7 +266,9 @@
                 </tr>
                 <tr>
                     <td><ruby>范仲拙<rt><code>.f'h@N#</code></rt></ruby></td>
-                    <td><pre class="code">fANhAN iNSiDE</pre></td>
+                    <td>
+                        <pre class="code">fANhAN iNSiDE</pre>
+                    </td>
                 </tr>
                 <tr>
                     <td><ruby>范硁然<rt>van Canyon</rt></ruby></td>
@@ -337,6 +345,12 @@
                         <span>在虎扑的各种扯淡</span>
                     </td>
                 </tr>
+                <tr>
+                    <td>
+                        <a href="at_douban/toc.html">谈笑风生＠豆瓣</a><br />
+                        <span>在豆瓣的各种吐槽</span>
+                    </td>
+                </tr>
             </table>
         </div>
         <hr id="sign-name" class="sign-name" />
@@ -348,7 +362,7 @@
     <h2 class="girdle">
         <span>文章列表</span>
     </h2>
-    <div id="last-updated">更新于<time>2019.3.29, Venelis</time>共<span class="onum">932</span>篇</div>
+    <div id="last-updated">更新于<time>2019.3.29, Venelis</time>共<span class="onum">933</span>篇</div>
     <div id="articles">
         <span id="异闻录">《范版东幻异闻录》</span>
         <span id="设定集">《范版西幻设定集》</span>
@@ -358,6 +372,7 @@
         <span id="知乎">谈笑风生＠知乎</span>
         <span id="煎蛋">谈笑风生＠九省通衢の煎蛋</span>
         <span id="虎扑">谈笑风生＠虎扑</span>
+        <span id="豆瓣">谈笑风生＠豆瓣</span>
     </div>
     <iframe src="articles.html" height="600" scrolling="auto" marginwidth="0" marginheight="0"></iframe>
 
