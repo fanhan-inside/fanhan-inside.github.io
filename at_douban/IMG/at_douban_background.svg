@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 60 60">
-    <path fill="midnightblue" fill-rule="evenodd"
+    <path fill="darkseagreen" fill-rule="evenodd"
     d="M 0 30 l 18 30 h 24 l 18 -30 l -18 -30 h -24 z
 M 30 0 l 30 18 v 24 l -30 18 l -30 -18 v -24 z M 6 24 v 12 h 48 v -12 z M 24 6 v 48 h 12 v -48 z
 M 18 18 v 24 h 24 v -24 z M 6 24 l 30 30 l 18 -18 l -30 -30 z M 6 36 l 30 -30 l 18 18 l -30 30 z"/>

@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="126" height="126" version="1.1" viewBox="0 0 140 140">
 <!--叙利亚阿勒颇城堡地砖图案-->
-    <path fill="darkgreen" stroke="lightgray" d="M 70 0 l 50 20 l 20 50 l -20 50 l -50 20 l -50 -20 l -20 -50 l 20 -50 l 50 -20
+    <path fill="maroon" stroke="lightgray" d="M 70 0 l 50 20 l 20 50 l -20 50 l -50 20 l -50 -20 l -20 -50 l 20 -50 l 50 -20
         l -20 20 h -30 v 30 l -20 20 l 20 20 v 30 h 30 l 20 20  l 20 -20 h 30 v -30 l 20 -20 l -20 -20 v -30 h -30 l -20 -20 z
         M 50 50 h -30 l 20 20 l -20 20 h 30 v 30 l 20 -20 l 20 20v -30 h 30l -20 -20 l 20 -20 h -30 v -30 l -20 20 l -20 -20 v 30
         h 10 l 10 -10 l 10 10 h 10 v 10 l 10 10 l -10 10v 10 h -10 l -10 10 l -10 -10 h -10 v -10 l -10 -10l 10 -10 v -10 z"/>
