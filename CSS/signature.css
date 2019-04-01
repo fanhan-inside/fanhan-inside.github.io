@@ -95,3 +95,23 @@ hr.sign-room::after {
     vertical-align: middle;
     margin-left: 10px;
 }
+
+hr.wort-verboten {
+    display: inline-block;
+    border: none;
+    margin: 0;
+}
+
+hr.wort-verboten::before {
+    content: "🛇";
+    font-family: "Symbola";
+    font-size: 20px;
+    color: red;
+}
+
+hr.wort-verboten::after {
+    content: "Wort Verboten !";
+    font-family: "AngloText";
+    font-size: 16px;
+    color: black;
+}
