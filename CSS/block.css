@@ -79,13 +79,25 @@ article.message {
     background-color: white;
 }
 
-article.message header.message {
+article.message header.message, article.message header.myself {
     border: none;
+}
+
+article.message header.myself::before {
+    content: url(../IMG/icon_small.svg);
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0.5rem;
 }
 
 article.message header.message span.heading {
     border-bottom: 1px solid lightgray;
     border-right: 1px solid lightgray;
+}
+
+article.message header.myself span.heading {
+    border-bottom: 1px dashed gray;
+    border-right: 1px dashed gray;
 }
 
 section {
