@@ -1,14 +1,7 @@
-@import url(../../../main.css);
-html {
-    background: url(../image/fantasy_logo.svg) top left repeat-y, url(../image/fantasy_logo.svg) top right repeat-y;
-    background-color: var(--html-background-color);
-}
-
+@import url(../fanism.css);
 h1 {
-    box-sizing: border-box;
     height: 470px;
     padding: 250px 0 0 0;
     background: url(../image/heading_excursus.svg) 50% no-repeat;
-    text-align: center;
     font-size: 4rem;
 }

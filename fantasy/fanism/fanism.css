@@ -1,12 +1,7 @@
 @import url(../../main.css);
-header {
-    width: 1280px;
-}
-
-footer {
-    width: 1280px;
-    border: none;
-    text-align: center;
+html {
+    background: url(image/fantasy_logo.svg) top left repeat-y, url(image/fantasy_logo.svg) top right repeat-y;
+    background-color: var(--html-background-color);
 }
 
 h1 {
