@@ -28,17 +28,6 @@ header.at_hupu h2.original-title::before {
     color: darkgoldenrod;
 }
 
-article.reply header.myself::before {
+article.comment header.myself::before {
     content: url(../IMG/icon_blue.svg);
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 1rem;
-}
-
-article.reply::after {
-    content: "故人心似中秋月，肯为狂夫照白头。";
-    color: dimgray;
-    margin: 1rem 0 0 0;
-    padding: 0.5rem;
-    border-top: 1px solid gray;
 }
