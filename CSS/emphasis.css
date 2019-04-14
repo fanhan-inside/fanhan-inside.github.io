@@ -40,7 +40,6 @@ ins {
     font-style: normal;
     text-decoration: none;
     border: 1px solid red;
-    /* background-image: radial-gradient(farthest-corner at 0 0, yellow, red); */
 }
 
 .dot {

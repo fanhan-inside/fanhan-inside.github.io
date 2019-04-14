@@ -15,22 +15,6 @@ span.math {
     background-color: transparent;
 }
 
-/*
-span.math sup, span.math sub {
-    padding: 1px;
-}
-
-span.math sub {
-    font-feature-settings: "subs" 1;
-    font-variant-position: sub;
-}
-
-span.math sup {
-    font-feature-settings: "sups" 1;
-    font-variant-position: super;
-}
-*/
-
 span.frac {
     font-family: 'Calibri', Georgia, 'Cambria', 'Symbola';
     font-size: 125%;
@@ -48,4 +32,5 @@ span.onum {
 span.math img {
     display: inline-block;
     vertical-align: middle;
+    margin: 2px;
 }

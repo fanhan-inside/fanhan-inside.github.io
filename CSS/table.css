@@ -53,14 +53,6 @@ table.toc td a {
     display: block;
 }
 
-/* table.toc tr:nth-child(odd) {
-    background-color: ghostwhite;
-}
-
-table.toc tr:nth-child(even) {
-    background-color: transparent;
-} */
-
 table.toc tr:hover {
     background-color: lightgoldenrodyellow;
 }

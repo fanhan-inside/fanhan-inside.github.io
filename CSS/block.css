@@ -19,7 +19,7 @@ article header span.heading {
     text-align: left;
 }
 
-article.bulletin, article.reply, article.comment, article.message {
+article.bulletin, article.comment, article.message {
     background-color: white;
     box-sizing: border-box;
     width: 90%;
@@ -33,11 +33,6 @@ article.bulletin {
 }
 
 article.comment {
-    box-shadow: none;
-    border: 1px solid gray;
-}
-
-article.reply {
     box-shadow: none;
     border: 1px solid gray;
 }
