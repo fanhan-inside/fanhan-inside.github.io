@@ -10,7 +10,7 @@ a::before {
     margin: 0 0.25rem 0 0;
 }
 
-a[href^="http://"]::before, a[href^="https://"]::before {
+a[href^="http://"]::before, a[href^="https://"]::before, a[href^="mailto:"]::before {
     content: url(link_external.svg);
     margin: 0 0.25rem 0 0;
 }

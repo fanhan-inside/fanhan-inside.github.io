@@ -13,15 +13,15 @@
 }
 
 @font-face {
-  font-family: "Alexander";
-  src: local("Alexander"), url(./ancient/Alexander.woff2) format("woff2");
+  font-family: "Anaktoria";
+  src: local("Anaktoria"), url(./ancient/Anaktoria.woff2) format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Anaktoria";
-  src: local("Anaktoria"), url(./ancient/Anaktoria.woff2) format("woff2");
+  font-family: "Alexander";
+  src: local("Alexander"), url(./ancient/Alexander.woff2) format("woff2");
   font-weight: normal;
   font-style: normal;
 }
