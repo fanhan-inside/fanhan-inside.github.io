@@ -7,7 +7,7 @@
     --font-family-sans: Arial, Helvetica, 'Source Sans Pro', 'Noto Sans', 'Fira Sans', 'Clear Sans', 'IBM Plex Sans', sans-serif;
     --font-family-code: 'Consolas', 'Inconsolata', 'Source Code Pro', 'Fira Code', monospace;
     --font-family-mono: 'Noto Mono', 'Fira Mono', 'IBM Plex Mono', 'Courier New', Courier, monospace;
-    --font-family-math: 'Cambria', Georgia, 'Symbola', 'Calibri';
+    --font-family-math: 'Aroania', 'Cambria', Georgia, 'Symbola', 'Calibri';
     /* 试着用Unicode字符定义CSS变量 */
     /* 素材选用「中国传统颜色」和「日本の伝統色」，网站界面类似，不知道究竟谁复制谁并成功 */
     --color-name-japanese-水がき: #B9887D;

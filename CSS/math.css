@@ -16,13 +16,13 @@ span.math {
 }
 
 span.frac {
-    font-family: 'Calibri', Georgia, 'Cambria', 'Symbola';
+    font-family: var(--font-family-math);
     font-size: 125%;
     font-variant-numeric: diagonal-fractions;
 }
 
 span.onum {
-    font-family: Georgia, 'Cambria', 'Symbola', 'Calibri';
+    font-family: var(--font-family-math);
     font-size: 125%;
     font-variant-numeric: oldstyle-nums;
     margin: 0 1px;

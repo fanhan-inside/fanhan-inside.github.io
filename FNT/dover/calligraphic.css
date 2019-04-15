@@ -147,7 +147,7 @@
 
 @font-face {
     font-family: "Unciala";
-    src: local("Unciala"), url(./calligraphic/Unciala.woff2) format("woff2");
+    src: url(./calligraphic/Unciala.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
