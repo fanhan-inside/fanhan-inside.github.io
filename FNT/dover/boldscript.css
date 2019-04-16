@@ -1,167 +1,167 @@
 @font-face {
     font-family: "AdastraBlack";
-    src: local("Adastra Black"), local("AdastraBlack"), url(./boldscript/AdastraBlack.woff2) format("woff2");
+    src: url(./boldscript/AdastraBlack.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "AdastraRoyal";
-    src: local("Adastra Royal"), local("AdastraRoyal"), url(./boldscript/AdastraRoyal.woff2) format("woff2");
+    src: url(./boldscript/AdastraRoyal.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Allegro";
-    src: local("Allegro"), url(./boldscript/Allegro.woff2) format("woff2");
+    src: url(./boldscript/Allegro.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Balzac";
-    src: local("Balzac"), url(./boldscript/Balzac.woff2) format("woff2");
+    src: url(./boldscript/Balzac.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "BronsteinBold";
-    src: local("Bronstein Bold"), local("BronsteinBold"), url(./boldscript/BronsteinBold.woff2) format("woff2");
+    src: url(./boldscript/BronsteinBold.woff2) format("woff2");
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Castile";
-    src: local("Castile"), url(./boldscript/Castile.woff2) format("woff2");
+    src: url(./boldscript/Castile.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Dauphine";
-    src: local("Dauphine"), url(./boldscript/Dauphine.woff2) format("woff2");
+    src: url(./boldscript/Dauphine.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "DianaBold";
-    src: local("Diana Bold"), local("DianaBold"), url(./boldscript/DianaBold.woff2) format("woff2");
+    src: url(./boldscript/DianaBold.woff2) format("woff2");
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Dynamic";
-    src: local("Dynamic"), url(./boldscript/Dynamic.woff2) format("woff2");
+    src: url(./boldscript/Dynamic.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Elite";
-    src: local("Elite"), url(./boldscript/Elite.woff2) format("woff2");
+    src: url(./boldscript/Elite.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "ElviraBoldItalic";
-    src: local("Elvira BoldItalic"), local("ElviraBoldItalic"), url(./boldscript/ElviraBoldItalic.woff2) format("woff2");
+    src: url(./boldscript/ElviraBoldItalic.woff2) format("woff2");
     font-weight: bold;
     font-style: italic;
 }
 
 @font-face {
     font-family: "Fleet";
-    src: local("Fleet"), url(./boldscript/Fleet.woff2) format("woff2");
+    src: url(./boldscript/Fleet.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "FluidumBold";
-    src: local("Fluidum Bold"), local("FluidumBold"), url(./boldscript/FluidumBold.woff2) format("woff2");
+    src: url(./boldscript/FluidumBold.woff2) format("woff2");
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Forte";
-    src: local("Forte"), url(./boldscript/Forte.woff2) format("woff2");
+    src: url(./boldscript/Forte.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Gaston";
-    src: local("Gaston"), url(./boldscript/Gaston.woff2) format("woff2");
+    src: url(./boldscript/Gaston.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Holla";
-    src: local("Holla"), url(./boldscript/Holla.woff2) format("woff2");
+    src: url(./boldscript/Holla.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "LilyAnn";
-    src: local("Lily Ann"), local("LilyAnn"), url(./boldscript/LilyAnn.woff2) format("woff2");
+    src: url(./boldscript/LilyAnn.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Mandate";
-    src: local("Mandate"), url(./boldscript/Mandate.woff2) format("woff2");
+    src: url(./boldscript/Mandate.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "NoveltyScript";
-    src: local("Novelty Script"), local("NoveltyScript"), url(./boldscript/NoveltyScript.woff2) format("woff2");
+    src: url(./boldscript/NoveltyScript.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Saltino";
-    src: local("Saltino"), url(./boldscript/Saltino.woff2) format("woff2");
+    src: url(./boldscript/Saltino.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Salto";
-    src: local("Salto"), url(./boldscript/Salto.woff2) format("woff2");
+    src: url(./boldscript/Salto.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Tambo";
-    src: local("Tambo"), url(./boldscript/Tambo.woff2) format("woff2");
+    src: url(./boldscript/Tambo.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "TimeBold";
-    src: local("Time Bold"), local("TimeBold"), url(./boldscript/TimeBold.woff2) format("woff2");
+    src: url(./boldscript/TimeBold.woff2) format("woff2");
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Zorba";
-    src: local("Zorba"), url(./boldscript/Zorba.woff2) format("woff2");
+    src: url(./boldscript/Zorba.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
