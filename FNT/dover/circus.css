@@ -1,167 +1,167 @@
 @font-face {
     font-family: "Alcazar";
-    src: local("Alcazar"), url(./circus/Alcazar.woff2) format("woff2");
+    src: url(./circus/Alcazar.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "ArtSans";
-    src: local("ArtSans"), url(./circus/ArtSans.woff2) format("woff2");
+    src: url(./circus/ArtSans.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "BackhandScript";
-    src: local("Backhand Script"), local("BackhandScript"), url(./circus/BackhandScript.woff2) format("woff2");
+    src: url(./circus/BackhandScript.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Balderdash";
-    src: local("Balderdash"), url(./circus/Balderdash.woff2) format("woff2");
+    src: url(./circus/Balderdash.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Cavalcade";
-    src: local("Cavalcade"), url(./circus/Cavalcade.woff2) format("woff2");
+    src: url(./circus/Cavalcade.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Centennial";
-    src: local("Centennial"), url(./circus/Centennial.woff2) format("woff2");
+    src: url(./circus/Centennial.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Cinderella";
-    src: local("Cinderella"), url(./circus/Cinderella.woff2) format("woff2");
+    src: url(./circus/Cinderella.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Circustime";
-    src: local("Circustime"), url(./circus/Circustime.woff2) format("woff2");
+    src: url(./circus/Circustime.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Daisy";
-    src: local("Daisy"), url(./circus/Daisy.woff2) format("woff2");
+    src: url(./circus/Daisy.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "DiamondInlay";
-    src: local("Diamond Inlay"), local("DiamondInlay"), url(./circus/DiamondInlay.woff2) format("woff2");
+    src: url(./circus/DiamondInlay.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Earthquake";
-    src: local("Earthquake"), url(./circus/Earthquake.woff2) format("woff2");
+    src: url(./circus/Earthquake.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "HometownNormal";
-    src: local("Hometown Normal"), local("HometownNormal"), url(./circus/HometownNormal.woff2) format("woff2");
+    src: url(./circus/HometownNormal.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Houdini";
-    src: local("Houdini"), url(./circus/Houdini.woff2) format("woff2");
+    src: url(./circus/Houdini.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "JasonWood";
-    src: local("Jason Wood"), local("JasonWood"), url(./circus/JasonWood.woff2) format("woff2");
+    src: url(./circus/JasonWood.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Mona";
-    src: local("Mona"), url(./circus/Mona.woff2) format("woff2");
+    src: url(./circus/Mona.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Panjandrum";
-    src: local("Panjandrum"), url(./circus/Panjandrum.woff2) format("woff2");
+    src: url(./circus/Panjandrum.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Penzance";
-    src: local("Penzance"), url(./circus/Penzance.woff2) format("woff2");
+    src: url(./circus/Penzance.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "RingmasterNormal";
-    src: local("Ringmaster Normal"), local("RingmasterNormal"), url(./circus/RingmasterNormal.woff2) format("woff2");
+    src: url(./circus/RingmasterNormal.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "ShowtimeNormal";
-    src: local("Showtime Normal"), local("ShowtimeNormal"), url(./circus/ShowtimeNormal.woff2) format("woff2");
+    src: url(./circus/ShowtimeNormal.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "StartimeNormal";
-    src: local("Startime Normal"), local("StartimeNormal"), url(./circus/StartimeNormal.woff2) format("woff2");
+    src: url(./circus/StartimeNormal.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "TokyoNormal";
-    src: local("Tokyo Normal"), local("TokyoNormal"), url(./circus/TokyoNormal.woff2) format("woff2");
+    src: url(./circus/TokyoNormal.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Torpedo";
-    src: local("Torpedo"), url(./circus/Torpedo.woff2) format("woff2");
+    src: url(./circus/Torpedo.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Toussant";
-    src: local("Toussant"), url(./circus/Toussant.woff2) format("woff2");
+    src: url(./circus/Toussant.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Wave";
-    src: local("Wave"), url(./circus/Wave.woff2) format("woff2");
+    src: url(./circus/Wave.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }

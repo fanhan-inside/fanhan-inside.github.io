@@ -1,167 +1,167 @@
 @font-face {
     font-family: "BlotterRoman";
-    src: local("Blotter Roman"), local("BlotterRoman"), url(./grunge/BlotterRoman.woff2) format("woff2");
+    src: url(./grunge/BlotterRoman.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Bushman";
-    src: local("Bushman"), url(./grunge/Bushman.woff2) format("woff2");
+    src: url(./grunge/Bushman.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "CrazyDaisy";
-    src: local("Crazy Daisy"), local("CrazyDaisy"), url(./grunge/CrazyDaisy.woff2) format("woff2");
+    src: url(./grunge/CrazyDaisy.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Device";
-    src: local("Device"), url(./grunge/Device.woff2) format("woff2");
+    src: url(./grunge/Device.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Everglades";
-    src: local("Everglades"), url(./grunge/Everglades.woff2) format("woff2");
+    src: url(./grunge/Everglades.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Fingerpaint";
-    src: local("Fingerpaint"), url(./grunge/Fingerpaint.woff2) format("woff2");
+    src: url(./grunge/Fingerpaint.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Gooseflesh";
-    src: local("Gooseflesh"), url(./grunge/Gooseflesh.woff2) format("woff2");
+    src: url(./grunge/Gooseflesh.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Grumble";
-    src: local("Grumble"), url(./grunge/Grumble.woff2) format("woff2");
+    src: url(./grunge/Grumble.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Inkjet";
-    src: local("Inkjet"), url(./grunge/Inkjet.woff2) format("woff2");
+    src: url(./grunge/Inkjet.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Kidprint";
-    src: local("Kidprint"), url(./grunge/Kidprint.woff2) format("woff2");
+    src: url(./grunge/Kidprint.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "LayoutGothic";
-    src: local("Layout Gothic"), local("LayoutGothic"), url(./grunge/LayoutGothic.woff2) format("woff2");
+    src: url(./grunge/LayoutGothic.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Loveletter";
-    src: local("Loveletter"), url(./grunge/Loveletter.woff2) format("woff2");
+    src: url(./grunge/Loveletter.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "MuddyWater";
-    src: local("Muddy Water"), local("MuddyWater"), url(./grunge/MuddyWater.woff2) format("woff2");
+    src: url(./grunge/MuddyWater.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "NervousNellie";
-    src: local("Nervous Nellie"), local("NervousNellie"), url(./grunge/NervousNellie.woff2) format("woff2");
+    src: url(./grunge/NervousNellie.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Ninja";
-    src: local("Ninja"), url(./grunge/Ninja.woff2) format("woff2");
+    src: url(./grunge/Ninja.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "PelhamBold";
-    src: local("Pelham Bold"), local("PelhamBold"), url(./grunge/PelhamBold.woff2) format("woff2");
+    src: url(./grunge/PelhamBold.woff2) format("woff2");
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Penciling";
-    src: local("Penciling"), url(./grunge/Penciling.woff2) format("woff2");
+    src: url(./grunge/Penciling.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "RansomNoteReversedNormal";
-    src: local("Ransom Note Reversed Normal"), local("RansomNoteReversedNormal"), url(./grunge/RansomNoteReversedNormal.woff2) format("woff2");
+    src: url(./grunge/RansomNoteReversedNormal.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "RumpledRoman";
-    src: local("Rumpled Roman"), local("RumpledRoman"), url(./grunge/RumpledRoman.woff2) format("woff2");
+    src: url(./grunge/RumpledRoman.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "SweetheartNormal";
-    src: local("Sweetheart Normal"), local("SweetheartNormal"), url(./grunge/SweetheartNormal.woff2) format("woff2");
+    src: url(./grunge/SweetheartNormal.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Threadneedle";
-    src: local("Threadneedle"), url(./grunge/Threadneedle.woff2) format("woff2");
+    src: url(./grunge/Threadneedle.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "VersatileScript";
-    src: local("Versatile Script"), local("VersatileScript"), url(./grunge/VersatileScript.woff2) format("woff2");
+    src: url(./grunge/VersatileScript.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "WarehouseGothic";
-    src: local("Warehouse Gothic"), local("WarehouseGothic"), url(./grunge/WarehouseGothic.woff2) format("woff2");
+    src: url(./grunge/WarehouseGothic.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Whirligig";
-    src: local("Whirligig"), url(./grunge/Whirligig.woff2) format("woff2");
+    src: url(./grunge/Whirligig.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }

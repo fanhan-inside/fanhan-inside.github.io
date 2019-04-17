@@ -1,167 +1,167 @@
 @font-face {
     font-family: "AztecaCondensed";
-    src: local("Azteca Condensed"), local("AztecaCondensed"), url(./special/AztecaCondensed.woff2) format("woff2");
+    src: url(./special/AztecaCondensed.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Burst";
-    src: local("Burst"), url(./special/Burst.woff2) format("woff2");
+    src: url(./special/Burst.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Chinatown";
-    src: local("Chinatown"), url(./special/Chinatown.woff2) format("woff2");
+    src: url(./special/Chinatown.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "ColonialDame";
-    src: local("Colonial Dame"), local("ColonialDame"), url(./special/ColonialDame.woff2) format("woff2");
+    src: url(./special/ColonialDame.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Direction";
-    src: local("Direction"), url(./special/Direction.woff2) format("woff2");
+    src: url(./special/Direction.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Fillet";
-    src: local("Fillet"), url(./special/Fillet.woff2) format("woff2");
+    src: url(./special/Fillet.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Firebug";
-    src: local("Firebug"), url(./special/Firebug.woff2) format("woff2");
+    src: url(./special/Firebug.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Headhunter";
-    src: local("Headhunter"), url(./special/Headhunter.woff2) format("woff2");
+    src: url(./special/Headhunter.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "HollywoodLights";
-    src: local("Hollywood Lights"), local("HollywoodLights"), url(./special/HollywoodLights.woff2) format("woff2");
+    src: url(./special/HollywoodLights.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "IglooSolidNormal";
-    src: local("Igloo Solid Normal"), local("IglooSolidNormal"), url(./special/IglooSolidNormal.woff2) format("woff2");
+    src: url(./special/IglooSolidNormal.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Import";
-    src: local("Import"), url(./special/Import.woff2) format("woff2");
+    src: url(./special/Import.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Lariat";
-    src: local("Lariat"), url(./special/Lariat.woff2) format("woff2");
+    src: url(./special/Lariat.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Needlepoint";
-    src: local("Needlepoint"), url(./special/Needlepoint.woff2) format("woff2");
+    src: url(./special/Needlepoint.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "OldGlory";
-    src: local("OldGlory"), url(./special/OldGlory.woff2) format("woff2");
+    src: url(./special/OldGlory.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Protest";
-    src: local("Protest"), url(./special/Protest.woff2) format("woff2");
+    src: url(./special/Protest.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Rustic";
-    src: local("Rustic"), url(./special/Rustic.woff2) format("woff2");
+    src: url(./special/Rustic.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Scimitar";
-    src: local("Scimitar"), url(./special/Scimitar.woff2) format("woff2");
+    src: url(./special/Scimitar.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Scoreboard";
-    src: local("Scoreboard"), url(./special/Scoreboard.woff2) format("woff2");
+    src: url(./special/Scoreboard.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Skyline";
-    src: local("Skyline"), url(./special/Skyline.woff2) format("woff2");
+    src: url(./special/Skyline.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Starburst";
-    src: local("Starburst"), url(./special/Starburst.woff2) format("woff2");
+    src: url(./special/Starburst.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Sundown";
-    src: local("Sundown"), url(./special/Sundown.woff2) format("woff2");
+    src: url(./special/Sundown.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Tableau";
-    src: local("Tableau"), url(./special/Tableau.woff2) format("woff2");
+    src: url(./special/Tableau.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Tonight";
-    src: local("Tonight"), url(./special/Tonight.woff2) format("woff2");
+    src: url(./special/Tonight.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Xerxes";
-    src: local("Xerxes"), url(./special/Xerxes.woff2) format("woff2");
+    src: url(./special/Xerxes.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
