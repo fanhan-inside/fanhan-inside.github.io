@@ -1,3 +1,4 @@
+@import "../FNT/fanism.css";
 @import "../FNT/ancient.css";
 @import "../FNT/dover/boldscript.css";
 @import "../FNT/dover/calligraphic.css";
@@ -9,7 +10,6 @@
 @import "../FNT/dover/nouveau.css";
 @import "../FNT/dover/outline.css";
 @import "../FNT/dover/special.css";
-@import "../FNT/fanism.css";
 
 span.Kargsfont {
     font-family: 'Fanism';
