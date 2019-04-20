@@ -1,0 +1,22 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+    <metadata>
+        Created by FontForge 20190413 at Sat Apr 20 21:55:34 2019 By Rigel van Confucia Copyright © 2019, fANhAN iNSiDE
+    </metadata>
+    <defs>
+        <font id="Fanism" horiz-adv-x="1024" vert-adv-y="1024">
+            <font-face ascent="820" bbox="34 -189 937 804" descent="-204" font-family="Fanism" font-stretch="normal" font-weight="400" panose-1="2 0 5 9 0 0 0 0 0 0" underline-position="-101" underline-thickness="51" unicode-range="U+9C81-9C81" units-per-em="1024"/>
+            <missing-glyph d="M34 0v682h272v-682h-272zM68 34h204v614h-204v-614z"/>
+            <glyph d="M34 0v682h272v-682h-272zM68 34h204v614h-204v-614z" glyph-name=".notdef"/>
+            <glyph glyph-name=".null" horiz-adv-x="0" vert-adv-y="0"/>
+            <glyph glyph-name="nonmarkingreturn"/>
+            <glyph d="M937 407q-7 -46 -44.5 -81t-84.5 -35q-20 0 -40 8q-80 30 -165 44t-176 14q-60 0 -125 -7q-35 -7 -57 -13q-65 -17 -123 -38q-8 6 -12.5 15.5t-4.5 19.5q0 20 11 38t27 30q10 13 23.5 18.5t29.5 5.5q13 0 38.5 -4.5t26.5 -4.5q10 2 13 4q7 6 7 16v48q0 51 -4.5 77
+t-15.5 49q-2 11 -2 14q0 16 12.5 26t28.5 10q17 0 30 -10t13 -29q0 -10 -0.5 -19t-0.5 -21q0 -40 2 -76t9 -79q7 -3 13.5 -4t15.5 -1q6 0 16.5 1t14.5 1q6 0 17 -2q10 2 13 4q7 6 7 17q0 28 1 81t1 78q0 62 -1.5 86.5t-5.5 76.5q3 20 17.5 29.5t32.5 9.5q29 0 52 -15t23 -39
+q0 -4 -2 -11q-6 -20 -9 -33t-3 -20q0 -13 6 -19t21 -4q70 0 102.5 -1.5t76.5 -9.5q2 -4 2 -6q3 -9 3 -13q0 -11 -4.5 -18.5t-15.5 -13.5h-179l-10 -5l-5 -159q5 -12 24 -13t29 -2q11 0 68.5 -4t127.5 -7.5t135 -3.5zM935 -97q-10 -34 -42.5 -63t-69.5 -29q-13 0 -22 2t-20 8
+q-30 28 -64 75q-88 122 -95 130q-11 0 -18 -17q-11 -28 -12 -29q-14 -47 -58 -90q-25 -24 -86 -69q-17 -5 -36 -5q-25 0 -41.5 10.5t-19.5 35.5q15 11 51 23q20 6 31 13q9 4 14 6q31 17 47 45q-31 -3 -61 27q-23 24 -46 50q-11 0 -20 -16q-11 -21 -16 -25q-31 -54 -65 -85
+q-46 -44 -98 -44q-11 0 -16 1q-27 5 -42 16q-20 14 -20 38v8q78 16 137 64q66 52 84 125q6 32 10 54q10 65 10 120q12 20 34 20q21 0 36 -15t12 -36q-3 -30 -5 -51q-8 -61 -21 -112q20 -15 74 -61q33 -28 44 -37l16 26q15 43 20 91t5 109v66q7 16 19.5 28t25.5 12
+q12 0 22 -9q7 -5 10 -10q11 -14 11 -32q0 -6 -1.5 -24t-3.5 -39q-6 -60 -16 -115q19 -17 40 -33q48 -37 108 -75q83 -52 154 -82z" glyph-name="uni9C81" unicode="鲁" vert-adv-y="0"/>
+        </font>
+    </defs>
+</svg>
