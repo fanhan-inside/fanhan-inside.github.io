@@ -1,0 +1,10 @@
+@import "../essay.css";
+
+h1 {
+    height: 48px;
+}
+
+h1::after {
+    content: url(../../IMG/excursus_heading.svg);
+    float: right;
+}
