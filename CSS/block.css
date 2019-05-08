@@ -39,7 +39,7 @@ article.comment {
 
 article.bulletin p, article.comment p, article.message p {
     text-indent: 0;
-    line-height: 1.5rem;
+    line-height: 1.75rem;
 }
 
 article.bulletin header, article.comment header {
