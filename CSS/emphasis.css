@@ -139,3 +139,15 @@ abbr.myself::after {
     content: '〕';
     margin: 0 1px;
 }
+
+article header abbr.uid, article header abbr.myself {
+    margin: 0 0.5rem;
+}
+
+article header abbr.uid::before, article header abbr.myself::before {
+    content: none;
+}
+
+article header abbr.uid::after, article header abbr.myself::after {
+    content: none;
+}

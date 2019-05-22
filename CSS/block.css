@@ -74,11 +74,11 @@ article.message {
     background-color: white;
 }
 
-article.message header.message, article.message header.myself {
+article.message header {
     border: none;
 }
 
-article.message header.myself::before, article.comment header.myself::before {
+header.myself::before {
     content: url(../IMG/icon_small.svg);
     display: inline-block;
     vertical-align: middle;
