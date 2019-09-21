@@ -12,6 +12,10 @@ div.signature img {
     vertical-align: middle;
 }
 
+div.signature p {
+    text-indent: 0;
+}
+
 span.sign-time, span.sign-name, span.sign-room {
     display: inline;
     text-indent: 0;
