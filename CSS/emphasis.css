@@ -29,17 +29,17 @@ s {
 }
 
 del {
-    margin: 0 2px;
-    padding: 0 2px;
+    margin: 0 1px;
+    padding: 0 1px;
     text-decoration: red double line-through;
 }
 
 ins {
-    margin: 0 2px;
-    padding: 2px 2px;
+    margin: 0 1px;
+    padding: 0 1px;
     font-style: normal;
+    color: red;
     text-decoration: none;
-    border: 1px solid red;
 }
 
 .dot {
