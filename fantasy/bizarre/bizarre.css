@@ -12,3 +12,12 @@ h1::after {
     content: url(image/bizarre_heading.svg);
     float: right;
 }
+
+ul.content-switch {
+    list-style: none;
+    text-align: right;
+}
+
+ul.content-switch li a {
+    font-size: 150%;
+}
