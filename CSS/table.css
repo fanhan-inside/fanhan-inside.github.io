@@ -61,3 +61,17 @@ table.toc td a {
 table.toc tr:hover {
     background-color: lightgoldenrodyellow;
 }
+
+table.dialogbox {
+    width: 100%;
+}
+
+table.dialogbox td {
+    border: none;
+    text-align: left;
+    vertical-align: top;
+}
+
+table.dialogbox td:nth-child(1) {
+    min-width: 300px;
+}
