@@ -34,12 +34,20 @@ del {
     text-decoration: red double line-through;
 }
 
+del.green {
+    text-decoration: green double line-through;
+}
+
 ins {
     margin: 0 1px;
     padding: 0 1px;
     font-style: normal;
     color: red;
     text-decoration: none;
+}
+
+ins.green {
+    color: green;
 }
 
 .dot {
