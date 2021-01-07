@@ -60,3 +60,17 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "Aegean";
+  src: local("Aegean"), url(./ancient/Aegean.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Nilus";
+  src: local("Nilus"), url(./ancient/Nilus.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
