@@ -5,8 +5,21 @@ span.symbola {
     padding: 1 2px;
     border: 1px solid lightgray;
     background-color: whitesmoke;
-    color: blue;
+    color: darkblue;
     font-family: "Symbola";
+    font-size: 150%;
+    vertical-align: middle;
+}
+
+span.nilus {
+    display: inline-block;
+    text-indent: 0;
+    margin: 0 1px;
+    padding: 1 2px;
+    border: 1px solid lightgray;
+    background-color: whitesmoke;
+    color: darkred;
+    font-family: "Nilus";
     font-size: 150%;
     vertical-align: middle;
 }
