@@ -1,0 +1,90 @@
+@font-face {
+  font-family: "Quivira";
+  src: local("Quivira"), url(./quivira/Quivira.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "FreeSans";
+  src: local("FreeSans"), url(./gnu/FreeSans.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "FreeSans";
+  src: local("FreeSans Bold"), local("FreeSansBold"), url(./gnu/FreeSansBold.woff) format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "FreeSans";
+  src: local("FreeSans Oblique"), local("FreeSansOblique"), url(./gnu/FreeSansOblique.woff) format("woff");
+  font-weight: normal;
+  font-style: Oblique;
+}
+
+@font-face {
+  font-family: "FreeSans";
+  src: local("FreeSans Bold Oblique"), local("FreeSansBoldOblique"), url(./gnu/FreeSansBoldOblique.woff) format("woff");
+  font-weight: bold;
+  font-style: Oblique;
+}
+
+@font-face {
+  font-family: "FreeSerif";
+  src: local("FreeSerif"), url(./gnu/FreeSerif.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "FreeSerif";
+  src: local("FreeSerif Bold"), local("FreeSerifBold"), url(./gnu/FreeSerifBold.woff) format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "FreeSerif";
+  src: local("FreeSerif Oblique"), local("FreeSerifOblique"), url(./gnu/FreeSerifOblique.woff) format("woff");
+  font-weight: normal;
+  font-style: Oblique;
+}
+
+@font-face {
+  font-family: "FreeSerif";
+  src: local("FreeSerif Bold Oblique"), local("FreeSerifBoldOblique"), url(./gnu/FreeSerifBoldOblique.woff) format("woff");
+  font-weight: bold;
+  font-style: Oblique;
+}
+
+@font-face {
+  font-family: "FreeMono";
+  src: local("FreeMono"), url(./gnu/FreeMono.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "FreeMono";
+  src: local("FreeMono Bold"), local("FreeMonoBold"), url(./gnu/FreeMonoBold.woff) format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "FreeMono";
+  src: local("FreeMono Oblique"), local("FreeMonoOblique"), url(./gnu/FreeMonoOblique.woff) format("woff");
+  font-weight: normal;
+  font-style: Oblique;
+}
+
+@font-face {
+  font-family: "FreeMono";
+  src: local("FreeMono Bold Oblique"), local("FreeMonoBoldOblique"), url(./gnu/FreeMonoBoldOblique.woff) format("woff");
+  font-weight: bold;
+  font-style: Oblique;
+}
