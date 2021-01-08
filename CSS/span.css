@@ -24,6 +24,19 @@ span.nilus {
     vertical-align: middle;
 }
 
+span.quivira {
+    display: inline-block;
+    text-indent: 0;
+    margin: 0 1px;
+    padding: 1 2px;
+    border: 1px solid lightgray;
+    background-color: whitesmoke;
+    color: darkgreen;
+    font-family: "Quivira";
+    font-size: 150%;
+    vertical-align: middle;
+}
+
 span.important {
     display: inline-block;
     margin: 0 0.25rem;
