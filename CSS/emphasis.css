@@ -1,6 +1,15 @@
 mark {
     margin: 1px;
     padding: 1px;
+    background-color: yellow;
+}
+
+mark.cyan {
+    background-color: cyan;
+}
+
+mark.lime {
+    background-color: lime;
 }
 
 i {
@@ -25,29 +34,50 @@ strong {
 s {
     margin: 0 2px;
     padding: 0 2px;
+    background-color: lightgray;
     text-decoration: red wavy line-through;
 }
 
-del {
+s.red {
+    text-decoration: red wavy line-through;
+}
+
+s.green {
+    text-decoration: darkgreen wavy line-through;
+}
+
+s.blue {
+    text-decoration: blue wavy line-through;
+}
+
+del, del.red {
     margin: 0 1px;
     padding: 0 1px;
     text-decoration: red double line-through;
 }
 
 del.green {
-    text-decoration: green double line-through;
+    text-decoration: darkgreen double line-through;
 }
 
-ins {
+del.blue {
+    text-decoration: blue double line-through;
+}
+
+ins, ins.red {
     margin: 0 1px;
     padding: 0 1px;
     font-style: normal;
-    color: red;
+    color: darkred;
     text-decoration: none;
 }
 
 ins.green {
-    color: green;
+    color: darkgreen;
+}
+
+ins.blue {
+    color: darkblue;
 }
 
 .dot {
