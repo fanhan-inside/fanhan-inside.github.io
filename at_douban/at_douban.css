@@ -10,3 +10,7 @@ header.at_douban h1 {
 header.at_douban h1.diary::before {
     content: "豆瓣日记";
 }
+
+header.at_douban h1.broadcast::before {
+    content: "豆瓣广播";
+}
