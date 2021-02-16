@@ -95,6 +95,11 @@ article.message header.myself span.heading {
     border-right: 1px dashed gray;
 }
 
+article.comment article.bulletin,
+article.comment article.comment {
+    background-color: whitesmoke;
+}
+
 section {
     background: transparent;
     box-sizing: border-box;
