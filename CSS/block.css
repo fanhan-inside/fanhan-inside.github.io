@@ -85,6 +85,13 @@ header.myself::before {
     margin-right: 0.5rem;
 }
 
+header.nt::before {
+    content: url(../DATA/20210303-003_Novgorod-Today_tiny.png);
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0.5rem;
+}
+
 article.message header.message span.heading {
     border-bottom: 1px solid lightgray;
     border-right: 1px solid lightgray;
