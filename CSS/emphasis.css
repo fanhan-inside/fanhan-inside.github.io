@@ -186,6 +186,15 @@ abbr.nt {
     color: black;
 }
 
+abbr.nt::after {
+    content: "V";
+    background-color: red;
+    font-size: 50%;
+    color: yellow;
+    margin: 4px;
+    padding: 0 4px;
+}
+
 article header abbr.uid, article header abbr.myself {
     margin: 0 0.5rem;
 }
