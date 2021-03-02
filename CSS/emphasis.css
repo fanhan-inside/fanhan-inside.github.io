@@ -178,6 +178,14 @@ abbr.myself::after {
     margin: 0 1px;
 }
 
+abbr.nt {
+    font-weight: bold;
+    margin: none;
+    padding: none;
+    border: none;
+    color: black;
+}
+
 article header abbr.uid, article header abbr.myself {
     margin: 0 0.5rem;
 }
