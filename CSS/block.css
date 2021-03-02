@@ -85,7 +85,14 @@ header.myself::before {
     margin-right: 0.5rem;
 }
 
-header.nt::before {
+header.nt-simplified::before {
+    content: url(../DATA/20210303-005_NT_tiny.png);
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0.5rem;
+}
+
+header.nt-traditional::before {
     content: url(../DATA/20210303-003_Novgorod-Today_tiny.png);
     display: inline-block;
     vertical-align: middle;
