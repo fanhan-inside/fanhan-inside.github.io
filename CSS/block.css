@@ -99,6 +99,20 @@ header.nt-traditional::before {
     margin-right: 0.5rem;
 }
 
+header.kt-simplified::before {
+    content: url(../DATA/20210312-001-004_KT_icon.png);
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0.5rem;
+}
+
+header.kt-traditional::before {
+    content: url(../DATA/20210312-001-003_Kazan-Today_icon.png);
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0.5rem;
+}
+
 article.message header.message span.heading {
     border-bottom: 1px solid lightgray;
     border-right: 1px solid lightgray;
