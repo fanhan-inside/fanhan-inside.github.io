@@ -109,7 +109,7 @@ hr.wort-verboten {
 
 hr.wort-verboten::before {
     content: "🛇";
-    font-family: "Symbola";
+    font-family: "Fanism";
     font-size: 20px;
     color: red;
 }
