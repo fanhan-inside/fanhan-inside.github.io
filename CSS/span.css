@@ -90,8 +90,12 @@ span.evil {
 }
 
 span.lowbee {
+    margin: 0 0.25rem;
+    padding: 0.25rem;
+    border-radius: 0.25rem;
     font-weight: bold;
     color: darkgreen;
+    background-color: lightpink;
 }
 
 span.ero {
