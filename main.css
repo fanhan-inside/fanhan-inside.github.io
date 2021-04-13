@@ -33,9 +33,9 @@ p {
     line-height: 2rem;
 }
 
-main, div.main {
+main {
     box-sizing: content-box;
-    width: 1280px;
+    width: 1350px;
     margin: 1rem auto;
     padding: 1rem;
     background-color: transparent;
