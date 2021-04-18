@@ -1,10 +1,10 @@
-:lang(en), :lang(fr), :lang(de), :lang(it), :lang(nl), :lang(es), :lang(pt), :lang(la), :lang(da), :lang(hu), :lang(pl), :lang(lt), :lang(grc), :lang(ru) {
+:lang(en), :lang(fr), :lang(de), :lang(it), :lang(nl), :lang(es), :lang(pt), :lang(la), :lang(da), :lang(hu), :lang(pl), :lang(lt), :lang(grc), :lang(ru), :lang(sh) {
     font-family: 'Aroania';
     margin: 0 1px;
     padding: 0 1px;
 }
 
-q:lang(en), q:lang(fr), q:lang(de), q:lang(it), q:lang(nl), q:lang(es), q:lang(pt), q:lang(la), q:lang(da), q:lang(hu), q:lang(pl), q:lang(lt), q:lang(grc), q:lang(ru) {
+q:lang(en), q:lang(fr), q:lang(de), q:lang(it), q:lang(nl), q:lang(es), q:lang(pt), q:lang(la), q:lang(da), q:lang(hu), q:lang(pl), q:lang(lt), q:lang(grc), q:lang(ru), q:lang(sh) {
     font-size: 125%;
     color: darkblue;
     margin: 1px;
