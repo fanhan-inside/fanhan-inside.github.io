@@ -29,7 +29,7 @@
         <section>
             <h2 class="heading">缘起</h2>
 
-            <p>在《〈恶补记〉流水帐》当中说过了，《真·流水账》（或曰「日记」）的「<samp>Microsoft™©® Word™©® 2010</samp>」版所使用的主题，是在内置样式当中选了一套看上去简洁清爽的格式和配色。而在<samp>Markdown</samp>版当中，则依赖<samp>Typora</samp>的内置主题，惦记着要换成差不多的样式。说虽然自己对<samp>CSS</samp>很熟悉，但是对「设计工作者」擅长的领域不熟悉，于是（当时）决定「多一事不如少一事」。</p>
+            <p>在《〈恶补记〉流水帐》当中说过了，《真・流水账》（或曰「日记」）的「<samp>Microsoft™©® Word™©® 2010</samp>」版所使用的主题，是在内置样式当中选了一套看上去简洁清爽的格式和配色。而在<samp>Markdown</samp>版当中，则依赖<samp>Typora</samp>的内置主题，惦记着要换成差不多的样式。说虽然自己对<samp>CSS</samp>很熟悉，但是对「设计工作者」擅长的领域不熟悉，于是（当时）决定「多一事不如少一事」。</p>
             <p>不过呢，最近大张旗鼓开展「三自运动」，已经涉及到这个暂时挂起的革命任务了。所以，不忘初心牢记使命，把相关进程从后台切换到前台，自力更生艰苦奋斗，自己动手丰衣足食，当然必须依赖自由民主进步和谐的境外赛博朋克英特纳雄耐尔主义者的无私奉献。</p>
             <p>因为老迈年高，在与时俱进的童年才俊以我听都没听说过的新鲜名词嘲笑之下，只能绞尽脑汁回忆已经被扫入历史垃圾堆的过时伎俩，先用网页形式试验一阵，感觉差不多了，再删繁就简配合<samp>Typora</samp>主题的<samp>CSS</samp>，搞定。</p>
         </section>
@@ -117,7 +117,7 @@ h6 { border-style: none none dotted none; }
             <h2 class="heading">言归正传</h2>
 
             <p>因为<samp>XSLT</samp>可以使用<samp>JavaScript™</samp>编写扩展函数，所以借鉴<samp>MathJax</samp>或<samp>KaTeX</samp>这种当前既存的开源成果，可以实现「不编程」而在<samp>XSLT</samp>处理「文本」时转换其中「嵌入」的数学公式的目标。与此同时，转换<samp>Markdown</samp>的过程也有开源成果，可以通过替换作为标签的字符实现我在《〈恶补记〉流水帐》当中吹过的牛哔。</p>
-            <p>整个过程「自力更生艰苦奋斗」「自己动手丰衣足食」，但是不要忘了「自由民主进步和谐」，没有境外赛博朋克英特纳雄耐尔主义者的无私奉献，前面俩「自」就是真·吹牛哔「厉害了谁的国」「为谁或啥点赞」这种。</p>
+            <p>整个过程「自力更生艰苦奋斗」「自己动手丰衣足食」，但是不要忘了「自由民主进步和谐」，没有境外赛博朋克英特纳雄耐尔主义者的无私奉献，前面俩「自」就是真・吹牛哔「厉害了谁的国」「为谁或啥点赞」这种。</p>
             <p>下载了<samp>KaTeX</samp>、<samp>MathJax</samp>简单看了看，发现有个更简单的<samp>AsciiMath</samp>直接输出<samp>MathML</samp>，对于<samp>XML</samp>应用来说「嵌入」更方便。作为试验，很轻松就能实现，然后再根据情况分析源码拆出相应功能渲染成<samp>SVG</samp>之类。顺便，之前提到过在<samp>VS Code</samp>上所用插件的「<samp>KaTeX</samp>」不支持一些<samp>Unicode</samp>符号，看官方发布的消息是「字体」原因，所以之前《<a target="_blank" href="008.html">三自造字运动</a>》那篇时机刚好。</p>
             <p>为了保持兼容性和照顾多方面用户需求，境外赛博朋克英特纳雄耐尔主义者做了很多工作，最起码<samp>MathJax</samp>的速度不如<samp>KaTeX</samp>的主要原因，就是支持了多种输入方式，包括「<samp>TeX</samp>」「<samp>MathML</samp>」「<samp>AsciiMath</samp>」。由于在我的当前目标中<samp>MathML</samp>是输出，那么只需要试验「<samp>TeX</samp>」和「<samp>AsciiMath</samp>」即可。</p>
             <p>先使用「<samp>LaTeXMathML.js</samp>」，页面文件如下：</p>
