@@ -21,3 +21,24 @@ q:lang(ja) {
 q::before, q::after {
     padding: 0 1px;
 }
+
+:lang(nato) {
+    font-family: 'Avdira';
+    margin: 0 1px;
+    padding: 0 1px;
+}
+
+q:lang(nato) {
+    font-size: 125%;
+    color: darkblue;
+    margin: 1px;
+    padding: 1px;
+}
+
+q:lang(nato)::before {
+    content: '«';
+}
+
+q:lang(nato)::after {
+    content: '»';
+}
