@@ -30,7 +30,7 @@ q::before, q::after {
 
 q:lang(nato) {
     font-size: 125%;
-    color: darkblue;
+    color: navy;
     margin: 1px;
     padding: 1px;
 }
