@@ -42,3 +42,20 @@ q:lang(nato)::before {
 q:lang(nato)::after {
     content: '»';
 }
+
+.ipa {
+    font-family: var(--font-family-ipa);
+    color: var(--color-name-japanese-鉄);
+}
+
+.ipa::before {
+    content: '[';
+}
+
+.ipa::after {
+    content: ']';
+}
+
+rt.ipa {
+    font-size: 100%;
+}
