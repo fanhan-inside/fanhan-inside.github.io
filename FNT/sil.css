@@ -1,0 +1,69 @@
+@font-face {
+  font-family: "CharisSIL";
+  src: local("Charis SIL"), url(./sil/CharisSIL.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CharisSIL";
+  src: local("Charis SIL Bold"), url(./sil/CharisSIL-Bold.woff2) format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CharisSIL";
+  src: local("Charis SIL Italic"), url(./sil/CharisSIL-Italic.woff2) format("woff2");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "CharisSIL";
+  src: local("Charis SIL Bold Italic"), url(./sil/CharisSIL-BoldItalic.woff2) format("woff2");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "DoulosSIL";
+  src: local("Doulos SIL"), url(./sil/DoulosSIL.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GentiumPlus";
+  src: local("Gentium Plus"), url(./sil/GentiumPlus.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GentiumPlus";
+  src: local("Gentium Plus Italic"), url(./sil/GentiumPlus-Italic.woff2) format("woff2");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "GalatiaSIL";
+  src: local("Galatia SIL"), url(./sil/GalatiaSIL.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GalatiaSIL";
+  src: local("Galatia SIL Bold"), url(./sil/GalatiaSIL-Bold.woff2) format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Andika";
+  src: local("Andika"), url(./sil/Andika.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
