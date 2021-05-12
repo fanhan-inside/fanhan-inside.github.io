@@ -1,11 +1,4 @@
 @font-face {
-  font-family: "DoulosSIL";
-  src: url(./ipa/DoulosSIL.woff2) format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
   font-family: "CharisSIL";
   src: url(./ipa/CharisSIL.woff2) format("woff2");
   font-weight: normal;
@@ -30,5 +23,26 @@
   font-family: "CharisSIL";
   src: url(./ipa/CharisSIL-BoldItalic.woff2) format("woff2");
   font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "DoulosSIL";
+  src: url(./ipa/DoulosSIL.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GentiumPlus";
+  src: url(./ipa/GentiumPlus.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GentiumPlus";
+  src: url(./ipa/GentiumPlus-Italic.woff2) format("woff2");
+  font-weight: normal;
   font-style: italic;
 }
