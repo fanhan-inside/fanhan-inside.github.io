@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="400" height="213" style="background-color:white" viewBox="0 0 4000 2132"
+     shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd">
+    <defs>
+        <style>
+            .fil1{fill:black}.fil0{fill:blue}
+        </style>
+    </defs>
+    <g id="Layer 1">
+        <path class="fil0" d="M1190 1549v-414h-183v414H855l-71-123h101v-291H596V720H323l108 187-78 135L88 605h638v419h159l1-419h153l67 115h-99v304h300v402h277l-118-192 77-128 271 443h-624z"/>
+        <path class="fil0" d="M1279 605h536l-474 773v-255l243-403h-232l-73-115zM563 765v257l-241 404h219l72 123H88l475-784z"/>
+        <path class="fil0" d="M684 565h84v113l176-296 408 666 77-128-483-788-262 433zM553 1116l390 670 206-343v142h65l-267 437-471-777 77-129z"/>
+        <path class="fil1" d="M3539 916l94 162 290-487h-773c-258 9-288 327-115 483-62-160-43-334 160-342h453l-109 184z"/>
+        <path class="fil1" d="M3152 557h187L3062 63l-386 669c-122 227 139 412 360 340-170-26-310-128-216-308l227-393 105 186z"/>
+        <path class="fil1" d="M2647 714l93-162-566-7 386 669c137 219 427 86 475-142-107 134-266 205-375 33l-227-393 214 2z"/>
+        <path class="fil1" d="M2530 1229l-94-162-289 487h772c258-9 288-326 115-482 62 160 44 333-160 341h-453l109-184z"/>
+        <path class="fil1" d="M2918 1588h-188l277 494 387-669c121-227-139-412-361-340 170 26 311 128 216 308l-227 393-104-186z"/>
+        <path class="fil1" d="M3422 1433l-93 162 567 7-387-669c-136-219-427-86-475 142 108-134 267-205 375-33l227 393-214-2z"/>
+    </g>
+</svg>
