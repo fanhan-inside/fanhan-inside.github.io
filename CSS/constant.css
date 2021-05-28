@@ -20,4 +20,20 @@
     --color-name-chinese-槲寄生绿: #2b312c;
     --color-name-chinese-鼬黄: #fcb70a;
     --color-name-chinese-铜绿: #549688;
+    /* 由五行而来设定的诺斯替各色 */
+    --color-name-gnosis-火-赤: red;
+    --color-name-gnosis-土-黄: yellow;
+    --color-name-gnosis-木-青: blue;
+    --color-name-gnosis-金-白: white;
+    --color-name-gnosis-水-黑: black;
+    --color-name-gnosis-木克土-绿: green;
+    --color-name-gnosis-土克水-缁: coral;
+    --color-name-gnosis-水克火-紫: purple;
+    --color-name-gnosis-火克金-粉: violet;
+    --color-name-gnosis-金克木-碧: turquoise;
+    --color-name-gnosis-木生火-靘: Indigo;
+    --color-name-gnosis-火生土-纁: crimson;
+    --color-name-gnosis-土生金-硅: salmon;
+    --color-name-gnosis-金生水-黻: azure;
+    --color-name-gnosis-水生木-黯: navy;
 }
