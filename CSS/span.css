@@ -22,6 +22,23 @@ span.nilus {
     font-family: "Nilus";
     font-size: 150%;
     vertical-align: middle;
+    font-feature-settings: "liga";
+}
+
+span.aegyptus {
+    display: inline-block;
+    text-indent: 0;
+    margin: 2px;
+    padding: 12px 8px;
+    border: 2px solid dimgray;
+    border-radius: 8px;
+    background-color: whitesmoke;
+    color: darkred;
+    font-family: "Aegyptus";
+    font-weight: bold;
+    font-size: 300%;
+    font-feature-settings: "liga", "aalt";
+    vertical-align: middle;
 }
 
 span.quivira {
