@@ -59,3 +59,10 @@ q:lang(nato)::after {
 rt.ipa {
     font-size: 100%;
 }
+
+rt.nilus {
+    color: darkred;
+    font-family: Nilus;
+    font-size: 200%;
+    font-feature-settings: 'liga','aalt';
+}
