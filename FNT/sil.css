@@ -67,3 +67,73 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "EzraSIL";
+  src: local("EzraSIL"), url(./sil/EzraSIL.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "EzraSILSR";
+  src: local("EzraSILSR"), url(./sil/EzraSILSR.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Alkalami";
+  src: local("Alkalami"), url(./sil/Alkalami-Regular.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Alkalami";
+  src: local("Alkalami"), url(./sil/AlkalamiLight-Regular.woff2) format("woff2");
+  font-weight: lighter;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AwamiNastaliq";
+  src: local("Awami Nastaliq"), url(./sil/AwamiNastaliq-Regular.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Harmattan";
+  src: local("Harmattan"), url(./sil/Harmattan-Regular.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Harmattan";
+  src: local("Harmattan"), url(./sil/Harmattan-Bold.woff) format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "LateefGR";
+  src: local("LateefGR"), url(./sil/LateefGR-Regular.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ScheherazadeNew";
+  src: local("Scheherazade New"), url(./sil/ScheherazadeNew-Regular.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ScheherazadeNew";
+  src: local("Scheherazade New"), url(./sil/ScheherazadeNew-Bold.woff2) format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}

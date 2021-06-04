@@ -11,6 +11,37 @@ q:lang(en), q:lang(fr), q:lang(de), q:lang(it), q:lang(nl), q:lang(es), q:lang(p
     padding: 1px;
 }
 
+:lang(ar) {
+    font-family: 'ScheherazadeNew';
+    margin: 0 1px;
+    padding: 0 1px;
+}
+
+:lang(he) {
+    font-family: 'EzraSIL';
+    margin: 0 1px;
+    padding: 0 1px;
+}
+
+q:lang(ar), q:lang(he) {
+    font-size: 125%;
+    color: darkgreen;
+    margin: 1px;
+    padding: 1px;
+}
+
+q:lang(ar)::before, q:lang(he)::before {
+    font-family: var(--font-family-sans);
+    content: '〖';
+    color: red;
+}
+
+q:lang(ar)::after, q:lang(he)::after {
+    font-family: var(--font-family-sans);
+    content: '〗';
+    color: red;
+}
+
 q:lang(ja) {
     background-color: whitesmoke;
     color: darkblue;
@@ -64,5 +95,5 @@ rt.nilus {
     color: darkred;
     font-family: Nilus;
     font-size: 200%;
-    font-feature-settings: 'liga','aalt';
+    font-feature-settings: 'liga', 'aalt';
 }
