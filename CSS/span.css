@@ -41,6 +41,40 @@ span.aegyptus {
     vertical-align: middle;
 }
 
+span.hieroab {
+    display: inline-block;
+    text-indent: 0;
+    margin: 0 1px;
+    padding: 1 2px;
+    font-family: "Aegyptus";
+    font-size: 200%;
+    font-weight: bold;
+    vertical-align: middle;
+    font-feature-settings: "ss15";
+}
+
+span.hieratic {
+    display: inline-block;
+    text-indent: 0;
+    margin: 0 1px;
+    padding: 1 2px;
+    font-family: "Aegyptus";
+    font-size: 200%;
+    vertical-align: middle;
+    font-feature-settings: "ss20";
+}
+
+span.transaegypt {
+    display: inline-block;
+    text-indent: 0;
+    margin: 0 1px;
+    padding: 1 2px;
+    font-family: "Aegyptus";
+    font-size: 200%;
+    vertical-align: middle;
+    font-feature-settings: "ss10";
+}
+
 span.quivira {
     display: inline-block;
     text-indent: 0;
