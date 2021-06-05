@@ -32,13 +32,13 @@ q:lang(ar), q:lang(he) {
 
 q:lang(ar)::before, q:lang(he)::before {
     font-family: var(--font-family-sans);
-    content: '〖';
+    content: '⟨';
     color: red;
 }
 
 q:lang(ar)::after, q:lang(he)::after {
     font-family: var(--font-family-sans);
-    content: '〗';
+    content: '⟩';
     color: red;
 }
 
