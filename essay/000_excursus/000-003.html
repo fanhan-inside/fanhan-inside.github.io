@@ -17,31 +17,31 @@
             font-size: 150%;
         }
 
-        #egyptian-alphabet {
+        #uniliteral {
             width: 100%;
         }
 
-        #egyptian-alphabet td:nth-child(1) {
+        #uniliteral td:nth-child(1) {
             font-family: var(--font-family-serif);
             font-size: 300%;
             vertical-align: middle;
         }
 
-        #egyptian-alphabet td:nth-child(2) {
+        #uniliteral td:nth-child(2) {
             font-family: "Aegyptus";
             font-size: 300%;
             vertical-align: middle;
             font-feature-settings: "ss20";
         }
 
-        #egyptian-alphabet td:nth-child(3) {
+        #uniliteral td:nth-child(3) {
             font-family: "Aegyptus";
             font-size: 300%;
             vertical-align: middle;
             font-feature-settings: "ss10";
         }
 
-        #egyptian-alphabet td:nth-child(4) {
+        #uniliteral td:nth-child(4) {
             font-family: "Aegyptus";
             font-size: 300%;
             font-weight: bold;
@@ -49,21 +49,40 @@
             font-feature-settings: "ss15";
         }
 
-        #egyptian-alphabet td:nth-child(6) img {
+        #uniliteral td:nth-child(6) img {
             max-width: 5rem;
             max-height: 5rem;
             vertical-align: middle;
         }
 
-        #egyptian-alphabet td:nth-child(9) {
+        #uniliteral td:nth-child(9) {
             font-family: var(--font-family-ipa);
             font-size: 150%;
             color: var(--color-name-japanese-鉄);
             vertical-align: middle;
         }
 
-        #egyptian-alphabet td:nth-child(10) {
+        #uniliteral td:nth-child(10) {
             text-align: left;
+        }
+
+        #biliteral {
+            width: 100%;
+        }
+
+        #biliteral tr:nth-child(odd) td {
+            border-bottom: none;
+        }
+
+        #biliteral tr:nth-child(even) td {
+            border-top: none;
+        }
+
+        #biliteral tr:nth-child(even) {
+            font-family: "Aegyptus";
+            font-size: 300%;
+            vertical-align: middle;
+            font-feature-settings: "ss10";
         }
     </style>
 </head>
@@ -93,7 +112,9 @@
         <p><span class="hieratic">A i y a w b p f m n r h H x X z s S q k g t T d D W M N R K l j</span></p>
         <p><span class="transaegypt">A i y a w b p f m n r h H x X z s S q k g t T d D W M N R K l j</span></p>
         <p>很多象形皆会上色，但长年累月下颜料会从石刻上流走。不同石刻的颜色也会有所差异，但通常而言都会选择同一种颜色又或同一种组合。某些情况下两个相似的象形文字只能靠颜色来分辨，但亦有情况研究并不清楚颜色是否有意义。</p>
-        <table id="egyptian-alphabet">
+
+        <h3 class="heading"><span>单音字母</span></h3>
+        <table id="uniliteral">
             <thead>
                 <tr>
                     <th>字母</th>
@@ -533,6 +554,280 @@
                 </tr>
             </tbody>
         </table>
+        <h3 class="heading"><span>双音字母</span></h3>
+        <table id="biliteral">
+            <colgroup>
+                <col span="8" style="width: 12.5%;" />
+            </colgroup>
+            <thead>
+                <tr>
+                    <th colspan="8">埃及双音字母<br />Common biliteral Egyptian hieroglyphs</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>F040<br /><span class="aegyptus">&#x1312B;</span></td>
+                    <td>U023<br /><span class="aegyptus">&#x1334B;</span></td>
+                    <td>G025<br /><span class="aegyptus">&#x1315C;</span></td>
+                    <td>E009<br /><span class="aegyptus">&#x130DB;</span></td>
+                    <td>D054<br /><span class="aegyptus">&#x130BB;</span></td>
+                    <td>F034<br /><span class="aegyptus">&#x13123;</span></td>
+                    <td>Z011<br /><span class="aegyptus">&#x133F6;</span></td>
+                    <td>W024<br /><span class="aegyptus">&#x133CC;</span></td>
+                </tr>
+                <tr>
+                    <td>Aw</td>
+                    <td>Ab</td>
+                    <td>Ax</td>
+                    <td>iW</td>
+                    <td>iW</td>
+                    <td>ib</td>
+                    <td>im</td>
+                    <td>in/nW</td>
+                </tr>
+                <tr>
+                    <td>A027<br /><span class="aegyptus">&#x1301F;</span></td>
+                    <td>K001<br /><span class="aegyptus">&#x1319B;</span></td>
+                    <td>D004<br /><span class="aegyptus">&#x13079;</span></td>
+                    <td>A048<br /><span class="aegyptus">&#x13039;</span></td>
+                    <td>M040<br /><span class="aegyptus">&#x131E9;</span></td>
+                    <td>V015<br /><span class="aegyptus">&#x13381;</span></td>
+                    <td>O029<br /><span class="aegyptus">&#x1327B;</span></td>
+                    <td>F016<br /><span class="aegyptus">&#x1310F;</span></td>
+                </tr>
+                <tr>
+                    <td>in</td>
+                    <td>in</td>
+                    <td>ir</td>
+                    <td>ir</td>
+                    <td>is</td>
+                    <td>it</td>
+                    <td>aA</td>
+                    <td>ab</td>
+                </tr>
+                <tr>
+                    <td>G035<br /><span class="aegyptus">&#x13167;</span></td>
+                    <td>V026<br /><span class="aegyptus">&#x13399;</span></td>
+                    <td>V004<br /><span class="aegyptus">&#x1336F;</span></td>
+                    <td>T021<br /><span class="aegyptus">&#x13321;</span></td>
+                    <td>F013<br /><span class="aegyptus">&#x1310B;</span></td>
+                    <td>E034<br /><span class="aegyptus">&#x130F9;</span></td>
+                    <td>G036<br /><span class="aegyptus">&#x13168;</span></td>
+                    <td>V024<br /><span class="aegyptus">&#x13397;</span></td>
+                </tr>
+                <tr>
+                    <td>aq</td>
+                    <td>aD</td>
+                    <td>wA</td>
+                    <td>wa</td>
+                    <td>wp</td>
+                    <td>wn</td>
+                    <td>wr</td>
+                    <td>wD</td>
+                </tr>
+                <tr>
+                    <td>G029<br /><span class="aegyptus">&#x13161;</span></td>
+                    <td>F018<br /><span class="aegyptus">&#x13111;</span></td>
+                    <td>G040<br /><span class="aegyptus">&#x1316E;</span></td>
+                    <td>O001<br /><span class="aegyptus">&#x13250;</span></td>
+                    <td>F022<br /><span class="aegyptus">&#x13116;</span></td>
+                    <td>T009<br /><span class="aegyptus">&#x13312;</span></td>
+                    <td>T010<br /><span class="aegyptus">&#x13314;</span></td>
+                    <td>U001<br /><span class="aegyptus">&#x13333;</span></td>
+                </tr>
+                <tr>
+                    <td>bA</td>
+                    <td>bH</td>
+                    <td>pA</td>
+                    <td>pr</td>
+                    <td>pH</td>
+                    <td>pD/pd</td>
+                    <td>pD/pd</td>
+                    <td>mA</td>
+                </tr>
+                <tr>
+                    <td>W019<br /><span class="aegyptus">&#x133C7;</span></td>
+                    <td>N035A<br /><span class="aegyptus">&#x13217;</span></td>
+                    <td>Y005<br /><span class="aegyptus">&#x133E0;</span></td>
+                    <td>T001<br /><span class="aegyptus">&#x13307;</span></td>
+                    <td>N036<br /><span class="aegyptus">&#x13218;</span></td>
+                    <td>U006<br /><span class="aegyptus">&#x13338;</span></td>
+                    <td>U023<br /><span class="aegyptus">&#x1334B;</span></td>
+                    <td>V022<br /><span class="aegyptus">&#x13394;</span></td>
+                </tr>
+                <tr>
+                    <td>mi</td>
+                    <td>mw</td>
+                    <td>mn</td>
+                    <td>mn</td>
+                    <td>mr</td>
+                    <td>mr</td>
+                    <td>Ab</td>
+                    <td>mH</td>
+                </tr>
+                <tr>
+                    <td>F031<br /><span class="aegyptus">&#x1311F;</span></td>
+                    <td>D052<br /><span class="aegyptus">&#x130B8;</span></td>
+                    <td>G014<br /><span class="aegyptus">&#x13150;</span></td>
+                    <td>S043<br /><span class="aegyptus">&#x13303;</span></td>
+                    <td>V030<br /><span class="aegyptus">&#x1339F;</span></td>
+                    <td>T034<br /><span class="aegyptus">&#x13330;</span></td>
+                    <td>M022<br /><span class="aegyptus">&#x131D1;</span></td>
+                    <td>G021<br /><span class="aegyptus">&#x13158;</span></td>
+                </tr>
+                <tr>
+                    <td>ms</td>
+                    <td>mt</td>
+                    <td>mt/mwt</td>
+                    <td>md</td>
+                    <td>nb</td>
+                    <td>nm</td>
+                    <td>nn</td>
+                    <td>nH</td>
+                </tr>
+                <tr>
+                    <td>F020<br /><span class="aegyptus">&#x13113;</span></td>
+                    <td>AA027<br /><span class="aegyptus">&#x13429;</span></td>
+                    <td>E023<br /><span class="aegyptus">&#x130ED;</span></td>
+                    <td>T013<br /><span class="aegyptus">&#x13318;</span></td>
+                    <td>M016<br /><span class="aegyptus">&#x131C9;</span></td>
+                    <td>F018<br /><span class="aegyptus">&#x13111;</span></td>
+                    <td>AA005<br /><span class="aegyptus">&#x13411;</span></td>
+                    <td>N041<br /><span class="aegyptus">&#x1321E;</span></td>
+                </tr>
+                <tr>
+                    <td>ns</td>
+                    <td>nD</td>
+                    <td>rw</td>
+                    <td>rs</td>
+                    <td>HA</td>
+                    <td>Hw</td>
+                    <td>Hp</td>
+                    <td>Hm</td>
+                </tr>
+                <tr>
+                    <td>U036<br /><span class="aegyptus">&#x1335B;</span></td>
+                    <td>M002<br /><span class="aegyptus">&#x131B0;</span></td>
+                    <td>D002<br /><span class="aegyptus">&#x13077;</span></td>
+                    <td>W014<br /><span class="aegyptus">&#x133BF;</span></td>
+                    <td>T003<br /><span class="aegyptus">&#x13309;</span></td>
+                    <td>M012<br /><span class="aegyptus">&#x131BC;</span></td>
+                    <td>N028<br /><span class="aegyptus">&#x1320D;</span></td>
+                    <td>D043<br /><span class="aegyptus">&#x130A4;</span></td>
+                </tr>
+                <tr>
+                    <td>Hm</td>
+                    <td>Hn</td>
+                    <td>Hr</td>
+                    <td>Hs</td>
+                    <td>HD</td>
+                    <td>xA</td>
+                    <td>xa</td>
+                    <td>xW</td>
+                </tr>
+                <tr>
+                    <td>M003<br /><span class="aegyptus">&#x131B1;</span></td>
+                    <td>K004<br /><span class="aegyptus">&#x1319E;</span></td>
+                    <td>F026<br /><span class="aegyptus">&#x1311A;</span></td>
+                    <td>D033<br /><span class="aegyptus">&#x13099;</span></td>
+                    <td>T028<br /><span class="aegyptus">&#x13328;</span></td>
+                    <td>G039<br /><span class="aegyptus">&#x1316D;</span></td>
+                    <td>V016<br /><span class="aegyptus">&#x13382;</span></td>
+                    <td>V017<br /><span class="aegyptus">&#x13383;</span></td>
+                </tr>
+                <tr>
+                    <td>xt</td>
+                    <td>XA</td>
+                    <td>Xn</td>
+                    <td>Xn</td>
+                    <td>Xr</td>
+                    <td>sA</td>
+                    <td>sA</td>
+                    <td>sA</td>
+                </tr>
+                <tr>
+                    <td>AA017<br /><span class="aegyptus">&#x1341F;</span></td>
+                    <td>AA018<br /><span class="aegyptus">&#x13420;</span></td>
+                    <td>M023<br /><span class="aegyptus">&#x131D3;</span></td>
+                    <td>O050<br /><span class="aegyptus">&#x13297;</span></td>
+                    <td>T022<br /><span class="aegyptus">&#x13322;</span></td>
+                    <td>V029<br /><span class="aegyptus">&#x1339D;</span></td>
+                    <td>F029<br /><span class="aegyptus">&#x1311D;</span></td>
+                    <td>M008<br /><span class="aegyptus">&#x131B7;</span></td>
+                </tr>
+                <tr>
+                    <td>sA</td>
+                    <td>sA</td>
+                    <td>sw</td>
+                    <td>sp</td>
+                    <td>sn</td>
+                    <td>sk</td>
+                    <td>st/sT</td>
+                    <td>SA</td>
+                </tr>
+                <tr>
+                    <td>H006<br /><span class="aegyptus">&#x13184;</span></td>
+                    <td>N040<br /><span class="aegyptus">&#x1321D;</span></td>
+                    <td>V007<br /><span class="aegyptus">&#x13372;</span></td>
+                    <td>V006<br /><span class="aegyptus">&#x13371;</span></td>
+                    <td>F030<br /><span class="aegyptus">&#x1311E;</span></td>
+                    <td>T019<br /><span class="aegyptus">&#x1331F;</span></td>
+                    <td>AA028<br /><span class="aegyptus">&#x1342A;</span></td>
+                    <td>D028<br /><span class="aegyptus">&#x13093;</span></td>
+                </tr>
+                <tr>
+                    <td>Sw</td>
+                    <td>Sm</td>
+                    <td>Sn</td>
+                    <td>Ss</td>
+                    <td>Sd</td>
+                    <td>qs</td>
+                    <td>qd</td>
+                    <td>kA</td>
+                </tr>
+                <tr>
+                    <td>I006<br /><span class="aegyptus">&#x1318E;</span></td>
+                    <td>G028<br /><span class="aegyptus">&#x13160;</span></td>
+                    <td>AA013<br /><span class="aegyptus">&#x1341B;</span></td>
+                    <td>U030<br /><span class="aegyptus">&#x13354;</span></td>
+                    <td>N016<br /><span class="aegyptus">&#x131FE;</span></td>
+                    <td>U033<br /><span class="aegyptus">&#x13358;</span></td>
+                    <td>D001<br /><span class="aegyptus">&#x13076;</span></td>
+                    <td>T008<br /><span class="aegyptus">&#x13310;</span></td>
+                </tr>
+                <tr>
+                    <td>km</td>
+                    <td>gm</td>
+                    <td>gs</td>
+                    <td>tA</td>
+                    <td>tA</td>
+                    <td>ti</td>
+                    <td>tp</td>
+                    <td>tp</td>
+                </tr>
+                <tr>
+                    <td>U015<br /><span class="aegyptus">&#x13343;</span></td>
+                    <td>G047<br /><span class="aegyptus">&#x13177;</span></td>
+                    <td>D037<br /><span class="aegyptus">&#x1309E;</span></td>
+                    <td>X008<br /><span class="aegyptus">&#x133D9;</span></td>
+                    <td>U028<br /><span class="aegyptus">&#x13351;</span></td>
+                    <td>N026<br /><span class="aegyptus">&#x1320B;</span></td>
+                    <td>M036<br /><span class="aegyptus">&#x131E5;</span></td>
+                    <td>R011<br /><span class="aegyptus">&#x132BD;</span></td>
+                </tr>
+                <tr>
+                    <td>tm</td>
+                    <td>TA</td>
+                    <td>mi</td>
+                    <td>di</td>
+                    <td>DA</td>
+                    <td>Dw</td>
+                    <td>Dr</td>
+                    <td>Dd</td>
+                </tr>
+            </tbody>
+        </table>
+
         <p><span class="tip">未完待续</span></p>
 
         <h2 class="heading">八元神</h2>
