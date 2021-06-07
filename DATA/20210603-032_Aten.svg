@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="769.435" height="327.109" version="1.0" id="prefix__svg2">
+   <style type="text/css" id="style4">
+      .prefix__ph,
+      .prefix__ph1 {
+         fill: #fff000;
+         stroke: #f0f000
+      }
+
+      .prefix__ph1 {
+         stroke-width: 3
+      }
+   </style>
+   <g id="prefix__g4257">
+      <path class="prefix__ph" d="M741.503 265.91c3.954 7.583 11.881 8.973 16.705 14.512-.555-5.077-4.809-6.292-6.492-9.382 4.22 2.33 7.961 2.085 13.134 10.577 1.819-.053 2.585-.116 4.085-.998 0 0-3.15-8.06-9.838-11.702-8.786-4.785-10.443-2.203-17.594-3.007z" id="prefix__path14" fill="#fac53a" fill-opacity="1" stroke="#fac53a" stroke-opacity="1" />
+      <path class="prefix__ph" d="M681.312 273.454c3.089 7.975 10.814 10.234 14.994 16.274.01-5.107-4.082-6.786-5.413-10.044 3.937 2.783 7.681 2.955 11.882 11.968 1.813.148 2.582.17 4.17-.54 0 0-2.238-8.36-8.48-12.72-8.203-5.729-10.135-3.346-17.154-4.938z" id="prefix__path16" fill="#fac53a" fill-opacity="1" stroke="#fac53a" stroke-opacity="1" />
+      <path class="prefix__ph" d="M624.782 281.533c2.128 8.283 9.532 11.437 12.971 17.927.613-5.07-3.253-7.22-4.19-10.611 3.58 3.227 7.279 3.839 10.388 13.284 1.783.361 2.544.474 4.204-.044 0 0-1.236-8.566-6.922-13.631-7.47-6.656-9.67-4.518-16.451-6.925z" id="prefix__path18" fill="#fac53a" fill-opacity="1" stroke="#fac53a" stroke-opacity="1" />
+      <path class="prefix__ph" d="M577.473 287.168c1.094 8.482 8.054 12.522 10.669 19.386 1.232-4.957-2.341-7.565-2.854-11.046 3.157 3.643 6.752 4.705 8.675 14.46 1.725.578 2.467.784 4.179.474 0 0-.174-8.653-5.194-14.38-6.594-7.523-9.04-5.671-15.475-8.894z" id="prefix__path20" fill="#fac53a" fill-opacity="1" stroke="#fac53a" stroke-opacity="1" />
+      <path class="prefix__ph" d="M525.725 291.364c-.167 8.55 6.123 13.572 7.7 20.745 1.947-4.72-1.203-7.826-1.198-11.346 2.587 4.068 5.986 5.648 6.453 15.58 1.62.826 2.324 1.138 4.063 1.084 0 0 1.101-8.584-3.02-14.987-5.416-8.412-8.108-6.94-13.998-11.076z" id="prefix__path22" fill="#fac53a" fill-opacity="1" stroke="#fac53a" stroke-opacity="1" />
+      <path class="prefix__ph" d="M472.92 293.542c-1.915 8.335 3.213 14.538 3.286 21.882 2.874-4.222.427-7.907 1.152-11.35 1.699 4.511 4.703 6.754 3.125 16.571 1.418 1.14 2.042 1.59 3.755 1.893 0 0 2.836-8.177.113-15.288-3.577-9.343-6.514-8.454-11.431-13.708z" id="prefix__path24" fill="#fac53a" fill-opacity="1" stroke="#fac53a" stroke-opacity="1" />
+      <path class="prefix__ph" d="M420.641 294.411c-3.574 7.77.183 14.888-1.243 22.093 3.674-3.547 2.03-7.654 3.442-10.877.743 4.763 3.227 7.57-.32 16.86 1.157 1.406 1.676 1.973 3.291 2.619 0 0 4.444-7.427 3.228-14.944-1.598-9.876-4.654-9.605-8.398-15.75z" id="prefix__path26" fill="#fac53a" fill-opacity="1" stroke="#fac53a" stroke-opacity="1" />
+      <path class="prefix__ph" d="M27.932 267.413c-3.954 7.583-11.881 8.973-16.705 14.512.555-5.077 4.809-6.292 6.492-9.382-4.22 2.33-7.961 2.085-13.134 10.577-1.819-.053-2.585-.116-4.085-.998 0 0 3.15-8.06 9.838-11.702 8.786-4.785 10.443-2.203 17.594-3.007z" id="prefix__path28" fill="#fac53a" fill-opacity="1" stroke="#fac53a" stroke-opacity="1" />
+      <path class="prefix__ph" d="M88.123 274.957c-3.089 7.975-10.814 10.234-14.994 16.274-.01-5.107 4.082-6.786 5.413-10.044-3.937 2.783-7.681 2.954-11.882 11.968-1.813.148-2.582.17-4.17-.54 0 0 2.238-8.36 8.48-12.72 8.203-5.729 10.135-3.346 17.153-4.938z" id="prefix__path30" fill="#fac53a" fill-opacity="1" stroke="#fac53a" stroke-opacity="1" />
+      <path class="prefix__ph" d="M144.653 283.036c-2.128 8.283-9.532 11.437-12.971 17.927-.613-5.07 3.253-7.22 4.19-10.611-3.58 3.227-7.279 3.838-10.388 13.284-1.783.361-2.544.474-4.204-.044 0 0 1.236-8.566 6.922-13.632 7.47-6.655 9.67-4.517 16.451-6.924z" id="prefix__path32" fill="#fac53a" fill-opacity="1" stroke="#fac53a" stroke-opacity="1" />
+      <path class="prefix__ph" d="M191.962 288.67c-1.094 8.483-8.054 12.523-10.669 19.387-1.232-4.957 2.341-7.565 2.854-11.046-3.157 3.643-6.752 4.705-8.675 14.46-1.725.578-2.467.784-4.179.474 0 0 .174-8.653 5.194-14.38 6.594-7.523 9.04-5.671 15.475-8.894z" id="prefix__path34" fill="#fac53a" fill-opacity="1" stroke="#fac53a" stroke-opacity="1" />
+      <path class="prefix__ph" d="M243.71 292.867c.167 8.55-6.123 13.572-7.7 20.745-1.947-4.72 1.203-7.826 1.198-11.346-2.587 4.068-5.986 5.648-6.453 15.58-1.621.826-2.324 1.138-4.063 1.084 0 0-1.101-8.584 3.02-14.987 5.416-8.412 8.108-6.94 13.998-11.076z" id="prefix__path36" fill="#fac53a" fill-opacity="1" stroke="#fac53a" stroke-opacity="1" />
+      <path class="prefix__ph" d="M296.515 295.045c1.915 8.335-3.213 14.538-3.286 21.882-2.874-4.222-.427-7.907-1.152-11.35-1.699 4.511-4.703 6.753-3.125 16.571-1.418 1.14-2.042 1.59-3.755 1.893 0 0-2.836-8.177-.113-15.288 3.577-9.343 6.514-8.454 11.431-13.708z" id="prefix__path38" fill="#fac53a" fill-opacity="1" stroke="#fac53a" stroke-opacity="1" />
+      <path class="prefix__ph" d="M348.794 295.914c3.574 7.77-.183 14.888 1.243 22.093-3.674-3.547-2.03-7.654-3.442-10.877-.743 4.763-3.227 7.57.319 16.86-1.156 1.406-1.675 1.973-3.29 2.619 0 0-4.444-7.427-3.228-14.944 1.598-9.876 4.654-9.605 8.398-15.75z" id="prefix__path40" fill="#fac53a" fill-opacity="1" stroke="#fac53a" stroke-opacity="1" />
+      <path class="prefix__ph1" d="M385.469 75.638L741.503 265.91" id="prefix__path44" fill="#fac53a" fill-opacity="1" stroke="#fac53a" stroke-width="3" stroke-opacity="1" />
+      <path class="prefix__ph1" d="M681.312 273.454L385.47 75.637" id="prefix__path46" fill="#fac53a" fill-opacity="1" stroke="#fac53a" stroke-width="3" stroke-opacity="1" />
+      <path class="prefix__ph1" d="M624.782 281.533L385.472 75.635" id="prefix__path48" fill="#fac53a" fill-opacity="1" stroke="#fac53a" stroke-width="3" stroke-opacity="1" />
+      <path class="prefix__ph1" d="M577.473 287.168L385.47 75.637" id="prefix__path50" fill="#fac53a" fill-opacity="1" stroke="#fac53a" stroke-width="3" stroke-opacity="1" />
+      <path class="prefix__ph1" d="M525.725 291.364L385.47 75.637" id="prefix__path52" fill="#fac53a" fill-opacity="1" stroke="#fac53a" stroke-width="3" stroke-opacity="1" />
+      <path class="prefix__ph1" d="M472.92 293.542L385.47 75.637" id="prefix__path54" fill="#fac53a" fill-opacity="1" stroke="#fac53a" stroke-width="3" stroke-opacity="1" />
+      <path class="prefix__ph1" d="M420.641 294.411l-35.175-218.77" id="prefix__path56" fill="#fac53a" fill-opacity="1" stroke="#fac53a" stroke-width="3" stroke-opacity="1" />
+      <path class="prefix__ph1" d="M383.966 77.141L27.932 267.413" id="prefix__path58" fill="#fac53a" fill-opacity="1" stroke="#fac53a" stroke-width="3" stroke-opacity="1" />
+      <path class="prefix__ph1" d="M88.123 274.957L383.965 77.14" id="prefix__path60" fill="#fac53a" fill-opacity="1" stroke="#fac53a" stroke-width="3" stroke-opacity="1" />
+      <path class="prefix__ph1" d="M144.653 283.036l239.31-205.898" id="prefix__path62" fill="#fac53a" fill-opacity="1" stroke="#fac53a" stroke-width="3" stroke-opacity="1" />
+      <path class="prefix__ph1" d="M191.962 288.67L383.965 77.14" id="prefix__path64" fill="#fac53a" fill-opacity="1" stroke="#fac53a" stroke-width="3" stroke-opacity="1" />
+      <path class="prefix__ph1" d="M243.71 292.867L383.965 77.14" id="prefix__path66" fill="#fac53a" fill-opacity="1" stroke="#fac53a" stroke-width="3" stroke-opacity="1" />
+      <path class="prefix__ph1" d="M296.515 295.045l87.45-217.905" id="prefix__path68" fill="#fac53a" fill-opacity="1" stroke="#fac53a" stroke-width="3" stroke-opacity="1" />
+      <path class="prefix__ph1" d="M348.794 295.914l35.174-218.77" id="prefix__path70" fill="#fac53a" fill-opacity="1" stroke="#fac53a" stroke-width="3" stroke-opacity="1" />
+      <path id="prefix__path72" class="prefix__ph" d="M460.468 75.638c0 41.422-33.578 75-75 75-41.42 0-75-33.578-75-75 0-41.42 33.58-75 75-75 41.422 0 75 33.58 75 75z" fill="#fac53a" fill-opacity="1" stroke="#fac53a" stroke-width="1.277" stroke-opacity="1" />
+   </g>
+</svg>
