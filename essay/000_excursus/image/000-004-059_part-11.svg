@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   sodipodi:docname="000-004-059_part-11.svg"
+   id="svg4"
+   version="1.1"
+   viewBox="-10 0 2048 2048"
+   width="2048"
+   height="2048">
+  <metadata
+     id="metadata10">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs8" />
+  <sodipodi:namedview
+     inkscape:current-layer="svg4"
+     inkscape:window-maximized="1"
+     inkscape:window-y="-8"
+     inkscape:window-x="-8"
+     inkscape:cy="1478.4183"
+     inkscape:cx="753.19448"
+     inkscape:zoom="0.20414449"
+     showgrid="false"
+     id="namedview6"
+     inkscape:window-height="1018"
+     inkscape:window-width="1920"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     guidetolerance="10"
+     gridtolerance="10"
+     objecttolerance="10"
+     borderopacity="1"
+     bordercolor="#666666"
+     pagecolor="#ffffff" />
+  <path
+     sodipodi:nodetypes="ccccsccccscsscscsssscscss"
+     id="path2"
+     fill="currentColor"
+     d="M 226,929 584,740 c 28,-14.667 62.667,-22.333 104,-23 l 1111,-18 c 16.667,0 25,-13.333 25,-40 0,-26.667 -8.333,-40 -25,-40 L 688,601 c -41.333,-0.667 -76,-8.333 -104,-23 L 226,389 c -14.667,124 -22,214 -22,270 0,56 7.333,146 22,270 z M 744,598.5 c 26.667,0 40.6665,-18 41,-27 0.3335,-9 221,-430.5 221,-430.5 -118,-14 -205.333,-21 -262,-21 -56.667,0 -144,7 -262,21 0,0 220.6665,421.5 221,430.5 0.3335,9 14.333,27 41,27 z m 540,0 c 26.667,0 40.6665,-18 41,-27 0.3335,-9 221,-430.5 221,-430.5 -118,-14 -205.333,-21 -262,-21 -56.667,0 -144,7 -262,21 0,0 220.6665,421.5 221,430.5 0.3335,9 14.333,27 41,27 z" />
+</svg>

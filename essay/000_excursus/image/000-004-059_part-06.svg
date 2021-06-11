@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   sodipodi:docname="000-004-059_part-06.svg"
+   id="svg4"
+   version="1.1"
+   viewBox="-10 0 2414 2048"
+   width="2048"
+   height="2048">
+  <metadata
+     id="metadata10">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs8" />
+  <sodipodi:namedview
+     inkscape:current-layer="svg4"
+     inkscape:window-maximized="1"
+     inkscape:window-y="-8"
+     inkscape:window-x="-8"
+     inkscape:cy="1637.7505"
+     inkscape:cx="251.26666"
+     inkscape:zoom="0.16615367"
+     showgrid="false"
+     id="namedview6"
+     inkscape:window-height="1018"
+     inkscape:window-width="1920"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     guidetolerance="10"
+     gridtolerance="10"
+     objecttolerance="10"
+     borderopacity="1"
+     bordercolor="#666666"
+     pagecolor="#ffffff" />
+  <path
+     style="stroke-width:1.00218"
+     id="path2"
+     fill="currentColor"
+     d="m 2288.4863,229.54852 q 0,40.16348 -25.007,40.16348 l -551.1555,9.03678 q -45.0127,1.00409 -104.0294,32.13079 l -358.101,189.77246 q -9.0025,-71.29018 -21.0059,-213.87055 l -77.0218,1.00409 q -62.0175,1.00408 -104.0293,23.094 L 690.03534,500.65203 Q 681.0328,429.36185 669.02941,286.78148 l -77.02173,1.00409 q -62.01749,1.00408 -104.02935,23.094 L 129.8773,500.65203 q -22.00621,-186.7602 -22.00621,-271.10351 0,-84.34332 22.00621,-271.10352 l 358.10103,189.77246 q 42.01186,22.08992 104.02935,23.094 l 77.02173,1.00409 q 3.00085,-59.24114 21.00593,-213.87055 l 358.10106,189.77246 q 42.0118,22.08992 104.0293,23.094 l 77.0218,1.00409 q 3.0008,-59.24114 21.0059,-213.87055 l 358.101,189.77246 q 59.0167,31.1267 104.0294,32.13079 l 551.1555,9.03678 q 25.007,0 25.007,40.16349 z" />
+</svg>

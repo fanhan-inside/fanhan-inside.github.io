@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   sodipodi:docname="000-004-059_part-08.svg"
+   id="svg4"
+   version="1.1"
+   height="2048"
+   width="2048"
+   viewBox="-10 0 2048 2048">
+  <metadata
+     id="metadata10">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs8" />
+  <sodipodi:namedview
+     inkscape:current-layer="svg4"
+     inkscape:window-maximized="1"
+     inkscape:window-y="-8"
+     inkscape:window-x="-8"
+     inkscape:cy="979.14182"
+     inkscape:cx="1051.5379"
+     inkscape:zoom="0.4790125"
+     showgrid="false"
+     id="namedview6"
+     inkscape:window-height="1018"
+     inkscape:window-width="1920"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     guidetolerance="10"
+     gridtolerance="10"
+     objecttolerance="10"
+     borderopacity="1"
+     bordercolor="#666666"
+     pagecolor="#ffffff" />
+  <path
+     sodipodi:nodetypes="ccccsccccscsscscsssscscss"
+     id="path2"
+     d="M 923,236 734,594 c -14.667,28 -22.333,62.667 -23,104 l -18,1111 c 0,16.667 -13.333,25 -40,25 -26.667,0 -40,-8.333 -40,-25 L 595,698 c -0.667,-41.333 -8.333,-76 -23,-104 L 383,236 c 124,-14.667 214,-22 270,-22 56,0 146,7.333 270,22 z M 587,754 c 0,26.667 -18,40.6665 -27,41 -9,0.3335 -429,221 -429,221 -14,-118 -21,-205.333 -21,-262 0,-56.667 7,-144 21,-262 0,0 420,220.6665 429,221 9,0.3335 27,14.333 27,41 z m 0,540 c 0,26.667 -18,40.6665 -27,41 -9,0.3335 -429,221 -429,221 -14,-118 -21,-205.333 -21,-262 0,-56.667 7,-144 21,-262 0,0 420,220.6665 429,221 9,0.3335 27,14.333 27,41 z"
+     fill="currentColor" />
+</svg>
