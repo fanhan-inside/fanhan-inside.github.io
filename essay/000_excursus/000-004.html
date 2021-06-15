@@ -71,6 +71,12 @@
             border: 1px red dashed;
             background-color: white;
         }
+
+        .kana {
+            font-family: 'Fanism';
+            font-size: 150%;
+            vertical-align: middle;
+        }
     </style>
 </head>
 
@@ -461,20 +467,9 @@
         <p>大道理讲完，到了具体实践的时候，就需要从千头万绪当中寻找最薄弱的突破口。</p>
         <p>对于日语而言，最简单但同时也是最容易混淆的符号，应该是长音符，虽然只有一笔，但是横竖两种书写方向的时候，走向不同。于是可以率先确定，就用上面出现的哑铃型双钉头符号表示，原型中也没有与其它符号混淆，尤其是没有出现横平竖直同时存在的情况。</p>
         <p>然后就是浊点、半浊点，可以用来表示辅音的清浊对立和塞擦对立，与主体字符的相对位置固定，即便竖着写横着看也没有歧义。于是可以确定，就用古波斯文的词分隔符形状，以钉头凸处指向「内」「外」两种形式表示。</p>
-        <div class="image-group">
-            <figure>
-                <img src="image/000-004-014.svg" alt="长音符" />
-                <figcaption><span>长音符</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-015.svg" alt="半浊点" />
-                <figcaption><span>半浊点</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-016.svg" alt="浊点" />
-                <figcaption><span>浊点</span></figcaption>
-            </figure>
-        </div>
+        <figure>
+            <img src="image/000-004-001.png" />
+        </figure>
         <p>再然后是各种音素符号，观察原型发现，钉头及衬线有「上下」「左右」两种指向，但是箭头只有一种「左凸右凹」，推测是用来指代文字走向的，应该也是当年用户在长期的生产生活斗争实践当中吸取了经验教训之后总结出来的，与执笔便利程度有关。</p>
         <p>如果一拍脑袋决定了以略复杂且方向明确的箭头为主设计元音音素符号，又需要考虑字符边界问题。尤其是<q lang="ja">い</q><q lang="ja">う</q>两个半元音，对于<q lang="ja">うい</q><q lang="ja">いう</q><q lang="ja">ゆ</q><q lang="ja">ゐ</q>这样的情况，假名不会混淆，换成楔形就未必了。上面的原型中也有实际例子：</p>
         <div style="font-size: 96px; text-align: center;">𐏑𐎤&emsp;𐎰</div>
@@ -485,444 +480,39 @@
         <p>也就是说，为了避免歧义，应该规定出现在开头的符号不会出现在结尾，反之亦然。而对于「开头」「结尾」的定义还有上下结构、左右结构两种情况。</p>
         <p>现在可以继续拍脑袋，规定每个字符都要出现钉头和箭头，并且以钉头开始以箭头结束，因为辅音比元音多，并且原型中钉头的组合更多。</p>
         <p>于是先用最简单的组合画了<q lang="ja">い</q><q lang="ja">う</q><q lang="ja">ゆ</q><q lang="ja">ゐ</q>四个音节：</p>
-        <div class="image-group">
-            <figure>
-                <img src="image/000-004-001.svg" alt="い" />
-                <figcaption><span>い</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-002.svg" alt="う" />
-                <figcaption><span>う</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-003.svg" alt="ゆ" />
-                <figcaption><span>ゆ</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-004.svg" alt="ゐ" />
-                <figcaption><span>ゐ</span></figcaption>
-            </figure>
-        </div>
+        <figure>
+            <img src="image/000-004-002.png" />
+        </figure>
         <p>然后照葫芦画瓢，从现成的符号当中找了符合上述原则的仨「𐎩」「𐎳」「𐏁」，作为<q lang="ja">あ</q><q lang="ja">え</q><q lang="ja">お</q>，也符合音位规律。再然后<q lang="ja">や</q><q lang="ja">わ</q>两行的八个假名就能组合了。</p>
-        <div class="image-group">
-            <figure>
-                <img src="image/000-004-005.svg" alt="あ" />
-                <figcaption><span>あ</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-006.svg" alt="え" />
-                <figcaption><span>え</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-007.svg" alt="お" />
-                <figcaption><span>お</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-008.svg" alt="や" />
-                <figcaption><span>や</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-009.svg" alt="イエ" />
-                <figcaption><span>イェ</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-010.svg" alt="よ" />
-                <figcaption><span>よ</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-011.svg" alt="わ" />
-                <figcaption><span>わ</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-012.svg" alt="ゑ" />
-                <figcaption><span>ゑ</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-013.svg" alt="を" />
-                <figcaption><span>を</span></figcaption>
-            </figure>
-        </div>
+        <figure>
+            <img src="image/000-004-003.png" />
+        </figure>
         <p>然后轮到辅音，清浊对立的情况就需要考虑了，凡是需要加附点的符号，应该尽量简单。</p>
-        <div class="image-group">
-            <figure>
-                <img src="image/000-004-017.svg" alt="ぱ" />
-                <figcaption><span>ぱ</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-018.svg" alt="ぴ" />
-                <figcaption><span>ぴ</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-019.svg" alt="ぷ" />
-                <figcaption><span>ぷ</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-020.svg" alt="ぺ" />
-                <figcaption><span>ぺ</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-021.svg" alt="ぽ" />
-                <figcaption><span>ぽ</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-022.svg" alt="た" />
-                <figcaption><span>た</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-023.svg" alt="ち" />
-                <figcaption><span>ち</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-024.svg" alt="つ" />
-                <figcaption><span>つ</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-025.svg" alt="て" />
-                <figcaption><span>て</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-026.svg" alt="と" />
-                <figcaption><span>と</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-027.svg" alt="か" />
-                <figcaption><span>か</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-028.svg" alt="き" />
-                <figcaption><span>き</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-029.svg" alt="く" />
-                <figcaption><span>く</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-030.svg" alt="け" />
-                <figcaption><span>け</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-031.svg" alt="こ" />
-                <figcaption><span>こ</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-032.svg" alt="さ" />
-                <figcaption><span>さ</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-033.svg" alt="し" />
-                <figcaption><span>し</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-034.svg" alt="す" />
-                <figcaption><span>す</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-035.svg" alt="せ" />
-                <figcaption><span>せ</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-036.svg" alt="そ" />
-                <figcaption><span>そ</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-037.svg" alt="は" />
-                <figcaption><span>は</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-038.svg" alt="ひ" />
-                <figcaption><span>ひ</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-039.svg" alt="ふ" />
-                <figcaption><span>ふ</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-040.svg" alt="へ" />
-                <figcaption><span>へ</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-041.svg" alt="ほ" />
-                <figcaption><span>ほ</span></figcaption>
-            </figure>
-        </div>
+        <figure>
+            <img src="image/000-004-004.png" />
+        </figure>
+
         <p>之所以把<q lang="ja">ぱ</q><q lang="ja">は</q>两行拆开，那是考虑到半浊点的历史尚短，十世纪的时候<q lang="ja">ぱ</q>行的声母还是「啪」呢。结合日语「发花辙」是一个音位，那么「哈」行加上浊点还能表示「哇」行用于拼写外来语。于是半浊点符号就不需要了。</p>
         <p>剩下的三行就是「勒摸呢」了：</p>
-        <div class="image-group">
-            <figure>
-                <img src="image/000-004-042.svg" alt="ら" />
-                <figcaption><span>ら</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-043.svg" alt="り" />
-                <figcaption><span>り</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-044.svg" alt="る" />
-                <figcaption><span>る</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-045.svg" alt="れ" />
-                <figcaption><span>れ</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-046.svg" alt="ろ" />
-                <figcaption><span>ろ</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-047.svg" alt="ま" />
-                <figcaption><span>ま</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-048.svg" alt="み" />
-                <figcaption><span>み</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-049.svg" alt="む" />
-                <figcaption><span>む</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-050.svg" alt="め" />
-                <figcaption><span>め</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-051.svg" alt="も" />
-                <figcaption><span>も</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-052.svg" alt="な" />
-                <figcaption><span>な</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-053.svg" alt="に" />
-                <figcaption><span>に</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-054.svg" alt="ぬ" />
-                <figcaption><span>ぬ</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-055.svg" alt="ね" />
-                <figcaption><span>ね</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-056.svg" alt="の" />
-                <figcaption><span>の</span></figcaption>
-            </figure>
-        </div>
+        <figure>
+            <img src="image/000-004-005.png" />
+        </figure>
         <p>最后是「促音」和「拨音」，到这时候就可以略微违背开头制定的原则，钉头和箭头的方向不作要求，只要有区分度即可。</p>
-        <div class="image-group">
-            <figure>
-                <img src="image/000-004-057.svg" alt="促音" />
-                <figcaption><span>促音</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-058.svg" alt="拨音" />
-                <figcaption><span>拨音</span></figcaption>
-            </figure>
-        </div>
+        <figure>
+            <img src="image/000-004-006.png" />
+        </figure>
         <p>好了，从一拍脑袋开始胡乱做将去的「第一稿」结束，接下来是「Review」了。</p>
 
         <h2 class="heading">日语拼音方案（续）</h2>
         <p>因为「Review」也是孤苦伶仃可怜废柴草根文盲矬胖老穷光棍汉精神病仆街写手不入流码农数学渣宅男黑客活雷锋烟枪酒鬼缩卵怂货窝囊废自己负责，所以决定换一条思路，先把上述初稿彻底打碎成零件，再参考原型重新组合。</p>
         <p>于是从原型和上述草稿当中都存在的符号当中，抽出三十个「偏旁部首」：</p>
-
-        <div class="image-group" id="part-list-1">
-            <figure>
-                <img src="image/000-004-059_part-01.svg" />
-                <figcaption><span>01</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-059_part-02.svg" />
-                <figcaption><span>02</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-059_part-03.svg" />
-                <figcaption><span>03</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-059_part-04.svg" />
-                <figcaption><span>04</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-059_part-05.svg" />
-                <figcaption><span>05</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-059_part-06.svg" />
-                <figcaption><span>06</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-059_part-07.svg" />
-                <figcaption><span>07</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-059_part-08.svg" />
-                <figcaption><span>08</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-059_part-09.svg" />
-                <figcaption><span>09</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-059_part-10.svg" />
-                <figcaption><span>10</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-059_part-11.svg" />
-                <figcaption><span>11</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-059_part-12.svg" />
-                <figcaption><span>12</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-059_part-13.svg" />
-                <figcaption><span>13</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-059_part-14.svg" />
-                <figcaption><span>14</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-059_part-15.svg" />
-                <figcaption><span>15</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-059_part-16.svg" />
-                <figcaption><span>16</span></figcaption>
-            </figure>
-        </div>
-        <div class="image-group" id="part-list-2">
-            <figure>
-                <img src="image/000-004-059_part-17.svg" />
-                <figcaption><span>17</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-059_part-18.svg" />
-                <figcaption><span>18</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-059_part-19.svg" />
-                <figcaption><span>19</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-059_part-20.svg" />
-                <figcaption><span>20</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-059_part-21.svg" />
-                <figcaption><span>21</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-059_part-22.svg" />
-                <figcaption><span>22</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-059_part-23.svg" />
-                <figcaption><span>23</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-059_part-24.svg" />
-                <figcaption><span>24</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-059_part-25.svg" />
-                <figcaption><span>25</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-059_part-26.svg" />
-                <figcaption><span>26</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-059_part-27.svg" />
-                <figcaption><span>27</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-059_part-28.svg" />
-                <figcaption><span>28</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-059_part-29.svg" />
-                <figcaption><span>29</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-059_part-30.svg" />
-                <figcaption><span>30</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-059_part-31.svg" />
-                <figcaption><span>31</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-059_part-32.svg" />
-                <figcaption><span>32</span></figcaption>
-            </figure>
-        </div>
+        <figure>
+            <img src="image/000-004-007.png" />
+        </figure>
         <p>然后参考原型的字体当中各个符号的比例，在不调整相对位置和尺寸的前提下，重新拼凑了六十个「方块字」：</p>
-        <div class="image-group">
-            <figure><img src="image/000-004-060_combo-11_10-25.svg" /></figure>
-            <figure><img src="image/000-004-060_combo-12_11-25.svg" /></figure>
-            <figure><img src="image/000-004-060_combo-13_12-25.svg" /></figure>
-            <figure><img src="image/000-004-060_combo-14_13-25.svg" /></figure>
-            <figure><img src="image/000-004-060_combo-15_14-25.svg" /></figure>
-            <figure><img src="image/000-004-060_combo-16_04-25.svg" /></figure>
-            <figure><img src="image/000-004-060_combo-17_05-25.svg" /></figure>
-            <figure><img src="image/000-004-060_combo-18_06-25.svg" /></figure>
-            <figure><img src="image/000-004-060_combo-02_13-24.svg" /></figure>
-            <figure><img src="image/000-004-060_combo-04_14-24.svg" /></figure>
-            <figure><img src="image/000-004-060_combo-06_10-24.svg" /></figure>
-            <figure><img src="image/000-004-060_combo-08_11-24.svg" /></figure>
-            <figure><img src="image/000-004-060_combo-10_12-24.svg" /></figure>
-            <figure><img src="image/000-004-060_combo-56_04-24.svg" /></figure>
-            <figure><img src="image/000-004-060_combo-57_05-24.svg" /></figure>
-            <figure><img src="image/000-004-060_combo-58_06-24.svg" /></figure>
-            <figure><img src="image/000-004-060_combo-01_13-23.svg" /></figure>
-            <figure><img src="image/000-004-060_combo-03_14-23.svg" /></figure>
-            <figure><img src="image/000-004-060_combo-05_10-23.svg" /></figure>
-            <figure><img src="image/000-004-060_combo-07_11-23.svg" /></figure>
-            <figure><img src="image/000-004-060_combo-09_12-23.svg" /></figure>
-            <figure><img src="image/000-004-060_combo-34_15-21.svg" /></figure>
-            <figure><img src="image/000-004-060_combo-36_16-21.svg" /></figure>
-            <figure><img src="image/000-004-060_combo-38_07-21.svg" /></figure>
-            <figure><img src="image/000-004-060_combo-40_08-21.svg" /></figure>
-            <figure><img src="image/000-004-060_combo-42_09-21.svg" /></figure>
-            <figure><img src="image/000-004-060_combo-44_01-21.svg" /></figure>
-            <figure><img src="image/000-004-060_combo-46_02-21.svg" /></figure>
-            <figure><img src="image/000-004-060_combo-48_03-21.svg" /></figure>
-            <figure><img src="image/000-004-060_combo-59_29-21.svg" /></figure>
-        </div>
-        <div class="image-group">
-            <figure><img src="image/000-004-060_combo-27_17-20.svg" /></figure>
-            <figure><img src="image/000-004-060_combo-28_17-21.svg" /></figure>
-            <figure><img src="image/000-004-060_combo-29_17-22.svg" /></figure>
-            <figure><img src="image/000-004-060_combo-30_17-23.svg" /></figure>
-            <figure><img src="image/000-004-060_combo-31_19-22.svg" /></figure>
-            <figure><img src="image/000-004-060_combo-32_19-23.svg" /></figure>
-            <figure><img src="image/000-004-060_combo-19_04-22.svg" /></figure>
-            <figure><img src="image/000-004-060_combo-20_05-22.svg" /></figure>
-            <figure><img src="image/000-004-060_combo-21_06-22.svg" /></figure>
-            <figure><img src="image/000-004-060_combo-22_10-22.svg" /></figure>
-            <figure><img src="image/000-004-060_combo-23_11-22.svg" /></figure>
-            <figure><img src="image/000-004-060_combo-24_12-22.svg" /></figure>
-            <figure><img src="image/000-004-060_combo-25_13-22.svg" /></figure>
-            <figure><img src="image/000-004-060_combo-26_14-22.svg" /></figure>
-            <figure><img src="image/000-004-060_combo-55_27-22.svg" /></figure>
-            <figure><img src="image/000-004-060_combo-33_15-20.svg" /></figure>
-            <figure><img src="image/000-004-060_combo-35_16-20.svg" /></figure>
-            <figure><img src="image/000-004-060_combo-37_07-20.svg" /></figure>
-            <figure><img src="image/000-004-060_combo-39_08-20.svg" /></figure>
-            <figure><img src="image/000-004-060_combo-41_09-20.svg" /></figure>
-            <figure><img src="image/000-004-060_combo-43_01-20.svg" /></figure>
-            <figure><img src="image/000-004-060_combo-45_02-20.svg" /></figure>
-            <figure><img src="image/000-004-060_combo-47_03-20.svg" /></figure>
-            <figure><img src="image/000-004-060_combo-49_26-20.svg" /></figure>
-            <figure><img src="image/000-004-060_combo-50_28-20.svg" /></figure>
-            <figure><img src="image/000-004-060_combo-51_29-20.svg" /></figure>
-            <figure><img src="image/000-004-060_combo-52_30-20.svg" /></figure>
-            <figure><img src="image/000-004-060_combo-53_31-20.svg" /></figure>
-            <figure><img src="image/000-004-060_combo-54_32-20.svg" /></figure>
-            <figure><img src="image/000-004-060_combo-60_30-21.svg" /></figure>
-        </div>
+        <figure>
+            <img src="image/000-004-008.png" />
+        </figure>
         <p>基本原则是从繁到简先纵后横，理由是由于字体高度固定而宽度可变。但是对于表达音拍语的音节文字来说，每个音节的长度是固定的，于是倾向于使用等宽字体，正好可以参考汉字原型。过程伴随着不断试错，虽然图中顺序重新排列过，但是到了最后一个符号的时候，已经对于钉头衬线作出微调了，于是决定到此为止。</p>
         <p>按照砥砺奋进八年半以来乃至十一年以来的惯例，这种时候市面上应该跳出大手色目金融机构赞助的色目情报工学精英童年才俊推销大手编程语言自动化解决方案，认为可以「写一段代码」自动执行「穷举」，并以境内外大手学术机构都曾经开展的「汉字补完计划」为例，面向人民群众推销理财产品。与此同时，同一家色目多频道媒体的另外一个办公室当中，会有大手色目情报机构扶持的色目美术兲才童年才俊以法国三色旗之色块比例（<samp>30%:33%:37%</samp>）为证，论证硅基人工智障的「算法」远不如碳基氪金狗眼的「直觉」。</p>
         <p>通过初稿以及上述排列组合的实践，参考语言学常识，在不违背「钉头开始箭头结束确保字符边界清晰」的大原则之下，决定引入「零声母」或曰「前置声门塞音」表示元音，正好与「促音」对立。观察上述组合当中字符内部间距以及日语特征，决定不使用「左中右结构」和「上中下结构」，而是把简单的组合用于表示现存方案中出现小写的假名，比如为了音译汉语而引入的「拗音」。于是又找到了「第二稿」的突破口。</p>
@@ -982,48 +572,9 @@
         </table>
         <p>正因为有个<q lang="ja">ゆ</q>，所以半元音<q lang="ja">い</q><q lang="ja">う</q>都要格外简单，初稿中也是「一钉一箭」搞定，思路可以照搬。并且拗音在现实书写中即便是不等宽字体也没有把两个假名缩在一个全角幅度范围内，所以决定「左右结构」可以略微扩展。还有，虽然革命纲领叫嚣所有半元音一律平等，但是很明显<q lang="ja">い</q>比<q lang="ja">う</q>更平等。即便单挑，连<q lang="ja">ゐ</q>这个假名都废止了，但是<q lang="ja">ゆ</q>还在继续在重要岗位上发挥作用。不过<q lang="ja">う</q>方也有不同意见，最起码<q lang="ja">を</q>的作用比<q lang="ja">ゆ</q>还大，虽然更了名改了姓数典忘祖了吧也算扯平，而<q lang="ja">ゐ</q><q lang="ja">ゑ</q>也都坚持到了最后，再看你们家那位「<ruby>爷<rt lang="ja">イエ</rt></ruby>」呢，还没来得及生出来就胎死腹中了也。</p>
         <p>所以，可以在把钉头视为「零声母」的同时把箭头视为「零韵母」，还用来表示这二位<ruby>爷<rt lang="ja">イエ</rt></ruby>，<del>谁在中央支持谁</del>谁占上风就偏向谁。其它跟班按照音位以此类推模仿风格。于是先把元音互相组合的十个假名捏造出来，<q lang="ja">ゐ</q><q lang="ja">ゑ</q>由于已经不再使用，等到最后再找俩「卖不出去砸手里的赔钱货」填空占着茅坑不拉屎以论证「历史局限性」：</p>
-        <div class="image-group">
-            <figure>
-                <img src="image/000-004-061_a.svg" />
-                <figcaption><s>あ</s></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-061_yi.svg" />
-                <figcaption><s>い</s></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-061_wu.svg" />
-                <figcaption><s>う</s></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-061_e.svg" />
-                <figcaption><s>え</s></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-061_o.svg" />
-                <figcaption><s>お</s></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-061_ya.svg" />
-                <figcaption><s>や</s></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-061_yu.svg" />
-                <figcaption><s>ゆ</s></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-061_yo.svg" />
-                <figcaption><s>よ</s></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-061_wa.svg" />
-                <figcaption><s>わ</s></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-061_wo.svg" />
-                <figcaption><s>を</s></figcaption>
-            </figure>
-        </div>
+        <figure>
+            <img src="image/000-004-009.png" />
+        </figure>
         <p>然后又轮到辅音了，这时候就要对初稿当中「浊点」「半浊点」的方案加以审核了。先摘抄一段维基百科，论证当代形单影只似乎生不逢时或生逢其时的半浊点之「历史作用」：</p>
         <blockquote>
             <p>さ゚／サ゚：在江户时代，它被用来代表江户语言的“ツァ”音。片假名中的“サ゚”主要用于唐音资料。</p>
@@ -1048,283 +599,29 @@
         <p>现任教宗<abbr class="who">方济各</abbr>，也就是色目预言中的「末代皇帝」，就是「<ruby>耶<rt lang="ja">イエ</rt></ruby>少爷粉丝团」团员，是首位从外围上洛中央的一把手。</p>
         <p>至于是否有自诩乌加里特后裔的色目民族权力机构「<del>贝爷</del><ins>巴拉巴</ins>粉丝团」指使色目武德「四十大盗」通过漠北大手情报机构指使的岭南精盎情报掮客从百善の新时代中国特色社会主义先行示范区使用智能手机打个国际长途电话不远万里向梵蒂冈有关部门临时工举报我的个人博客站点……那就不知道了也。</p>
         <p>辅音的突破口也很简单，只要时刻有「准备工作」的自知之明，深入领会「拼音方案为码字实践服务」中心思想，就可以从「作者最需要的场合」入手，比方说著名拟声台词「<ruby>蛙蛤蛤蛤<rt lang="ja">わははは</rt></ruby>」以及色目革命导师「<ruby>蛙蛤怖<rt lang="ja">ワハブ</rt></ruby>」。于是「h」行乃至与其关系密切的「p」行就可以开工了，参考日语历史发展，使用偏旁「#32」「#29」似乎比较贴切。</p>
-        <div class="image-group">
-            <figure>
-                <img src="image/000-004-061_pa.svg" />
-                <figcaption><span>pa</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-061_pi.svg" />
-                <figcaption><span>pi</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-061_pu.svg" />
-                <figcaption><s>pu</s></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-061_pe.svg" />
-                <figcaption><span>pe</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-061_po.svg" />
-                <figcaption><span>po</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-061_pya.svg" />
-                <figcaption><span>pya</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-061_pyu.svg" />
-                <figcaption><span>pyu</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-061_pyo.svg" />
-                <figcaption><span>pyo</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-061_ha.svg" />
-                <figcaption><span>ha</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-061_hi.svg" />
-                <figcaption><span>hi</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-061_hu.svg" />
-                <figcaption><span>hu</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-061_he.svg" />
-                <figcaption><span>he</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-061_ho.svg" />
-                <figcaption><span>ho</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-061_hya.svg" />
-                <figcaption><span>hya</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-061_hyu.svg" />
-                <figcaption><span>hyu</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-061_hyo.svg" />
-                <figcaption><span>hyo</span></figcaption>
-            </figure>
-        </div>
+        <figure>
+            <img src="image/000-004-010.png" />
+        </figure>
+
         <p>捏造的时候先按照拼音规律硬塞，塞不下了瘦身，将来还可以删繁就简，毕竟音节文字不是音素文字。其中「pe」的红蓝标色符号，分别来自左右结构，但是组合起来看上去与偏旁「#05」非常接近，不排除最终改为上下结构的可能性。同理可证，「po」的红蓝标色部分，也是左右结构分别组合而成，但是看上去似乎像另外一个<q lang="ja">う</q>段音节，如果偏旁「#05」被用作辅音的话。这就是避免歧义的重要性，虽然偏旁「#05」很简单。太阳底下没有新鲜事，「ho」的红蓝标号部分也组成了偏旁「#06」。</p>
         <p>另外一条感想，就是衬线的作用终于体现出来了。比如「pyo」「hyo」的左上角，如果衬线拉长，就可以更容易识别。到这里有了一条删繁就简的思路，就是似乎可以考虑保持「钉头」的总数量不变而改变组合方式，尤其是「引脚」的数量，比如「hi」有五个立足点，四线一角，看上去有些繁琐。</p>
         <p>接下来是「m」「n」两行鼻音，突破口是单独存在的「拨音」，加浊点还能表示后鼻音，不用拼写成<q lang="ja">－ング</q>了。先从造好的方块字当中挑一个匀称且偏旁尚未使用的，然后其它假名按照同种风格展开。参考拉丁字母形状，以钉头数量俩还是仨区分，引脚数量和指向则不做限制。</p>
-        <div class="image-group">
-            <figure>
-                <img src="image/000-004-061_NN.svg" />
-                <figcaption><s>んン</s></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-061_ma.svg" />
-                <figcaption><span>ma</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-061_mi.svg" />
-                <figcaption><span>mi</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-061_mu.svg" />
-                <figcaption><s>mu</s></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-061_me.svg" />
-                <figcaption><s>me</s></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-061_mo.svg" />
-                <figcaption><s>mo</s></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-061_mya.svg" />
-                <figcaption><span>mya</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-061_myu.svg" />
-                <figcaption><s>myu</s></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-061_myo.svg" />
-                <figcaption><s>myo</s></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-061_na.svg" />
-                <figcaption><span>na</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-061_ni.svg" />
-                <figcaption><span>ni</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-061_nu.svg" />
-                <figcaption><s>nu</s></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-061_ne.svg" />
-                <figcaption><s>ne</s></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-061_no.svg" />
-                <figcaption><s>no</s></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-061_nya.svg" />
-                <figcaption><s>nya</s></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-061_nyu.svg" />
-                <figcaption><span>nyu</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-061_nyo.svg" />
-                <figcaption><s>nyo</s></figcaption>
-            </figure>
-        </div>
+        <figure>
+            <img src="image/000-004-011.png" />
+        </figure>
+
         <p>再然后是「s」「r」两行，因为需要拼写雅利安革命导师「<ruby>安萨里<rt lang="ja">アンサリ</rt></ruby>」与雅利安革命战士「<ruby>阿萨辛<rt lang="ja">アサシン</rt></ruby>」。</p>
         <p>现在的「雅利安」一词由于二战的缘故已经污名化了，但是多年前业内通过「印欧语系」寻根溯源时所使用这个字眼指代的先民应该确实存在，后来嘛正如美国黑人讲鹰语一样，不是所有持印欧语系语言者都是雅利安人，这个常识应该在「学术纠纷」时加以强调。当然按照砥砺奋进八年半以来乃至十一年来的惯例，无论什么「学术纠纷」最终都会上纲上线上不封顶，直到政治和意识形态斗争导致的军事斗争为止。</p>
         <p>因此对于叫嚣着「血脖子武德充沛一力降十会就是要“指鹿为马”咋地吧」的色目混混鸡鸣狗盗之徒来说，按照哲合忍耶（高念）←纳格什班迪耶（画家）一路上溯到「纺羊毛者」安萨里。并且按照「一身绿皮的<del>柏林迪纳摩</del><ins>北京国安</ins>被称为“御林军”乃八三四幺外围组织」的江湖传说，参考色目大手情报机构<u>辛贝特</u><u>摩萨德</u>的岗位职责，可上溯到久经考验的卓越的特种任务执行者「<del>詹士邦</del><ins>阿萨辛</ins>」，也就是《设定集》当中幕后黑手「<ruby>厥虐赛斯<rt>ðøñœçæß</rt></ruby>」旗下公会「<ruby>送葬者<rt>Çaraba Çayonara</rt></ruby>」。</p>
         <p>考虑到附点的缘故，原则上符号上方尤其是右上方不出现纵向钉头，但是可以放在横向衬线之下。</p>
-        <div class="image-group">
-            <figure>
-                <img src="image/000-004-061_sa.svg" />
-                <figcaption><span>sa</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-061_si.svg" />
-                <figcaption><span>si</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-061_su.svg" />
-                <figcaption><span>su</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-061_se.svg" />
-                <figcaption><span>se</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-061_so.svg" />
-                <figcaption><span>so</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-061_sya.svg" />
-                <figcaption><span>sya</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-061_syu.svg" />
-                <figcaption><span>syu</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-061_syo.svg" />
-                <figcaption><span>syo</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-061_ra.svg" />
-                <figcaption><span>ra</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-061_ri.svg" />
-                <figcaption><span>ri</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-061_ru.svg" />
-                <figcaption><span>ru</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-061_re.svg" />
-                <figcaption><span>re</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-061_ro.svg" />
-                <figcaption><span>ro</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-061_rya.svg" />
-                <figcaption><span>rya</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-061_ryu.svg" />
-                <figcaption><span>ryu</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-061_ryo.svg" />
-                <figcaption><span>ryo</span></figcaption>
-            </figure>
-        </div>
+        <figure>
+            <img src="image/000-004-012.png" />
+        </figure>
         <p>使用偏旁已经捉襟见肘了，但是符号内部空间还有调整余地。</p>
         <p>最后是「t」「k」两行：</p>
-        <div class="image-group">
-            <figure>
-                <img src="image/000-004-061_ta.svg" />
-                <figcaption><span>ta</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-061_ti.svg" />
-                <figcaption><span>ti</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-061_tu.svg" />
-                <figcaption><s>tu</s></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-061_te.svg" />
-                <figcaption><span>te</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-061_to.svg" />
-                <figcaption><span>to</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-061_tya.svg" />
-                <figcaption><span>tya</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-061_tyu.svg" />
-                <figcaption><span>tyu</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-061_tyo.svg" />
-                <figcaption><span>tyo</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-061_ka.svg" />
-                <figcaption><span>ka</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-061_ki.svg" />
-                <figcaption><span>ki</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-061_ku.svg" />
-                <figcaption><s>ku</s></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-061_ke.svg" />
-                <figcaption><span>ke</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-061_ko.svg" />
-                <figcaption><span>ko</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-061_kya.svg" />
-                <figcaption><span>kya</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-061_kyu.svg" />
-                <figcaption><span>kyu</span></figcaption>
-            </figure>
-            <figure>
-                <img src="image/000-004-061_kyo.svg" />
-                <figcaption><span>kyo</span></figcaption>
-            </figure>
-        </div>
+        <figure>
+            <img src="image/000-004-013.png" />
+        </figure>
         <p>促音还是初稿当中的「圣十字架」不变。</p>
         <p>好了，从又一拍脑袋开始的胡乱做将去的「第二稿」结束，接下来是「Refactoring」了。</p>
 
@@ -2116,6 +1413,9 @@
         <p>好了，从再一拍脑袋开始的胡乱做将去的「范版八十音图」搞定，接下来该<q lang="ja">実装</q>了。</p>
 
         <h2 class="heading">日语拼音方案（又续）</h2>
+        <p>因为<q lang="ja">実装</q>也是孤苦伶仃可怜废柴草根文盲矬胖老穷光棍汉精神病仆街写手不入流码农数学渣宅男黑客活雷锋烟枪酒鬼饭桶缩卵怂货窝囊废自己负责，所以照样胡乱做将去，出现问题就解决问题可也。顺便把前两稿的SVG格式文件挪进「源码」目录，页面上以截图占位。</p>
+        <p>由于浊点单独存在，所以首先占用了「囧斋范某自作用字」当中Unicode定义的「半角假名」区域，能填的都填上了，小号元音是摆明了当韵母用的，则去掉了零声母（如果有的话）。测试则使用还没有发明半浊点时期的「全字母句」《伊呂波歌》：</p>
+        <p><ruby lang="ja">伊呂波<rt>いろは</rt>歌<rt>うた</rt></ruby>：<span class="kana">ｲﾛﾊﾆﾎﾍﾄﾞﾁﾘﾇﾙｦﾜｶﾞﾖﾀﾚｿﾞﾂﾈﾅﾗﾑｳｲﾉｵｸﾔﾏｹﾌｺｴﾃｱｻｷﾕﾒﾐｼﾞｴﾋﾓｾｽﾞ</span></p>
         <p><span class="tip">未完待续</span></p>
     </main>
     <div class="signature">
