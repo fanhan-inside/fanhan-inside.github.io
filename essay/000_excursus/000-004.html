@@ -1400,9 +1400,9 @@
         <blockquote>
             <p>太祖皇帝将展外城，幸朱雀门，亲自规画，独赵韩王普时从幸。上指门额问普曰：“何不只书‘朱雀门’，须着‘之’字安用？”普对曰：“语助。”太祖大笑曰：“之乎者也，助得甚事？”——文莹《湘山野录》</p>
         </blockquote>
-        <p>半角片假名：<span class="kana">ｱｲｳｴｵｶｷｸｹｺﾀﾁﾂﾃﾄｻｼｽｾｿﾅﾆﾇﾈﾉﾗﾘﾙﾚﾛﾏﾆﾑﾒﾓﾊﾋﾌﾍﾎﾔﾕﾖﾜｦﾝｯﾊﾟﾋﾟﾌﾟﾍﾟﾎﾟﾊﾞﾋﾞﾌﾞﾍﾞﾎﾞ</span></p>
-        <p>然后把全角片假名也<q lang="ja">実装</q>了，这下不仅<strong>「ヰ」「ヱ」</strong>可以显示出来，<mark>自动化浊点</mark>也可以，<mark class="cyan">「p」</mark>行也可以，而<mark class="lime">「b」</mark>行却是因为自动处理浊点转化于是用的是「h」行楔形文字。</p>
-        <p>全角片假名：<span class="kana">アイウエオカキクケコタチツテトサシスセソナニヌネノラリルレロマニムメモハヒフヘホヤユヨワ<strong>ヰヱ</strong>ヲンッ<mark>ガギグゲゴダヂヅデドザジズゼゾ</mark><mark class="cyan">パピプペポ</mark><mark class="lime">バビブベボ</mark></span></p>
+        <p>然后把全角片假名也<q lang="ja">実装</q>了，这下不仅<strong>「ヰ」「ヱ」</strong>可以显示出来，<em>小号假名</em>可以显示出来，<mark>自动化浊点</mark>也可以。到了<mark class="cyan">「p」</mark><mark class="lime">「b」</mark>行就出现问题了，半角片假名自动处理加浊点半浊点转化于是「p/b」行用的都是「h」行楔形文字。于是不追求等宽，把浊音字符都造出来，全角片假名当中填上了「p」行「b」行可以自动取代，半角片假名还是那样。</p>
+        <p>半角片假名：<span class="kana">ｱｲｳｴｵｶｷｸｹｺﾀﾁﾂﾃﾄｻｼｽｾｿﾅﾆﾇﾈﾉﾗﾘﾙﾚﾛﾏﾆﾑﾒﾓﾊﾋﾌﾍﾎﾔﾕﾖﾜｦﾝｯ<em>ｧｨｩｪｫｬｭｮ</em><mark>ｶﾞｷﾞｸﾞｹﾞｺﾞﾀﾞﾁﾞﾂﾞﾃﾞﾄﾞｻﾞｼﾞｽﾞｾﾞｿﾞ</mark><mark class="cyan">ﾊﾟﾋﾟﾌﾟﾍﾟﾎﾟ</mark><mark class="lime">ﾊﾞﾋﾞﾌﾞﾍﾞﾎﾞ</mark></span></p>
+        <p>全角片假名：<span class="kana">アイウエオカキクケコタチツテトサシスセソナニヌネノラリルレロマニムメモハヒフヘホヤユヨワ<strong>ヰヱ</strong>ヲンッ<em>ァィゥェォャュョ</em><mark>ガギグゲゴダヂヅデドザジズゼゾ</mark><mark class="cyan">パピプペポ</mark><mark class="lime">バビブベボ</mark></span></p>
         <p><span class="tip">未完待续</span></p>
     </main>
     <div class="signature">
