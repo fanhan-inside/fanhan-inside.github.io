@@ -28,32 +28,11 @@
             color: var(--color-name-japanese-鉄);
         }
 
-        /* #ugaritic td:nth-child(3)::before {
-            content: '[';
-        }
-
-        #ugaritic td:nth-child(3)::after {
-            content: ']';
-        } */
-
         #ugaritic td:nth-child(4),
         #ugaritic td:nth-child(5) {
             color: darkgreen;
         }
 
-        /* #ugaritic td:nth-child(4)::before,
-        #ugaritic td:nth-child(5)::before {
-            font-family: var(--font-family-sans);
-            content: '⟨';
-            color: red;
-        }
-
-        #ugaritic td:nth-child(4)::after,
-        #ugaritic td:nth-child(5)::after {
-            font-family: var(--font-family-sans);
-            content: '⟩';
-            color: red;
-        } */
         #part-list-1 figure img,
         #part-list-2 figure img {
             border: 1px red dashed;
@@ -1416,6 +1395,12 @@
         <p>因为<q lang="ja">実装</q>也是孤苦伶仃可怜废柴草根文盲矬胖老穷光棍汉精神病仆街写手不入流码农数学渣宅男黑客活雷锋烟枪酒鬼饭桶缩卵怂货窝囊废自己负责，所以照样胡乱做将去，出现问题就解决问题可也。顺便把前两稿的SVG格式文件挪进「源码」目录，页面上以截图占位。</p>
         <p>由于浊点单独存在，所以首先占用了「囧斋范某自作用字」当中Unicode定义的「半角假名」区域，能填的都填上了，小号元音是摆明了当韵母用的，则去掉了零声母（如果有的话）。测试则使用还没有发明半浊点时期的「全字母句」《伊呂波歌》：</p>
         <p><ruby lang="ja">伊呂波<rt>いろは</rt>歌<rt>うた</rt></ruby>：<span class="kana">ｲﾛﾊﾆﾎﾍﾄﾞﾁﾘﾇﾙｦﾜｶﾞﾖﾀﾚｿﾞﾂﾈﾅﾗﾑｳｲﾉｵｸﾔﾏｹﾌｺｴﾃｱｻｷﾕﾒﾐｼﾞｴﾋﾓｾｽﾞ</span></p>
+        <p>第一印象，通常字体大小（1em=16px）之下，看着有些费劲，放大到<samp>24px</samp>就可以了。观察字间距发现，符号周边留白过多，估计撑满格子就可以了。于是这一届方案的笔划密度可以接受。但是，有些烂泥糊不上墙的符号除了自我膨胀以破坏整体和谐比例之外，无论如何撑不起场面。比方说左右结构的那些，尤其是一钉一箭，中间距离太远反而更像是之前之后字符的组成部分。于是考虑让这些「对社交距离的自我管理意识很强」的符号，用来表示语言环境中的独立成分，也就是「自带分词断句功能」的那种。</p>
+        <p>因此，在<q lang="ja">実装</q>刚开始的时候，为了远大的理想而<s>反共</s><del>反攻</del><ins>返工</ins>，重新审核人事工作，调整各个符号的岗位职责。具体到用于影射来历不明的「苏<sub>修</sub>美<sub>帝</sub>尔语」的现实原型日语当中，存在着十个格助词：<q lang="ja">が</q><q lang="ja">の</q><q lang="ja">を</q><q lang="ja">に</q><q lang="ja">へ</q><q lang="ja">で</q><q lang="ja">と</q><q lang="ja">から</q><q lang="ja">まで</q><q lang="ja">より</q>。即便是与汉字混排的时候，通常也不会写作「之乎者也」之类字眼。所以决定，把简单的符号都用来表示成事不足败事有馀的帮闲碎催泼皮无赖，用的是<abbr class="who">赵</abbr>家人的典故：</p>
+        <blockquote>
+            <p>太祖皇帝将展外城，幸朱雀门，亲自规画，独赵韩王普时从幸。上指门额问普曰：“何不只书‘朱雀门’，须着‘之’字安用？”普对曰：“语助。”太祖大笑曰：“之乎者也，助得甚事？”——文莹《湘山野录》</p>
+        </blockquote>
+        <p>五十音图：<span class="kana">ｱｲｳｴｵｶｷｸｹｺﾀﾁﾂﾃﾄｻｼｽｾｿﾅﾆﾇﾈﾉﾗﾘﾙﾚﾛﾏﾆﾑﾒﾓﾊﾋﾌﾍﾎﾔﾕﾖﾜｦｴﾝﾊﾟﾋﾟﾌﾟﾍﾟﾎﾟﾊﾞﾋﾞﾌﾞﾍﾞﾎﾞ</span></p>
         <p><span class="tip">未完待续</span></p>
     </main>
     <div class="signature">
