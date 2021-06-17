@@ -46,12 +46,17 @@
             width: 30%;
         }
 
-        #phone-matrix img {
-            border: 1px red dashed;
-            background-color: white;
+        .kana {
+            font-family: 'Fanism';
+            font-size: 150%;
+            vertical-align: middle;
         }
 
-        .kana {
+        #phone-matrix {
+            width: 80%;
+        }
+
+        #phone-matrix td {
             font-family: 'Fanism';
             font-size: 150%;
             vertical-align: middle;
@@ -1262,136 +1267,62 @@
                 <img src="image/000-004-062_半浊点.svg" />
                 <figcaption><span>半浊点</span></figcaption>
             </figure>
+            <figure>
+                <img src="image/000-004-062_连字号.svg" />
+                <figcaption><span>连字号</span></figcaption>
+            </figure>
+        </div>
+        <div class="image-group">
+            <figure>
+                <img src="image/000-004-062_xkaxke.svg" />
+                <figcaption><span>ヵヶ</span></figcaption>
+            </figure>
+            <figure>
+                <img src="image/000-004-062_间隔点.svg" />
+                <figcaption><span>间隔点</span></figcaption>
+            </figure>
+            <figure>
+                <img src="image/000-004-062_逗号.svg" />
+                <figcaption><span>逗号</span></figcaption>
+            </figure>
+            <figure>
+                <img src="image/000-004-062_句号.svg" />
+                <figcaption><span>句号</span></figcaption>
+            </figure>
+            <figure>
+                <img src="image/000-004-062_问号.svg" />
+                <figcaption><span>问号</span></figcaption>
+            </figure>
+            <figure>
+                <img src="image/000-004-062_叹号.svg" />
+                <figcaption><span>叹号</span></figcaption>
+            </figure>
+            <figure>
+                <img src="image/000-004-062_左引号.svg" />
+                <figcaption><span>左引号</span></figcaption>
+            </figure>
+            <figure>
+                <img src="image/000-004-062_右引号.svg" />
+                <figcaption><span>右引号</span></figcaption>
+            </figure>
+            <figure>
+                <img src="image/000-004-062_同上.svg" />
+                <figcaption><span>同上</span></figcaption>
+            </figure>
+            <figure>
+                <img src="image/000-004-062_より.svg" />
+                <figcaption><span>より</span></figcaption>
+            </figure>
+            <figure>
+                <img src="image/000-004-062_コト.svg" />
+                <figcaption><span>コト</span></figcaption>
+            </figure>
         </div>
         <p>然后回顾其它思维误区，以箭头结尾不意味着箭头不能出现在中间，甚至只要有零声母开头，箭头还能出现在最前面，有原型文字为证。没有如此设计主要是由于其所需生存空间过大的缘故，俩箭头跑马圈地只许中间出现钉头和衬线，还能占着茅坑不拉屎浪费资源呢。而且，并不是所有元音单独存在的时候都需要以零声母开头，第二稿当中就没出现过。</p>
         <p>于是先把八段元音设计好，剩下按照假名频度顺序来，尽量利用第二稿的成果。</p>
-        <table lang="ja" id="phone-matrix">
-            <thead>
-                <tr>
-                    <th></th>
-                    <th>あ</th>
-                    <th>い</th>
-                    <th>う</th>
-                    <th>え</th>
-                    <th>お</th>
-                    <th>や</th>
-                    <th>ゆ</th>
-                    <th>よ</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>-</td>
-                    <td><img src="image/000-004-062_ア.svg" /></td>
-                    <td><img src="image/000-004-062_イ.svg" /></td>
-                    <td><img src="image/000-004-062_ウ.svg" /></td>
-                    <td><img src="image/000-004-062_エ.svg" /></td>
-                    <td><img src="image/000-004-062_オ.svg" /></td>
-                    <td><img src="image/000-004-062_ヤ.svg" /></td>
-                    <td><img src="image/000-004-062_ユ.svg" /></td>
-                    <td><img src="image/000-004-062_ヨ.svg" /></td>
-                </tr>
-                <tr>
-                    <td>k/g</td>
-                    <td><img src="image/000-004-062_カ.svg" /></td>
-                    <td><img src="image/000-004-062_キ.svg" /></td>
-                    <td><img src="image/000-004-062_ク.svg" /></td>
-                    <td><img src="image/000-004-062_ケ.svg" /></td>
-                    <td><img src="image/000-004-062_コ.svg" /></td>
-                    <td><img src="image/000-004-062_kya.svg" /></td>
-                    <td><img src="image/000-004-062_kyu.svg" /></td>
-                    <td><img src="image/000-004-062_kyo.svg" /></td>
-                </tr>
-                <tr>
-                    <td>t/d</td>
-                    <td><img src="image/000-004-062_タ.svg" /></td>
-                    <td><img src="image/000-004-062_チ.svg" /></td>
-                    <td><img src="image/000-004-062_ツ.svg" /></td>
-                    <td><img src="image/000-004-062_テ.svg" /></td>
-                    <td><img src="image/000-004-062_ト.svg" /></td>
-                    <td><img src="image/000-004-062_tya.svg" /></td>
-                    <td><img src="image/000-004-062_tyu.svg" /></td>
-                    <td><img src="image/000-004-062_tyo.svg" /></td>
-                </tr>
-                <tr>
-                    <td>s/z</td>
-                    <td><img src="image/000-004-062_サ.svg" /></td>
-                    <td><img src="image/000-004-062_シ.svg" /></td>
-                    <td><img src="image/000-004-062_ス.svg" /></td>
-                    <td><img src="image/000-004-062_セ.svg" /></td>
-                    <td><img src="image/000-004-062_ソ.svg" /></td>
-                    <td><img src="image/000-004-062_sya.svg" /></td>
-                    <td><img src="image/000-004-062_syu.svg" /></td>
-                    <td><img src="image/000-004-062_syo.svg" /></td>
-                </tr>
-                <tr>
-                    <td>n</td>
-                    <td><img src="image/000-004-062_ナ.svg" /></td>
-                    <td><img src="image/000-004-062_ニ.svg" /></td>
-                    <td><img src="image/000-004-062_ヌ.svg" /></td>
-                    <td><img src="image/000-004-062_ネ.svg" /></td>
-                    <td><img src="image/000-004-062_ノ.svg" /></td>
-                    <td><img src="image/000-004-062_nya.svg" /></td>
-                    <td><img src="image/000-004-062_nyu.svg" /></td>
-                    <td><img src="image/000-004-062_nyo.svg" /></td>
-                </tr>
-                <tr>
-                    <td>r</td>
-                    <td><img src="image/000-004-062_ラ.svg" /></td>
-                    <td><img src="image/000-004-062_リ.svg" /></td>
-                    <td><img src="image/000-004-062_ル.svg" /></td>
-                    <td><img src="image/000-004-062_レ.svg" /></td>
-                    <td><img src="image/000-004-062_ロ.svg" /></td>
-                    <td><img src="image/000-004-062_rya.svg" /></td>
-                    <td><img src="image/000-004-062_ryu.svg" /></td>
-                    <td><img src="image/000-004-062_ryo.svg" /></td>
-                </tr>
-                <tr>
-                    <td>m</td>
-                    <td><img src="image/000-004-062_マ.svg" /></td>
-                    <td><img src="image/000-004-062_ミ.svg" /></td>
-                    <td><img src="image/000-004-062_ム.svg" /></td>
-                    <td><img src="image/000-004-062_メ.svg" /></td>
-                    <td><img src="image/000-004-062_モ.svg" /></td>
-                    <td><img src="image/000-004-062_mya.svg" /></td>
-                    <td><img src="image/000-004-062_myu.svg" /></td>
-                    <td><img src="image/000-004-062_myo.svg" /></td>
-                </tr>
-                <tr>
-                    <td>h/f/v</td>
-                    <td><img src="image/000-004-062_ハ.svg" /></td>
-                    <td><img src="image/000-004-062_ヒ.svg" /></td>
-                    <td><img src="image/000-004-062_フ.svg" /></td>
-                    <td><img src="image/000-004-062_ヘ.svg" /></td>
-                    <td><img src="image/000-004-062_ホ.svg" /></td>
-                    <td><img src="image/000-004-062_hya.svg" /></td>
-                    <td><img src="image/000-004-062_hyu.svg" /></td>
-                    <td><img src="image/000-004-062_hyo.svg" /></td>
-                </tr>
-                <tr>
-                    <td>p/b</td>
-                    <td><img src="image/000-004-062_パ.svg" /></td>
-                    <td><img src="image/000-004-062_ピ.svg" /></td>
-                    <td><img src="image/000-004-062_プ.svg" /></td>
-                    <td><img src="image/000-004-062_ペ.svg" /></td>
-                    <td><img src="image/000-004-062_ポ.svg" /></td>
-                    <td><img src="image/000-004-062_pya.svg" /></td>
-                    <td><img src="image/000-004-062_pyu.svg" /></td>
-                    <td><img src="image/000-004-062_pyo.svg" /></td>
-                </tr>
-                <tr>
-                    <td>w</td>
-                    <td><img src="image/000-004-062_ワ.svg" /></td>
-                    <td><img src="image/000-004-062_ヰ.svg" /></td>
-                    <td>（无）</td>
-                    <td><img src="image/000-004-062_ヱ.svg" /></td>
-                    <td><img src="image/000-004-062_ヲ.svg" /></td>
-                    <td>（无）</td>
-                    <td>（无）</td>
-                    <td>（无）</td>
-                </tr>
-            </tbody>
-        </table>
+        <figure>
+            <img src="image/000-004-015.png" />
+        </figure>
         <p>结果如上表所示。</p>
         <p>好了，从再一拍脑袋开始的胡乱做将去的「范版八十音图」搞定，接下来该<q lang="ja">実装</q>了。</p>
 
@@ -1421,12 +1352,225 @@
         <blockquote>
             <p><span class="kana">「さすがじじですね、いつもいきているさまになっています。」</span>（“真不愧是长者，总是活蹦乱跳的样子。”）</p>
             <p><span class="kana">「わーはははは！ほめすぎだ！」</span>（“蛙……蛤蛤蛤蛤！过奖了过奖了！”）</p>
-            <p><span class="kana">「ちっ、ふぁふぁふぁふぁ！おまえはほめられたとおもうぞ？」</span>（“嗤、發發發發！小样以为在夸你是吧？”）</p>
+            <p><span class="kana">「ちっ、ふぁふぁふぁふぁ！おまえはほめられたんとおもうぞ？」</span>（“嗤、發發發發！小样以为在夸你是吧？”）</p>
         </blockquote>
         <p>从上面的测试也能看出来（如色目情报掮客炒作的福建及潮汕地区人士的笑声之拼写），迄今为止只是替换假名而已，还没有真正涉及到「拼音方案」的具体处理和「范版八十音图」的独到之处，最起码也得把不存在于现行编码当中的拗音字符和其它音节都表达出来，这是「真・架空」所必需的准备工作。</p>
         <p>比方说当代日语「夫乎不分」导致的问题，正在日内瓦谈判中使用的官方文字「苏<sub>修</sub>美<sub>帝</sub>尔语」就不会：</p>
-        <p><q lang="ja">ふぁファﾌｧ・ふぃフィﾌｨ・ふぅフゥﾌｩ・ふぇフェﾌｪ・ふぉフォﾌｫ</q>：<span class="kana">ふぁファﾌｧ・ふぃフィﾌｨ・ふぅフゥﾌｩ・ふぇフェﾌｪ・ふぉフォﾌｫ</span></p>
-        <p><q lang="ja">う゛ぁヴァｳﾞｧ・う゛ぃヴィｳﾞｨ・う゛ヴｳﾞ・う゛ぇヴェｳﾞｪ・う゛ぉヴォｳﾞｫ</q><span class="kana">う゛ぁヴァｳﾞｧ・う゛ぃヴィｳﾞｨ・う゛ヴｳﾞ・う゛ぇヴェｳﾞｪ・う゛ぉヴォｳﾞｫ</span></p>
+        <p><q lang="ja">ふぁファﾌｧ・ふぃフィﾌｨ・ふぅフゥﾌｩ・ふぇフェﾌｪ・ふぉフォﾌｫ・う゛ぁヴァｳﾞｧ・う゛ぃヴィｳﾞｨ・う゛ヴｳﾞ・う゛ぇヴェｳﾞｪ・う゛ぉヴォｳﾞｫ</q>：<span class="kana">ふぁファﾌｧ・ふぃフィﾌｨ・ふぅフゥﾌｩ・ふぇフェﾌｪ・ふぉフォﾌｫ・う゛ぁヴァｳﾞｧ・う゛ぃヴィｳﾞｨ・う゛ヴｳﾞ・う゛ぇヴェｳﾞｪ・う゛ぉヴォｳﾞｫ</span></p>
+        <p><q lang="ja">きゃキャｷｬ・ぎゃギャｷﾞｬ・ちゃチャﾁｬ・ぢゃヂャﾁﾞｬ・しゃシャｼｬ・じゃジャｼﾞｬ</q>：<span class="kana">きゃキャｷｬ・ぎゃギャｷﾞｬ・ちゃチャﾁｬ・ぢゃヂャﾁﾞｬ・しゃシャｼｬ・じゃジャｼﾞｬ</span></p>
+        <p><q lang="ja">きゅキュｷｭ・ぎゅギュｷﾞｭ・ちゅチュﾁｭ・ぢゅヂュﾁﾞｭ・しゅシュｼｭ・じゅジュｼﾞｭ</q>：<span class="kana">きゅキュｷｭ・ぎゅギュｷﾞｭ・ちゅチュﾁｭ・ぢゅヂュﾁﾞｭ・しゅシュｼｭ・じゅジュｼﾞｭ</span></p>
+        <p><q lang="ja">きょキョｷｮ・ぎょギョｷﾞｮ・ちょチョﾁｮ・ぢょヂョﾁﾞｮ・しょショｼｮ・じょジョｼﾞｮ</q>：<span class="kana">きょキョｷｮ・ぎょギョｷﾞｮ・ちょチョﾁｮ・ぢょヂョﾁﾞｮ・しょショｼｮ・じょジョｼﾞｮ</span></p>
+        <p><q lang="ja">にゃニャﾆｬにゅニュﾆｭにょニョﾆｮ・りゃリャﾘｬりゅリュﾘｭりょリョﾘｮ・みゃミャﾐｬみゅミュﾐｭみょミョﾐｮ</q>：<span class="kana">にゃニャﾆｬにゅニュﾆｭにょニョﾆｮ・りゃリャﾘｬりゅリュﾘｭりょリョﾘｮ・みゃミャﾐｬみゅミュﾐｭみょミョﾐｮ</span></p>
+        <p><q lang="ja">ひゃヒャﾋｬひゅヒュﾋｭひょヒョﾋｮ・ぴゃピャﾋﾟｬぴゅピュﾋﾟｭぴょピョﾋﾟｮ・びゃビャﾋﾞｬびゅビュﾋﾞｭびょビョﾋﾞｮ</q>：<span class="kana">ひゃヒャﾋｬひゅヒュﾋｭひょヒョﾋｮ・ぴゃピャﾋﾟｬぴゅピュﾋﾟｭぴょピョﾋﾟｮ・びゃビャﾋﾞｬびゅビュﾋﾞｭびょビョﾋﾞｮ</span></p>
+        <p><q lang="ja">ふゃフャﾌｬ・ふゅフュﾌｭ・ふょフョﾌｮ・う゛ゃヴャｳﾞｬ・う゛ゅヴュｳﾞｭ・う゛ょヴョｳﾞｮ</q>：<span class="kana">ふゃフャﾌｬ・ふゅフュﾌｭ・ふょフョﾌｮ・う゛ゃヴャｳﾞｬ・う゛ゅヴュｳﾞｭ・う゛ょヴョｳﾞｮ</span></p>
+        <p>上面的测试当中，Chromium与Quantum两种排版引擎的表现不同：</p>
+        <figure>
+            <img src="image/000-004-016a.png" alt="Chromium" style="border: 2px red dashed;" />
+            <figcaption><span>Chromium</span></figcaption>
+        </figure>
+        <figure>
+            <img src="image/000-004-016b.png" alt="Quantum" style="border: 2px red dashed;" />
+            <figcaption><span>Quantum</span></figcaption>
+        </figure>
+        <p>前者在换行的时候断词，于是合字没有显示成期待的效果，后者则不然。</p>
+        <p>于是这个「问题」暂时搁置，由于实际使用中由日文转换，当然操作系统和浏览器当中的各种字体渲染工作要遵守日语的正字法以及各个大手情报工学会社由此而来的相应场合之政治规矩和组织纪律。</p>
+        <p>总之，「范版八十音图」现在可以正常呈现在页面之上了，于是把SVG文件挪入「源码」目录，页面上保留截图。</p>
+        <table lang="ja" id="phone-matrix">
+            <thead>
+                <tr>
+                    <th>声母</th>
+                    <th>A</th>
+                    <th>I</th>
+                    <th>U</th>
+                    <th>E</th>
+                    <th>O</th>
+                    <th>Ya</th>
+                    <th>Yu</th>
+                    <th>Yo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>－</td>
+                    <td>あ</td>
+                    <td>い</td>
+                    <td>う</td>
+                    <td>え</td>
+                    <td>お</td>
+                    <td>や</td>
+                    <td>ゆ</td>
+                    <td>よ</td>
+                </tr>
+                <tr>
+                    <td>k</td>
+                    <td>か</td>
+                    <td>き</td>
+                    <td>く</td>
+                    <td>け</td>
+                    <td>こ</td>
+                    <td>きゃ</td>
+                    <td>きゅ</td>
+                    <td>きょ</td>
+                </tr>
+                <tr>
+                    <td>g</td>
+                    <td>が</td>
+                    <td>ぎ</td>
+                    <td>ぐ</td>
+                    <td>げ</td>
+                    <td>ご</td>
+                    <td>ぎゃ</td>
+                    <td>ぎゅ</td>
+                    <td>ぎょ</td>
+                </tr>
+                <tr>
+                    <td>t</td>
+                    <td>た</td>
+                    <td>ち</td>
+                    <td>つ</td>
+                    <td>て</td>
+                    <td>と</td>
+                    <td>ちゃ</td>
+                    <td>ちゅ</td>
+                    <td>ちょ</td>
+                </tr>
+                <tr>
+                    <td>d</td>
+                    <td>だ</td>
+                    <td>ぢ</td>
+                    <td>づ</td>
+                    <td>で</td>
+                    <td>ど</td>
+                    <td>ぢゃ</td>
+                    <td>ぢゅ</td>
+                    <td>ぢょ</td>
+                </tr>
+                <tr>
+                    <td>s</td>
+                    <td>さ</td>
+                    <td>し</td>
+                    <td>す</td>
+                    <td>せ</td>
+                    <td>そ</td>
+                    <td>しゃ</td>
+                    <td>しゅ</td>
+                    <td>しょ</td>
+                </tr>
+                <tr>
+                    <td>z</td>
+                    <td>ざ</td>
+                    <td>じ</td>
+                    <td>ず</td>
+                    <td>ぜ</td>
+                    <td>ぞ</td>
+                    <td>じゃ</td>
+                    <td>じゅ</td>
+                    <td>じょ</td>
+                </tr>
+                <tr>
+                    <td>n</td>
+                    <td>な</td>
+                    <td>に</td>
+                    <td>ぬ</td>
+                    <td>ね</td>
+                    <td>の</td>
+                    <td>にゃ</td>
+                    <td>にゅ</td>
+                    <td>にょ</td>
+                </tr>
+                <tr>
+                    <td>r</td>
+                    <td>ら</td>
+                    <td>り</td>
+                    <td>る</td>
+                    <td>れ</td>
+                    <td>ろ</td>
+                    <td>りゃ</td>
+                    <td>りゅ</td>
+                    <td>りょ</td>
+                </tr>
+                <tr>
+                    <td>m</td>
+                    <td>ま</td>
+                    <td>み</td>
+                    <td>む</td>
+                    <td>め</td>
+                    <td>も</td>
+                    <td>みゃ</td>
+                    <td>みゅ</td>
+                    <td>みょ</td>
+                </tr>
+                <tr>
+                    <td>h</td>
+                    <td>は</td>
+                    <td>ひ</td>
+                    <td>ふ</td>
+                    <td>へ</td>
+                    <td>ほ</td>
+                    <td>ひゃ</td>
+                    <td>ひゅ</td>
+                    <td>ひょ</td>
+                </tr>
+                <tr>
+                    <td>f</td>
+                    <td>ふぁ</td>
+                    <td>ふぃ</td>
+                    <td>ふぅ</td>
+                    <td>ふぇ</td>
+                    <td>ふぉ</td>
+                    <td>ふゃ</td>
+                    <td>ふゅ</td>
+                    <td>ふょ</td>
+                </tr>
+                <tr>
+                    <td>v</td>
+                    <td>ヴァ</td>
+                    <td>ヴィ</td>
+                    <td>ヴ</td>
+                    <td>ヴェ</td>
+                    <td>ヴォ</td>
+                    <td>ヴャ</td>
+                    <td>ヴュ</td>
+                    <td>ヴョ</td>
+                </tr>
+                <tr>
+                    <td>p</td>
+                    <td>ぱ</td>
+                    <td>ぴ</td>
+                    <td>ぷ</td>
+                    <td>ぺ</td>
+                    <td>ぽ</td>
+                    <td>ぴゃ</td>
+                    <td>ぴゅ</td>
+                    <td>ぴょ</td>
+                </tr>
+                <tr>
+                    <td>b</td>
+                    <td>ば</td>
+                    <td>び</td>
+                    <td>ぶ</td>
+                    <td>べ</td>
+                    <td>ぼ</td>
+                    <td>びゃ</td>
+                    <td>びゅ</td>
+                    <td>びょ</td>
+                </tr>
+                <tr>
+                    <td>w</td>
+                    <td>わ</td>
+                    <td>ゐ</td>
+                    <td>－</td>
+                    <td>ゑ</td>
+                    <td>を</td>
+                    <td>－</td>
+                    <td>－</td>
+                    <td>－</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>好了，从再一拍脑袋开始的胡乱做将去的<q lang="ja">実装</q>搞定，接下来是等待「反馈」并在党性坚定的老审查员火眼金睛鸡蛋里挑骨头的情况下<s>反共</s><del>反攻</del><ins>返工</ins>……最后<del>用回初稿</del><ins>不忘初心牢记使命</ins>。</p>
+
+        <h2 class="heading">日语拼音方案（还续）</h2>
         <p><span class="tip">未完待续</span></p>
     </main>
     <div class="signature">
