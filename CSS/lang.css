@@ -74,6 +74,69 @@ q:lang(nato)::after {
     content: '»';
 }
 
+:lang(sux) {
+    font-family: 'Fanism';
+    margin: 0 1px;
+    padding: 0 1px;
+}
+
+q:lang(sux) {
+    font-size: 150%;
+    color: brown;
+    margin: 1px;
+    padding: 1px;
+}
+
+q:lang(sux)::before {
+    content: '［';
+}
+
+q:lang(sux)::after {
+    content: '］';
+}
+
+:lang(egy) {
+    font-family: 'Fanism';
+    margin: 0 1px;
+    padding: 0 1px;
+}
+
+q:lang(egy) {
+    color: darkred;
+    font-size: 200%;
+    margin: 1px;
+    padding: 1px;
+}
+
+q:lang(egy)::before {
+    content: '［';
+}
+
+q:lang(egy)::after {
+    content: '］';
+}
+
+span:lang(egy) {
+    display: inline-block;
+    text-indent: 0;
+    margin: 2px;
+    padding: 12px 8px;
+    border: 2px solid dimgray;
+    border-radius: 8px;
+    background-color: whitesmoke;
+    color: brown;
+    font-family: "Fanism";
+    font-weight: bold;
+    font-size: 300%;
+    vertical-align: middle;
+}
+
+rt:lang(egy) {
+    color: brown;
+    font-size: 200%;
+    font-weight: bold;
+}
+
 .ipa {
     font-family: var(--font-family-ipa);
     color: var(--color-name-japanese-鉄);
