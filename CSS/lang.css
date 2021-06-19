@@ -137,6 +137,10 @@ rt:lang(egy) {
     font-weight: bold;
 }
 
+:lang(cop) {
+    font-family: 'Quivira';
+}
+
 .ipa {
     font-family: var(--font-family-ipa);
     color: var(--color-name-japanese-鉄);
