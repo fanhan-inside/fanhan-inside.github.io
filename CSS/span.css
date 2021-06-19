@@ -1,28 +1,7 @@
-span.symbola {
-    display: inline-block;
-    text-indent: 0;
-    margin: 0 1px;
-    padding: 1 2px;
-    border: 1px solid lightgray;
-    background-color: whitesmoke;
-    color: darkblue;
-    font-family: "Symbola";
-    font-size: 150%;
-    vertical-align: middle;
-}
-
-span.nilus {
-    display: inline-block;
-    text-indent: 0;
-    margin: 0 1px;
-    padding: 1 2px;
-    border: 1px solid lightgray;
-    background-color: whitesmoke;
-    color: darkred;
-    font-family: "Nilus";
-    font-size: 150%;
-    vertical-align: middle;
-    font-feature-settings: "liga";
+span.Kargsfont {
+    font-family: 'Fanism';
+    font-size: 200%;
+    color: blue;
 }
 
 span.aegyptus {
@@ -73,19 +52,6 @@ span.transaegypt {
     font-size: 200%;
     vertical-align: middle;
     font-feature-settings: "ss10";
-}
-
-span.quivira {
-    display: inline-block;
-    text-indent: 0;
-    margin: 0 1px;
-    padding: 1 2px;
-    border: 1px solid lightgray;
-    background-color: whitesmoke;
-    color: darkgreen;
-    font-family: "Quivira";
-    font-size: 150%;
-    vertical-align: middle;
 }
 
 span.important {
