@@ -30,9 +30,9 @@ span.sign-time {
 }
 
 span.sign-time::before, span.sign-name::before {
-    content: url('../IMG/sign_name.svg');
-    /* content: '`name!^'; */
-    /* font-family: 'Fanism'; */
+    /* content: url('../IMG/sign_name.svg'); */
+    content: 'A';
+    font-family: 'FanSign';
     font-size: 2rem;
     font-weight: bold;
     display: inline-block;
@@ -42,9 +42,9 @@ span.sign-time::before, span.sign-name::before {
 }
 
 span.sign-time::after, span.sign-room::before {
-    content: url('../IMG/sign_room.svg');
-    /* content: '`room!^'; */
-    /* font-family: 'Fanism'; */
+    /* content: url('../IMG/sign_room.svg'); */
+    content: 'B';
+    font-family: 'FanSign';
     font-size: 2rem;
     display: inline-block;
     vertical-align: middle;
@@ -80,10 +80,10 @@ span.qed::before {
 }
 
 hr.sign-name::before {
-    content: 'Rigel van Confucia';
-    font-family: 'Elegance';
-    /* content: '`name2!^'; */
-    /* font-family: 'Fanism'; */
+    /* content: 'Rigel van Confucia'; */
+    /* font-family: 'Elegance'; */
+    content: 'a';
+    font-family: 'FanSign';
     font-size: 3rem;
     color: darkblue;
     vertical-align: middle;
@@ -96,19 +96,19 @@ hr.sign-name::after {
 }
 
 hr.sign-room::before {
-    content: 'Kargsburg';
-    font-family: 'KaiserGothic';
-    /* content: '`room2!^'; */
-    /* font-family: 'Fanism'; */
+    /* content: 'Kargsburg'; */
+    /* font-family: 'KaiserGothic'; */
+    content: 'b';
+    font-family: 'FanSign';
     font-size: 3rem;
     color: darkred;
     vertical-align: middle;
 }
 
 hr.sign-room::after {
-    content: url('../IMG/seal_room.svg');
-    /* content: '`room?^'; */
-    /* font-family: 'Fanism'; */
+    /* content: url('../IMG/seal_room.svg'); */
+    content: 'C';
+    font-family: 'FanSign';
     font-size: 3rem;
     color: red;
     display: inline-block;

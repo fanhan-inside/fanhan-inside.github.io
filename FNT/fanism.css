@@ -4,3 +4,24 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "FanSign";
+  src: url(./fanism/FanSign.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "FanEgyTran";
+  src: url(./fanism/FanEgyTran.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "FanEgyHier";
+  src: url(./fanism/FanEgyHier.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
