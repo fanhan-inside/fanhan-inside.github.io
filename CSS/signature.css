@@ -31,6 +31,10 @@ span.sign-time {
 
 span.sign-time::before, span.sign-name::before {
     content: url('../IMG/sign_name.svg');
+    /* content: '`name!^'; */
+    /* font-family: 'Fanism'; */
+    font-size: 2rem;
+    font-weight: bold;
     display: inline-block;
     vertical-align: middle;
     margin: 0;
@@ -39,6 +43,9 @@ span.sign-time::before, span.sign-name::before {
 
 span.sign-time::after, span.sign-room::before {
     content: url('../IMG/sign_room.svg');
+    /* content: '`room!^'; */
+    /* font-family: 'Fanism'; */
+    font-size: 2rem;
     display: inline-block;
     vertical-align: middle;
     margin: 0;
@@ -75,29 +82,37 @@ span.qed::before {
 hr.sign-name::before {
     content: 'Rigel van Confucia';
     font-family: 'Elegance';
-    font-size: 48px;
+    /* content: '`name2!^'; */
+    /* font-family: 'Fanism'; */
+    font-size: 3rem;
     color: darkblue;
+    vertical-align: middle;
 }
 
 hr.sign-name::after {
     content: url('../IMG/heraldry_small.svg');
     display: inline-block;
     vertical-align: middle;
-    margin-left: 10px;
 }
 
 hr.sign-room::before {
     content: 'Kargsburg';
     font-family: 'KaiserGothic';
-    font-size: 32px;
-    color: black;
+    /* content: '`room2!^'; */
+    /* font-family: 'Fanism'; */
+    font-size: 3rem;
+    color: darkred;
+    vertical-align: middle;
 }
 
 hr.sign-room::after {
     content: url('../IMG/seal_room.svg');
+    /* content: '`room?^'; */
+    /* font-family: 'Fanism'; */
+    font-size: 3rem;
+    color: red;
     display: inline-block;
     vertical-align: middle;
-    margin-left: 10px;
 }
 
 hr.wort-verboten {
