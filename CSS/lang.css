@@ -81,18 +81,32 @@ q:lang(nato)::after {
 }
 
 q:lang(sux) {
-    font-size: 150%;
+    display: inline-block;
+    text-indent: 0;
+    margin: 2px;
+    padding: 8px;
+    border: 2px solid dimgray;
+    border-radius: 8px;
+    background-color: whitesmoke;
     color: brown;
+    font-family: "Fanism";
+    font-weight: bold;
+    font-size: 150%;
+    vertical-align: middle;
+}
+
+q:lang(sux)::before, q:lang(sux)::after {
+    content: none;
+}
+
+span:lang(sux) {
+    font-size: 150%;
+    font-weight: bold;
+    text-indent: 0;
     margin: 1px;
     padding: 1px;
-}
-
-q:lang(sux)::before {
-    content: '［';
-}
-
-q:lang(sux)::after {
-    content: '］';
+    display: inline-block;
+    vertical-align: middle;
 }
 
 :lang(egy) {
@@ -102,25 +116,10 @@ q:lang(sux)::after {
 }
 
 q:lang(egy) {
-    color: darkred;
-    font-size: 200%;
-    margin: 1px;
-    padding: 1px;
-}
-
-q:lang(egy)::before {
-    content: '［';
-}
-
-q:lang(egy)::after {
-    content: '］';
-}
-
-span:lang(egy) {
     display: inline-block;
     text-indent: 0;
     margin: 2px;
-    padding: 12px 8px;
+    padding: 8px;
     border: 2px solid dimgray;
     border-radius: 8px;
     background-color: whitesmoke;
@@ -128,6 +127,19 @@ span:lang(egy) {
     font-family: "Fanism";
     font-weight: bold;
     font-size: 300%;
+    vertical-align: middle;
+}
+
+q:lang(egy)::before, q:lang(egy)::after {
+    content: none;
+}
+
+span:lang(egy) {
+    font-size: 300%;
+    text-indent: 0;
+    margin: 1px;
+    padding: 1px;
+    display: inline-block;
     vertical-align: middle;
 }
 
