@@ -1,0 +1,9 @@
+@import url(../fanism.css);
+
+h1 {
+    box-sizing: border-box;
+    height: 546px;
+    padding: 250px 0 0 0;
+    background: url(../image/heading_draft.svg) 50% no-repeat;
+    text-align: center;
+}
