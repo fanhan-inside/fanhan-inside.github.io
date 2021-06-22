@@ -13,6 +13,13 @@
 }
 
 @font-face {
+  font-family: "FanTitle";
+  src: url(./fanism/FanTitle.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "FanEgyTran";
   src: url(./fanism/FanEgyTran.woff2) format("woff2");
   font-weight: normal;
