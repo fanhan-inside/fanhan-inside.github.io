@@ -18,25 +18,16 @@ q:lang(en), q:lang(fr), q:lang(de), q:lang(it), q:lang(nl), q:lang(es), q:lang(p
     padding: 0 1px;
 }
 
-rt:lang(semitic) {
-    font-size: 100%;
-}
-
-:lang(ar) {
+:lang(uga), :lang(arc), :lang(phn), :lang(smp), :lang(xpu), :lang(got), :lang(chu) {
+    font-family: 'Quivira';
     font-size: 125%;
-    font-family: 'ScheherazadeNew';
     margin: 0 1px;
     padding: 0 1px;
 }
 
-:lang(he) {
-    font-size: 125%;
-    font-family: 'EzraSIL';
-    margin: 0 1px;
-    padding: 0 1px;
-}
-
-:lang(syc) {
+/* font-family: 'ScheherazadeNew'; */
+/* font-family: 'EzraSIL'; */
+:lang(he), :lang(ar), :lang(syc) {
     font-size: 125%;
     margin: 0 1px;
     padding: 0 1px;
