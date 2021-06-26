@@ -137,3 +137,66 @@
   font-weight: bold;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "AbyssinicaSIL";
+  src: url(./sil/AbyssinicaSIL-Regular.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Akatab";
+  src: url(./sil/Akatab-Regular.woff) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Akatab";
+  src: url(./sil/Akatab-Bold.woff) format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Tagmukay";
+  src: url(./sil/Tagmukay-Regular.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Tagmukay";
+  src: url(./sil/Tagmukay-Bold.woff) format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SophiaNubian";
+  src: url(./sil/SophiaNubian.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SophiaNubian";
+  src: url(./sil/SophiaNubian-Bold.woff2) format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SophiaNubian";
+  src: url(./sil/SophiaNubian-Italic.woff2) format("woff2");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "SophiaNubian";
+  src: url(./sil/SophiaNubian-BoldItalic.woff2) format("woff2");
+  font-weight: bold;
+  font-style: italic;
+}
