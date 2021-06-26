@@ -12,6 +12,7 @@ q:lang(en), q:lang(fr), q:lang(de), q:lang(it), q:lang(nl), q:lang(es), q:lang(p
 }
 
 :lang(semitic) {
+    font-family: 'FanSemitic';
     font-size: 125%;
     margin: 0 1px;
     padding: 0 1px;
@@ -35,20 +36,26 @@ rt:lang(semitic) {
     padding: 0 1px;
 }
 
-q:lang(ar), q:lang(he) {
+:lang(syc) {
+    font-size: 125%;
+    margin: 0 1px;
+    padding: 0 1px;
+}
+
+q:lang(ar), q:lang(he), q:lang(syc) {
     font-size: 125%;
     color: darkgreen;
     margin: 1px;
     padding: 1px;
 }
 
-q:lang(ar)::before, q:lang(he)::before {
+q:lang(ar)::before, q:lang(he)::before, q:lang(syc)::before {
     font-family: var(--font-family-sans);
     content: '⟨';
     color: red;
 }
 
-q:lang(ar)::after, q:lang(he)::after {
+q:lang(ar)::after, q:lang(he)::after, q:lang(syc)::after {
     font-family: var(--font-family-sans);
     content: '⟩';
     color: red;
