@@ -180,6 +180,13 @@ rt.ipa {
     font-size: 100%;
 }
 
+.bopomofo {
+    font-family: 'Fanism';
+    color: var(--color-name-japanese-鉄);
+    font-size: 200%;
+    font-feature-settings: 'ss01';
+}
+
 rt.nilus {
     color: darkred;
     font-family: Nilus;
