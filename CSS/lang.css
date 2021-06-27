@@ -187,9 +187,10 @@ rt.ipa {
     font-feature-settings: 'ss01';
 }
 
-rt.nilus {
-    color: darkred;
-    font-family: Nilus;
-    font-size: 200%;
-    font-feature-settings: 'liga', 'aalt';
+.adinkra {
+    font-family: 'FanAdinkra';
+    color: var(--color-name-japanese-鉄);
+    font-size: 400%;
+    display: inline-block;
+    vertical-align: middle;
 }
