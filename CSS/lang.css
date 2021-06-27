@@ -121,6 +121,10 @@ span:lang(sux) {
     vertical-align: middle;
 }
 
+rt:lang(sux) {
+    font-size: 100%;
+}
+
 :lang(egy) {
     font-family: 'Fanism';
     margin: 0 1px;
