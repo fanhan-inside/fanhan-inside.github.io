@@ -34,6 +34,13 @@
 }
 
 @font-face {
+  font-family: "FanBopomofo";
+  src: url(./fanism/FanBopomofo.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "FanHera";
   src: url(./fanism/FanHera.woff2) format("woff2");
   font-weight: normal;
@@ -53,7 +60,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 
 @font-face {
   font-family: "FanIdiom";
