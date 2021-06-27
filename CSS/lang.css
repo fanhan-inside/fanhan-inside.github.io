@@ -18,7 +18,7 @@ q:lang(en), q:lang(fr), q:lang(de), q:lang(it), q:lang(nl), q:lang(es), q:lang(p
     padding: 0 1px;
 }
 
-:lang(uga), :lang(arc), :lang(phn), :lang(smp), :lang(xpu), :lang(got), :lang(chu) {
+:lang(cop), :lang(uga), :lang(arc), :lang(phn), :lang(smp), :lang(xpu), :lang(got), :lang(chu) {
     font-family: 'Quivira';
     font-size: 125%;
     margin: 0 1px;
@@ -26,7 +26,9 @@ q:lang(en), q:lang(fr), q:lang(de), q:lang(it), q:lang(nl), q:lang(es), q:lang(p
 }
 
 /* font-family: 'ScheherazadeNew'; */
+
 /* font-family: 'EzraSIL'; */
+
 :lang(he), :lang(ar), :lang(syc) {
     font-size: 125%;
     margin: 0 1px;
@@ -159,8 +161,39 @@ rt:lang(egy) {
     font-weight: bold;
 }
 
-:lang(cop) {
-    font-family: 'Quivira';
+.idiom {
+    font-family: 'FanIdiom';
+    font-size: 300%;
+    text-indent: 0;
+    margin: 1px;
+    padding: 1px;
+}
+
+span.idiom {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+rt.idiom {
+    font-size: 200%;
+    font-weight: bold;
+    color: brown;
+}
+
+q.idiom {
+    display: inline-block;
+    vertical-align: middle;
+    text-indent: 0;
+    margin: 2px;
+    padding: 8px;
+    border: 2px solid dimgray;
+    border-radius: 8px;
+    background-color: whitesmoke;
+    color: brown;
+}
+
+q.idiom::before, q.idiom::after {
+    content: none;
 }
 
 .ipa {
@@ -181,10 +214,9 @@ rt.ipa {
 }
 
 .bopomofo {
-    font-family: 'Fanism';
+    font-family: 'FanBopomofo';
     color: var(--color-name-japanese-鉄);
     font-size: 200%;
-    font-feature-settings: 'ss01';
 }
 
 .adinkra {
