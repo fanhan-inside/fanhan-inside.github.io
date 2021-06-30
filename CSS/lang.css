@@ -226,7 +226,10 @@ rt.ipa {
 .adinkra {
     font-family: 'FanAdinkra';
     color: var(--color-name-japanese-鉄);
-    font-size: 400%;
+    font-size: 300%;
     display: inline-block;
     vertical-align: middle;
+    text-indent: 0;
+    margin: 1px;
+    padding: 1px;
 }
