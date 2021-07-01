@@ -97,6 +97,13 @@
 }
 
 @font-face {
+  font-family: "Aegyptus";
+  src: local("Aegyptus Bold"), url(./ancient/AegyptusBold.woff2) format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "Akkadian";
   src: local("Akkadian"), url(./ancient/Akkadian.woff2) format("woff2");
   font-weight: normal;
