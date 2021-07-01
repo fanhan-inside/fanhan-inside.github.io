@@ -83,10 +83,11 @@ span.hieratic {
     text-indent: 0;
     margin: 0 1px;
     padding: 1 2px;
-    font-family: "Fanism";
+    /* font-family: "Fanism";
+    font-feature-settings: "ss03"; */
+    font-family: "FanEgyHier";
     font-size: 2rem;
     vertical-align: middle;
-    font-feature-settings: "ss03";
 }
 
 span.transaegypt {
@@ -94,10 +95,11 @@ span.transaegypt {
     text-indent: 0;
     margin: 0 1px;
     padding: 1 2px;
-    font-family: "Fanism";
+    /* font-family: "Fanism";
+    font-feature-settings: "ss02"; */
+    font-family: "FanEgyTran";
     font-size: 2rem;
     vertical-align: middle;
-    font-feature-settings: "ss02";
 }
 
 span.important {
