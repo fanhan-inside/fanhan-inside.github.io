@@ -15,7 +15,7 @@ span.aegyptus {
     color: darkred;
     font-family: "Aegyptus";
     font-weight: bold;
-    font-size: 300%;
+    font-size: 3rem;
     font-feature-settings: "liga", "aalt";
     vertical-align: middle;
 }
