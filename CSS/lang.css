@@ -5,7 +5,7 @@
 }
 
 q:lang(en), q:lang(fr), q:lang(de), q:lang(it), q:lang(nl), q:lang(es), q:lang(pt), q:lang(la), q:lang(da), q:lang(hu), q:lang(pl), q:lang(lt), q:lang(grc), q:lang(ru), q:lang(sh) {
-    font-size: 125%;
+    font-size: 1.25rem;
     color: darkblue;
     margin: 1px;
     padding: 1px;
@@ -13,14 +13,14 @@ q:lang(en), q:lang(fr), q:lang(de), q:lang(it), q:lang(nl), q:lang(es), q:lang(p
 
 :lang(semitic) {
     font-family: 'FanSemitic';
-    font-size: 125%;
+    font-size: 1.25rem;
     margin: 0 1px;
     padding: 0 1px;
 }
 
 :lang(cop), :lang(uga), :lang(arc), :lang(phn), :lang(smp), :lang(xpu), :lang(got), :lang(chu) {
     font-family: 'Quivira';
-    font-size: 125%;
+    font-size: 1.25rem;
     margin: 0 1px;
     padding: 0 1px;
 }
@@ -30,13 +30,13 @@ q:lang(en), q:lang(fr), q:lang(de), q:lang(it), q:lang(nl), q:lang(es), q:lang(p
 /* font-family: 'EzraSIL'; */
 
 :lang(he), :lang(ar), :lang(syc) {
-    font-size: 125%;
+    font-size: 1.25rem;
     margin: 0 1px;
     padding: 0 1px;
 }
 
 q:lang(ar), q:lang(he), q:lang(syc) {
-    font-size: 125%;
+    font-size: 1.25rem;
     color: darkgreen;
     margin: 1px;
     padding: 1px;
@@ -72,7 +72,7 @@ q::before, q::after {
 }
 
 q:lang(nato) {
-    font-size: 125%;
+    font-size: 1.25rem;
     color: navy;
     margin: 1px;
     padding: 1px;
@@ -103,7 +103,7 @@ q:lang(sux) {
     color: brown;
     font-family: "Fanism";
     font-weight: bold;
-    font-size: 150%;
+    font-size: 1.5rem;
     vertical-align: middle;
 }
 
@@ -112,7 +112,7 @@ q:lang(sux)::before, q:lang(sux)::after {
 }
 
 span:lang(sux) {
-    font-size: 150%;
+    font-size: 1.5rem;
     font-weight: bold;
     text-indent: 0;
     margin: 1px;
@@ -122,7 +122,7 @@ span:lang(sux) {
 }
 
 rt:lang(sux) {
-    font-size: 100%;
+    font-size: 1rem;
 }
 
 :lang(egy) {
@@ -142,7 +142,7 @@ q:lang(egy) {
     color: brown;
     font-family: "Fanism";
     font-weight: bold;
-    font-size: 300%;
+    font-size: 3rem;
     vertical-align: middle;
 }
 
@@ -151,7 +151,7 @@ q:lang(egy)::before, q:lang(egy)::after {
 }
 
 span:lang(egy) {
-    font-size: 300%;
+    font-size: 3rem;
     text-indent: 0;
     margin: 1px;
     padding: 1px;
@@ -167,7 +167,7 @@ rt:lang(egy) {
 
 .idiom {
     font-family: 'FanIdiom';
-    font-size: 300%;
+    font-size: 3rem;
     text-indent: 0;
     margin: 1px;
     padding: 1px;
@@ -179,7 +179,7 @@ span.idiom {
 }
 
 rt.idiom {
-    font-size: 200%;
+    font-size: 2rem;
     font-weight: bold;
     color: brown;
 }
@@ -214,22 +214,11 @@ q.idiom::before, q.idiom::after {
 }
 
 rt.ipa {
-    font-size: 100%;
+    font-size: 1rem;
 }
 
-.bopomofo {
+rt.bopomofo {
     font-family: 'FanBopomofo';
+    font-size: 2rem;
     color: var(--color-name-japanese-鉄);
-    font-size: 200%;
-}
-
-.adinkra {
-    font-family: 'FanAdinkra';
-    color: var(--color-name-japanese-鉄);
-    font-size: 300%;
-    display: inline-block;
-    vertical-align: middle;
-    text-indent: 0;
-    margin: 1px;
-    padding: 1px;
 }
