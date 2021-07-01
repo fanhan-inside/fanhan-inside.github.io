@@ -62,19 +62,25 @@ hr.qed::before {
 }
 
 hr.qed::after {
-    content: 'Q.E.D.';
-    font-family: 'Malvern';
-    font-size: 32px;
+    /* content: 'Q.E.D.';
+    font-family: 'Malvern'; */
+    font-family: 'FanSign';
+    content: 'd';
+    font-size: 2rem;
     color: blue;
     display: inline-block;
+    vertical-align: middle;
 }
 
 span.qed::before {
-    content: 'Q.E.D.';
-    font-family: 'Malvern';
-    font-size: 32px;
+    /* content: 'Q.E.D.';
+    font-family: 'Malvern'; */
+    font-family: 'FanSign';
+    content: 'd';
+    font-size: 2rem;
     color: blue;
     display: inline-block;
+    vertical-align: middle;
     text-indent: 0;
     margin: 0 0.5rem;
 }
@@ -125,13 +131,17 @@ hr.wort-verboten {
 hr.wort-verboten::before {
     content: "🛇";
     font-family: "Fanism";
-    font-size: 20px;
+    font-size: 16px;
     color: red;
+    vertical-align: middle;
 }
 
 hr.wort-verboten::after {
-    content: "Wort Verboten !";
-    font-family: "AngloText";
+    /* content: "Wort Verboten !";
+    font-family: "AngloText"; */
+    font-family: 'FanSign';
+    content: 'c';
     font-size: 16px;
     color: black;
+    vertical-align: middle;
 }

@@ -1,6 +1,6 @@
 span.Kargsfont {
     font-family: 'Fanism';
-    font-size: 200%;
+    font-size: 2rem;
     color: blue;
 }
 
@@ -26,7 +26,7 @@ span.hieroab {
     margin: 0 1px;
     padding: 1 2px;
     font-family: "Fanism";
-    font-size: 200%;
+    font-size: 2rem;
     font-weight: bold;
     vertical-align: middle;
     font-feature-settings: "ss04";
@@ -38,7 +38,7 @@ span.hieratic {
     margin: 0 1px;
     padding: 1 2px;
     font-family: "Fanism";
-    font-size: 200%;
+    font-size: 2rem;
     vertical-align: middle;
     font-feature-settings: "ss03";
 }
@@ -49,7 +49,7 @@ span.transaegypt {
     margin: 0 1px;
     padding: 1 2px;
     font-family: "Fanism";
-    font-size: 200%;
+    font-size: 2rem;
     vertical-align: middle;
     font-feature-settings: "ss02";
 }
@@ -122,4 +122,25 @@ span.ero {
     border-radius: 0.25rem;
     background-color: pink;
     color: brown;
+}
+
+span.adinkra {
+    font-family: 'FanAdinkra';
+    color: var(--color-name-japanese-鉄);
+    font-size: 3rem;
+    display: inline-block;
+    vertical-align: middle;
+    text-indent: 0;
+    margin: 1px;
+    padding: 1px;
+}
+
+span.astro {
+    font-family: 'FanAstr';
+    font-size: 3rem;
+    display: inline-block;
+    vertical-align: middle;
+    text-indent: 0;
+    margin: 1px;
+    padding: 1px;
 }
