@@ -4,6 +4,52 @@ span.Kargsfont {
     color: blue;
 }
 
+/* 圣书体单字 */
+span.egyltr {
+    display: inline-block;
+    vertical-align: middle;
+    text-indent: 0;
+    margin: 2px;
+    padding: 12px 8px;
+    border: 2px solid dimgray;
+    border-radius: 8px;
+    background-color: whitesmoke;
+    color: darkred;
+    font-family: "JSesh";
+    font-size: 3rem;
+}
+
+/* 圣书体单字（查缺补漏） */
+span.egyltrx {
+    display: inline-block;
+    vertical-align: middle;
+    text-indent: 0;
+    margin: 2px;
+    padding: 12px 8px;
+    border: 2px solid dimgray;
+    border-radius: 8px;
+    background-color: whitesmoke;
+    color: darkred;
+    font-family: "FanEgyHier";
+    font-size: 3rem;
+}
+
+/* 圣书体字符串（无合字） */
+span.egystr {
+    display: inline-block;
+    vertical-align: middle;
+    text-indent: 0;
+    margin: 2px;
+    padding: 12px 8px;
+    border: 2px solid dimgray;
+    border-radius: 8px;
+    background-color: whitesmoke;
+    color: darkred;
+    font-family: "Nilus";
+    font-size: 3rem;
+}
+
+/* 圣书体文本（有合字） */
 span.aegyptus {
     display: inline-block;
     text-indent: 0;
