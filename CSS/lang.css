@@ -35,6 +35,10 @@ q:lang(en), q:lang(fr), q:lang(de), q:lang(it), q:lang(nl), q:lang(es), q:lang(p
     padding: 0 1px;
 }
 
+rt:lang(he), rt:lang(ar) {
+    color: darkgreen;
+}
+
 q:lang(ar), q:lang(he), q:lang(syc) {
     font-size: 1.25rem;
     color: darkgreen;
