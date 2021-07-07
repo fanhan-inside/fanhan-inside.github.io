@@ -56,36 +56,82 @@
     </style>
     <script type="text/javascript">
         function btnDivine_Click() {
-            var str = new Array(12);
-            var i = 0;
+            let n上 = 0;
+            let n中 = 0;
+            let n下 = 0;
+            let str = ['\uE47E', '\uE47E', '\uE47E', '\uE47E', '\uE47E', '\uE47E', '\uE47E', '\uE47E', '\uE47E', '\uE47E', '\uE47E', '\uE47E'];
+            let i = 0;
             for (; i < 4; i++) {
-                str[i] = Math.random() > 0.5 ? '\uE47F' : '\uE47E';
+                if (Math.random() > 0.5) {
+                    str[i] = '\uE47F';
+                    n上++;
+                }
             }
             for (; i < 8; i++) {
-                str[i] = Math.random() > 0.5 ? '\uE480' : '\uE47E';
+                if (Math.random() > 0.5) {
+                    str[i] = '\uE480';
+                    n中++;
+                }
             }
             for (; i < 12; i++) {
-                str[i] = Math.random() > 0.5 ? '\uE481' : '\uE47E';
+                if (Math.random() > 0.5) {
+                    str[i] = '\uE481';
+                    n下++;
+                }
             }
 
-            var canvas = document.getElementById("scrResult");
-            var ctx = scrResult.getContext("2d");
+            let canvas = document.getElementById("scrResult");
+            let ctx = scrResult.getContext("2d");
             ctx.clearRect(0, 0, canvas.width, canvas.height);
             ctx.save();
             ctx.font = "96px FanTritCoin";
             ctx.fillStyle = "sienna";
             ctx.texAlign = "center";
             ctx.textBaseline = "top";
-            var y = 10;
-            for (var j = 0; j < 3; j++) {
-                var x = 10;
-                for (var k = 0; k < 4; k++) {
+            let y = 10;
+            for (let j = 0; j < 3; j++) {
+                let x = 10;
+                for (let k = 0; k < 4; k++) {
                     ctx.fillText(str[j * 4 + k], x, y);
                     x += 100;
                 }
                 y += 100;
             }
             ctx.restore();
+
+            document.getElementById("lbl上").innerText = n上.toString();
+            document.getElementById("lbl中").innerText = n中.toString();
+            document.getElementById("lbl下").innerText = n下.toString();
+            let trit = n上 + "~" + n中 + "~" + n下;
+
+            try {
+                let xhr = new XMLHttpRequest();
+                xhr.overrideMimeType('text/xml');
+                xhr.open("GET", "../../DATA/20210707-001_TritCoin.xml");
+                xhr.onload = function () {
+                    if (xhr.readyState === xhr.DONE && xhr.status === 200) {
+                        let xmlDoc = xhr.responseXML;
+                        let it = xmlDoc.evaluate('//table/tbody/tr/td', xmlDoc.documentElement, null, XPathResult.ANY_TYPE, null);
+                        let cell = it.iterateNext();
+                        while (cell) {
+                            if (cell.textContent == trit) {
+                                cell = it.iterateNext();
+                                document.getElementById("卦名").innerText = cell.textContent + "卦";
+                                cell = it.iterateNext();
+                                document.getElementById("系词").innerText = cell.textContent;
+                                cell = it.iterateNext();
+                                document.getElementById("象名").innerText = cell.textContent + "之象";
+                                break;
+                            }
+                            cell = it.iterateNext();
+                        }
+                    }
+                }
+                xhr.send();
+            }
+            catch (err) {
+                alert(err.toString());
+            }
         }
     </script>
 </head>
@@ -1132,9 +1178,30 @@
         </table>
 
         <h2 class="heading">占</h2>
-        <div>
-            <button id="btnDivine" onclick="btnDivine_Click()">扔钢镚喽！</button>
-            <canvas id="scrResult" width="420" height="320">结果</canvas>
+        <div class="image-group">
+            <figure>
+                <button id="btnDivine" onclick="btnDivine_Click()">扔钢镚喽！</button>
+                <span style="font-size: 150%; vertical-align: middle;">结果：<span id="lbl上">&nbsp;</span>~<span id="lbl中">&nbsp;</span>~<span id="lbl下">&nbsp;</span></span>
+                <br />
+                <canvas id="scrResult" width="420" height="320">结果</canvas>
+            </figure>
+            <figure>
+                <div style="width: 720px; background-color: antiquewhite;">
+                    <br />
+                    <div style="text-align: center;" ><span id="卦名" style="font-size: 300%;"></span>&emsp;&emsp;<span id="象名" style="font-size: 200%;"></span>&emsp;&emsp;&emsp;<span id="系词" style="font-size: 150%;"></span></div>
+                    <br />
+                    <dl>
+                        <dt>象词</dt>
+                        <dd id="象词">&emsp;</dd>
+                        <dt>注解</dt>
+                        <dd id="注解">&emsp;</dd>
+                        <dt>断语</dt>
+                        <dd id="断语">&emsp;</dd>
+                        <dt>歌诀</dt>
+                        <dd id="歌诀">&emsp;</dd>
+                    </dl>
+                </div>
+            </figure>
         </div>
 
         <h2 class="heading">跋</h2>
