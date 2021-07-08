@@ -109,10 +109,12 @@
                 xhr.onload = function () {
                     if (xhr.readyState === xhr.DONE && xhr.status === 200) {
                         let xmlDoc = xhr.responseXML;
-                        let it = xmlDoc.evaluate('//table/tbody/tr/td', xmlDoc.documentElement, null, XPathResult.ANY_TYPE, null);
-                        let cell = it.iterateNext();
-                        while (cell) {
+                        let it = xmlDoc.evaluate('//table/tbody/tr/td', xmlDoc.documentElement, null, XPathResult.ORDERED_NODE_ITERATOR_TYPE, null);
+                        let cell = null;
+                        while (cell = it.iterateNext()) {
                             if (cell.textContent == trit) {
+                                cell = it.iterateNext();
+                                document.getElementById("镚符").innerHTML = "&#x" + cell.textContent.replace("uniE", "E") + ";";
                                 cell = it.iterateNext();
                                 document.getElementById("卦名").innerText = cell.textContent + "卦";
                                 cell = it.iterateNext();
@@ -135,7 +137,6 @@
                                 document.getElementById("歌诀").innerHTML = cell.textContent.replace("〔又曰〕", '<br /><span class="tip">又曰</span><br />');
                                 break;
                             }
-                            cell = it.iterateNext();
                         }
                     }
                 }
@@ -1200,7 +1201,7 @@
             <figure>
                 <div style="width: 840px; background-color: antiquewhite;">
                     <br />
-                    <div style="text-align: center;"><span id="卦名" style="font-size: 300%;"></span>&emsp;&emsp;<span id="象名" style="font-size: 200%;"></span>&emsp;&emsp;&emsp;<span id="系词" style="font-size: 150%;"></span></div>
+                    <div style="text-align: center;"><span id="镚符" style="font-family: FanTritCoin; font-size: 5rem; color: sienna;"></span>&emsp;&emsp;<span id="卦名" style="font-size: 300%;"></span>&emsp;&emsp;<span id="象名" style="font-size: 200%;"></span>&emsp;&emsp;&emsp;<span id="系词" style="font-size: 150%;"></span></div>
                     <br />
                     <dl>
                         <dt>象词</dt>
