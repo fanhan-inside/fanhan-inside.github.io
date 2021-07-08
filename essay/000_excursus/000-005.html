@@ -99,10 +99,8 @@
             }
             ctx.restore();
 
-            document.getElementById("lbl上").innerText = n上.toString();
-            document.getElementById("lbl中").innerText = n中.toString();
-            document.getElementById("lbl下").innerText = n下.toString();
             let trit = n上 + "~" + n中 + "~" + n下;
+            document.getElementById("结果").innerText = trit.toString();
 
             try {
                 let xhr = new XMLHttpRequest();
@@ -121,6 +119,20 @@
                                 document.getElementById("系词").innerText = cell.textContent;
                                 cell = it.iterateNext();
                                 document.getElementById("象名").innerText = cell.textContent + "之象";
+                                cell = it.iterateNext();
+                                document.getElementById("象词").innerHTML = cell.textContent.replace("〔又曰〕", '<br /><span class="tip">又曰</span><br />');
+                                cell = it.iterateNext();
+                                let text = cell.textContent;
+                                text = text.replace("〔又曰〕", '<span class="tip">又曰</span>');
+                                text = text.replace("〔颜曰〕", '<span class="tip">颜曰</span>');
+                                text = text.replace("〔何曰〕", '<br /><span class="tip">何曰</span>');
+                                text = text.replace("〔陈曰〕", '<br /><span class="tip">陈曰</span>');
+                                text = text.replace("〔刘曰〕", '<br /><span class="tip">刘曰</span>');
+                                document.getElementById("注解").innerHTML = text;
+                                cell = it.iterateNext();
+                                document.getElementById("断语").innerText = cell.textContent;
+                                cell = it.iterateNext();
+                                document.getElementById("歌诀").innerHTML = cell.textContent.replace("〔又曰〕", '<br /><span class="tip">又曰</span><br />');
                                 break;
                             }
                             cell = it.iterateNext();
@@ -1181,14 +1193,14 @@
         <div class="image-group">
             <figure>
                 <button id="btnDivine" onclick="btnDivine_Click()">扔钢镚喽！</button>
-                <span style="font-size: 150%; vertical-align: middle;">结果：<span id="lbl上">&nbsp;</span>~<span id="lbl中">&nbsp;</span>~<span id="lbl下">&nbsp;</span></span>
+                <span style="font-size: 150%; vertical-align: middle;">结果：<span id="结果">&emsp;</span></span>
                 <br />
                 <canvas id="scrResult" width="420" height="320">结果</canvas>
             </figure>
             <figure>
-                <div style="width: 720px; background-color: antiquewhite;">
+                <div style="width: 840px; background-color: antiquewhite;">
                     <br />
-                    <div style="text-align: center;" ><span id="卦名" style="font-size: 300%;"></span>&emsp;&emsp;<span id="象名" style="font-size: 200%;"></span>&emsp;&emsp;&emsp;<span id="系词" style="font-size: 150%;"></span></div>
+                    <div style="text-align: center;"><span id="卦名" style="font-size: 300%;"></span>&emsp;&emsp;<span id="象名" style="font-size: 200%;"></span>&emsp;&emsp;&emsp;<span id="系词" style="font-size: 150%;"></span></div>
                     <br />
                     <dl>
                         <dt>象词</dt>
