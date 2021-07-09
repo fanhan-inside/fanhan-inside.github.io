@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta type="text/html" lang="zh" charset="UTF-8" />
+    <title>SQLite测试</title>
+    <script src="../SCRIPT/sql-wasm.js"></script>
+    <script>
+        initSqlJs({
+            locateFile: sqlwasm => '../SCRIPT/sql-wasm.wasm'
+        }).then(function (SQL) {
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', '../DB/TritCoin.db', true);
+            xhr.responseType = 'arraybuffer';
+            xhr.onload = e => {
+                var uInt8Array = new Uint8Array(xhr.response);
+                var db = new SQL.Database(uInt8Array);
+                var contents = db.exec("SELECT * FROM TritCoin WHERE 镚型='0~0~0'");
+                console.log(contents);
+            };
+            xhr.send();
+        });
+    </script>
+</head>
+
+<body>
+    Output is in Javascript console
+</body>
+
+</html>
