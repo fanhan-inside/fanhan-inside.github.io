@@ -67,6 +67,15 @@ q:lang(ja) {
 
 q::before, q::after {
     padding: 0 1px;
+    color: darkred;
+}
+
+q:lang(la)::before, q:lang(grc)::before {
+    content: '«';
+}
+
+q:lang(la)::after, q:lang(grc)::after {
+    content: '»';
 }
 
 :lang(nato) {
