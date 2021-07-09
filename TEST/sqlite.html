@@ -20,7 +20,7 @@
 
         #镚符 {
             font-family: 'FanTritCoin';
-            font-size: 4rem;
+            font-size: 5rem;
             color: sienna;
             display: inline-block;
             vertical-align: middle;
@@ -28,37 +28,45 @@
     </style>
     <script src="../LIB/sql-wasm.js"></script>
     <script type="text/javascript">
+        var db = null;
+        console.log("加载数据库……");
+        initSqlJs({
+            locateFile: sqlwasm => '../LIB/sql-wasm.wasm'
+        }).then(function (SQL) {
+            let xhr = new XMLHttpRequest();
+            xhr.open('GET', '../DB/TritCoin.db', true);
+            xhr.responseType = 'arraybuffer';
+            xhr.onload = e => {
+                let uInt8Array = new Uint8Array(xhr.response);
+                db = new SQL.Database(uInt8Array);
+                console.log("已加载：" + xhr.responseURL);
+            };
+            xhr.send();
+        });
+
         function 查询并显示() {
             var 镚型 = document.getElementById("上").value + "~" + document.getElementById("中").value + "~" + document.getElementById("下").value;
             var sql = "SELECT 序号, 概率, 镚符, 卦名, 系词, 象名, 象词, 注解, 断语, 歌诀 FROM TritCoin WHERE 镚型='" + 镚型 + "';";
-            initSqlJs({
-                locateFile: sqlwasm => '../LIB/sql-wasm.wasm'
-            }).then(function (SQL) {
-                let xhr = new XMLHttpRequest();
-                xhr.open('GET', '../DB/TritCoin.db', true);
-                xhr.responseType = 'arraybuffer';
-                xhr.onload = e => {
-                    let uInt8Array = new Uint8Array(xhr.response);
-                    var db = new SQL.Database(uInt8Array);
-                    var record = db.exec(sql);
-                    var [序号, 概率, 镚符, 卦名, 系词, 象名, 象词, 注解, 断语, 歌诀] = record[0].values[0];
-                    document.getElementById("镚符").innerHTML = 镚符.replace(/^uniE(...)$/, "&#xE$1;");
-                    document.getElementById("卦").innerText = "№" + 序号 + "：【" + 卦名 + "】　（" + 镚型 + "）　〈" + 系词 + "〉　概率：" + 概率;
-                    document.getElementById("象").innerText = 象名 + "之象：" + 象词;
-                    let text = 注解.replace("〔又曰〕", '<span class="tip">又曰</span>');
-                    text = text.replace(/^/, '</li>');
-                    text = text.replace("〔颜曰〕", '</li><li><span class="tip">颜曰</span>');
-                    text = text.replace("〔何曰〕", '</li><li><span class="tip">何曰</span>');
-                    text = text.replace("〔陈曰〕", '</li><li><span class="tip">陈曰</span>');
-                    text = text.replace("〔刘曰〕", '</li><li><span class="tip">刘曰</span>');
-                    text = text.replace(/$/, '</li>');
-                    document.getElementById("注解").innerHTML = text;
-                    document.getElementById("断语").innerText = 断语;
-                    document.getElementById("歌诀").innerHTML = 歌诀.replace("〔又曰〕", '<br /><span class="tip">又曰</span><br />');
-                };
-                xhr.send();
-            });
-        }
+            var rs = db.exec(sql);
+            console.log("查询「" + 镚型 + "」结果：" + (rs ? rs[0].values.length + "条" : "无"));
+            var [序号, 概率, 镚符, 卦名, 系词, 象名, 象词, 注解, 断语, 歌诀] = rs[0].values[0];
+            document.getElementById("镚符").innerHTML = 镚符.replace(/^uniE(...)$/, "&#xE$1;");
+            document.getElementById("卦").innerHTML = "№<b>" + 序号 + "</b>【<strong>" + 卦名 + "</strong>】";
+            document.getElementById("系词").innerHTML = (系词 && 系词.length > 0) ? "〈<em>" + 系词 + "</em>〉" : "";
+            document.getElementById("概率").innerHTML = '<span class="tip">概率：' + 概率 + '</span>';
+            document.getElementById("象").innerHTML = 象名 + "之象：&emsp;" + 象词.replace("〔又曰〕", '<span class="tip">又曰</span>');
+            let text = 注解.replace("〔又曰〕", '<span class="tip">又曰</span>');
+            text = text.replace(/^/, '</li>');
+            text = text.replace("〔颜曰〕", '</li><li><span class="tip">颜曰</span>');
+            text = text.replace("〔何曰〕", '</li><li><span class="tip">何曰</span>');
+            text = text.replace("〔陈曰〕", '</li><li><span class="tip">陈曰</span>');
+            text = text.replace("〔刘曰〕", '</li><li><span class="tip">刘曰</span>');
+            text = text.replace(/$/, '</li>');
+            document.getElementById("注解").innerHTML = text;
+            document.getElementById("断语").innerText = 断语;
+            document.getElementById("歌诀").innerHTML = 歌诀.replace("〔又曰〕", '<br /><span class="tip">又曰</span><br />');
+            console.log("完毕");
+        };
     </script>
 </head>
 
@@ -70,38 +78,38 @@
     <main>
         <h2 class="heading">拣选先知</h2>
         <div id="输入">
-            <span>
+            <span>&emsp;
                 <select id="上">
-                    <option value="0">&emsp;</option>
-                    <option value="1">一</option>
-                    <option value="2">二</option>
-                    <option value="3">三</option>
-                    <option value="4">四</option>
-                </select>&ensp;上&emsp;
+                    <option value="0"></option>
+                    <option value="1">一上</option>
+                    <option value="2">二上</option>
+                    <option value="3">三上</option>
+                    <option value="4">四上</option>
+                </select>
                 <select id="中">
-                    <option value="0">&emsp;</option>
-                    <option value="1">一</option>
-                    <option value="2">二</option>
-                    <option value="3">三</option>
-                    <option value="4">四</option>
-                </select>&ensp;中&emsp;
+                    <option value="0"></option>
+                    <option value="1">一中</option>
+                    <option value="2">二中</option>
+                    <option value="3">三中</option>
+                    <option value="4">四中</option>
+                </select>
                 <select id="下">
-                    <option value="0">&emsp;</option>
-                    <option value="1">一</option>
-                    <option value="2">二</option>
-                    <option value="3">三</option>
-                    <option value="4">四</option>
-                </select>&ensp;下&emsp;
-                <button onclick="查询并显示()"><ruby><ruby>看呐这卦<rt lang="grc">Ἰδοὺ ὁ ἄνθρωπος</rt></ruby>
-                        <rt lang="la">Ecce Homo</rt>
-                    </ruby></button>
+                    <option value="0"></option>
+                    <option value="1">一下</option>
+                    <option value="2">二下</option>
+                    <option value="3">三下</option>
+                    <option value="4">四下</option>
+                </select>&emsp;
             </span>
+            <button onclick="查询并显示()"><ruby><ruby>看呐这卦<rt lang="grc">Ἰδοὺ ὁ ἄνθρωπος</rt></ruby>
+                    <rt lang="la">Ecce Homo</rt>
+                </ruby></button>
         </div>
 
         <h2 class="heading">见证神迹</h2>
         <h3 class="heading"><span>这卦为嘛这么智慧</span></h3>
         <div class="结果">
-            <span id="镚符"></span>&emsp;<span id="卦"></span>&emsp;<span id="概率"></span>
+            <span id="镚符"></span>&emsp;<span id="卦"></span><span id="系词"></span><span id="概率"></span>
         </div>
         <h3 class="heading"><span>这卦凭啥这么聪明</span></h3>
         <div class="结果" id="象"></div>

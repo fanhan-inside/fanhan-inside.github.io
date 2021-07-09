@@ -55,6 +55,19 @@
         }
     </style>
     <script type="text/javascript">
+        var xmlDoc = null;
+        console.log("加载XML文件……");
+        var xhr = new XMLHttpRequest();
+        xhr.overrideMimeType('text/xml');
+        xhr.open("GET", "../../DATA/20210707-001_TritCoin.xml");
+        xhr.onload = function () {
+            if (xhr.readyState === xhr.DONE && xhr.status === 200) {
+                xmlDoc = xhr.responseXML;
+                console.log("已加载：" + xhr.responseURL);
+            }
+        }
+        xhr.send();
+
         function btnDivine_Click() {
             let n上 = 0;
             let n中 = 0;
@@ -101,49 +114,38 @@
 
             let trit = n上 + "~" + n中 + "~" + n下;
             document.getElementById("结果").innerText = trit.toString();
+            console.log("结果："+ trit);
 
-            try {
-                let xhr = new XMLHttpRequest();
-                xhr.overrideMimeType('text/xml');
-                xhr.open("GET", "../../DATA/20210707-001_TritCoin.xml");
-                xhr.onload = function () {
-                    if (xhr.readyState === xhr.DONE && xhr.status === 200) {
-                        let xmlDoc = xhr.responseXML;
-                        let it = xmlDoc.evaluate('//table/tbody/tr/td', xmlDoc.documentElement, null, XPathResult.ORDERED_NODE_ITERATOR_TYPE, null);
-                        let cell = null;
-                        while (cell = it.iterateNext()) {
-                            if (cell.textContent == trit) {
-                                cell = it.iterateNext();
-                                document.getElementById("镚符").innerHTML = "&#x" + cell.textContent.replace("uniE", "E") + ";";
-                                cell = it.iterateNext();
-                                document.getElementById("卦名").innerText = cell.textContent + "卦";
-                                cell = it.iterateNext();
-                                document.getElementById("系词").innerText = cell.textContent;
-                                cell = it.iterateNext();
-                                document.getElementById("象名").innerText = cell.textContent + "之象";
-                                cell = it.iterateNext();
-                                document.getElementById("象词").innerHTML = cell.textContent.replace("〔又曰〕", '<br /><span class="tip">又曰</span><br />');
-                                cell = it.iterateNext();
-                                let text = cell.textContent;
-                                text = text.replace("〔又曰〕", '<span class="tip">又曰</span>');
-                                text = text.replace("〔颜曰〕", '<span class="tip">颜曰</span>');
-                                text = text.replace("〔何曰〕", '<br /><span class="tip">何曰</span>');
-                                text = text.replace("〔陈曰〕", '<br /><span class="tip">陈曰</span>');
-                                text = text.replace("〔刘曰〕", '<br /><span class="tip">刘曰</span>');
-                                document.getElementById("注解").innerHTML = text;
-                                cell = it.iterateNext();
-                                document.getElementById("断语").innerText = cell.textContent;
-                                cell = it.iterateNext();
-                                document.getElementById("歌诀").innerHTML = cell.textContent.replace("〔又曰〕", '<br /><span class="tip">又曰</span><br />');
-                                break;
-                            }
-                        }
-                    }
+            let it = xmlDoc.evaluate('//table/tbody/tr/td', xmlDoc.documentElement, null, XPathResult.ORDERED_NODE_ITERATOR_TYPE, null);
+            let cell = null;
+            while (cell = it.iterateNext()) {
+                if (cell.textContent == trit) {
+                    console.log("查询「" + trit + "」……");
+                    cell = it.iterateNext();
+                    document.getElementById("镚符").innerHTML = "&#x" + cell.textContent.replace("uniE", "E") + ";";
+                    cell = it.iterateNext();
+                    document.getElementById("卦名").innerText = cell.textContent + "卦";
+                    cell = it.iterateNext();
+                    document.getElementById("系词").innerText = cell.textContent;
+                    cell = it.iterateNext();
+                    document.getElementById("象名").innerText = cell.textContent + "之象";
+                    cell = it.iterateNext();
+                    document.getElementById("象词").innerHTML = cell.textContent.replace("〔又曰〕", '<br /><span class="tip">又曰</span><br />');
+                    cell = it.iterateNext();
+                    let text = cell.textContent;
+                    text = text.replace("〔又曰〕", '<span class="tip">又曰</span>');
+                    text = text.replace("〔颜曰〕", '<span class="tip">颜曰</span>');
+                    text = text.replace("〔何曰〕", '<br /><span class="tip">何曰</span>');
+                    text = text.replace("〔陈曰〕", '<br /><span class="tip">陈曰</span>');
+                    text = text.replace("〔刘曰〕", '<br /><span class="tip">刘曰</span>');
+                    document.getElementById("注解").innerHTML = text;
+                    cell = it.iterateNext();
+                    document.getElementById("断语").innerText = cell.textContent;
+                    cell = it.iterateNext();
+                    document.getElementById("歌诀").innerHTML = cell.textContent.replace("〔又曰〕", '<br /><span class="tip">又曰</span><br />');
+                    console.log("完毕");
+                    break;
                 }
-                xhr.send();
-            }
-            catch (err) {
-                alert(err.toString());
             }
         }
     </script>
