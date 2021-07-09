@@ -3,28 +3,116 @@
 
 <head>
     <meta type="text/html" lang="zh" charset="UTF-8" />
-    <title>SQLite测试</title>
-    <script src="../SCRIPT/sql-wasm.js"></script>
-    <script>
-        initSqlJs({
-            locateFile: sqlwasm => '../SCRIPT/sql-wasm.wasm'
-        }).then(function (SQL) {
-            var xhr = new XMLHttpRequest();
-            xhr.open('GET', '../DB/TritCoin.db', true);
-            xhr.responseType = 'arraybuffer';
-            xhr.onload = e => {
-                var uInt8Array = new Uint8Array(xhr.response);
-                var db = new SQL.Database(uInt8Array);
-                var contents = db.exec("SELECT * FROM TritCoin WHERE 镚型='0~0~0'");
-                console.log(contents);
-            };
-            xhr.send();
-        });
+    <link rel="stylesheet" type="text/css" href="../main.css" />
+    <title>看呐这卦</title>
+    <style type="text/css">
+        select,
+        button,
+        #输入 {
+            font-size: 3rem;
+            text-align: center;
+        }
+
+        .结果 {
+            font-size: 150%;
+            text-align: center;
+        }
+
+        #镚符 {
+            font-family: 'FanTritCoin';
+            font-size: 4rem;
+            color: sienna;
+        }
+    </style>
+    <script src="../LIB/sql-wasm.js"></script>
+    <script type="text/javascript">
+        function 查询并显示() {
+            var 镚型 = document.getElementById("上").value + "~" + document.getElementById("中").value + "~" + document.getElementById("下").value;
+            var sql = "SELECT 序号, 概率, 镚符, 卦名, 系词, 象名, 象词, 注解, 断语, 歌诀 FROM TritCoin WHERE 镚型='" + 镚型 + "';";
+            initSqlJs({
+                locateFile: sqlwasm => '../LIB/sql-wasm.wasm'
+            }).then(function (SQL) {
+                let xhr = new XMLHttpRequest();
+                xhr.open('GET', '../DB/TritCoin.db', true);
+                xhr.responseType = 'arraybuffer';
+                xhr.onload = e => {
+                    let uInt8Array = new Uint8Array(xhr.response);
+                    var db = new SQL.Database(uInt8Array);
+                    var record = db.exec(sql);
+                    var [序号, 概率, 镚符, 卦名, 系词, 象名, 象词, 注解, 断语, 歌诀] = record[0].values[0];
+                    document.getElementById("镚符").innerHTML = 镚符.replace(/^uniE(...)$/, "&#xE$1;");
+                    document.getElementById("卦").innerText = "№" + 序号 + "：【" + 卦名 + "】　（" + 镚型 + "）　〈" + 系词 + "〉　概率：" + 概率;
+                    document.getElementById("象").innerText = 象名 + "之象：" + 象词;
+                    let text = 注解.replace("〔又曰〕", '<span class="tip">又曰</span>');
+                    text = text.replace(/^/, '</li>');
+                    text = text.replace("〔颜曰〕", '</li><li><span class="tip">颜曰</span>');
+                    text = text.replace("〔何曰〕", '</li><li><span class="tip">何曰</span>');
+                    text = text.replace("〔陈曰〕", '</li><li><span class="tip">陈曰</span>');
+                    text = text.replace("〔刘曰〕", '</li><li><span class="tip">刘曰</span>');
+                    text = text.replace(/$/, '</li>');
+                    document.getElementById("注解").innerHTML = text;
+                    document.getElementById("断语").innerText = 断语;
+                    document.getElementById("歌诀").innerHTML = 歌诀.replace("〔又曰〕", '<br /><span class="tip">又曰</span><br />');
+                };
+                xhr.send();
+            });
+        }
     </script>
 </head>
 
 <body>
-    Output is in Javascript console
+    <header>
+        <h1>“看呐这卦”（<q lang="grc">Ἰδοὺ ὁ ἄνθρωπος</q>／<q lang="la">Ecce Homo</q>）</h1>
+        <h2 class="remark">以三镚子经为例测试<samp>JavaScript/WebAssembly/SQLite</samp>的浏览器应用</h2>
+    </header>
+    <main>
+        <h2 class="heading">输入镚型</h2>
+        <div id="输入">
+            <span>
+                <select id="上">
+                    <option value="0">&emsp;</option>
+                    <option value="1">一</option>
+                    <option value="2">二</option>
+                    <option value="3">三</option>
+                    <option value="4">四</option>
+                </select>&ensp;上&emsp;
+                <select id="中">
+                    <option value="0">&emsp;</option>
+                    <option value="1">一</option>
+                    <option value="2">二</option>
+                    <option value="3">三</option>
+                    <option value="4">四</option>
+                </select>&ensp;中&emsp;
+                <select id="下">
+                    <option value="0">&emsp;</option>
+                    <option value="1">一</option>
+                    <option value="2">二</option>
+                    <option value="3">三</option>
+                    <option value="4">四</option>
+                </select>&ensp;下&emsp;
+                <button onclick="查询并显示()"><ruby><ruby>看呐这卦<rt lang="grc">Ἰδοὺ ὁ ἄνθρωπος</rt></ruby>
+                        <rt lang="la">Ecce Homo</rt>
+                    </ruby></button>
+            </span>
+        </div>
+
+        <h2 class="heading">查询结果</h2>
+        <h3 class="heading"><span>这卦为嘛这么智慧</span></h3>
+        <div class="结果">
+            <span id="镚符"></span>&emsp;<span id="卦"></span>&emsp;<span id="概率"></span>
+        </div>
+        <h3 class="heading"><span>这卦凭啥这么聪明</span></h3>
+        <div class="结果" id="象"></div>
+        <h3 class="heading"><span>哪儿来的这么逗一卦</span></h3>
+        <ul id="注解"></ul>
+        <h3 class="heading"><span>咋说这卦就是命运</span></h3>
+        <p id="断语"></p>
+        <h3 class="heading"><span>当时那谁就念了两句诗</span></h3>
+        <div class="结果" id="歌诀"></div>
+    </main>
+    <footer>
+        <p></p>
+    </footer>
 </body>
 
 </html>
