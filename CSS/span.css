@@ -192,3 +192,14 @@ span.astro {
     margin: 1px;
     padding: 1px;
 }
+
+span.tritcoin {
+    font-family: 'FanTritCoin';
+    color: sienna;
+    font-size: 3rem;
+    display: inline-block;
+    vertical-align: middle;
+    text-indent: 0;
+    margin: 1px;
+    padding: 1px;
+}
