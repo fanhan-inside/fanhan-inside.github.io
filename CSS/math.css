@@ -8,7 +8,7 @@ span.math {
     display: inline-block;
     text-indent: 0;
     font-family: var(--font-family-math);
-    font-size: 1.25rem;
+    font-size: 125%;
     margin: 1px;
     padding: 1px;
     color: blue;
