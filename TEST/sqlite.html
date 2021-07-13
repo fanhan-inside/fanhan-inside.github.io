@@ -26,12 +26,12 @@
             vertical-align: middle;
         }
     </style>
-    <script src="../LIB/sql-wasm.js"></script>
+    <script src="../LIB/sql-js/sql-wasm.js"></script>
     <script type="text/javascript">
         var db = null;
         console.log("加载数据库……");
         initSqlJs({
-            locateFile: sqlwasm => '../LIB/sql-wasm.wasm'
+            locateFile: sqlwasm => '../LIB/sql-js/sql-wasm.wasm'
         }).then(function (SQL) {
             let xhr = new XMLHttpRequest();
             xhr.open('GET', '../DB/TritCoin.db', true);

@@ -59,7 +59,7 @@
         console.log("加载XML文件……");
         var xhr = new XMLHttpRequest();
         xhr.overrideMimeType('text/xml');
-        xhr.open("GET", "../../DATA/20210707-001_TritCoin.xml");
+        xhr.open("GET", "../../DB/TritCoin.xml");
         xhr.onload = function () {
             if (xhr.readyState === xhr.DONE && xhr.status === 200) {
                 xmlDoc = xhr.responseXML;
@@ -115,38 +115,36 @@
             let trit = n上 + "~" + n中 + "~" + n下;
             document.getElementById("结果").innerText = trit.toString();
             console.log("结果：" + trit);
-
-            let it = xmlDoc.evaluate('//table/tbody/tr/td', xmlDoc.documentElement, null, XPathResult.ORDERED_NODE_ITERATOR_TYPE, null);
-            let cell = null;
-            while (cell = it.iterateNext()) {
-                if (cell.textContent == trit) {
-                    console.log("查询「" + trit + "」……");
-                    cell = it.iterateNext();
-                    document.getElementById("镚符").innerHTML = "&#x" + cell.textContent.replace("uniE", "E") + ";";
-                    cell = it.iterateNext();
-                    document.getElementById("卦名").innerText = cell.textContent + "卦";
-                    cell = it.iterateNext();
-                    document.getElementById("系词").innerText = cell.textContent;
-                    cell = it.iterateNext();
-                    document.getElementById("象名").innerText = cell.textContent + "之象";
-                    cell = it.iterateNext();
-                    document.getElementById("象词").innerHTML = cell.textContent.replace("〔又曰〕", '<br /><span class="tip">又曰</span><br />');
-                    cell = it.iterateNext();
-                    let text = cell.textContent;
-                    text = text.replace("〔又曰〕", '<span class="tip">又曰</span>');
-                    text = text.replace("〔颜曰〕", '<span class="tip">颜曰</span>');
-                    text = text.replace("〔何曰〕", '<br /><span class="tip">何曰</span>');
-                    text = text.replace("〔陈曰〕", '<br /><span class="tip">陈曰</span>');
-                    text = text.replace("〔刘曰〕", '<br /><span class="tip">刘曰</span>');
-                    document.getElementById("注解").innerHTML = text;
-                    cell = it.iterateNext();
-                    document.getElementById("断语").innerText = cell.textContent;
-                    cell = it.iterateNext();
-                    document.getElementById("歌诀").innerHTML = cell.textContent.replace("〔又曰〕", '<br /><span class="tip">又曰</span><br />');
-                    console.log("完毕");
-                    break;
+            console.log("查询「" + trit + "」……");
+            let exp = '//卦[@镚型="' + trit + '"]';
+            let coin = xmlDoc.evaluate(exp, xmlDoc.documentElement, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
+            coin.childNodes.forEach(cell => {
+                switch (cell.localName) {
+                    case '字符':
+                        document.getElementById("镚符").innerHTML = "&#x" +cell.innerHTML.replace("uniE", "E") + ";";
+                    case '卦名':
+                        document.getElementById("卦名").innerText = cell.innerHTML + "卦";
+                    case '系词':
+                        document.getElementById("系词").innerText = cell.innerHTML;
+                    case '象名':
+                        document.getElementById("象名").innerText = cell.innerHTML + "之象";
+                    case '象词':
+                        document.getElementById("象词").innerHTML = cell.innerHTML.replace("〔又曰〕", '<br /><span class="tip">又曰</span><br />');
+                    case '注解':
+                        let text = cell.innerHTML;
+                        text = text.replace("〔又曰〕", '<span class="tip">又曰</span>');
+                        text = text.replace("〔颜曰〕", '<span class="tip">颜曰</span>');
+                        text = text.replace("〔何曰〕", '<br /><span class="tip">何曰</span>');
+                        text = text.replace("〔陈曰〕", '<br /><span class="tip">陈曰</span>');
+                        text = text.replace("〔刘曰〕", '<br /><span class="tip">刘曰</span>');
+                        document.getElementById("注解").innerHTML = text;
+                    case '断语':
+                        document.getElementById("断语").innerText = cell.innerHTML;
+                    case '歌诀':
+                        document.getElementById("歌诀").innerHTML = cell.innerHTML.replace("〔又曰〕", '<br /><span class="tip">又曰</span><br />');
                 }
-            }
+            });
+            console.log("完毕");
         }
     </script>
 </head>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta type="text/html" lang="zh" charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../main.css" />
+    <title>扔钢镚喽！</title>
+    <style type="text/css">
+        #btnDivine {
+            margin: 1rem;
+            padding: 1rem;
+            width: 15rem;
+            height: 5rem;
+            font-size: 2rem;
+            display: inline-block;
+            vertical-align: middle;
+            text-align: center;
+        }
+
+        #scrResult {
+            margin: 1rem;
+            border: 2px darkgray dashed;
+            display: inline-block;
+            vertical-align: middle;
+        }
+    </style>
+    <script src="../LIB/saxon-js/SaxonJS2.rt.js"></script>
+    <script type="text/javascript">
+        var xmlDoc = null;
+        console.log("加载XML文件……");
+        var xhr = new XMLHttpRequest();
+        xhr.overrideMimeType('text/xml');
+        xhr.open("GET", "../DB/TritCoin.xml");
+        xhr.onload = function () {
+            if (xhr.readyState === xhr.DONE && xhr.status === 200) {
+                xmlDoc = xhr.responseXML;
+                console.log("已加载：" + xhr.responseURL);
+            }
+        }
+        xhr.send();
+
+        function btnDivine_Click() {
+            let n上 = 0;
+            let n中 = 0;
+            let n下 = 0;
+            let str = Array(12).fill('\uE47E');
+            let i = 0;
+            for (; i < 4; i++) {
+                if (Math.random() > 0.5) {
+                    str[i] = '\uE47F';
+                    n上++;
+                }
+            }
+            for (; i < 8; i++) {
+                if (Math.random() > 0.5) {
+                    str[i] = '\uE480';
+                    n中++;
+                }
+            }
+            for (; i < 12; i++) {
+                if (Math.random() > 0.5) {
+                    str[i] = '\uE481';
+                    n下++;
+                }
+            }
+
+            let canvas = document.getElementById("scrResult");
+            let ctx = scrResult.getContext("2d");
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.save();
+            ctx.font = "96px FanTritCoin";
+            ctx.fillStyle = "sienna";
+            ctx.texAlign = "center";
+            ctx.textBaseline = "top";
+            let y = 10;
+            for (let j = 0; j < 3; j++) {
+                let x = 10;
+                for (let k = 0; k < 4; k++) {
+                    ctx.fillText(str[j * 4 + k], x, y);
+                    x += 100;
+                }
+                y += 100;
+            }
+            ctx.restore();
+
+            let trit = n上 + "~" + n中 + "~" + n下;
+            document.getElementById("结果").innerText = trit.toString();
+            console.log("结果：" + trit);
+            console.log("查询「" + trit + "」……");
+            let exp = "map:merge(for $i in //卦[@镚型='" + trit + "']/* return map:entry(local-name($i), string($i)))";
+            var map = SaxonJS.XPath.evaluate(exp, xmlDoc);
+            document.getElementById("镚符").innerHTML = "&#x" + map["字符"].replace("uniE", "E") + ";";
+            document.getElementById("卦名").innerText = map["卦名"] + "卦";
+            document.getElementById("系词").innerText = map["系词"];
+            document.getElementById("象名").innerText = map["象名"] + "之象";
+            document.getElementById("象词").innerHTML = map["象词"].replace("〔又曰〕", '<br /><span class="tip">又曰</span><br />');
+            document.getElementById("断语").innerText = map["断语"];
+            document.getElementById("歌诀").innerHTML = map["歌诀"].replace("〔又曰〕", '<br /><span class="tip">又曰</span><br />');
+            let text = map["注解"];
+            text = text.replace("〔又曰〕", '<span class="tip">又曰</span>');
+            text = text.replace("〔颜曰〕", '<span class="tip">颜曰</span>');
+            text = text.replace("〔何曰〕", '<br /><span class="tip">何曰</span>');
+            text = text.replace("〔陈曰〕", '<br /><span class="tip">陈曰</span>');
+            text = text.replace("〔刘曰〕", '<br /><span class="tip">刘曰</span>');
+            document.getElementById("注解").innerHTML = text;
+            console.log("完毕");
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>扔钢镚喽！</h1>
+        <h2 class="remark">以三镚子经为例测试JavaScript/XPath/XQuery的浏览器应用</h2>
+    </header>
+    <main>
+
+        <div class="image-group">
+            <figure>
+                <button id="btnDivine" onclick="btnDivine_Click()">扔钢镚喽！</button>
+                <span style="font-size: 150%; vertical-align: middle;">结果：<span id="结果">&emsp;</span></span>
+                <br />
+                <canvas id="scrResult" width="420" height="320">结果</canvas>
+            </figure>
+            <figure>
+                <div style="width: 840px; background-color: antiquewhite;">
+                    <br />
+                    <div style="text-align: center;"><span id="镚符" style="font-family: FanTritCoin; font-size: 5rem; color: sienna;"></span>&emsp;&emsp;<span id="卦名" style="font-size: 300%;"></span>&emsp;&emsp;<span id="象名" style="font-size: 200%;"></span>&emsp;&emsp;&emsp;<span id="系词" style="font-size: 150%;"></span></div>
+                    <br />
+                    <dl>
+                        <dt>象词</dt>
+                        <dd id="象词">&emsp;</dd>
+                        <dt>注解</dt>
+                        <dd id="注解">&emsp;</dd>
+                        <dt>断语</dt>
+                        <dd id="断语">&emsp;</dd>
+                        <dt>歌诀</dt>
+                        <dd id="歌诀">&emsp;</dd>
+                    </dl>
+                </div>
+            </figure>
+        </div>
+
+    </main>
+    <footer>
+        <hr />
+        <p>参考：<a class="alone" target="_blank" href="../essay/000_excursus/000-005.html">三镚子经与卡壳牌</a></p>
+    </footer>
+</body>
+
+</html>
