@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta type="text/html" lang="zh" charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../main.css" />
+    <title>“活人还能被尿憋死不成？”（续）</title>
+    <style type="text/css">
+        #code,
+        #path {
+            font-family: var(--font-family-mono);
+        }
+    </style>
+    <script src="../LIB/pouchdb/pouchdb.min.js"></script>
+    <script src="../LIB/pouchdb/pouchdb.load.min.js"></script>
+    <script>
+        var db = new PouchDB("tritcoin");
+        console.log("加载JSON数据……")
+        db.load('../DB/TritCoin.dump').then(function () {
+            console.log("加载完毕");
+        }).catch(function (err) {
+            console.log("加载失败：" + err);
+        });
+
+        function 查询并显示() {
+            var id = document.getElementById("上").value + "~" + document.getElementById("中").value + "~" + document.getElementById("下").value;
+            console.log("查询「" + id + "」……");
+            db.get(id).then(function (doc) {
+                document.getElementById("code").innerText = doc["code"];
+                document.getElementById("path").innerText = doc["path"];
+                console.log("完毕");
+            }).catch(function (err) {
+                console.log(err);
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>“活人还能被尿憋死不成？”（续）</h1>
+        <h2 class="remark">以三镚子经为例测试JavaScript/JSON/PouchDB/SVG的浏览器应用</h2>
+    </header>
+    <main>
+        <div id="输入">
+            <span>&emsp;
+                <select id="上">
+                    <option value="0"></option>
+                    <option value="1">一上</option>
+                    <option value="2">二上</option>
+                    <option value="3">三上</option>
+                    <option value="4">四上</option>
+                </select>
+                <select id="中">
+                    <option value="0"></option>
+                    <option value="1">一中</option>
+                    <option value="2">二中</option>
+                    <option value="3">三中</option>
+                    <option value="4">四中</option>
+                </select>
+                <select id="下">
+                    <option value="0"></option>
+                    <option value="1">一下</option>
+                    <option value="2">二下</option>
+                    <option value="3">三下</option>
+                    <option value="4">四下</option>
+                </select>&emsp;
+            </span>
+            <button onclick="查询并显示()">查询并显示</button>
+        </div>
+        <p>镚符：<span id="code"></span></p>
+        <p>路径：<span id="path"></span></p>
+    </main>
+    <footer>
+        <hr />
+        <p>参考：</p>
+        <ul>
+            <li><a class="alone" target="_blank" href="../essay/000_excursus/000-005.html">三镚子经与卡壳牌</a></li>
+            <li><a class="alone" target="_blank" href="../at_douban/diary/20210622-001.html">“活人还能被尿憋死不成？”</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>
