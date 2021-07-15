@@ -13,22 +13,53 @@
     </style>
     <script src="../LIB/pouchdb/pouchdb.min.js"></script>
     <script src="../LIB/pouchdb/pouchdb.load.min.js"></script>
+    <script src="../LIB/pouchdb/pouchdb.find.min.js"></script>
     <script>
-        var db = new PouchDB("tritcoin");
+        var dbCoin = new PouchDB("tritcoin");
+        var dbKana = new PouchDB("hanakana");
+
         console.log("加载JSON数据……")
-        db.load('../DB/TritCoin.dump').then(function () {
-            console.log("加载完毕");
+        dbCoin.load('../DB/TritCoin.dump').then(function () {
+            console.log("加载「三镚子经」完毕");
         }).catch(function (err) {
-            console.log("加载失败：" + err);
+            console.log("加载「三镚子经」失败：" + err);
+        });
+
+        dbKana.load('../DB/hanakana.dump').then(function () {
+            console.log("加载「洟仮名」完毕");
+        }).catch(function (err) {
+            console.log("加载「洟仮名」失败：" + err);
         });
 
         function 查询并显示() {
-            var id = document.getElementById("上").value + "~" + document.getElementById("中").value + "~" + document.getElementById("下").value;
+            let id = document.getElementById("上").value + "~" + document.getElementById("中").value + "~" + document.getElementById("下").value;
             console.log("查询「" + id + "」……");
-            db.get(id).then(function (doc) {
+            dbCoin.get(id).then(function (doc) {
                 document.getElementById("code").innerText = doc["code"];
                 document.getElementById("path").innerText = doc["path"];
                 console.log("完毕");
+            }).catch(function (err) {
+                console.log(err);
+            });
+        }
+
+        function 查询并替换(event) {
+            let ascii = event.target.value;
+            console.log("查询「" + ascii + "」……");
+            dbKana.find({
+                selector: { trans: ascii }
+            }).then(function (result) {
+                if (result.docs.length > 0) {
+                    document.getElementById("hana").innerText = result.docs[0]["_id"];
+                    document.getElementById("kana").innerText = result.docs[0]["path"];
+                    document.getElementById("hanakana").innerText = result.docs[0]["cmnt"];
+                    console.log("完毕");
+                }
+                else {
+                    document.getElementById("hana").innerText = "";
+                    document.getElementById("kana").innerText = "";
+                    document.getElementById("hanakana").innerText = "";
+                }
             }).catch(function (err) {
                 console.log(err);
             });
@@ -40,8 +71,13 @@
     <header>
         <h1>“活人还能被尿憋死不成？”（续）</h1>
         <h2 class="remark">以三镚子经为例测试JavaScript/JSON/PouchDB/SVG的浏览器应用</h2>
+        <figure style="float: right; border: 2px darkgray dashed;">
+            <img src="../DATA/20210716-001_Visual-Acuity.png" />
+            <figcaption><span>对数视力表</span></figcaption>
+        </figure>
     </header>
     <main>
+        <h2 class="heading">三镚子经</h2>
         <div id="输入">
             <span>&emsp;
                 <select id="上">
@@ -70,6 +106,16 @@
         </div>
         <p>镚符：<span id="code"></span></p>
         <p>路径：<span id="path"></span></p>
+
+        <h2 class="heading"><ruby lang="ja">洟仮名<rt>ハナカナ</rt></ruby></h2>
+        <h3 class="heading"><span>素材：<a target="_blank" href="https://www.omniglot.com/conscripts/hanakana.htm">Hanákana</a></span></h3>
+        <p>主页：<a target="_blank" href="https://github.com/mountbuild/tone-script">tone-script</a></p>
+        <p>许可：<a target="_blank" href="http://www.apache.org/licenses/">Apache License Version 2.0, January 2004</a></p>
+        <h3 class="heading"><span>实践</span></h3>
+        <textarea id="ascii" placeholder="输入转写字符" oninput="查询并替换(event)"></textarea>
+        <p>字符：<span id="hana"></span></p>
+        <p>路径：<span id="kana"></span></p>
+        <p>注释：<span id="hanakana" lang="en"></span></p>
     </main>
     <footer>
         <hr />
