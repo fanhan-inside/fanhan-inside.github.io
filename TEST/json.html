@@ -10,13 +10,148 @@
         #path {
             font-family: var(--font-family-mono);
         }
+        #input {
+            width: 640px;
+            height: 360px;
+            font-size: 2rem;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        button {
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 3rem;
+        }
     </style>
     <script src="../LIB/pouchdb/pouchdb.min.js"></script>
     <script src="../LIB/pouchdb/pouchdb.load.min.js"></script>
     <script src="../LIB/pouchdb/pouchdb.find.min.js"></script>
     <script>
-        var dbCoin = new PouchDB("tritcoin");
-        var dbKana = new PouchDB("hanakana");
+        const mapKana = new Map([
+            ["お", "o"],
+            ["オ", "o"],
+            ["こ", "ko"],
+            ["コ", "ko"],
+            ["そ", "so"],
+            ["ソ", "so"],
+            ["と", "to"],
+            ["ト", "to"],
+            ["の", "no"],
+            ["ノ", "no"],
+            ["ほ", "ho"],
+            ["ホ", "ho"],
+            ["も", "mo"],
+            ["モ", "mo"],
+            ["よ", "yo"],
+            ["ヨ", "yo"],
+            ["ろ", "ro"],
+            ["ロ", "ro"],
+            ["を", "wo"],
+            ["ヲ", "wo"],
+            ["え", "e"],
+            ["エ", "e"],
+            ["け", "ke"],
+            ["ケ", "ke"],
+            ["せ", "se"],
+            ["セ", "se"],
+            ["て", "te"],
+            ["テ", "te"],
+            ["ね", "ne"],
+            ["ネ", "ne"],
+            ["へ", "he"],
+            ["ヘ", "he"],
+            ["め", "me"],
+            ["メ", "me"],
+            ["れ", "re"],
+            ["レ", "re"],
+            ["ゑ", "we"],
+            ["ヱ", "we"],
+            ["う", "u"],
+            ["ウ", "u"],
+            ["く", "ku"],
+            ["ク", "ku"],
+            ["す", "su"],
+            ["ス", "su"],
+            ["つ", "tu"],
+            ["ツ", "tu"],
+            ["ぬ", "nu"],
+            ["ヌ", "nu"],
+            ["ふ", "hu"],
+            ["フ", "hu"],
+            ["む", "mu"],
+            ["ム", "mu"],
+            ["ゆ", "yu"],
+            ["ユ", "yu"],
+            ["る", "ru"],
+            ["ル", "ru"],
+            ["き", "ki"],
+            ["キ", "ki"],
+            ["し", "si"],
+            ["シ", "si"],
+            ["ち", "ti"],
+            ["チ", "ti"],
+            ["に", "ni"],
+            ["ニ", "ni"],
+            ["ひ", "hi"],
+            ["ヒ", "hi"],
+            ["み", "mi"],
+            ["ミ", "mi"],
+            ["り", "ri"],
+            ["リ", "ri"],
+            ["ゐ", "wi"],
+            ["ヰ", "wi"],
+            ["あ", "a"],
+            ["ア", "a"],
+            ["か", "ka"],
+            ["カ", "ka"],
+            ["さ", "sa"],
+            ["サ", "sa"],
+            ["た", "ta"],
+            ["タ", "ta"],
+            ["な", "na"],
+            ["ナ", "na"],
+            ["は", "ha"],
+            ["ハ", "ha"],
+            ["ま", "ma"],
+            ["マ", "ma"],
+            ["や", "ya"],
+            ["ヤ", "ya"],
+            ["ら", "ra"],
+            ["ラ", "ra"],
+            ["わ", "wa"],
+            ["ワ", "wa"],
+            ["い", "i"],
+            ["イ", "i"],
+            ["ぁ", "a"],
+            ["ァ", "a"],
+            ["ぃ", "i"],
+            ["ィ", "i"],
+            ["ぅ", "u"],
+            ["ゥ", "u"],
+            ["ぇ", "e"],
+            ["ェ", "e"],
+            ["ぉ", "o"],
+            ["ォ", "o"],
+            ["ゃ", "ya"],
+            ["ャ", "ya"],
+            ["ゅ", "yu"],
+            ["ュ", "yu"],
+            ["ょ", "yo"],
+            ["ョ", "yo"],
+            ["ゎ", "wa"],
+            ["ヮ", "wa"],
+            ["っ", "'"],
+            ["ッ", "'"],
+            ["、", ","],
+            ["。", "."],
+            ["「", "["],
+            ["」", "]"],
+            ["：", ":"],
+            ["　", " "]
+        ]);
+        const mapPath = new Map();
+        const dbCoin = new PouchDB("tritcoin");
+        const dbKana = new PouchDB("hanakana");
 
         console.log("加载JSON数据……")
         dbCoin.load('../DB/TritCoin.dump').then(function () {
@@ -24,12 +159,34 @@
         }).catch(function (err) {
             console.log("加载「三镚子经」失败：" + err);
         });
-
         dbKana.load('../DB/hanakana.dump').then(function () {
             console.log("加载「洟仮名」完毕");
         }).catch(function (err) {
             console.log("加载「洟仮名」失败：" + err);
         });
+
+        function transform(str) {
+            let arr = [];
+            for (let i = 0; i < str.length; i++) {
+                let ch = str.charAt(i);
+                if (mapKana.has(ch)) {
+                    ch = mapKana.get(ch);
+                    arr.push(ch);
+                    Array.from(ch).forEach(c => {
+                        dbKana.find({
+                            selector: { trans: c }
+                        }).then(function (result) {
+                            if (result.docs.length > 0) {
+                                mapPath.set(c, result.docs[0]["path"]);
+                            }
+                        }).catch(function (err) {
+                            console.log(err);
+                        });
+                    });
+                }
+            }
+            return arr.join("");
+        }
 
         function 查询并显示() {
             let id = document.getElementById("上").value + "~" + document.getElementById("中").value + "~" + document.getElementById("下").value;
@@ -43,26 +200,11 @@
             });
         }
 
-        function 查询并替换(event) {
-            let ascii = event.target.value;
-            console.log("查询「" + ascii + "」……");
-            dbKana.find({
-                selector: { trans: ascii }
-            }).then(function (result) {
-                if (result.docs.length > 0) {
-                    document.getElementById("hana").innerText = result.docs[0]["_id"];
-                    document.getElementById("kana").innerText = result.docs[0]["path"];
-                    document.getElementById("hanakana").innerText = result.docs[0]["cmnt"];
-                    console.log("完毕");
-                }
-                else {
-                    document.getElementById("hana").innerText = "";
-                    document.getElementById("kana").innerText = "";
-                    document.getElementById("hanakana").innerText = "";
-                }
-            }).catch(function (err) {
-                console.log(err);
-            });
+        function 查询并替换() {
+            let input = document.getElementById("input").value;
+            console.log("查询「" + input + "」……");
+            document.getElementById("romaji").innerText = transform(input);
+            console.log("完毕");
         }
     </script>
 </head>
@@ -112,10 +254,9 @@
         <p>主页：<a target="_blank" href="https://github.com/mountbuild/tone-script">tone-script</a></p>
         <p>许可：<a target="_blank" href="http://www.apache.org/licenses/">Apache License Version 2.0, January 2004</a></p>
         <h3 class="heading"><span>实践</span></h3>
-        <textarea id="ascii" placeholder="输入转写字符" oninput="查询并替换(event)"></textarea>
-        <p>字符：<span id="hana"></span></p>
-        <p>路径：<span id="kana"></span></p>
-        <p>注释：<span id="hanakana" lang="en"></span></p>
+        <textarea id="input" placeholder="仮名入力" lang="ja"></textarea>
+        <button onclick="查询并替换()">查询并替换</button>
+        <p>转写：<span id="romaji"></span></p>
     </main>
     <footer>
         <hr />
