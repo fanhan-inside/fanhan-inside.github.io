@@ -6,7 +6,7 @@
     --font-family-serif: Georgia, Times, 'Quivira', 'FreeSerif', 'Source Serif Pro', 'Noto Serif', 'IBM Plex Serif', serif;
     --font-family-sans: Helvetica, Arial, 'FreeSans', 'Source Sans Pro', 'Noto Sans', 'Fira Sans', 'Clear Sans', 'IBM Plex Sans', sans-serif;
     --font-family-mono: 'Noto Mono', 'Fira Mono', 'IBM Plex Mono', 'FreeMono', Courier, monospace;
-    --font-family-code: 'Consolas', 'FreeMono', 'Inconsolata', 'Source Code Pro', 'Fira Code', monospace;
+    --font-family-code: 'Fira Code', 'Consolas', 'FreeMono', 'Inconsolata', 'Source Code Pro', monospace;
     --font-family-math: 'Aroania', 'Quivira';
     --font-family-ipa: 'CharisSIL', 'DoulosSIL', 'GentiumPlus';
     /* 试着用Unicode字符定义CSS变量 */

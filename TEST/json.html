@@ -8,8 +8,9 @@
     <style type="text/css">
         #code,
         #path {
-            font-family: var(--font-family-mono);
+            font-family: var(--font-family-code);
         }
+
         #input {
             width: 640px;
             height: 360px;
@@ -17,7 +18,9 @@
             display: inline-block;
             vertical-align: middle;
         }
-        button {
+
+        button,
+        select {
             display: inline-block;
             vertical-align: middle;
             font-size: 3rem;
@@ -27,128 +30,7 @@
     <script src="../LIB/pouchdb/pouchdb.load.min.js"></script>
     <script src="../LIB/pouchdb/pouchdb.find.min.js"></script>
     <script>
-        const mapKana = new Map([
-            ["お", "o"],
-            ["オ", "o"],
-            ["こ", "ko"],
-            ["コ", "ko"],
-            ["そ", "so"],
-            ["ソ", "so"],
-            ["と", "to"],
-            ["ト", "to"],
-            ["の", "no"],
-            ["ノ", "no"],
-            ["ほ", "ho"],
-            ["ホ", "ho"],
-            ["も", "mo"],
-            ["モ", "mo"],
-            ["よ", "yo"],
-            ["ヨ", "yo"],
-            ["ろ", "ro"],
-            ["ロ", "ro"],
-            ["を", "wo"],
-            ["ヲ", "wo"],
-            ["え", "e"],
-            ["エ", "e"],
-            ["け", "ke"],
-            ["ケ", "ke"],
-            ["せ", "se"],
-            ["セ", "se"],
-            ["て", "te"],
-            ["テ", "te"],
-            ["ね", "ne"],
-            ["ネ", "ne"],
-            ["へ", "he"],
-            ["ヘ", "he"],
-            ["め", "me"],
-            ["メ", "me"],
-            ["れ", "re"],
-            ["レ", "re"],
-            ["ゑ", "we"],
-            ["ヱ", "we"],
-            ["う", "u"],
-            ["ウ", "u"],
-            ["く", "ku"],
-            ["ク", "ku"],
-            ["す", "su"],
-            ["ス", "su"],
-            ["つ", "tu"],
-            ["ツ", "tu"],
-            ["ぬ", "nu"],
-            ["ヌ", "nu"],
-            ["ふ", "hu"],
-            ["フ", "hu"],
-            ["む", "mu"],
-            ["ム", "mu"],
-            ["ゆ", "yu"],
-            ["ユ", "yu"],
-            ["る", "ru"],
-            ["ル", "ru"],
-            ["き", "ki"],
-            ["キ", "ki"],
-            ["し", "si"],
-            ["シ", "si"],
-            ["ち", "ti"],
-            ["チ", "ti"],
-            ["に", "ni"],
-            ["ニ", "ni"],
-            ["ひ", "hi"],
-            ["ヒ", "hi"],
-            ["み", "mi"],
-            ["ミ", "mi"],
-            ["り", "ri"],
-            ["リ", "ri"],
-            ["ゐ", "wi"],
-            ["ヰ", "wi"],
-            ["あ", "a"],
-            ["ア", "a"],
-            ["か", "ka"],
-            ["カ", "ka"],
-            ["さ", "sa"],
-            ["サ", "sa"],
-            ["た", "ta"],
-            ["タ", "ta"],
-            ["な", "na"],
-            ["ナ", "na"],
-            ["は", "ha"],
-            ["ハ", "ha"],
-            ["ま", "ma"],
-            ["マ", "ma"],
-            ["や", "ya"],
-            ["ヤ", "ya"],
-            ["ら", "ra"],
-            ["ラ", "ra"],
-            ["わ", "wa"],
-            ["ワ", "wa"],
-            ["い", "i"],
-            ["イ", "i"],
-            ["ぁ", "a"],
-            ["ァ", "a"],
-            ["ぃ", "i"],
-            ["ィ", "i"],
-            ["ぅ", "u"],
-            ["ゥ", "u"],
-            ["ぇ", "e"],
-            ["ェ", "e"],
-            ["ぉ", "o"],
-            ["ォ", "o"],
-            ["ゃ", "ya"],
-            ["ャ", "ya"],
-            ["ゅ", "yu"],
-            ["ュ", "yu"],
-            ["ょ", "yo"],
-            ["ョ", "yo"],
-            ["ゎ", "wa"],
-            ["ヮ", "wa"],
-            ["っ", "'"],
-            ["ッ", "'"],
-            ["、", ","],
-            ["。", "."],
-            ["「", "["],
-            ["」", "]"],
-            ["：", ":"],
-            ["　", " "]
-        ]);
+        const mapKana = new Map([["あ", "a"], ["ア", "a"], ["ぁ", "a"], ["ァ", "a"], ["い", "i"], ["イ", "i"], ["ぃ", "i"], ["ィ", "i"], ["う", "u"], ["ウ", "u"], ["ぅ", "u"], ["ゥ", "u"], ["え", "e"], ["エ", "e"], ["ぇ", "e"], ["ェ", "e"], ["お", "o"], ["オ", "o"], ["ぉ", "o"], ["ォ", "o"], ["か", "ka"], ["カ", "ka"], ["き", "ki"], ["キ", "ki"], ["く", "ku"], ["ク", "ku"], ["け", "ke"], ["ケ", "ke"], ["こ", "ko"], ["コ", "ko"], ["が", "ga"], ["ガ", "ga"], ["ぎ", "gi"], ["ギ", "gi"], ["ぐ", "gu"], ["グ", "gu"], ["げ", "ge"], ["ゲ", "ge"], ["ご", "go"], ["ゴ", "go"], ["さ", "sa"], ["サ", "sa"], ["し", "si"], ["シ", "si"], ["す", "su"], ["ス", "su"], ["せ", "se"], ["セ", "se"], ["そ", "so"], ["ソ", "so"], ["ざ", "za"], ["ザ", "za"], ["じ", "zi"], ["ジ", "zi"], ["ず", "zu"], ["ズ", "zu"], ["ぜ", "ze"], ["ゼ", "ze"], ["ぞ", "zo"], ["ゾ", "zo"], ["た", "ta"], ["タ", "ta"], ["ち", "ti"], ["チ", "ti"], ["つ", "tu"], ["ツ", "tu"], ["て", "te"], ["テ", "te"], ["と", "to"], ["ト", "to"], ["だ", "da"], ["ダ", "da"], ["ぢ", "di"], ["ヂ", "di"], ["づ", "du"], ["ヅ", "du"], ["で", "de"], ["デ", "de"], ["ど", "do"], ["ド", "do"], ["な", "na"], ["ナ", "na"], ["に", "ni"], ["ニ", "ni"], ["ぬ", "nu"], ["ヌ", "nu"], ["ね", "ne"], ["ネ", "ne"], ["の", "no"], ["ノ", "no"], ["は", "ha"], ["ハ", "ha"], ["ひ", "hi"], ["ヒ", "hi"], ["ふ", "hu"], ["フ", "hu"], ["へ", "he"], ["ヘ", "he"], ["ほ", "ho"], ["ホ", "ho"], ["ば", "ba"], ["バ", "ba"], ["び", "bi"], ["ビ", "bi"], ["ぶ", "bu"], ["ブ", "bu"], ["べ", "be"], ["ベ", "be"], ["ぼ", "bo"], ["ボ", "bo"], ["ぱ", "pa"], ["パ", "pa"], ["ぴ", "pi"], ["ピ", "pi"], ["ぷ", "pu"], ["プ", "pu"], ["ぺ", "pe"], ["ペ", "pe"], ["ぽ", "po"], ["ポ", "po"], ["ま", "ma"], ["マ", "ma"], ["み", "mi"], ["ミ", "mi"], ["む", "mu"], ["ム", "mu"], ["め", "me"], ["メ", "me"], ["も", "mo"], ["モ", "mo"], ["や", "ya"], ["ヤ", "ya"], ["ゃ", "ya"], ["ャ", "ya"], ["ゆ", "yu"], ["ユ", "yu"], ["ゅ", "yu"], ["ュ", "yu"], ["よ", "yo"], ["ヨ", "yo"], ["ょ", "yo"], ["ョ", "yo"], ["ら", "ra"], ["ラ", "ra"], ["り", "ri"], ["リ", "ri"], ["る", "ru"], ["ル", "ru"], ["れ", "re"], ["レ", "re"], ["ろ", "ro"], ["ロ", "ro"], ["わ", "wa"], ["ワ", "wa"], ["ゐ", "wi"], ["ヰ", "wi"], ["ゑ", "we"], ["ヱ", "we"], ["を", "wo"], ["ヲ", "wo"], ["っ", "'"], ["ッ", "'"], ["ゎ", "wa"], ["ヮ", "wa"], ["、", ","], ["。", "."], ["「", "["], ["」", "]"], ["（", "("], ["）", ")"], ["：", ":"], ["＃", "#"], ]);
         const mapPath = new Map();
         const dbCoin = new PouchDB("tritcoin");
         const dbKana = new PouchDB("hanakana");
@@ -185,10 +67,10 @@
                     });
                 }
             }
-            return arr.join("");
+            return arr.join("").replace(/iy/g, 'y').replace(/uw/g, 'w');
         }
 
-        function 查询并显示() {
+        function 查询三镚子经() {
             let id = document.getElementById("上").value + "~" + document.getElementById("中").value + "~" + document.getElementById("下").value;
             console.log("查询「" + id + "」……");
             dbCoin.get(id).then(function (doc) {
@@ -200,11 +82,37 @@
             });
         }
 
-        function 查询并替换() {
+        function 查询洟仮名() {
             let input = document.getElementById("input").value;
             console.log("查询「" + input + "」……");
-            document.getElementById("romaji").innerText = transform(input);
-            console.log("完毕");
+            let output = transform(input);
+            document.getElementById("romaji").innerText = output;
+            let svgHeader = '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="' + output.length * 32 + '" height="120" viewBox="0 0 ' + output.length * 32 + ' 120">'
+            let mapCode = new Map();
+            let strSym = '';
+            let strUse = '';
+            let xadv = 0;
+            let count = 0;
+            Array.from(output).forEach(ch => {
+                dbKana.find({
+                    selector: { trans: ch }
+                }).then(function (result) {
+                    if (result.docs.length > 0) {
+                        let code = result.docs[0]['_id'];
+                        let path = mapPath.get(ch);
+                        strSym += '<symbol viewBox="0 240 320 1200" id="' + code + '" ><path d="' + path + '" transform="scale(1,-1)" transform-origin="center" /></symbol>';
+                        strUse += '<use width="32" height="120" x="' + xadv + '" y="0" xlink:href="#' + code + '" />';
+                        xadv += 32;
+                    }
+                    count++;
+                    if (count == output.length) {
+                        document.getElementById("svg").innerHTML = svgHeader + strSym + strUse + '</svg>';
+                        console.log("完毕");
+                    }
+                }).catch(function (err) {
+                    console.log(err);
+                });
+            });
         }
     </script>
 </head>
@@ -212,7 +120,7 @@
 <body>
     <header>
         <h1>“活人还能被尿憋死不成？”（续）</h1>
-        <h2 class="remark">以三镚子经为例测试JavaScript/JSON/PouchDB/SVG的浏览器应用</h2>
+        <h2 class="remark">以三镚子经为例测试<samp>ECMAScript/JSON/PouchDB/SVG</samp>的浏览器应用</h2>
         <figure style="float: right; border: 2px darkgray dashed;">
             <img src="../DATA/20210716-001_Visual-Acuity.png" />
             <figcaption><span>对数视力表</span></figcaption>
@@ -244,7 +152,7 @@
                     <option value="4">四下</option>
                 </select>&emsp;
             </span>
-            <button onclick="查询并显示()">查询并显示</button>
+            <button onclick="查询三镚子经()">查询</button>
         </div>
         <p>镚符：<span id="code"></span></p>
         <p>路径：<span id="path"></span></p>
@@ -254,9 +162,10 @@
         <p>主页：<a target="_blank" href="https://github.com/mountbuild/tone-script">tone-script</a></p>
         <p>许可：<a target="_blank" href="http://www.apache.org/licenses/">Apache License Version 2.0, January 2004</a></p>
         <h3 class="heading"><span>实践</span></h3>
-        <textarea id="input" placeholder="仮名入力" lang="ja"></textarea>
-        <button onclick="查询并替换()">查询并替换</button>
+        <textarea id="input" placeholder="＃：　「仮名」、（入力）。" lang="ja"></textarea>
+        <button onclick="查询洟仮名()">查询</button>
         <p>转写：<span id="romaji"></span></p>
+        <div id="svg"></div>
     </main>
     <footer>
         <hr />
