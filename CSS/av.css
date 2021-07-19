@@ -1,7 +1,6 @@
 video {
+    margin: auto;
     display: block;
-    width: 640px!important;
-    height: 480px!important;
     cursor: pointer;
 }
 
