@@ -81,3 +81,10 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "HwanaKwana";
+  src: url(./fanism/HwanaKwana.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
