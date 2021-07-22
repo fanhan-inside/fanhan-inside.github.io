@@ -173,7 +173,7 @@ span.ero {
 }
 
 span.adinkra {
-    font-family: 'FanAdinkra';
+    font-family: 'Fanism';
     color: var(--color-name-japanese-鉄);
     font-size: 3rem;
     display: inline-block;
@@ -194,7 +194,7 @@ span.astro {
 }
 
 span.tritcoin {
-    font-family: 'FanTritCoin';
+    font-family: 'Fanism';
     color: sienna;
     font-size: 3rem;
     display: inline-block;
