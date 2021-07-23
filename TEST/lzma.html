@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta type="text/html" lang="zh" charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../main.css" />
+    <title>“惟殷先人，有典有册”</title>
+    <style type="text/css">
+        #ja_en {
+            width: 100%;
+        }
+
+        #ja_en td:nth-child(2) {
+            font-family: var(--font-family-ipa);
+            text-align: left;
+        }
+
+        #ja_en td:nth-child(3) {
+            font-family: 'Fanism';
+            font-size: 24px;
+            text-align: left;
+        }
+
+        #ja_en td:nth-child(4),
+        #ja_en td:nth-child(5) {
+            text-align: left;
+        }
+    </style>
+    <script src="../Lib/lzma/lzma.js"></script>
+    <script src="../Lib/lzma/lzma.shim.js"></script>
+    <script src="../Lib/lzma/lzmap.js"></script>
+    <script src="../LIB/sql-js/sql-wasm.js"></script>
+    <script>
+        var db = null;
+        console.log("加载数据库……");
+        initSqlJs({
+            locateFile: sqlwasm => '../LIB/sql-js/sql-wasm.wasm'
+        }).then(function (SQL) {
+            let oReq = new XMLHttpRequest();
+            oReq.open("GET", '../DB/dictionary.db.lzma', true);
+            oReq.responseType = "arraybuffer";
+            oReq.onload = function (oEvent) {
+                let t0 = performance.now();
+                LZMAP.decode(oReq.response).then(function (outStream) {
+                    let buffer = new Uint8Array(outStream.size);
+                    let offset = 0;
+                    outStream.buffers.forEach(element => {
+                        buffer.set(element, offset);
+                        offset += element.length;
+                    });
+                    db = new SQL.Database(buffer);
+                    let t9 = performance.now();
+                    let delta = (t9 - t0).toFixed(2);
+                    console.log("在 " + delta + " 毫秒内已加载：" + oReq.responseURL);
+                }).catch(function (err) {
+                    throw new Error(err.message);
+                })
+            };
+            oReq.send();
+        }).catch(function (err) {
+            throw new Error(err.message);
+        });
+
+        function 查询并显示() {
+            let kana = document.getElementById("kana").value;
+            let sql = "SELECT pronunciation, kana, kanji, meaning FROM `ja_en` WHERE `kana`='" + kana + "';";
+            var rs = db.exec(sql);
+            console.log("查询「" + kana + "」……");
+            let count = 0;
+            let html = new String();
+            rs.forEach(r => {
+                r.values.forEach(v => {
+                    let [発音, 仮名, 漢字, 意味] = v;
+                    html += "<tr><td>" + (++count) + "</td><td>" + 発音 + "</td><td>" + 仮名 + "</td><td>" + 漢字 + "</td><td>" + 意味 + "</td></tr>";
+                });
+            });
+            document.getElementById("result").innerHTML = html;
+            document.getElementById("count").innerText = count;
+            console.log("完毕，结果：" + count + " 条");
+        }
+
+        function go(e) {
+            if (e.keyCode === 13) {
+                查询并显示();
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>“惟殷先人，有典有册”</h1>
+        <h2 class="remark">以简明词典为例测试<samp>ECMAScript/LZMA</samp>的浏览器应用</h2>
+    </header>
+    <main>
+        <h2 class="heading">输入</h2>
+        <span>仮名入力：</span>
+        <input id="kana" type="text" onkeypress="go(event)" />
+        <button type="submit" onclick="查询并显示()">查询并显示</button>
+        <h2 class="heading">输出</h2>
+        <table id="ja_en" lang="ja">
+            <colgroup>
+                <col width="80px">
+                <col>
+                <col>
+                <col>
+                <col>
+            </colgroup>
+            <thead>
+                <th>№</th>
+                <th>発音</th>
+                <th>仮名</th>
+                <th>漢字</th>
+                <th>意味（英語）</th>
+            </thead>
+            <tbody id="result"></tbody>
+            <tfoot>
+                <th colspan="2">合計</th>
+                <th id="count" colspan="2"></th>
+                <th>件</th>
+            </tfoot>
+        </table>
+    </main>
+    <footer>
+        <hr />
+        <p>参考：</p>
+        <ul>
+            <li><a class="alone" target="_blank" href="sqlite.html">“看呐这卦”</a></li>
+            <li><a class="alone" target="_blank" href="json.html">“活人还能被尿憋死不成？”（续）</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>
