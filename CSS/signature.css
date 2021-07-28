@@ -22,7 +22,8 @@ span.sign-time, span.sign-name, span.sign-room {
 }
 
 span.sign-time {
-    font-family: 'RomanyScript';
+    /* font-family: 'RomanyScript'; */
+    font-family: 'FanSign';
     font-size: 2rem;
     display: inline;
     margin: 0.5rem 0;
@@ -31,7 +32,7 @@ span.sign-time {
 
 span.sign-time::before, span.sign-name::before {
     /* content: url('../IMG/sign_name.svg'); */
-    content: 'A';
+    content: '\E20C';
     font-family: 'FanSign';
     font-size: 2rem;
     font-weight: bold;
@@ -43,7 +44,7 @@ span.sign-time::before, span.sign-name::before {
 
 span.sign-time::after, span.sign-room::before {
     /* content: url('../IMG/sign_room.svg'); */
-    content: 'B';
+    content: '\E20D';
     font-family: 'FanSign';
     font-size: 2rem;
     display: inline-block;
@@ -65,7 +66,7 @@ hr.qed::after {
     /* content: 'Q.E.D.';
     font-family: 'Malvern'; */
     font-family: 'FanSign';
-    content: 'd';
+    content: '\E212';
     font-size: 2rem;
     color: blue;
     display: inline-block;
@@ -76,7 +77,7 @@ span.qed::before {
     /* content: 'Q.E.D.';
     font-family: 'Malvern'; */
     font-family: 'FanSign';
-    content: 'd';
+    content: '\E212';
     font-size: 2rem;
     color: blue;
     display: inline-block;
@@ -88,7 +89,7 @@ span.qed::before {
 hr.sign-name::before {
     /* content: 'Rigel van Confucia'; */
     /* font-family: 'Elegance'; */
-    content: 'a';
+    content: '\E20F';
     font-family: 'FanSign';
     font-size: 3rem;
     color: darkblue;
@@ -104,21 +105,23 @@ hr.sign-name::after {
 hr.sign-room::before {
     /* content: 'Kargsburg'; */
     /* font-family: 'KaiserGothic'; */
-    content: 'b';
+    content: '\E210';
     font-family: 'FanSign';
     font-size: 3rem;
     color: darkred;
     vertical-align: middle;
+    margin-right: 12px;
 }
 
 hr.sign-room::after {
     /* content: url('../IMG/seal_room.svg'); */
-    content: 'C';
+    content: '\E20E';
     font-family: 'FanSign';
     font-size: 3rem;
     color: red;
     display: inline-block;
     vertical-align: middle;
+    margin-left: 12px;
 }
 
 hr.wort-verboten {
@@ -129,7 +132,7 @@ hr.wort-verboten {
 }
 
 hr.wort-verboten::before {
-    content: "🛇";
+    content: "\1F6C7";
     font-family: "Fanism";
     font-size: 16px;
     color: red;
@@ -140,7 +143,7 @@ hr.wort-verboten::after {
     /* content: "Wort Verboten !";
     font-family: "AngloText"; */
     font-family: 'FanSign';
-    content: 'c';
+    content: '\E211';
     font-size: 16px;
     color: black;
     vertical-align: middle;

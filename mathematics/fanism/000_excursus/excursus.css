@@ -10,8 +10,8 @@ h1 {
 
 h1::after {
     /* content: url(../IMG/mathematics_heading.svg); */
-    content: 'C';
-    font-family: 'FanTitle';
+    content: "\E203";
+    font-family: 'FanSign';
     font-size: 3rem;
     font-weight: normal;
     float: right;

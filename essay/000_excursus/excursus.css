@@ -6,8 +6,8 @@ h1 {
 
 h1::after {
     /* content: url(../../IMG/excursus_heading.svg); */
-    content: '7';
-    font-family: 'FanTitle';
+    content: '\E20B';
+    font-family: 'FanSign';
     font-size: 3rem;
     font-weight: normal;
     color: dimgray;

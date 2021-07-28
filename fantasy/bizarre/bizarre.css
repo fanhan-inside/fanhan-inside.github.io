@@ -10,8 +10,8 @@ h1 {
 
 h1::after {
     /* content: url(image/bizarre_heading.svg); */
-    content: 'B';
-    font-family: 'FanTitle';
+    content: '\E202';
+    font-family: 'FanSign';
     font-size: 4rem;
     font-weight: normal;
     float: right;
