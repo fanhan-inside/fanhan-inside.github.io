@@ -231,7 +231,8 @@ rt.ipa {
 }
 
 rt.bopomofo {
-    font-family: 'FanBopomofo';
+    font-family: "Fanism";
+    font-feature-settings: "ss01";
     font-size: 200%;
     color: var(--color-name-japanese-鉄);
 }

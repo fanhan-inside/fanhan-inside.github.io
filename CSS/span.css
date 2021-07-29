@@ -30,7 +30,7 @@ span.egyltrx {
     border-radius: 8px;
     background-color: whitesmoke;
     color: darkred;
-    font-family: "FanEgyHier";
+    font-family: "Fanism";
     font-size: 3rem;
 }
 
@@ -73,7 +73,7 @@ span.hieroab {
     padding: 1 2px;
     font-family: "Fanism";
     font-size: 2rem;
-    font-weight: bold;
+    /* font-weight: bold; */
     vertical-align: middle;
     font-feature-settings: "ss04";
 }
@@ -83,9 +83,8 @@ span.hieratic {
     text-indent: 0;
     margin: 0 1px;
     padding: 1 2px;
-    /* font-family: "Fanism";
-    font-feature-settings: "ss03"; */
-    font-family: "FanEgyHier";
+    font-family: "Fanism";
+    font-feature-settings: "ss03";
     font-size: 2rem;
     vertical-align: middle;
 }
@@ -95,9 +94,8 @@ span.transaegypt {
     text-indent: 0;
     margin: 0 1px;
     padding: 1 2px;
-    /* font-family: "Fanism";
-    font-feature-settings: "ss02"; */
-    font-family: "FanEgyTran";
+    font-family: "Fanism";
+    font-feature-settings: "ss02";
     font-size: 2rem;
     vertical-align: middle;
 }
