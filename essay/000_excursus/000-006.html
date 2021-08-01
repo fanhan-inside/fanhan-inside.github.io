@@ -8,13 +8,15 @@
     <link rel="stylesheet" type="text/css" href="excursus.css" />
     <title>对数视力表与瓦切假名</title>
     <style type="text/css">
-        #vacekana tbody>tr:nth-child(odd)>td {
+        #vacekana tbody>tr:nth-child(odd)>td,
+        #vace-vowel tbody>tr:nth-child(odd)>td {
             padding-top: 2rem;
             padding-bottom: 2rem;
             border-bottom: none;
         }
 
-        #vacekana tbody>tr:nth-child(even)>td {
+        #vacekana tbody>tr:nth-child(even)>td,
+        #vace-vowel tbody>tr:nth-child(even)>td {
             border-top: none;
             font-size: 2rem;
         }
@@ -52,6 +54,57 @@
         <p>总之，这套「范版三十六声纽」定性为「宽式音标」，差不多或难以区分的在同一个音系内占据同一个生存空间并共荣的辅音，使用相同字母表示。</p>
 
         <h2 class="heading"><ruby lang="en">VaceKana<rt lang="ja">ヴァチェ仮名</rt></ruby>：<strong>V</strong>isual <strong>A</strong>cuity <strong>C</strong>-<strong>E</strong>-chart</h2>
+
+        <table id="vace-vowel">
+            <thead>
+                <th colspan="8">范版八韵纽</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span class="vace">Aa</span></td>
+                    <td><span class="vace">Oo</span></td>
+                    <td><span class="vace">Uu</span></td>
+                    <td><span class="vace">Ww</span></td>
+                    <td><span class="vace">Ii</span></td>
+                    <td><span class="vace">Ee</span></td>
+                    <td><span class="vace">Ιι</span></td>
+                    <td><span class="vace">Υυ</span></td>
+                </tr>
+                <tr>
+                    <td><span class="ipa">a/ɑ</span></td>
+                    <td><span class="ipa">o/ɔ</span></td>
+                    <td><span class="ipa">u/ɯ</span></td>
+                    <td><span class="ipa">ʌ/ə</span></td>
+                    <td><span class="ipa">i/ɪ</span></td>
+                    <td><span class="ipa">e/ɛ</span></td>
+                    <td><span class="ipa">ø/œ</span></td>
+                    <td><span class="ipa">y/ʏ</span></td>
+                </tr>
+                <tr>
+                    <td><span class="vace">&#xE529;&#xE561;</span></td>
+                    <td><span class="vace">&#xE52A;&#xE562;</span></td>
+                    <td><span class="vace">&#xE52B;&#xE563;</span></td>
+                    <td><span class="vace">&#xE52C;&#xE564;</span></td>
+                    <td><span class="vace">&#xE50D;&#xE545;</span></td>
+                    <td><span class="vace">&#xE50E;&#xE546;</span></td>
+                    <td><span class="vace">&#xE50F;&#xE547;</span></td>
+                    <td><span class="vace">&#xE510;&#xE548;</span></td>
+                </tr>
+                <tr>
+                    <td><span class="ipa">ja</span></td>
+                    <td><span class="ipa">je</span></td>
+                    <td><span class="ipa">jo</span></td>
+                    <td><span class="ipa">ju</span></td>
+                    <td><span class="ipa">wa</span></td>
+                    <td><span class="ipa">wi</span></td>
+                    <td><span class="ipa">we</span></td>
+                    <td><span class="ipa">wo</span></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <th colspan="8">范版八拗音</th>
+            </tfoot>
+        </table>
         <table id="vacekana">
             <colgroup>
                 <col span="6" style="width: 15%;">
