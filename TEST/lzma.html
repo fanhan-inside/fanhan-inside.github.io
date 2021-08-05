@@ -70,33 +70,38 @@
         function kanaToVace(kana) {
             let vace = wanakana.toRomaji(kana)
                 // 促音
-                .replace(/cch/g, 'αch')
-                .replace(/ssh/g, 'αsh')
-                .replace(/tts/g, 'αts')
-                .replace(/bb/g, 'αb')
-                .replace(/dd/g, 'αd')
-                .replace(/ff/g, 'αf')
-                .replace(/gg/g, 'αg')
-                .replace(/hh/g, 'αh')
-                .replace(/jj/g, 'αj')
-                .replace(/kk/g, 'αk')
-                .replace(/mm/g, 'αm')
-                .replace(/pp/g, 'αp')
-                .replace(/qq/g, 'αq')
-                .replace(/rr/g, 'αr')
-                .replace(/ss/g, 'αs')
-                .replace(/tt/g, 'αt')
-                .replace(/vv/g, 'αv')
-                .replace(/ww/g, 'αw')
-                .replace(/xx/g, 'αx')
-                .replace(/zz/g, 'αz')
+                .replace(/cch/g, 'åch')
+                .replace(/ssh/g, 'åsh')
+                .replace(/tts/g, 'åts')
+                .replace(/bb/g, 'åb')
+                .replace(/dd/g, 'åd')
+                .replace(/ff/g, 'åf')
+                .replace(/gg/g, 'åg')
+                .replace(/hh/g, 'åh')
+                .replace(/jj/g, 'åj')
+                .replace(/kk/g, 'åk')
+                .replace(/mm/g, 'åm')
+                .replace(/pp/g, 'åp')
+                .replace(/qq/g, 'åq')
+                .replace(/rr/g, 'år')
+                .replace(/ss/g, 'ås')
+                .replace(/tt/g, 'åt')
+                .replace(/vv/g, 'åv')
+                .replace(/ww/g, 'åw')
+                .replace(/xx/g, 'åx')
+                .replace(/zz/g, 'åz')
                 // そのほか
                 .replace(/sh/g, 'x')
                 .replace(/ch/g, 'q')
                 .replace(/ts/g, 'c')
-                .replace(/h/g, 'η')
-                .replace(/w/g, 'ω');
+                .replace(/ya/g, 'á')
+                .replace(/yu/g, 'ú')
+                .replace(/yo/g, 'ó');
             return vace;
+        }
+
+        function refineKana(kana) {
+            return kana.replace(/ゃあ/g, 'ゃー').replace(/ゅう/g, 'ゅー').replace(/ょう/g, 'ょー');
         }
 
         function 查询并显示() {
@@ -126,6 +131,7 @@
                 r.values.forEach(v => {
                     let [仮名, 漢字, 意味] = v;
                     let vace = kanaToVace(仮名);
+                    仮名 = refineKana(仮名);
                     html += '<tr><td rowspan="2">' + (++count)
                         + '</td><td>' + vace.toUpperCase() + '</td><td rowspan="2">' + 仮名
                         + '</td><td>' + (漢字 ? 漢字 : 仮名) + '</td></tr><tr><td>' + vace + '</td><td>' + 意味 + '</td></tr>';
