@@ -101,18 +101,29 @@
 
         function 查询并显示() {
             let kana = document.getElementById("kana").value;
-            let sql = "SELECT kana, kanji, meaning FROM `ja_en` WHERE `kana` LIKE '" + kana + "%';";
-            var rs = db.exec(sql);
+            if (!wanakana.isKana(kana)) {
+                kana = wanakana.toKana(kana);
+            }
+            var rs = db.exec("SELECT kana, kanji, meaning FROM `ja_en` WHERE `kana` LIKE '" + kana + "%' ORDER BY kana;");
             console.log("查询「" + kana + "」……");
             let count = 0;
             let html = new String();
+            if (rs.length == 0) {
+                if (wanakana.isHiragana(kana)) {
+                    kana = wanakana.toKatakana(kana);
+                }
+                else {
+                    kana = wanakana.toHiragana(kana);
+                }
+                rs = db.exec("SELECT kana, kanji, meaning FROM `ja_en` WHERE `kana` LIKE '" + kana + "%' ORDER BY kana;");
+            }
             rs.forEach(r => {
                 r.values.forEach(v => {
                     let [仮名, 漢字, 意味] = v;
                     let vace = kanaToVace(仮名);
                     html += '<tr><td rowspan="2">' + (++count)
                         + '</td><td rowspan="2">' + vace.toUpperCase() + '</td><td rowspan="2">' + vace + '</td><td rowspan="2">' + 仮名
-                        + '</td><td>' + 漢字 + "</td></tr><tr><td>" + 意味 + "</td></tr>";
+                        + '</td><td>' + (漢字 ? 漢字 : 仮名) + "</td></tr><tr><td>" + 意味 + "</td></tr>";
                 });
             });
             document.getElementById("result").innerHTML = html;
