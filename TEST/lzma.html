@@ -104,6 +104,11 @@
             if (!wanakana.isKana(kana)) {
                 kana = wanakana.toKana(kana);
             }
+            if (!wanakana.isKana(kana)) {
+                document.getElementById("result").innerHTML = '';
+                document.getElementById("count").innerText = '0';
+                return;
+            }
             var rs = db.exec("SELECT kana, kanji, meaning FROM `ja_en` WHERE `kana` LIKE '" + kana + "%' ORDER BY kana;");
             console.log("查询「" + kana + "」……");
             let count = 0;
