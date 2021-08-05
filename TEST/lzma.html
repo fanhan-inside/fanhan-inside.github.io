@@ -10,8 +10,8 @@
             width: 100%;
         }
 
-        #ja_en td:nth-child(2),
-        #ja_en td:nth-child(3) {
+        #ja_en tr:nth-child(odd) td:nth-child(2),
+        #ja_en tr:nth-child(even) td:nth-child(1) {
             font-family: 'Fanism';
             font-feature-settings: 'ss05';
             padding-top: 1rem;
@@ -19,15 +19,15 @@
             text-align: left;
         }
 
-        #ja_en td:nth-child(4) {
+        #ja_en td:nth-child(3) {
             font-family: 'Fanism';
             font-size: 24px;
             text-align: left;
         }
 
+        #ja_en td:nth-child(4),
         #ja_en td:nth-child(5),
-        #ja_en td:nth-child(6),
-        #ja_en tr:nth-child(even) td:nth-child(1) {
+        #ja_en tr:nth-child(even) td:nth-child(2) {
             text-align: left;
         }
     </style>
@@ -127,8 +127,8 @@
                     let [仮名, 漢字, 意味] = v;
                     let vace = kanaToVace(仮名);
                     html += '<tr><td rowspan="2">' + (++count)
-                        + '</td><td rowspan="2">' + vace.toUpperCase() + '</td><td rowspan="2">' + vace + '</td><td rowspan="2">' + 仮名
-                        + '</td><td>' + (漢字 ? 漢字 : 仮名) + "</td></tr><tr><td>" + 意味 + "</td></tr>";
+                        + '</td><td>' + vace.toUpperCase() + '</td><td rowspan="2">' + 仮名
+                        + '</td><td>' + (漢字 ? 漢字 : 仮名) + '</td></tr><tr><td>' + vace + '</td><td>' + 意味 + '</td></tr>';
                 });
             });
             document.getElementById("result").innerHTML = html;
@@ -158,19 +158,19 @@
         <table id="ja_en" lang="ja">
             <colgroup>
                 <col style="background-color: whitesmoke; width: 80px;">
-                <col span="3">
+                <col span="2">
                 <col style="background-color: whitesmoke;">
             </colgroup>
             <thead>
                 <th>№</th>
-                <th colspan="2">ヴァチェ字（丸・角）</th>
+                <th>ヴァチェ字（丸・角）</th>
                 <th>蘇<sub>修</sub>美<sub>帝</sub>爾字</th>
                 <th>ジプシー字＆意味（英語）</th>
             </thead>
             <tbody id="result"></tbody>
             <tfoot>
                 <th colspan="2">合計</th>
-                <th id="count" colspan="2"></th>
+                <th id="count"></th>
                 <th>件</th>
             </tfoot>
         </table>
