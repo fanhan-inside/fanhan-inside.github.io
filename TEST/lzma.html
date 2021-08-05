@@ -10,19 +10,24 @@
             width: 100%;
         }
 
-        #ja_en td:nth-child(2) {
-            font-family: var(--font-family-ipa);
+        #ja_en td:nth-child(2),
+        #ja_en td:nth-child(3) {
+            font-family: 'Fanism';
+            font-feature-settings: 'ss05';
+            padding-top: 1rem;
+            padding-bottom: 1rem;
             text-align: left;
         }
 
-        #ja_en td:nth-child(3) {
+        #ja_en td:nth-child(4) {
             font-family: 'Fanism';
             font-size: 24px;
             text-align: left;
         }
 
-        #ja_en td:nth-child(4),
-        #ja_en td:nth-child(5) {
+        #ja_en td:nth-child(5),
+        #ja_en td:nth-child(6),
+        #ja_en tr:nth-child(even) td:nth-child(1) {
             text-align: left;
         }
     </style>
@@ -30,6 +35,7 @@
     <script src="../Lib/lzma/lzma.shim.js"></script>
     <script src="../Lib/lzma/lzmap.js"></script>
     <script src="../LIB/sql-js/sql-wasm.js"></script>
+    <script src="../LIB/wanakana/wanakana.min.js"></script>
     <script>
         var db = null;
         console.log("加载数据库……");
@@ -61,17 +67,52 @@
             throw new Error(err.message);
         });
 
+        function kanaToVace(kana) {
+            let vace = wanakana.toRomaji(kana)
+                // 促音
+                .replace(/cch/g, 'αch')
+                .replace(/ssh/g, 'αsh')
+                .replace(/tts/g, 'αts')
+                .replace(/bb/g, 'αb')
+                .replace(/dd/g, 'αd')
+                .replace(/ff/g, 'αf')
+                .replace(/gg/g, 'αg')
+                .replace(/hh/g, 'αh')
+                .replace(/jj/g, 'αj')
+                .replace(/kk/g, 'αk')
+                .replace(/mm/g, 'αm')
+                .replace(/pp/g, 'αp')
+                .replace(/qq/g, 'αq')
+                .replace(/rr/g, 'αr')
+                .replace(/ss/g, 'αs')
+                .replace(/tt/g, 'αt')
+                .replace(/vv/g, 'αv')
+                .replace(/ww/g, 'αw')
+                .replace(/xx/g, 'αx')
+                .replace(/zz/g, 'αz')
+                // そのほか
+                .replace(/sh/g, 'x')
+                .replace(/ch/g, 'q')
+                .replace(/ts/g, 'c')
+                .replace(/h/g, 'η')
+                .replace(/w/g, 'ω');
+            return vace;
+        }
+
         function 查询并显示() {
             let kana = document.getElementById("kana").value;
-            let sql = "SELECT pronunciation, kana, kanji, meaning FROM `ja_en` WHERE `kana`='" + kana + "';";
+            let sql = "SELECT kana, kanji, meaning FROM `ja_en` WHERE `kana` LIKE '" + kana + "%';";
             var rs = db.exec(sql);
             console.log("查询「" + kana + "」……");
             let count = 0;
             let html = new String();
             rs.forEach(r => {
                 r.values.forEach(v => {
-                    let [発音, 仮名, 漢字, 意味] = v;
-                    html += "<tr><td>" + (++count) + "</td><td>" + 発音 + "</td><td>" + 仮名 + "</td><td>" + 漢字 + "</td><td>" + 意味 + "</td></tr>";
+                    let [仮名, 漢字, 意味] = v;
+                    let vace = kanaToVace(仮名);
+                    html += '<tr><td rowspan="2">' + (++count)
+                        + '</td><td rowspan="2">' + vace.toUpperCase() + '</td><td rowspan="2">' + vace + '</td><td rowspan="2">' + 仮名
+                        + '</td><td>' + 漢字 + "</td></tr><tr><td>" + 意味 + "</td></tr>";
                 });
             });
             document.getElementById("result").innerHTML = html;
@@ -100,18 +141,15 @@
         <h2 class="heading">输出</h2>
         <table id="ja_en" lang="ja">
             <colgroup>
-                <col width="80px">
-                <col>
-                <col>
-                <col>
-                <col>
+                <col style="background-color: whitesmoke; width: 80px;">
+                <col span="3">
+                <col style="background-color: whitesmoke;">
             </colgroup>
             <thead>
                 <th>№</th>
-                <th>発音</th>
-                <th>仮名</th>
-                <th>漢字</th>
-                <th>意味（英語）</th>
+                <th colspan="2">ヴァチェ字（丸・角）</th>
+                <th>蘇<sub>修</sub>美<sub>帝</sub>爾字</th>
+                <th>ジプシー字＆意味（英語）</th>
             </thead>
             <tbody id="result"></tbody>
             <tfoot>
@@ -120,6 +158,11 @@
                 <th>件</th>
             </tfoot>
         </table>
+
+        <h2 class="heading">说明</h2>
+        <p>特意找个尺寸小点（即便压缩之后）的简明词典还真不容易，只能从开源或公众领域的素材当中拼凑。「简明」的意思就是单词之释义放诸四海而皆准于是没有版权著作权，有全球各个国家和地区之依法治国实践保障。当然我中华兲嘲上国自有国情在此，武德充沛一力降十会铁血大秦帝国司礼监掌印就是可以「指鹿为马」……「咋地吧？」</p>
+        <p>所以呢，在「卡壳世界」地图上不存在第一岛链的远东，一旦武德充沛内亚外宾摧枯拉朽一桶浆糊，被推到海边的「先人」跑都跑不了。在《设定集》注释中已经提到了「真・神州陆沉」的可能性极大，于是正如娱乐至死の色目逗哔炒作暴雪策划的「远古地精帝国发达文明」一样，残留的遗老遗少，只能在梦中憧憬曾经的光辉岁月。</p>
+        <p>顺便，结合其它设定，咱给混迹于欧罗巴各大兲子脚下首善之区国际一流和谐宜居之都城乡结合部大篷车村落的吉普赛人，找个砥砺奋进八年半以来追着中国籍汉族人狂喷「反汉贱种中国通」并以乡音难改之荒服方言追着土生土长的幽州户口叫嚣着「滚到哪哪去北京不是你的家」的根红苗正忠君爱国之「虽远必诛の强漢」祖宗。</p>
     </main>
     <footer>
         <hr />
@@ -127,6 +170,7 @@
         <ul>
             <li><a class="alone" target="_blank" href="sqlite.html">“看呐这卦”</a></li>
             <li><a class="alone" target="_blank" href="json.html">“活人还能被尿憋死不成？”（续）</a></li>
+            <li><a class="alone" target="_blank" href="../essay/000_excursus/000-006.html">对数视力表与瓦切假名</a></li>
         </ul>
     </footer>
 </body>
