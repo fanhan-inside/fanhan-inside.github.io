@@ -147,6 +147,11 @@ blockquote {
     padding: 1rem;
 }
 
+blockquote.pink {
+    background-color: lightpink;
+    border-color: lightcoral;
+}
+
 blockquote.emphasis {
     background-color: beige;
     border: 1px solid lightgray;
