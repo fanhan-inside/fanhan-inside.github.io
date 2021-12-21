@@ -152,6 +152,11 @@ blockquote.pink {
     border-color: lightcoral;
 }
 
+blockquote.cyan {
+    background-color: lightcyan;
+    border-color: lightblue;
+}
+
 blockquote.emphasis {
     background-color: beige;
     border: 1px solid lightgray;
