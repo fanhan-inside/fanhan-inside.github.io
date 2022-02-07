@@ -141,7 +141,7 @@ section {
 blockquote {
     box-sizing: border-box;
     background-color: whitesmoke;
-    border-left: 0.75rem solid;
+    border-left: 0.5rem solid;
     border-color: lightgray;
     margin: 1rem;
     padding: 1rem;
@@ -153,13 +153,18 @@ blockquote.pink {
 }
 
 blockquote.cyan {
-    background-color: lightcyan;
-    border-color: lightblue;
+    background-color: #def;
+    border-color: #8ccbf2;
 }
 
 blockquote.lime {
     background-color: #CDF7CD;
     border-color: #00A500;
+}
+
+blockquote.yelo {
+    background-color: #faf4d2;
+    border-color: #e0cb52;
 }
 
 blockquote.emphasis {
