@@ -148,13 +148,18 @@ blockquote {
 }
 
 blockquote.pink {
-    background-color: lightpink;
-    border-color: lightcoral;
+    background-color: #fcf2f2;
+    border-color: #dFb5b4;
 }
 
 blockquote.cyan {
     background-color: lightcyan;
     border-color: lightblue;
+}
+
+blockquote.lime {
+    background-color: #CDF7CD;
+    border-color: #00A500;
 }
 
 blockquote.emphasis {
