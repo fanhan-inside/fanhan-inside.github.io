@@ -1,0 +1,69 @@
+table {
+    border-collapse: collapse;
+    border: none;
+    margin: 1rem auto;
+}
+
+caption {
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+caption>span.onum {
+    margin: 0 0.25rem;
+    padding: 0 0.25rem;
+}
+
+thead {
+    border-bottom: 3px double gray;
+}
+
+tfoot {
+    border-top: 3px double gray;
+}
+
+th, td {
+    border: 1px solid dimgray;
+    padding: 0.5rem;
+    text-align: center;
+    vertical-align: middle;
+}
+
+th {
+    background-color: whitesmoke;
+    color: black;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+td {
+    background: transparent;
+}
+
+table.toc {
+    width: 99%;
+    margin: 2rem auto;
+}
+
+table.toc td a {
+    display: block;
+}
+
+table.toc tr:hover {
+    background-color: lightgoldenrodyellow;
+}
+
+table.dialogbox {
+    width: 100%;
+}
+
+table.dialogbox td {
+    border: none;
+    text-align: left;
+    vertical-align: top;
+}
+
+table.dialogbox td:nth-child(1) {
+    min-width: 300px;
+}

@@ -1,0 +1,150 @@
+div.signature {
+    padding: 0.5rem 2rem;
+    text-align: center;
+}
+
+div.signature::before {
+    content: url(signature_before.svg);
+}
+
+div.signature img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+div.signature p {
+    text-indent: 0;
+}
+
+span.sign-time, span.sign-name, span.sign-room {
+    display: inline;
+    text-indent: 0;
+}
+
+span.sign-time {
+    /* font-family: 'RomanyScript'; */
+    font-family: 'FanSign';
+    font-size: 2rem;
+    display: inline;
+    margin: 0.5rem 0;
+    padding: 0 0.5rem;
+}
+
+span.sign-time::before, span.sign-name::before {
+    /* content: url('../IMG/sign_name.svg'); */
+    content: '\E20C';
+    font-family: 'FanSign';
+    font-size: 2rem;
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0 0.5rem;
+}
+
+span.sign-time::after, span.sign-room::before {
+    /* content: url('../IMG/sign_room.svg'); */
+    content: '\E20D';
+    font-family: 'FanSign';
+    font-size: 2rem;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0 0.5rem;
+}
+
+hr.qed, hr.sign-name, hr.sign-room {
+    border: none;
+}
+
+hr.qed::before {
+    content: '就是这样，或曰：';
+    color: var(--text-color);
+}
+
+hr.qed::after {
+    /* content: 'Q.E.D.';
+    font-family: 'Malvern'; */
+    font-family: 'FanSign';
+    content: '\E212';
+    font-size: 2rem;
+    color: blue;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+span.qed::before {
+    /* content: 'Q.E.D.';
+    font-family: 'Malvern'; */
+    font-family: 'FanSign';
+    content: '\E212';
+    font-size: 2rem;
+    color: blue;
+    display: inline-block;
+    vertical-align: middle;
+    text-indent: 0;
+    margin: 0 0.5rem;
+}
+
+hr.sign-name::before {
+    /* content: 'Rigel van Confucia'; */
+    /* font-family: 'Elegance'; */
+    content: '\E20F';
+    font-family: 'FanSign';
+    font-size: 3rem;
+    color: darkblue;
+    vertical-align: middle;
+}
+
+hr.sign-name::after {
+    content: url('../IMG/heraldry_small.svg');
+    display: inline-block;
+    vertical-align: middle;
+}
+
+hr.sign-room::before {
+    /* content: 'Kargsburg'; */
+    /* font-family: 'KaiserGothic'; */
+    content: '\E210';
+    font-family: 'FanSign';
+    font-size: 3rem;
+    color: darkred;
+    vertical-align: middle;
+    margin-right: 12px;
+}
+
+hr.sign-room::after {
+    /* content: url('../IMG/seal_room.svg'); */
+    content: '\E20E';
+    font-family: 'FanSign';
+    font-size: 3rem;
+    color: red;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 12px;
+}
+
+hr.wort-verboten {
+    display: inline-block;
+    vertical-align: middle;
+    border: none;
+    margin: 0;
+}
+
+hr.wort-verboten::before {
+    content: "\1F6C7";
+    font-family: "Fanism";
+    font-size: 16px;
+    color: red;
+    vertical-align: middle;
+}
+
+hr.wort-verboten::after {
+    /* content: "Wort Verboten !";
+    font-family: "AngloText"; */
+    font-family: 'FanSign';
+    content: '\E211';
+    font-size: 16px;
+    color: black;
+    vertical-align: middle;
+}

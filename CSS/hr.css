@@ -1,0 +1,15 @@
+hr.outside {
+    border: none;
+    height: 2px;
+    width: 300px;
+    background-color: lightgray;
+    margin: 3rem auto;
+}
+
+hr.inside {
+    border: none;
+    height: 1px;
+    width: 50%;
+    margin: 0;
+    background-color: gray;
+}

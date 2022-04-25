@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 1200 30">
+    <defs>
+        <pattern id="纹样" width="30" height="30" x="0" y="0" patternUnits="userSpaceOnUse">
+            <g fill-rule="evenodd" transform="scale(.5)">
+        <path fill="green" d="M 0 30 l 24 -6 l 6 -24 l 6 24 l 24 6 l -24 6 l -6 24 l -6 -24 z
+            M 0 24 l 18 -6 l 6 -18 l 6 30 l 6 -30 l 6 18 l 18 6 l -30 6 l 30 6 l-18 6 l -6 18 l -6 -30 l -6 30 l -6 -18 l -18 -6 l 30 -6 z"/>
+            </g>
+        </pattern>
+    </defs>
+    <rect width="100%" height="30" x="0" y="0" fill="url(#纹样)"/>
+</svg>

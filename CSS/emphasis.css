@@ -1,0 +1,208 @@
+mark {
+    margin: 1px;
+    padding: 1px;
+    background-color: yellow;
+}
+
+mark.cyan {
+    background-color: cyan;
+}
+
+mark.lime {
+    background-color: lime;
+}
+
+i {
+    font-style: oblique;
+}
+
+b {
+    font-weight: bold;
+}
+
+em {
+    font-style: normal;
+    color: blue;
+}
+
+strong {
+    font-weight: bold;
+    font-style: normal;
+    color: red;
+}
+
+s {
+    margin: 0 2px;
+    padding: 0 2px;
+    background-color: lightgray;
+    text-decoration: red wavy line-through;
+}
+
+s.red {
+    text-decoration: red wavy line-through;
+}
+
+s.green {
+    text-decoration: darkgreen wavy line-through;
+}
+
+s.blue {
+    text-decoration: blue wavy line-through;
+}
+
+del, del.red {
+    margin: 0 1px;
+    padding: 0 1px;
+    text-decoration: red double line-through;
+}
+
+del.green {
+    text-decoration: darkgreen double line-through;
+}
+
+del.blue {
+    text-decoration: blue double line-through;
+}
+
+ins, ins.red {
+    margin: 0 1px;
+    padding: 0 1px;
+    font-style: normal;
+    color: darkred;
+    text-decoration: none;
+}
+
+ins.green {
+    color: darkgreen;
+}
+
+ins.blue {
+    color: darkblue;
+}
+
+.dot {
+    text-emphasis: dot;
+    text-emphasis-position: under right;
+    -webkit-text-emphasis: dot;
+    -webkit-text-emphasis-position: under right;
+}
+
+.circle {
+    text-emphasis: circle;
+    text-emphasis-position: under right;
+    -webkit-text-emphasis: circle;
+    -webkit-text-emphasis-position: under right;
+}
+
+.triangle {
+    text-emphasis: triangle;
+    text-emphasis-position: under right;
+    -webkit-text-emphasis: triangle;
+    -webkit-text-emphasis-position: under right;
+}
+
+cite {
+    margin: 1px;
+    padding: 1px;
+    font-style: normal;
+    text-emphasis: none;
+    -webkit-text-emphasis: none;
+    text-decoration: none;
+    border-bottom: 1px solid blue;
+}
+
+dfn {
+    margin: 1px;
+    padding: 1px;
+    font-style: normal;
+    text-emphasis: none;
+    -webkit-text-emphasis: none;
+    text-decoration: none;
+    border-bottom: 1px solid darkcyan;
+}
+
+u, abbr {
+    margin: 1px;
+    padding: 1px;
+    font-style: normal;
+    text-emphasis: none;
+    -webkit-text-emphasis: none;
+    text-decoration: none;
+    border-bottom: 1px solid black;
+}
+
+abbr.who {
+    border-bottom: 1px solid red;
+}
+
+abbr.where {
+    border-bottom: 1px solid darkblue;
+}
+
+abbr.pseudo {
+    border-bottom: 1px solid green;
+}
+
+abbr.uid {
+    font-weight: bold;
+    margin: none;
+    padding: none;
+    border: none;
+}
+
+abbr.uid::before {
+    content: '｛';
+    margin: 0 1px;
+}
+
+abbr.uid::after {
+    content: '｝';
+    margin: 0 1px;
+}
+
+abbr.myself {
+    font-weight: bold;
+    margin: none;
+    padding: none;
+    border: none;
+    color: blue;
+}
+
+abbr.myself::before {
+    content: '〔';
+    margin: 0 1px;
+}
+
+abbr.myself::after {
+    content: '〕';
+    margin: 0 1px;
+}
+
+abbr.nt {
+    font-weight: bold;
+    margin: none;
+    padding: none;
+    border: none;
+    color: black;
+}
+
+abbr.nt::after {
+    content: "V";
+    background-color: red;
+    font-size: 50%;
+    color: yellow;
+    margin: 4px;
+    padding: 0 4px;
+}
+
+article header abbr.uid, article header abbr.myself {
+    margin: 0 0.5rem;
+}
+
+article header abbr.uid::before, article header abbr.myself::before {
+    content: none;
+}
+
+article header abbr.uid::after, article header abbr.myself::after {
+    content: none;
+}

@@ -1,0 +1,202 @@
+@font-face {
+  font-family: "CharisSIL";
+  src: local("Charis SIL"), url(./sil/CharisSIL.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CharisSIL";
+  src: local("Charis SIL Bold"), url(./sil/CharisSIL-Bold.woff2) format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CharisSIL";
+  src: local("Charis SIL Italic"), url(./sil/CharisSIL-Italic.woff2) format("woff2");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "CharisSIL";
+  src: local("Charis SIL Bold Italic"), url(./sil/CharisSIL-BoldItalic.woff2) format("woff2");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "DoulosSIL";
+  src: local("Doulos SIL"), url(./sil/DoulosSIL.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GentiumPlus";
+  src: local("Gentium Plus"), url(./sil/GentiumPlus.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GentiumPlus";
+  src: local("Gentium Plus Italic"), url(./sil/GentiumPlus-Italic.woff2) format("woff2");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "GalatiaSIL";
+  src: local("Galatia SIL"), url(./sil/GalatiaSIL.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GalatiaSIL";
+  src: local("Galatia SIL Bold"), url(./sil/GalatiaSIL-Bold.woff2) format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Andika";
+  src: local("Andika"), url(./sil/Andika.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "EzraSIL";
+  src: local("EzraSIL"), url(./sil/EzraSIL.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "EzraSILSR";
+  src: local("EzraSILSR"), url(./sil/EzraSILSR.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Alkalami";
+  src: local("Alkalami"), url(./sil/Alkalami-Regular.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Alkalami";
+  src: local("Alkalami"), url(./sil/AlkalamiLight-Regular.woff2) format("woff2");
+  font-weight: lighter;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AwamiNastaliq";
+  src: local("Awami Nastaliq"), url(./sil/AwamiNastaliq-Regular.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Harmattan";
+  src: local("Harmattan"), url(./sil/Harmattan-Regular.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Harmattan";
+  src: local("Harmattan"), url(./sil/Harmattan-Bold.woff) format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "LateefGR";
+  src: local("LateefGR"), url(./sil/LateefGR-Regular.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ScheherazadeNew";
+  src: local("Scheherazade New"), url(./sil/ScheherazadeNew-Regular.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ScheherazadeNew";
+  src: local("Scheherazade New"), url(./sil/ScheherazadeNew-Bold.woff2) format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AbyssinicaSIL";
+  src: url(./sil/AbyssinicaSIL-Regular.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Akatab";
+  src: url(./sil/Akatab-Regular.woff) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Akatab";
+  src: url(./sil/Akatab-Bold.woff) format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Tagmukay";
+  src: url(./sil/Tagmukay-Regular.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Tagmukay";
+  src: url(./sil/Tagmukay-Bold.woff) format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SophiaNubian";
+  src: url(./sil/SophiaNubian.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SophiaNubian";
+  src: url(./sil/SophiaNubian-Bold.woff2) format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SophiaNubian";
+  src: url(./sil/SophiaNubian-Italic.woff2) format("woff2");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "SophiaNubian";
+  src: url(./sil/SophiaNubian-BoldItalic.woff2) format("woff2");
+  font-weight: bold;
+  font-style: italic;
+}

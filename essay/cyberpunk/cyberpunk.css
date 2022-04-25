@@ -1,0 +1,13 @@
+@import "../essay.css";
+:root {
+    --html-background-color: darkblue;
+    --text-reverse-color: white;
+}
+
+h1 {
+    background: radial-gradient(farthest-corner at 0 0, white, lightskyblue);
+}
+
+img.logo {
+    float: left;
+}

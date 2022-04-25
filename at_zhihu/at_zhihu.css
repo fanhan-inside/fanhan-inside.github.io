@@ -1,0 +1,43 @@
+@import url(../main.css);
+html {
+    background-image: url(IMG/at_zhihu_background.svg);
+}
+
+header.at_zhihu::before {
+    content: url(IMG/header_before.svg);
+}
+
+header.at_zhihu::after {
+    content: url(IMG/header_after.svg);
+}
+
+header.question::before {
+    content: url(IMG/header_question_before.svg);
+}
+
+header.question::after {
+    content: url(IMG/header_question_after.svg);
+}
+
+h1 {
+    background: none;
+}
+
+h2.answer-at-zhihu {
+    font-size: 1.5rem;
+    color: black;
+}
+
+h2.answer-at-zhihu::before {
+    content: url(../IMG/icon_small.svg);
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 1rem;
+}
+
+h2.answer-at-zhihu::after {
+    content: "希帕索斯永垂不朽！";
+    font-size: 1rem;
+    color: dimgray;
+    margin-left: 1rem;
+}

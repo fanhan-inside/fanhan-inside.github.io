@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta type="text/html" lang="zh" charset="UTF-8" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href="IMG/icon.svg" />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <title>希帕索斯永垂不朽</title>
+    <style type="text/css">
+        html {
+            background-color: var(--html-background-color);
+        }
+
+        body {
+            background-color: var(--body-background-color);
+            width: 1440px;
+            margin: 10px auto;
+            padding: 0;
+        }
+
+        main {
+            width: 100%;
+            padding: 0;
+        }
+
+        iframe {
+            width: 99%;
+            margin: 1rem auto;
+            border: none;
+        }
+
+        #profile-detail {
+            border: none;
+        }
+
+        header {
+            display: grid;
+            grid-template: "profile anonym works" 630px "profile sign-name sign-name" 150px / 480px 360px 1fr;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 1rem;
+            padding: 1rem 0;
+            border-top: 3px double dimgray;
+        }
+
+        h1.home {
+            background: transparent;
+            display: inline-block;
+            padding: 0.5rem;
+        }
+
+        span.onum {
+            margin: 0 0.25rem;
+            padding: 0 0.25rem;
+            color: blue;
+        }
+
+        .signature {
+            font-size: 125%;
+        }
+
+        #profile {
+            grid-area: profile;
+            margin: 0;
+            padding: 0;
+            background: url(IMG/profile.png) bottom left no-repeat, url(IMG/heraldry_large.svg) bottom right no-repeat;
+        }
+
+        #profile-detail {
+            border: none;
+            margin: 1rem;
+        }
+
+        #profile-detail td {
+            border: none;
+            text-align: left;
+            vertical-align: top;
+            padding: 0.5rem;
+        }
+
+        #profile-detail td:nth-child(1) {
+            font-weight: bold;
+        }
+
+        #anonym {
+            grid-area: anonym;
+            background: url(IMG/anonym.png) bottom right no-repeat;
+        }
+
+        #anonym table {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            border: none;
+        }
+
+        #anonym td {
+            border: none;
+            text-align: center;
+            vertical-align: middle;
+            padding: 0.25rem;
+        }
+
+        #anonym td:nth-child(1) {
+            font-weight: bold;
+            font-size: 125%;
+        }
+
+        #works {
+            grid-area: works;
+            margin-left: 1rem;
+        }
+
+        #works table {
+            border: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        #works td {
+            border: none;
+            text-align: left;
+            vertical-align: middle;
+            padding: 0.25rem;
+        }
+
+        #works td a {
+            display: inline-block;
+            margin-left: -1rem;
+            color: blue;
+            font-weight: bold;
+        }
+
+        #works td a:hover {
+            color: yellow;
+        }
+
+        #sign-room {
+            grid-area: sign-room;
+        }
+
+        #sign-name {
+            grid-area: sign-name;
+        }
+
+        caption {
+            padding: 0.5rem;
+        }
+
+        #last-updated {
+            font-size: 1.5rem;
+            margin: 0.5rem;
+            padding: 0.5rem;
+            text-align: center;
+        }
+
+        #articles {
+            padding: 1rem;
+            text-align: center;
+        }
+
+        #articles>span {
+            font-size: 1rem;
+            margin: 2px;
+            padding: 4px;
+            border: 1px solid lightgray;
+        }
+
+        #随笔 {
+            background: radial-gradient(farthest-corner at 0 0, white, lightcoral);
+        }
+
+        #异闻录 {
+            background: radial-gradient(farthest-corner at 0 0, lightskyblue, ghostwhite);
+        }
+
+        #设定集 {
+            background: radial-gradient(farthest-corner at 0 0, ghostwhite, lightskyblue);
+        }
+
+        #恶补记 {
+            background: radial-gradient(farthest-corner at 0 0, yellow, lightskyblue);
+        }
+
+        #知乎 {
+            background: radial-gradient(farthest-corner at 0 0, ghostwhite, plum);
+        }
+
+        #煎蛋 {
+            background: radial-gradient(farthest-corner at 0 0, ghostwhite, khaki);
+        }
+
+        #虎扑 {
+            background: radial-gradient(farthest-corner at 0 0, ghostwhite, orange);
+        }
+
+        #豆瓣 {
+            background: radial-gradient(farthest-corner at 0 0, ghostwhite, lightgreen);
+        }
+
+        #日志 {
+            background: radial-gradient(farthest-corner at 0 0, burlywood, ghostwhite);
+        }
+    </style>
+</head>
+
+<body>
+    <img src="IMG/cover.svg" />
+    <header>
+        <div id="profile" lang="zh">
+            <h1 class="home"><ruby>范狂夫<rt>van Confucia</rt></ruby></h1>
+            <span class="signature">故人心似中秋月，肯为狂夫照白头。</span>
+            <table id="profile-detail">
+                <colgroup>
+                    <col width="100px">
+                    <col>
+                </colgroup>
+                <tr>
+                    <td>地理位置</td>
+                    <td>现居北京<span class="tip">或曰“国际一流和谐宜居之都”</span>
+                        <hr id="sign-room" class="sign-room" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>所在行业</td>
+                    <td>咨询分析</td>
+                </tr>
+                <tr>
+                    <td>教育经历</td>
+                    <td>北京理工大学・应用数学</td>
+                </tr>
+                <tr>
+                    <td>个人简介</td>
+                    <td>孤苦伶仃可怜废柴草根文盲矬胖老穷光棍汉</td>
+                </tr>
+                <tr>
+                    <td>官方评价</td>
+                    <td>「精神病仆街写手不入流码农数学渣」<br />「宅男黑客活雷锋烟枪酒鬼」<br />「反汉贱种中国通」<br />「缩卵怂货窝囊废」<br />「头顶绿得发黑」<br />「性生活都有别人代劳」<br />「每一个看上的美女都被后清亲王用过」<br />……</td>
+                </tr>
+            </table>
+        </div>
+        <div id="anonym">
+            <table>
+                <caption>曾用名</caption>
+                <tr>
+                    <td>范客翁</td>
+                    <td>行路八千常是客，丈夫五十未称翁。</td>
+                </tr>
+                <tr>
+                    <td>范骨苔</td>
+                    <td>不令金樽映翠杓，坐待白骨生苍苔。</td>
+                </tr>
+                <tr>
+                    <td>范闷诗</td>
+                    <td>清尊与闷都倾尽，倦马和诗总勒回。</td>
+                </tr>
+                <tr>
+                    <td>范觞杀</td>
+                    <td>招得榴花共一觞，艾人笑杀老夫狂。</td>
+                </tr>
+                <tr>
+                    <td>范文简</td>
+                    <td><ruby>勤学好问曰文，平易不懈曰简。<rt>minimalism</rt></ruby></td>
+                </tr>
+                <tr>
+                    <td><ruby>范仲拙<rt><code style="border: none; background: transparent;">.f'h@N#</code></rt></ruby></td>
+                    <td>
+                        <pre class="code">fANhAN iNSiDE</pre>
+                    </td>
+                </tr>
+                <tr>
+                    <td><ruby>范硁然<rt>van Canyon</rt></ruby></td>
+                    <td>言必信，行必果，硁硁然。</td>
+                </tr>
+                <tr>
+                    <td><ruby>范书藤<rt>van Schooten</rt></ruby></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><ruby>范翗翷<rt>van Ceulen</rt></ruby></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><ruby>范铝杯<rt>van Lübeck</rt></ruby></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>………</td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+        <div id="works">
+            <table>
+                <caption>文集</caption>
+                <tr>
+                    <td>
+                        <a href="catalog/toc.html">（目录、索引、导读）</a><br />
+                        <span>顾名思义，在多个站点发表的文章链接之汇总。</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="catalog/issues.html">【讨论区（以及<samp>wiki</samp>）备份】</a><br />
+                        <span>对应<samp>GitHub</samp>项目的相关内容，修订以本站为准。</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="fantasy/fanism/toc.html">《范版西幻设定集》</a><br />
+                        <span>为了政治和意识形态斗争而创作的西方奇幻背景设定集，未完待续。</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="fantasy/bizarre/toc.html">《范版东幻异闻录》</a><span class="tip"><ruby lang="ja">完<rt>かん</rt>了<rt>りょう</rt></ruby></span><br />
+                        <span>为了继续进行政治和意识形态斗争而创作的东方玄幻背景剧本。</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="mathematics/fanism/toc.html">《范版数学恶补记》</a><br />
+                        <span>不忘初心牢记使命，为了丰富设定集内容而开始恶补的流水帐以及心得体会。</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="essay/toc.html">《囧斋随笔》（含『短篇集』）</a><br />
+                        <span>随笔、杂谈，既有旧作，也有〈与时俱进〉内容。</span><br />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="at_zhihu/toc.html">谈笑风生＠知乎</a><span class="tip"><ruby lang="ja">完<rt>かん</rt>了<rt>りょう</rt></ruby></span><br />
+                        <span>在知乎的提问、回答和评论。</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="at_jandan/toc.html">谈笑风生＠九省通衢の煎蛋</a><span class="tip"><ruby lang="ja">完<rt>かん</rt>了<rt>りょう</rt></ruby></span><br />
+                        <span>在煎蛋文章区、问答区、段子区、无聊图的评论备份。</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="at_hupu/toc.html">谈笑风生＠虎扑</a><span class="tip"><ruby lang="ja">完<rt>かん</rt>了<rt>りょう</rt></ruby></span><br />
+                        <span>在虎扑的各种扯淡。</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="at_douban/toc.html">谈笑风生＠豆瓣</a><span class="tip"><ruby lang="ja">完<rt>かん</rt>了<rt>りょう</rt></ruby></span><br />
+                        <span>在豆瓣的各种吐槽。</span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <hr id="sign-name" class="sign-name" />
+    </header>
+
+    <h2 class="girdle"><span>斗争新动向</span></h2>
+    <iframe src="timeline.html" height="800" scrolling="auto" marginwidth="0" marginheight="0"></iframe>
+
+    <h2 class="girdle"><span>文章列表</span></h2>
+    <div id="last-updated">更新于<span class="onum">2022-4-24 Solis</span>，共<span class="onum">2553</span>篇</div>
+    <div id="articles">
+        <span id="日志">日志</span>
+        <span id="异闻录">《范版东幻异闻录》</span>
+        <span id="设定集">《范版西幻设定集》</span>
+        <span id="恶补记">《范版数学恶补记》</span>
+        <span id="随笔">《囧斋随笔》</span>
+        <span id="知乎">谈笑风生＠知乎</span>
+        <span id="煎蛋">谈笑风生＠九省通衢の煎蛋</span>
+        <span id="虎扑">谈笑风生＠虎扑</span>
+        <span id="豆瓣">谈笑风生＠豆瓣</span>
+    </div>
+    <iframe src="articles.html" height="600" scrolling="auto" marginwidth="0" marginheight="0"></iframe>
+
+    <footer>
+        <span>Copyright© fANhAN iNSiDE, All Rights Reserved.</span>
+    </footer>
+</body>
+
+</html>

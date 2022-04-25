@@ -1,0 +1,19 @@
+@import url(../main.css);
+:root {
+    --html-background-color: var(--color-name-chinese-垩灰);
+    --body-background-color: var(--color-name-chinese-芡食白);
+    --text-reverse-color: var(--color-name-japanese-鳥の子);
+}
+
+html {
+    background-image: url(IMG/at_jandan_background.svg);
+}
+
+h1.at_jandan {
+    background: none;
+}
+
+h1.at_jandan>span.heading {
+    background-color: var(--color-name-chinese-槲寄生绿);
+    color: var(--color-name-chinese-鼬黄);
+}

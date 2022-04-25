@@ -1,0 +1,76 @@
+h1 {
+    font-size: 2rem;
+    margin: 0;
+    padding: 1rem;
+    background: radial-gradient(farthest-corner at 0 0, transparent, lightblue);
+}
+
+h1>img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.heading>span {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    box-sizing: border-box;
+    padding: 0.5rem 1rem;
+    border: none;
+}
+
+h2 {
+    font-size: 1.75rem;
+}
+
+h2.heading {
+    margin: 2rem 0;
+    padding: 0.5rem 1rem;
+    border-top: 3px double royalblue;
+    border-left: 3px double royalblue;
+}
+
+h2.girdle {
+    margin: 1rem -2rem;
+    padding: 1rem;
+    text-align: center;
+    background-color: var(--html-background-color);
+    color: var(--text-reverse-color);
+}
+
+header h2.remark {
+    font-size: 1.5rem;
+    text-align: right;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h3.heading>span {
+    border-top: 2px solid gray;
+    border-left: 2px solid gray;
+}
+
+h4 {
+    font-size: 1.25rem;
+}
+
+h4.heading>span {
+    border-top: 2px dashed gray;
+    border-left: 2px dashed gray;
+}
+
+h5, h6 {
+    font-size: 1rem;
+}
+
+h5.heading>span {
+    border-bottom: 1px solid gray;
+    border-right: 1px solid gray;
+}
+
+h6.heading>span {
+    border-bottom: 1px dashed gray;
+    border-right: 1px dashed gray;
+}

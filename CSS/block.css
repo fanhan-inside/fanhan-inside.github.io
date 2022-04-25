@@ -1,0 +1,203 @@
+article {
+    margin: 1rem auto 2rem auto;
+    padding: 20px;
+    background-color: antiquewhite;
+    border: 1px solid lightgray;
+    box-sizing: border-box;
+    box-shadow: 0.5rem 0.5rem 0.75rem dimgray;
+}
+
+article header {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 2rem;
+    padding: 0;
+}
+
+article header span.heading {
+    min-width: 0;
+    text-align: left;
+}
+
+article.bulletin, article.comment, article.message {
+    background-color: white;
+    box-sizing: border-box;
+    width: 90%;
+    margin: 1rem auto;
+    padding: 1rem;
+    border: 1px solid dimgray;
+}
+
+article.bulletin {
+    box-shadow: 0.25rem 0.25rem 0.5rem dimgray;
+}
+
+article.comment {
+    box-shadow: none;
+    border: 1px solid gray;
+}
+
+article.bulletin p, article.comment p, article.message p {
+    text-indent: 0;
+    line-height: 1.75rem;
+}
+
+article.bulletin header, article.comment header {
+    border-bottom: 1px solid lightgray;
+}
+
+article.bulletin header time, article.comment header time, article.message header time {
+    float: right;
+}
+
+article.bulletin footer {
+    box-sizing: border-box;
+    width: 100%;
+    border-top: 1px dashed lightgray;
+    min-height: 2rem;
+    text-align: left;
+    margin: 0;
+    padding: 0.25rem 1rem;
+    color: dimgray;
+}
+
+article.bulletin footer p {
+    margin: 0;
+    padding: 0;
+    font-size: small;
+}
+
+article.message {
+    border: 1px solid dimgray;
+    box-shadow: none;
+    margin: 0.5rem auto;
+    background-color: white;
+}
+
+article.message header {
+    border: none;
+}
+
+header.myself::before {
+    content: url(../IMG/icon_small.svg);
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0.5rem;
+}
+
+header.nt-simplified::before {
+    content: url(../DATA/20210303-001-004_NT_icon.png);
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0.5rem;
+}
+
+header.nt-traditional::before {
+    content: url(../DATA/20210303-001-003_Novgorod-Today_icon.png);
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0.5rem;
+}
+
+header.kt-simplified::before {
+    content: url(../DATA/20210312-001-004_KT_icon.png);
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0.5rem;
+}
+
+header.kt-traditional::before {
+    content: url(../DATA/20210312-001-003_Kazan-Today_icon.png);
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0.5rem;
+}
+
+article.message header.message span.heading {
+    border-bottom: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+}
+
+article.message header.myself span.heading {
+    border-bottom: 1px dashed gray;
+    border-right: 1px dashed gray;
+}
+
+article.bulletin article.bulletin,
+article.comment article.bulletin,
+article.comment article.comment {
+    background-color: whitesmoke;
+}
+
+section {
+    background: transparent;
+    box-sizing: border-box;
+    box-shadow: none;
+    border: none;
+    margin: 1rem auto;
+    padding: 1rem auto;
+}
+
+blockquote {
+    box-sizing: border-box;
+    background-color: whitesmoke;
+    border-left: 0.5rem solid;
+    border-color: lightgray;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+blockquote.pink {
+    background-color: #fcf2f2;
+    border-color: #dFb5b4;
+}
+
+blockquote.cyan {
+    background-color: #def;
+    border-color: #8ccbf2;
+}
+
+blockquote.lime {
+    background-color: #CDF7CD;
+    border-color: #00A500;
+}
+
+blockquote.yelo {
+    background-color: #faf4d2;
+    border-color: #e0cb52;
+}
+
+blockquote.emphasis {
+    background-color: beige;
+    border: 1px solid lightgray;
+}
+
+blockquote.inside {
+    background: honeydew;
+    border: 1px solid lightgray;
+}
+
+blockquote.outside {
+    background: mintcream;
+    border: 1px solid lightgray;
+    border-radius: 0.5rem;
+}
+
+blockquote.article {
+    background: antiquewhite;
+    border: 1px solid lightgray;
+}
+
+blockquote.description {
+    background: transparent;
+    border: none;
+    margin: 1rem;
+    padding: 0;
+}
+
+.poem p, .lyrics p {
+    line-height: 1.5rem;
+    margin: 0;
+    padding: 0;
+    text-indent: 1rem;
+}

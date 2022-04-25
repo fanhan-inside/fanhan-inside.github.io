@@ -1,0 +1,167 @@
+@font-face {
+    font-family: "AlouetteNormal";
+    src: url(./nouveau/AlouetteNormal.woff2) format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "AlouetteNormal";
+    src: url(./nouveau/AlouetteItalicNormal.woff2) format("woff2");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Ambrosia";
+    src: url(./nouveau/Ambrosia.woff2) format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "ArgosNormal";
+    src: url(./nouveau/ArgosNormal.woff2) format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Artistik";
+    src: url(./nouveau/Artistik.woff2) format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Baldur";
+    src: url(./nouveau/Baldur.woff2) format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "BocklinNormal";
+    src: url(./nouveau/BocklinNormal.woff2) format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Carmen";
+    src: url(./nouveau/Carmen.woff2) format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "ChildsNormal";
+    src: url(./nouveau/ChildsNormal.woff2) format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "EddaBlack";
+    src: url(./nouveau/EddaBlack.woff2) format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "ExcellentNormal";
+    src: url(./nouveau/ExcellentNormal.woff2) format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Franconia";
+    src: url(./nouveau/Franconia.woff2) format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "GiraldonNormal";
+    src: url(./nouveau/GiraldonNormal.woff2) format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "HarringtonNormal";
+    src: url(./nouveau/HarringtonNormal.woff2) format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "IslandGothic";
+    src: url(./nouveau/IslandGothic.woff2) format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Metropolitan";
+    src: url(./nouveau/Metropolitan.woff2) format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Murillo";
+    src: url(./nouveau/Murillo.woff2) format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "OceanaNormal";
+    src: url(./nouveau/OceanaNormal.woff2) format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Odessa";
+    src: url(./nouveau/Odessa.woff2) format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "OrbitAntique";
+    src: url(./nouveau/OrbitAntique.woff2) format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SiegfriedNormal";
+    src: url(./nouveau/SiegfriedNormal.woff2) format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Skjald";
+    src: url(./nouveau/Skjald.woff2) format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Spartana";
+    src: url(./nouveau/Spartana.woff2) format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Titania";
+    src: url(./nouveau/Titania.woff2) format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}

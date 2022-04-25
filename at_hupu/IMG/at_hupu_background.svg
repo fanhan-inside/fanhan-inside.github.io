@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 60 60">
+    <path fill="darkred" fill-rule="evenodd" stroke="yellow"
+    d="M 0 0 l 18 30 l -18 30 l 30 -18 l 30 18 l -18 -30 l 18 -30 l -30 18 z
+        M 24 12 h 12 v 12 h 12 v 12 h -12 v 12 h -12 v -12 h -12 v -12 h 12 z
+        M 12 12 l 18 12 l 18 -12 l -12 18 l 12 18 l -18 -12 l -18 12 l 12 -18 z"/>
+</svg>

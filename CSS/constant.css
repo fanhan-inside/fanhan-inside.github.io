@@ -1,0 +1,39 @@
+:root {
+    --html-background-color: dimgray;
+    --body-background-color: ivory;
+    --text-color: black;
+    --text-reverse-color: white;
+    --font-family-serif: Georgia, Times, 'Quivira', 'FreeSerif', 'Source Serif Pro', 'Noto Serif', 'IBM Plex Serif', serif;
+    --font-family-sans: Helvetica, Arial, 'FreeSans', 'Source Sans Pro', 'Noto Sans', 'Fira Sans', 'Clear Sans', 'IBM Plex Sans', sans-serif;
+    --font-family-mono: 'Noto Mono', 'Fira Mono', 'IBM Plex Mono', 'FreeMono', Courier, monospace;
+    --font-family-code: 'Fira Code', 'Consolas', 'FreeMono', 'Inconsolata', 'Source Code Pro', monospace;
+    --font-family-math: 'Aroania', 'Quivira';
+    --font-family-ipa: 'CharisSIL', 'DoulosSIL', 'GentiumPlus';
+    /* 试着用Unicode字符定义CSS变量 */
+    /* 素材选用「中国传统颜色」和「日本の伝統色」，网站界面类似，不知道究竟谁复制谁并成功 */
+    --color-name-japanese-水がき: #B9887D;
+    --color-name-japanese-鳥の子: #DAC9A6;
+    --color-name-japanese-鉄: #005243;
+    /* 注意「芡」「垩」「槲」「鼬」四字，在「中国传统颜色」网站上表现另类，应该是对应书法字体之字型不够充沛的缘故 */
+    --color-name-chinese-芡食白: #e2e1e4;
+    --color-name-chinese-垩灰: #737c7b;
+    --color-name-chinese-槲寄生绿: #2b312c;
+    --color-name-chinese-鼬黄: #fcb70a;
+    --color-name-chinese-铜绿: #549688;
+    /* 由五行而来设定的诺斯替各色 */
+    --color-name-gnosis-火-赤: red;
+    --color-name-gnosis-土-黄: yellow;
+    --color-name-gnosis-木-青: blue;
+    --color-name-gnosis-金-白: white;
+    --color-name-gnosis-水-黑: black;
+    --color-name-gnosis-木克土-绿: green;
+    --color-name-gnosis-土克水-缁: coral;
+    --color-name-gnosis-水克火-紫: purple;
+    --color-name-gnosis-火克金-粉: violet;
+    --color-name-gnosis-金克木-碧: turquoise;
+    --color-name-gnosis-木生火-靘: Indigo;
+    --color-name-gnosis-火生土-纁: darkred;
+    --color-name-gnosis-土生金-硅: salmon;
+    --color-name-gnosis-金生水-黻: lightskyblue;
+    --color-name-gnosis-水生木-黯: navy;
+}

@@ -1,0 +1,12 @@
+@import url(../essay.css);
+header {
+    border-bottom: 3px double lightgray;
+}
+
+footer {
+    border-top: 3px double lightgray;
+}
+
+h1 {
+    background: radial-gradient(farthest-corner at 0 0, white, skyblue);
+}

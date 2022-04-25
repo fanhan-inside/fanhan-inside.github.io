@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="220" height="220" version="1.1" viewBox="-5 -5 110 110">
+<!--突尼斯凯鲁万住宅大门钉饰图案-->
+    <path fill="red" stroke="black" d="M 50 10 l 10 -10 l 10 10 h 20 v 20 l 10 10 l -10 10l 10 10 l-10 10v 20 h -20 l -10 10 l -10 -10 l -10 10 l -10 -10 h -20 v -20 l -10 -10 l 10 -10 l -10 -10 l 10 -10 v -20 h 20 l 10 -10 l 10 10
+    l -10 10 h -20 v 20 l -10 10 l 10 10  v 20 h 20 l 10 10 l 10 -10 h 20 v -20 l 10 -10 l -10 -10 v -20 h -20 l -10 -10 z"/>
+    <path fill="yellow" fill-rule="evenodd" stroke="black" d="M 50 10 l -10 10 h -20 v 20 l -10 10 l 10 10  v 20 h 20 l 10 10 l 10 -10 h 20 v -20 l 10 -10 l -10 -10 v -20 h -20 l -10 -10 z
+    M 40 40 v 20 h 20 v -20 h -20 z M 20 20 l 20 20 M 20 80 l 20 -20 M 80 80 l -20 -20 M 80 20 l -20 20 M 50 10 v 30 M 90 50 h -30 m 50 90 v -30 M 10 50 h 30"/>
+</svg>

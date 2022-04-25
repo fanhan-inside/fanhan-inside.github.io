@@ -1,0 +1,203 @@
+span.Kargsfont {
+    font-family: 'Fanism';
+    font-size: 2rem;
+    color: blue;
+}
+
+/* 圣书体单字 */
+span.egyltr {
+    display: inline-block;
+    vertical-align: middle;
+    text-indent: 0;
+    margin: 2px;
+    padding: 12px 8px;
+    border: 2px solid dimgray;
+    border-radius: 8px;
+    background-color: whitesmoke;
+    color: darkred;
+    font-family: "JSesh";
+    font-size: 3rem;
+}
+
+/* 圣书体单字（查缺补漏） */
+span.egyltrx {
+    display: inline-block;
+    vertical-align: middle;
+    text-indent: 0;
+    margin: 2px;
+    padding: 12px 8px;
+    border: 2px solid dimgray;
+    border-radius: 8px;
+    background-color: whitesmoke;
+    color: darkred;
+    font-family: "Fanism";
+    font-size: 3rem;
+}
+
+/* 圣书体字符串（无合字） */
+span.egystr {
+    display: inline-block;
+    vertical-align: middle;
+    text-indent: 0;
+    margin: 2px;
+    padding: 12px 8px;
+    border: 2px solid dimgray;
+    border-radius: 8px;
+    background-color: whitesmoke;
+    color: darkred;
+    font-family: "Nilus";
+    font-size: 3rem;
+}
+
+/* 圣书体文本（有合字） */
+span.aegyptus {
+    display: inline-block;
+    text-indent: 0;
+    margin: 2px;
+    padding: 12px 8px;
+    border: 2px solid dimgray;
+    border-radius: 8px;
+    background-color: whitesmoke;
+    color: darkred;
+    font-family: "Aegyptus";
+    font-weight: bold;
+    font-size: 3rem;
+    font-feature-settings: "liga", "aalt";
+    vertical-align: middle;
+}
+
+span.hieroab {
+    display: inline-block;
+    text-indent: 0;
+    margin: 0 1px;
+    padding: 1 2px;
+    font-family: "Fanism";
+    font-size: 2rem;
+    /* font-weight: bold; */
+    vertical-align: middle;
+    font-feature-settings: "ss04";
+}
+
+span.hieratic {
+    display: inline-block;
+    text-indent: 0;
+    margin: 0 1px;
+    padding: 1 2px;
+    font-family: "Fanism";
+    font-feature-settings: "ss03";
+    font-size: 2rem;
+    vertical-align: middle;
+}
+
+span.transaegypt {
+    display: inline-block;
+    text-indent: 0;
+    margin: 0 1px;
+    padding: 1 2px;
+    font-family: "Fanism";
+    font-feature-settings: "ss02";
+    font-size: 2rem;
+    vertical-align: middle;
+}
+
+span.important {
+    display: inline-block;
+    margin: 0 0.25rem;
+    padding: 0.5rem;
+    text-indent: 0;
+    font-size: 3rem;
+    border: 1px solid gray;
+    background-color: white;
+    color: blue;
+    vertical-align: middle;
+}
+
+span.heading {
+    min-width: 10rem;
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 0.5rem;
+    border: none;
+    text-align: center;
+}
+
+span.tip {
+    color: dimgray;
+}
+
+span.tip::before {
+    content: '〔';
+}
+
+span.tip::after {
+    content: '〕';
+}
+
+span.holy {
+    margin: 0 0.25rem;
+    padding: 0.25rem;
+    text-indent: none;
+    font-weight: bold;
+    background: linear-gradient(yellow, red);
+    border-radius: 0.25rem;
+}
+
+span.evil {
+    margin: 0 0.25rem;
+    padding: 0.25rem;
+    text-indent: none;
+    font-weight: bold;
+    background: linear-gradient(lime, gray);
+    border-radius: 0.25rem;
+    color: purple;
+}
+
+span.lowbee {
+    margin: 0 0.25rem;
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+    font-weight: bold;
+    color: darkgreen;
+    background-color: lightpink;
+}
+
+span.ero {
+    margin: 0 0.25rem;
+    padding: 0.25rem;
+    text-indent: none;
+    border-radius: 0.25rem;
+    background-color: pink;
+    color: brown;
+}
+
+span.adinkra {
+    font-family: 'Fanism';
+    color: var(--color-name-japanese-鉄);
+    font-size: 3rem;
+    display: inline-block;
+    vertical-align: middle;
+    text-indent: 0;
+    margin: 1px;
+    padding: 1px;
+}
+
+span.astro {
+    font-family: 'Fanism';
+    font-size: 3rem;
+    display: inline-block;
+    vertical-align: middle;
+    text-indent: 0;
+    margin: 1px;
+    padding: 1px;
+}
+
+span.tritcoin {
+    font-family: 'Fanism';
+    color: sienna;
+    font-size: 3rem;
+    display: inline-block;
+    vertical-align: middle;
+    text-indent: 0;
+    margin: 1px;
+    padding: 1px;
+}

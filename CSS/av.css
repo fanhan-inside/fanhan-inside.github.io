@@ -1,0 +1,12 @@
+video {
+    margin: auto;
+    display: block;
+    cursor: pointer;
+}
+
+audio {
+    display: inline-block;
+    vertical-align: middle;
+    background-color: var(--color-name-japanese-水がき);
+    margin: 1px;
+}

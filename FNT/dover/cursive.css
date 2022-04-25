@@ -1,0 +1,167 @@
+@font-face {
+    font-family: "AmapolaNormal";
+    src: url(./cursive/AmapolaNormal.woff2) format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "ArtistsScript";
+    src: url(./cursive/ArtistsScript.woff2) format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "CancellarescaScriptNormal";
+    src: url(./cursive/CancellarescaScriptNormal.woff2) format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "CarpenterScript";
+    src: url(./cursive/CarpenterScript.woff2) format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "CertificateScript";
+    src: url(./cursive/CertificateScript.woff2) format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "CommercialScript";
+    src: url(./cursive/CommercialScript.woff2) format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Elegance";
+    src: url(./cursive/Elegance.woff2) format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "EngrossingScript";
+    src: url(./cursive/EngrossingScript.woff2) format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Figaro";
+    src: url(./cursive/Figaro.woff2) format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Flare";
+    src: url(./cursive/Flare.woff2) format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "GloriaScript";
+    src: url(./cursive/GloriaScript.woff2) format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Hanover";
+    src: url(./cursive/Hanover.woff2) format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Holly";
+    src: url(./cursive/Holly.woff2) format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "KunstlerBold";
+    src: url(./cursive/KunstlerBold.woff2) format("woff2");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Liberty";
+    src: url(./cursive/Liberty.woff2) format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "ManuscriptNormal";
+    src: url(./cursive/ManuscriptNormal.woff2) format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "OrionScriptNormal";
+    src: url(./cursive/OrionScriptNormal.woff2) format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "PantagraphScript";
+    src: url(./cursive/PantagraphScript.woff2) format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "ParkAvenue";
+    src: url(./cursive/ParkAvenue.woff2) format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "RomanyScript";
+    src: url(./cursive/RomanyScript.woff2) format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "TraftonScript";
+    src: url(./cursive/TraftonScript.woff2) format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "TypoUpright";
+    src: url(./cursive/TypoUpright.woff2) format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "UniversityScript";
+    src: url(./cursive/UniversityScript.woff2) format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "VirginiaAntique";
+    src: url(./cursive/VirginiaAntique.woff2) format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}

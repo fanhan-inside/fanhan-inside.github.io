@@ -1,0 +1,15 @@
+@import "../essay.css";
+
+h1 {
+    height: 48px;
+}
+
+h1::after {
+    /* content: url(../../IMG/excursus_heading.svg); */
+    content: '\E20B';
+    font-family: 'FanSign';
+    font-size: 3rem;
+    font-weight: normal;
+    color: dimgray;
+    float: right;
+}

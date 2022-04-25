@@ -1,0 +1,9 @@
+@import url(../main.css);
+html {
+    background: url(IMG/essay_toc_background_1.svg) top left repeat-y, url(IMG/essay_toc_background_2.svg) top right repeat-y;
+    background-color: var(--html-background-color);
+}
+
+h1 {
+    background: radial-gradient(farthest-corner at 0 0, white, red);
+}

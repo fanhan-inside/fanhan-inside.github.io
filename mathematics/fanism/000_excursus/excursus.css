@@ -1,0 +1,18 @@
+@import url(../../../main.css);
+html {
+    background: url(../IMG/mathematics_logo.svg) top left repeat-y, url(../IMG/mathematics_logo.svg) top right repeat-y;
+    background-color: var(--html-background-color);
+}
+
+h1 {
+    height: 64px;
+}
+
+h1::after {
+    /* content: url(../IMG/mathematics_heading.svg); */
+    content: "\E203";
+    font-family: 'FanSign';
+    font-size: 3rem;
+    font-weight: normal;
+    float: right;
+}

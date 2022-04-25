@@ -1,0 +1,25 @@
+@import url(../main.css);
+html {
+    background-image: url(IMG/at_hupu_background.svg);
+}
+
+header.at_hupu {
+    border-bottom: 1px solid lightgray;
+}
+
+header.at_hupu h1 {
+    background: radial-gradient(farthest-corner at 0 0, transparent, goldenrod);
+}
+
+header.at_hupu h1::before {
+    content: "虎扑扯淡";
+}
+
+header.at_hupu h2.original-title {
+    color: darkgray;
+}
+
+header.at_hupu h2.original-title::before {
+    content: "原标题：";
+    color: darkgoldenrod;
+}
