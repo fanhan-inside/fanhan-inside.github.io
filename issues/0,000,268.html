@@ -1,0 +1,80 @@
+﻿<!doctype html>
+<html lang="zh">
+
+<head>
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta lang="zh" charset="UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href="../IMG/icon.svg" />
+    <link rel="stylesheet" type="text/css" href="../main.css" />
+    <title>#268</title>
+</head>
+
+<body>
+    <nav>
+        <ul class="nav">
+            <li><a href="0,000,267.html">前一篇</a></li>
+            <li><a href="../catalog/issues.html">目录</a></li>
+            <li>后一篇</li>
+        </ul>
+        <ul class="aside">
+            <li><a target="_blank" href="../index.html">主页</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>《常绿阔叶林中的游标卡尺》</h1>
+        <h2 class="remark"></h2>
+    </header>
+    <main>
+        <article class="bulletin">
+            <header class="myself"><abbr class="myself">fanhan-inside</abbr><time>2022-09-04T21:36:09Z</time></header>
+            <p>前情提要；</p>
+            <ul>
+                <li><a class="alone" target="_blank" href="0,000,263.html">《克克焦焦计较而不知，故电子表格之道鲜矣》</a></li>
+            </ul>
+            <blockquote class="pink">
+                <p>下一步，或曰「NeXTStep」，想必资深读者们都猜到了：</p>
+                <p>既然<span class="tip">这个老谋深算老奸巨猾一向求全责备有备无患不打无把握之仗不做无准备之事的孤苦伶仃可怜废柴草根文盲矬胖老穷光棍汉精神病仆街写手不入流码农数学渣宅男黑客活雷锋烟枪酒鬼饭桶缩卵怂货窝囊废</span>都特意提到「reStructuredText」了，那么<span class="tip">其中一定蕴含着充沛的政治和意识形态内容丙引领了激烈的政治和意识形态斗争新动向</span>，排版引擎「Sphinx」也是「Jupiter Book」依赖的技术，并且「.ipynb」的重点就在于「文档内执行代码」以及「互动」……这些「合计」，可以直接在「日记」文档之内算出来。</p>
+            </blockquote>
+            <p>然后是前天（9/3）和昨天（9/4）日记当中记录饮食所用表格的形式之对比：</p>
+            <figure>
+                <img src="image/0,000,268-001.png" alt="9/3饮食" />
+                <figcaption><span>九月三日饮食</span></figcaption>
+            </figure>
+            <figure>
+                <img src="image/0,000,268-002.png" alt="9/4饮食" />
+                <figcaption><span>九月四日饮食</span></figcaption>
+            </figure>
+            <p>乍一看没区别，仔细一看：前者在单元格内换行，后者则每格必占据一行一列。</p>
+            <p>这都是由于Markdown表格不能合并单元格的缘故啊！那么reStructuredText呢？</p>
+            <p>很遗憾，忙活半天没<ruby>调<rt>tiáo</rt></ruby>出来。因为「Grid Table」里面有「全角」字符，编辑器里面对不齐的空格，Sphinx的编译错误，总有一边不适合你。两头的半途而废结果贴出来让读者们看个乐呵吧：</p>
+            <figure>
+                <img src="image/0,000,268-003.png" alt="VSCode 1.71" />
+                <figcaption><span>VSCode 1.71</span></figcaption>
+            </figure>
+            <figure>
+                <img src="image/0,000,268-004.png" alt="Kate 22.08" />
+                <figcaption><span>Kate 22.08</span></figcaption>
+            </figure>
+            <p>前者「VSCode」环境中的编辑器字体是「Source Code Pro」，其实换成默认的「Consolas」也一样，编辑器里面总是对不齐，并且相差还不是整数倍。后者「Kate」环境中字体是「Fira Code」，看上去就可以对齐了，全角字符的宽度是半角字符的两倍（精确），但是还没找到预览的方式（估计要配置Sphinx）。</p>
+            <p>导致问题的主要原因，已经标注在图上了，就是因为有些字体「收编字符太过充沛」，尤其是汉语和盎语共同使用同一个码位只凭借字体区分全角半角的「引号“”」「波折号——」之类，总得有一边妥协才行。到后来，各个「民族权力机构＆民族武装力量」颁布的本地化字符集当中，通常把本族人民群众惯用的异族语符号也登录进去，但是肥瘦宽窄要考虑到国情。</p>
+            <p>比方说图中的<em>「№」</em>就比较典型，本来是彻头彻尾的全角字符，哪怕左右结构的俩「字母偏旁」拆开了写也不至于这么窄，但是为了一些与盎文混合排版时的美观大方（半角语境当中夹杂个全角「符号」看着很别扭），有些字体就自作主张定制了。</p>
+            <p>另一个例子就是「西格玛」，用作「求和」的数学符号与「合计」的财务符号，不仅仅局限于希腊文语境，只不过由于都是半角字符，这个问题暴露得不明显。而到了使用全角字符的远东，与时俱进输入法候补列表当中就能同时显示出俩来：<em>大写希腊字母「Σ」、本土字符集当中的符号「∑」</em>……读者们能看出区别么？</p>
+            <p>说了这么多，「严于待人宽于律己」的欢迎学术探讨的「读者」们估计还有个问题：<strong>嗤。你这孤苦伶仃可怜废柴草根文盲矬胖老穷光棍汉精神病仆街写手不入流码农数学渣宅男黑客活雷锋烟枪酒鬼饭桶缩卵怂货窝囊废是今天才发现的么？</strong></p>
+            <p>当然不是，最晚最晚从建立第三个个人博客站点<a target="_blank" href="https://fanhan-inside.gitlab.io">囧斋之書</a>试验技术性文档的时候就发现了，因为明显使用Python技术栈的Jupiter Book也用Sphinx引擎，但是却推出了「MyST Markdown」，这种一看就从reStructuredText借鉴了大批技术细节的「魔改」版本，于是当时就有个尖锐的问题：<mark>为啥全套技术栈内部不用原汁原味的自家技术呢？</mark></p>
+            <p>肯定不是吃饱了撑得慌或者政治挂帅，<mark>估计是遇到了难以克服的技术问题，技术本身的「劣根性」问题。</mark></p>
+            <p>就是这个意思，虽然reStructuredText有「Grid Table」乍一看比Markdown不知高到哪里去了，但就是由于很难处理（或者说标准不统一）不等宽字符，所以除非全字母语境一般不会用作记录包含大批表格的正式文档。</p>
+            <p>关于「排版依赖の语法」的奇葩性与劣根性，想必业内众所周知，深恶痛绝的绝对不止我一个人。并且这种深恶痛绝是从当代许多赛博朋克中年才俊都没出生的时候就开始了：<strong>Makefile的Tab缩进依赖</strong>。</p>
+            <p>就说用Jupiter Book写「書」的时候，目录文件「<code>.yml</code>」也是个排版依赖的缩进列表，稍微对不齐——通常不是个别行而是一整块于是难以发现——立刻就编译错误了，搞定了之后才有继续补充内容的可能性。</p>
+            <p>前情提要（内嵌）：</p>
+            <ul>
+                <li><a class="alone" target="_blank" href="../at_douban/diary/20210223-002.html">“行业不景气，也得打零工恰饭嘛，不寒碜”</a></li>
+            </ul>
+            <p>顺便，《囧斋之書》进度停滞并不奇怪，这就是「试验性」站点的特点：发现不能简单切换文档内部代码执行的核心，于是许多计划（比如文档内部直接嵌入GNU Octave代码）都要搁置，另外还需要解决大批相关问题——比方说今天提到的「Jupiter Book（以及其它系列重要技术）为何使用很像reStructuredText的MyST Markdown格式乍一看“脱裤子放屁多此一举”」——其中蕴含的充沛政治和意识形态内容以及引领的激烈政治和意识形态斗争新动向。</p>
+            <p>就事论事，想必耍蛇多年的从情报工学神童到赛博朋克中坚的根红苗正忠君爱国的百善の新时代中国特色社会主义接班人，比我更有发言权，有苦说不出还是其它什么感想，「装蒜与否都是个人自由」，只要不至于恼羞成怒气急败坏然后运作「“海里有人”“海边有人”“手眼通中央军委/政法委”」的人脉玩啥「烽火戏诸侯」「一骑红尘妃子笑」公器私用就行……就为了条python，真不值。</p>
+        </article>
+    </main>
+</body>
+
+</html>
