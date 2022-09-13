@@ -1,87 +1,148 @@
-:lang(eo), :lang(en), :lang(fr), :lang(de), :lang(it), :lang(nl), :lang(es), :lang(pt), :lang(la), :lang(da), :lang(hu), :lang(pl), :lang(lt), :lang(grc), :lang(ru), :lang(sh) {
-    font-family: 'Aroania';
-    margin: 0 1px;
-    padding: 0 1px;
+:lang(eo),
+:lang(en),
+:lang(fr),
+:lang(de),
+:lang(it),
+:lang(nl),
+:lang(es),
+:lang(pt),
+:lang(la),
+:lang(da),
+:lang(hu),
+:lang(pl),
+:lang(lt),
+:lang(ru),
+:lang(sh) {
+    font-family: "IBM Plex Sans";
 }
 
-q:lang(eo), q:lang(en), q:lang(fr), q:lang(de), q:lang(it), q:lang(nl), q:lang(es), q:lang(pt), q:lang(la), q:lang(da), q:lang(hu), q:lang(pl), q:lang(lt), q:lang(grc), q:lang(ru), q:lang(sh) {
+q:lang(eo),
+q:lang(en),
+q:lang(fr),
+q:lang(de),
+q:lang(it),
+q:lang(nl),
+q:lang(es),
+q:lang(pt),
+q:lang(la),
+q:lang(da),
+q:lang(hu),
+q:lang(pl),
+q:lang(lt),
+q:lang(ru),
+q:lang(sh) {
+    color: darkblue;
+    margin: 1px;
+    padding: 1px;
+}
+
+:lang(grc) {
     font-size: 125%;
+    font-family: "Aroania";
+}
+
+q:lang(grc) {
     color: darkblue;
     margin: 1px;
     padding: 1px;
 }
 
 :lang(semitic) {
-    font-family: 'Fanism';
+    font-family: "Fanism";
     font-size: 125%;
-    margin: 0 1px;
-    padding: 0 1px;
 }
 
-:lang(cop), :lang(uga), :lang(arc), :lang(phn), :lang(smp), :lang(xpu), :lang(got), :lang(chu) {
-    font-family: 'Quivira';
+:lang(cop),
+:lang(uga),
+:lang(arc),
+:lang(phn),
+:lang(smp),
+:lang(xpu),
+:lang(got),
+:lang(chu) {
+    font-family: "Quivira";
     font-size: 125%;
-    margin: 0 1px;
-    padding: 0 1px;
 }
 
-/* font-family: 'ScheherazadeNew'; */
-
-/* font-family: 'EzraSIL'; */
-
-:lang(he), :lang(ar), :lang(syc) {
-    font-size: 125%;
-    margin: 0 1px;
-    padding: 0 1px;
+q:lang(fhn)::before {
+    content: "『";
 }
 
-rt:lang(he), rt:lang(ar) {
+q:lang(fhn)::after {
+    content: "』";
+}
+
+:lang(ar) {
+    /* font-family: 'ScheherazadeNew'; */
+    font-family: "IBM Plex Sans Arabic";
+}
+
+:lang(he) {
+    /* font-family: 'EzraSIL'; */
+    font-family: "IBM Plex Sans Hebrew";
+}
+
+:lang(syc) {
+    font-size: 125%;
+}
+
+rt:lang(he),
+rt:lang(ar) {
     color: darkgreen;
 }
 
-q:lang(ar), q:lang(he), q:lang(syc) {
+q:lang(ar),
+q:lang(he),
+q:lang(syc) {
     font-size: 125%;
     color: darkgreen;
     margin: 1px;
     padding: 1px;
 }
 
-q:lang(ar)::before, q:lang(he)::before, q:lang(syc)::before {
+q:lang(ar)::before,
+q:lang(he)::before,
+q:lang(syc)::before {
     font-family: var(--font-family-sans);
-    content: '⟨';
+    content: "⟨";
     color: red;
 }
 
-q:lang(ar)::after, q:lang(he)::after, q:lang(syc)::after {
+q:lang(ar)::after,
+q:lang(he)::after,
+q:lang(syc)::after {
     font-family: var(--font-family-sans);
-    content: '⟩';
+    content: "⟩";
     color: red;
 }
+
+/* :lang(ja) {
+    font-family: "IBM Plex Sans JP";
+} */
 
 q:lang(ja) {
     background-color: whitesmoke;
     color: darkblue;
-    margin: 0 1px;
-    padding: 0 1px;
 }
 
-q::before, q::after {
+q::before,
+q::after {
     padding: 0 1px;
     color: darkred;
 }
 
-q:lang(la)::before, q:lang(grc)::before {
+/* q:lang(la)::before,
+q:lang(grc)::before {
     content: '«';
 }
 
-q:lang(la)::after, q:lang(grc)::after {
+q:lang(la)::after,
+q:lang(grc)::after {
     content: '»';
-}
+} */
 
 :lang(nato) {
-    font-family: 'Avdira';
-    margin: 0 1px;
-    padding: 0 1px;
+    font-family: "Avdira";
 }
 
 q:lang(nato) {
@@ -92,17 +153,15 @@ q:lang(nato) {
 }
 
 q:lang(nato)::before {
-    content: '«';
+    content: "〖";
 }
 
 q:lang(nato)::after {
-    content: '»';
+    content: "〗";
 }
 
 :lang(sux) {
-    font-family: 'Fanism';
-    margin: 0 1px;
-    padding: 0 1px;
+    font-family: "Fanism";
 }
 
 q:lang(sux) {
@@ -120,7 +179,8 @@ q:lang(sux) {
     vertical-align: middle;
 }
 
-q:lang(sux)::before, q:lang(sux)::after {
+q:lang(sux)::before,
+q:lang(sux)::after {
     content: none;
 }
 
@@ -139,9 +199,7 @@ rt:lang(sux) {
 }
 
 :lang(egy) {
-    font-family: 'Fanism';
-    margin: 0 1px;
-    padding: 0 1px;
+    font-family: "Fanism";
 }
 
 q:lang(egy) {
@@ -159,7 +217,8 @@ q:lang(egy) {
     vertical-align: middle;
 }
 
-q:lang(egy)::before, q:lang(egy)::after {
+q:lang(egy)::before,
+q:lang(egy)::after {
     content: none;
 }
 
@@ -179,7 +238,7 @@ rt:lang(egy) {
 }
 
 .idiom {
-    font-family: 'FanIdiom';
+    font-family: "FanIdiom";
     font-size: 300%;
     text-indent: 0;
     margin: 1px;
@@ -209,7 +268,8 @@ q.idiom {
     color: brown;
 }
 
-q.idiom::before, q.idiom::after {
+q.idiom::before,
+q.idiom::after {
     content: none;
 }
 
@@ -219,11 +279,11 @@ q.idiom::before, q.idiom::after {
 }
 
 .ipa::before {
-    content: '[';
+    content: "[";
 }
 
 .ipa::after {
-    content: ']';
+    content: "]";
 }
 
 rt.ipa {
