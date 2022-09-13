@@ -11,6 +11,7 @@
 :lang(hu),
 :lang(pl),
 :lang(lt),
+:lang(grc),
 :lang(ru),
 :lang(sh) {
     font-family: "IBM Plex Sans";
@@ -29,6 +30,7 @@ q:lang(da),
 q:lang(hu),
 q:lang(pl),
 q:lang(lt),
+q:lang(grc),
 q:lang(ru),
 q:lang(sh) {
     color: darkblue;
@@ -36,7 +38,7 @@ q:lang(sh) {
     padding: 1px;
 }
 
-:lang(grc) {
+/* :lang(grc) {
     font-size: 125%;
     font-family: "Aroania";
 }
@@ -45,7 +47,7 @@ q:lang(grc) {
     color: darkblue;
     margin: 1px;
     padding: 1px;
-}
+} */
 
 :lang(semitic) {
     font-family: "Fanism";
