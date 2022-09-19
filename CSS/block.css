@@ -162,6 +162,11 @@ blockquote.lime {
     border-color: #00A500;
 }
 
+blockquote.grun {
+    background-color: #e9fbe9;
+    border-color: #52e052;
+}
+
 blockquote.yelo {
     background-color: #faf4d2;
     border-color: #e0cb52;

@@ -126,11 +126,11 @@ span.tip {
 }
 
 span.tip::before {
-    content: '〔';
+    content: '｟';
 }
 
 span.tip::after {
-    content: '〕';
+    content: '｠';
 }
 
 span.holy {

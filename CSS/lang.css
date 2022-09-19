@@ -14,7 +14,7 @@
 :lang(grc),
 :lang(ru),
 :lang(sh) {
-    font-family: "IBM Plex Sans";
+  font-family: "IBM Plex Sans";
 }
 
 q:lang(eo),
@@ -33,9 +33,9 @@ q:lang(lt),
 q:lang(grc),
 q:lang(ru),
 q:lang(sh) {
-    color: darkblue;
-    margin: 1px;
-    padding: 1px;
+  color: darkblue;
+  margin: 1px;
+  padding: 1px;
 }
 
 /* :lang(grc) {
@@ -50,8 +50,8 @@ q:lang(grc) {
 } */
 
 :lang(semitic) {
-    font-family: "Fanism";
-    font-size: 125%;
+  font-family: "Fanism";
+  font-size: 125%;
 }
 
 :lang(cop),
@@ -62,60 +62,55 @@ q:lang(grc) {
 :lang(xpu),
 :lang(got),
 :lang(chu) {
-    font-family: "Quivira";
-    font-size: 125%;
+  font-family: "Quivira";
+  font-size: 125%;
 }
 
-q:lang(fhn)::before {
-    content: "『";
-}
-
-q:lang(fhn)::after {
-    content: "』";
+q:lang(fhn) {
+  quotes: "〘" "〙" "〔" "〕";
 }
 
 :lang(ar) {
-    /* font-family: 'ScheherazadeNew'; */
-    font-family: "IBM Plex Sans Arabic";
+  /* font-family: 'ScheherazadeNew'; */
+  font-family: "IBM Plex Sans Arabic";
 }
 
 :lang(he) {
-    /* font-family: 'EzraSIL'; */
-    font-family: "IBM Plex Sans Hebrew";
+  /* font-family: 'EzraSIL'; */
+  font-family: "IBM Plex Sans Hebrew";
 }
 
 :lang(syc) {
-    font-size: 125%;
+  font-size: 125%;
 }
 
 rt:lang(he),
 rt:lang(ar) {
-    color: darkgreen;
+  color: darkgreen;
 }
 
 q:lang(ar),
 q:lang(he),
 q:lang(syc) {
-    font-size: 125%;
-    color: darkgreen;
-    margin: 1px;
-    padding: 1px;
+  font-size: 125%;
+  color: darkgreen;
+  margin: 1px;
+  padding: 1px;
+}
+
+q:lang(ar),
+q:lang(he),
+q:lang(syc) {
+  quotes: "⦗" "⦘" "⟮" "⟯";
 }
 
 q:lang(ar)::before,
 q:lang(he)::before,
-q:lang(syc)::before {
-    font-family: var(--font-family-sans);
-    content: "⟨";
-    color: red;
-}
-
+q:lang(syc)::before,
 q:lang(ar)::after,
 q:lang(he)::after,
 q:lang(syc)::after {
-    font-family: var(--font-family-sans);
-    content: "⟩";
-    color: red;
+  color: red;
 }
 
 /* :lang(ja) {
@@ -123,178 +118,180 @@ q:lang(syc)::after {
 } */
 
 q:lang(ja) {
-    background-color: whitesmoke;
-    color: darkblue;
+  background-color: whitesmoke;
+  color: darkblue;
 }
 
 q::before,
 q::after {
-    padding: 0 1px;
-    color: darkred;
+  padding: 0 1px;
+  color: darkred;
 }
 
-/* q:lang(la)::before,
-q:lang(grc)::before {
-    content: '«';
+q:lang(chs) {
+  /* “ ” ‘ ’ */
+  quotes: "\201C""\201D""\2018""\2019";
 }
 
-q:lang(la)::after,
-q:lang(grc)::after {
-    content: '»';
-} */
+q:lang(cht) {
+  /* 「 」 『 』 */
+  quotes: "\300C""\300D""\300E""\300F";
+}
+
+q:lang(la),
+q:lang(grc) {
+  /* « » ‹ › */
+  quotes: "\AB""\BB""\8B""\9B";
+}
 
 :lang(nato) {
-    font-family: "Avdira";
+  font-family: "Avdira";
 }
 
 q:lang(nato) {
-    font-size: 125%;
-    color: navy;
-    margin: 1px;
-    padding: 1px;
+  font-size: 125%;
+  color: navy;
+  margin: 1px;
+  padding: 1px;
 }
 
-q:lang(nato)::before {
-    content: "〖";
-}
-
-q:lang(nato)::after {
-    content: "〗";
+q:lang(nato) {
+  quotes: "⦃" "⦄" "⦅" "⦆";
 }
 
 :lang(sux) {
-    font-family: "Fanism";
+  font-family: "Fanism";
 }
 
 q:lang(sux) {
-    display: inline-block;
-    text-indent: 0;
-    margin: 2px;
-    padding: 8px;
-    border: 2px solid dimgray;
-    border-radius: 8px;
-    background-color: whitesmoke;
-    color: brown;
-    font-family: "Fanism";
-    /* font-weight: bold; */
-    font-size: 150%;
-    vertical-align: middle;
+  display: inline-block;
+  text-indent: 0;
+  margin: 2px;
+  padding: 8px;
+  border: 2px solid dimgray;
+  border-radius: 8px;
+  background-color: whitesmoke;
+  color: brown;
+  font-family: "Fanism";
+  /* font-weight: bold; */
+  font-size: 150%;
+  vertical-align: middle;
 }
 
 q:lang(sux)::before,
 q:lang(sux)::after {
-    content: none;
+  content: none;
 }
 
 span:lang(sux) {
-    font-size: 150%;
-    /* font-weight: bold; */
-    text-indent: 0;
-    margin: 1px;
-    padding: 1px;
-    display: inline-block;
-    vertical-align: middle;
+  font-size: 150%;
+  /* font-weight: bold; */
+  text-indent: 0;
+  margin: 1px;
+  padding: 1px;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 rt:lang(sux) {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
 :lang(egy) {
-    font-family: "Fanism";
+  font-family: "Fanism";
 }
 
 q:lang(egy) {
-    display: inline-block;
-    text-indent: 0;
-    margin: 2px;
-    padding: 8px;
-    border: 2px solid dimgray;
-    border-radius: 8px;
-    background-color: whitesmoke;
-    color: brown;
-    font-family: "Fanism";
-    font-weight: bold;
-    font-size: 300%;
-    vertical-align: middle;
+  display: inline-block;
+  text-indent: 0;
+  margin: 2px;
+  padding: 8px;
+  border: 2px solid dimgray;
+  border-radius: 8px;
+  background-color: whitesmoke;
+  color: brown;
+  font-family: "Fanism";
+  font-weight: bold;
+  font-size: 300%;
+  vertical-align: middle;
 }
 
 q:lang(egy)::before,
 q:lang(egy)::after {
-    content: none;
+  content: none;
 }
 
 span:lang(egy) {
-    font-size: 300%;
-    text-indent: 0;
-    margin: 1px;
-    padding: 1px;
-    display: inline-block;
-    vertical-align: middle;
+  font-size: 300%;
+  text-indent: 0;
+  margin: 1px;
+  padding: 1px;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 rt:lang(egy) {
-    color: brown;
-    font-size: 200%;
-    font-weight: bold;
+  color: brown;
+  font-size: 200%;
+  font-weight: bold;
 }
 
 .idiom {
-    font-family: "FanIdiom";
-    font-size: 300%;
-    text-indent: 0;
-    margin: 1px;
-    padding: 1px;
+  font-family: "FanIdiom";
+  font-size: 300%;
+  text-indent: 0;
+  margin: 1px;
+  padding: 1px;
 }
 
 span.idiom {
-    display: inline-block;
-    vertical-align: middle;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 rt.idiom {
-    font-size: 200%;
-    font-weight: bold;
-    color: brown;
+  font-size: 200%;
+  font-weight: bold;
+  color: brown;
 }
 
 q.idiom {
-    display: inline-block;
-    vertical-align: middle;
-    text-indent: 0;
-    margin: 2px;
-    padding: 8px;
-    border: 2px solid dimgray;
-    border-radius: 8px;
-    background-color: whitesmoke;
-    color: brown;
+  display: inline-block;
+  vertical-align: middle;
+  text-indent: 0;
+  margin: 2px;
+  padding: 8px;
+  border: 2px solid dimgray;
+  border-radius: 8px;
+  background-color: whitesmoke;
+  color: brown;
 }
 
 q.idiom::before,
 q.idiom::after {
-    content: none;
+  content: none;
 }
 
 .ipa {
-    font-family: var(--font-family-ipa);
-    color: var(--color-name-japanese-鉄);
+  font-family: var(--font-family-ipa);
+  color: var(--color-name-japanese-鉄);
 }
 
 .ipa::before {
-    content: "[";
+  content: "[";
 }
 
 .ipa::after {
-    content: "]";
+  content: "]";
 }
 
 rt.ipa {
-    font-size: 100%;
+  font-size: 100%;
 }
 
 rt.bopomofo {
-    font-family: "Fanism";
-    font-feature-settings: "ss01";
-    font-size: 200%;
-    color: var(--color-name-japanese-鉄);
+  font-family: "Fanism";
+  font-feature-settings: "ss01";
+  font-size: 200%;
+  color: var(--color-name-japanese-鉄);
 }
