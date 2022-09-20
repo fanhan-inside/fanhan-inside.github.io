@@ -5,11 +5,21 @@ mark {
 }
 
 mark.cyan {
-    background-color: #BBEFFC;
+    background-color: #bbeffc;
 }
 
 mark.lime {
     background-color: #52e052;
+}
+
+mark.x1st {
+    background-color: #52e052; /* "mint" */
+}
+mark.x2nd {
+    background-color: #dfb5b4; /* "pink" */
+}
+mark.x3rd {
+    background-color: #8ccbf2; /* "aqua" */
 }
 
 i {
@@ -50,7 +60,8 @@ s.blue {
     text-decoration: blue wavy line-through;
 }
 
-del, del.red {
+del,
+del.red {
     margin: 0 1px;
     padding: 0 1px;
     text-decoration: red double line-through;
@@ -64,7 +75,8 @@ del.blue {
     text-decoration: blue double line-through;
 }
 
-ins, ins.red {
+ins,
+ins.red {
     margin: 0 1px;
     padding: 0 1px;
     font-style: normal;
@@ -121,7 +133,8 @@ dfn {
     border-bottom: 1px solid darkcyan;
 }
 
-u, abbr {
+u,
+abbr {
     margin: 1px;
     padding: 1px;
     font-style: normal;
@@ -151,12 +164,12 @@ abbr.uid {
 }
 
 abbr.uid::before {
-    content: '｛';
+    content: "｛";
     margin: 0 1px;
 }
 
 abbr.uid::after {
-    content: '｝';
+    content: "｝";
     margin: 0 1px;
 }
 
@@ -169,12 +182,12 @@ abbr.myself {
 }
 
 abbr.myself::before {
-    content: '〔';
+    content: "〖";
     margin: 0 1px;
 }
 
 abbr.myself::after {
-    content: '〕';
+    content: "〗";
     margin: 0 1px;
 }
 
@@ -195,14 +208,17 @@ abbr.nt::after {
     padding: 0 4px;
 }
 
-article header abbr.uid, article header abbr.myself {
+article header abbr.uid,
+article header abbr.myself {
     margin: 0 0.5rem;
 }
 
-article header abbr.uid::before, article header abbr.myself::before {
+article header abbr.uid::before,
+article header abbr.myself::before {
     content: none;
 }
 
-article header abbr.uid::after, article header abbr.myself::after {
+article header abbr.uid::after,
+article header abbr.myself::after {
     content: none;
 }
