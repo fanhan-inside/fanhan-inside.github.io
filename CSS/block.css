@@ -206,3 +206,20 @@ blockquote.description {
     padding: 0;
     text-indent: 1rem;
 }
+
+details.infostuff {
+    padding: 10px;
+    /* border: 1px solid teal; */
+    border-left: 5px solid teal;
+    border-right: 5px solid teal;
+    border-radius: 10px;
+}
+
+details.infostuff summary.captionbar {
+    font-family: serif;
+    font-size: 150%;
+    font-weight: bolder;
+    text-align: center;
+    color: teal;
+    border-bottom: 3px double teal;
+}
