@@ -19,7 +19,9 @@ article header span.heading {
     text-align: left;
 }
 
-article.bulletin, article.comment, article.message {
+article.bulletin,
+article.comment,
+article.message {
     background-color: white;
     box-sizing: border-box;
     width: 90%;
@@ -37,16 +39,21 @@ article.comment {
     border: 1px solid gray;
 }
 
-article.bulletin p, article.comment p, article.message p {
+article.bulletin p,
+article.comment p,
+article.message p {
     text-indent: 0;
     line-height: 1.75rem;
 }
 
-article.bulletin header, article.comment header {
+article.bulletin header,
+article.comment header {
     border-bottom: 1px solid lightgray;
 }
 
-article.bulletin header time, article.comment header time, article.message header time {
+article.bulletin header time,
+article.comment header time,
+article.message header time {
     float: right;
 }
 
@@ -149,7 +156,7 @@ blockquote {
 
 blockquote.pink {
     background-color: #fcf2f2;
-    border-color: #dFb5b4;
+    border-color: #dfb5b4;
 }
 
 blockquote.cyan {
@@ -158,8 +165,8 @@ blockquote.cyan {
 }
 
 blockquote.lime {
-    background-color: #CDF7CD;
-    border-color: #00A500;
+    background-color: #cdf7cd;
+    border-color: #00a500;
 }
 
 blockquote.grun {
@@ -200,14 +207,22 @@ blockquote.description {
     padding: 0;
 }
 
-.poem p, .lyrics p {
+.poem p,
+.lyrics p {
     line-height: 1.5rem;
     margin: 0;
     padding: 0;
     text-indent: 1rem;
 }
 
-details.infostuff {
+summary.caption {
+    font-family: serif;
+    font-size: 150%;
+    font-weight: bolder;
+    text-align: center;
+}
+
+details.info {
     padding: 10px;
     /* border: 1px solid teal; */
     border-left: 5px solid teal;
@@ -215,11 +230,7 @@ details.infostuff {
     border-radius: 10px;
 }
 
-details.infostuff summary.captionbar {
-    font-family: serif;
-    font-size: 150%;
-    font-weight: bolder;
-    text-align: center;
+details.info summary.caption {
     color: teal;
     border-bottom: 3px double teal;
 }
