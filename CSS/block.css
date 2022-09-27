@@ -234,3 +234,15 @@ details.info summary.caption {
     color: teal;
     border-bottom: 3px double teal;
 }
+
+details.mine {
+    padding: 10px;
+    border-left: 5px solid darkorange;
+    border-right: 5px solid darkorange;
+    border-radius: 10px;
+}
+
+details.mine summary.caption {
+    color: darkorange;
+    border-bottom: 3px double darkorange;
+}
