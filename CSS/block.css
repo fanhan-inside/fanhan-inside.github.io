@@ -222,7 +222,8 @@ summary.caption {
     text-align: center;
 }
 
-details.info {
+/* 「截图」「扫描」「摄影」「录像」 */
+details.snap {
     padding: 10px;
     /* border: 1px solid teal; */
     border-left: 5px solid teal;
@@ -230,19 +231,151 @@ details.info {
     border-radius: 10px;
 }
 
-details.info summary.caption {
+details.snap summary {
     color: teal;
     border-bottom: 3px double teal;
 }
 
+/* 「个人码字内容」 */
 details.mine {
     padding: 10px;
     border-left: 5px solid darkorange;
     border-right: 5px solid darkorange;
     border-radius: 10px;
 }
-
-details.mine summary.caption {
+details.mine summary {
     color: darkorange;
     border-bottom: 3px double darkorange;
+}
+details.mine div.narrate {
+    background-color: lightgoldenrodyellow;
+    padding: 10px;
+}
+details.mine div.explain {
+    background-color: lightcyan;
+    padding: 10px;
+}
+details.mine div.mention {
+    background-color: lavender;
+    padding: 10px;
+}
+
+/* 「告示牌」“Admonition”“Callout Box” */
+details.callout {
+    background-color: lightgray;
+    margin: 1rem auto;
+    padding: 1rem;
+    border-top: 1px dashed dimgray;
+    border-bottom: 1px dashed dimgray;
+    border-left: 5px solid dimgray;
+    border-right: 5px solid dimgray;
+    border-radius: 10px;
+}
+details.callout summary {
+    color: white;
+    min-height: 2rem;
+    margin: 0;
+    padding: 1rem;
+    border-bottom: 5px solid lightgray;
+    border-radius: 10px;
+}
+details.callout summary::before {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0.5rem;
+}
+details.callout summary.ad-note {
+    background-color: #444d6a;
+    border-color: #4287ff;
+}
+details.callout summary.ad-note::before {
+    content: url(../IMG/callout/ad-note.svg);
+}
+details.callout summary.ad-tldr {
+    background-color: #3d526b;
+    border-color: #00aeff;
+}
+details.callout summary.ad-tldr::before {
+    content: url(../IMG/callout/ad-tldr.svg);
+}
+details.callout summary.ad-info {
+    background-color: #3c5267;
+    border-color: #00bad6;
+}
+details.callout summary.ad-info::before {
+    content: url(../IMG/callout/ad-info.svg);
+}
+details.callout summary.ad-hint {
+    background-color: #3d5361;
+    border-color: #00bda4;
+}
+details.callout summary.ad-hint::before {
+    content: url(../IMG/callout/ad-hint.svg);
+}
+details.callout summary.ad-done {
+    background-color: #3c5458;
+    border-color: #00c753;
+}
+details.callout summary.ad-done::before {
+    content: url(../IMG/callout/ad-done.svg);
+}
+details.callout summary.ad-question {
+    background-color: #475753;
+    border-color: #63de17;
+}
+details.callout summary.ad-question::before {
+    content: url(../IMG/callout/ad-question.svg);
+}
+details.callout summary.ad-warning {
+    background-color: #585052;
+    border-color: #ff9100;
+}
+details.callout summary.ad-warning::before {
+    content: url(../IMG/callout/ad-warning.svg);
+}
+details.callout summary.ad-fail {
+    background-color: #58495b;
+    border-color: #ff5252;
+}
+details.callout summary.ad-fail::before {
+    content: url(../IMG/callout/ad-fail.svg);
+}
+details.callout summary.ad-error {
+    background-color: #564257;
+    border-color: #ff1a47;
+}
+details.callout summary.ad-error::before {
+    content: url(../IMG/callout/ad-error.svg);
+}
+details.callout summary.ad-bug {
+    background-color: #563f5a;
+    border-color: #f50056;
+}
+details.callout summary.ad-bug::before {
+    content: url(../IMG/callout/ad-bug.svg);
+}
+details.callout summary.ad-example {
+    background-color: #49476b;
+    border-color: #7c4dff;
+}
+details.callout summary.ad-example::before {
+    content: url(../IMG/callout/ad-example.svg);
+}
+details.callout summary.ad-quote {
+    background-color: #4d5060;
+    border-color: #9e9e9e;
+}
+details.callout summary.ad-quote::before {
+    content: url(../IMG/callout/ad-quote.svg);
+}
+details.callout footer {
+    box-sizing: border-box;
+    width: 100%;
+    border-top: 1px solid lightgray;
+    min-height: 2rem;
+    text-align: left;
+    margin: 0;
+    padding: 0.5rem;
+    color: #4a341c;
+    font-size: 0.8rem;
 }
