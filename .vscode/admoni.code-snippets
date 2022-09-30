@@ -44,5 +44,16 @@
         ],
         "description": "备份情报兼素材",
         "scope": "html"
+    },
+    "「囧斋起居注、随笔、怪奇事件簿」": {
+        "prefix": ["ad-kb"],
+        "body": [
+            "<details class=\"mine\">",
+            "\t<summary class=\"caption\"><ruby>囧斋<rt lang=\"de\">Kargsburg</rt></ruby>${1|起居注・日记,起居注・饮食,随笔,怪奇事件簿|}</summary>",
+            "$2",
+            "</details>"
+        ],
+        "description": "囧斋那些事儿",
+        "scope": "html"
     }
 }
