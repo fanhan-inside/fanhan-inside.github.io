@@ -1,0 +1,48 @@
+{
+    // Place your fanhan-inside.github.io 工作区 snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and
+    // description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope
+    // is left empty or omitted, the snippet gets applied to all languages. The prefix is what is
+    // used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+    // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders.
+    // Placeholders with the same ids are connected.
+    // Example:
+    // "Print to console": {
+    // 	"scope": "javascript,typescript",
+    // 	"prefix": "log",
+    // 	"body": [
+    // 		"console.log('$1');",
+    // 		"$2"
+    // 	],
+    // 	"description": "Log output to console"
+    // }
+    "《卡壳世界》": {
+        "prefix": ["ad-kw"],
+        "body": [
+            "<details class=\"mine\" open>",
+            "\t<summary class=\"caption\"><ruby>卡壳世界<rt lang=\"en\">The Kock World</rt></ruby>・${1|<ruby>作文<rt lang=\"en\">composition</rt></ruby>,<ruby>草稿<rt lang=\"en\">draft</rt></ruby>,<ruby>注释<rt lang=\"en\">scholium</rt></ruby>|}</summary>",
+            "\t$2",
+            "</details>"
+        ],
+        "description": "卡壳世界",
+        "scope": "html"
+    },
+    "《邦昌時代》": {
+        "prefix": ["ad-kj"],
+        "body": [
+            "<details class=\"mine\" open>\n<summary class=\"caption\" lang=\"ja\"><ruby>邦昌時代<rt>くにまさじだい</rt></ruby>・${1|<ruby>本文<rt>ほんもん</rt></ruby>,<ruby>別題<rt>べつだい</rt></ruby>|}</summary>\n$2\n</details>"
+        ],
+        "description": "邦昌時代",
+        "scope": "html"
+    },
+    "「范某××备份于此」": {
+        "prefix": ["ad-snap"],
+        "body": [
+            "<details class=\"snap\">",
+            "\t<summary class=\"caption\">范某${1|截图,摄影,录像,扫描|}备份于此</summary>",
+            "$2",
+            "</details>"
+        ],
+        "description": "备份情报兼素材",
+        "scope": "html"
+    }
+}
