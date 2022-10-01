@@ -256,7 +256,7 @@ details.mine div.explain {
     padding: 10px;
 }
 details.mine div.mention {
-    background-color: lavender;
+    background-color: var(--color-name-japanese-桜);
     padding: 10px;
 }
 
@@ -280,6 +280,9 @@ details.callout strong {
 }
 details.callout em {
     color: lightskyblue;
+}
+details.callout ins {
+    color: hotpink;
 }
 details.callout a {
     color: lightseagreen;

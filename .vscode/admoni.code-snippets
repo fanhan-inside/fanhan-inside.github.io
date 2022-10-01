@@ -23,7 +23,7 @@
             "\t$2",
             "</details>"
         ],
-        "description": "卡壳世界",
+        "description": "《范版西幻设定集：建设新时代中国特色社会主义奇幻世界》",
         "scope": "html"
     },
     "《邦昌時代》": {
@@ -31,10 +31,10 @@
         "body": [
             "<details class=\"mine\" open>\n<summary class=\"caption\" lang=\"ja\"><ruby>邦昌時代<rt>くにまさじだい</rt></ruby>・${1|<ruby>本文<rt>ほんもん</rt></ruby>,<ruby>別題<rt>べつだい</rt></ruby>|}</summary>\n$2\n</details>"
         ],
-        "description": "邦昌時代",
+        "description": "《范版东幻异闻录：三千年目睹之怪现状》",
         "scope": "html"
     },
-    "「范某××备份于此」": {
+    "「❝范某📸🎥📹备份于此‽❞」": {
         "prefix": ["ad-snap"],
         "body": [
             "<details class=\"snap\">",
@@ -42,18 +42,29 @@
             "$2",
             "</details>"
         ],
-        "description": "备份情报兼素材",
+        "description": "好记性不如烂笔头，能被权威机构出具红头文件认证的素材，就能被同一家权威机构用下一份红头文件否认",
         "scope": "html"
     },
-    "「囧斋起居注、随笔、怪奇事件簿」": {
+    "囧斋那些事儿": {
         "prefix": ["ad-kb"],
         "body": [
             "<details class=\"mine\">",
-            "\t<summary class=\"caption\"><ruby>囧斋<rt lang=\"de\">Kargsburg</rt></ruby>${1|起居注・日记,起居注・饮食,随笔,怪奇事件簿|}</summary>",
+            "\t<summary class=\"caption\"><ruby>囧斋<rt lang=\"de\">Kargsburg</rt></ruby>${1|起居注・日记,起居注・饮食,随笔,<ruby lang=\"ja\">怪奇事件簿<rt>かいきじけんぼ</rt></ruby>|}</summary>",
             "$2",
             "</details>"
         ],
-        "description": "囧斋那些事儿",
+        "description": "囧斋起居注、随笔、怪奇事件簿",
+        "scope": "html"
+    },
+    "谈笑风生": {
+        "prefix": ["ad-talk"],
+        "body": [
+            "<details class=\"mine\">",
+            "\t<summary class=\"caption\">${1|《<ruby>一千零一页<rt lang=\"en\">1001 Pages</rt></ruby>》,《配色也要符合基本法》,《这些精英的学历啊，比我不知高到哪里去了》,《我以一个弱者的身份，向你们请教一些武德的经验》|}</summary>",
+            "$2",
+            "</details>"
+        ],
+        "description": "❝当时我就念了两句诗❞",
         "scope": "html"
     }
 }
