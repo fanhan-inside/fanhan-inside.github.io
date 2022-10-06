@@ -3,10 +3,10 @@
     --body-background-color: ivory;
     --text-color: black;
     --text-reverse-color: white;
-    --font-family-serif: Georgia, Times, 'Quivira', 'FreeSerif', 'Source Serif Pro', 'Noto Serif', 'IBM Plex Serif', serif;
-    --font-family-sans: Helvetica, Arial, 'FreeSans', 'Source Sans Pro', 'Noto Sans', 'Fira Sans', 'Clear Sans', 'IBM Plex Sans', sans-serif;
-    --font-family-mono: 'Noto Mono', 'Fira Mono', 'IBM Plex Mono', 'FreeMono', Courier, monospace;
-    --font-family-code: 'Fira Code', 'Consolas', 'FreeMono', 'Inconsolata', 'Source Code Pro', monospace;
+    --font-family-serif: Georgia, Times, 'IBM Plex Serif', 'Source Serif Pro', 'Noto Serif', 'Quivira', serif;
+    --font-family-sans: Helvetica, Arial, 'IBM Plex Sans', 'Source Sans Pro', 'Noto Sans', sans-serif;
+    --font-family-mono: 'IBM Plex Mono', 'Noto Mono', 'Fira Mono', Courier, monospace;
+    --font-family-code: 'Cascadia Code', 'Fira Code', 'Source Code Pro', 'Consolas', 'Inconsolata', monospace;
     --font-family-math: 'Aroania', 'Quivira';
     --font-family-ipa: 'CharisSIL', 'DoulosSIL', 'GentiumPlus';
     /* 试着用Unicode字符定义CSS变量 */
