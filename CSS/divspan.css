@@ -1,3 +1,9 @@
+div.flex {
+    box-sizing: border-box;
+    justify-content: center;
+    display: flex;
+}
+
 span.Kargsfont {
     font-family: 'Fanism';
     font-size: 2rem;
@@ -110,15 +116,6 @@ span.important {
     background-color: white;
     color: blue;
     vertical-align: middle;
-}
-
-span.heading {
-    min-width: 10rem;
-    box-sizing: border-box;
-    display: inline-block;
-    padding: 0.5rem;
-    border: none;
-    text-align: center;
 }
 
 span.tip {

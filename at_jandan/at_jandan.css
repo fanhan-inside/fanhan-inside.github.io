@@ -13,7 +13,7 @@ h1.at_jandan {
     background: none;
 }
 
-h1.at_jandan>span.heading {
+h1.at_jandan>tt {
     background-color: var(--color-name-chinese-槲寄生绿);
     color: var(--color-name-chinese-鼬黄);
 }

@@ -33,7 +33,7 @@
         <p>也就是说，乍一看市面上充沛的「东北人」素材，很可能只是大连附近一小片地方从事面向特大日本帝国外交工作的公务员当中部分负责「路径依赖」事宜的岗位职责；而口口声声「反汉贱种中国通」的山东公务员，也很可能只是局限于青岛烟台等地，早已被「满铁调查课」渗透得如同筛子一样，自己开会拿着文件副本，正本跑到大连那里去了也。</p>
         <figure>
             <img src="image/055-001.jpg" alt="素材举例" />
-            <figcaption><span>素材举例</span></figcaption>
+            <figcaption><tt>素材举例</tt></figcaption>
         </figure>
         <p>前一篇当中使用「京师大学堂」教材白纸黑字举例证明其内部政治和意识形态斗争的激烈程度。还有个「清政府，北大荒」的例外，说京师大学堂「学生会」主席也是官运亨通，只不过按照顺序上台一个拿下一个来去匆匆，目前正好轮到现任中堂<ruby lang="ja">大野<rt>おおの</rt></ruby>家龙裔，后面替补还没浮出水面。</p>
         <p>铺垫结束，言归正传。</p>
@@ -56,12 +56,12 @@
         <p>在<abbr class="who">陈维桓</abbr>《微分几何》（第二版）的附录〈3.2.1〉中给出的<samp>Mathematica</samp>代码是这样的：</p>
         <figure>
             <img src="image/055-002.png" alt="Mathematica">
-            <figcaption><span>Mathematica</span></figcaption>
+            <figcaption><tt>Mathematica</tt></figcaption>
         </figure>
         <p>而我在<samp>wxMaxima</samp>当中的实践是这样的：</p>
         <figure>
             <img src="image/055-003.png" alt="wxMaxima">
-            <figcaption><span>wxMaxima</span></figcaption>
+            <figcaption><tt>wxMaxima</tt></figcaption>
         </figure>
         <p>其中对应<samp>Mathematica</samp>「<code>//Evaluate</code>」代码的部分，就是<samp>Maxima</samp>「<code>%i3</code>」展开为「<code>%o3</code>」的形式。看上去很笨，我自己也不满意，但是一时找不到更优雅的方式。</p>
         <p>究其原因，在于参数（<q lang="en">Parameter</q>）方程的定义是个「列表」，需要以参数（<q lang="en">Argument</q>）形式传递给绘图函数。从图中过程也可以看出，对应<span class="math">x(t)</span>和<span class="math">y(t)</span>的两项参数（<q lang="en">Parameter</q>）表达式是直接作为调用参数（<q lang="en">Argument</q>）的一部分，需要去掉「方括号」（对应<samp>Mathematica</samp>的「大括号」）。</p>

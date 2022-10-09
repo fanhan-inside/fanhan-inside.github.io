@@ -10,7 +10,7 @@ h1>img {
     vertical-align: middle;
 }
 
-.heading>span {
+.heading>tt {
     display: inline-block;
     text-align: center;
     vertical-align: middle;
@@ -47,7 +47,7 @@ h3 {
     font-size: 1.5rem;
 }
 
-h3.heading>span {
+h3.heading>tt {
     border-top: 2px solid gray;
     border-left: 2px solid gray;
 }
@@ -56,7 +56,7 @@ h4 {
     font-size: 1.25rem;
 }
 
-h4.heading>span {
+h4.heading>tt {
     border-top: 2px dashed gray;
     border-left: 2px dashed gray;
 }
@@ -65,12 +65,12 @@ h5, h6 {
     font-size: 1rem;
 }
 
-h5.heading>span {
+h5.heading>tt {
     border-bottom: 1px solid gray;
     border-right: 1px solid gray;
 }
 
-h6.heading>span {
+h6.heading>tt {
     border-bottom: 1px dashed gray;
     border-right: 1px dashed gray;
 }

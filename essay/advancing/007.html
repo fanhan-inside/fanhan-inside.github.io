@@ -27,7 +27,7 @@
     <main>
         <figure>
             <img src="image/007-001.png" alt="静态题图" />
-            <figcaption><span>静态题图</span></figcaption>
+            <figcaption><tt>静态题图</tt></figcaption>
         </figure>
 
         <p>释题略。题图见上。</p>
@@ -38,7 +38,7 @@
             <p>当时在各种千奇百怪软件和钦定红客种下的木马均极大充沛的旧台式机上，为了省事起见，使用了「<samp>Micosoft™©® Visio™©®</samp>」拼凑图形和文本，然后截图。</p>
             <figure>
                 <img src="image/007-003.png" alt="题图Visio版" />
-                <figcaption><span>题图<samp>Visio</samp>版</span></figcaption>
+                <figcaption><tt>题图<samp>Visio</samp>版</tt></figcaption>
             </figure>
             <p>为了保证每次截图大小相同，还得调整缩放比例保持一致，先按照坐标网格节点精确到像素级别截一遍，然后在<samp>Visio</samp>中设置不显示网格，再「重复上一次截图」获得白色背景图片。</p>
             <p>为了能做到「精确到像素级别截图」，一直使用「<a target="_blank" href="http://www.hyperionics.com/">HyperSnap</a>」软件，除了能用鼠标一圈之外，还可以用键盘控制起点终点，方便得很。虽然说当代有许多免费甚至开源的截图工具，但是还没找到能提供以键盘控制截图范围之功能的替代品。</p>
@@ -66,7 +66,7 @@
             <p>还有一个问题。在旧台式机上，因为连不上<samp>GitHub</samp>所以不能获得<samp>SageMath</samp>的<samp>Windows</samp>安装包，使用的是虚拟机映像的<samp>8.0</samp>版，绘图正常。而换了新机之后，下载了<samp>8.2</samp>版<samp>Windows</samp>安装包，装上之后反而不正常了。</p>
             <figure>
                 <img src="image/007-004.png" alt="SageMath绘图错误" />
-                <figcaption><span><samp>SageMath</samp>绘图错误</span></figcaption>
+                <figcaption><tt><samp>SageMath</samp>绘图错误</tt></figcaption>
             </figure>
             <p>看错误信息当中出现「<q lang="en">ascii</q>」字眼，很明显是因为<samp>Windows</samp>特有的「代码页」的缘故。而<samp>SageMath</samp>使用的一些组件，仍然依赖「<samp>Python 2.7</samp>」，于是无法处理。</p>
             <p>网上搜到的信息显示，「境外用户」纷纷表示情绪稳定，说<samp>SageMath</samp>的<samp>Windows</samp>安装包装上就能用，比虚拟机映像版更方便。不过呢，估计<samp>SageMath</samp>团队测试用环境，以及主要用户的使用环境，应该都是「英文<samp>Windows</samp>」吧，也是「<samp>Python 2.7</samp>」的开发及测试环境。</p>
@@ -76,7 +76,7 @@
             <p>首先，在<samp>FooPlot</samp>上分别绘制两个极坐标方程，并「导出成」<samp>SVG</samp>格式「下载」，参数设定如下图：</p>
             <figure>
                 <img src="image/007-005.png" alt="使用FooPlot绘图" />
-                <figcaption><span>使用<samp>FooPlot</samp>绘图</span></figcaption>
+                <figcaption><tt>使用<samp>FooPlot</samp>绘图</tt></figcaption>
             </figure>
             <p>对<samp>SVG</samp>的处理过程略，都是前两篇提到的内容。</p>
             <pre class="code">«ρ=cos(2θ).svg»
@@ -104,7 +104,7 @@
             <p>磨刀不误砍柴工，最终题图之前，还得重新熟悉安排各元素的布局，以及试验准备附加的各种效果。所以，先纪念伟大的数学先驱者<abbr class="who">希帕索斯</abbr>同志。</p>
             <figure>
                 <img src="image/007-006.png" alt="希帕索斯永垂不朽" />
-                <figcaption><span>希帕索斯永垂不朽</span></figcaption>
+                <figcaption><tt>希帕索斯永垂不朽</tt></figcaption>
             </figure>
             <pre class="code">«HippasusCross.svg»
 
@@ -143,7 +143,7 @@
             <p>上述代码中同样省略了所有实际内容元素，只剩下样式以及渐变效果的部分。全贴出来太长了，又没有地方可供上传附件并提供下载链接。实际工作情况「边改边预览」的截图（展开了内容元素）是这样的：</p>
             <figure>
                 <img src="image/007-007.png" alt="边改边预览" />
-                <figcaption><span>边改边预览</span></figcaption>
+                <figcaption><tt>边改边预览</tt></figcaption>
             </figure>
             <p>也就是说，为了重复使用内容，需要在「<code>&lt;symbol&gt;</code>」标签内定义元素（不渲染），然后在需要使用的地方采用「<code>&lt;use&gt;</code>」标签引用即可。</p>
             <p>而「<code>&lt;symbol&gt;</code>」标签的优点，是可以定义视口「<code>viewBox</code>」，也就是独立的坐标系，于是「素材」可以作为单独的模块不加修改的插入，矢量图形就是可以无损缩放，于是不影响实际渲染效果。</p>
@@ -196,7 +196,7 @@
             <p>差不多先这些吧。成果仍然无法直接转换，还是以屏幕录像方式生成的<samp>GIF</samp>「动态题图」：<span class="tip">注：在<samp>GitHub</samp>上传时已换成原<samp>SVG</samp>文件</span></p>
             <figure>
                 <img src="image/007-002.svg" alt="动态题图" />
-                <figcaption><span>动态题图</span></figcaption>
+                <figcaption><tt>动态题图</tt></figcaption>
             </figure>
             <p>使用的开源免费工具唤作「<a target="_blank" href="https://www.cockos.com/licecap/">LICEcap</a>」，支持「<samp>Microsoft™©® Windows™©®</samp>」和「<samp>Apple™©® macOS™©®</samp>」，推荐。</p>
         </section>

@@ -14,15 +14,10 @@ article header {
     padding: 0;
 }
 
-article header span.heading {
-    min-width: 0;
-    text-align: left;
-}
-
 article.bulletin,
 article.comment,
 article.message {
-    background-color: white;
+    background-color: whitesmoke;
     box-sizing: border-box;
     width: 90%;
     margin: 1rem auto;
@@ -52,8 +47,7 @@ article.comment header {
 }
 
 article.bulletin header time,
-article.comment header time,
-article.message header time {
+article.comment header time {
     float: right;
 }
 
@@ -81,8 +75,10 @@ article.message {
     background-color: white;
 }
 
-article.message header {
-    border: none;
+article.message > header > abbr {
+    border-bottom: 1px dashed gray;
+    border-right: 1px dashed gray;
+    padding: 0.5rem;
 }
 
 header.myself::before {
@@ -118,16 +114,6 @@ header.kt-traditional::before {
     display: inline-block;
     vertical-align: middle;
     margin-right: 0.5rem;
-}
-
-article.message header.message span.heading {
-    border-bottom: 1px solid lightgray;
-    border-right: 1px solid lightgray;
-}
-
-article.message header.myself span.heading {
-    border-bottom: 1px dashed gray;
-    border-right: 1px dashed gray;
 }
 
 article.bulletin article.bulletin,

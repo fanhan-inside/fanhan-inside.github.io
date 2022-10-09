@@ -4,7 +4,7 @@
 @import 'CSS/emphasis.css';
 @import 'CSS/math.css';
 @import 'CSS/time.css';
-@import 'CSS/span.css';
+@import 'CSS/divspan.css';
 @import 'CSS/heading.css';
 @import 'CSS/code.css';
 @import 'CSS/link.css';
@@ -45,4 +45,14 @@ header, footer {
     box-sizing: content-box;
     margin: 0 auto;
     padding: 1rem;
+}
+
+tt {
+    font-family: var(--font-family-sans);
+    min-width: 10rem;
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 0.5rem;
+    border: none;
+    text-align: center;
 }

@@ -37,17 +37,17 @@
         <section>
             <h2 class="heading">画特殊的平面曲线</h2>
             <section>
-                <h3 class="heading"><span class="heading">椭圆</span></h3>
+                <h3 class="heading"><tt>椭圆</tt></h3>
                 <p>之前使用<samp>wxMaxima</samp>绘制椭圆的时候，完全照搬了实体出版物字面拼写“<samp>ellips</samp>”，还特意给出了扫描版截图以示「无一字无来历，哪怕是错别字」（链接见上）。这其中仍然蕴涵着充沛的政治和意识形态内容并引领了激烈的政治和意识形态斗争新动向。</p>
                 <p>简单说，该附录当中的代码里面「拼写错误」不止这一处。正因为是代码，按理说都是实际调试通过的电子版内容，使用「<kbd>Ctrl</kbd><kbd>C</kbd><kbd>V</kbd>」即可借鉴到文字处理软件当中，所以可能会有精通英文的朋友对于这种是可忍孰不可忍的「辱英挑衅」表示莫名惊诧。</p>
                 <p>究竟是负责编纂内容并让「恩师」挂名的「得意门生」之工作态度不甚端正呢，还是为了回避「党性坚定的老审查员」工作态度过于端正而料敌从宽实则虚之虚则实之，目前尚且不得而知。可以参考活跃在九省通衢の煎蛋的宣传工作者振聋发聩的应景评论：</p>
                 <figure>
                     <img src="image/027-001-a01.png" />
                     <article class="message">
-                        <header class="message"><span class="heading"><abbr class="uid">Luz</abbr><time>2019-03-17 20:14:20</time></span></header>
+                        <header class="message"><abbr class="uid">Luz</abbr><time>2019-03-17 20:14:20</time></header>
                         <p>没有人能够意识到他们是多么愚蠢，直到自动拼写纠正不知道他们想要拼出什么。</p>
                     </article>
-                    <figcaption><span><a href="http://jandan.net/t/4182889">http://jandan.net/t/4182889</a></span></figcaption>
+                    <figcaption><tt><a href="http://jandan.net/t/4182889">http://jandan.net/t/4182889</a></tt></figcaption>
                 </figure>
                 <p>仅从纯粹的技术角度出发判断，因为<samp>wxMaxima</samp>已经内置了同名函数<code>ellipse</code>，所以笔者我老人家犹豫再三，还是去掉了结尾的字母<q lang="en">e</q>与兲朝境内合法实体出版物保持高度一致。乍一看似乎抱残守缺不敢越雷池一步，但是其中仍然蕴涵着充沛的历史和文化内容并体现了政治和意识形态斗争旧动向。</p>
                 <p>曰若稽古，在那南不列颠的诺曼龙裔之铁桶江山代代传的过程中，为了与欧洲大陆划清界限，动员盎格鲁撒克逊庶民撸起袖子加油干，为了自己的幸福而不懈奋斗，不再使用法语表明生殖器尊贵，而是尽量使用接地气的「英语」以示亲民。</p>
@@ -57,76 +57,76 @@
                 <p>所以，「英吉利正统在美利坚」运动无声无息了，「美语」的说法被废弃。而韦氏「二简字」也被废弃，其中就包括把「英亩」（<q lang="en">acre</q>）写成「美亩」（<q lang="en">aker</q>）。英吉利龙裔趁此机会反攻倒算，于是迄今为止美帝灯塔国是唯一在世俗中使用英制单位的英语国家，连英加澳新都不用英制了。</p>
                 <p>按照<abbr class="who">牛顿</abbr>第三运动定律，韦氏简化字的影响还是反哺了南不列颠及北爱尔兰，比方说标记开音节以示诵读的词尾「沉默的<q lang="en">e</q>」，于是盎格鲁传统风俗习惯当中的<q lang="en">Wif</q>就变成英吉利的<q lang="en">wife</q>了也。与此同时，那些占着茅坑不拉屎的「多磕头少说话的<q lang="en">e</q>」则按照「末位淘汰」原则被坚决清洗出美利坚革命队伍，这些卡位占座专用的蛀虫临死之前到处胡乱攀咬通常还能拉下一个垫背的，就比如<q lang="en">program-me</q>、<q lang="en">catalog-ue</q>那样。</p>
                 <p>回归主题，使用内置函数<code>ellipse</code>绘制椭圆很简单，以下照搬<samp>Maxima</samp>手册中的例子，用法详见文档。与其它若干开源软件一样，绘图功能都是默认调用「<samp>gnuplot</samp>」，细节大同小异。如果按照「课件」惯例，不希望弹出窗口而是在文档内部显示，可以使用「<code>wx-</code>」前缀的版本。</p>
-                <div class="image-group">
+                <div class="flex">
                     <figure>
                         <img src="image/027-001-001a.png" alt="内置函数">
                     </figure>
                     <figure>
                         <img src="image/027-001-001b.png" alt="内置函数">
-                        <figcaption><span>内置ellipse函数</span></figcaption>
+                        <figcaption><tt>内置ellipse函数</tt></figcaption>
                     </figure>
                 </div>
                 <p>通常绘图，传递的参数是「表达式」并规定「变量」范围，因此需要一个「解方程」的过程，之前已经用常微分方程举例过了。另外还可以使用「隐函数」方式，也就是直接提供「方程」，绘出所有使等号成立的点。</p>
                 <p>对于<abbr class="who">笛卡尔</abbr>坐标系之下椭圆的标准方程<img class="math" src="image/027-001-f01.svg" />来说，相应的绘图是这样的（使用「<samp>mgnuplot</samp>」「<samp>xmaxima</samp>」格式）：</p>
-                <div class="image-group">
+                <div class="flex">
                     <figure>
                         <img src="image/027-001-002a.png" alt="隐函数绘图">
-                        <figcaption><span>隐函数绘图（mgnuplot）</span></figcaption>
+                        <figcaption><tt>隐函数绘图（mgnuplot）</tt></figcaption>
                     </figure>
                     <figure>
                         <img src="image/027-001-002b.png" alt="隐函数绘图">
-                        <figcaption><span>隐函数绘图（xmaxima）</span></figcaption>
+                        <figcaption><tt>隐函数绘图（xmaxima）</tt></figcaption>
                     </figure>
                 </div>
                 <p>顺便发现，使用「<samp>Tcl/Tk</samp>」界面（见窗口图标）的「<samp>xmaxima</samp>」格式之场景没有保持坐标比例，并且在<samp>Windows</samp>上改变窗口尺寸的时候刷新有误，目前的环境下不建议使用。</p>
                 <p>使用（在<abbr class="who">笛卡尔</abbr>坐标系之下）参数方程绘图的内容之前演示过了，不再重复。这里换用极坐标系绘图。</p>
                 <p>定义离心率<img class="math" src="image/027-001-f02.svg" />，写出原点在中心的极坐标方程<img class="math" src="image/027-001-f03.svg" />，以及原点在一个焦点的极坐标方程<img class="math" src="image/027-001-f04.svg" />并作出相应的绘图。其中要转换极坐标为直角坐标，并使用<code>gnuplot_preamble</code>命令设置绘图的极坐标。</p>
-                <div class="image-group">
+                <div class="flex">
                     <figure>
                         <img src="image/027-001-003a.png" alt="极坐标绘图">
-                        <figcaption><span>原点在中心的极坐标椭圆</span></figcaption>
+                        <figcaption><tt>原点在中心的极坐标椭圆</tt></figcaption>
                     </figure>
                     <figure>
                         <img src="image/027-001-003b.png" alt="极坐标绘图">
-                        <figcaption><span>原点在焦点的极坐标椭圆</span></figcaption>
+                        <figcaption><tt>原点在焦点的极坐标椭圆</tt></figcaption>
                     </figure>
                 </div>
             </section>
             <section>
-                <h3 class="heading"><span class="heading">双曲线</span></h3>
+                <h3 class="heading"><tt>双曲线</tt></h3>
                 <p>因为<samp>wxMaxima</samp>并没有内置同名函数，所以直接画不废话，但是笛卡尔坐标系之下双曲线标准方程有两种，上下开口的<img class="math" src="image/027-002-f01.svg" />和左右开口的<img class="math" src="image/027-002-f02.svg" />，相应的绘图如下：</p>
-                <div class="image-group">
+                <div class="flex">
                     <figure>
                         <img src="image/027-002-001a.png" alt="上下开口">
-                        <figcaption><span>上下开口</span></figcaption>
+                        <figcaption><tt>上下开口</tt></figcaption>
                     </figure>
                     <figure>
                         <img src="image/027-002-001b.png" alt="左右开口">
-                        <figcaption><span>左右开口</span></figcaption>
+                        <figcaption><tt>左右开口</tt></figcaption>
                     </figure>
                 </div>
                 <p>极坐标绘图类似，定义离心率<img class="math" src="image/027-002-f03.svg" />，原点在中心的极坐标方程<img class="math" src="image/027-002-f04.svg" />和原点在一个焦点的极坐标方程<img class="math" src="image/027-002-f05.svg" />相应绘图如下：</p>
-                <div class="image-group">
+                <div class="flex">
                     <figure>
                         <img src="image/027-002-002a.png" alt="原点在中心">
-                        <figcaption><span>原点在中心</span></figcaption>
+                        <figcaption><tt>原点在中心</tt></figcaption>
                     </figure>
                     <figure>
                         <img src="image/027-002-002b.png" alt="原点在焦点">
-                        <figcaption><span>原点在焦点</span></figcaption>
+                        <figcaption><tt>原点在焦点</tt></figcaption>
                     </figure>
                 </div>
                 <p>同样，参数方程组也有开口不同的两种（简写）：<img class="math" src="image/027-002-f06.svg" />和<img class="math" src="image/027-002-f07.svg" />。</p>
                 <p>但是与椭圆「半长轴」「半短轴」不同，双曲线有两支，对应参数「半实轴」「半虚轴」正负号组合分别对应四个象限。</p>
                 <p>这种时候，使用<code>plot2d</code>函数可以分别绘出两支，例子中又定义个函数包装常量，因为绘图用参数（<q lang="en">Parameter</q>）只能有一个；而使用<code>draw2d</code>可以同时画出两支，注意接口不同，<code>parametric</code>不再是参数（<q lang="en">Argument</q>）而是一个函数。相应绘图如下：</p>
-                <div class="image-group">
+                <div class="flex">
                     <figure>
                         <img src="image/027-002-003a.png" alt="上下开口分别画">
-                        <figcaption><span>上下开口分别画</span></figcaption>
+                        <figcaption><tt>上下开口分别画</tt></figcaption>
                     </figure>
                     <figure>
                         <img src="image/027-002-003b.png" alt="左右开口同时画">
-                        <figcaption><span>左右开口同时画</span></figcaption>
+                        <figcaption><tt>左右开口同时画</tt></figcaption>
                     </figure>
                 </div>
                 <p>到这里还没什么新鲜东西，那是因为教材附录当中的内容简单，只涉及了课本正文当中「<b>很明显，平面上的测地平行坐标系就是通常的笛卡尔直角坐标系</b>」这句，连「<b>显然，平面上的极坐标系就是测地极坐标系</b>」这句都没涉及，本篇中这些极坐标绘图是我脑补的。</p>
@@ -138,38 +138,38 @@
                 <p>画出来就是这个样子：</p>
                 <figure>
                     <img src="image/027-002-004.png" alt="椭圆坐标系">
-                    <figcaption><span>椭圆坐标系</span></figcaption>
+                    <figcaption><tt>椭圆坐标系</tt></figcaption>
                 </figure>
                 <p>注意这是「坐标系」，两个分量的标度因子都是<img class="math" src="image/027-002-f13.svg" />，也就是通常绘图当中对应的「背景网格」设定。至于椭圆坐标系的应用，据称用于解决「<abbr class="who">拉普拉斯</abbr>方程」「<abbr class="who">亥姆霍兹</abbr>方程」之类偏微分方程精致而优雅。</p>
             </section>
 
-            <h3 class="heading"><span class="heading">抛物线parabola</span></h3>
-            <h3 class="heading"><span class="heading">对数螺线logapiral</span></h3>
-            <h3 class="heading"><span class="heading">旋轮线（摆线）cycloid</span></h3>
-            <h3 class="heading"><span class="heading">双纽线lemniscate</span></h3>
-            <h3 class="heading"><span class="heading">心脏线cardioid</span></h3>
-            <h3 class="heading"><span class="heading">蚶线limacn</span></h3>
-            <h3 class="heading"><span class="heading">悬链线catenary</span></h3>
-            <h3 class="heading"><span class="heading">蔓叶线cissoid</span></h3>
-            <h3 class="heading"><span class="heading">曳物线tractrix</span></h3>
+            <h3 class="heading"><tt>抛物线parabola</tt></h3>
+            <h3 class="heading"><tt>对数螺线logapiral</tt></h3>
+            <h3 class="heading"><tt>旋轮线（摆线）cycloid</tt></h3>
+            <h3 class="heading"><tt>双纽线lemniscate</tt></h3>
+            <h3 class="heading"><tt>心脏线cardioid</tt></h3>
+            <h3 class="heading"><tt>蚶线limacn</tt></h3>
+            <h3 class="heading"><tt>悬链线catenary</tt></h3>
+            <h3 class="heading"><tt>蔓叶线cissoid</tt></h3>
+            <h3 class="heading"><tt>曳物线tractrix</tt></h3>
         </section>
         <section>
             <h2 class="heading">画参数曲面的图形</h2>
-            <h3 class="heading"><span class="heading">球面</span></h3>
-            <h3 class="heading"><span class="heading">圆柱面</span></h3>
-            <h3 class="heading"><span class="heading">椭圆环面</span></h3>
-            <h3 class="heading"><span class="heading">八字结旋转面</span></h3>
-            <h3 class="heading"><span class="heading">椭球面</span></h3>
-            <h3 class="heading"><span class="heading">单叶双曲面</span></h3>
-            <h3 class="heading"><span class="heading">双叶双曲面</span></h3>
-            <h3 class="heading"><span class="heading">椭圆抛物面</span></h3>
-            <h3 class="heading"><span class="heading">双曲抛物面</span></h3>
-            <h3 class="heading"><span class="heading">猴鞍面</span></h3>
-            <h3 class="heading"><span class="heading">Möbius带</span></h3>
-            <h3 class="heading"><span class="heading">悬链面</span></h3>
-            <h3 class="heading"><span class="heading">正螺旋面</span></h3>
-            <h3 class="heading"><span class="heading">Enneper极小曲面</span></h3>
-            <h3 class="heading"><span class="heading">Scherk极小曲面</span></h3>
+            <h3 class="heading"><tt>球面</tt></h3>
+            <h3 class="heading"><tt>圆柱面</tt></h3>
+            <h3 class="heading"><tt>椭圆环面</tt></h3>
+            <h3 class="heading"><tt>八字结旋转面</tt></h3>
+            <h3 class="heading"><tt>椭球面</tt></h3>
+            <h3 class="heading"><tt>单叶双曲面</tt></h3>
+            <h3 class="heading"><tt>双叶双曲面</tt></h3>
+            <h3 class="heading"><tt>椭圆抛物面</tt></h3>
+            <h3 class="heading"><tt>双曲抛物面</tt></h3>
+            <h3 class="heading"><tt>猴鞍面</tt></h3>
+            <h3 class="heading"><tt>Möbius带</tt></h3>
+            <h3 class="heading"><tt>悬链面</tt></h3>
+            <h3 class="heading"><tt>正螺旋面</tt></h3>
+            <h3 class="heading"><tt>Enneper极小曲面</tt></h3>
+            <h3 class="heading"><tt>Scherk极小曲面</tt></h3>
         </section>
         <section>
             <h2 class="heading">生成曲线/曲面的动画</h2>
