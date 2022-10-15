@@ -48,7 +48,7 @@
     "囧斋那些事儿": {
         "prefix": ["ad-kb"],
         "body": [
-            "<details class=\"mine\">",
+            "<details class=\"mine\" open>",
             "\t<summary class=\"caption\"><ruby>囧斋<rt lang=\"de\">Kargsburg</rt></ruby>${1|起居注・日记,起居注・饮食,随笔,<ruby lang=\"ja\">怪奇事件簿<rt>かいきじけんぼ</rt></ruby>|}</summary>",
             "$2",
             "</details>"
@@ -59,7 +59,7 @@
     "谈笑风生": {
         "prefix": ["ad-talk"],
         "body": [
-            "<details class=\"mine\">",
+            "<details class=\"mine\" open>",
             "\t<summary class=\"caption\">${1|《<ruby>一千零一页<rt lang=\"en\">1001 Pages</rt></ruby>》,《配色也要符合基本法》,《这些精英的学历啊，比我不知高到哪里去了》,《我以一个弱者的身份，向你们请教一些武德的经验》|}</summary>",
             "$2",
             "</details>"
