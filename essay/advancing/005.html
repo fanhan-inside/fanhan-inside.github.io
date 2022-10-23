@@ -54,19 +54,19 @@
         <section>
             <h2 class="heading">目标</h2>
 
-            <h3 class="heading"><span>数学公式</span></h3>
+            <h3 class="heading"><tt>数学公式</tt></h3>
 
             <p>之前提到了，在线的解决方案，通常是「<samp>MathJax</samp>」，也是<samp>Typora</samp>使用的方式，所以支持一些<samp>Unicode</samp>字符。而<samp>VS Code</samp>的插件「<samp>Markdown + Math</samp>」使用的是「<samp>KaTeX</samp>」，因此同样的<samp>LaTeX</samp>内容在「知乎」和「作业部落」显示正常，在本地<samp>Typora</samp>也显示正常，唯独<samp>VS Code</samp>当中不正常。</p>
             <p>对应的例子，选择了在知乎的这个提问：《<a target="_blank" href="https://www.zhihu.com/question/265090828">线性代数的「克罗内克记号」、实分析的「选民范数」，与计算机科学的「你死我活逻辑」之间有什么联系？</a>》。</p>
             <p>而在简书的备份《<s>【提问＆回复＠知乎】〔№051〕</s><span class="tip">已被「简书（jianshu.com）」屏蔽。</span>》当中，使用贴图实现，于是「夜间模式」下字迹不清晰。</p>
             <p>其中的「非我族类其心必异范数」的公式，出现了「<span class="important">✡☪✠☭</span>」这四个闪米特独神论邪教四大变种的代表符号，于<samp>VS Code</samp>中无法渲染，所以正好拿来当作修正对象。</p>
 
-            <h3 class="heading"><span>流程图（<samp>Mermaid/Graph</samp>、<samp>FlowChart</samp>）</span></h3>
+            <h3 class="heading"><tt>流程图（<samp>Mermaid/Graph</samp>、<samp>FlowChart</samp>）</tt></h3>
 
             <p>之前发表过两篇关于<samp>Markdown</samp>扩展格式的随笔，「抓壮丁示意图」使用了「<samp>Mermaid</samp>」扩展的「<samp>Graph</samp>」功能，而「网文打斗套路」则使用了「<samp>FlowChart</samp>」，所以各自选一个例子。</p>
             <p>注意，在<samp>VS Code</samp>当中使用「<samp>Markdown Preview Mermaid Support</samp>」插件可以预览前者，但是后者还没有找到对应插件。</p>
 
-            <h3 class="heading"><span>其它</span></h3>
+            <h3 class="heading"><tt>其它</tt></h3>
 
             <p>如甘特图、序列图等功能，目前还没用到。先念两句诗「纸上得来终觉浅，绝知此事要躬行」，等什么时候码字需要亲自体会到了，再来继续谈笑风生不迟。</p>
             <p>不过呢，步骤大同小异，不入流码农稍微集中精神即可举一反三。没准在那可以展望的将来，老迈年高的我「日理万机无暇周览」，把这事忘了也说不定。</p>
@@ -74,13 +74,13 @@
         <section>
             <h2 class="heading">过程</h2>
 
-            <h3 class="heading"><span>环境</span></h3>
+            <h3 class="heading"><tt>环境</tt></h3>
 
-            <h4 class="heading"><span>Typora</span></h4>
+            <h4 class="heading"><tt>Typora</tt></h4>
 
             <p>下载或更新至最新版本，本地使用「<samp>0.9.52 (beta)</samp>」版。</p>
 
-            <h4 class="heading"><span>Visual Studio Code</span></h4>
+            <h4 class="heading"><tt>Visual Studio Code</tt></h4>
 
             <p>也要下载或更新至最新版本，本地使用「<samp>1.23.1</samp>」版码字，并集成了<samp>Git</samp>本地存储管理。</p>
             <figure>
@@ -90,12 +90,12 @@
             <p>但是，对照<samp>Typora</samp>的「<samp>beta</samp>」，<samp>VS Code</samp>的「最新版」是「<samp>1.24.0-Insiders</samp>」，一个前瞻性质的每夜构建的版本，有公开下载链接，可以与稳定版同时安装且共存。</p>
             <p>所以，在用稳定版码字的同时，用前瞻版完成「修正素材」工作。</p>
 
-            <h4 class="heading"><span>插件</span></h4>
+            <h4 class="heading"><tt>插件</tt></h4>
             <p>在<samp>Typora</samp>这边不需要，而<samp>VS Code</samp>则需要「<samp>SVG Viewer</samp>」，其它（码字或便于使用或美化界面相关）插件暂略。</p>
 
-            <h3 class="heading"><span>准备工作</span></h3>
+            <h3 class="heading"><tt>准备工作</tt></h3>
 
-            <h4 class="heading"><span>启动<samp>Typora</samp>，输入公式和流程图，确保显示正常</span></h4>
+            <h4 class="heading"><tt>启动<samp>Typora</samp>，输入公式和流程图，确保显示正常</tt></h4>
 
             <figure>
                 <img src="image/005-002.png" alt="用Typora输入内容" />
@@ -107,7 +107,7 @@
                 <figcaption><tt><samp>Typora</samp>源代码模式</tt></figcaption>
             </figure>
 
-            <h4 class="heading"><span>使用菜单命令「文件」→「导出」→「<samp>HTML (without styles)</samp>」</span></h4>
+            <h4 class="heading"><tt>使用菜单命令「文件」→「导出」→「<samp>HTML (without styles)</samp>」</tt></h4>
 
             <figure>
                 <img src="image/005-004.png" alt="Typora导出Html（无样式）" />
@@ -120,7 +120,7 @@
             </figure>
             <p>只有「数学公式」显示正常，那是因为「流程图」功能其实是借用了「代码块」扩展的语法（参考上面「源代码模式」），在（<samp>Typora</samp>当前版本）无样式的情况下不会被处理。</p>
 
-            <h4 class="heading"><span>那么导出完整版<samp>HTML</samp>即可</span></h4>
+            <h4 class="heading"><tt>那么导出完整版<samp>HTML</samp>即可</tt></h4>
 
             <figure>
                 <img src="image/005-006.png" alt="Typora导出Html" />
@@ -132,13 +132,13 @@
                 <figcaption><tt>网页效果</tt></figcaption>
             </figure>
 
-            <h4 class="heading"><span>关闭<samp>Typora</samp></span></h4>
+            <h4 class="heading"><tt>关闭<samp>Typora</samp></tt></h4>
 
             <p>接下来的工作都是<samp>VS Code</samp>的了。</p>
 
-            <h3 class="heading"><span>「非我族类其心必异范数」</span></h3>
+            <h3 class="heading"><tt>「非我族类其心必异范数」</tt></h3>
 
-            <h4 class="heading"><span>使用<samp>VS Code</samp>打开无样式网页文件</span></h4>
+            <h4 class="heading"><tt>使用<samp>VS Code</samp>打开无样式网页文件</tt></h4>
 
             <figure>
                 <img src="image/005-008.png" alt="VSCode打开无样式网页文件" />
@@ -152,7 +152,7 @@
 
             <p>找到「<code>&lt;svg</code>」（图中选中状态）以及「<code>&lt;/svg&gt;</code>」标签。</p>
 
-            <h4 class="heading"><span>将<samp>SVG</samp>内容提出另存</span></h4>
+            <h4 class="heading"><tt>将<samp>SVG</samp>内容提出另存</tt></h4>
 
             <p>将「<code>&lt;svg</code>」与「<code>&lt;/svg&gt;</code>」之间的内容复制，新建文件，粘贴过去，按「<kbd>Ctrl</kbd>+<kbd>K</kbd> <kbd>M</kbd>」键选择<samp>SVG</samp>语言模式：</p>
             <figure>
@@ -165,7 +165,7 @@
                 <figcaption><tt>保存<samp>SVG</samp>文件</tt></figcaption>
             </figure>
 
-            <h4 class="heading"><span>修改<samp>SVG</samp>文件使得预览正常</span></h4>
+            <h4 class="heading"><tt>修改<samp>SVG</samp>文件使得预览正常</tt></h4>
 
             <p>现在状态的<samp>SVG</samp>文件不完整，（在<samp>Windows</samp>下）双击使用<samp>IE</samp>打开，会只显示「✡☪☭」三个字符（不是四个），而用<samp>Chrome</samp>或<samp>Firefox</samp>打开，则提醒缺少样式于是显示作为<samp>xml</samp>格式的文件内容。这里不贴图。</p>
             <p>首先保证显示正常，只需要在开头的「<code>&lt;svg</code>」后面加上一条属性「<code>xmlns=&quot;http://www.w3.org/2000/svg&quot;</code>」即可，然后按「<kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>S</kbd> <kbd>O</kbd>」在侧边栏打开预览：</p>
@@ -177,7 +177,7 @@
             <p>为什么在<samp>Typora</samp>乃至附加了样式的网页当中随主题切换颜色，那是因为<samp>SVG</samp>中频繁出现「<code>currentColor</code>」属性值，表示使用环境当前设置中的颜色。</p>
             <p>注意，这种方式只能用于「内置」（<samp>inline/embedded</samp>）的<samp>SVG</samp>，而「外链」（在「<code>&lt;img&gt;</code>」标签当中引用）的<samp>SVG</samp>文件就不行。</p>
 
-            <h4 class="heading"><span>修改<samp>SVG</samp>文件确保预览效果</span></h4>
+            <h4 class="heading"><tt>修改<samp>SVG</samp>文件确保预览效果</tt></h4>
 
             <p>因此，为了「贴图」，最起码需要修改背景色，至于颜色固定不变导致在部分主题配色之下与环境不和谐，那就顾不上了也。</p>
             <p>这个也简单，还是在「<code>&lt;svg</code>」标签之内，找到「<code>style</code>」属性，增加一条「<code>background-color: white;</code>」即可：</p>
@@ -202,13 +202,13 @@
                 <figcaption><tt>保存<samp>PNG</samp>文件成功</tt></figcaption>
             </figure>
 
-            <h4 class="heading"><span>无样式网页文件用途结束</span></h4>
+            <h4 class="heading"><tt>无样式网页文件用途结束</tt></h4>
 
             <p>这个不用提醒，接下来两幅流程图都保存在带样式网页文件中，仿本例，在<samp>VS Code</samp>中打开<samp>HTML</samp>文件并格式化代码。截图略。</p>
 
-            <h3 class="heading"><span>「抓壮丁示意图」</span></h3>
+            <h3 class="heading"><tt>「抓壮丁示意图」</tt></h3>
 
-            <h4 class="heading"><span>找到SVG内容</span></h4>
+            <h4 class="heading"><tt>找到SVG内容</tt></h4>
 
             <p>搜索文本并找到对应的「<code>&lt;svg</code>」标签（以及「<code>&lt;/svg&gt;</code>」标签）：</p>
             <figure>
@@ -216,7 +216,7 @@
                 <figcaption><tt>找到<samp>SVG</samp>内容</tt></figcaption>
             </figure>
 
-            <h4 class="heading"><span>保存<samp>SVG</samp>文件并预览</span></h4>
+            <h4 class="heading"><tt>保存<samp>SVG</samp>文件并预览</tt></h4>
 
             <p>步骤同上，新建文件，粘贴<samp>SVG</samp>内容，选择<samp>SVG</samp>语言模式，格式化代码，保存，打开侧边栏预览：</p>
             <figure>
@@ -225,7 +225,7 @@
             </figure>
             <p>唔……这个文件看上去问题比较多。</p>
 
-            <h4 class="heading"><span>修改<samp>SVG</samp>文件</span></h4>
+            <h4 class="heading"><tt>修改<samp>SVG</samp>文件</tt></h4>
 
             <p>这次改法就不一样了，在「<code>&lt;style&gt;</code>」块内增加点「样式」即可。</p>
             <p>第一行是整个<samp>SVG</samp>文件的样式，追加背景色「<code>background-color: dimgray;</code>」填充色「<code>fill: dimgray;</code>」边框色「<code>stroke: red;</code>」这三项。</p>
@@ -239,13 +239,13 @@
             <p>图上红黄蓝绿都有了，花里胡哨看着眼晕是吧？</p>
             <p>是吖，作为例子，这样才能区分开不同的属性针对的效果。接下来就是「留做习题答案略，读者自证不难」了，谁有什么装潢的构思，照葫芦画瓢就这么改。</p>
 
-            <h4 class="heading"><span>导出<samp>PNG</samp>文件</span></h4>
+            <h4 class="heading"><tt>导出<samp>PNG</samp>文件</tt></h4>
 
             <p>步骤同上，略。</p>
 
-            <h3 class="heading"><span>「网文打斗套路」开头</span></h3>
+            <h3 class="heading"><tt>「网文打斗套路」开头</tt></h3>
 
-            <h4 class="heading"><span>获取<samp>SVG</samp>内容保存为文件并预览</span></h4>
+            <h4 class="heading"><tt>获取<samp>SVG</samp>内容保存为文件并预览</tt></h4>
 
             <p>步骤同上，略。</p>
             <figure>
@@ -253,7 +253,7 @@
                 <figcaption><tt>保存<samp>SVG</samp>文件并预览</tt></figcaption>
             </figure>
 
-            <h4 class="heading"><span>修改<samp>SVG</samp>文件并确认效果</span></h4>
+            <h4 class="heading"><tt>修改<samp>SVG</samp>文件并确认效果</tt></h4>
 
             <p>在「<code>&lt;svg&gt;</code>」标签内部「<code>style</code>」属性中增加「<code>background-color: white; fill: white;</code>」两条：</p>
             <figure>
@@ -261,9 +261,9 @@
                 <figcaption><tt>修改<samp>SVG</samp>文件并确认效果</tt></figcaption>
             </figure>
 
-            <h4 class="heading"><span>导出<samp>PNG</samp>文件（略）</span></h4>
+            <h4 class="heading"><tt>导出<samp>PNG</samp>文件（略）</tt></h4>
 
-            <h3 class="heading"><span>搞定</span></h3>
+            <h3 class="heading"><tt>搞定</tt></h3>
 
             <p>所以，应景修改「提问＆回答＠知乎」〔№051〕，使用修正过的素材，效果如下：</p>
             <figure>
