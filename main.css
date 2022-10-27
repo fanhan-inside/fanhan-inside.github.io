@@ -46,13 +46,3 @@ header, footer {
     margin: 0 auto;
     padding: 1rem;
 }
-
-tt {
-    font-family: var(--font-family-sans);
-    min-width: 10rem;
-    box-sizing: border-box;
-    display: inline-block;
-    padding: 0.5rem;
-    border: none;
-    text-align: center;
-}

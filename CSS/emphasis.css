@@ -22,6 +22,16 @@ mark.x3rd {
     background-color: #8ccbf2; /* "aqua" */
 }
 
+tt {
+    font-family: fangsong;
+    min-width: 10rem;
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 0.5rem;
+    border: none;
+    text-align: center;
+}
+
 i {
     font-style: oblique;
 }
