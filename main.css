@@ -1,23 +1,25 @@
-@import 'CSS/constant.css';
-@import 'CSS/font.css';
-@import 'CSS/lang.css';
-@import 'CSS/emphasis.css';
-@import 'CSS/math.css';
-@import 'CSS/time.css';
-@import 'CSS/divspan.css';
-@import 'CSS/heading.css';
-@import 'CSS/code.css';
-@import 'CSS/link.css';
-@import 'CSS/figure.css';
-@import 'CSS/block.css';
-@import 'CSS/table.css';
-@import 'CSS/list.css';
-@import 'CSS/nav.css';
-@import 'CSS/hr.css';
-@import 'CSS/signature.css';
-@import 'CSS/av.css';
+@import "CSS/constant.css";
+@import "CSS/font.css";
+@import "CSS/lang.css";
+@import "CSS/emphasis.css";
+@import "CSS/math.css";
+@import "CSS/time.css";
+@import "CSS/divspan.css";
+@import "CSS/heading.css";
+@import "CSS/code.css";
+@import "CSS/link.css";
+@import "CSS/figure.css";
+@import "CSS/block.css";
+@import "CSS/table.css";
+@import "CSS/list.css";
+@import "CSS/nav.css";
+@import "CSS/hr.css";
+@import "CSS/signature.css";
+@import "CSS/av.css";
+
 html {
     background-color: var(--html-background-color);
+    font-family: "ZhudouSans";
 }
 
 body {
@@ -41,7 +43,8 @@ main {
     background-color: transparent;
 }
 
-header, footer {
+header,
+footer {
     box-sizing: content-box;
     margin: 0 auto;
     padding: 1rem;
