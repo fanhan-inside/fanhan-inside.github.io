@@ -210,11 +210,15 @@ summary.caption {
 
 /* 「截图」「扫描」「摄影」「录像」「摘抄」 */
 details.snap {
+    /* background-color: #eee; */
     padding: 10px;
-    /* border: 1px solid teal; */
     border-left: 5px solid teal;
     border-right: 5px solid teal;
     border-radius: 10px;
+}
+
+details.snap[open] {
+    border-bottom: 1px solid teal;
 }
 
 details.snap summary {
@@ -224,11 +228,14 @@ details.snap summary {
 
 /* 「个人码字内容」 */
 details.mine {
-    /* background-color: antiquewhite; */
+    /* background-color: #eee; */
     padding: 10px;
     border-left: 5px solid darkorange;
     border-right: 5px solid darkorange;
     border-radius: 10px;
+}
+details.mine[open] {
+    border-bottom: 1px solid darkorange;
 }
 details.mine summary {
     color: darkorange;
