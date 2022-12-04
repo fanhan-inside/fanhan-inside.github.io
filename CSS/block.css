@@ -202,13 +202,13 @@ blockquote.description {
 }
 
 summary.caption {
-    font-family: serif;
+    font-family: fangsong;
     font-size: 150%;
     font-weight: bolder;
     text-align: center;
 }
 
-/* 「截图」「扫描」「摄影」「录像」 */
+/* 「截图」「扫描」「摄影」「录像」「摘抄」 */
 details.snap {
     padding: 10px;
     /* border: 1px solid teal; */
@@ -224,7 +224,7 @@ details.snap summary {
 
 /* 「个人码字内容」 */
 details.mine {
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
     padding: 10px;
     border-left: 5px solid darkorange;
     border-right: 5px solid darkorange;

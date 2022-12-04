@@ -38,7 +38,7 @@
         "prefix": ["ad-snap"],
         "body": [
             "<details class=\"snap\">",
-            "\t<summary class=\"caption\">范某${1|截图,摄影,录像,扫描|}备份于此</summary>",
+            "\t<summary class=\"caption\">范某${1|截图,摄影,录像,扫描,摘抄|}备份于此</summary>",
             "$2",
             "</details>"
         ],
