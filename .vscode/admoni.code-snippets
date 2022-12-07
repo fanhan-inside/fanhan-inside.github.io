@@ -15,6 +15,17 @@
     // 	],
     // 	"description": "Log output to console"
     // }
+    "《范版数学恶补记》": {
+        "prefix": ["ad-math"],
+        "body": [
+            "<details class=\"mine\" open>",
+            "\t<summary class=\"caption\">${1|恶补记・流水账|}</summary>",
+            "$2",
+            "</details>"
+        ],
+        "description": "❝我们信仰的主义，乃是宇宙的真理❞",
+        "scope": "html"
+    },
     "《卡壳世界》": {
         "prefix": ["ad-kw"],
         "body": [
