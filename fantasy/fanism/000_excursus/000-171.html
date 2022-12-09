@@ -25,73 +25,81 @@
     </header>
     <main>
         <p>先贴个「五行轮回」：</p>
-        <figure>
-            <img src="../../../DATA/20210529-001_FiveElementsCycle.svg" />
-        </figure>
+        <details class="snap">
+            <summary class="caption">范某截图备份于此</summary>
+            <figure>
+                <img src="../../../DATA/20210529-001_FiveElementsCycle.svg" />
+            </figure>
+        </details>
         <p>注意其中「夸张（<q lang="en">Overact</q>）」「侮辱（<q lang="en">Insult</q>）」相关措辞，与市面上活蹦乱跳的色目情报掮客炒作《动物世界》当中谁或啥面对「天敌」的人民民主专政铁拳一力降十会只会「无能狂怒」有关。当然，朴素唯物主义者会谆谆教导人民群众说，五行只有分工不同，没有高低贵贱之分，五种元素地位一律平等，不存在有谁更平等……人民群众信不信就另说了。</p>
         <p>按照活跃在九省通衢の煎蛋等地的色目美术兲才的惯例，这时候应该对图中「配色」评头论足，多半还有根红苗正忠君爱国的童年才俊帮腔「偷国人又胡说瞎编糟蹋我中华兲嘲上国传统文化啦」。于是需要引经据典正本清源，抄一段维基百科：</p>
-        <blockquote class="outside">
+        <details class="callout" open>
+            <summary class="ad-quote">五方色</summary>
             <p>五方色有五方正色与五方间色（古书亦写作“閒色”）之分。孔子曾说“恶紫夺朱”，南梁皇侃在《论语义疏》中就依次明确了一套正色、间色的理论，认为“青、赤、白、黑、黄”是正色，而以“绿、红、碧、紫、骝黄”为相对应的间色，在正式用色上都用正色，而不用间色。他认为，孔夫子所谓的“恶紫夺朱”，是谓紫为间色，赤为正色，形容以邪代正，是值得厌恶的。</p>
-        </blockquote>
+        </details>
         <p>于是综上所述，先尽量运用<samp>HTML</samp>已经定义好的命名颜色，往相邻的语义概念上碰瓷：</p>
-        <table id="五行各色">
-            <colgroup>
-                <col style="width: 12rem;" span="6" />
-            </colgroup>
-            <thead>
-                <tr>
-                    <th colspan="2">五行正色</th>
-                    <th colspan="2">相生间色</th>
-                    <th colspan="2">相克间色</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>青</td>
-                    <td style="background-color: var(--color-name-gnosis-木-青); color: white;">木</td>
-                    <td>靘</td>
-                    <td style="background-color: var(--color-name-gnosis-木生火-靘); color: white;">木生火</td>
-                    <td>绿</td>
-                    <td style="background-color: var(--color-name-gnosis-木克土-绿); color: white;">木克土</td>
-                </tr>
-                <tr>
-                    <td>赤</td>
-                    <td style="background-color: var(--color-name-gnosis-火-赤); color: white;">火</td>
-                    <td>纁</td>
-                    <td style="background-color: var(--color-name-gnosis-火生土-纁); color: white;">火生土</td>
-                    <td>粉</td>
-                    <td style="background-color: var(--color-name-gnosis-火克金-粉); color: black;">火克金</td>
-                </tr>
-                <tr>
-                    <td>黄</td>
-                    <td style="background-color: var(--color-name-gnosis-土-黄); color: black;">土</td>
-                    <td>硅</td>
-                    <td style="background-color: var(--color-name-gnosis-土生金-硅); color: white;">土生金</td>
-                    <td>缁</td>
-                    <td style="background-color: var(--color-name-gnosis-土克水-缁); color: white;">土克水</td>
-                </tr>
-                <tr>
-                    <td>白</td>
-                    <td style="background-color: var(--color-name-gnosis-金-白); color: black;">金</td>
-                    <td>黻</td>
-                    <td style="background-color: var(--color-name-gnosis-金生水-黻); color: black;">金生水</td>
-                    <td>碧</td>
-                    <td style="background-color: var(--color-name-gnosis-金克木-碧); color: black;">金克木</td>
-                </tr>
-                <tr>
-                    <td>黑</td>
-                    <td style="background-color: var(--color-name-gnosis-水-黑); color: white;">水</td>
-                    <td>黯</td>
-                    <td style="background-color: var(--color-name-gnosis-水生木-黯); color: white;">水生木</td>
-                    <td>紫</td>
-                    <td style="background-color: var(--color-name-gnosis-水克火-紫); color: white;">水克火</td>
-                </tr>
-            </tbody>
-        </table>
+        <details class="callout" open>
+            <summary class="ad-info">五行色列表</summary>
+            <table id="五行各色">
+                <colgroup>
+                    <col style="width: 12rem;" span="6" />
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th colspan="2">五行正色</th>
+                        <th colspan="2">相生间色</th>
+                        <th colspan="2">相克间色</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>青</td>
+                        <td style="background-color: var(--color-name-gnosis-木-青); color: white;">木</td>
+                        <td>靘</td>
+                        <td style="background-color: var(--color-name-gnosis-木生火-靘); color: white;">木生火</td>
+                        <td>绿</td>
+                        <td style="background-color: var(--color-name-gnosis-木克土-绿); color: white;">木克土</td>
+                    </tr>
+                    <tr>
+                        <td>赤</td>
+                        <td style="background-color: var(--color-name-gnosis-火-赤); color: white;">火</td>
+                        <td>纁</td>
+                        <td style="background-color: var(--color-name-gnosis-火生土-纁); color: white;">火生土</td>
+                        <td>粉</td>
+                        <td style="background-color: var(--color-name-gnosis-火克金-粉); color: black;">火克金</td>
+                    </tr>
+                    <tr>
+                        <td>黄</td>
+                        <td style="background-color: var(--color-name-gnosis-土-黄); color: black;">土</td>
+                        <td>硅</td>
+                        <td style="background-color: var(--color-name-gnosis-土生金-硅); color: white;">土生金</td>
+                        <td>缁</td>
+                        <td style="background-color: var(--color-name-gnosis-土克水-缁); color: white;">土克水</td>
+                    </tr>
+                    <tr>
+                        <td>白</td>
+                        <td style="background-color: var(--color-name-gnosis-金-白); color: black;">金</td>
+                        <td>黻</td>
+                        <td style="background-color: var(--color-name-gnosis-金生水-黻); color: black;">金生水</td>
+                        <td>碧</td>
+                        <td style="background-color: var(--color-name-gnosis-金克木-碧); color: black;">金克木</td>
+                    </tr>
+                    <tr>
+                        <td>黑</td>
+                        <td style="background-color: var(--color-name-gnosis-水-黑); color: white;">水</td>
+                        <td>黯</td>
+                        <td style="background-color: var(--color-name-gnosis-水生木-黯); color: white;">水生木</td>
+                        <td>紫</td>
+                        <td style="background-color: var(--color-name-gnosis-水克火-紫); color: white;">水克火</td>
+                    </tr>
+                </tbody>
+            </table>
+        </details>
         <p>当然看着不爽，毕竟「三原色」的定义都不一样，「白纸黑字红黄蓝」与「黑屏白字红绿蓝」的政治规矩和组织纪律截然相反，正好给了活蹦乱跳的色目情报掮客「颠倒黑白混淆是非」的神转折骚操作提供了生存空间。这个事情就不是我能决定的了，看斗争动向也轮不到我来负责，革命尚未成功，「套牌人」仍需努力。</p>
         <p>然后就可以看出在「五方上帝」集体领导下「十公会」之间错综复杂的关系，五拨「始终代表了“上帝”的神棍」兵分四路从而「四方下注前后逢源」，还根据「生克」关系实践「仁义不施而攻守之势易也」的兵家理念，结合「警惕月球势力打雌权主义牌」的背景，充沛着大批人民群众喜闻乐见的要素。</p>
         <p>其它碰瓷当然也有，再抄一段维基百科：</p>
-        <blockquote class="outside">
+        <details class="callout" open>
+            <summary class="ad-quote">「五样东西」</summary>
             <p>汉代思想家董仲舒认为，木代表仁、火代表礼、土代表信、金代表义、水代表智。</p>
             <p>中国哲学史上的五行思想类别，综合列举如下：</p>
             <ol>
@@ -105,88 +113,91 @@
                 <li>五行学说最早要去到战国中期出现。</li>
                 <li>中医的原始理论不以五行学说为指导。</li>
             </ol>
-        </blockquote>
+        </details>
         <p>所以，第十一篇设定《<a target="_blank" href="../011.html">从雪山来到大海去</a>》当中出现老赖很有「礼貌」的留言「汝既不智不仁，休怪我无情（信）无义」并跑路伏笔，现在可以在注释中呼应了，<span class="circle">无一字无来历</span>。</p>
         <hr class="outside" />
         <p>刚爬起来酒劲还在头昏脑涨，根据市面上炒作的航天新闻展开些许设定。</p>
         <p>简单说，在「<ruby>矮人<rt lang="en">dwarf</rt></ruby>」出场之前，他们的「神」就该准备好了，仿「五行大星」或曰「五大行星」例，正好有「<ruby>矮行星<rt lang="en">dwarf planet</rt></ruby>」是国际天文联合会公开承认的概念。但是没有照搬本位面观测结果，理由以前说过了，设定行星「法厄同」真实存在并炸掉才形成小行星带，并把占星术上「虚星」概念实体化。</p>
         <p>目前准备好的「矮人」所信仰的神祇对应天上星辰列表如下，来自罗马及伊特鲁里亚神话的星名用拉丁字母拼写：</p>
-        <div class="flex">
-            <figure>
-                <img src="image/000-171-001a.jpg" />
-                <img src="image/000-171-001b.jpg" />
-            </figure>
-            <table>
-                <thead>
-                    <tr>
-                        <th>汉译星名</th>
-                        <th>天文命名</th>
-                        <th>符号</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>冥王星</td>
-                        <td><q lang="la">Pluto</q></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>冥卫一</td>
-                        <td><q lang="grc">Χάρων</q></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>亡神星</td>
-                        <td><q lang="la">Orcus</q></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>锤神星</td>
-                        <td><q lang="la">Vulcan</q></td>
-                        <td><span class="astro">&#x1F528;</span></td>
-                    </tr>
-                    <tr>
-                        <td>镰神星</td>
-                        <td><q lang="la">Ceres</q></td>
-                        <td><span class="astro">&#x26B3;</span></td>
-                    </tr>
-                    <tr>
-                        <td>镐神星</td>
-                        <td><q lang="ja">マケマケ</q></td>
-                        <td><span class="astro">&#x26CF;</span></td>
-                    </tr>
-                    <tr>
-                        <td>婚神星</td>
-                        <td><q lang="la">Juno</q></td>
-                        <td><span class="astro">&#x26B5;</span></td>
-                    </tr>
-                    <tr>
-                        <td>阋神星</td>
-                        <td><q lang="la">Eris</q></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>智神星</td>
-                        <td><q lang="grc">Παλλὰς</q></td>
-                        <td><span class="astro">&#x26B4;</span></td>
-                    </tr>
-                    <tr>
-                        <td>灶神星</td>
-                        <td><q lang="la">Vesta</q></td>
-                        <td><span class="astro">&#x26B6;</span></td>
-                    </tr>
-                    <tr>
-                        <td>马神星</td>
-                        <td><q lang="grc">Χείρων</q></td>
-                        <td><span class="astro">&#x26B7;</span></td>
-                    </tr>
-                </tbody>
-            </table>
-            <figure>
-                <img src="image/000-171-001c.jpg" />
-                <img src="image/000-171-001d.jpg" />
-            </figure>
-        </div>
+        <details class="callout" open>
+            <summary class="ad-hint">天上的星辰</summary>
+            <div class="flex">
+                <figure>
+                    <img src="image/000-171-001a.jpg" />
+                    <img src="image/000-171-001b.jpg" />
+                </figure>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>汉译星名</th>
+                            <th>天文命名</th>
+                            <th>符号</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>冥王星</td>
+                            <td><q lang="la">Pluto</q></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>冥卫一</td>
+                            <td><q lang="grc">Χάρων</q></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>亡神星</td>
+                            <td><q lang="la">Orcus</q></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>锤神星</td>
+                            <td><q lang="la">Vulcan</q></td>
+                            <td><span class="astro">&#x1F528;</span></td>
+                        </tr>
+                        <tr>
+                            <td>镰神星</td>
+                            <td><q lang="la">Ceres</q></td>
+                            <td><span class="astro">&#x26B3;</span></td>
+                        </tr>
+                        <tr>
+                            <td>镐神星</td>
+                            <td><q lang="ja">マケマケ</q></td>
+                            <td><span class="astro">&#x26CF;</span></td>
+                        </tr>
+                        <tr>
+                            <td>婚神星</td>
+                            <td><q lang="la">Juno</q></td>
+                            <td><span class="astro">&#x26B5;</span></td>
+                        </tr>
+                        <tr>
+                            <td>阋神星</td>
+                            <td><q lang="la">Eris</q></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>智神星</td>
+                            <td><q lang="grc">Παλλὰς</q></td>
+                            <td><span class="astro">&#x26B4;</span></td>
+                        </tr>
+                        <tr>
+                            <td>灶神星</td>
+                            <td><q lang="la">Vesta</q></td>
+                            <td><span class="astro">&#x26B6;</span></td>
+                        </tr>
+                        <tr>
+                            <td>马神星</td>
+                            <td><q lang="grc">Χείρων</q></td>
+                            <td><span class="astro">&#x26B7;</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <figure>
+                    <img src="image/000-171-001c.jpg" />
+                    <img src="image/000-171-001d.jpg" />
+                </figure>
+            </div>
+        </details>
         <p>其中「锤神星」就是「祝融星」，根据水星进动数据计算出位置但就是看不见直到被相对论否决的那一颗，原名「<del>武大郎</del><ins><ruby>武甘<rt>Vulcan</rt></ruby></ins>」是罗马从希腊进口并本土化神话当中的火神和锻造之神，娶的漂亮老婆到处出轨生野种给自己戴绿帽，还「被家长打断腿」可以引发《<a target="_blank" href="../../../at_douban/broadcast/20210529-001.html">德国骨科</a>》剧情，符合架空中矮人形象之共识。</p>
         <p>而「镰神星」就是「谷神星」，真实存在并分配了天文学符号的原小行星现矮行星；至于「镐神星」惯译「鸟神星」，命名来自<abbr class="where">复活节岛</abbr>原住民信仰当中的「鸟人之神」，面部特征可以参考「鹤嘴锄」「冰镐」之类生产工具，以及革命导师<abbr class="who">圣斯大林</abbr>所指示的其在生产关系当中的角色与定位。</p>
         <p>表中的「婚神星」是冒名顶替的，不是圆的并且太小于是不算矮行星。本来应该是「妊神星」才对，一来发现太晚（编号<samp>136108</samp>），二来距离太远（经典柯伊伯带天体→类冥天体），历史和架空中的影响都不大，因此换成分配了天文学符号的「王母娘娘」客串。</p>
@@ -197,127 +208,145 @@
         <p>之前注释中提到了，市面上色目情报掮客和色目文艺爱好者炮制的舆论要反过来理解，于是《设定集》当中的「正派」人物都有自己的原则立场，所谓「反派」不是「（与色目中央钦定的大目标和方针政策路线计划作对的）反对派」而是「丑角」，对应的今为古用角色原型都是几乎全民已经达成共识唾弃的形象。</p>
         <p>比方说开国元勋<abbr class="who">高岗</abbr>，<span class="onum">1954</span>年被打倒然后自绝于人民，<span class="onum">1955</span>年通过决议开除党籍，那时候连「社会主义改造」都没结束，更没有开始「反右」，惦记着「平反」的门生故吏家丁义子把「错误」扣给谁都不行。并且，其被打倒的真实原因已经有很多爆料了，就是准备东北独立以「肃慎社会主义自治共和国」的名义加入苏联，即便「党」不存在了，只要「国」还存在，其历史定位连<abbr class="who">溥仪</abbr>都不如，照样翻不了案。</p>
         <p>只有一种可能性，就是《我是如何唠唠叨叨瞎鸡巴忙活搞垮中国的》划时代大作出版，「走穴的<del>戈</del><ins>习</ins>先生」反复宣读「中国解体」，于是色目情报掮客就有洗地理由了，评价<abbr class="who">高岗</abbr>乃「民族独立与解放之革命先驱」，就像<abbr class="who">纳扎尔巴耶夫</abbr>之于苏联那样。这种可能性，在「满独」失败之后，「疆独」正在尝试，就是「西肃慎后清国」或曰「西契丹后辽国」，策划并实施阴谋诡计的革命骨干，还是那帮<u>通古斯</u>太君。</p>
-        <figure>
-            <img src="image/000-171-002.png" />
-        </figure>
+        <details class="snap">
+            <summary class="caption">范某截图备份于此</summary>
+            <figure>
+                <img src="image/000-171-002.png" />
+            </figure>
+        </details>
         <p>以前谈笑风生的时候说过了，当代红色文艺极大繁荣，党性坚定的老审查员爱岗敬业，不能提到「中国」「北京」只能写「华国」「幽州」，不让用「满清」，还能用「通古斯民族神圣华夏帝国」，连「通古斯民族神圣华夏帝国」都用不了，那就写「德意志民族神圣罗马帝国」呗。</p>
         <p>所以，用完整的「<ruby>高岗<rt lang="de">Goldberg</rt></ruby>」俩字作为家名，同样待遇的还有「<ruby>高俅<rt lang="en">Gold Ball</rt></ruby>」，其它相关人物暂不展开，国际一流和谐宜居之都「高学历精英社交圈」提供了充沛素材，随时都能旁征博引：</p>
-        <figure>
-            <img src="image/000-171-003.png" />
-        </figure>
+        <details class="snap">
+            <summary class="caption">范某截图备份于此</summary>
+            <figure>
+                <img src="image/000-171-003.png" />
+            </figure>
+        </details>
         <p>顺便，之前提到了，<u>卡壳世界</u>的时间线当中，「真・神州陆沉」有极大可能性，暂时保留变化。于是来自「华国」的典故，流传到欧洲众所周知也不奇怪，毕竟当时已经是<abbr class="who">伏尔泰</abbr>拼命吹嘘我中华兲嘲上国科举制度并且<abbr class="who">莱布尼茨</abbr>给千古一帝「持“十四平均律”音乐理论观点者」<u>通古斯</u>同胞<abbr class="who">玄烨</abbr>同志写信称赞三千年前华夏同胞<abbr class="pseudo">伏羲</abbr>同志发明的「八卦」的时代了，街头巷尾的文盲听吟游诗人说远东「下半身」话本并不离谱。</p>
         <hr class="outside" />
         <p>刚爬起来酒劲还在头昏脑涨，根据四等分或九等分赤经的常识展开些许设定：</p>
-        <div class="flex">
-            <figure>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>西方星名</th>
-                            <th>中文星名</th>
-                            <th>波斯星名</th>
-                            <th>节气</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Aldebaran</td>
-                            <td>毕宿五</td>
-                            <td>Tascheter</td>
-                            <td>春分</td>
-                        </tr>
-                        <tr>
-                            <td>Regulus</td>
-                            <td>轩辕十四</td>
-                            <td>Venant</td>
-                            <td>夏至</td>
-                        </tr>
-                        <tr>
-                            <td>Antares</td>
-                            <td>心宿二</td>
-                            <td>Satevis</td>
-                            <td>秋分</td>
-                        </tr>
-                        <tr>
-                            <td>Fomalhaut</td>
-                            <td>北落师门</td>
-                            <td>Haftorang</td>
-                            <td>冬至</td>
-                        </tr>
-                        <tr>
-                            <td>Sirius</td>
-                            <td>天狼星</td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                    </tbody>
-                </table>
-                <figcaption><tt>四大天王有五个</tt></figcaption>
-                <p>抄一段维基百科：</p>
-                <blockquote>
-                    <p>早在公元前150年，天文学家托勒密就将天狼星描述为一颗红色天体，其余5颗恒星：参宿四、心宿二、毕宿五和北河三都同时被记述作桔黄色或红色色调的天体。这个不一致性由拉特兰Lyndon Hall的乡绅、业余天文学家托马斯·巴克（Thomas Barker）发现，他于1760年在伦敦皇家学院的聚会中演讲。由于许多其他的星体都能转变光度，使人们相信这些星体甚至也能转变颜色。约翰·弗里德里希·威廉·赫歇尔在1839年也注意到了这一点，有可能是因为他两年前观测过的海山二所影响的。汤玛斯·杰佛逊·杰克逊·希（Thomas Jefferson Jackson See）在1892年重新提起红色天狼星的问题，他在1892年出版了几篇论文，并在1926年出版最后结论。他指出不只是托勒密发现天狼星的红色，连诗人阿拉托斯、演说家西塞罗、将军日耳曼尼库斯都认为天狼星是红色的，尽管他们都不是天文学家。塞内卡也把天狼星描述成暗红色的，比火星的颜色更深。虽然如此，并非所有的古代观测者都看到红色的天狼星，如公元1世纪诗人马库斯·马尼利乌斯（Marcus Manilius）把它描写为“天蓝”，4世纪诗人阿维亚涅（Avienus）也一样。在中国古代，白色是天狼星的标准颜色，公元前2世纪至公元后7世纪若干记录都记述天狼星呈现着白色的光芒。</p>
-                </blockquote>
-            </figure>
-            <figure>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>西方星名</th>
-                            <th>中文星名</th>
-                            <th>备注</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Pollux</td>
-                            <td>北河三</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>Hamal</td>
-                            <td>娄宿三</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>Spica</td>
-                            <td>角宿一</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>Altair</td>
-                            <td>河鼓二</td>
-                            <td>牛郎</td>
-                        </tr>
-                        <tr>
-                            <td>Markab</td>
-                            <td>室宿一</td>
-                            <td></td>
-                        </tr>
-                    </tbody>
-                </table>
-                <figcaption><tt>海贼五星</tt></figcaption>
-                <p>再抄一段维基百科：</p>
-                <blockquote>
-                    <p>天狼星在许多的文化中都有特别的意义，特别是代表狗。它是大犬座中最明亮的恒星，口语上最常被称为犬星。它亦是传统的俄里翁神话中的狗：古希腊人认为天狼星的光芒对狗有不良的影响，使它们反常出现夏季热：它们过度的喘气导致过分的干燥和置身疾病的危险中。在极端的例子中，口吐白沫的狗也许有狂犬病，可能导致被咬的人受到传染和死亡。古罗马人称这颗恒星是小犬（Canicula），在夏季出现时，称为犬日。这颗恒星在中国天文学中被称为天狼，所属星官是井宿。许多北美洲的原住民将天狼星与狗连结在一起；在西南方的原住民Seri和托赫诺奥哈姆族（英语：Tohono O&#39;odham）注记这颗恒星是跟随着山羊的狗，黑脚人称之为狗脸，切罗基人（Cherokee）将天狼星和心宿二配成一对，做为灵魂之路两端的看守犬。内布拉斯加的波尼族有几种联想；狼族视它为狼星，而其他的部落认为是郊狼星。居住在阿拉斯加白令海峡的因纽特人称这颗星为月之犬。</p>
-                </blockquote>
-            </figure>
-        </div>
+        <details class="callout" open>
+            <summary class="ad-info">节气与星辰</summary>
+            <div class="flex">
+                <figure>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>西方星名</th>
+                                <th>中文星名</th>
+                                <th>波斯星名</th>
+                                <th>节气</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Aldebaran</td>
+                                <td>毕宿五</td>
+                                <td>Tascheter</td>
+                                <td>春分</td>
+                            </tr>
+                            <tr>
+                                <td>Regulus</td>
+                                <td>轩辕十四</td>
+                                <td>Venant</td>
+                                <td>夏至</td>
+                            </tr>
+                            <tr>
+                                <td>Antares</td>
+                                <td>心宿二</td>
+                                <td>Satevis</td>
+                                <td>秋分</td>
+                            </tr>
+                            <tr>
+                                <td>Fomalhaut</td>
+                                <td>北落师门</td>
+                                <td>Haftorang</td>
+                                <td>冬至</td>
+                            </tr>
+                            <tr>
+                                <td>Sirius</td>
+                                <td>天狼星</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <figcaption><tt>四大天王有五个</tt></figcaption>
+                    <p>抄一段维基百科：</p>
+                    <blockquote>
+                        <p>早在公元前150年，天文学家托勒密就将天狼星描述为一颗红色天体，其余5颗恒星：参宿四、心宿二、毕宿五和北河三都同时被记述作桔黄色或红色色调的天体。这个不一致性由拉特兰Lyndon Hall的乡绅、业余天文学家托马斯·巴克（Thomas Barker）发现，他于1760年在伦敦皇家学院的聚会中演讲。由于许多其他的星体都能转变光度，使人们相信这些星体甚至也能转变颜色。约翰·弗里德里希·威廉·赫歇尔在1839年也注意到了这一点，有可能是因为他两年前观测过的海山二所影响的。汤玛斯·杰佛逊·杰克逊·希（Thomas Jefferson Jackson See）在1892年重新提起红色天狼星的问题，他在1892年出版了几篇论文，并在1926年出版最后结论。他指出不只是托勒密发现天狼星的红色，连诗人阿拉托斯、演说家西塞罗、将军日耳曼尼库斯都认为天狼星是红色的，尽管他们都不是天文学家。塞内卡也把天狼星描述成暗红色的，比火星的颜色更深。虽然如此，并非所有的古代观测者都看到红色的天狼星，如公元1世纪诗人马库斯·马尼利乌斯（Marcus Manilius）把它描写为“天蓝”，4世纪诗人阿维亚涅（Avienus）也一样。在中国古代，白色是天狼星的标准颜色，公元前2世纪至公元后7世纪若干记录都记述天狼星呈现着白色的光芒。</p>
+                    </blockquote>
+                </figure>
+                <figure>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>西方星名</th>
+                                <th>中文星名</th>
+                                <th>备注</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Pollux</td>
+                                <td>北河三</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Hamal</td>
+                                <td>娄宿三</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Spica</td>
+                                <td>角宿一</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Altair</td>
+                                <td>河鼓二</td>
+                                <td>牛郎</td>
+                            </tr>
+                            <tr>
+                                <td>Markab</td>
+                                <td>室宿一</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <figcaption><tt>海贼五星</tt></figcaption>
+                    <p>再抄一段维基百科：</p>
+                    <blockquote>
+                        <p>天狼星在许多的文化中都有特别的意义，特别是代表狗。它是大犬座中最明亮的恒星，口语上最常被称为犬星。它亦是传统的俄里翁神话中的狗：古希腊人认为天狼星的光芒对狗有不良的影响，使它们反常出现夏季热：它们过度的喘气导致过分的干燥和置身疾病的危险中。在极端的例子中，口吐白沫的狗也许有狂犬病，可能导致被咬的人受到传染和死亡。古罗马人称这颗恒星是小犬（Canicula），在夏季出现时，称为犬日。这颗恒星在中国天文学中被称为天狼，所属星官是井宿。许多北美洲的原住民将天狼星与狗连结在一起；在西南方的原住民Seri和托赫诺奥哈姆族（英语：Tohono O&#39;odham）注记这颗恒星是跟随着山羊的狗，黑脚人称之为狗脸，切罗基人（Cherokee）将天狼星和心宿二配成一对，做为灵魂之路两端的看守犬。内布拉斯加的波尼族有几种联想；狼族视它为狼星，而其他的部落认为是郊狼星。居住在阿拉斯加白令海峡的因纽特人称这颗星为月之犬。</p>
+                    </blockquote>
+                </figure>
+            </div>
+        </details>
         <p>然后是十五颗在炼金术、占星术和巫医理论当中出现的重要恒星（<q lang="en">Behenian fixed star</q>）：</p>
-        <figure>
-            <img src="image/000-171-004.png" />
-        </figure>
+        <details class="snap">
+            <summary class="caption">范某截图备份于此</summary>
+            <figure>
+                <img src="image/000-171-004.png" />
+            </figure>
+        </details>
         <p>雅利安或色目神棍在《神秘哲学三书（<q lang="la">De Occulta Philosophia libri</q>）》当中的描述归纳如下：</p>
-        <figure>
-            <img src="image/000-171-005.png" />
-            <figcaption><tt>Hermes on the 15 Fixed Stars</tt></figcaption>
-        </figure>
+        <details class="snap">
+            <summary class="caption">范某截图备份于此</summary>
+            <figure>
+                <img src="image/000-171-005.png" />
+                <figcaption><tt>Hermes on the 15 Fixed Stars</tt></figcaption>
+            </figure>
+        </details>
         <p><abbr class="pseudo">赫尔墨斯</abbr>的「神职」已经众所周知了：诸神使者、商业之神、偷盗之神、旅行之神、运动与竞技之神、越境之神、黄泉路指引之神。</p>
         <p>简单说，完美的符合了「美国人民的好总理」公开承认的大手情报机构「撒谎、诈骗、偷窃」的岗位职责，通常还成立「<ruby>迪纳摩<rt lang="ru">динамо</rt></ruby>」之类命名的竞技俱乐部作为掩护，到处走私「军火、毒品、人口」并利用金融机构洗钱。正如我中华兲嘲上国市面上各行各业都拜<u>关公</u>一样，我相信五筒联盟与<u>克格勃</u>都会拜<abbr class="pseudo">赫尔墨斯</abbr>，各个据点均供奉神像香火旺盛，<u>摩萨德</u>就不好说了。</p>
         <p>所以，「<mark>西洋特务拜<ruby>墨<sub>丘利</sub>公<rt lang="la">Mercury</rt></ruby></mark>」的伪风俗，就这么发明出来了也。这个振聋发聩之研究成果，是不是与市面上活蹦乱跳的色目情报掮客兼有良心的历史爱好者的划时代大作有一拼？</p>
         <p>再然后就是「奥林匹斯山中央执行委员会」，按照惯例「十二常委有十三个」，至于各位委员姓甚名谁，档案记载多有出入，但是唯物主义证据倒有一片：</p>
-        <figure>
-            <img src="image/000-171-006.jpg" />
-        </figure>
+        <details class="snap">
+            <summary class="caption">范某截图备份于此</summary>
+            <figure>
+                <img src="image/000-171-006.jpg" />
+            </figure>
+        </details>
         <p>左起：<abbr class="pseudo">赫斯提亚</abbr>（权杖）、<abbr class="pseudo">赫耳墨斯</abbr>（翼和商神杖）、<abbr class="pseudo">阿佛洛狄忒</abbr>（面纱）、<abbr class="pseudo">阿瑞斯</abbr>（战盔和矛）、<abbr class="pseudo">得墨忒耳</abbr>（权杖和麦穗）、<abbr class="pseudo">赫菲斯托斯</abbr>（节杖）、<abbr class="pseudo">赫拉</abbr>（权杖）、<abbr class="pseudo">波塞冬</abbr>（三叉戟）、<abbr class="pseudo">雅典娜</abbr>（雕鸮、战盔和矛）、<abbr class="pseudo">宙斯</abbr>（闪电火和节杖）、<abbr class="pseudo">阿耳忒弥斯</abbr>（弓和箭筒）、<abbr class="pseudo">阿波罗</abbr>（竖琴）。</p>
         <p>据唯物主义考古学家声称此乃希腊化时期的最终定稿，之前各个城邦自有邦情在彼，转载<abbr class="where">德尔菲</abbr>通稿的宣传文案当中有十一个已经确定，最后一个名额不是<abbr class="pseudo">赫斯提亚</abbr>就是<abbr class="pseudo">狄俄尼索斯</abbr>。希腊的<abbr class="pseudo">赫斯提亚</abbr>就是罗马的<abbr class="pseudo">维斯塔</abbr>，也就是上面列举的「灶神星」。而以<abbr class="who">柏拉图</abbr>为首的权威学者则声称，十二个岗位与黄道十二宫和一年十二个月壹壹对应，各安其位各尽其责。另有疑似「月球势力」宣布，与事业单位正式编制每年值班一个月不同，<abbr class="pseudo">狄俄尼索斯</abbr>只是有关部门通过外包中介临时聘用的社会闲散人员，每十九年值班七个月。</p>
         <p>其它「候补中央委员」不再壹壹列举，总而言之都是在「皇族内阁」集中坚强统一领导之下开展工作。</p>

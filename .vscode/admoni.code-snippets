@@ -15,6 +15,16 @@
     // 	],
     // 	"description": "Log output to console"
     // }
+    "告示牌": {
+        "prefix": ["ad-callout"],
+        "body": [
+            "<details class=\"callout\" open>",
+            "\t<summary class=\"${1|ad-hint,ad-info,ad-quote,ad-tldr,ad-note,ad-done,ad-question,ad-warning,ad-fail,ad-error,ad-bug,ad-example|}\">$2</summary>",
+            "</details>"
+        ],
+        "description": "暗色调反白文本强调显示",
+        "scope": "html"
+    },
     "《范版数学恶补记》": {
         "prefix": ["ad-math"],
         "body": [
