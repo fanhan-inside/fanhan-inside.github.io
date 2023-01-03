@@ -26,9 +26,13 @@
 
     <main>
         <p>开门见山，先贴一张图，本地运行「<samp>MaDoKo</samp>」的效果：</p>
-        <figure>
-            <img src="image/031-001.png" alt="本地运行「MaDoKo」效果" /><figcaption><tt>本地运行「MaDoKo」效果</tt></figcaption>
-        </figure>
+        <details class="snap">
+            <summary class="caption">范某截图备份于此</summary>
+            <figure>
+                <img src="image/031-001.png" alt="本地运行「MaDoKo」效果" />
+                <figcaption><tt>本地运行「MaDoKo」效果</tt></figcaption>
+            </figure>
+        </details>
         <p>那些示例「纯文本」都是从<a target="_blank" href="http://madoko.org/reference.html">官方参考手册</a>当中搬来的。既然能画出复杂到这个程度的公式，这是「更折衷的解决方案」，离线单机版运行比「<samp>Typora</samp>」还强点，虽然不是「所见即所得」，但毕竟能「实时」渲染而不是等编译。</p>
         <p>配置很简单，<a target="_blank" href="https://www.madoko.net">主页</a>上最下方「<samp>FAQ-10</samp>」就有提示。在已经有了「<samp>TeX Live</samp>」的前提下（参考第一篇流水帐），去「<samp>Node.js</samp>」下载脚本引擎安装包，装好后再执行两条命令行即可，启动也是命令行，可以指定工作目录。</p>
         <p>这就算搞定了能开工了，对于不熟悉也不关心信息技术细节的用户也很方便。但是呢，正如前两篇流水帐里面提到的那样，其它领域从业人员看这些「纯文本」有没有「眼晕」的感觉，是工作时能否保持状态的关键。</p>
@@ -69,9 +73,10 @@
         <p>篇幅差不多了。今天还干了点别的，把《设定集》三点五篇『正文』和两篇『缘起』转换成「<samp>MarkDown</samp>」格式在「简书」发表了。这也是为了检验自己的建议之可行性。在轻量级码字的情况下，用不到「<samp>MaDoKo</samp>」那么夸张的扩展语法。不过「下标」之类简单扩展还是好用的，尤其是对于「<code>aleph_n</code>」写多了的场合。</p>
         <p>顺便插一句，在码字中经常用「<code>aleph-n</code>」这种方式，一直没用下划线也是当年养成的不良习惯。在那万恶的旧互联网，既不提供<samp>LaTeX</samp>语法，也滥用格式字符，让我等老迈年高的脱离时代的网虫很难办吖。今后会注意与时俱进。</p>
         <p>简书刚好提供了这个小扩展，并且还能上传图片。但是简书不能用公式，解决方案是挂在第三方服务商「<samp>CodeCogs</samp>」提供的外链上，比如：</p>
-        <blockquote>
+        <details class="callout" open>
+            <summary class="ad-hint">LaTeX in HTML</summary>
             <p><code>http://latex.codecogs.com/svg.latex?f(x)=\frac{P(x)}{Q(x)}</code></p>
-        </blockquote>
+        </details>
         <p>但我还没试过，不过看也知道通过<samp>URL</samp>传递信息的公式不会太复杂，也不知道这第三方服务的稳定性和时效性如何，也不知道支持的<samp>LaTeX</samp>特性到底有多少，是否「够用」，还得等亲自体验过之后再说。</p>
     </main>
     <div class="signature">

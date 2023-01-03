@@ -37,16 +37,20 @@
         <p>当时还不知道早在<span class="onum">2015</span>年，「<samp>Unicode 8.0</samp>」标准就已经收录了十二进制中表示「十」和「十一」的这两个字符，编码分别是「<samp>U+218A</samp>」「<samp>U+218B</samp>」，形象类似本末倒置的「<samp>2</samp>」「<samp>3</samp>」，如今还没发现有哪个字体支持，在网页上是通过「<samp>CSS</samp>」设置「<code>transform: rotate(180deg)</code>」实现的效果。</p>
         <p>不过呢，即便以与时俱进的观点评价，我的「设计」仍然有其作用，因为计算器「七段<samp>LED</samp>数码管」能显示「<samp>E</samp>」，但「倒<samp>2</samp>」就与「<samp>5</samp>」混淆了。所以，暂时决定先熟练运用十个手指头敲击键盘输入纯文本，把「十二进制数字」绘制出来。</p>
         <p>首先是「构装体计算器七段发光管版」：</p>
-        <figure>
-            <img src="image/042-001.png" alt="希帕索斯数字LED版" />
-            <figcaption><tt>希帕索斯数字LED版</tt></figcaption>
-        </figure>
+        <details class="snap">
+            <summary class="caption">希帕索斯数字LED版</summary>
+            <figure>
+                <img src="image/042-001.png" alt="希帕索斯数字LED版" />
+            </figure>
+        </details>
         <p>使用的<samp>SVG</samp>伎俩差不多在三自运动当中都提到了，这里也就多出一个「变换」而已，整体上右倾了「<samp>5°</samp>」以模仿计算器显示效果。</p>
         <p>其次是「等宽无衬线体」：</p>
-        <figure>
-            <img src="image/042-002.png" alt="希帕索斯数字等线体" />
-            <figcaption><tt>希帕索斯数字等线体</tt></figcaption>
-        </figure>
+        <details class="snap">
+            <summary class="caption">希帕索斯数字等线体</summary>
+            <figure>
+                <img src="image/042-002.png" alt="希帕索斯数字等线体" />
+            </figure>
+        </details>
         <p>看上去很醜是吧？那就对了。因为<samp>SVG</samp>里面的「<code>&lt;path&gt;</code>」是纯属手打的，没有倚仗任何可视化工具，一拍脑袋就输入了各种「三次<abbr class="who">贝赛尔</abbr>曲线」以及「二次<abbr class="who">贝赛尔</abbr>曲线」坐标控制点。</p>
         <p>感想就是，手写那些路径参数，对理解<abbr class="who">贝赛尔</abbr>曲线的「本质」很有帮助，脑壳里已经同步出现了轨迹运动过程了也。</p>
         <p>而为什么只能「等宽」并且「无衬线」，那是因为<samp>SVG</samp>功能限制，线条的粗细变化无法自动实现。而若要自己实现这个功能，就用到了之前提到的「<samp>METAFONT</samp>」相关内容，需要定义「笔尖」再计算「覆盖」范围。</p>
