@@ -244,84 +244,23 @@ details.mine summary {
 
 /* 「告示牌」“Admonition”“Callout Box” */
 details.callout {
-    background-color: rgb(32, 32, 32);
-    color: rgb(223, 223, 223);
+    background-color: white;
     margin: 1rem auto;
-    /* padding: 1rem; */
+    /* padding: 0 1rem; */
     border-top: 1px dashed dimgray;
     border-bottom: 1px dashed dimgray;
     border-left: 5px solid dimgray;
     border-right: 5px solid dimgray;
     border-radius: 10px;
 }
-details.callout q {
-    color: lightblue;
-}
-details.callout q::before,
-details.callout q::after {
-    color: lightpink;
-}
-details.callout s {
-    background-color: dimgray;
-}
-details.callout span.math {
-    color: cyan;
-}
-details.callout cite {
-    border-bottom-color: cyan;
-}
-details.callout dfn {
-    border-bottom-color: lightcyan;
-}
-details.callout abbr {
-    border-bottom-color: white;
-}
-details.callout abbr.who {
-    border-bottom-color: red;
-}
-details.callout abbr.where {
-    border-bottom-color: lightblue;
-}
-details.callout abbr.pseudo {
-    border-bottom-color: lightgreen;
-}
-details.callout blockquote {
-    background-color: transparent;
-    border-top: 1px dashed;
-    border-bottom: 1px dotted;
-}
 details.callout p {
     margin: 1rem;
 }
-details.callout strong {
-    color: lightcoral;
-}
-details.callout em {
-    color: lightskyblue;
-}
-details.callout ins {
-    color: hotpink;
-}
-details.callout a {
-    color: lightseagreen;
-}
-details.callout a:hover {
-    background-color: lightseagreen;
-    color: lime;
-}
-details.callout a.alone {
-    background-color: darkslategray;
-    color: lightseagreen;
-}
-details.callout a.alone:hover {
-    background-color: darkgreen;
-    color: lime;
-}
 details.callout > summary {
     color: white;
-    min-height: 2rem;
+    min-height: 1.5rem;
     margin: 0;
-    padding: 1rem;
+    padding: 0.5rem;
     border-bottom: 3px double lightgray;
 }
 details.callout > summary::before {
