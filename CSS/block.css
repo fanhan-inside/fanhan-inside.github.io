@@ -210,7 +210,7 @@ summary.caption {
 
 /* 「截图」「扫描」「摄影」「录像」「摘抄」 */
 details.snap {
-    /* background-color: #eee; */
+    /* background-color: white; */
     padding: 10px;
     border-left: 5px solid teal;
     border-right: 5px solid teal;
@@ -228,7 +228,7 @@ details.snap summary {
 
 /* 「个人码字内容」 */
 details.mine {
-    /* background-color: #eee; */
+    background-color: white;
     padding: 10px;
     border-left: 5px solid darkorange;
     border-right: 5px solid darkorange;
@@ -240,18 +240,6 @@ details.mine[open] {
 details.mine summary {
     color: darkorange;
     border-bottom: 3px double darkorange;
-}
-details.mine div.narrate {
-    background-color: lightgoldenrodyellow;
-    padding: 10px;
-}
-details.mine div.explain {
-    background-color: lightcyan;
-    padding: 10px;
-}
-details.mine div.mention {
-    background-color: var(--color-name-japanese-桜);
-    padding: 10px;
 }
 
 /* 「告示牌」“Admonition”“Callout Box” */
