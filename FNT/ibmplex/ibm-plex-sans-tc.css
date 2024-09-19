@@ -1,0 +1,64 @@
+@font-face {
+  font-family: "IBM Plex Sans TC";
+  font-style: normal;
+  font-weight: 700;
+  src: local("IBM Plex Sans TC Bold"), local("IBMPlexSansTC-Bold"),
+    url("sans/IBMPlexSansTC-Bold.woff2")
+      format("woff2"),
+}
+@font-face {
+  font-family: "IBM Plex Sans TC";
+  font-style: normal;
+  font-weight: 200;
+  src: local("IBM Plex Sans TC ExtLt"), local("IBMPlexSansTC-ExtLt"),
+    url("sans/IBMPlexSansTC-ExtraLight.woff2")
+      format("woff2"),
+}
+@font-face {
+  font-family: "IBM Plex Sans TC";
+  font-style: normal;
+  font-weight: 300;
+  src: local("IBM Plex Sans TC Light"), local("IBMPlexSansTC-Light"),
+    url("sans/IBMPlexSansTC-Light.woff2")
+      format("woff2"),
+}
+@font-face {
+  font-family: "IBM Plex Sans TC";
+  font-style: normal;
+  font-weight: 500;
+  src: local("IBM Plex Sans TC Medm"), local("IBMPlexSansTC-Medm"),
+    url("sans/IBMPlexSansTC-Medium.woff2")
+      format("woff2"),
+}
+@font-face {
+  font-family: "IBM Plex Sans TC";
+  font-style: normal;
+  font-weight: 400;
+  src: local("IBM Plex Sans TC"), local("IBMPlexSansTC"),
+    url("sans/IBMPlexSansTC-Regular.woff2")
+      format("woff2"),
+}
+@font-face {
+  font-family: "IBM Plex Sans TC";
+  font-style: normal;
+  font-weight: 600;
+  src: local("IBM Plex Sans TC SmBld"), local("IBMPlexSansTC-SmBld"),
+    url("sans/IBMPlexSansTC-SemiBold.woff2")
+      format("woff2"),
+}
+@font-face {
+  font-family: "IBM Plex Sans TC";
+  font-style: normal;
+  font-weight: 450;
+  src: local("IBM Plex Sans TC Text"), local("IBMPlexSansTC-Text"),
+    url("sans/IBMPlexSansTC-Text.woff2")
+      format("woff2"),
+}
+@font-face {
+  font-family: "IBM Plex Sans TC";
+  font-style: normal;
+  font-weight: 100;
+  src: local("IBM Plex Sans TC Thin"), local("IBMPlexSansTC-Thin"),
+    url("sans/IBMPlexSansTC-Thin.woff2")
+      format("woff2"),
+}

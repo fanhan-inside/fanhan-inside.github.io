@@ -7,7 +7,7 @@
     --font-family-sans: Helvetica, Arial, 'IBM Plex Sans', 'Source Sans Pro', 'Noto Sans', sans-serif;
     --font-family-mono: 'IBM Plex Mono', 'Noto Mono', 'Fira Mono', Courier, monospace;
     --font-family-code: 'Cascadia Code', 'Fira Code', 'Source Code Pro', 'Consolas', 'Inconsolata', monospace;
-    --font-family-math: 'Aroania', 'Quivira';
+    --font-family-math: 'IBM Plex Math', math;
     --font-family-ipa: 'CharisSIL', 'DoulosSIL', 'GentiumPlus';
     /* 试着用Unicode字符定义CSS变量 */
     /* 素材选用「中国传统颜色」和「日本の伝統色」，网站界面类似，不知道究竟谁复制谁并成功 */
