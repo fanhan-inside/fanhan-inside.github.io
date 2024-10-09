@@ -233,6 +233,7 @@ details.mine {
     border-left: 5px solid darkorange;
     border-right: 5px solid darkorange;
     border-radius: 10px;
+    font-family: "NeoXiHei";
 }
 details.mine[open] {
     border-bottom: 1px solid darkorange;
