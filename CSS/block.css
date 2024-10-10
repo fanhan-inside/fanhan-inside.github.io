@@ -241,6 +241,7 @@ details.mine[open] {
 details.mine summary {
     color: darkorange;
     border-bottom: 3px double darkorange;
+    font-family: "Tiejili";
 }
 
 /* 「告示牌」“Admonition”“Callout Box” */

@@ -10,3 +10,10 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "Tiejili";
+  src: local("Tiejili SC"), url(./LXGW/TiejiliSC-Regular.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
