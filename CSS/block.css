@@ -234,6 +234,7 @@ details.mine {
     border-right: 5px solid darkorange;
     border-radius: 10px;
     font-family: "WenKai";
+    font-size: 125%;
 }
 details.mine[open] {
     border-bottom: 1px solid darkorange;
