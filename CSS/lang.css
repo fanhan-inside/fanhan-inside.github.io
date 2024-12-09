@@ -184,7 +184,7 @@ q:lang(sux)::after {
 }
 
 span:lang(sux) {
-    font-size: 150%;
+    font-size: 20px;
     /* font-weight: bold; */
     text-indent: 0;
     margin: 1px;
