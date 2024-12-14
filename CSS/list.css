@@ -1,6 +1,9 @@
-ol, ul, dl {
+ol,
+ul,
+dl {
     line-height: 2rem;
     margin: 1rem;
+    font-family: "IBM Plex Sans", "IBM Plex Sans SC", "IBM Plex Sans TC", "IBM Plex Sans JP", "IBM Plex Sans KR";
 }
 
 ol {
