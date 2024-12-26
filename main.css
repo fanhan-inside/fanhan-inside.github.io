@@ -19,7 +19,7 @@
 
 html {
     background-color: var(--html-background-color);
-    font-family: "ZhudouSans", "IBM Plex Serif";
+    font-family: "ZhudouSans", "IBM Plex Sans", "IBM Plex Sans SC", "IBM Plex Sans TC", "IBM Plex Sans JP", "IBM Plex Sans KR";
 }
 
 body {
