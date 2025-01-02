@@ -273,19 +273,37 @@ q.idiom::after {
 
 .ipa {
     font-family: var(--font-family-ipa);
-    color: var(--color-name-japanese-鉄);
+    color: darkblue;
 }
 
 .ipa::before {
+    color: darkred;
     content: "[";
 }
 
 .ipa::after {
+    color: darkred;
     content: "]";
 }
 
 rt.ipa {
     font-size: 100%;
+}
+
+rt.q {
+    font-size: 100%;
+    font-family: "IBM Plex Sans";
+    color: darkblue;
+}
+
+rt.q::before {
+    color: darkred;
+    content: "\201C";
+}
+
+rt.q::after {
+    color: darkred;
+    content: "\201D";
 }
 
 rt.bopomofo {
