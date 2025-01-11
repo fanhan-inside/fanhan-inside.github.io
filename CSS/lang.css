@@ -271,7 +271,8 @@ q.idiom::after {
     content: none;
 }
 
-.ipa {
+.ipa,
+.ipa-alt {
     font-family: var(--font-family-ipa);
     color: var(--color-name-japanese-鉄);
 }
@@ -284,6 +285,12 @@ q.idiom::after {
 .ipa::after {
     color: darkred;
     content: "]";
+}
+
+.ipa-alt::before,
+.ipa-alt::after {
+    color: darkred;
+    content: "/";
 }
 
 rt.ipa {
