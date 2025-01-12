@@ -67,6 +67,7 @@ q:lang(grc) {
 }
 
 q:lang(fhn) {
+    color: darkblue;
     quotes: "〘" "〙" "〔" "〕";
 }
 
@@ -298,7 +299,7 @@ rt.ipa {
 }
 
 rt.q {
-    font-size: 100%;
+    font-size: 80%;
     font-family: "IBM Plex Sans";
     color: darkblue;
 }
