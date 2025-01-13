@@ -67,6 +67,7 @@ q:lang(grc) {
 }
 
 q:lang(fhn) {
+    font-family: "IBM Plex Sans";
     color: darkblue;
     quotes: "〘" "〙" "〔" "〕";
 }
@@ -153,9 +154,6 @@ q:lang(nato) {
     color: navy;
     margin: 1px;
     padding: 1px;
-}
-
-q:lang(nato) {
     quotes: "⦃" "⦄" "⦅" "⦆";
 }
 
