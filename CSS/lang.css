@@ -294,7 +294,8 @@ q.idiom::after {
     content: "/";
 }
 
-rt.ipa {
+rt.ipa,
+rt.ipa-alt {
     font-size: 80%;
 }
 
