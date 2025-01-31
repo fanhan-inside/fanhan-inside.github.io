@@ -133,12 +133,16 @@ q:lang(chs) {
     /* “ ” ‘ ’ */
     quotes: "\201C" "\201D" "\2018" "\2019";
     font-family: "IBM Plex Sans SC";
+    background-color: whitesmoke;
+    color: darkblue;
 }
 
 q:lang(cht) {
     /* 「 」 『 』 */
     quotes: "\300C" "\300D" "\300E" "\300F";
     font-family: "IBM Plex Sans TC";
+    background-color: whitesmoke;
+    color: darkblue;
 }
 
 q:lang(la),
