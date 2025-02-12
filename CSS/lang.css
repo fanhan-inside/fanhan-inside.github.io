@@ -119,8 +119,8 @@ q:lang(ja) {
     font-family: "IBM Plex Sans JP";
     background-color: whitesmoke;
     color: darkblue;
-    /* 「 」 『 』 */
-    quotes: "\300C" "\300D" "\300E" "\300F";
+    /* 『 』 ‘ ’ */
+    quotes: "\300E" "\300F" "\2018" "\2019";
 }
 
 q::before,
