@@ -2,7 +2,7 @@
 
 个人博客
 
-+ 原站「希帕索斯永垂不朽」：[https://fanhan-inside.github.io](https://fanhan-inside.github.io)
++ 原站「希帕索斯永垂不朽」：[https://fanhan-inside.github.io](https://fanhan-inside.github.io)，别名【<https://fanhan-inside.vercel.app/>】
 + 镜像：[https://fanhan-inside.bitbucket.io](https://fanhan-inside.bitbucket.io)
 + 试验性站点「囧斋」：[https://fanhan-outside.vercel.app](https://fanhan-outside.vercel.app)
 + 技术型文档试验性站点「囧斋之書」：[https://fanhan-inside.gitlab.io](https://fanhan-inside.gitlab.io)
