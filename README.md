@@ -4,8 +4,8 @@
 
 + 原站「希帕索斯永垂不朽」：<https://fanhan-inside.github.io>
 + 镜像：<https://fanhan-inside.bitbucket.io>（已经于20250604进入只读状态）
-+ 镜像：别名【<https://fanhan-inside.vercel.app/>】【<https://fanhan-blog.vercel.app/>】（于GitLab托管：fanhan-inside/fanhan-blog）
-+ 试验性站点「囧斋」：<https://fanhan-outside.vercel.app>（在bitbucket工作区进入只读状态后重定向至gitlab项目）
++ 镜像：别名【<https://fanhan-inside.vercel.app/>】【<https://fanhan-blog.vercel.app/>】（于GitLab托管）
++ 试验性站点「囧斋」：<https://fanhan-outside.vercel.app>
 + 技术型文档试验性站点「囧斋之書」：<https://fanhan-inside.gitlab.io>
 
 联系方式：GitHub [Issues](https://github.com/fanhan-inside/fanhan-inside.github.io/issues)/[Discussions](https://github.com/fanhan-inside/fanhan-inside.github.io/discussions)
