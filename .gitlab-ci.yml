@@ -1,8 +1,6 @@
 # The Docker image that will be used to build your app
-image: blog
-create-pages:
-  pages:
+pages:
     # The folder that contains the files to be exposed at the Page URL
-    publish: ""
+  publish: ""
   only:
   - master
