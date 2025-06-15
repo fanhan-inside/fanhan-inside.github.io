@@ -4,6 +4,7 @@ create-pages:
   pages:
     # The folder that contains the files to be exposed at the Page URL
     publish: public
+    path_prefix: "blog"
   rules:
     # This ensures that only pushes to the default branch will trigger
     # a pages deploy
