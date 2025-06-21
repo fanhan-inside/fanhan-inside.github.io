@@ -1,9 +1,9 @@
 # The Docker image that will be used to build your app
-image: blog
+image: node:latest
 create-pages:
   pages:
     # The folder that contains the files to be exposed at the Page URL
-    publish: .
+    publish: ./
   rules:
     # This ensures that only pushes to the default branch will trigger
     # a pages deploy
