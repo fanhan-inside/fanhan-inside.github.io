@@ -3,9 +3,8 @@
 个人博客
 
 + 原站「希帕索斯永垂不朽」：<https://fanhan-inside.github.io>（于20250611开始无法连接于是停止更新）
-+ 镜像：<https://fanhan-inside.bitbucket.io>（已经于20250604进入只读状态）
 + **镜像**：别名【<https://fanhan-inside.vercel.app/>】【<https://fanhan-blog.vercel.app/>】（于GitLab托管）
-+ 试验性站点「**囧斋**」：【<https://fanhan-outside.vercel.app>】
++ 试验性站点「**囧斋**」：【<https://fanhan-inside.bitbucket.io>】【<https://fanhan-outside.vercel.app>】
 + 技术型文档试验性站点「囧斋之書」：<https://fanhan-inside.gitlab.io>
 
 联系方式：GitHub [Issues](https://github.com/fanhan-inside/fanhan-inside.github.io/issues)/[Discussions](https://github.com/fanhan-inside/fanhan-inside.github.io/discussions)
@@ -51,3 +50,7 @@
 ### 2025-6-11
 
 发现无法连接GitHub，于是将项目导入GitLab，设置新镜像并修改部分域名指向。情况类似20220425，估计冒名顶替者在背后赞助商指使下准备好了之后又冒出来了。
+
+### 2025-8-7
+
+删掉进入只读状态的镜像（BitBucket）仓库，利用其域名指向囧斋项目，作为「Kargsburg主站」。
